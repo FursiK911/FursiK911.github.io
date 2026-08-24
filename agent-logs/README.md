@@ -1,0 +1,17 @@
+# AI Agent Change Log Index
+
+Use this file to locate history without scanning every daily log.
+
+## Latest entries
+
+| Date       | Topics                                  | Entry                              |
+| ---------- | --------------------------------------- | ---------------------------------- |
+| 2026-08-25 | scaffold, tooling, ci, i18n, governance | [daily log](2026/08/2026-08-25.md) |
+
+## Browse by period
+
+- [August 2026](2026/08/README.md)
+
+## Browse by decision
+
+- [Global decision index](DECISIONS.md)
