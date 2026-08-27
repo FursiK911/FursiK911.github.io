@@ -25,9 +25,9 @@ describe('i18n scaffold', () => {
     expect(localStorage.getItem(LANGUAGE_STORAGE_KEY)).toBe('en')
   })
 
-  it('uses Russian as the fallback language', async () => {
+  it('uses English as the fallback language', async () => {
     await i18n.changeLanguage('de')
 
-    expect(i18n.resolvedLanguage).toBe('ru')
+    expect(i18n.resolvedLanguage).toBe('en')
   })
 })
