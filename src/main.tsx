@@ -6,10 +6,11 @@ import './i18n.ts'
 import '@mantine/core/styles.css'
 import './index.css'
 import App from './app/App.tsx'
+import { theme } from './theme'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <MantineProvider>
+    <MantineProvider theme={theme}>
       <MotionConfig reducedMotion="user">
         <App />
       </MotionConfig>

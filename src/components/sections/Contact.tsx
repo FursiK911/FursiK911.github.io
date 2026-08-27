@@ -1,11 +1,10 @@
 import { useTranslation } from 'react-i18next'
+import { CopyButton } from '@mantine/core'
 import { cvUrl } from '../../data/portfolio'
-import { useClipboard } from '../../hooks/useClipboard'
 import { SectionHeading } from '../layout/SectionHeading'
 
 export function Contact() {
   const { t } = useTranslation()
-  const { copied, copy } = useClipboard()
   return (
     <section className="section-shell contact-section" id="contact">
       <SectionHeading index="05" title={t('sections.contact')} />
@@ -18,12 +17,13 @@ export function Contact() {
           <div>
             <span>{t('contact.email')}</span>
             <a href="mailto:fursik911@yandex.com">fursik911@yandex.com ↗</a>
-            <button
-              type="button"
-              onClick={() => void copy('fursik911@yandex.com')}
-            >
-              {copied ? t('contact.copied') : t('contact.copy')}
-            </button>
+            <CopyButton value="fursik911@yandex.com" timeout={2000}>
+              {({ copied, copy }) => (
+                <button type="button" onClick={copy}>
+                  {copied ? t('contact.copied') : t('contact.copy')}
+                </button>
+              )}
+            </CopyButton>
           </div>
           <div>
             <span>{t('contact.telegram')}</span>

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Burger } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
 
 const sectionIds = ['projects', 'about', 'experience', 'stack', 'contact']
@@ -59,18 +60,16 @@ export function Header({ active, onLanguage }: HeaderProps) {
         >
           {i18n.language.startsWith('ru') ? 'EN' : 'RU'}
         </button>
-        <button
+        <Burger
           className="menu-toggle"
-          type="button"
-          aria-label="Open menu"
-          aria-expanded={open}
-          aria-controls="primary-nav"
+          size="sm"
+          color="cyan"
+          lineSize={1}
+          opened={open}
           onClick={() => setOpen(!open)}
-        >
-          <span />
-          <span />
-          <span />
-        </button>
+          aria-label="Open menu"
+          aria-controls="primary-nav"
+        />
       </div>
     </header>
   )

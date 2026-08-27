@@ -6,6 +6,7 @@ This is an index, not a second copy of the change log. Follow the source link fo
 | --------------- | ------------------------------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------ |
 | DEC-20260827-05 | Require one React component per file with a colocated test; App is composition only.        | architecture, tests    | [2026-08-27](2026/08/2026-08-27.md#decision-dec-20260827-05) |
 | DEC-20260827-06 | Pin Mantine MCP to `@mantine/mcp-server@9.5.2` to match the project.                        | mantine, tooling       | [2026-08-27](2026/08/2026-08-27.md#decision-dec-20260827-06) |
+| DEC-20260827-07 | Use Mantine selectively for behavior-rich controls and theme configuration.                 | mantine, accessibility | [2026-08-27](2026/08/2026-08-27.md#decision-dec-20260827-07) |
 | DEC-20260827-04 | Use the `grilling` skill for explicit review and stress-testing requests.                   | skills, grilling       | [2026-08-27](2026/08/2026-08-27.md#decision-dec-20260827-04) |
 | DEC-20260827-03 | Use automatic RU/EN detection with English fallback and a persisted manual toggle.          | portfolio, i18n        | [2026-08-27](2026/08/2026-08-27.md#decision-dec-20260827-03) |
 | DEC-20260827-02 | Keep Pages deployment manual while the repository remains private and Pages is unavailable. | github, pages, privacy | [2026-08-27](2026/08/2026-08-27.md#decision-dec-20260827-02) |

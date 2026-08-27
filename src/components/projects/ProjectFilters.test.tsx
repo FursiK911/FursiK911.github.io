@@ -15,6 +15,6 @@ it('emits selected project filter', async () => {
       }}
     />,
   )
-  await user.click(screen.getByRole('tab', { name: 'WEB' }))
+  await user.click(screen.getByRole('button', { name: 'WEB' }))
   expect(selected).toBe('web')
 })

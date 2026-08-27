@@ -9,12 +9,11 @@ export interface ProjectFiltersProps {
 export function ProjectFilters({ active, onChange }: ProjectFiltersProps) {
   const { t } = useTranslation()
   return (
-    <div className="filter-row" role="tablist" aria-label="Project filters">
+    <div className="filter-row" role="group" aria-label="Project filters">
       {filters.map((item) => (
         <button
           type="button"
-          role="tab"
-          aria-selected={active === item}
+          aria-pressed={active === item}
           className={active === item ? 'selected' : ''}
           onClick={() => onChange(item)}
           key={item}

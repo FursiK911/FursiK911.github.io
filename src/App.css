@@ -155,6 +155,7 @@ p {
 }
 .menu-toggle {
   display: none;
+  --burger-color: var(--cyan);
 }
 .hero {
   min-height: 680px;
@@ -640,6 +641,25 @@ p {
   place-items: center;
   padding: 24px;
 }
+.project-modal-root {
+  z-index: 40;
+}
+.project-dialog-header {
+  position: static;
+  min-height: 0;
+  padding: 0;
+}
+.dialog-modal-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.project-dialog-body {
+  padding: 0;
+}
 .project-dialog {
   position: relative;
   width: min(920px, 100%);
@@ -768,14 +788,7 @@ p {
     display: none;
   }
   .menu-toggle {
-    display: grid;
-    gap: 4px;
-  }
-  .menu-toggle span {
-    display: block;
-    width: 20px;
-    height: 1px;
-    background: var(--cyan);
+    display: inline-flex;
   }
   .hero {
     min-height: auto;

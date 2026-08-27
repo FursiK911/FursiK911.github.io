@@ -13,7 +13,7 @@ describe('portfolio app', () => {
     expect(
       screen.getByRole('heading', { name: /DMITRY FURSOV/i }),
     ).toBeVisible()
-    await userEvent.click(screen.getByRole('tab', { name: 'WEB' }))
+    await userEvent.click(screen.getByRole('button', { name: 'WEB' }))
     expect(screen.getByRole('heading', { name: 'myChess' })).toBeVisible()
     expect(
       screen.queryByRole('heading', { name: 'MyChessVR' }),
@@ -26,7 +26,7 @@ describe('portfolio app', () => {
       screen.getByRole('button', { name: /VIEW PROJECT — MyChessVR/i }),
     )
     expect(screen.getByRole('dialog')).toBeVisible()
-    fireEvent.keyDown(document, { key: 'Escape' })
+    await userEvent.keyboard('{Escape}')
     await waitFor(() =>
       expect(screen.queryByRole('dialog')).not.toBeInTheDocument(),
     )
