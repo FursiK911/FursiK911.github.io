@@ -6,13 +6,27 @@ import { changeLanguage } from '../i18n'
 import { renderWithProviders } from '../test/render'
 
 describe('portfolio app', () => {
-  beforeEach(() => {
-    sessionStorage.clear()
-    sessionStorage.setItem('df-intro-seen', '1')
-  })
+  beforeEach(() => sessionStorage.clear())
+
+  async function renderReadyApp() {
+    renderWithProviders(<App />)
+    const video = document.querySelector('video')
+    if (video) fireEvent.canPlay(video)
+    await waitFor(() =>
+      expect(
+        screen.getByRole('button', { name: /SKIP|ПРОПУСТИТЬ/i }),
+      ).toBeVisible(),
+    )
+    fireEvent.keyDown(document, { key: ' ' })
+    await waitFor(() =>
+      expect(
+        screen.getByRole('heading', { name: /DMITRY FURSOV/i }),
+      ).toBeVisible(),
+    )
+  }
   it('renders the hero and filters projects', async () => {
     await changeLanguage('en')
-    renderWithProviders(<App />)
+    await renderReadyApp()
     expect(
       screen.getByRole('heading', { name: /DMITRY FURSOV/i }),
     ).toBeVisible()
@@ -24,7 +38,7 @@ describe('portfolio app', () => {
   })
   it('opens project details and closes with Escape', async () => {
     await changeLanguage('en')
-    renderWithProviders(<App />)
+    await renderReadyApp()
     await userEvent.click(
       screen.getByRole('button', { name: /VIEW PROJECT — MyChessVR/i }),
     )
@@ -40,7 +54,7 @@ describe('portfolio app', () => {
     const writeText = vi
       .spyOn(navigator.clipboard, 'writeText')
       .mockResolvedValue(undefined)
-    renderWithProviders(<App />)
+    await renderReadyApp()
     await user.click(screen.getByRole('button', { name: 'Change language' }))
     expect(screen.getByRole('heading', { name: /ПРИВЕТ, Я/ })).toBeVisible()
     await user.click(screen.getByRole('button', { name: /menu/i }))
@@ -50,7 +64,7 @@ describe('portfolio app', () => {
   })
   it('keeps the ready site interactive and activates debug mode', async () => {
     await changeLanguage('en')
-    renderWithProviders(<App />)
+    await renderReadyApp()
     expect(sessionStorage.getItem('df-intro-seen')).toBe('1')
     for (const key of [
       'ArrowUp',

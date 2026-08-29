@@ -1,6 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { useReducedMotion } from 'motion/react'
 import {
+  loadingAnimationConfig,
+  scheduleLoadingAnimation,
+} from '../config/loadingAnimation'
+import {
   createLoadingCandidates,
   createMatchedCandidate,
   type LoadingCandidate,
@@ -10,11 +14,13 @@ export type LoadingPhase =
   'initializing' | 'typing' | 'searching' | 'result' | 'exiting' | 'complete'
 
 const INTRO_STORAGE_KEY = 'df-intro-seen'
-const VIDEO_TIMEOUT = 3000
-const SEARCH_QUERY_DURATION = 720
+// Temporary showcase mode: replay the intro on every page refresh and double its pace.
+export const ALWAYS_REPLAY_INTRO = true
 
 function hasSeenIntro() {
-  return Boolean(sessionStorage.getItem(INTRO_STORAGE_KEY))
+  return (
+    !ALWAYS_REPLAY_INTRO && Boolean(sessionStorage.getItem(INTRO_STORAGE_KEY))
+  )
 }
 
 export function useLoadingSequence(query: string) {
@@ -38,16 +44,16 @@ export function useLoadingSequence(query: string) {
   const [cursorClicked, setCursorClicked] = useState(false)
   const [resultVisible, setResultVisible] = useState(false)
   const [candidates, setCandidates] = useState<LoadingCandidate[]>([])
-  const timers = useRef<number[]>([])
+  const timers = useRef<Array<() => void>>([])
   const started = useRef(false)
 
   const clearTimers = useCallback(() => {
-    timers.current.forEach((timer) => window.clearTimeout(timer))
+    timers.current.forEach((timer) => timer())
     timers.current = []
   }, [])
 
   const schedule = useCallback((callback: () => void, delay: number) => {
-    const timer = window.setTimeout(callback, delay)
+    const timer = scheduleLoadingAnimation(callback, delay)
     timers.current.push(timer)
     return timer
   }, [])
@@ -76,7 +82,7 @@ export function useLoadingSequence(query: string) {
     const timer = window.setTimeout(() => {
       setVideoFallback(true)
       setVideoSettled(true)
-    }, VIDEO_TIMEOUT)
+    }, loadingAnimationConfig.videoReadyTimeout)
     return () => window.clearTimeout(timer)
   }, [reducedMotion, videoSettled])
 
@@ -101,12 +107,21 @@ export function useLoadingSequence(query: string) {
       query.split('').forEach((_, index) => {
         schedule(
           () => setQueryText(query.slice(0, index + 1)),
-          Math.round((SEARCH_QUERY_DURATION / query.length) * (index + 1)),
+          (loadingAnimationConfig.queryDuration / query.length) * (index + 1),
         )
       })
-    }, 350)
-    schedule(() => setButtonActive(true), 350 + SEARCH_QUERY_DURATION)
-    schedule(() => setCursorClicked(true), 350 + SEARCH_QUERY_DURATION + 280)
+    }, loadingAnimationConfig.initialDelay)
+    schedule(
+      () => setButtonActive(true),
+      loadingAnimationConfig.initialDelay +
+        loadingAnimationConfig.queryDuration,
+    )
+    schedule(
+      () => setCursorClicked(true),
+      loadingAnimationConfig.initialDelay +
+        loadingAnimationConfig.queryDuration +
+        loadingAnimationConfig.cursorClickDelay,
+    )
     schedule(
       () => {
         setPhase('searching')
@@ -114,32 +129,84 @@ export function useLoadingSequence(query: string) {
         const spawn = () => {
           const candidate = generated[index]
           if (!candidate) {
-            schedule(() => {
-              setCandidates((current) => [...current, matched])
-              setResultVisible(true)
-              setPhase('result')
-              schedule(() => setPhase('exiting'), 950)
-            }, 950)
+            schedule(
+              () => {
+                schedule(
+                  () => {
+                    setCandidates((current) =>
+                      current.map((item) =>
+                        item.id === matched.id
+                          ? { ...item, status: 'matched' }
+                          : item,
+                      ),
+                    )
+                    schedule(() => {
+                      setResultVisible(true)
+                      setPhase('result')
+                      schedule(
+                        () => setPhase('exiting'),
+                        loadingAnimationConfig.resultHold,
+                      )
+                    }, loadingAnimationConfig.matchedRevealDelay)
+                  },
+                  randomDelay(
+                    loadingAnimationConfig.candidateCheckMin,
+                    loadingAnimationConfig.candidateCheckMax,
+                  ),
+                )
+                setCandidates((current) => [
+                  ...current,
+                  { ...matched, status: 'searching' },
+                ])
+              },
+              randomDelay(
+                loadingAnimationConfig.candidateSpawnMin,
+                loadingAnimationConfig.candidateSpawnMax,
+              ),
+            )
             return
           }
           setCandidates((current) => [...current, candidate])
           schedule(
-            () =>
+            () => {
               setCandidates((current) =>
                 current.map((item) =>
                   item.id === candidate.id
                     ? { ...item, status: 'rejected' }
                     : item,
                 ),
-              ),
-            randomDelay(520, 900),
+              )
+              schedule(
+                () =>
+                  setCandidates((current) =>
+                    current.map((item) =>
+                      item.id === candidate.id
+                        ? { ...item, dimmed: true }
+                        : item,
+                    ),
+                  ),
+                loadingAnimationConfig.candidateFadeDelay,
+              )
+            },
+            randomDelay(
+              loadingAnimationConfig.candidateCheckMin,
+              loadingAnimationConfig.candidateCheckMax,
+            ),
           )
           index += 1
-          schedule(spawn, randomDelay(180, 300))
+          schedule(
+            spawn,
+            randomDelay(
+              loadingAnimationConfig.candidateSpawnMin,
+              loadingAnimationConfig.candidateSpawnMax,
+            ),
+          )
         }
         spawn()
       },
-      350 + SEARCH_QUERY_DURATION + 660,
+      loadingAnimationConfig.initialDelay +
+        loadingAnimationConfig.queryDuration +
+        loadingAnimationConfig.searchStartDelay,
     )
     return clearTimers
   }, [allReady, clearTimers, query, reducedMotion, schedule])

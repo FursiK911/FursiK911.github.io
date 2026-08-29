@@ -4,6 +4,7 @@ export interface LoadingCandidate {
   id: string
   name: string
   status: CandidateStatus
+  dimmed?: boolean
 }
 
 export const loadingCandidateNames = [

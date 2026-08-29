@@ -3,6 +3,7 @@ import { motion } from 'motion/react'
 import { cvUrl } from '../../data/portfolio'
 import portrait from '../../assets/dmitry-fursov.webp'
 import { TypingText } from '../layout/TypingText'
+import { GlitchPortrait } from './GlitchPortrait'
 
 export interface HeroProps {
   typedRole: string
@@ -55,7 +56,12 @@ export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
       </motion.div>
       <motion.div className="hero-portrait" variants={heroItemVariants}>
         <div className="portrait-frame">
-          <img src={portrait} alt={t('hero.portraitAlt')} />
+          <GlitchPortrait
+            src={portrait}
+            alt={t('hero.portraitAlt')}
+            active={entered}
+            reducedMotion={reducedMotion}
+          />
           <span className="frame-label">PROFILE_IMAGE // 001</span>
         </div>
         <div className="portrait-note">

@@ -1,7 +1,12 @@
 import { AnimatePresence, motion } from 'motion/react'
+import { useEffect, useRef, type CSSProperties } from 'react'
 import { useTranslation } from 'react-i18next'
 import type { LoadingCandidate } from '../../data/loadingCandidates'
 import type { LoadingPhase } from '../../hooks/useLoadingSequence'
+import {
+  loadingAnimationConfig,
+  useLoadingAnimationSpeed,
+} from '../../config/loadingAnimation'
 import portrait from '../../assets/dmitry-fursov.webp'
 
 export interface LoadingScreenProps {
@@ -40,17 +45,64 @@ export function LoadingScreen({
   videoFallback,
 }: LoadingScreenProps) {
   const { t } = useTranslation()
+  const animationSpeed = useLoadingAnimationSpeed()
+  const animationFactor = Math.max(animationSpeed, 0.01)
   const visible = phase !== 'complete'
   const statusText = phaseLabel(phase, t)
+  const candidatesRef = useRef<HTMLDivElement>(null)
+  const queryInputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    if (phase === 'typing') queryInputRef.current?.focus()
+  }, [phase])
+
+  useEffect(() => {
+    if (candidates.length === 0 || typeof window === 'undefined') return
+
+    const isMobile = window.matchMedia('(max-width: 560px)').matches
+    if (!isMobile) return
+
+    const lastCandidate = candidatesRef.current?.lastElementChild
+    if (!(lastCandidate instanceof HTMLElement)) return
+
+    const reducedMotion = window.matchMedia(
+      '(prefers-reduced-motion: reduce)',
+    ).matches
+    lastCandidate.scrollIntoView({
+      behavior: reducedMotion ? 'auto' : 'smooth',
+      block: 'nearest',
+    })
+  }, [candidates.length])
 
   return (
     <AnimatePresence>
       {visible && (
         <motion.div
-          className={`loading-screen${videoFallback ? ' video-fallback' : ''}`}
+          className={`loading-screen${videoFallback ? ' video-fallback' : ''}${animationSpeed === 0 ? ' is-paused' : ''}`}
+          style={
+            {
+              '--loading-animation-speed': Math.max(animationSpeed, 0.01),
+              '--loading-blink-duration': `${loadingAnimationConfig.css.blink / animationFactor}s`,
+              '--loading-cursor-opacity-duration': `${loadingAnimationConfig.css.cursorOpacity / animationFactor}s`,
+              '--loading-cursor-transform-duration': `${loadingAnimationConfig.css.cursorTransform / animationFactor}s`,
+              '--loading-candidate-in-duration': `${loadingAnimationConfig.css.candidateIn / animationFactor}s`,
+              '--loading-spinner-duration': `${loadingAnimationConfig.css.spinner / animationFactor}s`,
+              '--loading-result-in-duration': `${loadingAnimationConfig.css.resultIn / animationFactor}s`,
+              '--loading-photo-delay': `${loadingAnimationConfig.css.photoDelay / animationFactor}s`,
+              '--loading-scan-duration': `${loadingAnimationConfig.css.scan / animationFactor}s`,
+              '--loading-candidate-fade-delay': `${loadingAnimationConfig.candidateFadeDelay / animationFactor}ms`,
+              '--loading-candidate-fade-duration': `${loadingAnimationConfig.candidateFadeDuration / animationFactor}ms`,
+            } as CSSProperties
+          }
           initial={{ y: 0 }}
           animate={{ y: phase === 'exiting' ? '-100%' : 0 }}
-          transition={{ duration: phase === 'exiting' ? 0.82 : 0 }}
+          transition={{
+            duration:
+              phase === 'exiting'
+                ? loadingAnimationConfig.exitDuration /
+                  Math.max(animationSpeed, 0.01)
+                : 0,
+          }}
           onAnimationComplete={() => {
             if (phase === 'exiting') complete()
           }}
@@ -92,7 +144,9 @@ export function LoadingScreen({
               <div className="loading-query-line">
                 <input
                   id="loading-query"
+                  className={phase === 'typing' ? 'is-caret-active' : ''}
                   value={queryText}
+                  ref={queryInputRef}
                   readOnly
                   tabIndex={-1}
                   aria-label={t('loader.queryLabel')}
@@ -114,11 +168,12 @@ export function LoadingScreen({
             </div>
             <div
               className="loading-candidates"
+              ref={candidatesRef}
               aria-label={t('loader.candidates')}
             >
               {candidates.map((candidate) => (
                 <div
-                  className={`loading-candidate is-${candidate.status}`}
+                  className={`loading-candidate is-${candidate.status}${candidate.dimmed ? ' is-dimmed' : ''}`}
                   key={candidate.id}
                 >
                   <span className="loading-candidate-status" aria-hidden="true">
@@ -142,6 +197,17 @@ export function LoadingScreen({
                 </div>
               ))}
             </div>
+            {phase === 'searching' && (
+              <div className="loading-candidates-scan" aria-live="polite">
+                <span
+                  className="loading-candidates-scan-icon"
+                  aria-hidden="true"
+                >
+                  ◌
+                </span>
+                <span>{t('loader.status.scanning')}</span>
+              </div>
+            )}
             {resultVisible && (
               <>
                 <div className="loading-result-backdrop" aria-hidden="true" />

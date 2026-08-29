@@ -53,6 +53,13 @@ export const resources = {
           role: 'UNITY / VR / XR РАЗРАБОТЧИК',
           verified: 'ЛИЧНОСТЬ ПОДТВЕРЖДЕНА',
         },
+        debug: {
+          title: 'СКОРОСТЬ DEBUG',
+          pause: 'Поставить загрузочную анимацию на паузу',
+          resume: 'Продолжить загрузочную анимацию',
+          pauseShort: 'ПАУЗА',
+          resumeShort: 'ПРОДОЛЖИТЬ',
+        },
       },
       hero: {
         eyebrow: 'PLAYER_PROFILE',
@@ -280,6 +287,13 @@ export const resources = {
           title: 'MATCH FOUND',
           role: 'UNITY / VR / XR DEVELOPER',
           verified: 'IDENTITY VERIFIED',
+        },
+        debug: {
+          title: 'DEBUG SPEED',
+          pause: 'Pause loading animation',
+          resume: 'Resume loading animation',
+          pauseShort: 'PAUSE',
+          resumeShort: 'RESUME',
         },
       },
       hero: {

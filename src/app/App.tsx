@@ -12,6 +12,7 @@ import { Experience } from '../components/sections/Experience'
 import { Skills } from '../components/sections/Skills'
 import { Contact } from '../components/sections/Contact'
 import { KonamiDebug } from '../components/debug/KonamiDebug'
+import { LoadingAnimationDebug } from '../components/debug/LoadingAnimationDebug'
 import { useTypingText } from '../hooks/useTypingText'
 import '../App.css'
 
@@ -54,6 +55,7 @@ export default function App() {
         skip={loader.skip}
         videoFallback={loader.videoFallback}
       />
+      <LoadingAnimationDebug visible={loader.phase !== 'complete'} />
       <div
         className="app-shell"
         aria-hidden={loader.phase !== 'complete'}
