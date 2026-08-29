@@ -309,63 +309,26 @@ p {
   position: relative;
   z-index: 1;
 }
-.portrait-glitch-slice,
-.portrait-glitch-block,
-.portrait-glitch-rgb {
+.portrait-glitch-cell {
   position: absolute;
-  inset: 0;
   z-index: 2;
   pointer-events: none;
-  opacity: 0;
-  will-change: transform, opacity, clip-path;
-}
-.portrait-glitch-slice {
-  overflow: hidden;
-}
-.portrait-glitch-slice img {
-  width: 100%;
-  height: 100%;
-  transform: translate3d(
-    var(--glitch-source-x, 0),
-    var(--glitch-source-y, 0),
-    0
-  );
-}
-.portrait-glitch-block {
   inset: auto;
   overflow: hidden;
+  opacity: 0;
+  will-change: transform, opacity;
   box-shadow: 0 0 8px rgba(126, 240, 255, 0.2);
 }
-.portrait-glitch-block img {
+.portrait-glitch-cell img {
   position: absolute;
-  left: var(--glitch-block-source-x, 0);
-  top: var(--glitch-block-source-y, 0);
-  width: var(--glitch-source-width, 100cqw);
-  height: var(--glitch-source-height, 100cqh);
+  left: var(--cell-source-x, 0);
+  top: var(--cell-source-y, 0);
+  width: var(--cell-source-width, 100%);
+  height: var(--cell-source-height, 100%);
   max-width: none;
 }
-.portrait-glitch-rgb {
-  z-index: 3;
-  mix-blend-mode: screen;
-  overflow: hidden;
-}
-.portrait-glitch-rgb img {
-  width: 100%;
-  height: 100%;
-}
-.portrait-glitch-rgb-red {
-  filter: sepia(1) saturate(8) hue-rotate(300deg);
-}
-.portrait-glitch-rgb-cyan {
-  filter: sepia(1) saturate(7) hue-rotate(125deg);
-}
-.portrait-glitch.is-glitching > img {
-  filter: saturate(0.7) contrast(1.1);
-}
 @media (prefers-reduced-motion: reduce) {
-  .portrait-glitch-slice,
-  .portrait-glitch-block,
-  .portrait-glitch-rgb {
+  .portrait-glitch-cell {
     display: none;
   }
 }
@@ -444,6 +407,15 @@ p {
   color: var(--muted);
   max-width: 340px;
   line-height: 1.6;
+}
+.about-section .eyebrow,
+.contact-section .eyebrow,
+.about-section .fact-list span,
+.contact-section .contact-links span {
+  color: #b7c8cc;
+}
+.contact-grid p {
+  color: #d5e1e3;
 }
 .filter-row {
   display: flex;
@@ -582,7 +554,7 @@ p {
   gap: 100px;
 }
 .about-grid p {
-  color: #b5c3c7;
+  color: #d5e1e3;
   font-size: 1.05rem;
   line-height: 1.8;
   max-width: 650px;
@@ -601,6 +573,7 @@ p {
 .fact-list strong {
   font-size: 1.05rem;
   font-weight: 500;
+  color: var(--text);
 }
 .timeline {
   border-top: 1px solid var(--line);
@@ -674,6 +647,10 @@ p {
 .contact-links a {
   text-decoration: none;
   font-size: 1.1rem;
+  color: var(--text);
+}
+.contact-links a.button-primary {
+  color: #000;
 }
 .contact-links a:hover {
   color: var(--cyan);

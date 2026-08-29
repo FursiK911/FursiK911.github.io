@@ -6,13 +6,13 @@
 
 ## Summary
 
-- 373 nodes · 575 edges · 31 communities (21 shown, 10 thin omitted)
+- 373 nodes · 571 edges · 31 communities (21 shown, 10 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.67)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
 
-- Built from commit: `444d8028`
+- Built from commit: `e158bde0`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -21,10 +21,10 @@
 - App.tsx
 - devDependencies
 - loadingAnimation.ts
+- usePortraitGlitch.ts
 - scripts
 - compilerOptions
 - Projects.tsx
-- usePortraitGlitch.ts
 - 2026-08-30
 - compilerOptions
 - 2026-08-27
@@ -98,25 +98,25 @@ Nodes (49): eslint, eslint-config-prettier, @eslint/js, eslint-plugin-jsx-a11y, 
 Cohesion: 0.12
 Nodes (25): LoadingAnimationDebug(), LoadingAnimationDebugProps, LoadingScreen(), LoadingScreenProps, phaseLabel(), baseProps, armTimer(), getLoadingAnimationSpeed() (+17 more)
 
-### Community 3 - "scripts"
+### Community 3 - "usePortraitGlitch.ts"
+
+Cohesion: 0.14
+Nodes (20): GlitchPortrait(), GlitchPortraitProps, props, chooseGlitchLevel(), portraitGlitchConfig, PortraitGlitchLevel, randomBetween(), between() (+12 more)
+
+### Community 4 - "scripts"
 
 Cohesion: 0.07
 Nodes (26): engines, node, npm, lint-staged, *.{json,md,yml,yaml,css,html}, *.{ts,tsx,js,jsx}, name, private (+18 more)
 
-### Community 4 - "compilerOptions"
+### Community 5 - "compilerOptions"
 
 Cohesion: 0.08
 Nodes (24): DOM, src, vite/client, vitest/globals, compilerOptions, allowArbitraryExtensions, allowImportingTsExtensions, erasableSyntaxOnly (+16 more)
 
-### Community 5 - "Projects.tsx"
+### Community 6 - "Projects.tsx"
 
 Cohesion: 0.21
 Nodes (15): filters, ProjectCard(), ProjectCardProps, ProjectDetails(), ProjectDetailsProps, ProjectFilters(), ProjectFiltersProps, cvUrl (+7 more)
-
-### Community 6 - "usePortraitGlitch.ts"
-
-Cohesion: 0.18
-Nodes (18): chooseGlitchLevel(), portraitGlitchConfig, PortraitGlitchLevel, randomBetween(), between(), generatePortraitGlitchFrame(), PortraitGlitchBlock, PortraitGlitchFrame (+10 more)
 
 ### Community 7 - "2026-08-30"
 
@@ -140,8 +140,8 @@ Nodes (17): i18next, i18next-browser-languagedetector, @mantine/core, @mantine/h
 
 ### Community 11 - "Hero.tsx"
 
-Cohesion: 0.16
-Nodes (10): GlitchPortrait(), GlitchPortraitProps, Hero(), heroItemVariants, HeroProps, Header(), HeaderProps, sectionIds (+2 more)
+Cohesion: 0.21
+Nodes (8): Hero(), heroItemVariants, HeroProps, Header(), HeaderProps, sectionIds, TypingText(), TypingTextProps
 
 ### Community 12 - "2026-08-29"
 
@@ -170,7 +170,7 @@ Nodes (3): Build Job, Deploy Job, GitHub Pages Deployment
 
 ## Knowledge Gaps
 
-- **163 isolated node(s):** `name`, `private`, `version`, `type`, `node` (+158 more)
+- **164 isolated node(s):** `name`, `private`, `version`, `type`, `node` (+159 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -183,12 +183,12 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `dependencies` connect `dependencies` to `scripts`?**
   _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _163 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _164 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `App.tsx` be split into smaller, more focused modules?**
   _Cohesion score 0.08979591836734693 - nodes in this community are weakly interconnected._
 - **Should `devDependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.04081632653061224 - nodes in this community are weakly interconnected._
 - **Should `loadingAnimation.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.12380952380952381 - nodes in this community are weakly interconnected._
-- **Should `scripts` be split into smaller, more focused modules?**
-  _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
+- **Should `usePortraitGlitch.ts` be split into smaller, more focused modules?**
+  _Cohesion score 0.1402116402116402 - nodes in this community are weakly interconnected._
