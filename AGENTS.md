@@ -38,6 +38,7 @@
 
 ## Grilling
 
+- Always use the `grilling` skill when operating in Plan Mode, before acting on the plan.
 - Use the `grilling` skill when the user asks to "grill me" or requests stress-testing of a plan, decision, or idea.
 - Ask the full current decision frontier in numbered rounds, state a recommended answer for each question, and wait for the user's answers before continuing.
 - Do not act on the plan until the decision tree has been fully explored and shared understanding is confirmed.

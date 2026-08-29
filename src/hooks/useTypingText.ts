@@ -8,7 +8,11 @@ function getReducedMotion() {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches
 }
 
-export function useTypingText(texts: readonly string[], language: string) {
+export function useTypingText(
+  texts: readonly string[],
+  language: string,
+  enabled = true,
+) {
   const textKey = texts.join('\u0000')
   // textKey keeps the role list stable when callers create a new array per render.
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -28,15 +32,16 @@ export function useTypingText(texts: readonly string[], language: string) {
   }, [])
 
   useEffect(() => {
+    if (!enabled) return
     // Locale and motion changes intentionally restart the animation cycle.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setRoleIndex(0)
     setDisplayText(reducedMotion ? (roles[0] ?? '') : '')
     setPhase(reducedMotion ? 'holding' : 'typing')
-  }, [language, reducedMotion, roles])
+  }, [enabled, language, reducedMotion, roles])
 
   useEffect(() => {
-    if (reducedMotion || roles.length === 0) return
+    if (!enabled || reducedMotion || roles.length === 0) return
     const target = roles[roleIndex % roles.length]
     const timer = window.setTimeout(
       () => {
@@ -62,10 +67,10 @@ export function useTypingText(texts: readonly string[], language: string) {
           : TYPE_DELAY,
     )
     return () => window.clearTimeout(timer)
-  }, [displayText, phase, reducedMotion, roleIndex, roles])
+  }, [displayText, enabled, phase, reducedMotion, roleIndex, roles])
 
   return {
-    displayText: reducedMotion ? (roles[0] ?? '') : displayText,
+    displayText: !enabled ? '' : reducedMotion ? (roles[0] ?? '') : displayText,
     reducedMotion,
   }
 }

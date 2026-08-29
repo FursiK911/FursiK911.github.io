@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { motion } from 'motion/react'
 import { cvUrl } from '../../data/portfolio'
 import portrait from '../../assets/dmitry-fursov.webp'
 import { TypingText } from '../layout/TypingText'
@@ -6,29 +7,41 @@ import { TypingText } from '../layout/TypingText'
 export interface HeroProps {
   typedRole: string
   reducedMotion: boolean
+  entered?: boolean
 }
 
-export function Hero({ typedRole, reducedMotion }: HeroProps) {
+export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
   const { t } = useTranslation()
   const stats = t('hero.stats', { returnObjects: true }) as string[]
   return (
-    <section className="hero section-shell" id="top">
-      <div className="hero-copy">
-        <span className="eyebrow">
+    <motion.section
+      className="hero section-shell"
+      id="top"
+      initial={entered ? false : 'hidden'}
+      animate={entered ? 'visible' : 'hidden'}
+      variants={{
+        hidden: {},
+        visible: { transition: { staggerChildren: 0.09, delayChildren: 0.12 } },
+      }}
+    >
+      <motion.div className="hero-copy" variants={{ hidden: {}, visible: {} }}>
+        <motion.span className="eyebrow" variants={heroItemVariants}>
           {t('hero.eyebrow')} <i>● ONLINE</i>
-        </span>
-        <h1>
+        </motion.span>
+        <motion.h1 variants={heroItemVariants}>
           <span>{t('hero.hi')}</span>
           {t('hero.name')}
-        </h1>
-        <p className="hero-role">
+        </motion.h1>
+        <motion.p className="hero-role" variants={heroItemVariants}>
           <TypingText text={typedRole} reducedMotion={reducedMotion} />
-        </p>
-        <p className="hero-body">{t('hero.body')}</p>
-        <p className="terminal-line">
+        </motion.p>
+        <motion.p className="hero-body" variants={heroItemVariants}>
+          {t('hero.body')}
+        </motion.p>
+        <motion.p className="terminal-line" variants={heroItemVariants}>
           <span>›_</span> {t('hero.terminal')}
-        </p>
-        <div className="hero-actions">
+        </motion.p>
+        <motion.div className="hero-actions" variants={heroItemVariants}>
           <a className="button button-primary" href="#projects">
             {t('hero.projects')} <span>↘</span>
           </a>
@@ -38,9 +51,9 @@ export function Hero({ typedRole, reducedMotion }: HeroProps) {
           <a className="text-link" href="#contact">
             {t('hero.contact')} ↗
           </a>
-        </div>
-      </div>
-      <div className="hero-portrait">
+        </motion.div>
+      </motion.div>
+      <motion.div className="hero-portrait" variants={heroItemVariants}>
         <div className="portrait-frame">
           <img src={portrait} alt={t('hero.portraitAlt')} />
           <span className="frame-label">PROFILE_IMAGE // 001</span>
@@ -50,15 +63,20 @@ export function Hero({ typedRole, reducedMotion }: HeroProps) {
           <br />
           UNITY SYSTEMS
         </div>
-      </div>
-      <div className="hero-stats">
+      </motion.div>
+      <motion.div className="hero-stats" variants={heroItemVariants}>
         {stats.map((stat, index) => (
           <div key={stat}>
             <b>0{index + 1}</b>
             <span>{stat}</span>
           </div>
         ))}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   )
+}
+
+const heroItemVariants = {
+  hidden: { opacity: 0, y: 18 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.45 } },
 }

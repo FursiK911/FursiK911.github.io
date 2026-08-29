@@ -1,5 +1,7 @@
 # August 2026
 
+| 2026-08-29 | ui, animation, i18n, accessibility, testing | [daily log](2026-08-29.md) |
+| 2026-08-29 | skills, grilling, plan-mode, agent-rules | [daily log](2026-08-29.md) |
 | 2026-08-29 | ui, animation, i18n, accessibility, testing, graphify | [daily log](2026-08-29.md) |
 
 | Date       | Topics                                  | Entry                      |

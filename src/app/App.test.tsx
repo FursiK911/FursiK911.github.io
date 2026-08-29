@@ -6,7 +6,10 @@ import { changeLanguage } from '../i18n'
 import { renderWithProviders } from '../test/render'
 
 describe('portfolio app', () => {
-  beforeEach(() => sessionStorage.clear())
+  beforeEach(() => {
+    sessionStorage.clear()
+    sessionStorage.setItem('df-intro-seen', '1')
+  })
   it('renders the hero and filters projects', async () => {
     await changeLanguage('en')
     renderWithProviders(<App />)
@@ -45,13 +48,10 @@ describe('portfolio app', () => {
     await user.click(screen.getByRole('button', { name: /КОПИРОВАТЬ EMAIL/i }))
     expect(writeText).toHaveBeenCalledWith('fursik911@yandex.com')
   })
-  it('completes the loading timer and activates debug mode', async () => {
-    vi.useFakeTimers()
+  it('keeps the ready site interactive and activates debug mode', async () => {
     await changeLanguage('en')
     renderWithProviders(<App />)
-    vi.advanceTimersByTime(1150)
     expect(sessionStorage.getItem('df-intro-seen')).toBe('1')
-    vi.useRealTimers()
     for (const key of [
       'ArrowUp',
       'ArrowUp',
