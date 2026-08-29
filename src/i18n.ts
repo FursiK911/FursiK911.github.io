@@ -10,6 +10,10 @@ export const resources = {
   ru: {
     translation: {
       language: 'RU',
+      header: {
+        name: 'Дмитрий Фурсов',
+        homeLabel: 'Главная — Дмитрий Фурсов',
+      },
       nav: {
         projects: 'Проекты',
         about: 'Обо мне',
@@ -31,6 +35,13 @@ export const resources = {
         hi: 'ПРИВЕТ, Я',
         name: 'ДМИТРИЙ ФУРСОВ',
         role: 'UNITY / VR / XR DEVELOPER',
+        roles: [
+          'Unity Developer',
+          'VR Developer',
+          'Frontend Developer',
+          'Fullstack Developer',
+          'Тот, кто тебе нужен',
+        ],
         body: 'Unity-разработчик с фокусом на VR/XR, multiplayer-системы и интерактивные приложения для Meta Quest, PC и мобильных платформ.',
         terminal: 'currently_building: immersive interactive systems_',
         projects: 'СМОТРЕТЬ ПРОЕКТЫ',
@@ -203,6 +214,10 @@ export const resources = {
   en: {
     translation: {
       language: 'EN',
+      header: {
+        name: 'Dmitry Fursov',
+        homeLabel: 'Home — Dmitry Fursov',
+      },
       nav: {
         projects: 'Projects',
         about: 'About',
@@ -224,6 +239,13 @@ export const resources = {
         hi: "HI, I'M",
         name: 'DMITRY FURSOV',
         role: 'UNITY / VR / XR DEVELOPER',
+        roles: [
+          'Unity Developer',
+          'VR Developer',
+          'Frontend Developer',
+          'Fullstack Developer',
+          'The one you need',
+        ],
         body: 'Unity Developer focused on VR/XR, multiplayer systems and interactive applications for Meta Quest, PC and mobile platforms.',
         terminal: 'currently_building: immersive interactive systems_',
         projects: 'VIEW PROJECTS',

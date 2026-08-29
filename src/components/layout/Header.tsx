@@ -1,22 +1,30 @@
 import { useState } from 'react'
 import { Burger } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
+import { TypingText } from './TypingText'
 
 const sectionIds = ['projects', 'about', 'experience', 'stack', 'contact']
 
 export interface HeaderProps {
   active: string
   onLanguage: () => void
+  typedRole: string
+  reducedMotion: boolean
 }
 
-export function Header({ active, onLanguage }: HeaderProps) {
+export function Header({
+  active,
+  onLanguage,
+  typedRole,
+  reducedMotion,
+}: HeaderProps) {
   const { t, i18n } = useTranslation()
   const [open, setOpen] = useState(false)
   return (
     <header className="site-header">
-      <a className="brand" href="#top" aria-label="Dmitry Fursov home">
-        <span>DF</span>
-        <small>Dmitry Fursov</small>
+      <a className="brand" href="#top" aria-label={t('header.homeLabel')}>
+        <small>{t('header.name')}</small>
+        <TypingText text={typedRole} reducedMotion={reducedMotion} />
       </a>
       <nav
         id="primary-nav"

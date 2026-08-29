@@ -1,8 +1,14 @@
 import { useTranslation } from 'react-i18next'
 import { cvUrl } from '../../data/portfolio'
 import portrait from '../../assets/dmitry-fursov.webp'
+import { TypingText } from '../layout/TypingText'
 
-export function Hero() {
+export interface HeroProps {
+  typedRole: string
+  reducedMotion: boolean
+}
+
+export function Hero({ typedRole, reducedMotion }: HeroProps) {
   const { t } = useTranslation()
   const stats = t('hero.stats', { returnObjects: true }) as string[]
   return (
@@ -15,7 +21,9 @@ export function Hero() {
           <span>{t('hero.hi')}</span>
           {t('hero.name')}
         </h1>
-        <p className="hero-role">{t('hero.role')}</p>
+        <p className="hero-role">
+          <TypingText text={typedRole} reducedMotion={reducedMotion} />
+        </p>
         <p className="hero-body">{t('hero.body')}</p>
         <p className="terminal-line">
           <span>›_</span> {t('hero.terminal')}

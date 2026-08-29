@@ -4,6 +4,8 @@ Use this file to locate history without scanning every daily log.
 
 ## Latest entries
 
+| 2026-08-29 | ui, animation, i18n, accessibility, testing, graphify | [daily log](2026/08/2026-08-29.md) |
+
 | Date       | Topics                                  | Entry                              |
 | ---------- | --------------------------------------- | ---------------------------------- |
 | 2026-08-27 | architecture, components, tests         | [daily log](2026/08/2026-08-27.md) |
