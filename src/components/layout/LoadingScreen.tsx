@@ -140,19 +140,18 @@ export function LoadingScreen({
                 <input
                   id="loading-query"
                   value={queryText}
-                  size={Math.max(queryText.length, 1)}
                   readOnly
                   tabIndex={-1}
                   aria-label={t('loader.queryLabel')}
                 />
-                {phase === 'typing' && (
-                  <span
-                    className="typing-cursor loading-query-cursor"
-                    aria-hidden="true"
-                  >
-                    |
-                  </span>
-                )}
+                <span className="loading-query-display" aria-hidden="true">
+                  <span>{queryText}</span>
+                  {phase !== 'initializing' && (
+                    <span className="typing-cursor loading-query-cursor">
+                      |
+                    </span>
+                  )}
+                </span>
                 <button
                   type="button"
                   className={buttonActive ? 'is-active' : ''}

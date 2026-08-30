@@ -30,6 +30,7 @@
     "*.{json,md,yml,yaml,css,html}": "prettier --write"
   },
   "dependencies": {
+    "@isonimus/glitch-js": "^1.1.0",
     "@mantine/core": "^9.5.2",
     "@mantine/hooks": "^9.5.2",
     "i18next": "^26.4.0",

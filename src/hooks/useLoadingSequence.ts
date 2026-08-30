@@ -110,6 +110,9 @@ export function useLoadingSequence(query: string) {
           (loadingAnimationConfig.queryDuration / query.length) * (index + 1),
         )
       })
+      // Ensure the final glyph is committed even when per-character timers
+      // are rounded by the global animation scheduler.
+      schedule(() => setQueryText(query), loadingAnimationConfig.queryDuration)
     }, loadingAnimationConfig.initialDelay)
     schedule(
       () => setButtonActive(true),

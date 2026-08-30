@@ -1,6 +1,34 @@
 import { screen } from '@testing-library/react'
+import { Effects, Glitch } from '@isonimus/glitch-js'
 import { GlitchPortrait } from './GlitchPortrait'
 import { renderWithProviders } from '../../test/render'
+
+const { glitchMock, GlitchMock } = vi.hoisted(() => {
+  const mock = {
+    start: vi.fn(),
+    stop: vi.fn(),
+    destroy: vi.fn(),
+  }
+  class MockGlitch {
+    start = mock.start
+    stop = mock.stop
+    destroy = mock.destroy
+  }
+  return { glitchMock: mock, GlitchMock: MockGlitch }
+})
+
+vi.mock('@isonimus/glitch-js', () => ({
+  Glitch: vi.fn(GlitchMock),
+  Effects: {
+    rgbSplit: vi.fn(() => ({ name: 'rgbSplit' })),
+    slice: vi.fn(() => ({ name: 'slice' })),
+    shake: vi.fn(() => ({ name: 'shake' })),
+  },
+}))
+
+beforeEach(() => {
+  vi.clearAllMocks()
+})
 
 const props = {
   src: 'portrait.webp',
@@ -9,14 +37,14 @@ const props = {
   reducedMotion: false,
 }
 
-it('renders a 20x20 decorative grid with one accessible portrait', () => {
+it('renders one accessible portrait without the old decorative grid', () => {
   renderWithProviders(<GlitchPortrait {...props} />)
   expect(screen.getByRole('img', { name: 'Profile portrait' })).toHaveAttribute(
     'src',
     'portrait.webp',
   )
   expect(screen.getAllByRole('img')).toHaveLength(1)
-  expect(document.querySelectorAll('.portrait-glitch-cell')).toHaveLength(400)
+  expect(document.querySelectorAll('.portrait-glitch-cell')).toHaveLength(0)
   expect(
     document.querySelectorAll(
       '.portrait-glitch-slice, .portrait-glitch-block, .portrait-glitch-rgb',
@@ -24,51 +52,41 @@ it('renders a 20x20 decorative grid with one accessible portrait', () => {
   ).toHaveLength(0)
 })
 
-it('renders the mobile 10x10 grid', () => {
-  vi.stubGlobal('matchMedia', () => ({
-    matches: true,
-    addEventListener: vi.fn(),
-    removeEventListener: vi.fn(),
-  }))
-  renderWithProviders(<GlitchPortrait {...props} />)
-  expect(document.querySelectorAll('.portrait-glitch-cell')).toHaveLength(100)
-  vi.unstubAllGlobals()
-})
-
-it('runs a long burst while keeping the base image style unchanged', () => {
-  vi.useFakeTimers()
-  vi.spyOn(Math, 'random').mockReturnValue(0.5)
+it('starts the always-active configured effect while keeping the base image unchanged', () => {
   renderWithProviders(<GlitchPortrait {...props} active />)
   const baseImage = screen.getByRole('img', { name: 'Profile portrait' })
   const baseStyle = baseImage.getAttribute('style')
-  vi.advanceTimersByTime(950)
-  expect(document.querySelector('.portrait-glitch')).toHaveClass('is-glitching')
-  expect(
-    [...document.querySelectorAll<HTMLElement>('.portrait-glitch-cell')].some(
-      (cell) => Number(cell.style.opacity) > 0,
-    ),
-  ).toBe(true)
-  expect(baseImage.getAttribute('style')).toBe(baseStyle)
-  vi.advanceTimersByTime(1800)
-  expect(document.querySelector('.portrait-glitch')).not.toHaveClass(
-    'is-glitching',
+  expect(Glitch).toHaveBeenCalledWith(
+    baseImage,
+    expect.objectContaining({ trigger: 'always', active: true }),
   )
-  expect(
-    [...document.querySelectorAll<HTMLElement>('.portrait-glitch-cell')].every(
-      (cell) => cell.style.opacity === '0',
-    ),
-  ).toBe(true)
-  vi.restoreAllMocks()
-  vi.useRealTimers()
+  expect(Effects.rgbSplit).toHaveBeenCalledWith({
+    maxOffset: 30,
+    frequency: 1,
+    blendMode: 'screen',
+  })
+  expect(Effects.slice).toHaveBeenCalledWith({
+    maxOffset: 60,
+    frequency: 0.05,
+  })
+  expect(Effects.shake).toHaveBeenCalledWith({
+    amplitudeX: 11,
+    amplitudeY: 15,
+    frequency: 0.05,
+  })
+  expect(baseImage.getAttribute('style')).toBe(baseStyle)
+})
+
+it('destroys Glitch.js when an active portrait unmounts', () => {
+  const { unmount } = renderWithProviders(<GlitchPortrait {...props} active />)
+  unmount()
+  expect(glitchMock.destroy).toHaveBeenCalledTimes(1)
 })
 
 it('does not schedule bursts for reduced motion and cleans up on unmount', () => {
-  vi.useFakeTimers()
   const { unmount } = renderWithProviders(
     <GlitchPortrait {...props} active reducedMotion />,
   )
-  expect(vi.getTimerCount()).toBe(0)
   unmount()
-  expect(vi.getTimerCount()).toBe(0)
-  vi.useRealTimers()
+  expect(glitchMock.destroy).not.toHaveBeenCalled()
 })

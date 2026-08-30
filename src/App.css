@@ -309,29 +309,6 @@ p {
   position: relative;
   z-index: 1;
 }
-.portrait-glitch-cell {
-  position: absolute;
-  z-index: 2;
-  pointer-events: none;
-  inset: auto;
-  overflow: hidden;
-  opacity: 0;
-  will-change: transform, opacity;
-  box-shadow: 0 0 8px rgba(126, 240, 255, 0.2);
-}
-.portrait-glitch-cell img {
-  position: absolute;
-  left: var(--cell-source-x, 0);
-  top: var(--cell-source-y, 0);
-  width: var(--cell-source-width, 100%);
-  height: var(--cell-source-height, 100%);
-  max-width: none;
-}
-@media (prefers-reduced-motion: reduce) {
-  .portrait-glitch-cell {
-    display: none;
-  }
-}
 .frame-label {
   position: absolute;
   bottom: 12px;
@@ -790,10 +767,14 @@ p {
 .loading-query-line {
   gap: 10px;
   position: relative;
+  min-width: 0;
 }
 .loading-query-line input {
-  min-width: 0;
-  flex: 0 1 auto;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
   border: 0;
   outline: 0;
   color: var(--cyan);
@@ -803,9 +784,16 @@ p {
 }
 .loading-query-cursor {
   color: var(--cyan);
-  flex: 0 0 auto;
+}
+.loading-query-display {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--cyan);
+  white-space: nowrap;
+  text-overflow: clip;
 }
 .loading-query-line button {
+  margin-left: auto;
   border: 1px solid rgba(167, 243, 246, 0.24);
   color: #66777d;
   background: transparent;

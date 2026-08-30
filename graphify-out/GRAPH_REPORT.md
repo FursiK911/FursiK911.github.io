@@ -1,18 +1,19 @@
-# Graph Report - C:\Work\fursik.github.io (2026-08-30)
+# Graph Report - fursik.github.io (2026-08-30)
 
 ## Corpus Check
 
-- cluster-only mode — file stats not available
+- 77 files · ~20,887 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
 
-- 374 nodes · 574 edges · 31 communities (21 shown, 10 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.67)
+- 382 nodes · 561 edges · 30 communities (20 shown, 10 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.69)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
 
-- Built from commit: `aacc886f`
+- Built from commit: `b22dfa69`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -21,7 +22,7 @@
 - App.tsx
 - devDependencies
 - loadingAnimation.ts
-- usePortraitGlitch.ts
+- Hero.tsx
 - scripts
 - compilerOptions
 - Projects.tsx
@@ -30,8 +31,7 @@
 - 2026-08-27
 - dependencies
 - 2026-08-29
-- Hero.tsx
-- KonamiDebug.tsx
+- i18n.ts
 - AI Agent Change Log Index
 - useIntro.ts
 - Quality Validation
@@ -48,16 +48,16 @@
 
 ## God Nodes (most connected - your core abstractions)
 
-1. `renderWithProviders()` - 19 edges
-2. `compilerOptions` - 18 edges
-3. `2026-08-30` - 17 edges
+1. `2026-08-30` - 36 edges
+2. `renderWithProviders()` - 20 edges
+3. `compilerOptions` - 18 edges
 4. `2026-08-27` - 16 edges
 5. `compilerOptions` - 15 edges
 6. `scripts` - 14 edges
-7. `Project` - 8 edges
-8. `2026-08-29` - 8 edges
-9. `useLoadingAnimationSpeed()` - 8 edges
-10. `useLoadingSequence()` - 8 edges
+7. `useLoadingAnimationSpeed()` - 8 edges
+8. `Project` - 8 edges
+9. `useLoadingSequence()` - 8 edges
+10. `2026-08-29` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
 
@@ -69,8 +69,8 @@
   AGENTS.md → agent-logs/DECISIONS.md
 - `Change Log Governance` --implements--> `AI Agent Change Log Index` [INFERRED]
   AGENTS.md → agent-logs/README.md
-- `ProjectCardProps` --references--> `Project` [EXTRACTED]
-  src/components/projects/ProjectCard.tsx → src/data.ts
+- `renderReadyApp()` --calls--> `renderWithProviders()` [EXTRACTED]
+  src/app/App.test.tsx → src/test/render.tsx
 
 ## Import Cycles
 
@@ -81,12 +81,12 @@
 - **Portfolio Scaffold Governance Flow** — agents_project_baseline, agents_quality_gate, agents_change_log_governance, agents_graphify_policy, agent_logs_2026_08_2026_08_25_scaffold_initialization [INFERRED 0.85]
 - **GitHub Pages Delivery Pipeline** — github_workflows_deploy_build_job, github_workflows_deploy_deploy_job, github_workflows_deploy_github_pages_deployment [EXTRACTED 1.00]
 
-## Communities (31 total, 10 thin omitted)
+## Communities (30 total, 10 thin omitted)
 
 ### Community 0 - "App.tsx"
 
-Cohesion: 0.07
-Nodes (29): App(), sectionIds, Footer(), Header(), HeaderProps, sectionIds, baseProps, SectionHeading() (+21 more)
+Cohesion: 0.10
+Nodes (20): App(), sectionIds, renderReadyApp(), KonamiDebug(), Footer(), SectionHeading(), SectionHeadingProps, About() (+12 more)
 
 ### Community 1 - "devDependencies"
 
@@ -95,13 +95,13 @@ Nodes (49): eslint, eslint-config-prettier, @eslint/js, eslint-plugin-jsx-a11y, 
 
 ### Community 2 - "loadingAnimation.ts"
 
-Cohesion: 0.14
-Nodes (24): LoadingAnimationDebug(), LoadingAnimationDebugProps, LoadingScreen(), LoadingScreenProps, phaseLabel(), armTimer(), getLoadingAnimationSpeed(), listeners (+16 more)
+Cohesion: 0.12
+Nodes (25): LoadingAnimationDebug(), LoadingAnimationDebugProps, LoadingScreen(), LoadingScreenProps, phaseLabel(), baseProps, armTimer(), getLoadingAnimationSpeed() (+17 more)
 
-### Community 3 - "usePortraitGlitch.ts"
+### Community 3 - "Hero.tsx"
 
-Cohesion: 0.14
-Nodes (21): GlitchPortrait(), GlitchPortraitProps, props, chooseGlitchLevel(), portraitGlitchConfig, PortraitGlitchLevel, randomBetween(), between() (+13 more)
+Cohesion: 0.16
+Nodes (11): GlitchPortrait(), GlitchPortraitProps, { glitchMock, GlitchMock }, props, Hero(), heroItemVariants, HeroProps, TypingText() (+3 more)
 
 ### Community 4 - "scripts"
 
@@ -115,13 +115,13 @@ Nodes (24): DOM, src, vite/client, vitest/globals, compilerOptions, allowArbitra
 
 ### Community 6 - "Projects.tsx"
 
-Cohesion: 0.24
-Nodes (12): filters, ProjectCard(), ProjectCardProps, ProjectDetails(), ProjectDetailsProps, ProjectFilters(), ProjectFiltersProps, Project (+4 more)
+Cohesion: 0.19
+Nodes (16): filters, ProjectCard(), ProjectCardProps, ProjectDetails(), ProjectDetailsProps, ProjectFilters(), ProjectFiltersProps, Projects() (+8 more)
 
 ### Community 7 - "2026-08-30"
 
-Cohesion: 0.10
-Nodes (19): 00:06 +03:00 — Configuration-driven loader speed controls, 00:14 +03:00 — Candidate list overflow fix, 00:17 +03:00 — Fixed loader terminal height, 00:27 +03:00 — Added verified final candidate stage, 00:30 +03:00 — Matched candidate uses normal spawn cadence, 00:42 +03:00 — Added candidate scan loop, 00:42 +03:00 — Fixed site header, 00:45 +03:00 — Added candidate scan status indicator (+11 more)
+Cohesion: 0.04
+Nodes (45): 00:06 +03:00 — Configuration-driven loader speed controls, 00:14 +03:00 — Candidate list overflow fix, 00:17 +03:00 — Fixed loader terminal height, 00:27 +03:00 — Added verified final candidate stage, 00:30 +03:00 — Matched candidate uses normal spawn cadence, 00:42 +03:00 — Added candidate scan loop, 00:42 +03:00 — Fixed site header, 00:45 +03:00 — Added candidate scan status indicator (+37 more)
 
 ### Community 8 - "compilerOptions"
 
@@ -135,23 +135,18 @@ Nodes (16): 01:50 +03:00 — [remote] Confirm the private GitHub destination, 01
 
 ### Community 10 - "dependencies"
 
-Cohesion: 0.12
-Nodes (17): i18next, i18next-browser-languagedetector, @mantine/core, @mantine/hooks, motion, dependencies, i18next, i18next-browser-languagedetector (+9 more)
+Cohesion: 0.11
+Nodes (19): i18next, i18next-browser-languagedetector, @isonimus/glitch-js, @mantine/core, @mantine/hooks, motion, dependencies, i18next (+11 more)
 
 ### Community 11 - "2026-08-29"
 
 Cohesion: 0.22
 Nodes (8): 2026-08-29, 21:10 +03:00 — [ui] Add synchronized typing roles to Header and Hero, 21:13 +03:00 — [i18n] Localize the Header name, 22:56 +03:00 — [governance] Require grilling in Plan Mode, 23:32 +03:00 — [feature] Add cyberpunk personnel search loader, 23:52 +03:00 — [config] Temporarily replay and slow the loader, Decision DEC-20260829-01, Decision DEC-20260829-02
 
-### Community 12 - "Hero.tsx"
+### Community 12 - "i18n.ts"
 
-Cohesion: 0.31
-Nodes (5): Hero(), heroItemVariants, HeroProps, TypingText(), TypingTextProps
-
-### Community 13 - "KonamiDebug.tsx"
-
-Cohesion: 0.52
-Nodes (3): KonamiDebug(), KONAMI_CODE, useKonamiCode()
+Cohesion: 0.26
+Nodes (8): Header(), HeaderProps, sectionIds, changeLanguage(), LANGUAGE_STORAGE_KEY, resources, SupportedLanguage, supportedLanguages
 
 ### Community 14 - "AI Agent Change Log Index"
 
@@ -170,7 +165,7 @@ Nodes (3): Build Job, Deploy Job, GitHub Pages Deployment
 
 ## Knowledge Gaps
 
-- **164 isolated node(s):** `name`, `private`, `version`, `type`, `node` (+159 more)
+- **180 isolated node(s):** `name`, `private`, `version`, `type`, `node` (+175 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -181,14 +176,14 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `devDependencies` connect `devDependencies` to `scripts`?**
   _High betweenness centrality (0.046) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `dependencies` to `scripts`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _164 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _180 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `App.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.07017543859649122 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09797979797979799 - nodes in this community are weakly interconnected._
 - **Should `devDependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.04081632653061224 - nodes in this community are weakly interconnected._
 - **Should `loadingAnimation.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.14015151515151514 - nodes in this community are weakly interconnected._
-- **Should `usePortraitGlitch.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.13793103448275862 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.12380952380952381 - nodes in this community are weakly interconnected._
+- **Should `scripts` be split into smaller, more focused modules?**
+  _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._

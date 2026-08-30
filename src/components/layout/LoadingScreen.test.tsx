@@ -47,7 +47,7 @@ it('renders the terminal, query and candidate rows', () => {
   expect(screen.getAllByText('SCANNING DATABASE...')).toHaveLength(3)
 })
 
-it('shows the decorative typing caret only while the query is being typed', () => {
+it('shows the decorative typing caret through the loading sequence', () => {
   const view = renderWithProviders(
     <LoadingScreen {...baseProps} phase="typing" />,
   )
@@ -57,6 +57,9 @@ it('shows the decorative typing caret only while the query is being typed', () =
   expect(typingInput).toHaveAttribute('tabindex', '-1')
 
   view.rerender(<LoadingScreen {...baseProps} phase="searching" />)
+  expect(screen.getByText('|')).toHaveClass('typing-cursor')
+
+  view.rerender(<LoadingScreen {...baseProps} phase="complete" />)
   expect(screen.queryByText('|')).not.toBeInTheDocument()
 })
 
