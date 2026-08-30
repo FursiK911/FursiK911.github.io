@@ -6,13 +6,13 @@
 
 ## Summary
 
-- 373 nodes · 571 edges · 31 communities (21 shown, 10 thin omitted)
+- 374 nodes · 574 edges · 31 communities (21 shown, 10 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.67)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
 
-- Built from commit: `e158bde0`
+- Built from commit: `aacc886f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -29,8 +29,8 @@
 - compilerOptions
 - 2026-08-27
 - dependencies
-- Hero.tsx
 - 2026-08-29
+- Hero.tsx
 - KonamiDebug.tsx
 - AI Agent Change Log Index
 - useIntro.ts
@@ -85,8 +85,8 @@
 
 ### Community 0 - "App.tsx"
 
-Cohesion: 0.09
-Nodes (22): App(), sectionIds, Footer(), SectionHeading(), SectionHeadingProps, Projects(), About(), Contact() (+14 more)
+Cohesion: 0.07
+Nodes (29): App(), sectionIds, Footer(), Header(), HeaderProps, sectionIds, baseProps, SectionHeading() (+21 more)
 
 ### Community 1 - "devDependencies"
 
@@ -95,13 +95,13 @@ Nodes (49): eslint, eslint-config-prettier, @eslint/js, eslint-plugin-jsx-a11y, 
 
 ### Community 2 - "loadingAnimation.ts"
 
-Cohesion: 0.12
-Nodes (25): LoadingAnimationDebug(), LoadingAnimationDebugProps, LoadingScreen(), LoadingScreenProps, phaseLabel(), baseProps, armTimer(), getLoadingAnimationSpeed() (+17 more)
+Cohesion: 0.14
+Nodes (24): LoadingAnimationDebug(), LoadingAnimationDebugProps, LoadingScreen(), LoadingScreenProps, phaseLabel(), armTimer(), getLoadingAnimationSpeed(), listeners (+16 more)
 
 ### Community 3 - "usePortraitGlitch.ts"
 
 Cohesion: 0.14
-Nodes (20): GlitchPortrait(), GlitchPortraitProps, props, chooseGlitchLevel(), portraitGlitchConfig, PortraitGlitchLevel, randomBetween(), between() (+12 more)
+Nodes (21): GlitchPortrait(), GlitchPortraitProps, props, chooseGlitchLevel(), portraitGlitchConfig, PortraitGlitchLevel, randomBetween(), between() (+13 more)
 
 ### Community 4 - "scripts"
 
@@ -115,8 +115,8 @@ Nodes (24): DOM, src, vite/client, vitest/globals, compilerOptions, allowArbitra
 
 ### Community 6 - "Projects.tsx"
 
-Cohesion: 0.21
-Nodes (15): filters, ProjectCard(), ProjectCardProps, ProjectDetails(), ProjectDetailsProps, ProjectFilters(), ProjectFiltersProps, cvUrl (+7 more)
+Cohesion: 0.24
+Nodes (12): filters, ProjectCard(), ProjectCardProps, ProjectDetails(), ProjectDetailsProps, ProjectFilters(), ProjectFiltersProps, Project (+4 more)
 
 ### Community 7 - "2026-08-30"
 
@@ -138,15 +138,15 @@ Nodes (16): 01:50 +03:00 — [remote] Confirm the private GitHub destination, 01
 Cohesion: 0.12
 Nodes (17): i18next, i18next-browser-languagedetector, @mantine/core, @mantine/hooks, motion, dependencies, i18next, i18next-browser-languagedetector (+9 more)
 
-### Community 11 - "Hero.tsx"
-
-Cohesion: 0.21
-Nodes (8): Hero(), heroItemVariants, HeroProps, Header(), HeaderProps, sectionIds, TypingText(), TypingTextProps
-
-### Community 12 - "2026-08-29"
+### Community 11 - "2026-08-29"
 
 Cohesion: 0.22
 Nodes (8): 2026-08-29, 21:10 +03:00 — [ui] Add synchronized typing roles to Header and Hero, 21:13 +03:00 — [i18n] Localize the Header name, 22:56 +03:00 — [governance] Require grilling in Plan Mode, 23:32 +03:00 — [feature] Add cyberpunk personnel search loader, 23:52 +03:00 — [config] Temporarily replay and slow the loader, Decision DEC-20260829-01, Decision DEC-20260829-02
+
+### Community 12 - "Hero.tsx"
+
+Cohesion: 0.31
+Nodes (5): Hero(), heroItemVariants, HeroProps, TypingText(), TypingTextProps
 
 ### Community 13 - "KonamiDebug.tsx"
 
@@ -179,16 +179,16 @@ Nodes (3): Build Job, Deploy Job, GitHub Pages Deployment
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `devDependencies` connect `devDependencies` to `scripts`?**
-  _High betweenness centrality (0.047) - this node is a cross-community bridge._
+  _High betweenness centrality (0.046) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `dependencies` to `scripts`?**
   _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
   _164 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `App.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.08979591836734693 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07017543859649122 - nodes in this community are weakly interconnected._
 - **Should `devDependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.04081632653061224 - nodes in this community are weakly interconnected._
 - **Should `loadingAnimation.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.12380952380952381 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.14015151515151514 - nodes in this community are weakly interconnected._
 - **Should `usePortraitGlitch.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.1402116402116402 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.13793103448275862 - nodes in this community are weakly interconnected._

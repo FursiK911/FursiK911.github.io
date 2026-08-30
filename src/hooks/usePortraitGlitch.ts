@@ -68,6 +68,9 @@ export function usePortraitGlitch(
     let tickTimeout = 0
     let cancelled = false
     let firstBurst = true
+    const frameCache = Array.from({ length: 50 }, () =>
+      generatePortraitGlitchFrame(refs.gridSize),
+    )
     const schedule = () => {
       const pause = firstBurst
         ? randomBetween(
@@ -88,7 +91,9 @@ export function usePortraitGlitch(
         let burstEnded = false
         const tick = () => {
           if (cancelled || burstEnded) return
-          applyFrame(generatePortraitGlitchFrame(refs.gridSize), refs)
+          const frame =
+            frameCache[Math.floor(Math.random() * frameCache.length)]
+          applyFrame(frame, refs)
           tickTimeout = window.setTimeout(
             tick,
             randomBetween(

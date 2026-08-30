@@ -50,11 +50,6 @@ export function LoadingScreen({
   const visible = phase !== 'complete'
   const statusText = phaseLabel(phase, t)
   const candidatesRef = useRef<HTMLDivElement>(null)
-  const queryInputRef = useRef<HTMLInputElement>(null)
-
-  useEffect(() => {
-    if (phase === 'typing') queryInputRef.current?.focus()
-  }, [phase])
 
   useEffect(() => {
     if (candidates.length === 0 || typeof window === 'undefined') return
@@ -144,13 +139,20 @@ export function LoadingScreen({
               <div className="loading-query-line">
                 <input
                   id="loading-query"
-                  className={phase === 'typing' ? 'is-caret-active' : ''}
                   value={queryText}
-                  ref={queryInputRef}
+                  size={Math.max(queryText.length, 1)}
                   readOnly
                   tabIndex={-1}
                   aria-label={t('loader.queryLabel')}
                 />
+                {phase === 'typing' && (
+                  <span
+                    className="typing-cursor loading-query-cursor"
+                    aria-hidden="true"
+                  >
+                    |
+                  </span>
+                )}
                 <button
                   type="button"
                   className={buttonActive ? 'is-active' : ''}

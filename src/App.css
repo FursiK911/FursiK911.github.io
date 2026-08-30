@@ -793,17 +793,17 @@ p {
 }
 .loading-query-line input {
   min-width: 0;
-  flex: 1;
+  flex: 0 1 auto;
   border: 0;
   outline: 0;
   color: var(--cyan);
   background: transparent;
   font: inherit;
   letter-spacing: 0.04em;
-  caret-color: transparent;
 }
-.loading-query-line input.is-caret-active {
-  caret-color: var(--cyan);
+.loading-query-cursor {
+  color: var(--cyan);
+  flex: 0 0 auto;
 }
 .loading-query-line button {
   border: 1px solid rgba(167, 243, 246, 0.24);

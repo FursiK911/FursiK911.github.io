@@ -14,6 +14,12 @@ it('generates a desktop frame with 2–10% active cells', () => {
       (cell) => Math.abs(cell.offsetX) <= 12 && Math.abs(cell.offsetY) <= 8,
     ),
   ).toBe(true)
+  expect(frame.groups.length).toBeGreaterThanOrEqual(2)
+  expect(frame.groups.length).toBeLessThanOrEqual(6)
+  expect(
+    frame.groups.every((group) => group.length >= 1 && group.length <= 6),
+  ).toBe(true)
+  expect(new Set(frame.groups.flat()).size).toBe(frame.cells.length)
 })
 
 it('generates a mobile frame with 1–3 active cells and bounded duration', () => {

@@ -1195,8 +1195,8 @@
       "source_file": "src/components/projects/ProjectCard.test.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 0,
-      "community_name": "App.tsx",
+      "community": 6,
+      "community_name": "Projects.tsx",
       "norm_label": "projectcard.test.tsx",
       "id": "src_components_projects_projectcard_test"
     },
@@ -1239,8 +1239,8 @@
       "source_file": "src/components/projects/ProjectDetails.test.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 0,
-      "community_name": "App.tsx",
+      "community": 6,
+      "community_name": "Projects.tsx",
       "norm_label": "projectdetails.test.tsx",
       "id": "src_components_projects_projectdetails_test"
     },
@@ -1547,8 +1547,8 @@
       "source_file": "src/data.ts",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 6,
-      "community_name": "Projects.tsx",
+      "community": 0,
+      "community_name": "App.tsx",
       "norm_label": "cvurl",
       "id": "src_data_cvurl"
     },
@@ -1569,8 +1569,8 @@
       "source_file": "src/data.ts",
       "source_location": "L158",
       "_origin": "ast",
-      "community": 6,
-      "community_name": "Projects.tsx",
+      "community": 0,
+      "community_name": "App.tsx",
       "norm_label": "experiences",
       "id": "src_data_experiences"
     },
@@ -1580,8 +1580,8 @@
       "source_file": "src/data.ts",
       "source_location": "L191",
       "_origin": "ast",
-      "community": 6,
-      "community_name": "Projects.tsx",
+      "community": 0,
+      "community_name": "App.tsx",
       "norm_label": "skillgroups",
       "id": "src_data_skillgroups"
     },
@@ -2559,7 +2559,7 @@
       "source_file": "agent-logs/2026/08/2026-08-29.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "2026-08-29",
       "norm_label": "2026-08-29.md",
       "id": "agent_logs_2026_08_2026_08_29"
@@ -2570,7 +2570,7 @@
       "source_file": "agent-logs/2026/08/2026-08-29.md",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "2026-08-29",
       "norm_label": "2026-08-29",
       "id": "agent_logs_2026_08_2026_08_29_2026_08_29"
@@ -2581,7 +2581,7 @@
       "source_file": "agent-logs/2026/08/2026-08-29.md",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "2026-08-29",
       "norm_label": "23:52 +03:00 \u2014 [config] temporarily replay and slow the loader",
       "id": "agent_logs_2026_08_2026_08_29_23_52_03_00_config_temporarily_replay_and_slow_the_loader"
@@ -2592,7 +2592,7 @@
       "source_file": "agent-logs/2026/08/2026-08-29.md",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "2026-08-29",
       "norm_label": "23:32 +03:00 \u2014 [feature] add cyberpunk personnel search loader",
       "id": "agent_logs_2026_08_2026_08_29_23_32_03_00_feature_add_cyberpunk_personnel_search_loader"
@@ -2603,7 +2603,7 @@
       "source_file": "agent-logs/2026/08/2026-08-29.md",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "2026-08-29",
       "norm_label": "decision dec-20260829-02",
       "id": "agent_logs_2026_08_2026_08_29_decision_dec_20260829_02"
@@ -2614,7 +2614,7 @@
       "source_file": "agent-logs/2026/08/2026-08-29.md",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "2026-08-29",
       "norm_label": "22:56 +03:00 \u2014 [governance] require grilling in plan mode",
       "id": "agent_logs_2026_08_2026_08_29_22_56_03_00_governance_require_grilling_in_plan_mode"
@@ -2625,7 +2625,7 @@
       "source_file": "agent-logs/2026/08/2026-08-29.md",
       "source_location": "L42",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "2026-08-29",
       "norm_label": "decision dec-20260829-01",
       "id": "agent_logs_2026_08_2026_08_29_decision_dec_20260829_01"
@@ -2636,7 +2636,7 @@
       "source_file": "agent-logs/2026/08/2026-08-29.md",
       "source_location": "L47",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "2026-08-29",
       "norm_label": "21:10 +03:00 \u2014 [ui] add synchronized typing roles to header and hero",
       "id": "agent_logs_2026_08_2026_08_29_21_10_03_00_ui_add_synchronized_typing_roles_to_header_and_hero"
@@ -2647,7 +2647,7 @@
       "source_file": "agent-logs/2026/08/2026-08-29.md",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "2026-08-29",
       "norm_label": "21:13 +03:00 \u2014 [i18n] localize the header name",
       "id": "agent_logs_2026_08_2026_08_29_21_13_03_00_i18n_localize_the_header_name"
@@ -3257,7 +3257,7 @@
       "source_file": "src/components/hero/Hero.test.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
+      "community": 12,
       "norm_label": "hero.test.tsx",
       "community_name": "Hero.tsx",
       "id": "src_components_hero_hero_test"
@@ -3268,7 +3268,7 @@
       "source_file": "src/components/hero/Hero.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
+      "community": 12,
       "norm_label": "hero.tsx",
       "community_name": "Hero.tsx",
       "id": "src_components_hero_hero"
@@ -3279,7 +3279,7 @@
       "source_file": "src/components/hero/Hero.tsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 11,
+      "community": 12,
       "norm_label": "heroprops",
       "community_name": "Hero.tsx",
       "id": "src_components_hero_hero_heroprops"
@@ -3290,7 +3290,7 @@
       "source_file": "src/components/hero/Hero.tsx",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 11,
+      "community": 12,
       "norm_label": "hero()",
       "community_name": "Hero.tsx",
       "id": "src_components_hero_hero_hero"
@@ -3301,7 +3301,7 @@
       "source_file": "src/components/hero/Hero.tsx",
       "source_location": "L85",
       "_origin": "ast",
-      "community": 11,
+      "community": 12,
       "norm_label": "heroitemvariants",
       "community_name": "Hero.tsx",
       "id": "src_components_hero_hero_heroitemvariants"
@@ -3323,9 +3323,9 @@
       "source_file": "src/components/layout/Header.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
+      "community": 0,
       "norm_label": "header.tsx",
-      "community_name": "Hero.tsx",
+      "community_name": "App.tsx",
       "id": "src_components_layout_header"
     },
     {
@@ -3334,9 +3334,9 @@
       "source_file": "src/components/layout/Header.tsx",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 11,
+      "community": 0,
       "norm_label": "sectionids",
-      "community_name": "Hero.tsx",
+      "community_name": "App.tsx",
       "id": "src_components_layout_header_sectionids"
     },
     {
@@ -3345,9 +3345,9 @@
       "source_file": "src/components/layout/Header.tsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 11,
+      "community": 0,
       "norm_label": "headerprops",
-      "community_name": "Hero.tsx",
+      "community_name": "App.tsx",
       "id": "src_components_layout_header_headerprops"
     },
     {
@@ -3356,9 +3356,9 @@
       "source_file": "src/components/layout/Header.tsx",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 11,
+      "community": 0,
       "norm_label": "header()",
-      "community_name": "Hero.tsx",
+      "community_name": "App.tsx",
       "id": "src_components_layout_header_header"
     },
     {
@@ -3367,9 +3367,9 @@
       "source_file": "src/components/layout/LoadingScreen.test.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 2,
+      "community": 0,
       "norm_label": "loadingscreen.test.tsx",
-      "community_name": "loadingAnimation.ts",
+      "community_name": "App.tsx",
       "id": "src_components_layout_loadingscreen_test"
     },
     {
@@ -3378,9 +3378,9 @@
       "source_file": "src/components/layout/LoadingScreen.test.tsx",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 2,
+      "community": 0,
       "norm_label": "baseprops",
-      "community_name": "loadingAnimation.ts",
+      "community_name": "App.tsx",
       "id": "src_components_layout_loadingscreen_test_baseprops"
     },
     {
@@ -3389,9 +3389,9 @@
       "source_file": "src/components/layout/LoadingScreen.test.tsx",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 2,
+      "community": 0,
       "norm_label": "mobilemedia()",
-      "community_name": "loadingAnimation.ts",
+      "community_name": "App.tsx",
       "id": "src_components_layout_loadingscreen_test_mobilemedia"
     },
     {
@@ -3444,7 +3444,7 @@
       "source_file": "src/components/layout/TypingText.test.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
+      "community": 12,
       "norm_label": "typingtext.test.tsx",
       "community_name": "Hero.tsx",
       "id": "src_components_layout_typingtext_test"
@@ -3455,7 +3455,7 @@
       "source_file": "src/components/layout/TypingText.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
+      "community": 12,
       "norm_label": "typingtext.tsx",
       "community_name": "Hero.tsx",
       "id": "src_components_layout_typingtext"
@@ -3466,7 +3466,7 @@
       "source_file": "src/components/layout/TypingText.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
+      "community": 12,
       "norm_label": "typingtextprops",
       "community_name": "Hero.tsx",
       "id": "src_components_layout_typingtext_typingtextprops"
@@ -3477,7 +3477,7 @@
       "source_file": "src/components/layout/TypingText.tsx",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 11,
+      "community": 12,
       "norm_label": "typingtext()",
       "community_name": "Hero.tsx",
       "id": "src_components_layout_typingtext_typingtext"
@@ -3879,6 +3879,72 @@
       "id": "src_i18n_changelanguage"
     },
     {
+      "label": "GlitchPortrait.tsx",
+      "file_type": "code",
+      "source_file": "src/components/hero/GlitchPortrait.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "glitchportrait.tsx",
+      "community_name": "usePortraitGlitch.ts",
+      "id": "src_components_hero_glitchportrait"
+    },
+    {
+      "label": "GlitchPortraitProps",
+      "file_type": "code",
+      "source_file": "src/components/hero/GlitchPortrait.tsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "glitchportraitprops",
+      "community_name": "usePortraitGlitch.ts",
+      "id": "src_components_hero_glitchportrait_glitchportraitprops"
+    },
+    {
+      "label": "GlitchPortrait()",
+      "file_type": "code",
+      "source_file": "src/components/hero/GlitchPortrait.tsx",
+      "source_location": "L12",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "glitchportrait()",
+      "community_name": "usePortraitGlitch.ts",
+      "id": "src_components_hero_glitchportrait_glitchportrait"
+    },
+    {
+      "label": "About.test.tsx",
+      "file_type": "code",
+      "source_file": "src/components/sections/About.test.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "about.test.tsx",
+      "community_name": "App.tsx",
+      "id": "src_components_sections_about_test"
+    },
+    {
+      "label": "Contact.test.tsx",
+      "file_type": "code",
+      "source_file": "src/components/sections/Contact.test.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "contact.test.tsx",
+      "community_name": "App.tsx",
+      "id": "src_components_sections_contact_test"
+    },
+    {
+      "label": "portraitGlitch.test.ts",
+      "file_type": "code",
+      "source_file": "src/config/portraitGlitch.test.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "portraitglitch.test.ts",
+      "community_name": "usePortraitGlitch.ts",
+      "id": "src_config_portraitglitch_test"
+    },
+    {
       "label": "GlitchPortrait.test.tsx",
       "file_type": "code",
       "source_file": "src/components/hero/GlitchPortrait.test.tsx",
@@ -3898,72 +3964,6 @@
       "community": 3,
       "norm_label": "props",
       "id": "src_components_hero_glitchportrait_test_props",
-      "community_name": "usePortraitGlitch.ts"
-    },
-    {
-      "label": "GlitchPortrait.tsx",
-      "file_type": "code",
-      "source_file": "src/components/hero/GlitchPortrait.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "glitchportrait.tsx",
-      "id": "src_components_hero_glitchportrait",
-      "community_name": "usePortraitGlitch.ts"
-    },
-    {
-      "label": "GlitchPortraitProps",
-      "file_type": "code",
-      "source_file": "src/components/hero/GlitchPortrait.tsx",
-      "source_location": "L5",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "glitchportraitprops",
-      "id": "src_components_hero_glitchportrait_glitchportraitprops",
-      "community_name": "usePortraitGlitch.ts"
-    },
-    {
-      "label": "GlitchPortrait()",
-      "file_type": "code",
-      "source_file": "src/components/hero/GlitchPortrait.tsx",
-      "source_location": "L12",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "glitchportrait()",
-      "id": "src_components_hero_glitchportrait_glitchportrait",
-      "community_name": "usePortraitGlitch.ts"
-    },
-    {
-      "label": "About.test.tsx",
-      "file_type": "code",
-      "source_file": "src/components/sections/About.test.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "about.test.tsx",
-      "id": "src_components_sections_about_test",
-      "community_name": "App.tsx"
-    },
-    {
-      "label": "Contact.test.tsx",
-      "file_type": "code",
-      "source_file": "src/components/sections/Contact.test.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "contact.test.tsx",
-      "id": "src_components_sections_contact_test",
-      "community_name": "App.tsx"
-    },
-    {
-      "label": "portraitGlitch.test.ts",
-      "file_type": "code",
-      "source_file": "src/config/portraitGlitch.test.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "portraitglitch.test.ts",
-      "id": "src_config_portraitglitch_test",
       "community_name": "usePortraitGlitch.ts"
     },
     {
@@ -4058,7 +4058,7 @@
       "label": "PortraitGlitchFrame",
       "file_type": "code",
       "source_file": "src/config/portraitGlitchFrame.ts",
-      "source_location": "L15",
+      "source_location": "L14",
       "_origin": "ast",
       "community": 3,
       "norm_label": "portraitglitchframe",
@@ -4069,7 +4069,7 @@
       "label": "RandomSource",
       "file_type": "code",
       "source_file": "src/config/portraitGlitchFrame.ts",
-      "source_location": "L21",
+      "source_location": "L20",
       "_origin": "ast",
       "community": 3,
       "norm_label": "randomsource",
@@ -4080,7 +4080,7 @@
       "label": "between()",
       "file_type": "code",
       "source_file": "src/config/portraitGlitchFrame.ts",
-      "source_location": "L23",
+      "source_location": "L21",
       "_origin": "ast",
       "community": 3,
       "norm_label": "between()",
@@ -4088,32 +4088,43 @@
       "community_name": "usePortraitGlitch.ts"
     },
     {
-      "label": "shuffled()",
+      "label": "pick()",
       "file_type": "code",
       "source_file": "src/config/portraitGlitchFrame.ts",
-      "source_location": "L26",
+      "source_location": "L23",
       "_origin": "ast",
       "community": 3,
-      "norm_label": "shuffled()",
-      "id": "src_config_portraitglitchframe_shuffled",
+      "norm_label": "pick()",
+      "id": "src_config_portraitglitchframe_pick",
       "community_name": "usePortraitGlitch.ts"
     },
     {
-      "label": "selectDistributedIndexes()",
+      "label": "neighbors()",
       "file_type": "code",
       "source_file": "src/config/portraitGlitchFrame.ts",
-      "source_location": "L29",
+      "source_location": "L25",
       "_origin": "ast",
       "community": 3,
-      "norm_label": "selectdistributedindexes()",
-      "id": "src_config_portraitglitchframe_selectdistributedindexes",
+      "norm_label": "neighbors()",
+      "id": "src_config_portraitglitchframe_neighbors",
+      "community_name": "usePortraitGlitch.ts"
+    },
+    {
+      "label": "growGroup()",
+      "file_type": "code",
+      "source_file": "src/config/portraitGlitchFrame.ts",
+      "source_location": "L35",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "growgroup()",
+      "id": "src_config_portraitglitchframe_growgroup",
       "community_name": "usePortraitGlitch.ts"
     },
     {
       "label": "generatePortraitGlitchFrame()",
       "file_type": "code",
       "source_file": "src/config/portraitGlitchFrame.ts",
-      "source_location": "L54",
+      "source_location": "L61",
       "_origin": "ast",
       "community": 3,
       "norm_label": "generateportraitglitchframe()",
@@ -10227,41 +10238,6 @@
       "target": "src_i18n_supportedlanguages"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/hero/GlitchPortrait.test.tsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_components_hero_glitchportrait_test",
-      "target": "src_components_hero_glitchportrait"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/hero/GlitchPortrait.test.tsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_components_hero_glitchportrait_test",
-      "target": "src_components_hero_glitchportrait_glitchportrait"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/hero/GlitchPortrait.test.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_components_hero_glitchportrait_test",
-      "target": "src_components_hero_glitchportrait_test_props"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/hero/GlitchPortrait.tsx",
@@ -10332,6 +10308,18 @@
       "target": "src_hooks_useportraitglitch_useportraitglitch"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/hero/GlitchPortrait.test.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_components_hero_glitchportrait_test",
+      "target": "src_components_hero_glitchportrait"
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -10342,6 +10330,18 @@
       "_origin": "ast",
       "source": "src_components_hero_glitchportrait_glitchportrait",
       "target": "src_hooks_useportraitglitch_useportraitglitch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/hero/GlitchPortrait.test.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_components_hero_glitchportrait_test",
+      "target": "src_components_hero_glitchportrait_glitchportrait"
     },
     {
       "relation": "imports_from",
@@ -10378,6 +10378,17 @@
       "confidence_score": 1.0,
       "source": "src_config_portraitglitch_test",
       "target": "src_config_portraitglitch_portraitglitchconfig"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/hero/GlitchPortrait.test.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_components_hero_glitchportrait_test",
+      "target": "src_components_hero_glitchportrait_test_props"
     },
     {
       "relation": "contains",
@@ -10489,7 +10500,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/hooks/usePortraitGlitch.ts",
-      "source_location": "L73",
+      "source_location": "L76",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_hooks_useportraitglitch_useportraitglitch",
@@ -10523,7 +10534,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/config/portraitGlitchFrame.ts",
-      "source_location": "L23",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
@@ -10534,12 +10545,45 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/config/portraitGlitchFrame.ts",
-      "source_location": "L54",
+      "source_location": "L61",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
       "source": "src_config_portraitglitchframe",
       "target": "src_config_portraitglitchframe_generateportraitglitchframe"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/portraitGlitchFrame.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_config_portraitglitchframe",
+      "target": "src_config_portraitglitchframe_growgroup"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/portraitGlitchFrame.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_config_portraitglitchframe",
+      "target": "src_config_portraitglitchframe_neighbors"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/portraitGlitchFrame.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_config_portraitglitchframe",
+      "target": "src_config_portraitglitchframe_pick"
     },
     {
       "relation": "contains",
@@ -10556,7 +10600,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/config/portraitGlitchFrame.ts",
-      "source_location": "L15",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
@@ -10567,34 +10611,12 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/config/portraitGlitchFrame.ts",
-      "source_location": "L21",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
       "source": "src_config_portraitglitchframe",
       "target": "src_config_portraitglitchframe_randomsource"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/config/portraitGlitchFrame.ts",
-      "source_location": "L29",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_config_portraitglitchframe",
-      "target": "src_config_portraitglitchframe_selectdistributedindexes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/config/portraitGlitchFrame.ts",
-      "source_location": "L26",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_config_portraitglitchframe",
-      "target": "src_config_portraitglitchframe_shuffled"
     },
     {
       "relation": "imports_from",
@@ -10625,7 +10647,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/config/portraitGlitchFrame.ts",
-      "source_location": "L66",
+      "source_location": "L74",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
@@ -10637,24 +10659,48 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/config/portraitGlitchFrame.ts",
-      "source_location": "L34",
+      "source_location": "L90",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "src_config_portraitglitchframe_selectdistributedindexes",
-      "target": "src_config_portraitglitchframe_shuffled"
+      "source": "src_config_portraitglitchframe_generateportraitglitchframe",
+      "target": "src_config_portraitglitchframe_pick"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/config/portraitGlitchFrame.ts",
-      "source_location": "L67",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_config_portraitglitchframe_growgroup",
+      "target": "src_config_portraitglitchframe_pick"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/portraitGlitchFrame.ts",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_config_portraitglitchframe_growgroup",
+      "target": "src_config_portraitglitchframe_neighbors"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/portraitGlitchFrame.ts",
+      "source_location": "L94",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
       "source": "src_config_portraitglitchframe_generateportraitglitchframe",
-      "target": "src_config_portraitglitchframe_selectdistributedindexes"
+      "target": "src_config_portraitglitchframe_growgroup"
     },
     {
       "relation": "imports",
@@ -10674,7 +10720,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/hooks/usePortraitGlitch.ts",
-      "source_location": "L91",
+      "source_location": "L72",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_hooks_useportraitglitch_useportraitglitch",
@@ -10775,7 +10821,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/hooks/usePortraitGlitch.ts",
-      "source_location": "L104",
+      "source_location": "L109",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
@@ -10787,7 +10833,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/hooks/usePortraitGlitch.ts",
-      "source_location": "L91",
+      "source_location": "L96",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
@@ -10825,5 +10871,5 @@
       "source_file": ".github/workflows/deploy.yml"
     }
   ],
-  "built_at_commit": "e158bde0a25af9407904f3cd19d0b24065343a37"
+  "built_at_commit": "aacc886f0c4062670f636bbf6ca84ea3996d851c"
 }

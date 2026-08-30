@@ -13,8 +13,8 @@ export const portraitGlitchConfig = {
   maxActivePercent: 10,
   burstMinDuration: 1200,
   burstMaxDuration: 1800,
-  cellMinInterval: 55,
-  cellMaxInterval: 130,
+  cellMinInterval: 200,
+  cellMaxInterval: 400,
 } as const
 
 export type PortraitGlitchLevel = 'micro' | 'normal' | 'strong'

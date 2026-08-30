@@ -47,20 +47,17 @@ it('renders the terminal, query and candidate rows', () => {
   expect(screen.getAllByText('SCANNING DATABASE...')).toHaveLength(3)
 })
 
-it('shows a native caret only while the query is being typed', () => {
+it('shows the decorative typing caret only while the query is being typed', () => {
   const view = renderWithProviders(
     <LoadingScreen {...baseProps} phase="typing" />,
   )
   const typingInput = screen.getByDisplayValue(baseProps.queryText)
-  expect(typingInput).toHaveClass('is-caret-active')
-  expect(document.activeElement).toBe(typingInput)
+  expect(screen.getByText('|')).toHaveClass('typing-cursor')
   expect(typingInput).toHaveAttribute('readonly')
   expect(typingInput).toHaveAttribute('tabindex', '-1')
 
   view.rerender(<LoadingScreen {...baseProps} phase="searching" />)
-  expect(screen.getByDisplayValue(baseProps.queryText)).not.toHaveClass(
-    'is-caret-active',
-  )
+  expect(screen.queryByText('|')).not.toBeInTheDocument()
 })
 
 it('renders the verified profile result', () => {
