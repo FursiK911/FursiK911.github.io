@@ -4,3 +4,4 @@ export type {
   ProjectLink,
   ProjectMedia,
 } from '../data'
+export type { ExperienceProject, WorkExperience } from '../data/workExperience'

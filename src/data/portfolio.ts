@@ -1,4 +1,6 @@
-export { cvUrl, experiences, projects, skillGroups } from '../data'
+export { cvUrl, projects, skillGroups } from '../data'
+export { workExperience } from './workExperience'
+export type { ExperienceProject, WorkExperience } from './workExperience'
 export type {
   Project,
   ProjectCategory,

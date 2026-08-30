@@ -14,3 +14,17 @@ Object.defineProperty(window, 'matchMedia', {
     dispatchEvent: vi.fn(),
   })),
 })
+
+if (!('IntersectionObserver' in window)) {
+  class IntersectionObserverStub {
+    observe() {}
+
+    unobserve() {}
+    disconnect() {}
+  }
+
+  Object.defineProperty(window, 'IntersectionObserver', {
+    configurable: true,
+    value: IntersectionObserverStub,
+  })
+}

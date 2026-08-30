@@ -1,9 +1,13 @@
 # Global Decision Index
 
+| DEC-20260830-13 | Use a data-driven career timeline from earliest to current/Future, reverse-order expanded details, and local-logo/initials fallback behavior. | ui, timeline, responsive, accessibility | [2026-08-30](2026/08/2026-08-30.md#decision-dec-20260830-13) |
+
 This is an index, not a second copy of the change log. Follow the source link for context and verification.
 
 | ID              | Decision                                                                                                                                  | Tags                                     | Source                                                                     |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------- |
+| DEC-20260830-11 | Reuse the existing CV PDF for a localized, mobile-visible resume link in the header: `резюме` in Russian and `CV` in English.             | ui, navigation, responsive, i18n         | [2026-08-30](2026/08/2026-08-30.md#decision-dec-20260830-11)               |
+| DEC-20260830-12 | Use Tabler `IconDownload` and the shared `button button-primary` style for all localized resume download buttons.                         | ui, navigation, i18n, icons              | [2026-08-30](2026/08/2026-08-30.md#decision-dec-20260830-12)               |
 | DEC-20260830-10 | Use Glitch.js in continuous always-active mode for direct comparison with the official demo.                                              | ui, animation, dependency                | [2026-08-30](2026/08/2026-08-30.md#decision-dec-20260830-10)               |
 | DEC-20260830-01 | Use a shared speed store (0 = paused) and configuration object for all loading-screen timings.                                            | ui, animation, configuration             | [2026-08-30](2026/08/2026-08-30.md#decision-dec-20260830-01)               |
 | DEC-20260830-02 | Use preallocated DOM glitch layers and randomized recursive timeouts for the Hero portrait; disable bursts for reduced motion.            | ui, animation, accessibility             | [2026-08-30](2026/08/2026-08-30.md#decision-dec-20260830-02)               |

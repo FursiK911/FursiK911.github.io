@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { motion } from 'motion/react'
+import { IconDownload } from '@tabler/icons-react'
 import { cvUrl } from '../../data/portfolio'
 import portrait from '../../assets/dmitry-fursov.webp'
 import { TypingText } from '../layout/TypingText'
@@ -47,7 +48,8 @@ export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
             {t('hero.projects')} <span>↘</span>
           </a>
           <a className="button" href={cvUrl} download>
-            {t('hero.cv')} <span>↓</span>
+            {t('hero.cv')}
+            <IconDownload aria-hidden="true" size={16} stroke={1.5} />
           </a>
           <a className="text-link" href="#contact">
             {t('hero.contact')} ↗

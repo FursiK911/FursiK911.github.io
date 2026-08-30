@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Burger } from '@mantine/core'
+import { IconDownload } from '@tabler/icons-react'
 import { useTranslation } from 'react-i18next'
+import { cvUrl } from '../../data/portfolio'
 import { TypingText } from './TypingText'
 
 const sectionIds = ['projects', 'about', 'experience', 'stack', 'contact']
@@ -55,6 +57,14 @@ export function Header({
           ))}
         </nav>
         <div className="header-actions">
+          <a
+            className="button button-primary resume-link"
+            href={cvUrl}
+            download
+          >
+            {t('header.resume')}
+            <IconDownload aria-hidden="true" size={16} stroke={1.5} />
+          </a>
           <a
             href="https://github.com/FursiK911"
             target="_blank"

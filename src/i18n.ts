@@ -13,6 +13,7 @@ export const resources = {
       header: {
         name: 'Дмитрий Фурсов',
         homeLabel: 'Главная — Дмитрий Фурсов',
+        resume: 'СКАЧАТЬ РЕЗЮМЕ',
       },
       nav: {
         projects: 'Проекты',
@@ -76,7 +77,7 @@ export const resources = {
         body: 'Unity-разработчик с фокусом на VR/XR, multiplayer-системы и интерактивные приложения для Meta Quest, PC и мобильных платформ.',
         terminal: 'currently_building: immersive interactive systems_',
         projects: 'СМОТРЕТЬ ПРОЕКТЫ',
-        cv: 'СКАЧАТЬ CV',
+        cv: 'СКАЧАТЬ РЕЗЮМЕ',
         contact: 'СВЯЗАТЬСЯ',
         portraitAlt: 'Дмитрий Фурсов, Unity Developer',
         stats: [
@@ -96,17 +97,54 @@ export const resources = {
         contact: 'CONTACT CHANNEL',
       },
       experience: {
+        intro: 'PAST · CURRENT · NEXT',
+        present: 'НАСТОЯЩЕЕ ВРЕМЯ',
+        moreDetails: 'ПОДРОБНЕЕ',
+        lessDetails: 'СВЕРНУТЬ',
+        detailsLabel: 'CAREER_DETAILS',
+        timelineLabel: 'Карьерная хронология',
+        achievementsLabel: 'КЛЮЧЕВЫЕ ЗАДАЧИ',
+        projectsLabel: 'ПРОЕКТЫ',
+        privateProject: 'Закрытый проект',
+        nextLabel: 'ДАЛЬШЕ',
+        nextTitle: 'Следующее приключение?',
+        nextCta: 'НАНЯТЬ МЕНЯ',
         meRole: 'Middle VR Developer',
         meProject: 'Industrial VR training simulations · Meta Quest',
+        meAchievements: [
+          'Разработка VR-тренажёров для Meta Quest 2 / 3S / 3',
+          'Интерактивные сценарии, проверка действий и режимы обучения',
+          'Расширение production-кода и поддержка локализации',
+        ],
         yellowUnityRole: 'Middle Unity Developer',
         yellowUnityProject: 'Mobile RTS · Vulkan Verse',
+        yellowUnityAchievements: [
+          'Сетевые PvP-механики, турниры и replay-система',
+          'Интеграции Firebase, PlayFab и Azure Functions',
+          'Pathfinding AI и production UI для Android / iOS',
+        ],
         cupRole: 'Middle Frontend Developer / Middle VR Developer',
         cupProject: 'myChess platform · MyChessVR',
+        cupAchievements: [
+          'Web-платформа с realtime-играми, турнирами и анализом Stockfish',
+          'Полная VR-реализация MyChessVR с IK-взаимодействиями',
+          'Разработка multiplayer VR-демо для промышленных сценариев',
+        ],
         itTabRole: 'Middle Frontend Developer / Middle VR Developer',
         itTabProject: 'React projects · Industrial VR simulator',
+        itTabAchievements: [
+          'Самостоятельная разработка функциональности VR-тренажёра',
+          'Сценарии обучения, экзамена и совместной работы оператора',
+          'Поддержка instructor-интерфейса, VOIP и VR-оборудования',
+        ],
         yellowJuniorRole:
           'Intern / Junior Unity Developer → Junior Frontend Developer',
         yellowJuniorProject: 'AR applications · Web platforms',
+        yellowJuniorAchievements: [
+          'AR-приложения с трекингом изображений и интерактивными персонажами',
+          'AssetBundle-доставка, кэширование и обновление контента',
+          'Первые production-задачи в Unity и frontend-разработке',
+        ],
       },
       roles: {
         soloUnity: 'Единственный Unity-разработчик',
@@ -232,7 +270,7 @@ export const resources = {
         telegram: 'TELEGRAM',
         copy: 'КОПИРОВАТЬ EMAIL',
         copied: 'СКОПИРОВАНО',
-        cv: 'СКАЧАТЬ CV',
+        cv: 'СКАЧАТЬ РЕЗЮМЕ',
       },
       footer: 'Построено на React + TypeScript.',
       debug: {
@@ -248,6 +286,7 @@ export const resources = {
       header: {
         name: 'Dmitry Fursov',
         homeLabel: 'Home — Dmitry Fursov',
+        resume: 'DOWNLOAD CV',
       },
       nav: {
         projects: 'Projects',
@@ -331,17 +370,54 @@ export const resources = {
         contact: 'CONTACT CHANNEL',
       },
       experience: {
+        intro: 'PAST · CURRENT · NEXT',
+        present: 'PRESENT',
+        moreDetails: 'MORE DETAILS',
+        lessDetails: 'LESS DETAILS',
+        detailsLabel: 'CAREER_DETAILS',
+        timelineLabel: 'Career timeline',
+        achievementsLabel: 'KEY CONTRIBUTIONS',
+        projectsLabel: 'PROJECTS',
+        privateProject: 'Private project',
+        nextLabel: 'NEXT',
+        nextTitle: 'Next Adventure?',
+        nextCta: 'HIRE ME',
         meRole: 'Middle VR Developer',
         meProject: 'Industrial VR training simulations · Meta Quest',
+        meAchievements: [
+          'Developed VR training products for Meta Quest 2 / 3S / 3',
+          'Built interactive scenarios, validation flows and training modes',
+          'Extended production code and supported localization workflows',
+        ],
         yellowUnityRole: 'Middle Unity Developer',
         yellowUnityProject: 'Mobile RTS · Vulkan Verse',
+        yellowUnityAchievements: [
+          'Implemented networked PvP mechanics, tournaments and replay systems',
+          'Integrated Firebase, PlayFab and Azure Functions',
+          'Built pathfinding AI and production UI for Android / iOS',
+        ],
         cupRole: 'Middle Frontend Developer / Middle VR Developer',
         cupProject: 'myChess platform · MyChessVR',
+        cupAchievements: [
+          'Built a web platform with real-time games, tournaments and Stockfish analysis',
+          'Delivered the MyChessVR experience with IK interactions',
+          'Developed multiplayer VR demos for industrial scenarios',
+        ],
         itTabRole: 'Middle Frontend Developer / Middle VR Developer',
         itTabProject: 'React projects · Industrial VR simulator',
+        itTabAchievements: [
+          'Independently delivered functionality for a VR training simulator',
+          'Built training, examination and cooperative operator scenarios',
+          'Supported instructor UI, VOIP and VR hardware workflows',
+        ],
         yellowJuniorRole:
           'Intern / Junior Unity Developer → Junior Frontend Developer',
         yellowJuniorProject: 'AR applications · Web platforms',
+        yellowJuniorAchievements: [
+          'Built AR applications with image tracking and interactive characters',
+          'Implemented AssetBundle delivery, caching and content updates',
+          'Started production work across Unity and frontend development',
+        ],
       },
       roles: {
         soloUnity: 'Solo Unity Developer',

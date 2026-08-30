@@ -1,5 +1,9 @@
 # AI Agent Change Log Index
 
+| 2026-08-30 | ui, timeline, accessibility, i18n, testing, graphify | [daily log](2026/08/2026-08-30.md#finalized-timeline-semantics-and-interaction-polish) |
+
+| 2026-08-30 | ui, timeline, responsive, animation, i18n, accessibility, testing, graphify | [daily log](2026/08/2026-08-30.md#rebuilt-experience-log-as-a-data-driven-career-timeline) |
+
 Use this file to locate history without scanning every daily log.
 
 ## Latest entries
@@ -14,6 +18,7 @@ Use this file to locate history without scanning every daily log.
 | 2026-08-30 | ui, accessibility, contrast | [daily log](2026/08/2026-08-30.md) |
 | 2026-08-30 | ui, accessibility, contrast | [daily log](2026/08/2026-08-30.md) |
 | 2026-08-30 | ui, animation, accessibility, responsive, testing | [daily log](2026/08/2026-08-30.md) |
+| 2026-08-30 | ui, navigation, responsive, i18n, icons, testing | [daily log](2026/08/2026-08-30.md#standardized-cyan-resume-download-buttons) |
 | 2026-08-30 | ui, animation, accessibility, responsive, testing, graphify | [daily log](2026/08/2026-08-30.md#switched-to-a-cellular-data-corruption-glitch) |
 | 2026-08-30 | ui, animation, testing | [daily log](2026/08/2026-08-30.md#reduced-active-cellular-glitch-density) |
 | 2026-08-30 | ui, animation, accessibility, dependency, testing, graphify | [daily log](2026/08/2026-08-30.md#replaced-cellular-portrait-glitch-with-glitchjs) |

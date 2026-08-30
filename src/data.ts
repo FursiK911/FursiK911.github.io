@@ -155,39 +155,6 @@ export const projects: Project[] = [
   },
 ]
 
-export const experiences = [
-  {
-    period: '03.2026 — PRESENT',
-    company: 'TOO ME GROUP',
-    roleKey: 'meRole',
-    projectKey: 'meProject',
-  },
-  {
-    period: '09.2025 — 03.2026',
-    company: 'YELLOW ELEMENT',
-    roleKey: 'yellowUnityRole',
-    projectKey: 'yellowUnityProject',
-  },
-  {
-    period: '09.2023 — 09.2025',
-    company: 'ООО ЦУП',
-    roleKey: 'cupRole',
-    projectKey: 'cupProject',
-  },
-  {
-    period: '01.2023 — 09.2023',
-    company: 'IT TAB',
-    roleKey: 'itTabRole',
-    projectKey: 'itTabProject',
-  },
-  {
-    period: '10.2019 — 02.2022',
-    company: 'YELLOW ELEMENT',
-    roleKey: 'yellowJuniorRole',
-    projectKey: 'yellowJuniorProject',
-  },
-]
-
 export const skillGroups = [
   {
     title: 'UNITY & GAME DEVELOPMENT',

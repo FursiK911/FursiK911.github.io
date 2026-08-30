@@ -52,3 +52,35 @@ it('adds the scrolled state after passing the scroll threshold', async () => {
   })
   expect(header).not.toHaveClass('is-scrolled')
 })
+
+it('renders a localized downloadable resume link', async () => {
+  await changeLanguage('ru')
+  const { rerender } = renderWithProviders(
+    <Header
+      active="projects"
+      onLanguage={() => undefined}
+      typedRole="Unity Developer"
+      reducedMotion
+    />,
+  )
+
+  const resumeLink = screen.getByRole('link', { name: 'СКАЧАТЬ РЕЗЮМЕ' })
+  expect(resumeLink).toHaveAttribute(
+    'href',
+    '/cv/Dmitry-Fursov-Unity-Developer-CV.pdf',
+  )
+  expect(resumeLink).toHaveAttribute('download')
+  expect(resumeLink).toHaveClass('button', 'button-primary', 'resume-link')
+  expect(resumeLink.querySelector('svg')).toHaveAttribute('aria-hidden', 'true')
+
+  await changeLanguage('en')
+  rerender(
+    <Header
+      active="projects"
+      onLanguage={() => undefined}
+      typedRole="Unity Developer"
+      reducedMotion
+    />,
+  )
+  expect(screen.getByRole('link', { name: 'DOWNLOAD CV' })).toBeInTheDocument()
+})
