@@ -12,6 +12,7 @@ it('renders contact actions', async () => {
   ).toBeVisible()
   expect(screen.getByRole('link', { name: /@FursiK911/ })).toBeVisible()
   const resumeLink = screen.getByRole('link', { name: 'СКАЧАТЬ РЕЗЮМЕ' })
+  expect(resumeLink).toHaveClass('action-control', 'action-control--primary')
   expect(resumeLink).toHaveAttribute('download')
   expect(resumeLink.querySelector('svg')).toHaveAttribute('aria-hidden', 'true')
 })

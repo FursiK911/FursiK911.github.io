@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import type { WorkExperience } from '../../data/workExperience'
+import { ActionLink } from '../ui/ActionLink'
 
 export interface ExperienceDetailsItemProps {
   entry: WorkExperience
@@ -56,10 +57,15 @@ export function ExperienceDetailsItem({ entry }: ExperienceDetailsItemProps) {
                 <div className="experience-project-heading">
                   <h4>{t(project.titleKey)}</h4>
                   {project.url ? (
-                    <a href={project.url} target="_blank" rel="noreferrer">
+                    <ActionLink
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      variant="inline"
+                    >
                       {project.linkLabel ?? t('projects.view')}{' '}
                       <span aria-hidden="true">↗</span>
-                    </a>
+                    </ActionLink>
                   ) : (
                     <span className="experience-project-status">
                       {t('experience.privateProject')}

@@ -5,6 +5,7 @@ import { cvUrl } from '../../data/portfolio'
 import portrait from '../../assets/dmitry-fursov.webp'
 import { TypingText } from '../layout/TypingText'
 import { GlitchPortrait } from './GlitchPortrait'
+import { ActionLink } from '../ui/ActionLink'
 
 export interface HeroProps {
   typedRole: string
@@ -44,16 +45,16 @@ export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
           <span>›_</span> {t('hero.terminal')}
         </motion.p>
         <motion.div className="hero-actions" variants={heroItemVariants}>
-          <a className="button button-primary" href="#projects">
+          <ActionLink variant="primary" href="#projects">
             {t('hero.projects')} <span>↘</span>
-          </a>
-          <a className="button" href={cvUrl} download>
+          </ActionLink>
+          <ActionLink variant="secondary" href={cvUrl} download>
             {t('hero.cv')}
             <IconDownload aria-hidden="true" size={16} stroke={1.5} />
-          </a>
-          <a className="text-link" href="#contact">
+          </ActionLink>
+          <ActionLink variant="text" href="#contact">
             {t('hero.contact')} ↗
-          </a>
+          </ActionLink>
         </motion.div>
       </motion.div>
       <motion.div className="hero-portrait" variants={heroItemVariants}>

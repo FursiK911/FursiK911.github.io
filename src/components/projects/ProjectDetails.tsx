@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Modal } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
 import type { Project } from '../../types/portfolio'
+import { ActionLink } from '../ui/ActionLink'
 
 export interface ProjectDetailsProps {
   project: Project
@@ -93,14 +94,15 @@ export function ProjectDetails({
           {project.links && (
             <div className="dialog-links">
               {project.links.map((link) => (
-                <a
+                <ActionLink
                   href={link.href}
                   target="_blank"
                   rel="noreferrer"
                   key={link.href}
+                  variant="inline"
                 >
                   {link.label} ↗
-                </a>
+                </ActionLink>
               ))}
             </div>
           )}

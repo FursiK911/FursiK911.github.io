@@ -70,7 +70,11 @@ it('renders a localized downloadable resume link', async () => {
     '/cv/Dmitry-Fursov-Unity-Developer-CV.pdf',
   )
   expect(resumeLink).toHaveAttribute('download')
-  expect(resumeLink).toHaveClass('button', 'button-primary', 'resume-link')
+  expect(resumeLink).toHaveClass(
+    'action-control',
+    'action-control--primary',
+    'resume-link',
+  )
   expect(resumeLink.querySelector('svg')).toHaveAttribute('aria-hidden', 'true')
 
   await changeLanguage('en')

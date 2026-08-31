@@ -107,8 +107,9 @@ export const resources = {
         projectsLabel: 'ПРОЕКТЫ',
         privateProject: 'Закрытый проект',
         nextLabel: 'ДАЛЬШЕ',
-        nextTitle: 'Следующее приключение?',
+        nextTitle: 'Новый проект?',
         nextCta: 'НАНЯТЬ МЕНЯ',
+        meTimelineRole: 'VR-разработчик',
         meRole: 'Middle VR Developer',
         meProject: 'Industrial VR training simulations · Meta Quest',
         meAchievements: [
@@ -117,6 +118,7 @@ export const resources = {
           'Расширение production-кода и поддержка локализации',
         ],
         yellowUnityRole: 'Middle Unity Developer',
+        yellowUnityTimelineRole: 'Unity-разработчик',
         yellowUnityProject: 'Mobile RTS · Vulkan Verse',
         yellowUnityAchievements: [
           'Сетевые PvP-механики, турниры и replay-система',
@@ -124,6 +126,7 @@ export const resources = {
           'Pathfinding AI и production UI для Android / iOS',
         ],
         cupRole: 'Middle Frontend Developer / Middle VR Developer',
+        cupTimelineRole: 'Frontend / VR-разработчик',
         cupProject: 'myChess platform · MyChessVR',
         cupAchievements: [
           'Web-платформа с realtime-играми, турнирами и анализом Stockfish',
@@ -131,6 +134,7 @@ export const resources = {
           'Разработка multiplayer VR-демо для промышленных сценариев',
         ],
         itTabRole: 'Middle Frontend Developer / Middle VR Developer',
+        itTabTimelineRole: 'VR / Frontend разработчик',
         itTabProject: 'React projects · Industrial VR simulator',
         itTabAchievements: [
           'Самостоятельная разработка функциональности VR-тренажёра',
@@ -139,6 +143,7 @@ export const resources = {
         ],
         yellowJuniorRole:
           'Intern / Junior Unity Developer → Junior Frontend Developer',
+        yellowJuniorTimelineRole: 'Unity / Frontend разработчик',
         yellowJuniorProject: 'AR applications · Web platforms',
         yellowJuniorAchievements: [
           'AR-приложения с трекингом изображений и интерактивными персонажами',
@@ -380,8 +385,9 @@ export const resources = {
         projectsLabel: 'PROJECTS',
         privateProject: 'Private project',
         nextLabel: 'NEXT',
-        nextTitle: 'Next Adventure?',
+        nextTitle: 'New Project?',
         nextCta: 'HIRE ME',
+        meTimelineRole: 'VR Developer',
         meRole: 'Middle VR Developer',
         meProject: 'Industrial VR training simulations · Meta Quest',
         meAchievements: [
@@ -390,6 +396,7 @@ export const resources = {
           'Extended production code and supported localization workflows',
         ],
         yellowUnityRole: 'Middle Unity Developer',
+        yellowUnityTimelineRole: 'Unity Developer',
         yellowUnityProject: 'Mobile RTS · Vulkan Verse',
         yellowUnityAchievements: [
           'Implemented networked PvP mechanics, tournaments and replay systems',
@@ -397,6 +404,7 @@ export const resources = {
           'Built pathfinding AI and production UI for Android / iOS',
         ],
         cupRole: 'Middle Frontend Developer / Middle VR Developer',
+        cupTimelineRole: 'Frontend / VR Developer',
         cupProject: 'myChess platform · MyChessVR',
         cupAchievements: [
           'Built a web platform with real-time games, tournaments and Stockfish analysis',
@@ -404,6 +412,7 @@ export const resources = {
           'Developed multiplayer VR demos for industrial scenarios',
         ],
         itTabRole: 'Middle Frontend Developer / Middle VR Developer',
+        itTabTimelineRole: 'VR / Frontend Developer',
         itTabProject: 'React projects · Industrial VR simulator',
         itTabAchievements: [
           'Independently delivered functionality for a VR training simulator',
@@ -412,6 +421,7 @@ export const resources = {
         ],
         yellowJuniorRole:
           'Intern / Junior Unity Developer → Junior Frontend Developer',
+        yellowJuniorTimelineRole: 'Unity / Frontend Developer',
         yellowJuniorProject: 'AR applications · Web platforms',
         yellowJuniorAchievements: [
           'Built AR applications with image tracking and interactive characters',

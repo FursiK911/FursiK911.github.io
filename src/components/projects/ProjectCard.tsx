@@ -2,6 +2,7 @@ import { motion } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import { projects } from '../../data/portfolio'
 import type { Project } from '../../types/portfolio'
+import { ActionButton } from '../ui/ActionButton'
 
 export interface ProjectCardProps {
   project: Project
@@ -52,13 +53,13 @@ export function ProjectCard({ project, onOpen }: ProjectCardProps) {
           </span>
           <h3>{title}</h3>
         </div>
-        <button
-          className="project-open"
+        <ActionButton
           type="button"
           onClick={(event) => onOpen(project, event.currentTarget)}
+          variant="action"
         >
           {t('projects.view')} <span>↗</span>
-        </button>
+        </ActionButton>
       </div>
       <p className="project-description">
         {t(`projects.${project.descriptionKey}`)}

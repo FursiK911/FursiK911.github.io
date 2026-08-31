@@ -3,6 +3,7 @@ import { Burger } from '@mantine/core'
 import { IconDownload } from '@tabler/icons-react'
 import { useTranslation } from 'react-i18next'
 import { cvUrl } from '../../data/portfolio'
+import { ActionLink } from '../ui/ActionLink'
 import { TypingText } from './TypingText'
 
 const sectionIds = ['projects', 'about', 'experience', 'stack', 'contact']
@@ -57,14 +58,15 @@ export function Header({
           ))}
         </nav>
         <div className="header-actions">
-          <a
-            className="button button-primary resume-link"
+          <ActionLink
+            className="resume-link"
             href={cvUrl}
             download
+            variant="primary"
           >
             {t('header.resume')}
             <IconDownload aria-hidden="true" size={16} stroke={1.5} />
-          </a>
+          </ActionLink>
           <a
             href="https://github.com/FursiK911"
             target="_blank"

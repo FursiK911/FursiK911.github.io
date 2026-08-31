@@ -10,9 +10,23 @@ const { glitchMock, GlitchMock } = vi.hoisted(() => {
     destroy: vi.fn(),
   }
   class MockGlitch {
+    constructor(target: HTMLElement) {
+      const clone = document.createElement('div')
+      clone.className = 'glitch-clone'
+      const image = document.createElement('img')
+      image.alt = 'Profile portrait'
+      clone.append(image)
+      target.append(clone)
+    }
+
     start = mock.start
     stop = mock.stop
-    destroy = mock.destroy
+    destroy = vi.fn(() => {
+      document
+        .querySelectorAll('.glitch-clone')
+        .forEach((clone) => clone.remove())
+      mock.destroy()
+    })
   }
   return { glitchMock: mock, GlitchMock: MockGlitch }
 })
@@ -37,7 +51,7 @@ const props = {
   reducedMotion: false,
 }
 
-it('renders one accessible portrait without the old decorative grid', () => {
+it('renders one accessible portrait and hides Glitch.js clones', () => {
   renderWithProviders(<GlitchPortrait {...props} />)
   expect(screen.getByRole('img', { name: 'Profile portrait' })).toHaveAttribute(
     'src',
@@ -45,36 +59,44 @@ it('renders one accessible portrait without the old decorative grid', () => {
   )
   expect(screen.getAllByRole('img')).toHaveLength(1)
   expect(document.querySelectorAll('.portrait-glitch-cell')).toHaveLength(0)
-  expect(
-    document.querySelectorAll(
-      '.portrait-glitch-slice, .portrait-glitch-block, .portrait-glitch-rgb',
-    ),
-  ).toHaveLength(0)
 })
 
-it('starts the always-active configured effect while keeping the base image unchanged', () => {
+it('configures the edited effect for manual short bursts', () => {
+  vi.useFakeTimers()
+  vi.spyOn(Math, 'random').mockReturnValue(0)
   renderWithProviders(<GlitchPortrait {...props} active />)
-  const baseImage = screen.getByRole('img', { name: 'Profile portrait' })
-  const baseStyle = baseImage.getAttribute('style')
+  const target = document.querySelector('.portrait-glitch')
+  expect(target).toBeInstanceOf(HTMLDivElement)
   expect(Glitch).toHaveBeenCalledWith(
-    baseImage,
-    expect.objectContaining({ trigger: 'always', active: true }),
+    target,
+    expect.objectContaining({ trigger: 'manual', active: false }),
   )
   expect(Effects.rgbSplit).toHaveBeenCalledWith({
     maxOffset: 30,
-    frequency: 1,
+    frequency: 0.1,
     blendMode: 'screen',
   })
   expect(Effects.slice).toHaveBeenCalledWith({
     maxOffset: 60,
-    frequency: 0.05,
+    frequency: 0.1,
   })
   expect(Effects.shake).toHaveBeenCalledWith({
-    amplitudeX: 11,
-    amplitudeY: 15,
-    frequency: 0.05,
+    amplitudeX: 10,
+    amplitudeY: 4,
+    frequency: 0.1,
   })
-  expect(baseImage.getAttribute('style')).toBe(baseStyle)
+  expect(glitchMock.start).not.toHaveBeenCalled()
+  vi.advanceTimersByTime(1000)
+  expect(glitchMock.start).toHaveBeenCalledTimes(1)
+  vi.advanceTimersByTime(140)
+  expect(glitchMock.stop).toHaveBeenCalledTimes(1)
+  vi.useRealTimers()
+  vi.restoreAllMocks()
+  expect(screen.getAllByRole('img')).toHaveLength(1)
+  expect(document.querySelector('.glitch-clone')).toHaveAttribute(
+    'aria-hidden',
+    'true',
+  )
 })
 
 it('destroys Glitch.js when an active portrait unmounts', () => {

@@ -15,6 +15,7 @@ export interface WorkExperience {
     to?: string
   }
   roleKey: string
+  timelineRoleKey: string
   summaryKey: string
   achievementsKey: string
   technologies: string[]
@@ -29,6 +30,7 @@ export const workExperience: WorkExperience[] = [
     company: 'YELLOW ELEMENT',
     period: { from: '10.2019', to: '02.2022' },
     roleKey: 'experience.yellowJuniorRole',
+    timelineRoleKey: 'experience.yellowJuniorTimelineRole',
     summaryKey: 'experience.yellowJuniorProject',
     achievementsKey: 'experience.yellowJuniorAchievements',
     technologies: ['Unity', 'C#', 'Vuforia', 'AssetBundles', 'Android', 'iOS'],
@@ -48,6 +50,7 @@ export const workExperience: WorkExperience[] = [
     company: 'IT TAB',
     period: { from: '01.2023', to: '09.2023' },
     roleKey: 'experience.itTabRole',
+    timelineRoleKey: 'experience.itTabTimelineRole',
     summaryKey: 'experience.itTabProject',
     achievementsKey: 'experience.itTabAchievements',
     technologies: [
@@ -74,6 +77,7 @@ export const workExperience: WorkExperience[] = [
     company: 'ООО ЦУП',
     period: { from: '09.2023', to: '09.2025' },
     roleKey: 'experience.cupRole',
+    timelineRoleKey: 'experience.cupTimelineRole',
     summaryKey: 'experience.cupProject',
     achievementsKey: 'experience.cupAchievements',
     technologies: [
@@ -116,6 +120,7 @@ export const workExperience: WorkExperience[] = [
     company: 'YELLOW ELEMENT',
     period: { from: '09.2025', to: '03.2026' },
     roleKey: 'experience.yellowUnityRole',
+    timelineRoleKey: 'experience.yellowUnityTimelineRole',
     summaryKey: 'experience.yellowUnityProject',
     achievementsKey: 'experience.yellowUnityAchievements',
     technologies: [
@@ -148,6 +153,7 @@ export const workExperience: WorkExperience[] = [
     company: 'TOO ME GROUP',
     period: { from: '03.2026' },
     roleKey: 'experience.meRole',
+    timelineRoleKey: 'experience.meTimelineRole',
     summaryKey: 'experience.meProject',
     achievementsKey: 'experience.meAchievements',
     technologies: [

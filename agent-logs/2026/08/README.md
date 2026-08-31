@@ -1,5 +1,17 @@
 # August 2026
 
+| 2026-08-31 | ui, timeline, svg, geometry, animation, responsive, testing, graphify | [daily log](2026-08-31.md#anchored-evenly-spaced-experience-milestones-to-the-svg-wave) |
+
+| 2026-08-31 | ui, animation, glitch, timing, accessibility, testing | [daily log](2026-08-31.md#added-randomized-short-glitchjs-bursts) |
+
+| 2026-08-31 | ui, timeline, svg, gsap, animation, responsive, i18n, accessibility, testing, graphify | [daily log](2026-08-31.md#unified-the-experience-timeline-scene-geometry) |
+
+| 2026-08-31 | ui, animation, glitch, accessibility, testing, debugging | [daily log](2026-08-31.md#matched-hero-portrait-with-the-glitchjs-broken-holo-demo) |
+
+| 2026-08-31 | ui, timeline, svg, gsap, animation, responsive, accessibility, testing, graphify | [daily log](2026-08-31.md#switched-timeline-runner-to-gsap-motionpathplugin) |
+
+| 2026-08-30 | ui, timeline, svg, animation, responsive, accessibility, testing, graphify | [daily log](2026-08-30.md#replaced-timeline-axis-with-animated-svg-wave) |
+
 | 2026-08-30 | ui, timeline, accessibility, i18n, testing, graphify | [daily log](2026-08-30.md#finalized-timeline-semantics-and-interaction-polish) |
 
 | 2026-08-30 | ui, timeline, responsive, animation, i18n, accessibility, testing, graphify | [daily log](2026-08-30.md#rebuilt-experience-log-as-a-data-driven-career-timeline) |
@@ -14,6 +26,8 @@
 | 2026-08-30 | ui, accessibility, contrast | [daily log](2026-08-30.md) |
 | 2026-08-30 | ui, accessibility, contrast | [daily log](2026-08-30.md) |
 | 2026-08-30 | ui, animation, accessibility, responsive, testing | [daily log](2026-08-30.md) |
+
+| 2026-08-31 | ui, components, navigation, accessibility, testing, graphify | [daily log](2026-08-31.md#introduced-shared-action-components) |
 | 2026-08-30 | ui, navigation, responsive, i18n, icons, testing | [daily log](2026-08-30.md#standardized-cyan-resume-download-buttons) |
 | 2026-08-30 | ui, animation, accessibility, responsive, testing, graphify | [daily log](2026-08-30.md#switched-to-a-cellular-data-corruption-glitch) |
 | 2026-08-30 | ui, animation, testing | [daily log](2026-08-30.md#reduced-active-cellular-glitch-density) |
