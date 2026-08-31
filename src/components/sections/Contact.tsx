@@ -18,8 +18,8 @@ export function Contact() {
         <div className="contact-links">
           <div>
             <span>{t('contact.email')}</span>
-            <a href="mailto:fursik911@yandex.com">fursik911@yandex.com ↗</a>
-            <CopyButton value="fursik911@yandex.com" timeout={2000}>
+            <a href="mailto:19fursik99@gmail.com">19fursik99@gmail.com ↗</a>
+            <CopyButton value="19fursik99@gmail.com" timeout={2000}>
               {({ copied, copy }) => (
                 <button type="button" onClick={copy}>
                   {copied ? t('contact.copied') : t('contact.copy')}

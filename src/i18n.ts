@@ -14,6 +14,7 @@ export const resources = {
         name: 'Дмитрий Фурсов',
         homeLabel: 'Главная — Дмитрий Фурсов',
         resume: 'СКАЧАТЬ РЕЗЮМЕ',
+        legalRole: 'SOFTWARE DEVELOPER',
       },
       nav: {
         projects: 'Проекты',
@@ -75,20 +76,11 @@ export const resources = {
           'Unity Developer',
           'Unigine Developer',
         ],
-        body: 'Software Developer с почти 6-летним опытом в web, mobile, realtime-системах и интерактивных продуктах — от frontend и CMS до Unity, Unigine и XR.',
         terminal: 'currently_building: cross-platform software systems_',
         projects: 'СМОТРЕТЬ ПРОЕКТЫ',
         cv: 'СКАЧАТЬ РЕЗЮМЕ',
         contact: 'СВЯЗАТЬСЯ',
         portraitAlt: 'Дмитрий Фурсов, Software Developer',
-        stats: [
-          '6+ ЛЕТ В РАЗРАБОТКЕ',
-          'WEB / FRONTEND',
-          'MOBILE ANDROID / IOS',
-          'UNITY / C#',
-          'UNIGINE / C#',
-          'REALTIME / BACKEND',
-        ],
       },
       sections: {
         projects: 'SELECTED WORK',
@@ -432,48 +424,29 @@ export const resources = {
         ],
       },
       about: {
-        lead: 'Software Developer с почти 6-летним коммерческим опытом: создаю web-приложения, mobile-продукты, realtime-системы и интерактивные решения.',
+        lead: 'Software Developer с более чем 6-летним коммерческим опытом: создаю web-приложения, mobile-продукты, realtime-системы и интерактивные решения.',
         body: 'Работал как Frontend, Fullstack, Mobile и Unity/Unigine Developer — в команде и самостоятельно. Беру задачи от интерфейса и архитектуры до сетевой логики, интеграций, 3D/XR-сценариев и production-сборок.',
         facts: [
           ['ROLE', 'Software Developer'],
-          ['LOCATION', 'Ростов-на-Дону, Россия'],
           ['FOCUS', 'Web · Mobile · Unity · Realtime'],
           ['EDUCATION', 'Магистр · Информатика · 2023'],
           ['LANGUAGES', 'RU родной · UA B2 · EN B1'],
         ],
       },
       directions: {
-        eyebrow: 'CAPABILITY_MAP',
-        title: 'НАПРАВЛЕНИЯ',
-        intro:
-          'Разные инструменты и платформы, объединённые умением доводить сложные идеи до работающего продукта.',
         web: 'WEB',
+        gameEngines: 'GAME ENGINES',
         mobile: 'MOBILE',
+        xr: 'XR',
         unity: 'UNITY',
         unigine: 'UNIGINE',
         xrAr: 'XR / AR',
         realtime: 'REALTIME',
-        webDesc:
-          'Frontend и fullstack-интерфейсы: от e-commerce и CMS до realtime-платформ.',
-        mobileDesc:
-          'Приложения для Android и iOS — mobile games, AR и кросс-платформенные сценарии.',
-        unityDesc:
-          'Игры и интерактивные приложения на Unity/C# для mobile, PC и WebGL.',
-        unigineDesc:
-          'Промышленные симуляторы на Unigine с поддержкой SteamVR и Astra Linux.',
-        xrArDesc:
-          'VR, AR и MR-взаимодействия, обучение, трекинг изображений и работа с 3D.',
-        realtimeDesc:
-          'Клиент-серверные системы, multiplayer, турниры, синхронизация и backend-интеграции.',
-        webProof: 'React · Next.js · Vue · TypeScript',
-        mobileProof: 'Android · iOS · AR',
-        unityProof: 'Unity · C# · WebGL',
-        unigineProof: 'Unigine · SteamVR · Astra Linux',
-        xrArProof: 'OpenXR · Vuforia · OpenCV',
-        realtimeProof: 'Mirror · Photon · PlayFab · Firebase',
+        projects: 'ПРОЕКТОВ',
+        xrQualifier: 'VR · AR · MR',
       },
       contact: {
-        title: 'LET’S BUILD SOMETHING.',
+        title: 'СОЗДАДИМ ЧТО-НИБУДЬ ВМЕСТЕ.',
         body: 'Открыт к задачам в web, mobile, realtime, Unity/Unigine и интерактивных продуктах.',
         email: 'EMAIL',
         telegram: 'TELEGRAM',
@@ -481,7 +454,61 @@ export const resources = {
         copied: 'СКОПИРОВАНО',
         cv: 'СКАЧАТЬ РЕЗЮМЕ',
       },
-      footer: 'Построено на React + TypeScript.',
+      footer: {
+        tagline: 'Построено на React + TypeScript.',
+        role: 'SOFTWARE DEVELOPER',
+        connect: 'КОНТАКТЫ',
+        explore: 'НАВИГАЦИЯ',
+        cv: 'СКАЧАТЬ РЕЗЮМЕ',
+        privacy: 'Политика конфиденциальности',
+        terms: 'Условия использования',
+        signature: 'WEB · MOBILE · UNITY · REALTIME',
+      },
+      legal: {
+        back: 'На главную',
+        updated: 'Последнее обновление: 1 сентября 2026',
+        privacy: {
+          metaTitle: 'Политика конфиденциальности — Дмитрий Фурсов',
+          metaDescription:
+            'Краткая политика конфиденциальности портфолио Дмитрия Фурсова.',
+          title: 'ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ',
+          intro:
+            'Эта страница описывает, какие данные могут обрабатываться при использовании портфолио Дмитрия Фурсова.',
+          collectionTitle: 'Какие данные собираются',
+          collection:
+            'Сайт не запрашивает регистрацию и не собирает специальные категории персональных данных. Хостинг и браузер могут автоматически передавать технические данные, необходимые для доставки страницы и обеспечения её безопасности. Если вы пишете на email, обрабатываются данные, которые вы добровольно указываете в сообщении.',
+          useTitle: 'Как используются данные',
+          use: 'Технические данные используются для работы, диагностики и защиты сайта. Данные из email используются только для ответа на сообщение и обсуждения запроса. Мы не продаём персональные данные и не используем их для рекламных рассылок.',
+          externalTitle: 'Внешние ссылки',
+          external:
+            'На сайте есть ссылки на GitHub, LinkedIn, Telegram и другие внешние ресурсы. После перехода на сторонний ресурс действуют его собственные правила и политика конфиденциальности.',
+          contactTitle: 'Контакт',
+          contact:
+            'По вопросам обработки данных можно написать на 19fursik99@gmail.com.',
+        },
+        terms: {
+          metaTitle: 'Условия использования — Дмитрий Фурсов',
+          metaDescription:
+            'Краткие условия использования портфолио Дмитрия Фурсова.',
+          title: 'УСЛОВИЯ ИСПОЛЬЗОВАНИЯ',
+          intro:
+            'Используя этот сайт, вы соглашаетесь соблюдать приведённые ниже условия. Это информационная страница портфолио, а не юридическая консультация.',
+          useTitle: 'Использование сайта',
+          use: 'Сайт предоставляется для ознакомления с профессиональным опытом, проектами и контактной информацией Дмитрия Фурсова. Не следует использовать его для незаконных действий или попыток нарушить работу сайта.',
+          contentTitle: 'Материалы и интеллектуальная собственность',
+          content:
+            'Тексты, изображения, дизайн и исходные материалы принадлежат своим правообладателям, если не указано иное. Материалы портфолио нельзя выдавать за собственные или использовать в коммерческих целях без разрешения правообладателя.',
+          externalTitle: 'Внешние сервисы',
+          external:
+            'Сайт содержит ссылки на внешние сервисы. Мы не контролируем их доступность, содержание или условия использования.',
+          liabilityTitle: 'Ограничение ответственности',
+          liability:
+            'Информация предоставляется «как есть» и может изменяться без предварительного уведомления. Мы не гарантируем отсутствие ошибок или постоянную доступность сайта.',
+          contactTitle: 'Контакт',
+          contact:
+            'Вопросы по материалам и условиям можно направить на 19fursik99@gmail.com.',
+        },
+      },
       debug: {
         active: 'DEBUG MODE',
         hint: '↑ ↑ ↓ ↓ ← → ← → B A',
@@ -496,6 +523,7 @@ export const resources = {
         name: 'Dmitry Fursov',
         homeLabel: 'Home — Dmitry Fursov',
         resume: 'DOWNLOAD CV',
+        legalRole: 'SOFTWARE DEVELOPER',
       },
       nav: {
         projects: 'Projects',
@@ -557,20 +585,11 @@ export const resources = {
           'Unity Developer',
           'Unigine Developer',
         ],
-        body: 'Software Developer with almost 6 years of commercial experience across web, mobile, realtime systems and interactive products — from frontend and CMS to Unity, Unigine and XR.',
         terminal: 'currently_building: cross-platform software systems_',
         projects: 'VIEW PROJECTS',
         cv: 'DOWNLOAD CV',
         contact: 'GET IN TOUCH',
         portraitAlt: 'Dmitry Fursov, Software Developer',
-        stats: [
-          '6+ YEARS IN DEVELOPMENT',
-          'WEB / FRONTEND',
-          'MOBILE ANDROID / IOS',
-          'UNITY / C#',
-          'UNIGINE / C#',
-          'REALTIME / BACKEND',
-        ],
       },
       sections: {
         projects: 'SELECTED WORK',
@@ -914,45 +933,26 @@ export const resources = {
         ],
       },
       about: {
-        lead: 'Software Developer with almost 6 years of commercial experience across web, mobile, realtime systems and interactive products.',
+        lead: 'Software Developer with over 6 years of commercial experience across web, mobile, realtime systems and interactive products.',
         body: 'I have worked as a Frontend, Fullstack, Mobile and Unity/Unigine Developer — both in teams and independently. I take work from interface and architecture through networking, integrations, 3D/XR scenarios and production builds.',
         facts: [
           ['ROLE', 'Software Developer'],
-          ['LOCATION', 'Rostov-on-Don, Russia'],
           ['FOCUS', 'Web · Mobile · Unity · Realtime'],
           ['EDUCATION', 'Master’s degree · Computer Science · 2023'],
           ['LANGUAGES', 'RU native · UA B2 · EN B1'],
         ],
       },
       directions: {
-        eyebrow: 'CAPABILITY_MAP',
-        title: 'DIRECTIONS',
-        intro:
-          'Different tools and platforms connected by the ability to turn complex ideas into working products.',
         web: 'WEB',
+        gameEngines: 'GAME ENGINES',
         mobile: 'MOBILE',
+        xr: 'XR',
         unity: 'UNITY',
         unigine: 'UNIGINE',
         xrAr: 'XR / AR',
         realtime: 'REALTIME',
-        webDesc:
-          'Frontend and fullstack interfaces: from e-commerce and CMS to realtime platforms.',
-        mobileDesc:
-          'Android and iOS products — mobile games, AR and cross-platform scenarios.',
-        unityDesc:
-          'Games and interactive applications built with Unity/C# for mobile, PC and WebGL.',
-        unigineDesc:
-          'Industrial simulators on Unigine with SteamVR and Astra Linux support.',
-        xrArDesc:
-          'VR, AR and MR interactions, training, image tracking and 3D workflows.',
-        realtimeDesc:
-          'Client-server systems, multiplayer, tournaments, synchronization and backend integrations.',
-        webProof: 'React · Next.js · Vue · TypeScript',
-        mobileProof: 'Android · iOS · AR',
-        unityProof: 'Unity · C# · WebGL',
-        unigineProof: 'Unigine · SteamVR · Astra Linux',
-        xrArProof: 'OpenXR · Vuforia · OpenCV',
-        realtimeProof: 'Mirror · Photon · PlayFab · Firebase',
+        projects: 'PROJECTS',
+        xrQualifier: 'VR · AR · MR',
       },
       contact: {
         title: 'LET’S BUILD SOMETHING.',
@@ -963,7 +963,60 @@ export const resources = {
         copied: 'COPIED',
         cv: 'DOWNLOAD CV',
       },
-      footer: 'Built with React + TypeScript.',
+      footer: {
+        tagline: 'Built with React + TypeScript.',
+        role: 'SOFTWARE DEVELOPER',
+        connect: 'CONNECT',
+        explore: 'EXPLORE',
+        cv: 'DOWNLOAD CV',
+        privacy: 'Privacy Policy',
+        terms: 'Terms of Use',
+        signature: 'WEB · MOBILE · UNITY · REALTIME',
+      },
+      legal: {
+        back: 'Back home',
+        updated: 'Last updated: September 1, 2026',
+        privacy: {
+          metaTitle: 'Privacy Policy — Dmitry Fursov',
+          metaDescription:
+            'A short privacy policy for Dmitry Fursov’s portfolio.',
+          title: 'PRIVACY POLICY',
+          intro:
+            'This page explains what information may be processed when you use Dmitry Fursov’s portfolio.',
+          collectionTitle: 'Information we collect',
+          collection:
+            'The site does not require registration or collect special categories of personal data. Hosting and browser systems may automatically provide technical information needed to deliver and secure the page. If you email us, we process the information you voluntarily include in your message.',
+          useTitle: 'How information is used',
+          use: 'Technical information is used to operate, diagnose and protect the site. Email data is used only to reply to your message and discuss your request. We do not sell personal data or use it for marketing mailings.',
+          externalTitle: 'External links',
+          external:
+            'The site links to GitHub, LinkedIn, Telegram and other external resources. Once you leave this site, the third party’s own terms and privacy policy apply.',
+          contactTitle: 'Contact',
+          contact:
+            'For questions about data processing, email 19fursik99@gmail.com.',
+        },
+        terms: {
+          metaTitle: 'Terms of Use — Dmitry Fursov',
+          metaDescription: 'Short terms of use for Dmitry Fursov’s portfolio.',
+          title: 'TERMS OF USE',
+          intro:
+            'By using this site, you agree to the terms below. This is an informational portfolio page, not legal advice.',
+          useTitle: 'Using the site',
+          use: 'The site is provided to present Dmitry Fursov’s professional experience, projects and contact information. Do not use it for unlawful activity or attempts to disrupt the site.',
+          contentTitle: 'Content and intellectual property',
+          content:
+            'Texts, images, design and source materials belong to their respective rights holders unless stated otherwise. Portfolio materials may not be presented as your own or used commercially without permission from the rights holder.',
+          externalTitle: 'External services',
+          external:
+            'The site contains links to external services. We do not control their availability, content or terms of use.',
+          liabilityTitle: 'Disclaimer',
+          liability:
+            'Information is provided “as is” and may change without notice. We do not guarantee that the site is error-free or continuously available.',
+          contactTitle: 'Contact',
+          contact:
+            'Questions about the materials or these terms can be sent to 19fursik99@gmail.com.',
+        },
+      },
       debug: {
         active: 'DEBUG MODE',
         hint: '↑ ↑ ↓ ↓ ← → ← → B A',

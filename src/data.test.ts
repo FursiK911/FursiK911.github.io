@@ -22,14 +22,12 @@ describe('portfolio data', () => {
     })
   })
 
-  it('defines the six unified development directions', () => {
+  it('defines the four experience directions', () => {
     expect(directions.map((direction) => direction.id)).toEqual([
       'web',
+      'game-engines',
       'mobile',
-      'unity',
-      'unigine',
-      'xr-ar',
-      'realtime',
+      'xr',
     ])
   })
 

@@ -1,5 +1,23 @@
 import '@testing-library/jest-dom/vitest'
+import React from 'react'
 import { vi } from 'vitest'
+
+vi.mock('@number-flow/react', () => ({
+  default: ({
+    value,
+    suffix = '',
+    className,
+  }: {
+    value: number
+    suffix?: string
+    className?: string
+  }) =>
+    React.createElement(
+      'span',
+      { className, 'data-testid': 'number-flow' },
+      `${value}${suffix}`,
+    ),
+}))
 
 Object.defineProperty(window, 'matchMedia', {
   writable: true,

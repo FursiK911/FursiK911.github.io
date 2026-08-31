@@ -15,7 +15,6 @@ export interface HeroProps {
 
 export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
   const { t } = useTranslation()
-  const stats = t('hero.stats', { returnObjects: true }) as string[]
   return (
     <motion.section
       className="hero section-shell"
@@ -37,9 +36,6 @@ export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
         </motion.h1>
         <motion.p className="hero-role" variants={heroItemVariants}>
           <TypingText text={typedRole} reducedMotion={reducedMotion} />
-        </motion.p>
-        <motion.p className="hero-body" variants={heroItemVariants}>
-          {t('hero.body')}
         </motion.p>
         <motion.p className="terminal-line" variants={heroItemVariants}>
           <span>›_</span> {t('hero.terminal')}
@@ -67,19 +63,7 @@ export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
           />
           <span className="frame-label">PROFILE_IMAGE // 001</span>
         </div>
-        <div className="portrait-note">
-          ROSTOV-ON-DON
-          <br />
-          SOFTWARE SYSTEMS
-        </div>
-      </motion.div>
-      <motion.div className="hero-stats" variants={heroItemVariants}>
-        {stats.map((stat, index) => (
-          <div key={stat}>
-            <b>0{index + 1}</b>
-            <span>{stat}</span>
-          </div>
-        ))}
+        <div className="portrait-note">SOFTWARE SYSTEMS</div>
       </motion.div>
     </motion.section>
   )

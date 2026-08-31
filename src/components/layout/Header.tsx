@@ -24,6 +24,7 @@ export function Header({
   const { t, i18n } = useTranslation()
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const isHome = window.location.pathname === '/'
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 8)
@@ -36,7 +37,11 @@ export function Header({
   return (
     <header className={scrolled ? 'site-header is-scrolled' : 'site-header'}>
       <div className="site-header-inner">
-        <a className="brand" href="#top" aria-label={t('header.homeLabel')}>
+        <a
+          className="brand"
+          href={isHome ? '#top' : '/'}
+          aria-label={t('header.homeLabel')}
+        >
           <small>{t('header.name')}</small>
           <TypingText text={typedRole} reducedMotion={reducedMotion} />
         </a>
@@ -48,7 +53,7 @@ export function Header({
           {sectionIds.map((id, index) => (
             <a
               className={active === id ? 'active' : ''}
-              href={`#${id}`}
+              href={isHome ? `#${id}` : `/#${id}`}
               key={id}
               onClick={() => setOpen(false)}
             >

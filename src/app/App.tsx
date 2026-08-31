@@ -74,7 +74,10 @@ export default function App() {
             reducedMotion={reducedMotion}
             entered={loader.phase === 'complete'}
           />
-          <Directions />
+          <Directions
+            reducedMotion={reducedMotion}
+            entered={loader.phase === 'complete'}
+          />
           <Projects />
           <About />
           <Experience />

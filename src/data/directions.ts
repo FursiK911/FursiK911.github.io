@@ -1,45 +1,40 @@
 export type Direction = {
-  id: 'web' | 'mobile' | 'unity' | 'unigine' | 'xr-ar' | 'realtime'
+  id: 'web' | 'game-engines' | 'mobile' | 'xr'
   titleKey: string
-  descriptionKey: string
-  proofKey: string
+  metric: number
+  metricLabelKey: string
+  tools: string[]
+  qualifierKey?: string
 }
 
 export const directions: Direction[] = [
   {
     id: 'web',
     titleKey: 'web',
-    descriptionKey: 'webDesc',
-    proofKey: 'webProof',
+    metric: 8,
+    metricLabelKey: 'projects',
+    tools: ['React', 'TypeScript', 'Vue', 'Next.js'],
+  },
+  {
+    id: 'game-engines',
+    titleKey: 'gameEngines',
+    metric: 15,
+    metricLabelKey: 'projects',
+    tools: ['Unity', 'C#', 'Unigine', 'WebGL'],
   },
   {
     id: 'mobile',
     titleKey: 'mobile',
-    descriptionKey: 'mobileDesc',
-    proofKey: 'mobileProof',
+    metric: 5,
+    metricLabelKey: 'projects',
+    tools: ['Android', 'iOS', 'Unity', 'Vuforia'],
   },
   {
-    id: 'unity',
-    titleKey: 'unity',
-    descriptionKey: 'unityDesc',
-    proofKey: 'unityProof',
-  },
-  {
-    id: 'unigine',
-    titleKey: 'unigine',
-    descriptionKey: 'unigineDesc',
-    proofKey: 'unigineProof',
-  },
-  {
-    id: 'xr-ar',
-    titleKey: 'xrAr',
-    descriptionKey: 'xrArDesc',
-    proofKey: 'xrArProof',
-  },
-  {
-    id: 'realtime',
-    titleKey: 'realtime',
-    descriptionKey: 'realtimeDesc',
-    proofKey: 'realtimeProof',
+    id: 'xr',
+    titleKey: 'xr',
+    metric: 10,
+    metricLabelKey: 'projects',
+    tools: ['OpenXR', 'SteamVR', 'Vuforia', 'OpenCV'],
+    qualifierKey: 'xrQualifier',
   },
 ]

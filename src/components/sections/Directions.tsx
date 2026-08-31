@@ -1,29 +1,68 @@
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { motion } from 'motion/react'
 import { directions } from '../../data/portfolio'
+import { MetricCounter } from '../ui/MetricCounter'
 
-export function Directions() {
+export interface DirectionsProps {
+  reducedMotion?: boolean
+  entered?: boolean
+}
+
+export function Directions({
+  reducedMotion = false,
+  entered = true,
+}: DirectionsProps) {
   const { t } = useTranslation()
+  const [metricsStarted, setMetricsStarted] = useState(entered)
+
   return (
-    <section className="directions-section" aria-labelledby="directions-title">
+    <motion.section
+      className="directions-section"
+      initial={reducedMotion || entered ? false : 'hidden'}
+      animate={reducedMotion || entered ? 'visible' : 'hidden'}
+      variants={{
+        hidden: { opacity: 0, y: 18 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.45, delay: 0.12 },
+        },
+      }}
+      onAnimationStart={() => {
+        if (!entered) setMetricsStarted(false)
+      }}
+      onAnimationComplete={() => {
+        if (entered) setMetricsStarted(true)
+      }}
+    >
       <div className="section-shell">
-        <div className="directions-heading">
-          <span className="eyebrow">{t('directions.eyebrow')}</span>
-          <h2 id="directions-title">{t('directions.title')}</h2>
-          <p>{t('directions.intro')}</p>
-        </div>
         <div className="directions-grid">
-          {directions.map((direction, index) => (
+          {directions.map((direction) => (
             <article className="direction-card" key={direction.id}>
-              <span className="direction-index">0{index + 1}</span>
-              <h3>{t(`directions.${direction.titleKey}`)}</h3>
-              <p>{t(`directions.${direction.descriptionKey}`)}</p>
-              <span className="direction-proof">
-                {t(`directions.${direction.proofKey}`)}
-              </span>
+              <div className="direction-content">
+                <h3>{t(`directions.${direction.titleKey}`)}</h3>
+                {direction.qualifierKey && (
+                  <span className="direction-qualifier">
+                    {t(`directions.${direction.qualifierKey}`)}
+                  </span>
+                )}
+                <ul className="direction-tools">
+                  {direction.tools.map((tool) => (
+                    <li key={tool}>{tool}</li>
+                  ))}
+                </ul>
+              </div>
+              <MetricCounter
+                value={direction.metric}
+                suffix="+"
+                label={t(`directions.${direction.metricLabelKey}`)}
+                active={entered && metricsStarted}
+              />
             </article>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }

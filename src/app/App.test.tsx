@@ -58,9 +58,11 @@ describe('portfolio app', () => {
     await user.click(screen.getByRole('button', { name: 'Change language' }))
     expect(screen.getByRole('heading', { name: /ПРИВЕТ, Я/ })).toBeVisible()
     await user.click(screen.getByRole('button', { name: /menu/i }))
-    expect(screen.getByRole('navigation')).toHaveClass('is-open')
+    expect(
+      screen.getByRole('navigation', { name: 'Primary navigation' }),
+    ).toHaveClass('is-open')
     await user.click(screen.getByRole('button', { name: /КОПИРОВАТЬ EMAIL/i }))
-    expect(writeText).toHaveBeenCalledWith('fursik911@yandex.com')
+    expect(writeText).toHaveBeenCalledWith('19fursik99@gmail.com')
   })
   it('keeps the ready site interactive and activates debug mode', async () => {
     await changeLanguage('en')

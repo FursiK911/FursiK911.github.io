@@ -5,14 +5,19 @@ import { MotionConfig } from 'motion/react'
 import './i18n.ts'
 import '@mantine/core/styles.css'
 import './index.css'
-import App from './app/App.tsx'
+import { AppRouter } from './app/AppRouter.tsx'
 import { theme } from './theme'
+
+const redirectPath = new URLSearchParams(window.location.search).get('__path')
+if (redirectPath) {
+  window.history.replaceState({}, '', redirectPath)
+}
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <MantineProvider theme={theme}>
       <MotionConfig reducedMotion="user">
-        <App />
+        <AppRouter />
       </MotionConfig>
     </MantineProvider>
   </StrictMode>,

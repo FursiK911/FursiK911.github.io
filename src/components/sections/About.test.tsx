@@ -6,5 +6,5 @@ it('renders about facts', () => {
   renderWithProviders(<About />)
   expect(screen.getByText('ROLE')).toBeVisible()
   expect(screen.getAllByText(/Software Developer/).length).toBeGreaterThan(0)
-  expect(screen.getByText(/6 years|6-летним/)).toBeVisible()
+  expect(screen.getByText(/over 6 years|более чем 6-летним/)).toBeVisible()
 })

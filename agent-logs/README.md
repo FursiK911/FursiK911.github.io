@@ -1,5 +1,11 @@
 # AI Agent Change Log Index
 
+| 2026-09-01 | ui, directions, responsive | [daily log](2026/09/2026-09-01.md#anchored-direction-tools-to-card-bottoms) |
+
+| 2026-09-01 | ui, directions, metric, hero, component, animation, dependency, footer, legal, i18n, routing, seo, testing, graphify | [daily log](2026/09/2026-09-01.md#deferred-metric-animation-until-directions-entrance) |
+
+| 2026-08-31 | content, i18n, copy, testing | [daily log](2026/08/2026-08-31.md#replaced-tentative-experience-wording) |
+
 | 2026-08-31 | portfolio, content, i18n, directions, projects, experience, seo, og-image, responsive, accessibility, testing, graphify | [daily log](2026/08/2026-08-31.md#unified-portfolio-around-software-developer-positioning) |
 
 | 2026-08-31 | ui, header, navigation, responsive, accessibility, testing | [daily log](2026/08/2026-08-31.md#updated-header-layout-and-resume-cta) |
@@ -60,6 +66,7 @@ Use this file to locate history without scanning every daily log.
 | 2026-08-31 | ui, components, navigation, accessibility, testing, graphify | [daily log](2026/08/2026-08-31.md#introduced-shared-action-components) |
 
 - [August 2026](2026/08/README.md)
+- [September 2026](2026/09/README.md)
 
 ## Browse by decision
 

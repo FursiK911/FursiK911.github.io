@@ -1,5 +1,21 @@
 # Global Decision Index
 
+| DEC-20260901-07 | Stretch the Directions content column and use `margin-top: auto` to anchor each tools row to the bottom of its grid cell. | ui, directions, responsive | [2026-09-01](2026/09/2026-09-01.md#anchored-direction-tools-to-card-bottoms) |
+
+| DEC-20260901-06 | Gate metric animation on the Directions entrance lifecycle: inactive counters render zero, Motion completion activates them, and reduced-motion mode activates them without waiting for a visual transition. | ui, directions, metric, animation, accessibility | [2026-09-01](2026/09/2026-09-01.md#decision-dec-20260901-06) |
+
+| DEC-20260901-05 | Gate Directions entrance with the same `entered` and `reducedMotion` state as Hero, using a short fade-and-rise transition after the Hero stagger. | ui, directions, hero, animation, accessibility | [2026-09-01](2026/09/2026-09-01.md#synchronized-directions-entrance-with-hero) |
+
+| DEC-20260901-04 | Use `MetricCounter` with `value`, optional `suffix`, and `label`; animate from zero on mount with NumberFlow while respecting reduced-motion preferences, and keep layout positioning in consuming components. | ui, component, animation, accessibility | [2026-09-01](2026/09/2026-09-01.md#decision-dec-20260901-04) |
+
+| DEC-20260901-03 | Use four static Directions cards in a 2×2 grid with manually maintained minimum metrics, overlapping project attribution, and four key tools per category; keep project and skill taxonomies unchanged. | ui, directions, portfolio, i18n, responsive | [2026-09-01](2026/09/2026-09-01.md#decision-dec-20260901-03) |
+
+| DEC-20260901-02 | Use `/privacy/` and `/terms/` as localized SPA routes with a shared legal layout and GitHub Pages 404 fallback. | legal, routing, github-pages, i18n | [2026-09-01](2026/09/2026-09-01.md#decision-dec-20260901-02) |
+
+| DEC-20260901-01 | Use cyan (`var(--cyan)`) for Experience Log accents and omit residential location data from public profile content. | ui, experience, privacy | [2026-09-01](2026/09/2026-09-01.md#decision-dec-20260901-01) |
+
+| DEC-20260831-10 | Use `over 6 years` in English and «более чем 6-летний опыт» in Russian for the public experience statement. | content, i18n, copy | [2026-08-31](2026/08/2026-08-31.md#decision-dec-20260831-10) |
+
 | DEC-20260831-09 | Use `Software Developer` as the primary public positioning, expose six capability directions as a post-Hero block, keep all 22 projects visible with single-category filters, and preserve the existing PDF CV path. | portfolio, content, i18n, directions, projects, experience, seo | [2026-08-31](2026/08/2026-08-31.md#decision-dec-20260831-09) |
 
 | DEC-20260831-08 | Use a vertical two-line header brand, viewport-centered navigation, and a compact primary resume CTA while removing social links from the header; keep the fifth navigation item as Stack/Стек. | ui, header, navigation, responsive, accessibility | [2026-08-31](2026/08/2026-08-31.md#decision-dec-20260831-08) |
