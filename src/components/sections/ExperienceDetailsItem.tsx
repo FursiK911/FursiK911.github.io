@@ -1,35 +1,32 @@
 import { useTranslation } from 'react-i18next'
-import type { WorkExperience } from '../../data/workExperience'
+import type {
+  ExperienceRolePhase,
+  WorkExperience,
+} from '../../data/workExperience'
 import { ActionLink } from '../ui/ActionLink'
 
 export interface ExperienceDetailsItemProps {
   entry: WorkExperience
 }
 
-export function ExperienceDetailsItem({ entry }: ExperienceDetailsItemProps) {
+function Phase({ phase }: { phase: ExperienceRolePhase }) {
   const { t } = useTranslation()
-  const achievements = t(entry.achievementsKey, {
+  const achievements = t(phase.achievementsKey, {
     returnObjects: true,
   }) as unknown as string[]
-  const period = `${entry.period.from} — ${entry.period.to ?? t('experience.present')}`
-
   return (
-    <article className="experience-details-item">
-      <div className="experience-details-header">
-        <div
-          className="experience-logo experience-details-logo"
-          aria-hidden="true"
-        >
-          <span>{entry.company.replace(/\s+/g, '').slice(0, 2)}</span>
-        </div>
+    <section className="experience-phase">
+      <div className="experience-phase-heading">
         <div>
-          <span className="experience-company">{entry.company}</span>
-          <h3>{t(entry.roleKey)}</h3>
-          <time dateTime={entry.period.to ?? entry.period.from}>{period}</time>
+          <h4>{t(phase.roleKey)}</h4>
+          <time dateTime={phase.period.to ?? phase.period.from}>
+            {phase.period.from} — {phase.period.to ?? t('experience.present')}
+          </time>
         </div>
+        <p>{t(phase.summaryKey)}</p>
       </div>
       <div className="tag-row experience-tags">
-        {entry.technologies.map((technology) => (
+        {phase.technologies.map((technology) => (
           <span key={technology}>{technology}</span>
         ))}
       </div>
@@ -48,14 +45,14 @@ export function ExperienceDetailsItem({ entry }: ExperienceDetailsItemProps) {
           {t('experience.projectsLabel')}
         </span>
         <div className="experience-project-list">
-          {entry.projects.map((project) => {
+          {phase.projects.map((project) => {
             const points = t(project.pointsKey, {
               returnObjects: true,
             }) as unknown as string[]
             return (
               <section className="experience-project" key={project.id}>
                 <div className="experience-project-heading">
-                  <h4>{t(project.titleKey)}</h4>
+                  <h5>{t(project.titleKey)}</h5>
                   {project.url ? (
                     <ActionLink
                       href={project.url}
@@ -82,6 +79,33 @@ export function ExperienceDetailsItem({ entry }: ExperienceDetailsItemProps) {
             )
           })}
         </div>
+      </div>
+    </section>
+  )
+}
+
+export function ExperienceDetailsItem({ entry }: ExperienceDetailsItemProps) {
+  const { t } = useTranslation()
+  const period = `${entry.period.from} — ${entry.period.to ?? t('experience.present')}`
+  return (
+    <article className="experience-details-item">
+      <div className="experience-details-header">
+        <div
+          className="experience-logo experience-details-logo"
+          aria-hidden="true"
+        >
+          <span>{entry.company.replace(/\s+/g, '').slice(0, 2)}</span>
+        </div>
+        <div>
+          <span className="experience-company">{entry.company}</span>
+          <h3>{t(entry.roleKey)}</h3>
+          <time dateTime={entry.period.to ?? entry.period.from}>{period}</time>
+        </div>
+      </div>
+      <div className="experience-phases">
+        {entry.phases.map((phase) => (
+          <Phase phase={phase} key={`${entry.id}-${phase.period.from}`} />
+        ))}
       </div>
     </article>
   )

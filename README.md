@@ -1,6 +1,6 @@
-# Dmitry Fursov — Unity / VR / XR Developer
+# Dmitry Fursov — Software Developer
 
-Одностраничное портфолио на React, TypeScript и Vite. Контент основан на предоставленном CV; неизвестные метрики, URL и проектные материалы не добавляются.
+Одностраничное портфолио на React, TypeScript и Vite. Профиль объединяет web, mobile, Unity, Unigine, XR/AR и realtime-разработку. Контент основан на предоставленных материалах; неизвестные метрики, URL и проектные материалы не добавляются.
 
 ## Локальная разработка
 
@@ -26,7 +26,7 @@ public/projects/<slug>/02.webp
 public/projects/<slug>/preview.webm
 ```
 
-Используемые slug: `mychessvr`, `industrial-vr`, `drilling-vr`, `rosatom`, `mobile-rts`, `earth-dragons`, `vulkan-verse`, `mychess-web`. Отсутствующие файлы не должны добавляться в data-массив до проверки.
+Каталог включает проекты `mychess-web`, `mobile-rts`, `rosatom`, `mychessvr`, `cat-citten`, `industrial-vr`, `aptive-education`, `virtual-city`, `fuel-cms`, `drilling-vr`, `vulkan-verse`, `korobka`, `doors-cms`, `earth-dragons`, `villa-krim`, `chudo-projector`, `ar-coloring`, `goons-balatroon`, `chudobooks`, `chudo-floor`, `photon-fps` и `quest-room`.
 
 CV ожидается по адресу `public/cv/Dmitry-Fursov-Unity-Developer-CV.pdf`.
 

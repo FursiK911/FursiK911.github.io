@@ -3,5 +3,10 @@ export type {
   ProjectCategory,
   ProjectLink,
   ProjectMedia,
+  ProjectPeriod,
 } from '../data'
-export type { ExperienceProject, WorkExperience } from '../data/workExperience'
+export type {
+  ExperienceProject,
+  ExperienceRolePhase,
+  WorkExperience,
+} from '../data/workExperience'

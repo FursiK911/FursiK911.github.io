@@ -20,8 +20,8 @@ export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
     <motion.section
       className="hero section-shell"
       id="top"
-      initial={entered ? false : 'hidden'}
-      animate={entered ? 'visible' : 'hidden'}
+      initial={reducedMotion || entered ? false : 'hidden'}
+      animate={reducedMotion || entered ? 'visible' : 'hidden'}
       variants={{
         hidden: {},
         visible: { transition: { staggerChildren: 0.09, delayChildren: 0.12 } },
@@ -70,7 +70,7 @@ export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
         <div className="portrait-note">
           ROSTOV-ON-DON
           <br />
-          UNITY SYSTEMS
+          SOFTWARE SYSTEMS
         </div>
       </motion.div>
       <motion.div className="hero-stats" variants={heroItemVariants}>

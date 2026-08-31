@@ -11,8 +11,8 @@ export function Skills() {
       <SectionHeading index="04" title={t('sections.stack')} />
       <div className="skills-grid">
         {skillGroups.map((group) => (
-          <div className="skill-group" key={group.title}>
-            <h3>{group.title}</h3>
+          <div className="skill-group" key={group.titleKey}>
+            <h3>{t(`directions.${group.titleKey}`)}</h3>
             <div className="skill-list">
               {group.skills.map((skill) => (
                 <button

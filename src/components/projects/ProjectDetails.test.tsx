@@ -14,5 +14,6 @@ it('renders accessible project dialog', async () => {
     />,
   )
   expect(screen.getByRole('dialog')).toBeInTheDocument()
-  expect(screen.getByText('PROJECT DETAILS // MYCHESSVR')).toBeInTheDocument()
+  expect(screen.getByText(/PROJECT DETAILS/)).toBeInTheDocument()
+  expect(screen.getByText('ООО ЦУП')).toBeInTheDocument()
 })

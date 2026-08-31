@@ -9,5 +9,7 @@ it('renders project metadata', async () => {
   renderWithProviders(
     <ProjectCard project={projects[0]} onOpen={() => undefined} />,
   )
-  expect(screen.getByRole('heading', { name: 'MyChessVR' })).toBeInTheDocument()
+  expect(screen.getByRole('heading', { name: 'myChess' })).toBeInTheDocument()
+  expect(screen.getByText('ООО ЦУП')).toBeInTheDocument()
+  expect(screen.getByText(/09\.2023/)).toBeInTheDocument()
 })

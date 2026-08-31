@@ -63,6 +63,17 @@ export function ProjectDetails({
           </p>
           <div className="dialog-facts">
             <div>
+              <span>{t('projects.company')}</span>
+              <strong>{project.company}</strong>
+            </div>
+            <div>
+              <span>{t('projects.period')}</span>
+              <strong>
+                {project.period.from} —{' '}
+                {project.period.to ?? t('experience.present')}
+              </strong>
+            </div>
+            <div>
               <span>{t('projects.role')}</span>
               <strong>
                 {project.roleKey ? t(`roles.${project.roleKey}`) : ''}

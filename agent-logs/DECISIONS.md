@@ -1,5 +1,7 @@
 # Global Decision Index
 
+| DEC-20260831-09 | Use `Software Developer` as the primary public positioning, expose six capability directions as a post-Hero block, keep all 22 projects visible with single-category filters, and preserve the existing PDF CV path. | portfolio, content, i18n, directions, projects, experience, seo | [2026-08-31](2026/08/2026-08-31.md#decision-dec-20260831-09) |
+
 | DEC-20260831-08 | Use a vertical two-line header brand, viewport-centered navigation, and a compact primary resume CTA while removing social links from the header; keep the fifth navigation item as Stack/Стек. | ui, header, navigation, responsive, accessibility | [2026-08-31](2026/08/2026-08-31.md#decision-dec-20260831-08) |
 
 | DEC-20260831-07 | Use separate Glitch.js targets for the persistent hologram and manual burst stack; bursts last 180–320 ms after a randomized 1–4 second pause. | ui, animation, glitch, hologram, timing | [2026-08-31](2026/08/2026-08-31.md#decision-dec-20260831-07) |

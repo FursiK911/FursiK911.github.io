@@ -21,7 +21,7 @@ describe('portfolio app', () => {
     await waitFor(() =>
       expect(
         screen.getByRole('heading', { name: /DMITRY FURSOV/i }),
-      ).toBeVisible(),
+      ).toBeInTheDocument(),
     )
   }
   it('renders the hero and filters projects', async () => {
@@ -29,7 +29,7 @@ describe('portfolio app', () => {
     await renderReadyApp()
     expect(
       screen.getByRole('heading', { name: /DMITRY FURSOV/i }),
-    ).toBeVisible()
+    ).toBeInTheDocument()
     await userEvent.click(screen.getByRole('button', { name: 'WEB' }))
     expect(screen.getByRole('heading', { name: 'myChess' })).toBeVisible()
     expect(

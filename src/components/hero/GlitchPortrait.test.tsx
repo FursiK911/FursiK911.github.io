@@ -79,23 +79,23 @@ it('configures the edited effect for manual short bursts', () => {
   expect(Effects.hologram).toHaveBeenCalledWith({
     color: '#00d9ff',
     opacity: 1,
-    glowIntensity: 0.1,
+    glowIntensity: 0.35,
     scanSpeed: 1,
-    flickerFrequency: 0.08,
-    floatAmplitude: 3,
+    flickerFrequency: 0,
+    floatAmplitude: 1,
   })
   expect(Effects.rgbSplit).toHaveBeenCalledWith({
-    maxOffset: 30,
-    frequency: 0.1,
+    maxOffset: 10,
+    frequency: 0.3,
     blendMode: 'screen',
   })
   expect(Effects.slice).toHaveBeenCalledWith({
-    maxOffset: 60,
-    frequency: 0.1,
+    maxOffset: 20,
+    frequency: 0.5,
   })
   expect(Effects.shake).toHaveBeenCalledWith({
-    amplitudeX: 10,
-    amplitudeY: 4,
+    amplitudeX: 20,
+    amplitudeY: 20,
     frequency: 0.1,
   })
   expect(glitchMock.start).not.toHaveBeenCalled()

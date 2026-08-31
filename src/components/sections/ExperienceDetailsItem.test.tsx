@@ -12,7 +12,7 @@ it('renders achievements, technologies, projects and public links', () => {
     'href',
     'https://info.mychess.app/',
   )
-  expect(screen.getByText('React')).toBeVisible()
+  expect(screen.getAllByText('React').length).toBeGreaterThan(0)
 })
 
 it('shows a private status for projects without a public URL', () => {

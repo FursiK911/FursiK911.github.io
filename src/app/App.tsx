@@ -11,6 +11,7 @@ import { About } from '../components/sections/About'
 import { Experience } from '../components/sections/Experience'
 import { Skills } from '../components/sections/Skills'
 import { Contact } from '../components/sections/Contact'
+import { Directions } from '../components/sections/Directions'
 import { KonamiDebug } from '../components/debug/KonamiDebug'
 import { LoadingAnimationDebug } from '../components/debug/LoadingAnimationDebug'
 import { useTypingText } from '../hooks/useTypingText'
@@ -73,6 +74,7 @@ export default function App() {
             reducedMotion={reducedMotion}
             entered={loader.phase === 'complete'}
           />
+          <Directions />
           <Projects />
           <About />
           <Experience />

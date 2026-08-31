@@ -32,13 +32,17 @@ export function ProjectCard({ project, onOpen }: ProjectCardProps) {
           {project.id.toUpperCase()} // 0{projects.indexOf(project) + 1}
         </span>
         <span className="visual-mark">
-          {project.category.includes('vr')
+          {project.category.includes('xr-ar')
             ? '◈'
-            : project.category.includes('ar')
-              ? '◎'
-              : project.category.includes('web')
-                ? '⌘'
-                : '◌'}
+            : project.category.includes('unigine')
+              ? '◇'
+              : project.category.includes('mobile')
+                ? '▣'
+                : project.category.includes('web')
+                  ? '⌘'
+                  : project.category.includes('realtime')
+                    ? '◌'
+                    : '◆'}
         </span>
         <span className="visual-platform">
           {t(`platforms.${project.platformKey}`)}
@@ -60,6 +64,12 @@ export function ProjectCard({ project, onOpen }: ProjectCardProps) {
         >
           {t('projects.view')} <span>↗</span>
         </ActionButton>
+      </div>
+      <div className="project-context">
+        <span>{project.company}</span>
+        <time dateTime={project.period.to ?? project.period.from}>
+          {project.period.from} — {project.period.to ?? t('experience.present')}
+        </time>
       </div>
       <p className="project-description">
         {t(`projects.${project.descriptionKey}`)}

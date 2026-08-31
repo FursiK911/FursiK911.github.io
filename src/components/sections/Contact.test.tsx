@@ -6,7 +6,7 @@ import { changeLanguage } from '../../i18n'
 it('renders contact actions', async () => {
   await changeLanguage('ru')
   renderWithProviders(<Contact />)
-  expect(screen.getByText(/Open to Unity|Открыт к Unity/)).toBeVisible()
+  expect(screen.getByText(/Open to work|Открыт к задачам/)).toBeVisible()
   expect(
     screen.getByRole('link', { name: /fursik911@yandex.com/ }),
   ).toBeVisible()

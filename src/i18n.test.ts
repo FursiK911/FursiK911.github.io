@@ -5,6 +5,16 @@ import i18n, {
   supportedLanguages,
 } from './i18n'
 
+function translationPaths(value: unknown, prefix = ''): string[] {
+  if (Array.isArray(value)) return [prefix]
+  if (value && typeof value === 'object') {
+    return Object.entries(value).flatMap(([key, child]) =>
+      translationPaths(child, prefix ? `${prefix}.${key}` : key),
+    )
+  }
+  return [prefix]
+}
+
 describe('i18n scaffold', () => {
   afterEach(async () => {
     localStorage.clear()
@@ -13,8 +23,8 @@ describe('i18n scaffold', () => {
 
   it('keeps matching translation keys for every supported language', () => {
     expect(supportedLanguages).toEqual(['ru', 'en'])
-    expect(Object.keys(resources.ru.translation)).toEqual(
-      Object.keys(resources.en.translation),
+    expect(translationPaths(resources.ru.translation)).toEqual(
+      translationPaths(resources.en.translation),
     )
   })
 
