@@ -1,5 +1,9 @@
 # Global Decision Index
 
+| DEC-20260831-08 | Use a vertical two-line header brand, viewport-centered navigation, and a compact primary resume CTA while removing social links from the header; keep the fifth navigation item as Stack/Стек. | ui, header, navigation, responsive, accessibility | [2026-08-31](2026/08/2026-08-31.md#decision-dec-20260831-08) |
+
+| DEC-20260831-07 | Use separate Glitch.js targets for the persistent hologram and manual burst stack; bursts last 180–320 ms after a randomized 1–4 second pause. | ui, animation, glitch, hologram, timing | [2026-08-31](2026/08/2026-08-31.md#decision-dec-20260831-07) |
+
 | DEC-20260831-05 | Use equal screen-space milestone positions with a 50 px edge inset, then measure their Y coordinates from the SVG path. | ui, timeline, svg, geometry, responsive | [2026-08-31](2026/08/2026-08-31.md#decision-dec-20260831-05) |
 
 | DEC-20260831-04 | Use manual Glitch.js bursts with randomized 1–4 second pauses and 140–280 ms active windows, cleaning all timers on teardown. | ui, animation, glitch, timing, testing | [2026-08-31](2026/08/2026-08-31.md#decision-dec-20260831-04) |

@@ -24,6 +24,17 @@ it('renders navigation and toggles mobile menu', async () => {
   expect(screen.queryByText('DF')).not.toBeInTheDocument()
   expect(screen.getByText('Unity Developer')).toBeVisible()
   expect(screen.getByText('Дмитрий Фурсов')).toBeVisible()
+  expect(screen.getByRole('navigation').querySelectorAll('a')).toHaveLength(5)
+  expect(screen.queryByRole('link', { name: 'GitHub' })).not.toBeInTheDocument()
+  expect(
+    screen.queryByRole('link', { name: 'Telegram' }),
+  ).not.toBeInTheDocument()
+
+  const brand = screen.getByRole('link', {
+    name: /Главная — Дмитрий Фурсов/,
+  })
+  expect(brand.querySelector('small')).toHaveTextContent('Дмитрий Фурсов')
+  expect(brand.querySelector('.typing-text')).toBeInTheDocument()
 })
 
 it('adds the scrolled state after passing the scroll threshold', async () => {

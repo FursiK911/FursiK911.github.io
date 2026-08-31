@@ -67,22 +67,6 @@ export function Header({
             {t('header.resume')}
             <IconDownload aria-hidden="true" size={16} stroke={1.5} />
           </ActionLink>
-          <a
-            href="https://github.com/FursiK911"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="GitHub"
-          >
-            GH
-          </a>
-          <a
-            href="https://t.me/FursiK911"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Telegram"
-          >
-            TG
-          </a>
           <button
             className="lang-toggle"
             type="button"

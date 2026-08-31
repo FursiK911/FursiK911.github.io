@@ -15,12 +15,15 @@ export function GlitchPortrait({
   reducedMotion,
 }: GlitchPortraitProps) {
   const targetRef = useRef<HTMLDivElement>(null)
+  const burstTargetRef = useRef<HTMLDivElement>(null)
 
-  usePortraitGlitch(active, reducedMotion, src, targetRef)
+  usePortraitGlitch(active, reducedMotion, src, targetRef, burstTargetRef)
 
   return (
     <div ref={targetRef} className="portrait-glitch">
-      <img src={src} alt={alt} />
+      <div ref={burstTargetRef} className="portrait-glitch-burst-target">
+        <img src={src} alt={alt} />
+      </div>
     </div>
   )
 }

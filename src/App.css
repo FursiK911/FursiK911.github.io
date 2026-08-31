@@ -94,8 +94,9 @@ p {
 }
 .brand {
   display: flex;
-  gap: 14px;
-  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
   text-decoration: none;
   text-transform: uppercase;
   font-family: var(--mono);
@@ -112,6 +113,7 @@ p {
   min-width: 22ch;
   color: var(--cyan);
   font-family: var(--mono);
+  font-size: 0.72rem;
   white-space: nowrap;
 }
 .typing-cursor {
@@ -121,15 +123,20 @@ p {
 }
 .main-nav {
   display: flex;
-  gap: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  gap: 30px;
   align-items: center;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 .main-nav a {
   text-decoration: none;
   color: var(--muted);
   text-transform: uppercase;
   font-family: var(--mono);
-  font-size: 0.66rem;
+  font-size: 0.75rem;
   letter-spacing: 0.08em;
   position: relative;
 }
@@ -165,6 +172,16 @@ p {
   border: 0;
   background: transparent;
   padding: 6px;
+}
+.header-actions .resume-link {
+  gap: 6px;
+  padding: 6px 9px;
+  font-size: 0.56rem;
+  letter-spacing: 0.05em;
+}
+.header-actions .resume-link svg {
+  width: 13px;
+  height: 13px;
 }
 .header-actions > a:not(.action-control):hover,
 .lang-toggle:hover {
@@ -1728,6 +1745,8 @@ body.is-loading {
     flex-direction: column;
     align-items: stretch;
     gap: 18px;
+    transform: none;
+    white-space: normal;
   }
   .main-nav.is-open {
     display: flex;
@@ -1803,7 +1822,7 @@ body.is-loading {
   }
   .brand .typing-text {
     min-width: 22ch;
-    font-size: 0.62rem;
+    font-size: 0.72rem;
   }
   .hero h1 {
     font-size: clamp(3.3rem, 17vw, 5.2rem);

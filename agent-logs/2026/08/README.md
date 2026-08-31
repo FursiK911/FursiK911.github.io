@@ -1,5 +1,7 @@
 # August 2026
 
+| 2026-08-31 | ui, header, navigation, responsive, accessibility, testing | [daily log](2026-08-31.md#updated-header-layout-and-resume-cta) |
+
 | 2026-08-31 | ui, timeline, svg, geometry, animation, responsive, testing, graphify | [daily log](2026-08-31.md#anchored-evenly-spaced-experience-milestones-to-the-svg-wave) |
 
 | 2026-08-31 | ui, animation, glitch, timing, accessibility, testing | [daily log](2026-08-31.md#added-randomized-short-glitchjs-bursts) |

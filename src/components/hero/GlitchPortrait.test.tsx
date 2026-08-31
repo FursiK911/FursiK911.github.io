@@ -34,6 +34,7 @@ const { glitchMock, GlitchMock } = vi.hoisted(() => {
 vi.mock('@isonimus/glitch-js', () => ({
   Glitch: vi.fn(GlitchMock),
   Effects: {
+    hologram: vi.fn(() => ({ name: 'hologram' })),
     rgbSplit: vi.fn(() => ({ name: 'rgbSplit' })),
     slice: vi.fn(() => ({ name: 'slice' })),
     shake: vi.fn(() => ({ name: 'shake' })),
@@ -69,8 +70,20 @@ it('configures the edited effect for manual short bursts', () => {
   expect(target).toBeInstanceOf(HTMLDivElement)
   expect(Glitch).toHaveBeenCalledWith(
     target,
+    expect.objectContaining({ trigger: 'always', active: true }),
+  )
+  expect(Glitch).toHaveBeenCalledWith(
+    document.querySelector('.portrait-glitch-burst-target'),
     expect.objectContaining({ trigger: 'manual', active: false }),
   )
+  expect(Effects.hologram).toHaveBeenCalledWith({
+    color: '#00d9ff',
+    opacity: 1,
+    glowIntensity: 0.1,
+    scanSpeed: 1,
+    flickerFrequency: 0.08,
+    floatAmplitude: 3,
+  })
   expect(Effects.rgbSplit).toHaveBeenCalledWith({
     maxOffset: 30,
     frequency: 0.1,
@@ -88,7 +101,7 @@ it('configures the edited effect for manual short bursts', () => {
   expect(glitchMock.start).not.toHaveBeenCalled()
   vi.advanceTimersByTime(1000)
   expect(glitchMock.start).toHaveBeenCalledTimes(1)
-  vi.advanceTimersByTime(140)
+  vi.advanceTimersByTime(180)
   expect(glitchMock.stop).toHaveBeenCalledTimes(1)
   vi.useRealTimers()
   vi.restoreAllMocks()
@@ -102,7 +115,7 @@ it('configures the edited effect for manual short bursts', () => {
 it('destroys Glitch.js when an active portrait unmounts', () => {
   const { unmount } = renderWithProviders(<GlitchPortrait {...props} active />)
   unmount()
-  expect(glitchMock.destroy).toHaveBeenCalledTimes(1)
+  expect(glitchMock.destroy).toHaveBeenCalledTimes(2)
 })
 
 it('does not schedule bursts for reduced motion and cleans up on unmount', () => {
