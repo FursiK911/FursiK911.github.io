@@ -1,5 +1,13 @@
 # Global Decision Index
 
+| DEC-20260902-19 | Render the final Education Timeline axis segment only through the center of the centered final bullet, never below it. | ui, education, timeline, mantine, responsive | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-19) |
+
+| DEC-20260902-18 | Center Education Timeline bullets within their card rows rather than shifting card bodies, preserving the 12px axis gap and stable expanded-card layout. | ui, education, timeline, responsive, accessibility | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-18) |
+
+| DEC-20260902-17 | Center Education cards vertically against their Timeline bullets, use a 12px axis gap on desktop, and keep the same 12px gap with all cards on the mobile right side. | ui, education, timeline, responsive, accessibility | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-17) |
+
+| DEC-20260902-16 | Use `align-items: center` for each Education metadata row; align desktop card content toward the central axis and restore shared start alignment for all cards on mobile. | ui, education, timeline, accessibility, responsive | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-16) |
+
 | DEC-20260902-15 | Keep the Experience runner desktop-only, preserve its route progress while desktop geometry changes, and restart it from the beginning after returning from the mobile layout. | ui, experience, timeline, gsap, animation, responsive, accessibility | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-15) |
 
 | DEC-20260902-14 | Center Education Timeline detail labels and values horizontally within their metadata columns while preserving the existing grid and mobile fallback. | ui, education, timeline, accessibility, responsive | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-14) |

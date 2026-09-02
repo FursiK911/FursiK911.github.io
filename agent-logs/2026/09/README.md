@@ -1,5 +1,13 @@
 # September 2026
 
+| 2026-09-02 | ui, education, timeline, mantine, responsive, testing | [daily log](2026-09-02.md#completed-final-education-timeline-axis-segment) |
+
+| 2026-09-02 | ui, education, timeline, responsive, accessibility, testing | [daily log](2026-09-02.md#centered-education-bullets-within-cards) |
+
+| 2026-09-02 | ui, education, timeline, responsive, accessibility, testing | [daily log](2026-09-02.md#centered-education-cards-around-timeline-bullets) |
+
+| 2026-09-02 | ui, education, timeline, accessibility, responsive, testing | [daily log](2026-09-02.md#vertically-centered-education-metadata-pairs) |
+
 | 2026-09-02 | ui, experience, timeline, gsap, animation, responsive, accessibility, testing, graphify | [daily log](2026-09-02.md#fixed-responsive-experience-runner-path) |
 
 | 2026-09-02 | ui, education, timeline, accessibility, responsive, testing | [daily log](2026-09-02.md#centered-education-detail-metadata) |
