@@ -1,0 +1,150 @@
+/* Styles owned by the profile slice. */
+:global(.profile-section) {
+  padding-top: 120px;
+}
+
+:global(.profile-section) :global(.hero) {
+  padding-top: 0;
+}
+
+:global(.profile-section) :global(.directions-section--embedded) {
+  padding-inline: 0;
+}
+
+:global(.hero-copy) {
+  max-width: 740px;
+}
+
+:global(.hero-role) {
+  color: var(--cyan);
+  font-family: var(--mono);
+  letter-spacing: 0.12em;
+  font-size: 0.9rem;
+}
+
+:global(.hero-actions) {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 38px;
+}
+
+:global(.hero-portrait) {
+  padding-top: 35px;
+}
+
+:global(.portrait-frame) {
+  position: relative;
+  border: 1px solid var(--line);
+  padding: 12px 12px 38px;
+  background: var(--panel);
+}
+
+:global(.portrait-frame):before,
+:global(.portrait-frame):after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: var(--cyan);
+}
+
+:global(.portrait-frame):before {
+  top: -1px;
+  left: -1px;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+:global(.portrait-frame):after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+}
+
+:global(.portrait-frame) img {
+  width: 100%;
+  display: block;
+}
+
+:global(.portrait-glitch) {
+  position: relative;
+  overflow: visible;
+  isolation: isolate;
+}
+
+:global(.frame-label) {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  color: var(--cyan);
+}
+
+:global(.portrait-note) {
+  line-height: 1.8;
+  margin-top: 20px;
+  text-align: right;
+}
+
+:global(.directions-section) {
+  padding: 42px 0 16px;
+}
+
+:global(.directions-grid) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+:global(.direction-card) {
+  min-height: 136px;
+  padding: 16px 18px;
+  background: var(--panel);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 18px;
+}
+
+:global(.direction-content) {
+  align-self: stretch;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+:global(.direction-qualifier) {
+  color: var(--cyan);
+  font: 0.62rem var(--mono);
+  letter-spacing: 0.08em;
+}
+
+:global(.direction-card) h3 {
+  margin: 0;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+}
+
+:global(.direction-qualifier) {
+  color: #a7b8bc;
+}
+
+:global(.direction-tools) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 14px;
+  list-style: none;
+  margin: auto 0 0;
+  padding: 3px 0 0;
+  color: #d5e1e3;
+  font: 0.72rem var(--mono);
+}
+
+:global(.contact-links) {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

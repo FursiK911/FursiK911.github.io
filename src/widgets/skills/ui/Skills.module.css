@@ -1,0 +1,32 @@
+/* Styles owned by the skills slice. */
+:global(.skills-grid) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px 80px;
+}
+
+:global(.skill-group) h3 {
+  color: var(--cyan);
+  margin: 0 0 18px;
+}
+
+:global(.skill-list) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+:global(.skill-list) button {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: #b4c1c4;
+  padding: 9px 11px;
+  font: 0.67rem var(--mono);
+}
+
+:global(.skill-list) button:hover,
+:global(.skill-list) button:global(.skill-active) {
+  border-color: var(--cyan);
+  color: var(--cyan);
+  background: rgba(167, 243, 246, 0.06);
+}

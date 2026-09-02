@@ -1,0 +1,305 @@
+/* Styles owned by the projects slice. */
+:global(.projects-section),
+:global(.experience-section),
+:global(.skills-section),
+:global(.education-section),
+:global(.contact-section) {
+  padding-top: 120px;
+}
+
+:global(.projects-intro) {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 34px;
+}
+
+:global(.projects-intro) h2,
+:global(.contact-grid) h2 {
+  font-size: clamp(2.4rem, 5vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: -0.065em;
+  max-width: 620px;
+  margin: 0;
+}
+
+:global(.projects-intro) p,
+:global(.contact-grid) p {
+  color: var(--muted);
+  max-width: 340px;
+  line-height: 1.6;
+}
+
+:global(.filter-row) {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 14px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+:global(.filter-row) button {
+  color: var(--muted);
+  border: 1px solid transparent;
+  background: transparent;
+  padding: 8px 12px;
+  font: 0.66rem var(--mono);
+}
+
+:global(.filter-row) button:hover,
+:global(.filter-row) button:global(.selected) {
+  color: var(--cyan);
+  border-color: var(--cyan);
+}
+
+:global(.project-grid) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+:global(.project-card) {
+  min-width: 0;
+}
+
+:global(.project-card):global(.featured):first-child {
+  grid-column: span 2;
+}
+
+:global(.project-visual) {
+  width: 100%;
+  height: 270px;
+  position: relative;
+  border: 1px solid var(--line);
+  overflow: hidden;
+  background: linear-gradient(135deg, #152630, #0b1016 60%, #241d47);
+  color: var(--text);
+  text-align: left;
+}
+
+:global(.project-card):nth-child(3n) :global(.project-visual) {
+  background: linear-gradient(135deg, #30251b, #0b1016 60%, #162b35);
+}
+
+:global(.project-card):nth-child(4n) :global(.project-visual) {
+  background: linear-gradient(135deg, #1c173a, #0b1016 60%, #142a27);
+}
+
+:global(.project-visual):hover {
+  border-color: var(--cyan);
+}
+
+:global(.visual-grid) {
+  position: absolute;
+  inset: 0;
+  opacity: 0.33;
+  background-image:
+    linear-gradient(rgba(167, 243, 246, 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(167, 243, 246, 0.18) 1px, transparent 1px);
+  background-size: 34px 34px;
+  transform: perspective(350px) rotateX(48deg) scale(1.5);
+  transform-origin: bottom;
+}
+
+:global(.visual-id),
+:global(.visual-platform) {
+  position: absolute;
+  font: 0.64rem var(--mono);
+  color: var(--muted);
+  letter-spacing: 0.08em;
+}
+
+:global(.visual-id) {
+  top: 18px;
+  left: 18px;
+}
+
+:global(.visual-platform) {
+  bottom: 18px;
+  right: 18px;
+}
+
+:global(.visual-mark) {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 5.5rem;
+  color: rgba(167, 243, 246, 0.73);
+  text-shadow: 0 0 45px rgba(167, 243, 246, 0.5);
+}
+
+:global(.project-meta) {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 17px;
+  align-items: start;
+}
+
+:global(.project-meta) h3 {
+  font-size: 1.45rem;
+  margin: 8px 0 0;
+  letter-spacing: -0.035em;
+}
+
+:global(.project-context) {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 10px;
+  color: #aab9bc;
+  font: 0.62rem var(--mono);
+  letter-spacing: 0.04em;
+}
+
+:global(.project-context) time {
+  color: var(--cyan);
+}
+
+:global(.project-category) {
+  color: var(--cyan);
+  font-size: 0.6rem;
+}
+
+:global(.project-description) {
+  color: var(--muted);
+  line-height: 1.55;
+  max-width: 590px;
+  margin: 14px 0;
+}
+
+:global(.experience-project-list) {
+  display: grid;
+  gap: 20px;
+  margin-top: 14px;
+}
+
+:global(.experience-project-heading) {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+:global(.experience-project-status) {
+  color: var(--muted);
+  font: 0.6rem var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+:global(.dialog-backdrop) {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: rgba(3, 6, 9, 0.84);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+:global(.project-modal-root) {
+  z-index: 40;
+}
+
+:global(.project-dialog-header) {
+  position: static;
+  min-height: 0;
+  padding: 0;
+}
+
+:global(.dialog-modal-title) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+:global(.project-dialog-body) {
+  padding: 0;
+}
+
+:global(.project-dialog) {
+  position: relative;
+  width: min(920px, 100%);
+  max-height: min(760px, 90vh);
+  overflow: auto;
+  padding: 42px;
+  background: #0b1116;
+  border: 1px solid var(--cyan);
+  box-shadow: 0 20px 90px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+:global(.dialog-close) {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 1.7rem;
+}
+
+:global(.dialog-close):hover {
+  color: var(--cyan);
+}
+
+:global(.project-dialog) h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  max-width: 700px;
+  margin: 20px 0;
+}
+
+:global(.dialog-description) {
+  color: #b7c4c8;
+  max-width: 700px;
+  line-height: 1.65;
+}
+
+:global(.dialog-facts) {
+  display: flex;
+  gap: 60px;
+  border-block: 1px solid var(--line);
+  margin: 30px 0;
+  padding: 18px 0;
+}
+
+:global(.dialog-facts) div {
+  display: grid;
+  gap: 7px;
+}
+
+:global(.dialog-facts) span {
+  color: var(--muted);
+  font: 0.62rem var(--mono);
+}
+
+:global(.dialog-facts) strong {
+  font-weight: 500;
+}
+
+:global(.dialog-columns) {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 50px;
+}
+
+:global(.dialog-columns) ul {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  color: #b7c4c8;
+  line-height: 1.75;
+}
+
+:global(.dialog-links) {
+  display: flex;
+  gap: 18px;
+  margin-top: 30px;
+}

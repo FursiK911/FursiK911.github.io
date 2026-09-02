@@ -1,0 +1,22 @@
+/* Styles owned by the debug slice. */
+:global(.debug-banner) {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 60;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding: 10px 16px;
+  border: 1px solid #7bf3ba;
+  background: #0a1c16;
+  color: #7bf3ba;
+  font: 0.65rem var(--mono);
+}
+
+:global(.debug-banner) button {
+  background: transparent;
+  border: 0;
+  color: inherit;
+}

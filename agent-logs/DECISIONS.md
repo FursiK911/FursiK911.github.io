@@ -1,5 +1,7 @@
 # Global Decision Index
 
+| DEC-20260902-20 | Use strict FSD layers, public slice APIs, one test declaration per file, and colocated CSS Modules with document-only `index.css`. | architecture, fsd, tests, css | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-20) |
+
 | DEC-20260902-19 | Render the final Education Timeline axis segment only through the center of the centered final bullet, never below it. | ui, education, timeline, mantine, responsive | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-19) |
 
 | DEC-20260902-18 | Center Education Timeline bullets within their card rows rather than shifting card bodies, preserving the 12px axis gap and stable expanded-card layout. | ui, education, timeline, responsive, accessibility | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-18) |

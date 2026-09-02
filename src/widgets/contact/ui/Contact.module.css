@@ -1,0 +1,44 @@
+/* Styles owned by the contact slice. */
+:global(.contact-grid) p {
+  color: #d5e1e3;
+}
+
+:global(.contact-links) button {
+  border: 0;
+  background: transparent;
+  color: var(--cyan);
+  font: 0.65rem var(--mono);
+  white-space: nowrap;
+  padding: 6px 0;
+}
+
+:global(.contact-grid) {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 100px;
+}
+
+:global(.contact-section) {
+  padding-bottom: 120px;
+}
+
+:global(.contact-grid) h2 {
+  color: var(--cyan);
+}
+
+:global(.contact-links) > div {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+:global(.contact-links) > div a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+:global(.contact-links) > div a:hover {
+  color: var(--cyan);
+}

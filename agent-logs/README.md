@@ -1,5 +1,7 @@
 # AI Agent Change Log Index
 
+| 2026-09-02 | architecture, fsd, tests, css, tooling, graphify | [daily log](2026/09/2026-09-02.md#fsd-architecture-split-tests-and-colocated-styles) |
+
 | 2026-09-02 | ui, education, timeline, mantine, responsive, testing | [daily log](2026/09/2026-09-02.md#completed-final-education-timeline-axis-segment) |
 
 | 2026-09-02 | ui, education, timeline, responsive, accessibility, testing | [daily log](2026/09/2026-09-02.md#centered-education-bullets-within-cards) |

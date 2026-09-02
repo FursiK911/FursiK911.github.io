@@ -1,8 +1,0 @@
-import { screen } from '@testing-library/react'
-import { Skills } from './Skills'
-import { renderWithProviders } from '../../test/render'
-
-it('renders grouped skills', () => {
-  renderWithProviders(<Skills />)
-  expect(screen.getByRole('button', { name: 'Unity' })).toBeVisible()
-})

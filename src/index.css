@@ -40,3 +40,27 @@ a {
   background: #b4faff;
   color: #081014;
 }
+
+/* Global tokens and document-level rules retained from the legacy stylesheet. */
+:root {
+  --bg: #080b0f;
+  --panel: #0d1318;
+  --panel2: #111a20;
+  --line: rgba(184, 222, 228, 0.14);
+  --muted: #8b9aa1;
+  --text: #ecf3f4;
+  --cyan: #a7f3f6;
+  --violet: #8d7bff;
+  --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--text);
+}
+
+body.is-loading {
+  overflow: hidden;
+}

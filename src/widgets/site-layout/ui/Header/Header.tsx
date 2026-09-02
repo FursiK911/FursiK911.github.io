@@ -1,0 +1,114 @@
+import { cx, styles } from '@/shared/styles'
+import { useEffect, useState } from 'react'
+import { Burger } from '@mantine/core'
+import { IconDownload } from '@tabler/icons-react'
+import { useTranslation } from 'react-i18next'
+import { cvUrl } from '@/entities/project'
+import { ActionLink } from '@/shared/ui/ActionLink'
+import { TypingText } from '@/shared/ui/TypingText'
+import '../SiteLayout.module.css'
+
+const sectionIds = [
+  'top',
+  'projects',
+  'experience',
+  'stack',
+  'education',
+  'contact',
+]
+
+export interface HeaderProps {
+  active: string
+  onLanguage: () => void
+  typedRole: string
+  reducedMotion: boolean
+}
+
+export function Header({
+  active,
+  onLanguage,
+  typedRole,
+  reducedMotion,
+}: HeaderProps) {
+  const { t, i18n } = useTranslation()
+  const [open, setOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const isHome = window.location.pathname === '/'
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 8)
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  return (
+    <header
+      className={
+        scrolled
+          ? cx(styles.siteHeader, styles.isScrolled)
+          : cx(styles.siteHeader)
+      }
+    >
+      <div className={cx(styles.siteHeaderInner)}>
+        <a
+          className={cx(styles.brand)}
+          href={isHome ? '#top' : '/'}
+          aria-label={t('header.homeLabel')}
+        >
+          <small>{t('header.name')}</small>
+          <TypingText text={typedRole} reducedMotion={reducedMotion} />
+        </a>
+        <nav
+          id="primary-nav"
+          className={
+            open ? cx(styles.mainNav, styles.isOpen) : cx(styles.mainNav)
+          }
+          aria-label="Primary navigation"
+        >
+          {sectionIds.map((id, index) => (
+            <a
+              className={active === id ? cx(styles.active) : undefined}
+              href={isHome ? `#${id}` : `/#${id}`}
+              key={id}
+              onClick={() => setOpen(false)}
+            >
+              <span>0{index + 1}</span>
+              {t(`nav.${id}`)}
+            </a>
+          ))}
+        </nav>
+        <div className={cx(styles.headerActions)}>
+          <ActionLink
+            className={cx(styles.resumeLink)}
+            href={cvUrl}
+            download
+            variant="primary"
+          >
+            {t('header.resume')}
+            <IconDownload aria-hidden="true" size={16} stroke={1.5} />
+          </ActionLink>
+          <button
+            className={cx(styles.langToggle)}
+            type="button"
+            onClick={onLanguage}
+            aria-label="Change language"
+          >
+            {i18n.language.startsWith('ru') ? 'EN' : 'RU'}
+          </button>
+          <Burger
+            className={cx(styles.menuToggle)}
+            size="sm"
+            color="cyan"
+            lineSize={1}
+            opened={open}
+            onClick={() => setOpen(!open)}
+            aria-label="Open menu"
+            aria-controls="primary-nav"
+          />
+        </div>
+      </div>
+    </header>
+  )
+}

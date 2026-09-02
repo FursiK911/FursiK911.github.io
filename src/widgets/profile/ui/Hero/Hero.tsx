@@ -1,0 +1,88 @@
+import { cx, styles } from '@/shared/styles'
+import { useTranslation } from 'react-i18next'
+import { motion } from 'motion/react'
+import { IconDownload } from '@tabler/icons-react'
+import { cvUrl } from '@/entities/project'
+import portrait from '@/shared/assets/dmitry-fursov.webp'
+import { TypingText } from '@/shared/ui/TypingText'
+import { GlitchPortrait } from '../GlitchPortrait/GlitchPortrait'
+import { ActionLink } from '@/shared/ui/ActionLink'
+import '../Profile.module.css'
+
+export interface HeroProps {
+  typedRole: string
+  reducedMotion: boolean
+  entered?: boolean
+}
+
+export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
+  const { t } = useTranslation()
+  return (
+    <motion.div
+      className={cx(styles.hero)}
+      initial={reducedMotion || entered ? false : 'hidden'}
+      animate={reducedMotion || entered ? 'visible' : 'hidden'}
+      variants={{
+        hidden: {},
+        visible: { transition: { staggerChildren: 0.09, delayChildren: 0.12 } },
+      }}
+    >
+      <motion.div
+        className={cx(styles.heroCopy)}
+        variants={{ hidden: {}, visible: {} }}
+      >
+        <motion.span className={cx(styles.eyebrow)} variants={heroItemVariants}>
+          {t('hero.eyebrow')} <i>● ONLINE</i>
+        </motion.span>
+        <motion.h1 variants={heroItemVariants}>
+          <span>{t('hero.hi')}</span>
+          {t('hero.name')}
+        </motion.h1>
+        <motion.p className={cx(styles.heroRole)} variants={heroItemVariants}>
+          <TypingText text={typedRole} reducedMotion={reducedMotion} />
+        </motion.p>
+        <motion.p
+          className={cx(styles.terminalLine)}
+          variants={heroItemVariants}
+        >
+          <span>›_</span> {t('hero.terminal')}
+        </motion.p>
+        <motion.div
+          className={cx(styles.heroActions)}
+          variants={heroItemVariants}
+        >
+          <ActionLink variant="primary" href="#projects">
+            {t('hero.projects')} <span>↘</span>
+          </ActionLink>
+          <ActionLink variant="secondary" href={cvUrl} download>
+            {t('hero.cv')}
+            <IconDownload aria-hidden="true" size={16} stroke={1.5} />
+          </ActionLink>
+          <ActionLink variant="text" href="#contact">
+            {t('hero.contact')} ↗
+          </ActionLink>
+        </motion.div>
+      </motion.div>
+      <motion.div
+        className={cx(styles.heroPortrait)}
+        variants={heroItemVariants}
+      >
+        <div className={cx(styles.portraitFrame)}>
+          <GlitchPortrait
+            src={portrait}
+            alt={t('hero.portraitAlt')}
+            active={entered}
+            reducedMotion={reducedMotion}
+          />
+          <span className={cx(styles.frameLabel)}>PROFILE_IMAGE // 001</span>
+        </div>
+        <div className={cx(styles.portraitNote)}>{t('hero.languages')}</div>
+      </motion.div>
+    </motion.div>
+  )
+}
+
+const heroItemVariants = {
+  hidden: { opacity: 0, y: 18 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.45 } },
+}

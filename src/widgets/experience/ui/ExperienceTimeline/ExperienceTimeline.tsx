@@ -1,0 +1,262 @@
+import { cx, styles } from '@/shared/styles'
+import { gsap } from 'gsap'
+import { MotionPathPlugin } from 'gsap/MotionPathPlugin'
+import { motion, useReducedMotion } from 'motion/react'
+import { useLayoutEffect, useRef, useState } from 'react'
+import type { CSSProperties } from 'react'
+import { useTranslation } from 'react-i18next'
+import type { WorkExperience } from '@/entities/work-experience'
+import { getEvenlySpacedX } from '../../model/ExperienceTimelineGeometry/ExperienceTimelineGeometry'
+import { ExperienceTimelineItem } from '../ExperienceTimelineItem/ExperienceTimelineItem'
+import { FutureExperienceItem } from '../FutureExperienceItem/FutureExperienceItem'
+
+gsap.registerPlugin(MotionPathPlugin)
+
+export interface ExperienceTimelineProps {
+  entries: WorkExperience[]
+  reducedMotion?: boolean
+}
+
+type ScenePoint = { x: number; y: number }
+
+const desktopPath =
+  'M 0 165 C 44 165 72 166 102 161 C 190 148 260 112 326 99 C 404 86 492 145 570 204 C 631 247 688 211 744 170 C 816 121 872 94 936 100 C 1010 107 1067 166 1108 205 C 1141 225 1172 220 1200 202'
+const mobilePath = 'M 50 0 L 50 100'
+const desktopTimelineQuery = '(min-width: 1025px)'
+
+const fallbackPoints: ScenePoint[] = [
+  { x: 50, y: 222 },
+  { x: 270, y: 165 },
+  { x: 490, y: 175 },
+  { x: 710, y: 248 },
+  { x: 930, y: 171 },
+  { x: 1150, y: 272 },
+]
+
+function pointToSceneAtX(
+  path: SVGPathElement,
+  targetX: number,
+  sceneRect: DOMRect,
+): ScenePoint | null {
+  const totalLength = path.getTotalLength()
+  const matrix = path.getScreenCTM()
+  const svg = path.ownerSVGElement
+  if (!totalLength || !matrix || !svg?.createSVGPoint()) return null
+
+  let low = 0
+  let high = totalLength
+  let closest: ScenePoint | null = null
+
+  for (let iteration = 0; iteration < 24; iteration += 1) {
+    const length = (low + high) / 2
+    const point = path.getPointAtLength(length)
+    const svgPoint = svg.createSVGPoint()
+    svgPoint.x = point.x
+    svgPoint.y = point.y
+    const screenPoint = svgPoint.matrixTransform(matrix)
+    const scenePoint = {
+      x: screenPoint.x - sceneRect.left,
+      y: screenPoint.y - sceneRect.top,
+    }
+
+    if (
+      !closest ||
+      Math.abs(scenePoint.x - targetX) < Math.abs(closest.x - targetX)
+    ) {
+      closest = scenePoint
+    }
+
+    if (scenePoint.x < targetX) {
+      low = length
+    } else {
+      high = length
+    }
+  }
+
+  return closest
+}
+
+export function ExperienceTimeline({
+  entries,
+  reducedMotion: reducedMotionOverride,
+}: ExperienceTimelineProps) {
+  const { t } = useTranslation()
+  const prefersReducedMotion = useReducedMotion() ?? false
+  const reducedMotion = reducedMotionOverride ?? prefersReducedMotion
+  const sceneRef = useRef<HTMLDivElement>(null)
+  const axisRef = useRef<SVGSVGElement>(null)
+  const runnerRef = useRef<HTMLSpanElement>(null)
+  const [axisPoints, setAxisPoints] = useState(fallbackPoints)
+
+  useLayoutEffect(() => {
+    const scene = sceneRef.current
+    const runner = runnerRef.current
+    const axis = axisRef.current
+    const path = axis?.querySelector<SVGPathElement>(
+      '#experience-timeline-wave-desktop',
+    )
+    if (!scene || !runner || !path || typeof path.getTotalLength !== 'function')
+      return
+
+    const desktopMedia = window.matchMedia(desktopTimelineQuery)
+    let animationFrame: number | null = null
+    let runnerTween: gsap.core.Tween | null = null
+    let wasDesktop = false
+
+    const stopRunner = () => {
+      runnerTween?.kill()
+      runnerTween = null
+    }
+
+    const createRunner = (progress: number) => {
+      if (
+        reducedMotion ||
+        typeof path.getScreenCTM !== 'function' ||
+        !path.getScreenCTM()
+      )
+        return
+
+      gsap.set(runner, { x: 0, y: 0, autoAlpha: 1 })
+      runnerTween = gsap.to(runner, {
+        duration: 12,
+        ease: 'none',
+        repeat: -1,
+        repeatDelay: 0.7,
+        paused: true,
+        motionPath: {
+          path,
+          align: path,
+          alignOrigin: [0.5, 0.5],
+          start: 0.03,
+          end: 0.97,
+        },
+      })
+
+      runnerTween.progress(progress).play()
+    }
+
+    const refreshTimeline = () => {
+      animationFrame = null
+
+      if (!desktopMedia.matches) {
+        stopRunner()
+        wasDesktop = false
+        return
+      }
+
+      const sceneRect = scene.getBoundingClientRect()
+      if (!sceneRect.width || !sceneRect.height) return
+
+      const targetXs = getEvenlySpacedX(sceneRect.width, entries.length + 1)
+      const points = targetXs.map((targetX) =>
+        pointToSceneAtX(path, targetX, sceneRect),
+      )
+
+      if (points.every((point): point is ScenePoint => point !== null)) {
+        setAxisPoints(points)
+      }
+
+      const progress = wasDesktop ? (runnerTween?.progress() ?? 0) : 0
+      stopRunner()
+      createRunner(progress)
+      wasDesktop = true
+    }
+
+    const scheduleRefresh = () => {
+      if (animationFrame !== null) cancelAnimationFrame(animationFrame)
+      animationFrame = requestAnimationFrame(refreshTimeline)
+    }
+
+    if (!reducedMotion) gsap.set(runner, { autoAlpha: 0 })
+    scheduleRefresh()
+
+    const observer =
+      typeof ResizeObserver === 'undefined'
+        ? null
+        : new ResizeObserver(scheduleRefresh)
+    observer?.observe(scene)
+    desktopMedia.addEventListener('change', scheduleRefresh)
+
+    return () => {
+      if (animationFrame !== null) cancelAnimationFrame(animationFrame)
+      desktopMedia.removeEventListener('change', scheduleRefresh)
+      observer?.disconnect()
+      stopRunner()
+    }
+  }, [entries, reducedMotion])
+
+  const futurePoint = axisPoints[entries.length] ?? fallbackPoints.at(-1)!
+
+  return (
+    <div
+      ref={sceneRef}
+      className={cx(styles.experienceTimeline)}
+      aria-label={t('experience.timelineLabel')}
+    >
+      <svg
+        ref={axisRef}
+        className={cx(styles.experienceTimelineAxis)}
+        viewBox="0 0 1200 420"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <motion.path
+          id="experience-timeline-wave-desktop"
+          className={cx(
+            styles.experienceTimelineWavePath,
+            styles.experienceTimelineWaveDesktop,
+          )}
+          d={desktopPath}
+          strokeDasharray="5 7"
+          initial={reducedMotion ? false : { opacity: 0 }}
+          whileInView={reducedMotion ? undefined : { opacity: 0.72 }}
+          viewport={reducedMotion ? undefined : { once: true }}
+          transition={{ duration: 0.9, ease: 'easeOut' }}
+        />
+        <motion.path
+          id="experience-timeline-wave-mobile"
+          className={cx(
+            styles.experienceTimelineWavePath,
+            styles.experienceTimelineWaveMobile,
+          )}
+          d={mobilePath}
+          strokeDasharray="5 7"
+          initial={reducedMotion ? false : { opacity: 0 }}
+          whileInView={reducedMotion ? undefined : { opacity: 0.72 }}
+          viewport={reducedMotion ? undefined : { once: true }}
+          transition={{ duration: 0.9, ease: 'easeOut' }}
+        />
+      </svg>
+      <span
+        ref={runnerRef}
+        className={cx(styles.experienceTimelineRunner)}
+        data-reduced-motion={reducedMotion || undefined}
+        style={
+          (reducedMotion
+            ? {
+                '--runner-x': `${axisPoints[0]?.x ?? fallbackPoints[0].x}px`,
+                '--runner-y': `${axisPoints[0]?.y ?? fallbackPoints[0].y}px`,
+              }
+            : undefined) as CSSProperties | undefined
+        }
+        aria-hidden="true"
+      />
+      <div className={cx(styles.experienceTimelineItems)}>
+        {entries.map((entry, index) => (
+          <ExperienceTimelineItem
+            entry={entry}
+            index={index}
+            reducedMotion={reducedMotion}
+            axisPoint={axisPoints[index] ?? fallbackPoints[index]}
+            key={entry.id}
+          />
+        ))}
+        <FutureExperienceItem
+          index={entries.length}
+          reducedMotion={reducedMotion}
+          axisPoint={futurePoint}
+        />
+      </div>
+    </div>
+  )
+}
