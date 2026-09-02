@@ -1,5 +1,5 @@
 import { GlitchPortrait } from '@/widgets/profile'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 const { glitchMock, GlitchMock } = vi.hoisted(() => {
   const mock = {
     start: vi.fn(),

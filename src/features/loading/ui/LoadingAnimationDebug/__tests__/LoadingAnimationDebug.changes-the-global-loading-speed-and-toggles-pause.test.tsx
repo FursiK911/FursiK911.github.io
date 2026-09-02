@@ -5,7 +5,7 @@ import {
   getLoadingAnimationSpeed,
   setLoadingAnimationSpeed,
 } from '@/features/loading'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { LoadingAnimationDebug } from '../LoadingAnimationDebug'
 afterEach(() => act(() => setLoadingAnimationSpeed(1)))
 it('changes the global loading speed and toggles pause', async () => {

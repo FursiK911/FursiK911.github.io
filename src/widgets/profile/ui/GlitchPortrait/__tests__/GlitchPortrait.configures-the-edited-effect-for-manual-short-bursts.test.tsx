@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react'
 import { Effects, Glitch } from '@isonimus/glitch-js'
 import { GlitchPortrait } from '@/widgets/profile'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 const { glitchMock, GlitchMock } = vi.hoisted(() => {
   const mock = {
     start: vi.fn(),

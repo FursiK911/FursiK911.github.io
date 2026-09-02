@@ -1,5 +1,5 @@
 import { EducationTimeline } from '../EducationTimeline'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { changeLanguage } from '@/shared/config/i18n'
 it('centers the cyan timeline and alternates its cards', async () => {
   await changeLanguage('ru')

@@ -1,11 +1,7 @@
 import { cx, styles } from '@/shared/styles'
 import { useTranslation } from 'react-i18next'
 import { filters } from '@/features/project-filtering'
-
-export interface ProjectFiltersProps {
-  active: (typeof filters)[number]
-  onChange: (filter: (typeof filters)[number]) => void
-}
+import type { ProjectFiltersProps } from './types/ProjectFilters.types'
 
 export function ProjectFilters({ active, onChange }: ProjectFiltersProps) {
   const { t } = useTranslation()

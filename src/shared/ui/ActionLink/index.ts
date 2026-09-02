@@ -1,2 +1,3 @@
 export { ActionLink } from './ActionLink'
-export type { ActionVariant } from '../action/action.types'
+export type { ActionLinkProps } from './types/ActionLink.types'
+export type { ActionVariant } from '../action/types/action.types'

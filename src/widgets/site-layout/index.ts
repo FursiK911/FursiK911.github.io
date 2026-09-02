@@ -1,3 +1,5 @@
 export { Footer } from './ui/Footer/Footer'
 export { Header } from './ui/Header/Header'
 export { LegalPageLayout } from './ui/LegalPageLayout/LegalPageLayout'
+export type { HeaderProps } from './ui/Header/types/Header.types'
+export type { LegalPageLayoutProps } from './ui/LegalPageLayout/types/LegalPageLayout.types'

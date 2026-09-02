@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { ActionLink } from '../ActionLink'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 it('renders link attributes and the requested action variant', () => {
   renderWithProviders(
     <ActionLink

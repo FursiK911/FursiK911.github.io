@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { Footer } from '@/widgets/site-layout'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { changeLanguage } from '@/shared/config/i18n'
 beforeEach(async () => {
   await changeLanguage('ru')

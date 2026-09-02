@@ -2,7 +2,7 @@ import { cx, styles } from '@/shared/styles'
 import { useTranslation } from 'react-i18next'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
 import { EducationTimeline } from '../EducationTimeline/EducationTimeline'
-import '../Education.module.css'
+import '../styles/Education.module.css'
 
 export function Education() {
   const { t } = useTranslation()

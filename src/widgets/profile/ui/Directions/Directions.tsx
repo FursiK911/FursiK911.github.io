@@ -2,14 +2,9 @@ import { cx, styles } from '@/shared/styles'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'motion/react'
-import { directions } from '../../model/directions'
+import { directions } from '../../model/directions/data/directions.data'
 import { MetricCounter } from '@/shared/ui/MetricCounter'
-
-export interface DirectionsProps {
-  reducedMotion?: boolean
-  entered?: boolean
-  embedded?: boolean
-}
+import type { DirectionsProps } from './types/Directions.types'
 
 export function Directions({
   reducedMotion = false,

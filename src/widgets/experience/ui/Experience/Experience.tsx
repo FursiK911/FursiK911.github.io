@@ -6,7 +6,7 @@ import { workExperience } from '@/entities/work-experience'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
 import { ExperienceDetails } from '../ExperienceDetails/ExperienceDetails'
 import { ExperienceTimeline } from '../ExperienceTimeline/ExperienceTimeline'
-import '../Experience.module.css'
+import '../styles/Experience.module.css'
 
 export function Experience() {
   const { t } = useTranslation()

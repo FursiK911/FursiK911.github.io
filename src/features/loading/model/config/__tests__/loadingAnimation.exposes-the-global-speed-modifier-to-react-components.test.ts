@@ -3,8 +3,8 @@ import { afterEach, beforeEach, vi } from 'vitest'
 import {
   getLoadingAnimationSpeed,
   setLoadingAnimationSpeed,
-  useLoadingAnimationSpeed,
-} from '../loadingAnimation'
+} from '../../store/loadingAnimationStore'
+import { useLoadingAnimationSpeed } from '../../useLoadingAnimationSpeed/useLoadingAnimationSpeed'
 beforeEach(() => {
   vi.useFakeTimers({ toFake: ['Date', 'setTimeout', 'clearTimeout'] })
   setLoadingAnimationSpeed(1)

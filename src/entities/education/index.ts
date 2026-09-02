@@ -1,2 +1,5 @@
-export { education } from './model/education'
-export type { EducationEntry, EducationEntryKind } from './model/education'
+export { education } from './model/data/education.data'
+export type {
+  EducationEntry,
+  EducationEntryKind,
+} from './model/types/education.types'

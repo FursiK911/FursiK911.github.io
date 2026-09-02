@@ -1,6 +1,6 @@
 import { fireEvent, screen } from '@testing-library/react'
 import { KonamiDebug } from '../KonamiDebug'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 it('activates debug mode with Konami code', () => {
   renderWithProviders(<KonamiDebug />)
   for (const key of [

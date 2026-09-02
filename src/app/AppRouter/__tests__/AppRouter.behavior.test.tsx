@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react'
 import { afterEach, beforeEach, it, expect } from 'vitest'
 import { AppRouter } from '../AppRouter'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { changeLanguage } from '@/shared/config/i18n'
 beforeEach(() => {
   window.history.pushState({}, '', '/privacy/')

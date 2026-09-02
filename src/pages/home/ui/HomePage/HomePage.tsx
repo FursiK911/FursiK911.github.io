@@ -14,15 +14,7 @@ import { Education } from '@/widgets/education'
 import { Contact } from '@/widgets/contact'
 import { KonamiDebug } from '@/features/konami-debug'
 import { useTypingText } from '@/shared/lib/useTypingText/useTypingText'
-
-const sectionIds = [
-  'top',
-  'projects',
-  'experience',
-  'stack',
-  'education',
-  'contact',
-]
+import { sectionIds } from '../../model/config/sectionIds.config'
 
 export default function App() {
   const { i18n } = useTranslation()

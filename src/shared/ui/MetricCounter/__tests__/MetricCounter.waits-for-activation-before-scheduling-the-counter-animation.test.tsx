@@ -1,5 +1,5 @@
 import { act, screen } from '@testing-library/react'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { MetricCounter } from '../MetricCounter'
 vi.mock('@number-flow/react', () => ({
   default: ({ value, suffix }: { value: number; suffix?: string }) => (

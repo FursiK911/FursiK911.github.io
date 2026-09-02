@@ -1,39 +1,8 @@
 import { cx, styles } from '@/shared/styles'
 import { useTranslation } from 'react-i18next'
-import {
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconBrandTelegram,
-  IconDownload,
-} from '@tabler/icons-react'
+import { IconDownload } from '@tabler/icons-react'
 import { cvUrl } from '@/entities/project'
-
-const sectionIds = [
-  'top',
-  'projects',
-  'experience',
-  'stack',
-  'education',
-  'contact',
-] as const
-
-const socialLinks = [
-  {
-    label: 'Telegram',
-    href: 'https://t.me/FursiK911',
-    Icon: IconBrandTelegram,
-  },
-  {
-    label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/dmitry-fursov-251097213/',
-    Icon: IconBrandLinkedin,
-  },
-  {
-    label: 'GitHub',
-    href: 'https://github.com/FursiK911',
-    Icon: IconBrandGithub,
-  },
-]
+import { sectionIds, socialLinks } from './data/footer.data'
 
 export function Footer() {
   const { t } = useTranslation()

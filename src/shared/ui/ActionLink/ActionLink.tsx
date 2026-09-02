@@ -1,11 +1,5 @@
-import type { AnchorHTMLAttributes, PropsWithChildren } from 'react'
-import { actionClassName, type ActionVariant } from '../action/action.types'
-
-export interface ActionLinkProps extends PropsWithChildren<
-  AnchorHTMLAttributes<HTMLAnchorElement>
-> {
-  variant?: ActionVariant
-}
+import { actionClassName } from '../action/utils/actionClassName'
+import type { ActionLinkProps } from './types/ActionLink.types'
 
 export function ActionLink({
   children,

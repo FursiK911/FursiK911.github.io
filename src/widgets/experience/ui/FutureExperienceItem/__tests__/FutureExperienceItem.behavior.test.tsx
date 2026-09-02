@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { FutureExperienceItem } from '../FutureExperienceItem'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 it('renders a keyboard-accessible future CTA', () => {
   renderWithProviders(
     <FutureExperienceItem

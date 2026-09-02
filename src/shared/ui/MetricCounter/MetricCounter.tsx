@@ -2,12 +2,7 @@ import { cx, styles } from '@/shared/styles'
 import { useEffect, useState } from 'react'
 import NumberFlow from '@number-flow/react'
 
-type MetricCounterProps = {
-  value: number
-  suffix?: string
-  label: string
-  active?: boolean
-}
+import type { MetricCounterProps } from './types/MetricCounter.types'
 
 export function MetricCounter({
   value,
@@ -42,5 +37,3 @@ export function MetricCounter({
     </div>
   )
 }
-
-export type { MetricCounterProps }

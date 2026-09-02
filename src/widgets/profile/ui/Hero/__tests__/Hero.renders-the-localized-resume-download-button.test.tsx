@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { Hero } from '@/widgets/profile'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { changeLanguage } from '@/shared/config/i18n'
 it('renders the localized resume download button', async () => {
   await changeLanguage('ru')

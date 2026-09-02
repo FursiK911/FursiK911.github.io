@@ -1,13 +1,7 @@
 import { cx, styles } from '@/shared/styles'
 import { useRef } from 'react'
 import { usePortraitGlitch } from '@/widgets/profile/model/usePortraitGlitch/usePortraitGlitch'
-
-interface GlitchPortraitProps {
-  src: string
-  alt: string
-  active: boolean
-  reducedMotion: boolean
-}
+import type { GlitchPortraitProps } from './types/GlitchPortrait.types'
 
 export function GlitchPortrait({
   src,

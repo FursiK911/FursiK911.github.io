@@ -8,7 +8,7 @@ import { ProjectCard } from '@/entities/project'
 import { ProjectDetails } from '@/features/project-details'
 import { ProjectFilters, filters } from '@/features/project-filtering'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
-import '../Projects.module.css'
+import '../styles/Projects.module.css'
 
 export function Projects() {
   const { t } = useTranslation()

@@ -5,76 +5,22 @@ import { motion, useReducedMotion } from 'motion/react'
 import { useLayoutEffect, useRef, useState } from 'react'
 import type { CSSProperties } from 'react'
 import { useTranslation } from 'react-i18next'
-import type { WorkExperience } from '@/entities/work-experience'
-import { getEvenlySpacedX } from '../../model/ExperienceTimelineGeometry/ExperienceTimelineGeometry'
+import { getEvenlySpacedX } from '../../model/experience-timeline-geometry/utils/experience-timeline-geometry'
 import { ExperienceTimelineItem } from '../ExperienceTimelineItem/ExperienceTimelineItem'
 import { FutureExperienceItem } from '../FutureExperienceItem/FutureExperienceItem'
+import type {
+  ExperienceTimelineProps,
+  ScenePoint,
+} from './types/ExperienceTimeline.types'
+import {
+  desktopPath,
+  mobilePath,
+  desktopTimelineQuery,
+} from './config/experienceTimeline.config'
+import { fallbackPoints } from './data/fallbackPoints.data'
+import { pointToSceneAtX } from './utils/pointToSceneAtX'
 
 gsap.registerPlugin(MotionPathPlugin)
-
-export interface ExperienceTimelineProps {
-  entries: WorkExperience[]
-  reducedMotion?: boolean
-}
-
-type ScenePoint = { x: number; y: number }
-
-const desktopPath =
-  'M 0 165 C 44 165 72 166 102 161 C 190 148 260 112 326 99 C 404 86 492 145 570 204 C 631 247 688 211 744 170 C 816 121 872 94 936 100 C 1010 107 1067 166 1108 205 C 1141 225 1172 220 1200 202'
-const mobilePath = 'M 50 0 L 50 100'
-const desktopTimelineQuery = '(min-width: 1025px)'
-
-const fallbackPoints: ScenePoint[] = [
-  { x: 50, y: 222 },
-  { x: 270, y: 165 },
-  { x: 490, y: 175 },
-  { x: 710, y: 248 },
-  { x: 930, y: 171 },
-  { x: 1150, y: 272 },
-]
-
-function pointToSceneAtX(
-  path: SVGPathElement,
-  targetX: number,
-  sceneRect: DOMRect,
-): ScenePoint | null {
-  const totalLength = path.getTotalLength()
-  const matrix = path.getScreenCTM()
-  const svg = path.ownerSVGElement
-  if (!totalLength || !matrix || !svg?.createSVGPoint()) return null
-
-  let low = 0
-  let high = totalLength
-  let closest: ScenePoint | null = null
-
-  for (let iteration = 0; iteration < 24; iteration += 1) {
-    const length = (low + high) / 2
-    const point = path.getPointAtLength(length)
-    const svgPoint = svg.createSVGPoint()
-    svgPoint.x = point.x
-    svgPoint.y = point.y
-    const screenPoint = svgPoint.matrixTransform(matrix)
-    const scenePoint = {
-      x: screenPoint.x - sceneRect.left,
-      y: screenPoint.y - sceneRect.top,
-    }
-
-    if (
-      !closest ||
-      Math.abs(scenePoint.x - targetX) < Math.abs(closest.x - targetX)
-    ) {
-      closest = scenePoint
-    }
-
-    if (scenePoint.x < targetX) {
-      low = length
-    } else {
-      high = length
-    }
-  }
-
-  return closest
-}
 
 export function ExperienceTimeline({
   entries,

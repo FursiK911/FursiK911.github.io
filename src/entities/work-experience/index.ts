@@ -1,6 +1,6 @@
-export { workExperience } from './model/workExperience'
+export { workExperience } from './model/data/work-experience.data'
 export type {
   ExperienceProject,
   ExperienceRolePhase,
   WorkExperience,
-} from './model/workExperience'
+} from './model/types/work-experience.types'

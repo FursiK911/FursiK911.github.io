@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { EducationTimeline } from '../EducationTimeline'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { changeLanguage } from '@/shared/config/i18n'
 it('renders education events from newest to oldest', async () => {
   await changeLanguage('ru')

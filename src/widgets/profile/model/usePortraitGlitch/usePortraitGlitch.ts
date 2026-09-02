@@ -1,65 +1,9 @@
 import { useEffect, type RefObject } from 'react'
-import { Effects, Glitch } from '@isonimus/glitch-js'
-
-const createBurstGlitch = (target: HTMLDivElement) =>
-  new Glitch(target, {
-    trigger: 'manual',
-    active: false,
-    effects: [
-      Effects.rgbSplit({
-        maxOffset: 10,
-        frequency: 0.3,
-        blendMode: 'screen',
-      }),
-      Effects.slice({
-        maxOffset: 20,
-        frequency: 0.5,
-      }),
-      Effects.shake({
-        amplitudeX: 20,
-        amplitudeY: 20,
-        frequency: 0.1,
-      }),
-      // Effects.flicker({
-      //   minOpacity: 0.4,
-      //   frequency: 0.4
-      // })
-    ],
-  })
-
-const createHologram = (target: HTMLDivElement) =>
-  new Glitch(target, {
-    trigger: 'always',
-    active: true,
-    effects: [
-      Effects.hologram({
-        color: '#00d9ff',
-        opacity: 1,
-        glowIntensity: 0.35,
-        scanSpeed: 1,
-        flickerFrequency: 0,
-        floatAmplitude: 1,
-      }),
-    ],
-  })
-
-const randomBetween = (min: number, max: number) =>
-  Math.round(min + Math.random() * (max - min))
-
-const nextPause = () => randomBetween(1000, 4000)
-const burstDuration = () => randomBetween(180, 320)
-
-const markDecorativeLayers = (target: HTMLDivElement) => {
-  target
-    .querySelectorAll<HTMLElement>('.glitch-clone, .glitch-overlay')
-    .forEach((layer) => {
-      layer.setAttribute('aria-hidden', 'true')
-      layer.querySelectorAll<HTMLImageElement>('img').forEach((image) => {
-        image.alt = ''
-        image.setAttribute('aria-hidden', 'true')
-      })
-    })
-}
+import { createBurstGlitch } from './utils/createBurstGlitch'
+import { createHologram } from './utils/createHologram'
+import { markDecorativeLayers } from './utils/markDecorativeLayers'
+import { getBurstDuration } from './utils/getBurstDuration'
+import { getNextPause } from './utils/getNextPause'
 
 export function usePortraitGlitch(
   active: boolean,
@@ -88,12 +32,12 @@ export function usePortraitGlitch(
         burstTimer = setTimeout(() => {
           glitch.stop()
           burstActive = false
-          scheduleBurst(nextPause())
-        }, burstDuration())
+          scheduleBurst(getNextPause())
+        }, getBurstDuration())
       }, delay)
     }
 
-    scheduleBurst(nextPause())
+    scheduleBurst(getNextPause())
 
     return () => {
       if (pauseTimer) clearTimeout(pauseTimer)

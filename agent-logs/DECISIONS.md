@@ -1,5 +1,9 @@
 # Global Decision Index
 
+| DEC-20260903-02 | Group source declarations into owner-adjacent lowercase `types`, `config`, `data`, `utils`, and `styles` folders while preserving CSS mechanics and slice public APIs. | architecture, fsd, role-folders, types, config, data, utils, styles | [2026-09-03](2026/09/2026-09-03.md#decision-dec-20260903-02) |
+
+| DEC-20260903-01 | Use role-based source separation with single-purpose components/hooks, grouped related types/config/data, one file per named helper, preserved **tests**, and no structural validator. | architecture, fsd, separation, hooks, types, data, config, testing | [2026-09-03](2026/09/2026-09-03.md#decision-dec-20260903-01) |
+
 | DEC-20260902-20 | Use strict FSD layers, public slice APIs, one test declaration per file, and colocated CSS Modules with document-only `index.css`. | architecture, fsd, tests, css | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-20) |
 
 | DEC-20260902-19 | Render the final Education Timeline axis segment only through the center of the centered final bullet, never below it. | ui, education, timeline, mantine, responsive | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-19) |

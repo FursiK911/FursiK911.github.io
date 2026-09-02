@@ -1,2 +1,2 @@
-export { actionClassName } from './action.types'
-export type { ActionVariant } from './action.types'
+export type { ActionVariant } from './types/action.types'
+export { actionClassName } from './utils/actionClassName'

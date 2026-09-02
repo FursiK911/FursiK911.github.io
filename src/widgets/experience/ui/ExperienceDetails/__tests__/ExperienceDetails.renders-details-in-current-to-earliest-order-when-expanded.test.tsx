@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react'
 import { ExperienceDetails } from '../ExperienceDetails'
 import { workExperience } from '@/entities/work-experience'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 it('renders details in current-to-earliest order when expanded', () => {
   renderWithProviders(
     <ExperienceDetails entries={workExperience} expanded reducedMotion />,

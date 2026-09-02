@@ -1,9 +1,5 @@
 import { cx, styles } from '@/shared/styles'
-interface TypingTextProps {
-  text: string
-  reducedMotion?: boolean
-  className?: string
-}
+import type { TypingTextProps } from './types/TypingText.types'
 
 export function TypingText({
   text,

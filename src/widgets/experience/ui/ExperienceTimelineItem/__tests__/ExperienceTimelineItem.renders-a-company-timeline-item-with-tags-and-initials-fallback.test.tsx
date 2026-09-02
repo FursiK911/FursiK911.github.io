@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react'
 import { ExperienceTimelineItem } from '../ExperienceTimelineItem'
 import { workExperience } from '@/entities/work-experience'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 it('renders a company timeline item with tags and initials fallback', () => {
   renderWithProviders(
     <ExperienceTimelineItem

@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { Hero } from '@/widgets/profile'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 it('renders hero portrait and role', () => {
   renderWithProviders(<Hero typedRole="Unity Developer" reducedMotion />)
   expect(screen.getByRole('img')).toHaveAttribute('alt')

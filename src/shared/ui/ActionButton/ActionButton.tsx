@@ -1,11 +1,5 @@
-import type { ButtonHTMLAttributes, PropsWithChildren } from 'react'
-import { actionClassName, type ActionVariant } from '../action/action.types'
-
-export interface ActionButtonProps extends PropsWithChildren<
-  ButtonHTMLAttributes<HTMLButtonElement>
-> {
-  variant?: ActionVariant
-}
+import { actionClassName } from '../action/utils/actionClassName'
+import type { ActionButtonProps } from './types/ActionButton.types'
 
 export function ActionButton({
   children,

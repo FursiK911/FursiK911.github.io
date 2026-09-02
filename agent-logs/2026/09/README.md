@@ -1,5 +1,9 @@
 # September 2026
 
+| 2026-09-03 | architecture, fsd, role-folders, types, config, data, utils, styles | [daily log](2026-09-03.md#grouped-role-folders-for-source-responsibilities) |
+
+| 2026-09-03 | architecture, fsd, separation, hooks, types, data, config, testing, graphify | [daily log](2026-09-03.md#separated-source-responsibilities) |
+
 | 2026-09-02 | architecture, fsd, tests, css, tooling, graphify | [daily log](2026-09-02.md#fsd-architecture-split-tests-and-colocated-styles) |
 
 | 2026-09-02 | ui, education, timeline, mantine, responsive, testing | [daily log](2026-09-02.md#completed-final-education-timeline-axis-segment) |

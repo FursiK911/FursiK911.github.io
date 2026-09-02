@@ -1,5 +1,5 @@
 import { waitFor } from '@testing-library/react'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { Directions } from '@/widgets/profile'
 it('holds metrics until the section entrance completes', async () => {
   const view = renderWithProviders(

@@ -1,13 +1,8 @@
 import { cx, styles } from '@/shared/styles'
 import { useTranslation } from 'react-i18next'
-import {
-  setLoadingAnimationSpeed,
-  useLoadingAnimationSpeed,
-} from '../../model/config/loadingAnimation'
-
-export interface LoadingAnimationDebugProps {
-  visible: boolean
-}
+import { setLoadingAnimationSpeed } from '../../model/store/loadingAnimationStore'
+import { useLoadingAnimationSpeed } from '../../model/useLoadingAnimationSpeed/useLoadingAnimationSpeed'
+import type { LoadingAnimationDebugProps } from './types/LoadingAnimationDebug.types'
 
 export function LoadingAnimationDebug({ visible }: LoadingAnimationDebugProps) {
   const { t } = useTranslation()

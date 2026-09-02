@@ -1,1 +1,0 @@
-export { getEvenlySpacedX } from './ExperienceTimelineGeometry'

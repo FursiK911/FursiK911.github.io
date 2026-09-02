@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { Projects } from '../Projects'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { changeLanguage } from '@/shared/config/i18n'
 it('renders the renamed section and split project cards', async () => {
   await changeLanguage('ru')

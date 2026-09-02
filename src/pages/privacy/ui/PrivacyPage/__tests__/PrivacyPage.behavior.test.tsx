@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { PrivacyPage } from '../PrivacyPage'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { changeLanguage } from '@/shared/config/i18n'
 it('renders the localized privacy policy', async () => {
   await changeLanguage('ru')

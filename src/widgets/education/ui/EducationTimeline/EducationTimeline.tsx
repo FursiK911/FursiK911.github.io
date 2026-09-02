@@ -5,15 +5,9 @@ import { IconCertificate, IconSchool } from '@tabler/icons-react'
 import { useReducedMotion } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import { education } from '@/entities/education'
-
-interface EducationCopy {
-  date: string
-  title: string
-  organization: string
-  accountRecord?: string
-  details: Array<{ label: string; value: string }>
-  topics: string[]
-}
+import type { EducationCopy } from './types/EducationTimeline.types'
+import { getYear } from './utils/getYear'
+import { toIsoDate } from './utils/toIsoDate'
 
 export function EducationTimeline() {
   const [openEntries, setOpenEntries] = useState<Set<string>>(new Set())
@@ -123,13 +117,4 @@ export function EducationTimeline() {
       })}
     </Timeline>
   )
-}
-
-function getYear(date: string) {
-  return date.match(/\d{4}$/)?.[0] ?? date
-}
-
-function toIsoDate(date: string) {
-  const match = date.match(/^(\d{2})\.(\d{2})\.(\d{4})$/)
-  return match ? `${match[3]}-${match[2]}-${match[1]}` : date
 }

@@ -3,12 +3,7 @@ import { motion } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import type { CSSProperties } from 'react'
 import { ActionLink } from '@/shared/ui/ActionLink'
-
-export interface FutureExperienceItemProps {
-  index: number
-  reducedMotion: boolean
-  axisPoint: { x: number; y: number }
-}
+import type { FutureExperienceItemProps } from './types/FutureExperienceItem.types'
 
 export function FutureExperienceItem({
   index,

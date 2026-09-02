@@ -2,14 +2,8 @@ import { cx, styles } from '@/shared/styles'
 import { useEffect } from 'react'
 import { Modal } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
-import type { Project } from '@/entities/project'
 import { ActionLink } from '@/shared/ui/ActionLink'
-
-export interface ProjectDetailsProps {
-  project: Project
-  returnFocus: HTMLElement | null
-  onClose: () => void
-}
+import type { ProjectDetailsProps } from './types/ProjectDetails.types'
 
 export function ProjectDetails({
   project,

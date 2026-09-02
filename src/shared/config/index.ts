@@ -1,3 +1,7 @@
 export { default as i18n } from './i18n'
 export * from './i18n'
+export { resources } from './i18n/data/i18n.data'
+export { supportedLanguages } from './i18n/config/i18n.config'
+export type { SupportedLanguage } from './i18n/types/i18n.types'
+export { LANGUAGE_STORAGE_KEY } from './i18n/config/i18n.config'
 export { theme } from './theme'

@@ -1,12 +1,7 @@
 import { cx, styles } from '@/shared/styles'
 import { Hero } from '../Hero/Hero'
 import { Directions } from '../Directions/Directions'
-
-export interface ProfileProps {
-  typedRole: string
-  reducedMotion: boolean
-  entered?: boolean
-}
+import type { ProfileProps } from './types/Profile.types'
 
 export function Profile({
   typedRole,

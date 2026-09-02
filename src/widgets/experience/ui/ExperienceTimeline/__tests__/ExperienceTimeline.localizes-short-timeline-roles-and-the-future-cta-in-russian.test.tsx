@@ -3,7 +3,7 @@ import { vi } from 'vitest'
 import { changeLanguage } from '@/shared/config/i18n'
 import { ExperienceTimeline } from '../ExperienceTimeline'
 import { workExperience } from '@/entities/work-experience'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 const { gsapSet, gsapTo, runnerTweens } = vi.hoisted(() => ({
   gsapSet: vi.fn(),
   gsapTo: vi.fn(),

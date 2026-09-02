@@ -1,10 +1,6 @@
 import { cx, styles } from '@/shared/styles'
 import '@/shared/styles/Shared.module.css'
-
-export interface SectionHeadingProps {
-  index: string
-  title: string
-}
+import type { SectionHeadingProps } from './types/SectionHeading.types'
 
 export function SectionHeading({ index, title }: SectionHeadingProps) {
   return (

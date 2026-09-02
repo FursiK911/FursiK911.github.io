@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { TermsPage } from '../TermsPage'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { changeLanguage } from '@/shared/config/i18n'
 it('renders the localized terms of use', async () => {
   await changeLanguage('ru')

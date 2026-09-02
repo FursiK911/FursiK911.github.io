@@ -1,6 +1,6 @@
 import { act, screen } from '@testing-library/react'
 import { Header } from '@/widgets/site-layout'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { changeLanguage } from '@/shared/config/i18n'
 beforeEach(() => {
   Object.defineProperty(window, 'scrollY', { configurable: true, value: 0 })

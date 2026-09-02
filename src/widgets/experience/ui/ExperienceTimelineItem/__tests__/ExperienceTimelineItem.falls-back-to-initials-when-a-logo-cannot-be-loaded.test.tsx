@@ -1,7 +1,7 @@
 import { fireEvent, screen } from '@testing-library/react'
 import { ExperienceTimelineItem } from '../ExperienceTimelineItem'
 import { workExperience } from '@/entities/work-experience'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 it('falls back to initials when a logo cannot be loaded', () => {
   renderWithProviders(
     <ExperienceTimelineItem

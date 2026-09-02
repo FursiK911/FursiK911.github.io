@@ -1,21 +1,16 @@
 import './Shared.module.css'
-import '@/widgets/site-layout/ui/SiteLayout.module.css'
-import '@/widgets/profile/ui/Profile.module.css'
-import '@/widgets/projects/ui/Projects.module.css'
-import '@/widgets/experience/ui/Experience.module.css'
-import '@/widgets/education/ui/Education.module.css'
-import '@/widgets/skills/ui/Skills.module.css'
-import '@/widgets/contact/ui/Contact.module.css'
-import '@/features/loading/ui/Loading.module.css'
-import '@/features/konami-debug/ui/KonamiDebug.module.css'
-
-const className = (key: string) =>
-  key.replace(/[A-Z]/g, (letter) => `-${letter.toLowerCase()}`)
+import '@/widgets/site-layout/ui/styles/SiteLayout.module.css'
+import '@/widgets/profile/ui/styles/Profile.module.css'
+import '@/widgets/projects/ui/styles/Projects.module.css'
+import '@/widgets/experience/ui/styles/Experience.module.css'
+import '@/widgets/education/ui/styles/Education.module.css'
+import '@/widgets/skills/ui/styles/Skills.module.css'
+import '@/widgets/contact/ui/styles/Contact.module.css'
+import '@/features/loading/ui/styles/Loading.module.css'
+import '@/features/konami-debug/ui/styles/KonamiDebug.module.css'
+import { className } from './utils/className'
+export { cx } from './utils/cx'
 
 export const styles = new Proxy({} as Record<string, string>, {
   get: (_, key: string) => className(key),
 })
-
-export function cx(...classes: Array<string | false | null | undefined>) {
-  return classes.filter(Boolean).join(' ')
-}

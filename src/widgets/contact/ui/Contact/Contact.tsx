@@ -5,7 +5,7 @@ import { IconDownload } from '@tabler/icons-react'
 import { cvUrl } from '@/entities/project'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
 import { ActionLink } from '@/shared/ui/ActionLink'
-import '../Contact.module.css'
+import '../styles/Contact.module.css'
 
 export function Contact() {
   const { t } = useTranslation()

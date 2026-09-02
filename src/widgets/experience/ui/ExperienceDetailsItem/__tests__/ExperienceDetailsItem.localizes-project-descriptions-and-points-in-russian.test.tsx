@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react'
 import { ExperienceDetailsItem } from '../ExperienceDetailsItem'
 import { workExperience } from '@/entities/work-experience'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { changeLanguage } from '@/shared/config/i18n'
 it('localizes project descriptions and points in Russian', async () => {
   await changeLanguage('ru')

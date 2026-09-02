@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { ActionButton } from '../ActionButton'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 it('renders button variants and preserves native button behavior', async () => {
   const user = userEvent.setup()
   const onClick = vi.fn()

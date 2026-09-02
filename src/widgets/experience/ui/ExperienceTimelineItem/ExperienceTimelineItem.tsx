@@ -3,23 +3,8 @@ import { motion } from 'motion/react'
 import type { CSSProperties } from 'react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import type { WorkExperience } from '@/entities/work-experience'
-
-export interface ExperienceTimelineItemProps {
-  entry: WorkExperience
-  index: number
-  reducedMotion: boolean
-  axisPoint: { x: number; y: number }
-}
-
-function initials(company: string) {
-  return company
-    .split(/\s+/)
-    .filter(Boolean)
-    .map((word) => word[0])
-    .join('')
-    .slice(0, 3)
-}
+import type { ExperienceTimelineItemProps } from './types/ExperienceTimelineItem.types'
+import { getCompanyInitials } from './utils/getCompanyInitials'
 
 export function ExperienceTimelineItem({
   entry,
@@ -61,7 +46,7 @@ export function ExperienceTimelineItem({
               onError={() => setLogoFailed(true)}
             />
           ) : (
-            <span>{initials(entry.company)}</span>
+            <span>{getCompanyInitials(entry.company)}</span>
           )}
         </div>
         <time dateTime={entry.period.to ?? entry.period.from}>{period}</time>

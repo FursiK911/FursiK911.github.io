@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { Education } from '../Education'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { changeLanguage } from '@/shared/config/i18n'
 it('renders the education copy in English', async () => {
   await changeLanguage('en')

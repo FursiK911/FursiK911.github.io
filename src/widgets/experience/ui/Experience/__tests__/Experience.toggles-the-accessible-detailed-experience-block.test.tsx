@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { Experience } from '../Experience'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 it('toggles the accessible detailed experience block', async () => {
   const user = userEvent.setup()
   renderWithProviders(<Experience />)

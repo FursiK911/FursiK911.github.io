@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useReducedMotion } from 'motion/react'
-
-export const INTRO_STORAGE_KEY = 'df-intro-seen'
+import { INTRO_STORAGE_KEY } from '../config/intro.config'
 
 export function useIntro(duration = 1150) {
   const reduceMotion = useReducedMotion()

@@ -1,14 +1,9 @@
 import { cx, styles } from '@/shared/styles'
-import { useEffect, type ReactNode } from 'react'
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Footer } from '../Footer/Footer'
 import { Header } from '../Header/Header'
-
-interface LegalPageLayoutProps {
-  title: string
-  description: string
-  children: ReactNode
-}
+import type { LegalPageLayoutProps } from './types/LegalPageLayout.types'
 
 export function LegalPageLayout({
   title,

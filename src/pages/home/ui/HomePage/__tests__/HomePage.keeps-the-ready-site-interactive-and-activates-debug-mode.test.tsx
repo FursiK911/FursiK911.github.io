@@ -2,7 +2,7 @@ import { fireEvent, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { HomePage } from '@/pages/home'
 import { changeLanguage } from '@/shared/config/i18n'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 beforeEach(() => sessionStorage.clear())
 async function renderReadyApp() {
   renderWithProviders(<HomePage />)

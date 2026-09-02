@@ -1,14 +1,8 @@
 import { cx, styles } from '@/shared/styles'
 import { AnimatePresence, motion } from 'motion/react'
 import { useTranslation } from 'react-i18next'
-import type { WorkExperience } from '@/entities/work-experience'
 import { ExperienceDetailsItem } from '../ExperienceDetailsItem/ExperienceDetailsItem'
-
-export interface ExperienceDetailsProps {
-  entries: WorkExperience[]
-  expanded: boolean
-  reducedMotion: boolean
-}
+import type { ExperienceDetailsProps } from './types/ExperienceDetails.types'
 
 export function ExperienceDetails({
   entries,

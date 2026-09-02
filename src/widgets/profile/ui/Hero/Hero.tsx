@@ -7,13 +7,9 @@ import portrait from '@/shared/assets/dmitry-fursov.webp'
 import { TypingText } from '@/shared/ui/TypingText'
 import { GlitchPortrait } from '../GlitchPortrait/GlitchPortrait'
 import { ActionLink } from '@/shared/ui/ActionLink'
-import '../Profile.module.css'
-
-export interface HeroProps {
-  typedRole: string
-  reducedMotion: boolean
-  entered?: boolean
-}
+import '../styles/Profile.module.css'
+import type { HeroProps } from './types/Hero.types'
+import { heroItemVariants } from './config/heroItemVariants.config'
 
 export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
   const { t } = useTranslation()
@@ -80,9 +76,4 @@ export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
       </motion.div>
     </motion.div>
   )
-}
-
-const heroItemVariants = {
-  hidden: { opacity: 0, y: 18 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.45 } },
 }

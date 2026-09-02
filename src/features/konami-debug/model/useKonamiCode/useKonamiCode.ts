@@ -1,17 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-const KONAMI_CODE = [
-  'ArrowUp',
-  'ArrowUp',
-  'ArrowDown',
-  'ArrowDown',
-  'ArrowLeft',
-  'ArrowRight',
-  'ArrowLeft',
-  'ArrowRight',
-  'b',
-  'a',
-]
+import { KONAMI_CODE } from './config/konamiCode.config'
 
 export function useKonamiCode() {
   const [active, setActive] = useState(false)

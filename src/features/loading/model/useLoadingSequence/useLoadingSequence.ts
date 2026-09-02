@@ -1,27 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { useReducedMotion } from 'motion/react'
-import {
-  loadingAnimationConfig,
-  scheduleLoadingAnimation,
-} from '../config/loadingAnimation'
-import {
-  createLoadingCandidates,
-  createMatchedCandidate,
-  type LoadingCandidate,
-} from '../data/loadingCandidates'
-
-export type LoadingPhase =
-  'initializing' | 'typing' | 'searching' | 'result' | 'exiting' | 'complete'
-
-const INTRO_STORAGE_KEY = 'df-intro-seen'
-// Temporary showcase mode: replay the intro on every page refresh and double its pace.
-export const ALWAYS_REPLAY_INTRO = true
-
-function hasSeenIntro() {
-  return (
-    !ALWAYS_REPLAY_INTRO && Boolean(sessionStorage.getItem(INTRO_STORAGE_KEY))
-  )
-}
+import { createLoadingCandidates } from '../utils/createLoadingCandidates'
+import { createMatchedCandidate } from '../utils/createMatchedCandidate'
+import { loadingAnimationConfig } from '../config/loading-animation.config'
+import { scheduleLoadingAnimation } from '../scheduleLoadingAnimation/scheduleLoadingAnimation'
+import { hasSeenIntro } from '../utils/hasSeenIntro'
+import { INTRO_STORAGE_KEY } from '../config/intro.config'
+import type { LoadingPhase } from './types/useLoadingSequence.types'
+import type { LoadingCandidate } from '../types/loading-candidate.types'
 
 export function useLoadingSequence(query: string) {
   const systemReducedMotion = useReducedMotion()

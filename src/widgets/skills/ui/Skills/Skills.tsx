@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { skillGroups } from '@/entities/project'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
-import '../Skills.module.css'
+import '../styles/Skills.module.css'
 
 export function Skills() {
   const { t } = useTranslation()

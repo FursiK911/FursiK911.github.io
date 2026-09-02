@@ -1,12 +1,11 @@
 import { useEffect, useMemo, useState } from 'react'
 
-const TYPE_DELAY = 90
-const DELETE_DELAY = 45
-const HOLD_DELAY = 800
-
-function getReducedMotion() {
-  return window.matchMedia('(prefers-reduced-motion: reduce)').matches
-}
+import {
+  TYPE_DELAY,
+  DELETE_DELAY,
+  HOLD_DELAY,
+} from './config/useTypingText.config'
+import { getReducedMotion } from './utils/getReducedMotion'
 
 export function useTypingText(
   texts: readonly string[],

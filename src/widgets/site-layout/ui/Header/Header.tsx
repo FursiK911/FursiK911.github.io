@@ -6,23 +6,9 @@ import { useTranslation } from 'react-i18next'
 import { cvUrl } from '@/entities/project'
 import { ActionLink } from '@/shared/ui/ActionLink'
 import { TypingText } from '@/shared/ui/TypingText'
-import '../SiteLayout.module.css'
-
-const sectionIds = [
-  'top',
-  'projects',
-  'experience',
-  'stack',
-  'education',
-  'contact',
-]
-
-export interface HeaderProps {
-  active: string
-  onLanguage: () => void
-  typedRole: string
-  reducedMotion: boolean
-}
+import '../styles/SiteLayout.module.css'
+import { sectionIds } from './config/header.config'
+import type { HeaderProps } from './types/Header.types'
 
 export function Header({
   active,

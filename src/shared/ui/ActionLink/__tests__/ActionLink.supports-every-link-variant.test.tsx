@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { ActionLink } from '../ActionLink'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 it('supports every link variant', () => {
   const variants = ['secondary', 'text', 'inline'] as const
   renderWithProviders(

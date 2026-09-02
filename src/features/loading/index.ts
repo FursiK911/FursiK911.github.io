@@ -1,18 +1,18 @@
 export { LoadingAnimationDebug } from './ui/LoadingAnimationDebug/LoadingAnimationDebug'
+export type { LoadingAnimationDebugProps } from './ui/LoadingAnimationDebug/types/LoadingAnimationDebug.types'
 export { LoadingScreen } from './ui/LoadingScreen/LoadingScreen'
+export type { LoadingScreenProps } from './ui/LoadingScreen/types/LoadingScreen.types'
+export { loadingAnimationConfig } from './model/config/loading-animation.config'
 export {
-  loadingAnimationConfig,
   getLoadingAnimationSpeed,
   setLoadingAnimationSpeed,
   subscribeToLoadingAnimationSpeed,
-  useLoadingAnimationSpeed,
-  scheduleLoadingAnimation,
-} from './model/config/loadingAnimation'
-export {
-  createLoadingCandidates,
-  createMatchedCandidate,
-} from './model/data/loadingCandidates'
-export type { LoadingCandidate } from './model/data/loadingCandidates'
+} from './model/store/loadingAnimationStore'
+export { useLoadingAnimationSpeed } from './model/useLoadingAnimationSpeed/useLoadingAnimationSpeed'
+export { scheduleLoadingAnimation } from './model/scheduleLoadingAnimation/scheduleLoadingAnimation'
+export { createLoadingCandidates } from './model/utils/createLoadingCandidates'
+export { createMatchedCandidate } from './model/utils/createMatchedCandidate'
+export type { LoadingCandidate } from './model/types/loading-candidate.types'
 export { useIntro } from './model/useIntro/useIntro'
 export { useLoadingSequence } from './model/useLoadingSequence/useLoadingSequence'
-export type { LoadingPhase } from './model/useLoadingSequence/useLoadingSequence'
+export type { LoadingPhase } from './model/useLoadingSequence/types/useLoadingSequence.types'

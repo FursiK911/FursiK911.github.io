@@ -2,36 +2,13 @@ import { cx, styles } from '@/shared/styles'
 import { AnimatePresence, motion } from 'motion/react'
 import { useEffect, useRef, type CSSProperties } from 'react'
 import { useTranslation } from 'react-i18next'
-import type { LoadingCandidate } from '../../model/data/loadingCandidates'
-import type { LoadingPhase } from '../../model/useLoadingSequence/useLoadingSequence'
-import {
-  loadingAnimationConfig,
-  useLoadingAnimationSpeed,
-} from '../../model/config/loadingAnimation'
+import type { LoadingScreenProps } from './types/LoadingScreen.types'
+import { loadingAnimationConfig } from '../../model/config/loading-animation.config'
+import { useLoadingAnimationSpeed } from '../../model/useLoadingAnimationSpeed/useLoadingAnimationSpeed'
 import portrait from '@/shared/assets/dmitry-fursov.webp'
-import '../Loading.module.css'
+import '../styles/Loading.module.css'
 
-export interface LoadingScreenProps {
-  allReady: boolean
-  buttonActive: boolean
-  candidates: LoadingCandidate[]
-  complete: () => void
-  cursorClicked: boolean
-  notifyVideo: (available: boolean) => void
-  phase: LoadingPhase
-  queryText: string
-  resultVisible: boolean
-  skip: () => void
-  videoFallback: boolean
-}
-
-function phaseLabel(phase: LoadingPhase, translate: (key: string) => string) {
-  if (phase === 'result') return translate('loader.status.match')
-  if (phase === 'searching') return translate('loader.status.scanning')
-  if (phase === 'exiting') return translate('loader.status.loaded')
-  if (phase === 'typing') return translate('loader.status.query')
-  return translate('loader.status.initializing')
-}
+import { phaseLabel } from './utils/phaseLabel'
 
 export function LoadingScreen({
   allReady,

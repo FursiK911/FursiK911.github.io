@@ -1,14 +1,9 @@
 import { cx, styles } from '@/shared/styles'
 import { motion } from 'motion/react'
 import { useTranslation } from 'react-i18next'
-import { projects } from '../../model/portfolio'
-import type { Project } from '../../model/types'
+import { projects } from '../../model/data/projects.data'
 import { ActionButton } from '@/shared/ui/ActionButton'
-
-export interface ProjectCardProps {
-  project: Project
-  onOpen: (project: Project, element: HTMLElement) => void
-}
+import type { ProjectCardProps } from './types/ProjectCard.types'
 
 export function ProjectCard({ project, onOpen }: ProjectCardProps) {
   const { t } = useTranslation()

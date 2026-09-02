@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 import { Profile } from '@/widgets/profile'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 it('renders the profile hero and directions in one top-level block', () => {
   renderWithProviders(<Profile typedRole="Unity Developer" reducedMotion />)
   const profile = document.querySelector('.profile-section')

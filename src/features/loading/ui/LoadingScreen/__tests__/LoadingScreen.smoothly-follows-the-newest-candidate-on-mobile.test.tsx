@@ -1,6 +1,6 @@
 import { afterEach, expect, it } from 'vitest'
 import { vi } from 'vitest'
-import { renderWithProviders } from '@/shared/test/render'
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { LoadingScreen } from '../LoadingScreen'
 const baseProps = {
   allReady: true,

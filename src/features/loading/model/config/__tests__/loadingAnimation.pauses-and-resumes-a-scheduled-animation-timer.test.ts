@@ -1,9 +1,7 @@
 import { act } from '@testing-library/react'
 import { afterEach, beforeEach, vi } from 'vitest'
-import {
-  scheduleLoadingAnimation,
-  setLoadingAnimationSpeed,
-} from '../loadingAnimation'
+import { scheduleLoadingAnimation } from '../../scheduleLoadingAnimation/scheduleLoadingAnimation'
+import { setLoadingAnimationSpeed } from '../../store/loadingAnimationStore'
 beforeEach(() => {
   vi.useFakeTimers({ toFake: ['Date', 'setTimeout', 'clearTimeout'] })
   setLoadingAnimationSpeed(1)
