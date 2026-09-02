@@ -7,6 +7,7 @@ it('renders hero portrait and role', () => {
   renderWithProviders(<Hero typedRole="Unity Developer" reducedMotion />)
   expect(screen.getByRole('img')).toHaveAttribute('alt')
   expect(screen.getByText('Unity Developer')).toBeVisible()
+  expect(screen.getByText('LANG: RU_NATIVE / UA_B2 / EN_B1')).toBeVisible()
 })
 
 it('renders the localized resume download button', async () => {

@@ -6,7 +6,14 @@ import { cvUrl } from '../../data/portfolio'
 import { ActionLink } from '../ui/ActionLink'
 import { TypingText } from './TypingText'
 
-const sectionIds = ['projects', 'about', 'experience', 'stack', 'contact']
+const sectionIds = [
+  'top',
+  'projects',
+  'experience',
+  'stack',
+  'education',
+  'contact',
+]
 
 export interface HeaderProps {
   active: string

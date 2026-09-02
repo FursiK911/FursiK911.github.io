@@ -7,18 +7,20 @@ import { MetricCounter } from '../ui/MetricCounter'
 export interface DirectionsProps {
   reducedMotion?: boolean
   entered?: boolean
+  embedded?: boolean
 }
 
 export function Directions({
   reducedMotion = false,
   entered = true,
+  embedded = false,
 }: DirectionsProps) {
   const { t } = useTranslation()
   const [metricsStarted, setMetricsStarted] = useState(entered)
 
   return (
     <motion.section
-      className="directions-section"
+      className={`directions-section${embedded ? ' directions-section--embedded' : ''}`}
       initial={reducedMotion || entered ? false : 'hidden'}
       animate={reducedMotion || entered ? 'visible' : 'hidden'}
       variants={{
@@ -36,7 +38,7 @@ export function Directions({
         if (entered) setMetricsStarted(true)
       }}
     >
-      <div className="section-shell">
+      <div className={embedded ? undefined : 'section-shell'}>
         <div className="directions-grid">
           {directions.map((direction) => (
             <article className="direction-card" key={direction.id}>

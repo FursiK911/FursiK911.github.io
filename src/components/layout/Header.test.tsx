@@ -24,7 +24,16 @@ it('renders navigation and toggles mobile menu', async () => {
   expect(screen.queryByText('DF')).not.toBeInTheDocument()
   expect(screen.getByText('Unity Developer')).toBeVisible()
   expect(screen.getByText('Дмитрий Фурсов')).toBeVisible()
-  expect(screen.getByRole('navigation').querySelectorAll('a')).toHaveLength(5)
+  expect(screen.getByRole('navigation').querySelectorAll('a')).toHaveLength(6)
+  expect(screen.getByRole('link', { name: /Профиль/ })).toHaveAttribute(
+    'href',
+    '#top',
+  )
+  expect(screen.queryByText('Обо мне')).not.toBeInTheDocument()
+  expect(screen.getByRole('link', { name: /Образование/ })).toHaveAttribute(
+    'href',
+    '#education',
+  )
   expect(screen.queryByRole('link', { name: 'GitHub' })).not.toBeInTheDocument()
   expect(
     screen.queryByRole('link', { name: 'Telegram' }),

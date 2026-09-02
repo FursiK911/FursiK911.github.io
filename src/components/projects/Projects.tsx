@@ -29,7 +29,7 @@ export function Projects() {
   }
   return (
     <section className="section-shell projects-section" id="projects">
-      <SectionHeading index="01" title={t('sections.projects')} />
+      <SectionHeading index="02" title={t('sections.projects')} />
       <div className="projects-intro">
         <h2>{t('sections.projects')}</h2>
         <p>{t('projects.intro')}</p>

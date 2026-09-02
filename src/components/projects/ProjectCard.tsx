@@ -40,7 +40,7 @@ export function ProjectCard({ project, onOpen }: ProjectCardProps) {
                 ? '▣'
                 : project.category.includes('web')
                   ? '⌘'
-                  : project.category.includes('realtime')
+                  : project.category.includes('multiplayer')
                     ? '◌'
                     : '◆'}
         </span>

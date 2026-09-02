@@ -30,12 +30,24 @@ describe('portfolio app', () => {
     expect(
       screen.getByRole('heading', { name: /DMITRY FURSOV/i }),
     ).toBeInTheDocument()
+    expect(
+      Array.from(document.querySelectorAll('main > section')).map(
+        (section) => section.id,
+      ),
+    ).toEqual([
+      'top',
+      'projects',
+      'experience',
+      'stack',
+      'education',
+      'contact',
+    ])
     await userEvent.click(screen.getByRole('button', { name: 'WEB' }))
     expect(screen.getByRole('heading', { name: 'myChess' })).toBeVisible()
     expect(
       screen.queryByRole('heading', { name: 'MyChessVR' }),
     ).not.toBeInTheDocument()
-  })
+  }, 10_000)
   it('opens project details and closes with Escape', async () => {
     await changeLanguage('en')
     await renderReadyApp()
@@ -63,7 +75,7 @@ describe('portfolio app', () => {
     ).toHaveClass('is-open')
     await user.click(screen.getByRole('button', { name: /КОПИРОВАТЬ EMAIL/i }))
     expect(writeText).toHaveBeenCalledWith('19fursik99@gmail.com')
-  })
+  }, 10_000)
   it('keeps the ready site interactive and activates debug mode', async () => {
     await changeLanguage('en')
     await renderReadyApp()

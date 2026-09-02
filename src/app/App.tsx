@@ -5,19 +5,24 @@ import { useLoadingSequence } from '../hooks/useLoadingSequence'
 import { Header } from '../components/layout/Header'
 import { Footer } from '../components/layout/Footer'
 import { LoadingScreen } from '../components/layout/LoadingScreen'
-import { Hero } from '../components/hero/Hero'
 import { Projects } from '../components/projects/Projects'
-import { About } from '../components/sections/About'
+import { Profile } from '../components/sections/Profile'
 import { Experience } from '../components/sections/Experience'
 import { Skills } from '../components/sections/Skills'
+import { Education } from '../components/sections/Education'
 import { Contact } from '../components/sections/Contact'
-import { Directions } from '../components/sections/Directions'
 import { KonamiDebug } from '../components/debug/KonamiDebug'
-import { LoadingAnimationDebug } from '../components/debug/LoadingAnimationDebug'
 import { useTypingText } from '../hooks/useTypingText'
 import '../App.css'
 
-const sectionIds = ['projects', 'about', 'experience', 'stack', 'contact']
+const sectionIds = [
+  'top',
+  'projects',
+  'experience',
+  'stack',
+  'education',
+  'contact',
+]
 
 export default function App() {
   const { i18n } = useTranslation()
@@ -26,7 +31,7 @@ export default function App() {
       ? 'Найди лучшего разработчика для нашего проекта'
       : 'Find the best developer for our project',
   )
-  const active = useActiveSection(sectionIds, 'projects')
+  const active = useActiveSection(sectionIds, 'top')
   const roles = i18n.t('hero.roles', { returnObjects: true }) as string[]
   const { displayText, reducedMotion } = useTypingText(
     roles,
@@ -56,7 +61,6 @@ export default function App() {
         skip={loader.skip}
         videoFallback={loader.videoFallback}
       />
-      <LoadingAnimationDebug visible={loader.phase !== 'complete'} />
       <div
         className="app-shell"
         aria-hidden={loader.phase !== 'complete'}
@@ -69,19 +73,15 @@ export default function App() {
           reducedMotion={reducedMotion}
         />
         <main>
-          <Hero
+          <Profile
             typedRole={displayText}
             reducedMotion={reducedMotion}
             entered={loader.phase === 'complete'}
           />
-          <Directions
-            reducedMotion={reducedMotion}
-            entered={loader.phase === 'complete'}
-          />
           <Projects />
-          <About />
           <Experience />
           <Skills />
+          <Education />
           <Contact />
         </main>
         <Footer />

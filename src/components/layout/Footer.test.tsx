@@ -39,6 +39,10 @@ it('renders portfolio footer', () => {
   expect(screen.getByRole('link', { name: /СКАЧАТЬ РЕЗЮМЕ/ })).toHaveAttribute(
     'download',
   )
+  expect(screen.getByRole('link', { name: /Образование/ })).toHaveAttribute(
+    'href',
+    '#education',
+  )
 })
 
 it('localizes footer labels in English', async () => {

@@ -1,5 +1,5 @@
 export type ProjectCategory =
-  'web' | 'mobile' | 'unity' | 'unigine' | 'xr-ar' | 'realtime'
+  'web' | 'mobile' | 'unity' | 'unigine' | 'xr-ar' | 'multiplayer'
 
 export type ProjectLink = { label: string; href: string }
 export type ProjectMedia = { kind: 'image' | 'video'; src: string; alt: string }
@@ -27,7 +27,7 @@ export const projects: Project[] = [
   {
     id: 'mychess-web',
     titleKey: 'mychessWeb',
-    category: ['web', 'realtime'],
+    category: ['web', 'multiplayer'],
     platformKey: 'platformWeb',
     roleKey: 'middleFrontend',
     descriptionKey: 'mychessWebDesc',
@@ -44,7 +44,7 @@ export const projects: Project[] = [
   {
     id: 'mobile-rts',
     titleKey: 'mobileRts',
-    category: ['mobile', 'unity', 'realtime'],
+    category: ['mobile', 'unity', 'multiplayer'],
     platformKey: 'platformMobile',
     roleKey: 'middleUnity',
     descriptionKey: 'mobileRtsDesc',
@@ -57,7 +57,7 @@ export const projects: Project[] = [
   {
     id: 'rosatom',
     titleKey: 'rosatom',
-    category: ['unigine', 'xr-ar', 'realtime'],
+    category: ['unigine', 'xr-ar', 'multiplayer'],
     platformKey: 'platformViveAstra',
     roleKey: 'middleVr',
     descriptionKey: 'rosatomDesc',
@@ -175,7 +175,7 @@ export const projects: Project[] = [
   {
     id: 'drilling-vr',
     titleKey: 'drilling',
-    category: ['unity', 'xr-ar', 'realtime'],
+    category: ['unity', 'xr-ar', 'multiplayer'],
     platformKey: 'platformVr',
     roleKey: 'soloUnity',
     descriptionKey: 'drillingDesc',
@@ -195,7 +195,7 @@ export const projects: Project[] = [
   {
     id: 'vulkan-verse',
     titleKey: 'vulkanVerse',
-    category: ['unity', 'realtime'],
+    category: ['unity', 'multiplayer'],
     platformKey: 'platformPcWeb',
     roleKey: 'unityDeveloper',
     descriptionKey: 'vulkanVerseDesc',
@@ -266,7 +266,7 @@ export const projects: Project[] = [
   {
     id: 'chudo-projector',
     titleKey: 'chudoProjector',
-    category: ['unity', 'xr-ar', 'realtime'],
+    category: ['unity', 'xr-ar', 'multiplayer'],
     platformKey: 'platformWindows',
     roleKey: 'juniorUnity',
     descriptionKey: 'chudoProjectorDesc',
@@ -288,20 +288,20 @@ export const projects: Project[] = [
     period: { from: '10.2019', to: '02.2022' },
   },
   {
-    id: 'goons-balatroon',
-    titleKey: 'goonsBalatroon',
-    category: ['web', 'unity', 'realtime'],
-    platformKey: 'platformWebGl',
+    id: 'chudobooks',
+    titleKey: 'chudobooks',
+    category: ['mobile', 'unity', 'xr-ar'],
+    platformKey: 'platformMobile',
     roleKey: 'juniorUnity',
-    descriptionKey: 'goonsBalatroonDesc',
-    pointsKey: 'goonsBalatroonPoints',
-    tech: ['Unity', 'C#', 'WebGL', 'Photon', 'NFT economy'],
+    descriptionKey: 'chudobooksDesc',
+    pointsKey: 'chudobooksPoints',
+    tech: ['Unity', 'C#', 'AR', 'AssetBundles', 'Android', 'iOS'],
     company: 'Yellow Element',
     period: { from: '10.2019', to: '02.2022' },
   },
   {
-    id: 'chudobooks',
-    titleKey: 'chudobooks',
+    id: 'ar-chudaboxes',
+    titleKey: 'arChudaboxes',
     category: ['mobile', 'unity', 'xr-ar'],
     platformKey: 'platformMobile',
     roleKey: 'juniorUnity',
@@ -324,21 +324,9 @@ export const projects: Project[] = [
     period: { from: '10.2019', to: '02.2022' },
   },
   {
-    id: 'photon-fps',
-    titleKey: 'photonFps',
-    category: ['unity', 'realtime'],
-    platformKey: 'platformPcWeb',
-    roleKey: 'juniorUnity',
-    descriptionKey: 'photonFpsDesc',
-    pointsKey: 'photonFpsPoints',
-    tech: ['Unity', 'C#', 'Photon'],
-    company: 'Yellow Element',
-    period: { from: '10.2019', to: '02.2022' },
-  },
-  {
     id: 'quest-room',
     titleKey: 'questRoom',
-    category: ['unity', 'realtime'],
+    category: ['unity', 'multiplayer'],
     platformKey: 'platformPcWeb',
     roleKey: 'testing',
     descriptionKey: 'questRoomDesc',
@@ -411,7 +399,7 @@ export const skillGroups = [
     ],
   },
   {
-    titleKey: 'realtime',
+    titleKey: 'multiplayer',
     skills: [
       'Mirror',
       'Photon',

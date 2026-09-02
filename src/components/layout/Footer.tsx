@@ -8,10 +8,11 @@ import {
 import { cvUrl } from '../../data/portfolio'
 
 const sectionIds = [
+  'top',
   'projects',
-  'about',
   'experience',
   'stack',
+  'education',
   'contact',
 ] as const
 

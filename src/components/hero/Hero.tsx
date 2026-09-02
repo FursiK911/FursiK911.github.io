@@ -16,9 +16,8 @@ export interface HeroProps {
 export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
   const { t } = useTranslation()
   return (
-    <motion.section
-      className="hero section-shell"
-      id="top"
+    <motion.div
+      className="hero"
       initial={reducedMotion || entered ? false : 'hidden'}
       animate={reducedMotion || entered ? 'visible' : 'hidden'}
       variants={{
@@ -63,9 +62,9 @@ export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
           />
           <span className="frame-label">PROFILE_IMAGE // 001</span>
         </div>
-        <div className="portrait-note">SOFTWARE SYSTEMS</div>
+        <div className="portrait-note">{t('hero.languages')}</div>
       </motion.div>
-    </motion.section>
+    </motion.div>
   )
 }
 

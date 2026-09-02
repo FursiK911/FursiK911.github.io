@@ -1,5 +1,35 @@
 # Global Decision Index
 
+| DEC-20260902-15 | Keep the Experience runner desktop-only, preserve its route progress while desktop geometry changes, and restart it from the beginning after returning from the mobile layout. | ui, experience, timeline, gsap, animation, responsive, accessibility | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-15) |
+
+| DEC-20260902-14 | Center Education Timeline detail labels and values horizontally within their metadata columns while preserving the existing grid and mobile fallback. | ui, education, timeline, accessibility, responsive | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-14) |
+
+| DEC-20260902-13 | Present SOS COMPUTER coursework as grouped professional competencies: algorithmic and procedural programming, data structures and file handling; raster/vector fundamentals, Photoshop image production, CorelDRAW illustration and print-ready asset preparation. | education, courses, i18n, accessibility | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-13) |
+
+| DEC-20260902-12 | Use var(--cyan) for project titles rendered in expanded experience entries. | ui, experience, css | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-12) |
+
+| DEC-20260902-11 | Keep project translation keys shared between the portfolio and experience sections, and provide Russian-localized values in the ru project resource so both views stay consistent. | i18n, experience, projects | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-11) |
+
+| DEC-20260902-10 | Render direct `Timeline.Item` children with invisible `opposite` spacers so Mantine emits `data-opposite` and positions the cyan Education axis at the horizontal center of the centered Timeline area. | ui, education, timeline, mantine, responsive, accessibility | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-10) |
+
+| DEC-20260902-09 | Use 560px desktop Hero height, Projects/Проекты section naming, multiplayer/МУЛЬТИПЛЕЕР taxonomy, separate Chudobooks and AR Chudoboxes records, and remove two invalid projects from all public project and experience data. | ui, hero, portfolio, projects, multiplayer, i18n, responsive | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-09) |
+
+| DEC-20260902-08 | Use Mantine's centered three-column Timeline grid with an invisible opposite spacer, place year badges inside cards, start the newest card on the left, alternate desktop cards, and force all mobile cards to the right of the axis. | ui, education, timeline, mantine, responsive, accessibility | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-08) |
+
+| DEC-20260902-07 | Present only the year visually while retaining normalized full dates for semantic `dateTime`; center the cyan Mantine axis, alternate desktop cards, stack mobile cards on the right, and preserve Cisco account codes only as non-rendered localized metadata. | ui, education, timeline, mantine, cyan, responsive, accessibility, i18n | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-07) |
+
+| DEC-20260902-06 | Use a Mantine vertical Education Timeline ordered from 2023 to 2015, with eight localized events, independent expandable details, degree/course icon distinction, and the Education section before Contact. | ui, education, timeline, mantine, i18n, accessibility | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-06) |
+
+| DEC-20260902-05 | Make Profile/#top the first Header navigation item, localized as Profile/Профиль, and include it in active-section tracking. | ui, header, navigation, profile, i18n | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-05) |
+
+| DEC-20260902-04 | Remove About entirely, place only its four facts under Hero CTAs, and render them in a two-column HUD grid on desktop and mobile. | ui, hero, profile, about, i18n, responsive | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-04) |
+
+| DEC-20260902-03 | Place the embedded Directions grid between Hero and About, and keep About top padding at zero. | ui, profile, directions, about, responsive | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-03) |
+
+| DEC-20260902-02 | Use a new Profile component with About content below Hero, a two-phase entrance, no separate About heading or navigation item, and `#top` as the only profile anchor. | ui, profile, about, navigation, animation | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-02) |
+
+| DEC-20260902-01 | Keep the loading animation speed debug component and its supporting configuration in the project, but remove it from the production application composition. | ui, loading, debugging | [2026-09-02](2026/09/2026-09-02.md#decision-dec-20260902-01) |
+
 | DEC-20260901-07 | Stretch the Directions content column and use `margin-top: auto` to anchor each tools row to the bottom of its grid cell. | ui, directions, responsive | [2026-09-01](2026/09/2026-09-01.md#anchored-direction-tools-to-card-bottoms) |
 
 | DEC-20260901-06 | Gate metric animation on the Directions entrance lifecycle: inactive counters render zero, Motion completion activates them, and reduced-motion mode activates them without waiting for a visual transition. | ui, directions, metric, animation, accessibility | [2026-09-01](2026/09/2026-09-01.md#decision-dec-20260901-06) |

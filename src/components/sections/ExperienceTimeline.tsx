@@ -21,6 +21,7 @@ type ScenePoint = { x: number; y: number }
 const desktopPath =
   'M 0 165 C 44 165 72 166 102 161 C 190 148 260 112 326 99 C 404 86 492 145 570 204 C 631 247 688 211 744 170 C 816 121 872 94 936 100 C 1010 107 1067 166 1108 205 C 1141 225 1172 220 1200 202'
 const mobilePath = 'M 50 0 L 50 100'
+const desktopTimelineQuery = '(min-width: 1025px)'
 
 const fallbackPoints: ScenePoint[] = [
   { x: 50, y: 222 },
@@ -88,54 +89,39 @@ export function ExperienceTimeline({
 
   useLayoutEffect(() => {
     const scene = sceneRef.current
-    const axis = axisRef.current
-    const path = axis?.querySelector<SVGPathElement>(
-      '#experience-timeline-wave-desktop',
-    )
-    if (!scene || !path || typeof path.getTotalLength !== 'function') return
-
-    const measurePoints = () => {
-      const sceneRect = scene.getBoundingClientRect()
-      if (!sceneRect.width || !sceneRect.height) return
-      const targetXs = getEvenlySpacedX(sceneRect.width, entries.length + 1)
-      const points = targetXs.map((targetX) =>
-        pointToSceneAtX(path, targetX, sceneRect),
-      )
-
-      if (points.every((point): point is ScenePoint => point !== null)) {
-        setAxisPoints(points)
-      }
-    }
-
-    measurePoints()
-    if (typeof ResizeObserver === 'undefined') return
-    const observer = new ResizeObserver(measurePoints)
-    observer.observe(scene)
-    return () => observer.disconnect()
-  }, [entries])
-
-  useLayoutEffect(() => {
     const runner = runnerRef.current
     const axis = axisRef.current
     const path = axis?.querySelector<SVGPathElement>(
       '#experience-timeline-wave-desktop',
     )
-    if (
-      reducedMotion ||
-      !runner ||
-      !path ||
-      typeof path.getScreenCTM !== 'function' ||
-      !path.getScreenCTM()
-    )
+    if (!scene || !runner || !path || typeof path.getTotalLength !== 'function')
       return
 
-    const context = gsap.context(() => {
-      gsap.set(runner, { autoAlpha: 1 })
-      gsap.to(runner, {
+    const desktopMedia = window.matchMedia(desktopTimelineQuery)
+    let animationFrame: number | null = null
+    let runnerTween: gsap.core.Tween | null = null
+    let wasDesktop = false
+
+    const stopRunner = () => {
+      runnerTween?.kill()
+      runnerTween = null
+    }
+
+    const createRunner = (progress: number) => {
+      if (
+        reducedMotion ||
+        typeof path.getScreenCTM !== 'function' ||
+        !path.getScreenCTM()
+      )
+        return
+
+      gsap.set(runner, { x: 0, y: 0, autoAlpha: 1 })
+      runnerTween = gsap.to(runner, {
         duration: 12,
         ease: 'none',
         repeat: -1,
         repeatDelay: 0.7,
+        paused: true,
         motionPath: {
           path,
           align: path,
@@ -144,10 +130,59 @@ export function ExperienceTimeline({
           end: 0.97,
         },
       })
-    }, sceneRef)
 
-    return () => context.revert()
-  }, [reducedMotion])
+      runnerTween.progress(progress).play()
+    }
+
+    const refreshTimeline = () => {
+      animationFrame = null
+
+      if (!desktopMedia.matches) {
+        stopRunner()
+        wasDesktop = false
+        return
+      }
+
+      const sceneRect = scene.getBoundingClientRect()
+      if (!sceneRect.width || !sceneRect.height) return
+
+      const targetXs = getEvenlySpacedX(sceneRect.width, entries.length + 1)
+      const points = targetXs.map((targetX) =>
+        pointToSceneAtX(path, targetX, sceneRect),
+      )
+
+      if (points.every((point): point is ScenePoint => point !== null)) {
+        setAxisPoints(points)
+      }
+
+      const progress = wasDesktop ? (runnerTween?.progress() ?? 0) : 0
+      stopRunner()
+      createRunner(progress)
+      wasDesktop = true
+    }
+
+    const scheduleRefresh = () => {
+      if (animationFrame !== null) cancelAnimationFrame(animationFrame)
+      animationFrame = requestAnimationFrame(refreshTimeline)
+    }
+
+    if (!reducedMotion) gsap.set(runner, { autoAlpha: 0 })
+    scheduleRefresh()
+
+    const observer =
+      typeof ResizeObserver === 'undefined'
+        ? null
+        : new ResizeObserver(scheduleRefresh)
+    observer?.observe(scene)
+    desktopMedia.addEventListener('change', scheduleRefresh)
+
+    return () => {
+      if (animationFrame !== null) cancelAnimationFrame(animationFrame)
+      desktopMedia.removeEventListener('change', scheduleRefresh)
+      observer?.disconnect()
+      stopRunner()
+    }
+  }, [entries, reducedMotion])
 
   const futurePoint = axisPoints[entries.length] ?? fallbackPoints.at(-1)!
 

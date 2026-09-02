@@ -7,5 +7,5 @@ export const filters: Array<'all' | ProjectCategory> = [
   'unity',
   'unigine',
   'xr-ar',
-  'realtime',
+  'multiplayer',
 ]

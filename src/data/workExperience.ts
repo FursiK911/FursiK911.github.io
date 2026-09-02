@@ -97,14 +97,14 @@ export const workExperience: WorkExperience[] = [
         'projects.arColoringPoints',
       ),
       project(
-        'goons-balatroon',
-        'projects.goonsBalatroon',
-        'projects.goonsBalatroonDesc',
-        'projects.goonsBalatroonPoints',
-      ),
-      project(
         'chudobooks',
         'projects.chudobooks',
+        'projects.chudobooksDesc',
+        'projects.chudobooksPoints',
+      ),
+      project(
+        'ar-chudaboxes',
+        'projects.arChudaboxes',
         'projects.chudobooksDesc',
         'projects.chudobooksPoints',
       ),
@@ -113,12 +113,6 @@ export const workExperience: WorkExperience[] = [
         'projects.chudoFloor',
         'projects.chudoFloorDesc',
         'projects.chudoFloorPoints',
-      ),
-      project(
-        'photon-fps',
-        'projects.photonFps',
-        'projects.photonFpsDesc',
-        'projects.photonFpsPoints',
       ),
       project(
         'quest-room',
@@ -169,14 +163,14 @@ export const workExperience: WorkExperience[] = [
             'projects.arColoringPoints',
           ),
           project(
-            'goons-balatroon',
-            'projects.goonsBalatroon',
-            'projects.goonsBalatroonDesc',
-            'projects.goonsBalatroonPoints',
-          ),
-          project(
             'chudobooks',
             'projects.chudobooks',
+            'projects.chudobooksDesc',
+            'projects.chudobooksPoints',
+          ),
+          project(
+            'ar-chudaboxes',
+            'projects.arChudaboxes',
             'projects.chudobooksDesc',
             'projects.chudobooksPoints',
           ),
@@ -185,12 +179,6 @@ export const workExperience: WorkExperience[] = [
             'projects.chudoFloor',
             'projects.chudoFloorDesc',
             'projects.chudoFloorPoints',
-          ),
-          project(
-            'photon-fps',
-            'projects.photonFps',
-            'projects.photonFpsDesc',
-            'projects.photonFpsPoints',
           ),
           project(
             'quest-room',

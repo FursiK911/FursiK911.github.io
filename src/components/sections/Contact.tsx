@@ -9,7 +9,7 @@ export function Contact() {
   const { t } = useTranslation()
   return (
     <section className="section-shell contact-section" id="contact">
-      <SectionHeading index="05" title={t('sections.contact')} />
+      <SectionHeading index="06" title={t('sections.contact')} />
       <div className="contact-grid">
         <div>
           <h2>{t('contact.title')}</h2>
