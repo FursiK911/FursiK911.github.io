@@ -12,6 +12,14 @@
     var(--bg);
 }
 
+@media (min-width: 901px) {
+  :global(html.has-hud-scroll-indicator) :global(.section-shell),
+  :global(html.has-hud-scroll-indicator) :global(.site-footer),
+  :global(html.has-hud-scroll-indicator) :global(.site-header-inner) {
+    width: min(1092px, calc(100% - 176px));
+  }
+}
+
 :global(.app-shell):before {
   content: '';
   position: fixed;

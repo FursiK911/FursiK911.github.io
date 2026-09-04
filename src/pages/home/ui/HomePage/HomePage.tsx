@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useActiveSection } from '../../model/useActiveSection/useActiveSection'
 import { useLoadingSequence } from '@/features/loading'
-import { Header } from '@/widgets/site-layout'
+import { Header, HudScrollIndicator } from '@/widgets/site-layout'
 import { Footer } from '@/widgets/site-layout'
 import { LoadingScreen } from '@/features/loading'
 import { Projects } from '@/widgets/projects'
@@ -17,7 +17,7 @@ import { useTypingText } from '@/shared/lib/useTypingText/useTypingText'
 import { sectionIds } from '../../model/config/sectionIds.config'
 
 export default function App() {
-  const { i18n } = useTranslation()
+  const { i18n, t } = useTranslation()
   const loader = useLoadingSequence(
     i18n.language.startsWith('ru')
       ? 'Найди лучшего разработчика для нашего проекта'
@@ -64,7 +64,7 @@ export default function App() {
           typedRole={displayText}
           reducedMotion={reducedMotion}
         />
-        <main>
+        <main id="page-content">
           <Profile
             typedRole={displayText}
             reducedMotion={reducedMotion}
@@ -77,6 +77,10 @@ export default function App() {
           <Contact />
         </main>
         <Footer />
+        <HudScrollIndicator
+          enabled={loader.phase === 'complete'}
+          sectionLabel={t(`nav.${active}`)}
+        />
       </div>
       <KonamiDebug />
     </>

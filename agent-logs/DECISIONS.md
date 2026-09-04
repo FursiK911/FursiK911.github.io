@@ -1,5 +1,11 @@
 # Global Decision Index
 
+| DEC-20260904-02 | Drive the HUD wave from the fractional document position with transform scale and one cancellable rAF loop; keep accessibility state and localized text in React. | ui, hud, animation, performance, accessibility | [2026-09-04](2026/09/2026-09-04.md#decision-dec-20260904-02) |
+
+| DEC-20260904-03 | Use typed project actions and explicit YouTube media so previews show only decisive actions while full project pages retain all public links. | projects, modal, routing, media, i18n | [2026-09-04](2026/09/2026-09-04.md#decision-dec-20260904-03) |
+
+| DEC-20260904-01 | Use a desktop-only, 30-segment cyan HUD scrollbar with click, drag, and keyboard scrolling; preserve native scrolling and mobile system scrollbars. | ui, scroll, hud, accessibility, responsive | [2026-09-04](2026/09/2026-09-04.md#decision-dec-20260904-01) |
+
 | DEC-20260903-02 | Group source declarations into owner-adjacent lowercase `types`, `config`, `data`, `utils`, and `styles` folders while preserving CSS mechanics and slice public APIs. | architecture, fsd, role-folders, types, config, data, utils, styles | [2026-09-03](2026/09/2026-09-03.md#decision-dec-20260903-02) |
 
 | DEC-20260903-01 | Use role-based source separation with single-purpose components/hooks, grouped related types/config/data, one file per named helper, preserved **tests**, and no structural validator. | architecture, fsd, separation, hooks, types, data, config, testing | [2026-09-03](2026/09/2026-09-03.md#decision-dec-20260903-01) |

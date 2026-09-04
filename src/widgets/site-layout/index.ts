@@ -1,5 +1,7 @@
 export { Footer } from './ui/Footer/Footer'
 export { Header } from './ui/Header/Header'
+export { HudScrollIndicator } from './ui/HudScrollIndicator/HudScrollIndicator'
 export { LegalPageLayout } from './ui/LegalPageLayout/LegalPageLayout'
 export type { HeaderProps } from './ui/Header/types/Header.types'
+export type { HudScrollIndicatorProps } from './ui/HudScrollIndicator/types/HudScrollIndicator.types'
 export type { LegalPageLayoutProps } from './ui/LegalPageLayout/types/LegalPageLayout.types'

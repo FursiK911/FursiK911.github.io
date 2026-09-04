@@ -243,15 +243,13 @@ p {
   color: #b7c8cc;
 }
 
-:global(.tag-row),
-:global(.dialog-tags) {
+:global(.tag-row) {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
 }
 
-:global(.tag-row) span,
-:global(.dialog-tags) span {
+:global(.tag-row) span {
   color: #9aaeb4;
   background: var(--panel2);
   border: 1px solid var(--line);
@@ -712,12 +710,6 @@ body:global(.is-loading) {
   }
 }
 
-:global(.dialog-links) :global(.action-control--inline) {
-  color: var(--cyan);
-  font: 0.7rem var(--mono);
-  text-decoration: none;
-}
-
 @keyframes :global(blink) {
   50% {
     opacity: 0;
@@ -1010,7 +1002,6 @@ body:global(.is-loading) {
     margin-top: 8px;
   }
   :global(.skills-grid),
-  :global(.dialog-columns),
   :global(.education-timeline-details) dl div {
     grid-template-columns: 1fr;
   }
@@ -1027,13 +1018,6 @@ body:global(.is-loading) {
   }
   :global(.metric-counter-value) {
     font-size: 2rem;
-  }
-  :global(.dialog-facts) {
-    gap: 20px;
-    flex-direction: column;
-  }
-  :global(.project-dialog) {
-    padding: 32px 22px;
   }
   :global(.debug-banner) {
     left: 10px;

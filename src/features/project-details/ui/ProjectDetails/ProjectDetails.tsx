@@ -1,8 +1,9 @@
-import { cx, styles } from '@/shared/styles'
 import { useEffect } from 'react'
 import { Modal } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
 import { ActionLink } from '@/shared/ui/ActionLink'
+import { ProjectMediaGallery } from '../ProjectMediaGallery/ProjectMediaGallery'
+import styles from './styles/ProjectDetails.module.css'
 import type { ProjectDetailsProps } from './types/ProjectDetails.types'
 
 export function ProjectDetails({
@@ -11,9 +12,6 @@ export function ProjectDetails({
   onClose,
 }: ProjectDetailsProps) {
   const { t } = useTranslation()
-  const points = t(`projects.${project.pointsKey}`, {
-    returnObjects: true,
-  }) as string[]
   useEffect(() => {
     return () => {
       returnFocus?.focus()
@@ -29,91 +27,82 @@ export function ProjectDetails({
       trapFocus
       lockScroll
       transitionProps={{ transition: 'fade-up', duration: 220 }}
+      size="60rem"
       classNames={{
-        root: 'project-modal-root',
-        overlay: 'dialog-backdrop',
-        content: 'project-dialog',
+        root: styles.root,
+        overlay: styles.backdrop,
+        content: `${styles.dialog} project-dialog`,
+        header: styles.header,
+        body: styles.body,
+        close: styles.close,
       }}
       returnFocus
     >
       <Modal.Overlay />
       <Modal.Content>
-        <Modal.Header className={cx(styles.projectDialogHeader)}>
-          <Modal.Title className={cx(styles.dialogModalTitle)}>
+        <Modal.Header>
+          <Modal.Title className={styles.srOnly}>
             {t(`projects.${project.titleKey}`)}
           </Modal.Title>
           <Modal.CloseButton
-            className={cx(styles.dialogClose)}
             aria-label={t('projects.close')}
             onClick={onClose}
           />
         </Modal.Header>
-        <Modal.Body className={cx(styles.projectDialogBody)}>
-          <div className={cx(styles.dialogKicker)}>
-            {t('projects.details')} // {project.id.toUpperCase()}
-          </div>
-          <h2>{t(`projects.${project.titleKey}`)}</h2>
-          <p className={cx(styles.dialogDescription)}>
-            {t(`projects.${project.descriptionKey}`)}
-          </p>
-          <div className={cx(styles.dialogFacts)}>
-            <div>
-              <span>{t('projects.company')}</span>
-              <strong>{project.company}</strong>
-            </div>
-            <div>
-              <span>{t('projects.period')}</span>
-              <strong>
-                {project.period.from} —{' '}
-                {project.period.to ?? t('experience.present')}
-              </strong>
-            </div>
-            <div>
-              <span>{t('projects.role')}</span>
-              <strong>
-                {project.roleKey ? t(`roles.${project.roleKey}`) : ''}
-              </strong>
-            </div>
-            <div>
-              <span>{t('projects.platform')}</span>
-              <strong>{t(`platforms.${project.platformKey}`)}</strong>
-            </div>
-          </div>
-          <div className={cx(styles.dialogColumns)}>
-            <div>
-              <span className={cx(styles.eyebrow)}>
-                {t('projects.overview')}
-              </span>
-              <div className={cx(styles.dialogTags)}>
-                {project.tech.map((tech) => (
-                  <span key={tech}>{tech}</span>
-                ))}
+        <Modal.Body>
+          <div className={styles.layout}>
+            <ProjectMediaGallery project={project} variant="preview" />
+            <div className={styles.content}>
+              <p className={styles.kicker}>
+                {t('projects.details')} // {project.id.toUpperCase()}
+              </p>
+              <h2>{t(`projects.${project.titleKey}`)}</h2>
+              <p className={styles.description}>
+                {t(`projects.${project.descriptionKey}`)}
+              </p>
+              <dl className={styles.facts}>
+                <div>
+                  <dt>{t('projects.company')}</dt>
+                  <dd>{project.company}</dd>
+                </div>
+                <div>
+                  <dt>{t('projects.period')}</dt>
+                  <dd>
+                    {project.period.from} —{' '}
+                    {project.period.to ?? t('experience.present')}
+                  </dd>
+                </div>
+                <div>
+                  <dt>{t('projects.role')}</dt>
+                  <dd>
+                    {project.roleKey ? t(`roles.${project.roleKey}`) : '—'}
+                  </dd>
+                </div>
+              </dl>
+              <div className={styles.actions}>
+                <ActionLink
+                  href={`/projects/${project.id}`}
+                  variant="primary"
+                  onClick={onClose}
+                >
+                  {t('projects.viewDetails')}
+                </ActionLink>
+                {project.actions
+                  ?.filter((action) => action.type !== 'external')
+                  .map((action) => (
+                    <ActionLink
+                      href={action.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      key={action.href}
+                      variant="secondary"
+                    >
+                      {t(`projects.actions.${action.type}`)}
+                    </ActionLink>
+                  ))}
               </div>
             </div>
-            <div>
-              <span className={cx(styles.eyebrow)}>{t('projects.worked')}</span>
-              <ul>
-                {points.map((point) => (
-                  <li key={point}>{point}</li>
-                ))}
-              </ul>
-            </div>
           </div>
-          {project.links && (
-            <div className={cx(styles.dialogLinks)}>
-              {project.links.map((link) => (
-                <ActionLink
-                  href={link.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  key={link.href}
-                  variant="inline"
-                >
-                  {link.label} ↗
-                </ActionLink>
-              ))}
-            </div>
-          )}
         </Modal.Body>
       </Modal.Content>
     </Modal.Root>

@@ -8,6 +8,7 @@ export function TermsPage() {
     <LegalPageLayout
       title={t('legal.terms.metaTitle')}
       description={t('legal.terms.metaDescription')}
+      hudSectionLabel={t('legal.terms.title')}
     >
       <article className={cx(styles.legalContent)}>
         <p className={cx(styles.eyebrow)}>LEGAL / 02</p>

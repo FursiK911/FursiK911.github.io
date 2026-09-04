@@ -12,10 +12,15 @@ export const projects: Project[] = [
     tech: ['React', 'TypeScript', 'Redux Toolkit', 'React Query', 'Socket.io'],
     company: 'ООО ЦУП',
     period: { from: '09.2023', to: '10.2024' },
-    links: [
-      { label: 'Website', href: 'https://info.mychess.app/' },
-      { label: 'YouTube', href: 'https://www.youtube.com/watch?v=t-PDCpjdJvs' },
+    actions: [
+      { type: 'live', label: 'Website', href: 'https://info.mychess.app/' },
+      {
+        type: 'external',
+        label: 'YouTube',
+        href: 'https://www.youtube.com/watch?v=t-PDCpjdJvs',
+      },
     ],
+    media: [{ kind: 'youtube', videoId: 't-PDCpjdJvs' }],
     featured: true,
   },
   {
@@ -42,7 +47,14 @@ export const projects: Project[] = [
     tech: ['Unigine', 'C#', 'SteamVR', 'Astra Linux', 'Custom VOIP'],
     company: 'IT Tab',
     period: { from: '04.2023', to: '09.2023' },
-    links: [{ label: 'YouTube', href: 'https://youtu.be/nnmgHldVKMg' }],
+    actions: [
+      {
+        type: 'external',
+        label: 'YouTube',
+        href: 'https://youtu.be/nnmgHldVKMg',
+      },
+    ],
+    media: [{ kind: 'youtube', videoId: 'nnmgHldVKMg' }],
     featured: true,
   },
   {
@@ -63,8 +75,9 @@ export const projects: Project[] = [
     ],
     company: 'ООО ЦУП',
     period: { from: '10.2024', to: '02.2025' },
-    links: [
+    actions: [
       {
+        type: 'download',
         label: 'Steam',
         href: 'https://store.steampowered.com/app/3468250/myChess_VR',
       },
@@ -167,7 +180,14 @@ export const projects: Project[] = [
     ],
     company: 'ООО ЦУП',
     period: { from: '10.2024', to: '02.2025' },
-    links: [{ label: 'YouTube', href: 'https://youtu.be/LLJtFASLiHM' }],
+    actions: [
+      {
+        type: 'external',
+        label: 'YouTube',
+        href: 'https://youtu.be/LLJtFASLiHM',
+      },
+    ],
+    media: [{ kind: 'youtube', videoId: 'LLJtFASLiHM' }],
   },
   {
     id: 'vulkan-verse',
@@ -180,7 +200,9 @@ export const projects: Project[] = [
     tech: ['Unity', 'C#', 'Photon', 'Addressables', 'Zenject', 'UniTask'],
     company: 'Yellow Element',
     period: { from: '09.2025', to: '03.2026' },
-    links: [{ label: 'Website', href: 'https://vv.vulcanforged.com/' }],
+    actions: [
+      { type: 'live', label: 'Website', href: 'https://vv.vulcanforged.com/' },
+    ],
   },
   {
     id: 'korobka',
@@ -217,16 +239,19 @@ export const projects: Project[] = [
     tech: ['Unity', 'C#', 'Vuforia', 'AssetBundles', 'Android', 'iOS'],
     company: 'Yellow Element',
     period: { from: '10.2019', to: '02.2022' },
-    links: [
+    actions: [
       {
+        type: 'download',
         label: 'App Store',
         href: 'https://apps.apple.com/us/app/земля-драконів/id1563999015',
       },
       {
+        type: 'external',
         label: 'YouTube',
         href: 'https://youtu.be/iXrNLl6rpXI?si=cJY1EeP8mlEvtxuc&t=483',
       },
     ],
+    media: [{ kind: 'youtube', videoId: 'iXrNLl6rpXI', startSeconds: 483 }],
   },
   {
     id: 'villa-krim',

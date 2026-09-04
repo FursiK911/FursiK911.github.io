@@ -23,8 +23,18 @@ html {
 }
 body {
   margin: 0;
-  min-width: 320px;
+  min-width: 0;
   background: #080b0f;
+}
+
+@media (min-width: 901px) {
+  html.has-hud-scroll-indicator {
+    scrollbar-width: none;
+  }
+
+  html.has-hud-scroll-indicator::-webkit-scrollbar {
+    display: none;
+  }
 }
 button,
 a {

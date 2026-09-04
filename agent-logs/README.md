@@ -1,5 +1,9 @@
 # AI Agent Change Log Index
 
+| 2026-09-05 | ui, projects, modal, responsive, overflow, testing | [daily log](2026/09/2026-09-05.md#adaptive-project-modal-height) |
+
+| 2026-09-04 | ui, projects, modal, routing, media, scroll, hud, accessibility, responsive, i18n, testing | [daily log](2026/09/2026-09-04.md#hud-scroll-indicator-and-overflow-correction) |
+
 | 2026-09-03 | architecture, fsd, role-folders, types, config, data, utils, styles | [daily log](2026/09/2026-09-03.md#grouped-role-folders-for-source-responsibilities) |
 
 | 2026-09-03 | architecture, fsd, separation, hooks, types, data, config, testing, graphify | [daily log](2026/09/2026-09-03.md#separated-source-responsibilities) |

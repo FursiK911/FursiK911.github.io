@@ -1,0 +1,145 @@
+:global(.hud-scroll-indicator) {
+  position: fixed;
+  z-index: 19;
+  top: 50%;
+  right: 24px;
+  width: 64px;
+  transform: translateY(-50%);
+  color: var(--cyan);
+  font-family: var(--mono);
+  pointer-events: none;
+}
+
+:global(.hud-scroll-indicator__label),
+:global(.hud-scroll-indicator__section) {
+  display: block;
+  overflow-wrap: anywhere;
+  font-size: 0.55rem;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+:global(.hud-scroll-indicator__label) {
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+
+:global(.hud-scroll-indicator__control) {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 210px;
+  padding: 10px 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: ns-resize;
+  pointer-events: auto;
+  touch-action: none;
+}
+
+:global(.hud-scroll-indicator__control)::before,
+:global(.hud-scroll-indicator__control)::after {
+  position: absolute;
+  left: -17px;
+  width: 12px;
+  height: 10px;
+  content: '';
+  border-left: 1px solid currentColor;
+}
+
+:global(.hud-scroll-indicator__control)::before {
+  top: 0;
+  border-top: 1px solid currentColor;
+}
+
+:global(.hud-scroll-indicator__control)::after {
+  bottom: 0;
+  border-bottom: 1px solid currentColor;
+}
+
+:global(.hud-scroll-indicator__segments) {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(30, 1fr);
+  align-items: center;
+  justify-items: start;
+}
+
+:global(.hud-scroll-indicator__segment) {
+  position: relative;
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  opacity: var(--hud-segment-opacity, 0.2);
+  transform: scaleX(var(--hud-segment-scale, 0.4444));
+  transform-origin: left center;
+  will-change: opacity, transform;
+}
+
+:global(.hud-scroll-indicator__segment)::after {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background: currentColor;
+  box-shadow: 0 0 9px rgb(167 243 246 / 65%);
+  opacity: var(--hud-segment-glow, 0);
+  pointer-events: none;
+}
+
+:global(.hud-scroll-indicator__percentage) {
+  position: absolute;
+  top: var(--hud-progress-offset);
+  left: 24px;
+  transform: translateY(-50%);
+  color: var(--text);
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+:global(.hud-scroll-indicator__section) {
+  min-height: 1.5em;
+  margin-top: 10px;
+  color: var(--text);
+  animation: hud-section-change 120ms ease-out;
+}
+
+:global(.hud-scroll-indicator__control):focus-visible {
+  outline: 1px solid var(--cyan);
+  outline-offset: 5px;
+}
+
+:global(.hud-scroll-indicator)[data-disabled='true'] {
+  opacity: 0.35;
+}
+
+:global(.hud-scroll-indicator)[data-hidden='true'] {
+  display: none;
+}
+
+:global(.hud-scroll-indicator)[data-disabled='true']
+  :global(.hud-scroll-indicator__control) {
+  cursor: default;
+  pointer-events: none;
+}
+
+@keyframes hud-section-change {
+  from {
+    opacity: 0.35;
+    transform: translateX(-3px);
+  }
+}
+
+@media (max-width: 900px) {
+  :global(.hud-scroll-indicator) {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(.hud-scroll-indicator__section) {
+    animation: none;
+  }
+}

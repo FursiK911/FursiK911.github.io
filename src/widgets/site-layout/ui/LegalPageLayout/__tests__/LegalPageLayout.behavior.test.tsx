@@ -5,7 +5,11 @@ import { changeLanguage } from '@/shared/config/i18n'
 it('renders the shared legal shell and updates metadata', async () => {
   await changeLanguage('ru')
   renderWithProviders(
-    <LegalPageLayout title="Test policy" description="Test description">
+    <LegalPageLayout
+      title="Test policy"
+      description="Test description"
+      hudSectionLabel="Test policy"
+    >
       <h1>Legal content</h1>
     </LegalPageLayout>,
   )

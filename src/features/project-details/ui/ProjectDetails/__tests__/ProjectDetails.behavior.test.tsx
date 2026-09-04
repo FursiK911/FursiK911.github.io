@@ -15,4 +15,12 @@ it('renders accessible project dialog', async () => {
   expect(screen.getByRole('dialog')).toBeInTheDocument()
   expect(screen.getByText(/PROJECT DETAILS/)).toBeInTheDocument()
   expect(screen.getByText('ООО ЦУП')).toBeInTheDocument()
+  expect(screen.getByRole('link', { name: /VIEW DETAILS/i })).toHaveAttribute(
+    'href',
+    '/projects/mychess-web',
+  )
+  expect(screen.getByRole('link', { name: /OPEN LIVE DEMO/i })).toHaveAttribute(
+    'href',
+    'https://info.mychess.app/',
+  )
 })

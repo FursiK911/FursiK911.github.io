@@ -8,6 +8,7 @@ export function PrivacyPage() {
     <LegalPageLayout
       title={t('legal.privacy.metaTitle')}
       description={t('legal.privacy.metaDescription')}
+      hudSectionLabel={t('legal.privacy.title')}
     >
       <article className={cx(styles.legalContent)}>
         <p className={cx(styles.eyebrow)}>LEGAL / 01</p>

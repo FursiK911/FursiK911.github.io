@@ -3,11 +3,13 @@ import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Footer } from '../Footer/Footer'
 import { Header } from '../Header/Header'
+import { HudScrollIndicator } from '../HudScrollIndicator/HudScrollIndicator'
 import type { LegalPageLayoutProps } from './types/LegalPageLayout.types'
 
 export function LegalPageLayout({
   title,
   description,
+  hudSectionLabel,
   children,
 }: LegalPageLayoutProps) {
   const { i18n, t } = useTranslation()
@@ -66,13 +68,17 @@ export function LegalPageLayout({
         typedRole={t('header.legalRole')}
         reducedMotion
       />
-      <main className={cx(styles.legalPage, styles.sectionShell)}>
+      <main
+        id="page-content"
+        className={cx(styles.legalPage, styles.sectionShell)}
+      >
         <a className={cx(styles.legalBackLink)} href="/">
           ← {t('legal.back')}
         </a>
         {children}
       </main>
       <Footer />
+      <HudScrollIndicator sectionLabel={hudSectionLabel} />
     </div>
   )
 }

@@ -1,8 +1,17 @@
 export type ProjectCategory =
   'web' | 'mobile' | 'unity' | 'unigine' | 'xr-ar' | 'multiplayer'
 
-export type ProjectLink = { label: string; href: string }
-export type ProjectMedia = { kind: 'image' | 'video'; src: string; alt: string }
+export type ProjectActionType = 'live' | 'download' | 'external'
+
+export type ProjectAction = {
+  type: ProjectActionType
+  label: string
+  href: string
+}
+
+export type ProjectMedia =
+  | { kind: 'image'; src: string; altKey: string }
+  | { kind: 'youtube'; videoId: string; startSeconds?: number }
 export type ProjectPeriod = { from: string; to?: string }
 
 export type Project = {
@@ -16,7 +25,7 @@ export type Project = {
   tech: string[]
   company: string
   period: ProjectPeriod
-  links?: ProjectLink[]
+  actions?: ProjectAction[]
   media?: ProjectMedia[]
   featured?: boolean
 }

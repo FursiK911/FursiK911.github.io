@@ -1,0 +1,199 @@
+.gallery {
+  position: relative;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #071016;
+}
+
+.frame,
+.player,
+.youtubePreview {
+  width: 100%;
+  height: 100%;
+}
+
+.frame {
+  position: relative;
+  overflow: hidden;
+}
+
+.frame img,
+.player {
+  display: block;
+  border: 0;
+  object-fit: cover;
+}
+
+.youtubePreview {
+  position: relative;
+  display: grid;
+  place-content: center;
+  gap: 10px;
+  border: 0;
+  color: var(--text);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.youtubePreview svg,
+.youtubePreview span:not(.videoVeil) {
+  position: relative;
+  z-index: 1;
+}
+
+.youtubePreview svg {
+  width: 42px;
+  height: 42px;
+  margin: auto;
+  padding: 10px;
+  color: #061015;
+  background: var(--cyan);
+  border-radius: 999px;
+}
+
+.youtubePreview span:not(.videoVeil) {
+  font: 0.68rem var(--mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.videoVeil {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(4, 11, 16, 0.22), rgba(4, 11, 16, 0.78)),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 4px,
+      rgba(167, 243, 246, 0.05) 5px
+    );
+  transition: background 0.2s;
+}
+
+.youtubePreview:hover .videoVeil,
+.youtubePreview:focus-visible .videoVeil {
+  background-color: rgba(167, 243, 246, 0.12);
+}
+
+.placeholder {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: end;
+  padding: clamp(20px, 3vw, 38px);
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 83% 18%,
+      rgba(141, 123, 255, 0.44),
+      transparent 32%
+    ),
+    linear-gradient(132deg, #132a35, #071016 65%);
+}
+
+.placeholder::before,
+.placeholder::after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+
+.placeholder::before {
+  inset: 10%;
+  border: 1px solid rgba(167, 243, 246, 0.35);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 76% 100%, 0 100%);
+}
+
+.placeholder::after {
+  width: 180%;
+  height: 1px;
+  top: 44%;
+  left: -32%;
+  background: rgba(167, 243, 246, 0.45);
+  transform: rotate(-22deg);
+  box-shadow:
+    0 44px 0 rgba(167, 243, 246, 0.1),
+    0 -44px 0 rgba(167, 243, 246, 0.1);
+}
+
+.placeholder span,
+.placeholder i {
+  position: relative;
+  z-index: 1;
+  color: #b9d2d6;
+  font: 0.62rem var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.placeholder strong {
+  position: relative;
+  z-index: 1;
+  max-width: 90%;
+  margin: 10px 0 18px;
+  color: var(--text);
+  font-size: clamp(1.6rem, 3.2vw, 3.5rem);
+  line-height: 0.94;
+  letter-spacing: -0.06em;
+}
+
+.placeholder i {
+  color: var(--cyan);
+  font-style: normal;
+}
+
+.previous,
+.next {
+  position: absolute;
+  top: 50%;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgba(167, 243, 246, 0.45);
+  color: var(--text);
+  background: rgba(6, 16, 21, 0.76);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.previous {
+  left: 12px;
+}
+.next {
+  right: 12px;
+}
+
+.previous:hover,
+.next:hover,
+.previous:focus-visible,
+.next:focus-visible {
+  color: #071016;
+  background: var(--cyan);
+}
+
+.pagination {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  display: flex;
+  gap: 6px;
+  transform: translateX(-50%);
+}
+
+.pagination button {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 1px solid var(--cyan);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.pagination button[aria-current='true'] {
+  background: var(--cyan);
+}
