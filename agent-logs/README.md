@@ -1,5 +1,11 @@
 # AI Agent Change Log Index
 
+| 2026-09-07 | ui, hero, typography, css, responsive, testing | [daily log](2026/09/2026-09-07.md#contained-the-hero-display-title-within-its-column) |
+
+| 2026-09-07 | ui, typography, fonts, responsive, projects, modal, css, testing | [daily log](2026/09/2026-09-07.md#scaled-unbounded-display-typography-to-its-layout-contexts) |
+
+| 2026-09-07 | ui, typography, fonts, projects, modal, responsive, testing | [daily log](2026/09/2026-09-07.md#replaced-display-typography-with-unbounded) |
+
 | 2026-09-07 | ui, hero, portrait, css, testing | [daily log](2026/09/2026-09-07.md#removed-hero-portrait-inner-fill) |
 
 | 2026-09-07 | ui, project-page, hero, css, testing | [daily log](2026/09/2026-09-07.md#removed-project-hero-frame-styling) |

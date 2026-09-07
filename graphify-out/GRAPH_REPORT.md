@@ -2,27 +2,20 @@
 
 ## Corpus Check
 
-- 317 files · ~82,010 words
+- 318 files · ~83,978 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
 
-- 951 nodes · 1398 edges · 129 communities (90 shown, 39 thin omitted)
+- 970 nodes · 1418 edges · 122 communities (88 shown, 34 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
 
-- Built from commit: `9cb00316`
+- Built from commit: `f781d2f6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
-
-## Portfolio Research Source Map
-
-- `docs/portfolio-research-sources.md` is the repository-local entry point for external portfolio research.
-- Linked research corpus: `C:/Work/Резюме/app_from_portfolio_information/`.
-- Indexed files: AR Chudoboxes / Chudoboxes EKO, AR Coloring, Villa Krim / Virtual Sommelier, and Neo4 Sightline.
-- Graph traversal: `Portfolio research sources` → `references` → each research file node.
 
 ## Community Hubs (Navigation)
 
@@ -62,7 +55,7 @@
 - 2026-08-25
 - 2026-08-29
 - Agent Operating Rules
-- package.json
+- Professionalized SOS COMPUTER course content
 - project-filtering/index.ts
 - HomePage.tsx
 - ExperienceTimeline.localizes-short-timeline-roles-and-the-future-cta-in-russian.test.tsx
@@ -75,7 +68,7 @@
 - styles/index.ts
 - Projects.tsx
 - Persistent project media mock
-- lint-staged
+- Completed final Education Timeline axis segment
 - AppRouter.tsx
 - IntersectionObserverStub
 - SectionHeading/index.ts
@@ -88,7 +81,6 @@
 - TermsPage.tsx
 - Contact.tsx
 - Skills.tsx
-- Education timeline and language terminal
 - Centered cyan education timeline
 - Education timeline centered-axis layout
 - Fixed Mantine centered Education Timeline axis
@@ -118,45 +110,39 @@
 - 20:24 +03:00 — Rebuilt EXPERIENCE LOG as a data-driven career timeline
 - 20:58 +03:00 — Replaced timeline axis with animated SVG wave
 - 2026-09-05.md
-- i18next-browser-languagedetector
-- @mantine/hooks
-- @number-flow/react
-- react
-- react-i18next
 - data.contains-21-unique-projects-with-valid-categories.test.ts
-- Centered Education bullets within cards
 
 ## God Nodes (most connected - your core abstractions)
 
 1. `2026-08-30` - 41 edges
-2. `compilerOptions` - 21 edges
-3. `2026-08-27` - 16 edges
-4. `compilerOptions` - 15 edges
-5. `scripts` - 14 edges
-6. `useLoadingSequence()` - 14 edges
-7. `Seamless Hero portrait handoff` - 14 edges
+2. `Seamless Hero portrait handoff` - 30 edges
+3. `compilerOptions` - 21 edges
+4. `2026-08-27` - 16 edges
+5. `compilerOptions` - 15 edges
+6. `scripts` - 14 edges
+7. `useLoadingSequence()` - 14 edges
 8. `LoadingScreen()` - 12 edges
 9. `Unified profile and about block` - 12 edges
 10. `useLoadingAnimationSpeed()` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
 
+- `Portfolio research sources` --references--> `AR Chudoboxes / Chudoboxes EKO research` [EXTRACTED]
+  docs/portfolio-research-sources.md → C:/Work/Резюме/app_from_portfolio_information/ar-chudoboxes-portfolio-research.md
+- `Portfolio research sources` --references--> `AR Coloring research` [EXTRACTED]
+  docs/portfolio-research-sources.md → C:/Work/Резюме/app_from_portfolio_information/ar-coloring-research.md
+- `Portfolio research sources` --references--> `Neo4 Sightline research` [EXTRACTED]
+  docs/portfolio-research-sources.md → C:/Work/Резюме/app_from_portfolio_information/neo4-sightline-research.md
+- `Portfolio research sources` --references--> `Villa Krim / Virtual Sommelier research` [EXTRACTED]
+  docs/portfolio-research-sources.md → C:/Work/Резюме/app_from_portfolio_information/virtual-sommelier-villa-krim-research.md
 - `useLoadingAnimationSpeed()` --indirect_call--> `getLoadingAnimationSpeed()` [INFERRED]
   src/features/loading/model/useLoadingAnimationSpeed/useLoadingAnimationSpeed.ts → src/features/loading/model/store/loadingAnimationStore.ts
-- `useLoadingAnimationSpeed()` --indirect_call--> `subscribeToLoadingAnimationSpeed()` [INFERRED]
-  src/features/loading/model/useLoadingAnimationSpeed/useLoadingAnimationSpeed.ts → src/features/loading/model/store/loadingAnimationStore.ts
-- `useTypingText()` --indirect_call--> `getReducedMotion()` [INFERRED]
-  src/shared/lib/useTypingText/useTypingText.ts → src/shared/lib/useTypingText/utils/getReducedMotion.ts
-- `renderWithProviders()` --indirect_call--> `TestProviders()` [INFERRED]
-  src/shared/test/utils/renderWithProviders.tsx → src/shared/test/TestProviders/TestProviders.tsx
-- `ExperienceTimeline()` --calls--> `getEvenlySpacedX()` [EXTRACTED]
-  src/widgets/experience/ui/ExperienceTimeline/ExperienceTimeline.tsx → src/widgets/experience/model/experience-timeline-geometry/utils/experience-timeline-geometry.ts
 
 ## Import Cycles
 
 - None detected.
 
-## Communities (129 total, 39 thin omitted)
+## Communities (122 total, 34 thin omitted)
 
 ### Community 0 - "loading/index.ts"
 
@@ -191,7 +177,7 @@ Nodes (11): directions, Direction, Directions(), DirectionsProps, GlitchPortrait
 ### Community 6 - "2026-09-02.md"
 
 Cohesion: 0.11
-Nodes (18): 2026-09-02 12:58 +03:00, 2026-09-02 16:24 +03:00, 2026-09-02 17:28 +03:00, 2026-09-02 17:56 +03:00, 2026-09-02 21:10 +03:00, 2026-09-02 21:58 +03:00, Completed final Education Timeline axis segment, Decision DEC-20260902-01 (+10 more)
+Nodes (18): 2026-09-02 12:58 +03:00, 2026-09-02 15:32 +03:00, 2026-09-02 16:24 +03:00, 2026-09-02 17:28 +03:00, 2026-09-02 21:10 +03:00, 2026-09-02 21:52 +03:00, Centered Education bullets within cards, Decision DEC-20260902-01 (+10 more)
 
 ### Community 7 - "entities/project/index.ts"
 
@@ -235,8 +221,8 @@ Nodes (4): ProjectDetails(), ProjectDetailsProps, ProjectMediaGallery(), Project
 
 ### Community 15 - "dependencies"
 
-Cohesion: 0.13
-Nodes (15): gsap, i18next, @isonimus/glitch-js, @mantine/core, motion, dependencies, gsap, i18next (+7 more)
+Cohesion: 0.07
+Nodes (27): @fontsource-variable/unbounded, gsap, i18next, i18next-browser-languagedetector, @isonimus/glitch-js, @mantine/core, @mantine/hooks, motion (+19 more)
 
 ### Community 16 - "2026-09-01"
 
@@ -245,8 +231,8 @@ Nodes (14): 01:02 +03:00 — Reframed Directions as four experience categories, 
 
 ### Community 17 - "scripts"
 
-Cohesion: 0.14
-Nodes (14): scripts, build, dev, format, format:check, lint, lint:fix, prepare (+6 more)
+Cohesion: 0.07
+Nodes (26): engines, node, npm, lint-staged, *.{json,md,yml,yaml,css,html}, *.{ts,tsx,js,jsx}, name, private (+18 more)
 
 ### Community 18 - "config/index.ts"
 
@@ -333,10 +319,10 @@ Nodes (8): 2026-08-29, 21:10 +03:00 — [ui] Add synchronized typing roles to He
 Cohesion: 0.25
 Nodes (7): Agent Operating Rules, Change logs and decisions, FSD architecture and component structure, Graphify, Grilling, Project baseline, Quality gate
 
-### Community 36 - "package.json"
+### Community 36 - "Professionalized SOS COMPUTER course content"
 
-Cohesion: 0.25
-Nodes (7): engines, node, npm, name, private, type, version
+Cohesion: 0.67
+Nodes (3): 2026-09-02 17:56 +03:00, Decision DEC-20260902-13, Professionalized SOS COMPUTER course content
 
 ### Community 37 - "project-filtering/index.ts"
 
@@ -370,8 +356,8 @@ Nodes (3): TestProviders(), TestProvidersProps, renderWithProviders()
 
 ### Community 44 - "Dmitry Fursov — Software Developer"
 
-Cohesion: 0.33
-Nodes (5): Dmitry Fursov — Software Developer, GitHub Pages, Project assets, Локальная разработка, Языки
+Cohesion: 0.17
+Nodes (11): AR Chudoboxes / Chudoboxes EKO research, AR Coloring research, Portfolio research sources, Neo4 Sightline research, Dmitry Fursov — Software Developer, GitHub Pages, Portfolio research, Project assets (+3 more)
 
 ### Community 45 - "entities/education/index.ts"
 
@@ -388,20 +374,15 @@ Nodes (3): styles, className(), cx()
 Cohesion: 0.40
 Nodes (5): 18:58 +03:00 — [feature] Transfer the loader portrait into the Hero scene, 2026-09-06 18:40 +03:00, Decision DEC-20260906-01, Decision DEC-20260906-02, Persistent project media mock
 
-### Community 49 - "lint-staged"
+### Community 49 - "Completed final Education Timeline axis segment"
 
-Cohesion: 0.40
-Nodes (5): lint-staged, *.{json,md,yml,yaml,css,html}, *.{ts,tsx,js,jsx}, eslint --fix, prettier --write
+Cohesion: 0.67
+Nodes (3): 2026-09-02 21:58 +03:00, Completed final Education Timeline axis segment, Decision DEC-20260902-19
 
 ### Community 56 - "AI Agent Change Log Index"
 
 Cohesion: 0.50
 Nodes (4): AI Agent Change Log Index, Browse by decision, Browse by period, Latest entries
-
-### Community 62 - "Education timeline and language terminal"
-
-Cohesion: 0.67
-Nodes (3): 2026-09-02 15:32 +03:00, Decision DEC-20260902-06, Education timeline and language terminal
 
 ### Community 63 - "Centered cyan education timeline"
 
@@ -450,19 +431,14 @@ Nodes (3): 2026-09-03 01:07 +03:00, Decision DEC-20260903-02, Grouped role folde
 
 ### Community 72 - "Seamless Hero portrait handoff"
 
-Cohesion: 0.14
-Nodes (14): 2026-09-07 20:42 +03:00, 2026-09-07 21:21 +03:00, 2026-09-07 21:55 +03:00, 2026-09-07 22:05 +03:00 — Villa Krim project content, 2026-09-07 22:10 +03:00 — Filled the AR Chudoboxes portfolio case, 2026-09-07 22:30 +03:00, AR Coloring project content, Decision DEC-20260907-01 (+6 more)
-
-### Community 128 - "Centered Education bullets within cards"
-
-Cohesion: 0.67
-Nodes (3): 2026-09-02 21:52 +03:00, Centered Education bullets within cards, Decision DEC-20260902-18
+Cohesion: 0.07
+Nodes (30): 2026-09-07 20:42 +03:00, 2026-09-07 21:21 +03:00, 2026-09-07 21:55 +03:00, 2026-09-07 22:05 +03:00 — Villa Krim project content, 2026-09-07 22:10 +03:00 — Filled the AR Chudoboxes portfolio case, 2026-09-07 22:13 +03:00 — Constrained project media images, 2026-09-07 22:16 +03:00 — Explicitly constrained project image width, 2026-09-07 22:20 +03:00 — Expanded Author’s Wine Villa Krim research (+22 more)
 
 ## Knowledge Gaps
 
-- **316 isolated node(s):** `name`, `private`, `version`, `type`, `node` (+311 more)
+- **338 isolated node(s):** `name`, `private`, `version`, `type`, `node` (+333 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **39 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **34 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 
@@ -470,12 +446,12 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `2026-08-30` connect `2026-08-30` to `agent-logs/README.md`, `00:06 +03:00 — Configuration-driven loader speed controls`, `01:28 +03:00 — Added intermittent cyberpunk portrait glitch`, `01:40 +03:00 — Made portrait glitch visibly readable`, `01:49 +03:00 — Stabilized the portrait base layer`, `02:01 +03:00 — Replaced slices with bounded corruption blocks`, `02:03 +03:00 — Verified block-only portrait corruption`, `02:27 +03:00 — Switched to a cellular data-corruption glitch`, `16:06 +03:00 — Replaced cellular portrait glitch with Glitch.js`, `16:31 +03:00 — Switched portrait glitch to continuous demo mode`, `19:46 +03:00 — Added localized resume link to header`, `20:01 +03:00 — Standardized cyan resume download buttons`, `20:24 +03:00 — Rebuilt EXPERIENCE LOG as a data-driven career timeline`, `20:58 +03:00 — Replaced timeline axis with animated SVG wave`?**
   _High betweenness centrality (0.025) - this node is a cross-community bridge._
+- **Why does `Seamless Hero portrait handoff` connect `Seamless Hero portrait handoff` to `agent-logs/README.md`?**
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **Why does `2026-08-31` connect `2026-08-31` to `agent-logs/README.md`?**
   _High betweenness centrality (0.010) - this node is a cross-community bridge._
-- **Why does `devDependencies` connect `devDependencies` to `package.json`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _316 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _338 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `loading/index.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.060240963855421686 - nodes in this community are weakly interconnected._
 - **Should `useHudScroll.ts` be split into smaller, more focused modules?**

@@ -53,9 +53,12 @@
 .notFound h1 {
   margin: 14px 0 18px;
   color: var(--text);
-  font-size: clamp(2.2rem, 5vw, 5.2rem);
-  line-height: 0.9;
-  letter-spacing: -0.07em;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4.2vw, 4.2rem);
+  line-height: 1.02;
+  letter-spacing: 0;
+  font-weight: 600;
+  overflow-wrap: anywhere;
 }
 .heroContent > p:not(.kicker) {
   margin: 0;
@@ -129,8 +132,11 @@
 .details h2 {
   margin: 12px 0 22px;
   color: var(--text);
-  font-size: 1.65rem;
-  letter-spacing: -0.04em;
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.4vw, 1.5rem);
+  line-height: 1.2;
+  letter-spacing: 0;
+  font-weight: 600;
 }
 .tags {
   display: flex;

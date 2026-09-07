@@ -12,7 +12,8 @@
 }
 
 :global(.hero-copy) {
-  max-width: 740px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 :global(.hero-role) {

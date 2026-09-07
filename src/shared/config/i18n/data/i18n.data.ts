@@ -409,19 +409,21 @@ export const resources = {
         ],
         authorsWineVillaKrim: 'Авторське вино Villa Krim',
         authorsWineVillaKrimDesc:
-          'Отдельное AR-приложение для авторской коллекции Villa Krim: этикетка открывала историю вина, винодела и его гастрономический характер.',
+          'AR-кампания авторской коллекции Villa Krim: QR-код и этикетка бутылки запускали приложение с историями вин, винодела и гастрономическими сочетаниями.',
         authorsWineVillaKrimPoints: [
-          'Реализовал распознавание этикетки бутылки камерой смартфона',
-          'Интегрировал AR-истории о творческом пути винодела и создании каждой позиции',
+          'Реализовал сценарий QR-код на этикетке → приложение → сканирование бутылки',
+          'Интегрировал AR-контент о творческом пути Бояна Борисова и создании вин коллекции',
           'Подготовил мобильный Unity-продукт с рассказами о купажах, вкусе, аромате и сочетаниях',
         ],
-        authorsWineVillaKrimMedia:
+        authorsWineVillaKrimMediaCampaign:
+          'Промо-изображение AR-сценария Villa Krim: пользователь сканирует бутылку смартфоном',
+        authorsWineVillaKrimMediaApp:
           'Иконка приложения «Авторське вино Villa Krim»',
         authorsWineVillaKrimMetrics: [
-          { value: '1.2', label: 'зафиксированная версия приложения' },
-          { value: '5.1+', label: 'минимальная версия Android' },
-          { value: '2020', label: 'зафиксированный релиз' },
-          { value: '1', label: 'отдельное приложение авторской коллекции' },
+          { value: '3', label: 'подтверждённых Android-приложения серии' },
+          { value: '3', label: 'подтверждённых компонента стека' },
+          { value: 'QR → AR', label: 'сценарий запуска контента' },
+          { value: '2020', label: 'год публичного AR-анонса' },
         ],
         chudoProjector: 'Chudo Projector',
         chudoProjectorDesc:
@@ -1150,19 +1152,21 @@ export const resources = {
         ],
         authorsWineVillaKrim: 'Author’s Wine Villa Krim',
         authorsWineVillaKrimDesc:
-          'Separate AR application for the Villa Krim author’s collection: the label revealed the wine’s story, winemaker and gastronomic character.',
+          'AR campaign for the Villa Krim author’s collection: a QR code and bottle label opened stories about the wines, winemaker and food pairings.',
         authorsWineVillaKrimPoints: [
-          'Implemented smartphone camera recognition of the bottle label',
-          'Integrated AR stories about the winemaker’s path and the creation of each wine',
+          'Implemented the QR label → app → bottle scanning flow',
+          'Integrated AR content about Boyan Borisov’s path and the collection’s wines',
           'Prepared a mobile Unity product covering blends, taste, aroma and food pairings',
         ],
-        authorsWineVillaKrimMedia:
+        authorsWineVillaKrimMediaCampaign:
+          'Villa Krim AR campaign visual: a user scans a bottle with a smartphone',
+        authorsWineVillaKrimMediaApp:
           'Icon of the Author’s Wine Villa Krim application',
         authorsWineVillaKrimMetrics: [
-          { value: '1.2', label: 'documented application version' },
-          { value: '5.1+', label: 'minimum Android version' },
-          { value: '2020', label: 'documented release' },
-          { value: '1', label: 'separate author’s collection app' },
+          { value: '3', label: 'confirmed Android apps in the series' },
+          { value: '3', label: 'confirmed stack components' },
+          { value: 'QR → AR', label: 'content launch flow' },
+          { value: '2020', label: 'public AR announcement year' },
         ],
         chudoProjector: 'Chudo Projector',
         chudoProjectorDesc:

@@ -62,6 +62,9 @@ a {
   --cyan: #a7f3f6;
   --violet: #8d7bff;
   --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  --font-display:
+    'Unbounded Variable', 'Unbounded', Inter, ui-sans-serif, system-ui,
+    sans-serif;
 }
 
 h1,

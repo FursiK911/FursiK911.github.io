@@ -1,5 +1,7 @@
 # Global Decision Index
 
+| DEC-20260907-11 | Use locally bundled Unbounded Variable as the shared display font for large headings, with neutral letter spacing; keep body copy and mono UI labels unchanged. | ui, typography, fonts, responsive | [2026-09-07](2026/09/2026-09-07.md#decision-dec-20260907-11) |
+
 | DEC-20260907-10 | Use the page background behind the Hero portrait instead of a separate panel fill. | ui, hero, portrait, css | [2026-09-07](2026/09/2026-09-07.md#decision-dec-20260907-10) |
 
 | DEC-20260907-09 | Keep the project detail `section.hero` free of a border and separate panel background. | ui, project-page, hero, css | [2026-09-07](2026/09/2026-09-07.md#decision-dec-20260907-09) |
@@ -105,6 +107,8 @@
 | DEC-20260830-13 | Use a data-driven career timeline from earliest to current/Future, reverse-order expanded details, and local-logo/initials fallback behavior. | ui, timeline, responsive, accessibility | [2026-08-30](2026/08/2026-08-30.md#decision-dec-20260830-13) |
 
 This is an index, not a second copy of the change log. Follow the source link for context and verification.
+
+| DEC-20260907-12 | Keep left-side education card headings and controls right-aligned, but render expanded details as normal left-aligned content with the standard left border and padding. | ui, education, timeline, css, responsive | [2026-09-07](2026/09/2026-09-07.md#decision-dec-20260907-12) |
 
 | DEC-20260907-02 | Keep the portrait transfer clone fixed at the Hero destination through handoff and start the underlying scan/glitch at crossfade start, removing the clone only after 100ms. | ui, loading, portrait-handoff, glitch, animation | [2026-09-07](2026/09/2026-09-07.md#decision-dec-20260907-02) |
 

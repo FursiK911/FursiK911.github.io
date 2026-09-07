@@ -344,12 +344,27 @@ export const projects: Project[] = [
         label: 'APKPure',
         href: 'https://apkpure.net/ru/%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D1%81%D1%8C%D0%BA%D0%B5-%D0%B2%D0%B8%D0%BD%D0%BE-villa-krim/com.alefvinal.appauthorswine',
       },
+      {
+        type: 'external',
+        label: '24tv · campaign',
+        href: 'https://24tv.ua/ru/villa-krim-pervoj-ukraine-ispolzovala-funkciju-dopolnennoj-realnosti_n1347926',
+      },
+      {
+        type: 'external',
+        label: 'Habr Career',
+        href: 'https://career.habr.com/fursik1',
+      },
     ],
     media: [
       {
         kind: 'image',
+        src: 'https://24tv.ua/resources/photos/news/202005/1347926.jpg',
+        altKey: 'authorsWineVillaKrimMediaCampaign',
+      },
+      {
+        kind: 'image',
         src: 'https://image-eo.winudf.com/v2/image1/Y29tLmFsZWZ2aW5hbC5hcHBhdXRob3Jzd2luZV9pY29uXzE2MDQyMTgzNjBfMDcx/icon.webp?fakeurl=1&type=.webp&w=512',
-        altKey: 'authorsWineVillaKrimMedia',
+        altKey: 'authorsWineVillaKrimMediaApp',
       },
     ],
     metricsKey: 'authorsWineVillaKrimMetrics',

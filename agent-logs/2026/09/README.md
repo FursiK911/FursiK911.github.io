@@ -1,5 +1,13 @@
 # September 2026
 
+| 2026-09-07 | ui, hero, typography, css, responsive, testing | [2026-09-07.md](2026-09-07.md#contained-the-hero-display-title-within-its-column) |
+
+| 2026-09-07 | ui, education, timeline, css, responsive, testing | [2026-09-07.md](2026-09-07.md#restored-left-alignment-for-expanded-education-details) |
+
+| 2026-09-07 | ui, typography, fonts, responsive, projects, modal, css, testing | [2026-09-07.md](2026-09-07.md#scaled-unbounded-display-typography-to-its-layout-contexts) |
+
+| 2026-09-07 | ui, typography, fonts, projects, modal, responsive, testing | [2026-09-07.md](2026-09-07.md#replaced-display-typography-with-unbounded) |
+
 | 2026-09-07 | ui, hero, portrait, css, testing | [2026-09-07.md](2026-09-07.md#removed-hero-portrait-inner-fill) |
 
 | 2026-09-07 | ui, projects, modal, media, responsive, css, testing | [2026-09-07.md](2026-09-07.md#matched-image-screen-size-to-media-bounds) |
