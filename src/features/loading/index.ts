@@ -2,6 +2,8 @@ export { LoadingAnimationDebug } from './ui/LoadingAnimationDebug/LoadingAnimati
 export type { LoadingAnimationDebugProps } from './ui/LoadingAnimationDebug/types/LoadingAnimationDebug.types'
 export { LoadingScreen } from './ui/LoadingScreen/LoadingScreen'
 export type { LoadingScreenProps } from './ui/LoadingScreen/types/LoadingScreen.types'
+export { IntroPortraitTransition } from './ui/IntroPortraitTransition/IntroPortraitTransition'
+export type { IntroPortraitTransitionProps } from './ui/IntroPortraitTransition/types/IntroPortraitTransition.types'
 export { loadingAnimationConfig } from './model/config/loading-animation.config'
 export {
   getLoadingAnimationSpeed,

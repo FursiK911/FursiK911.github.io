@@ -1,2 +1,10 @@
 export type LoadingPhase =
-  'initializing' | 'typing' | 'searching' | 'result' | 'exiting' | 'complete'
+  | 'initializing'
+  | 'typing'
+  | 'searching'
+  | 'result'
+  | 'fading'
+  | 'transferring'
+  | 'revealing'
+  | 'skipping'
+  | 'complete'

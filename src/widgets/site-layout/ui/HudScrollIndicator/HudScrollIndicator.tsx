@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { motion } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import {
   HUD_KEYBOARD_STEP,
@@ -12,6 +13,8 @@ import { getPointerProgress } from './utils/getPointerProgress'
 export function HudScrollIndicator({
   enabled = true,
   sectionLabel,
+  visible = true,
+  animateEntrance = false,
 }: HudScrollIndicatorProps) {
   const { t } = useTranslation()
   const rootRef = useRef<HTMLElement>(null)
@@ -53,10 +56,15 @@ export function HudScrollIndicator({
     )
   }
 
+  if (!visible) return null
+
   return (
-    <aside
+    <motion.aside
       className="hud-scroll-indicator"
       ref={rootRef}
+      initial={animateEntrance ? { marginRight: -28, opacity: 0 } : false}
+      animate={{ marginRight: 0, opacity: 1 }}
+      transition={{ duration: animateEntrance ? 0.45 : 0 }}
       aria-hidden={!isScrollable}
       data-disabled={disabled}
       data-hidden={!isScrollable}
@@ -159,6 +167,6 @@ export function HudScrollIndicator({
       <span className="hud-scroll-indicator__section" key={sectionLabel}>
         {sectionLabel}
       </span>
-    </aside>
+    </motion.aside>
   )
 }

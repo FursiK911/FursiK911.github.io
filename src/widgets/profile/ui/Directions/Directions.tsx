@@ -27,7 +27,7 @@ export function Directions({
         visible: {
           opacity: 1,
           y: 0,
-          transition: { duration: 0.45, delay: 0.12 },
+          transition: { duration: 0.45, delay: embedded ? 0.57 : 0.12 },
         },
       }}
       onAnimationStart={() => {

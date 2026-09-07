@@ -3,18 +3,21 @@ import { useEffect, useState } from 'react'
 import { Burger } from '@mantine/core'
 import { IconDownload } from '@tabler/icons-react'
 import { useTranslation } from 'react-i18next'
+import { motion } from 'motion/react'
 import { cvUrl } from '@/entities/project'
 import { ActionLink } from '@/shared/ui/ActionLink'
 import { TypingText } from '@/shared/ui/TypingText'
 import '../styles/SiteLayout.module.css'
 import { sectionIds } from './config/header.config'
 import type { HeaderProps } from './types/Header.types'
+import { headerEntranceVariants } from './config/headerEntranceVariants.config'
 
 export function Header({
   active,
   onLanguage,
   typedRole,
   reducedMotion,
+  entered = true,
 }: HeaderProps) {
   const { t, i18n } = useTranslation()
   const [open, setOpen] = useState(false)
@@ -30,12 +33,15 @@ export function Header({
   }, [])
 
   return (
-    <header
+    <motion.header
       className={
         scrolled
           ? cx(styles.siteHeader, styles.isScrolled)
           : cx(styles.siteHeader)
       }
+      initial={reducedMotion || entered ? false : 'hidden'}
+      animate={reducedMotion || entered ? 'visible' : 'hidden'}
+      variants={headerEntranceVariants}
     >
       <div className={cx(styles.siteHeaderInner)}>
         <a
@@ -95,6 +101,6 @@ export function Header({
           />
         </div>
       </div>
-    </header>
+    </motion.header>
   )
 }

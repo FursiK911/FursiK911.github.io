@@ -37,7 +37,6 @@
   position: relative;
   border: 1px solid var(--line);
   padding: 12px 12px 38px;
-  background: var(--panel);
 }
 
 :global(.portrait-frame):before,
@@ -66,6 +65,32 @@
 :global(.portrait-frame) img {
   width: 100%;
   display: block;
+}
+
+:global(.portrait-frame):global(.is-portrait-pending) {
+  border-color: transparent;
+  background: transparent;
+}
+
+:global(.portrait-frame):global(.is-portrait-pending):before,
+:global(.portrait-frame):global(.is-portrait-pending):after,
+:global(.portrait-frame):global(.is-portrait-pending) :global(.frame-label),
+:global(.portrait-frame):global(.is-portrait-pending)
+  + :global(.portrait-note) {
+  opacity: 0;
+}
+
+:global(.portrait-frame):global(.is-portrait-pending):not(
+    :global(.is-base-portrait-visible)
+  )
+  :global(.portrait-glitch) {
+  opacity: 0;
+}
+
+:global(.portrait-frame):global(.is-portrait-handoff)
+  :global(.portrait-glitch)
+  img {
+  filter: saturate(0.7) contrast(1.1);
 }
 
 :global(.portrait-glitch) {

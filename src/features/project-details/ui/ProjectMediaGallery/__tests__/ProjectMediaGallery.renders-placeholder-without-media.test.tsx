@@ -6,10 +6,12 @@ import { ProjectMediaGallery } from '../ProjectMediaGallery'
 
 it('renders a project placeholder when no media is available', async () => {
   await changeLanguage('en')
-  renderWithProviders(
+  const { container } = renderWithProviders(
     <ProjectMediaGallery project={projects[1]} variant="preview" />,
   )
 
+  expect(container.querySelector('[class*="mock"]')).toBeInTheDocument()
+  expect(container.querySelector('[class*="screen"]')).toBeInTheDocument()
   expect(screen.getByText('Mobile Multiplayer RTS')).toBeInTheDocument()
   expect(
     screen.queryByRole('button', { name: /WATCH VIDEO/i }),

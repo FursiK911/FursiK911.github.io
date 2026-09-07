@@ -1,6 +1,8 @@
 export interface HudScrollIndicatorProps {
   sectionLabel: string
   enabled?: boolean
+  visible?: boolean
+  animateEntrance?: boolean
 }
 
 export interface HudScrollState {

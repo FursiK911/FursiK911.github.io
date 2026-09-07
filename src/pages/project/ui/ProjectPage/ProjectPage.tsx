@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { getProjectById } from '@/entities/project'
+import type { ProjectMetric } from '@/entities/project'
 import { ProjectMediaGallery } from '@/features/project-details'
 import { ActionLink } from '@/shared/ui/ActionLink'
 import { Footer, Header, HudScrollIndicator } from '@/widgets/site-layout'
@@ -93,6 +94,25 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
               </div>
             </div>
             <div className={styles.details}>
+              {project.metricsKey && (
+                <section className={styles.metricsSection}>
+                  <p className={styles.kicker}>
+                    {t('projects.projectFootprint')}
+                  </p>
+                  <div className={styles.metrics}>
+                    {(
+                      t(`projects.${project.metricsKey}`, {
+                        returnObjects: true,
+                      }) as ProjectMetric[]
+                    ).map((metric) => (
+                      <div className={styles.metric} key={metric.label}>
+                        <strong>{metric.value}</strong>
+                        <span>{metric.label}</span>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
               <section>
                 <p className={styles.kicker}>{t('projects.overview')}</p>
                 <h2>{t('projects.techStack')}</h2>

@@ -10,7 +10,7 @@ it('renders the renamed section and split project cards', async () => {
     screen.getByRole('heading', { name: 'Chudobooks' }),
   ).toBeInTheDocument()
   expect(
-    screen.getByRole('heading', { name: 'AR Chudoboxes' }),
+    screen.getByRole('heading', { name: 'AR Chudoboxes / Chudoboxes EKO' }),
   ).toBeInTheDocument()
   expect(
     screen.queryByRole('heading', { name: 'Goons of Balatroon' }),

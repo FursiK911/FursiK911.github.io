@@ -12,7 +12,7 @@ import type { LoadingCandidate } from '../types/loading-candidate.types'
 export function useLoadingSequence(query: string) {
   const systemReducedMotion = useReducedMotion()
   const reducedMotion =
-    systemReducedMotion ??
+    systemReducedMotion ||
     window.matchMedia('(prefers-reduced-motion: reduce)').matches
   const [phase, setPhase] = useState<LoadingPhase>(() =>
     hasSeenIntro() || reducedMotion ? 'complete' : 'initializing',
@@ -30,6 +30,17 @@ export function useLoadingSequence(query: string) {
   const [cursorClicked, setCursorClicked] = useState(false)
   const [resultVisible, setResultVisible] = useState(false)
   const [candidates, setCandidates] = useState<LoadingCandidate[]>([])
+  const [heroPortraitReady, setHeroPortraitReady] = useState(
+    () => hasSeenIntro() || reducedMotion,
+  )
+  const [portraitHandoffComplete, setPortraitHandoffComplete] = useState(
+    () => hasSeenIntro() || reducedMotion,
+  )
+  const [pageRevealComplete, setPageRevealComplete] = useState(
+    () => hasSeenIntro() || reducedMotion,
+  )
+  const portraitHandoffCompleteRef = useRef(portraitHandoffComplete)
+  const pageRevealCompleteRef = useRef(pageRevealComplete)
   const timers = useRef<Array<() => void>>([])
   const started = useRef(false)
 
@@ -133,8 +144,11 @@ export function useLoadingSequence(query: string) {
                       setResultVisible(true)
                       setPhase('result')
                       schedule(
-                        () => setPhase('exiting'),
-                        loadingAnimationConfig.resultHold,
+                        () => setPhase('fading'),
+                        (loadingAnimationConfig.css.photoDelay +
+                          loadingAnimationConfig.css.scan) *
+                          1000 +
+                          loadingAnimationConfig.postScanHold,
                       )
                     }, loadingAnimationConfig.matchedRevealDelay)
                   },
@@ -200,28 +214,121 @@ export function useLoadingSequence(query: string) {
     return clearTimers
   }, [allReady, clearTimers, query, reducedMotion, schedule])
 
+  const complete = useCallback(() => {
+    sessionStorage.setItem(INTRO_STORAGE_KEY, '1')
+    setHeroPortraitReady(true)
+    setPortraitHandoffComplete(true)
+    setPageRevealComplete(true)
+    portraitHandoffCompleteRef.current = true
+    pageRevealCompleteRef.current = true
+    setPhase('complete')
+  }, [])
+
   useEffect(() => {
-    if (!allReady || phase === 'complete' || phase === 'exiting') return
+    if (!allReady || phase === 'complete' || phase === 'skipping') return
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key !== 'Enter' && event.key !== ' ') return
       event.preventDefault()
       clearTimers()
-      setPhase('exiting')
+      if (reducedMotion || systemReducedMotion !== false) complete()
+      else setPhase('skipping')
     }
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [allReady, clearTimers, phase])
+  }, [
+    allReady,
+    clearTimers,
+    complete,
+    phase,
+    reducedMotion,
+    systemReducedMotion,
+  ])
 
   const skip = useCallback(() => {
-    if (!allReady || phase === 'complete' || phase === 'exiting') return
+    if (!allReady || phase === 'complete' || phase === 'skipping') return
     clearTimers()
-    setPhase('exiting')
-  }, [allReady, clearTimers, phase])
+    if (reducedMotion || systemReducedMotion !== false) complete()
+    else setPhase('skipping')
+  }, [
+    allReady,
+    clearTimers,
+    complete,
+    phase,
+    reducedMotion,
+    systemReducedMotion,
+  ])
 
-  const complete = useCallback(() => {
-    sessionStorage.setItem(INTRO_STORAGE_KEY, '1')
-    setPhase('complete')
-  }, [])
+  const finishFade = useCallback(() => {
+    if (phase === 'fading') setPhase('transferring')
+  }, [phase])
+
+  const finishTransfer = useCallback(() => {
+    if (phase === 'transferring') setPhase('revealing')
+  }, [phase])
+
+  const notifyHeroPortraitReady = useCallback(() => {
+    if (phase === 'revealing') setHeroPortraitReady(true)
+  }, [phase])
+
+  const finishPortraitHandoff = useCallback(() => {
+    if (phase !== 'revealing') return
+    portraitHandoffCompleteRef.current = true
+    setPortraitHandoffComplete(true)
+    if (pageRevealCompleteRef.current) complete()
+  }, [complete, phase])
+
+  const finishSkip = useCallback(() => {
+    if (phase === 'skipping') complete()
+  }, [complete, phase])
+
+  useEffect(() => {
+    if (phase !== 'skipping') return
+    if (reducedMotion || systemReducedMotion !== false) {
+      const timer = window.setTimeout(finishSkip, 0)
+      return () => window.clearTimeout(timer)
+    }
+    const scheduledFinish = schedule(
+      finishSkip,
+      loadingAnimationConfig.skipFadeDuration * 1000,
+    )
+    const safetyFinish = window.setTimeout(
+      finishSkip,
+      loadingAnimationConfig.skipFadeDuration * 1000,
+    )
+    return () => {
+      scheduledFinish()
+      window.clearTimeout(safetyFinish)
+    }
+  }, [finishSkip, phase, reducedMotion, schedule, systemReducedMotion])
+
+  useEffect(() => {
+    if (phase !== 'revealing') return
+    const completeReveal = schedule(() => {
+      pageRevealCompleteRef.current = true
+      setPageRevealComplete(true)
+      if (portraitHandoffCompleteRef.current) complete()
+    }, loadingAnimationConfig.pageRevealDuration * 1000)
+    const forcePortraitReady = schedule(
+      () => setHeroPortraitReady(true),
+      loadingAnimationConfig.portraitHandoffFallbackDelay * 1000,
+    )
+    const forcePortraitHandoff = schedule(
+      () => {
+        portraitHandoffCompleteRef.current = true
+        setPortraitHandoffComplete(true)
+        if (pageRevealCompleteRef.current) complete()
+      },
+      (loadingAnimationConfig.portraitHandoffFallbackDelay +
+        loadingAnimationConfig.portraitHandoffDuration +
+        0.02) *
+        1000,
+    )
+    return () => {
+      completeReveal()
+      forcePortraitReady()
+      forcePortraitHandoff()
+    }
+  }, [complete, phase, schedule])
 
   useEffect(() => clearTimers, [clearTimers])
 
@@ -231,11 +338,18 @@ export function useLoadingSequence(query: string) {
     candidates,
     complete,
     cursorClicked,
+    finishFade,
+    finishPortraitHandoff,
+    finishSkip,
+    finishTransfer,
+    heroPortraitReady,
     notifyVideo,
+    notifyHeroPortraitReady,
     phase,
     queryText,
     resultVisible,
     reducedMotion,
+    portraitHandoffComplete,
     skip,
     videoFallback,
   }

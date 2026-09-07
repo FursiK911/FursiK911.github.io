@@ -1,8 +1,8 @@
 import { cx, styles } from '@/shared/styles'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useActiveSection } from '../../model/useActiveSection/useActiveSection'
-import { useLoadingSequence } from '@/features/loading'
+import { IntroPortraitTransition, useLoadingSequence } from '@/features/loading'
 import { Header, HudScrollIndicator } from '@/widgets/site-layout'
 import { Footer } from '@/widgets/site-layout'
 import { LoadingScreen } from '@/features/loading'
@@ -24,11 +24,15 @@ export default function App() {
       : 'Find the best developer for our project',
   )
   const active = useActiveSection(sectionIds, 'top')
+  const loadingPhotoRef = useRef<HTMLDivElement>(null)
+  const heroPhotoRef = useRef<HTMLImageElement>(null)
+  const isRevealing =
+    loader.phase === 'revealing' || loader.phase === 'complete'
   const roles = i18n.t('hero.roles', { returnObjects: true }) as string[]
   const { displayText, reducedMotion } = useTypingText(
     roles,
     i18n.language,
-    loader.phase === 'complete',
+    isRevealing,
   )
   const toggleLanguage = () => {
     void i18n.changeLanguage(i18n.language.startsWith('ru') ? 'en' : 'ru')
@@ -44,14 +48,25 @@ export default function App() {
         allReady={loader.allReady}
         buttonActive={loader.buttonActive}
         candidates={loader.candidates}
-        complete={loader.complete}
         cursorClicked={loader.cursorClicked}
+        onFadeComplete={loader.finishFade}
+        onSkipComplete={loader.finishSkip}
         notifyVideo={loader.notifyVideo}
+        photoRef={loadingPhotoRef}
         phase={loader.phase}
         queryText={loader.queryText}
         resultVisible={loader.resultVisible}
         skip={loader.skip}
         videoFallback={loader.videoFallback}
+      />
+      <IntroPortraitTransition
+        heroPortraitReady={loader.heroPortraitReady}
+        handoffComplete={loader.portraitHandoffComplete}
+        onHandoffComplete={loader.finishPortraitHandoff}
+        onTransferComplete={loader.finishTransfer}
+        phase={loader.phase}
+        sourceRef={loadingPhotoRef}
+        targetRef={heroPhotoRef}
       />
       <div
         className={cx(styles.appShell)}
@@ -63,12 +78,21 @@ export default function App() {
           onLanguage={toggleLanguage}
           typedRole={displayText}
           reducedMotion={reducedMotion}
+          entered={isRevealing}
         />
         <main id="page-content">
           <Profile
             typedRole={displayText}
             reducedMotion={reducedMotion}
-            entered={loader.phase === 'complete'}
+            entered={isRevealing}
+            onPortraitReady={loader.notifyHeroPortraitReady}
+            portraitEffectsActive={
+              isRevealing &&
+              (loader.heroPortraitReady || loader.portraitHandoffComplete)
+            }
+            portraitEffectsReady={loader.portraitHandoffComplete}
+            portraitTargetRef={heroPhotoRef}
+            portraitVisible={isRevealing}
           />
           <Projects />
           <Experience />
@@ -80,6 +104,8 @@ export default function App() {
         <HudScrollIndicator
           enabled={loader.phase === 'complete'}
           sectionLabel={t(`nav.${active}`)}
+          visible={isRevealing}
+          animateEntrance={loader.phase === 'revealing'}
         />
       </div>
       <KonamiDebug />

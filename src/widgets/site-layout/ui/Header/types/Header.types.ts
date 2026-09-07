@@ -3,4 +3,5 @@ export interface HeaderProps {
   onLanguage: () => void
   typedRole: string
   reducedMotion: boolean
+  entered?: boolean
 }

@@ -43,48 +43,50 @@ export function ProjectMediaGallery({
       data-variant={variant}
       aria-label={t('projects.mediaLabel', { title })}
     >
-      <div className={styles.frame}>
-        {activeMedia?.kind === 'image' && (
-          <img
-            src={activeMedia.src}
-            alt={t(`projects.${activeMedia.altKey}`)}
-          />
-        )}
-        {activeMedia?.kind === 'youtube' && !isPlaying && (
-          <button
-            className={styles.youtubePreview}
-            type="button"
-            aria-label={t('projects.playVideo', { title })}
-            onClick={() => setIsPlaying(true)}
-            style={{
-              backgroundImage: `url(https://i.ytimg.com/vi/${activeMedia.videoId}/hqdefault.jpg)`,
-            }}
-          >
-            <span className={styles.videoVeil} />
-            <IconPlayerPlay aria-hidden="true" />
-            <span>{t('projects.playVideo')}</span>
-          </button>
-        )}
-        {activeMedia?.kind === 'youtube' && isPlaying && (
-          <iframe
-            className={styles.player}
-            title={t('projects.videoTitle', { title })}
-            src={`https://www.youtube-nocookie.com/embed/${activeMedia.videoId}?autoplay=1&rel=0${activeMedia.startSeconds ? `&start=${activeMedia.startSeconds}` : ''}`}
-            allow="autoplay; encrypted-media; picture-in-picture"
-            allowFullScreen
-          />
-        )}
-        {!activeMedia && (
-          <div className={styles.placeholder} aria-hidden="true">
-            <span>
-              {project.category
-                .map((category) => t(`projects.${category}`))
-                .join(' / ')}
-            </span>
-            <strong>{title}</strong>
-            <i>{project.id.toUpperCase()}</i>
-          </div>
-        )}
+      <div className={styles.mock}>
+        <div className={styles.screen} data-media-kind={activeMedia?.kind}>
+          {activeMedia?.kind === 'image' && (
+            <img
+              src={activeMedia.src}
+              alt={t(`projects.${activeMedia.altKey}`)}
+            />
+          )}
+          {activeMedia?.kind === 'youtube' && !isPlaying && (
+            <button
+              className={styles.youtubePreview}
+              type="button"
+              aria-label={t('projects.playVideo', { title })}
+              onClick={() => setIsPlaying(true)}
+              style={{
+                backgroundImage: `url(https://i.ytimg.com/vi/${activeMedia.videoId}/hqdefault.jpg)`,
+              }}
+            >
+              <span className={styles.videoVeil} />
+              <IconPlayerPlay aria-hidden="true" />
+              <span>{t('projects.playVideo')}</span>
+            </button>
+          )}
+          {activeMedia?.kind === 'youtube' && isPlaying && (
+            <iframe
+              className={styles.player}
+              title={t('projects.videoTitle', { title })}
+              src={`https://www.youtube-nocookie.com/embed/${activeMedia.videoId}?autoplay=1&rel=0${activeMedia.startSeconds ? `&start=${activeMedia.startSeconds}` : ''}`}
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowFullScreen
+            />
+          )}
+          {!activeMedia && (
+            <div className={styles.placeholder} aria-hidden="true">
+              <span>
+                {project.category
+                  .map((category) => t(`projects.${category}`))
+                  .join(' / ')}
+              </span>
+              <strong>{title}</strong>
+              <i>{project.id.toUpperCase()}</i>
+            </div>
+          )}
+        </div>
       </div>
       {media.length > 1 && (
         <>

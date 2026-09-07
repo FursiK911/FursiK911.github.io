@@ -6,23 +6,88 @@
   background: #071016;
 }
 
-.frame,
+.mock,
+.screen,
 .player,
 .youtubePreview {
   width: 100%;
   height: 100%;
 }
 
-.frame {
+.mock {
   position: relative;
+  display: flex;
   overflow: hidden;
+  padding: clamp(16px, 5%, 42px);
+  background:
+    radial-gradient(
+      circle at 83% 18%,
+      rgba(141, 123, 255, 0.44),
+      transparent 32%
+    ),
+    linear-gradient(132deg, #132a35, #071016 65%);
 }
 
-.frame img,
+.gallery[data-variant='detail'] .mock {
+  padding: clamp(20px, 5%, 56px);
+}
+
+.mock::before,
+.mock::after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+
+.mock::before {
+  inset: 10%;
+  border: 1px solid rgba(167, 243, 246, 0.35);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 76% 100%, 0 100%);
+}
+
+.mock::after {
+  width: 180%;
+  height: 1px;
+  top: 44%;
+  left: -32%;
+  background: rgba(167, 243, 246, 0.45);
+  transform: rotate(-22deg);
+  box-shadow:
+    0 44px 0 rgba(167, 243, 246, 0.1),
+    0 -44px 0 rgba(167, 243, 246, 0.1);
+}
+
+.screen {
+  position: relative;
+  display: grid;
+  overflow: hidden;
+  z-index: 1;
+  place-items: center;
+  border: 1px solid rgba(167, 243, 246, 0.34);
+  background: #071016;
+}
+
+.screen img,
 .player {
   display: block;
   border: 0;
   object-fit: cover;
+}
+
+.screen img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 80dvh;
+  object-fit: contain;
+}
+
+.screen[data-media-kind='image'] {
+  width: fit-content;
+  height: fit-content;
+  max-width: 100%;
+  max-height: 80dvh;
+  align-self: center;
 }
 
 .youtubePreview {
@@ -85,38 +150,7 @@
   justify-content: end;
   padding: clamp(20px, 3vw, 38px);
   overflow: hidden;
-  background:
-    radial-gradient(
-      circle at 83% 18%,
-      rgba(141, 123, 255, 0.44),
-      transparent 32%
-    ),
-    linear-gradient(132deg, #132a35, #071016 65%);
-}
-
-.placeholder::before,
-.placeholder::after {
-  position: absolute;
-  content: '';
-  pointer-events: none;
-}
-
-.placeholder::before {
-  inset: 10%;
-  border: 1px solid rgba(167, 243, 246, 0.35);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 76% 100%, 0 100%);
-}
-
-.placeholder::after {
-  width: 180%;
-  height: 1px;
-  top: 44%;
-  left: -32%;
-  background: rgba(167, 243, 246, 0.45);
-  transform: rotate(-22deg);
-  box-shadow:
-    0 44px 0 rgba(167, 243, 246, 0.1),
-    0 -44px 0 rgba(167, 243, 246, 0.1);
+  background: linear-gradient(132deg, #10232c, #071016 65%);
 }
 
 .placeholder span,
@@ -161,10 +195,10 @@
 }
 
 .previous {
-  left: 12px;
+  left: clamp(28px, calc(5% + 12px), 54px);
 }
 .next {
-  right: 12px;
+  right: clamp(28px, calc(5% + 12px), 54px);
 }
 
 .previous:hover,
@@ -177,7 +211,7 @@
 
 .pagination {
   position: absolute;
-  bottom: 14px;
+  bottom: calc(clamp(16px, 5%, 42px) + 14px);
   left: 50%;
   display: flex;
   gap: 6px;

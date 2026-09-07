@@ -347,13 +347,23 @@ export const resources = {
           'Реализовал аутентификацию, refresh-токены и восстановление пароля',
           'Создал дашборды прогресса, графики и загрузку/кадрирование аватаров',
         ],
-        virtualCity: 'Виртуальный город для продажи квартир',
-        virtualCityDesc:
-          'React-интерфейс, подключённый к Unreal Engine Pixel Streaming для просмотра квартир.',
-        virtualCityPoints: [
-          'Интегрировал Unreal Engine Pixel Streaming',
-          'Передавал выбор, клики и расстановку мебели в 3D-сцену',
-          'Связал состояние web-интерфейса с интерактивным приложением',
+        neo4Sightline: 'Neo4 Web / Interior Sightline',
+        neo4SightlineDesc:
+          'Neo4 Web — интерактивная real-time 3D-визуализация недвижимости и городской среды для браузера, с отдельным интерьерным направлением Sightline.',
+        neo4SightlinePoints: [
+          'Разрабатывал браузерный интерфейс для навигации по виртуальному окружению и просмотров квартир',
+          'Связывал действия пользователя с real-time 3D-сценой на Unreal Engine',
+          'Поддерживал сценарии выбора интерьера и передачи интерактивных команд в 3D-приложение',
+        ],
+        neo4SightlineMediaCelsius:
+          'Визуализация Brf Celsius в Гётеборге — клиентский контекст Neo4 Web',
+        neo4SightlineMediaSightline:
+          'Визуальный материал Sightline Vision о real-time 3D-визуализации',
+        neo4SightlineMetrics: [
+          { value: '2015+', label: 'Neo4 Web публично известен' },
+          { value: '91', label: 'квартир в клиентском кейсе Brf Celsius' },
+          { value: '21', label: 'жилой этаж в клиентском кейсе' },
+          { value: '23', label: 'этажей в здании клиента Brf Celsius' },
         ],
         fuelCms: 'CMS поставщика топлива',
         fuelCmsDesc:
@@ -379,13 +389,39 @@ export const resources = {
           'Реализовал сценарии администрирования контента',
           'Связал состояние Redux и React Query',
         ],
-        villaKrim: 'Villa Krim',
-        villaKrimDesc:
-          'AR-приложение для винной бутылки с распознаванием изображения и интерактивным контентом о продукте.',
-        villaKrimPoints: [
-          'Реализовал сканирование бутылки и AR-презентацию',
-          'Интегрировал интерактивный контент о продукте',
-          'Подготовил мобильную сборку на Unity',
+        virtualSommelierVillaKrim: 'Виртуальный сомелье Villa Krim',
+        virtualSommelierVillaKrimDesc:
+          'Мобильное AR-приложение, превращавшее этикетку Villa Krim в интерактивную консультацию по вину, дегустации и сочетаниям с едой.',
+        virtualSommelierVillaKrimPoints: [
+          'Реализовал распознавание этикетки бутылки и запуск AR-сценария',
+          'Интегрировал виртуального сомелье Луиджи Антонио, советы и небольшой тест',
+          'Подготовил две Android-версии приложения для русскоязычной и украиноязычной аудиторий',
+        ],
+        virtualSommelierVillaKrimMediaRu:
+          'Иконка русскоязычной версии «Виртуального сомелье Villa Krim»',
+        virtualSommelierVillaKrimMediaUa:
+          'Иконка украиноязычной версии «Віртуальний сомельє Villa Krim»',
+        virtualSommelierVillaKrimMetrics: [
+          { value: '2', label: 'локализованные Android-версии' },
+          { value: '3', label: 'подтверждённых package ID в экосистеме' },
+          { value: '5.1+', label: 'минимальная версия Android' },
+          { value: '2020–2021', label: 'зафиксированные релизы' },
+        ],
+        authorsWineVillaKrim: 'Авторське вино Villa Krim',
+        authorsWineVillaKrimDesc:
+          'Отдельное AR-приложение для авторской коллекции Villa Krim: этикетка открывала историю вина, винодела и его гастрономический характер.',
+        authorsWineVillaKrimPoints: [
+          'Реализовал распознавание этикетки бутылки камерой смартфона',
+          'Интегрировал AR-истории о творческом пути винодела и создании каждой позиции',
+          'Подготовил мобильный Unity-продукт с рассказами о купажах, вкусе, аромате и сочетаниях',
+        ],
+        authorsWineVillaKrimMedia:
+          'Иконка приложения «Авторське вино Villa Krim»',
+        authorsWineVillaKrimMetrics: [
+          { value: '1.2', label: 'зафиксированная версия приложения' },
+          { value: '5.1+', label: 'минимальная версия Android' },
+          { value: '2020', label: 'зафиксированный релиз' },
+          { value: '1', label: 'отдельное приложение авторской коллекции' },
         ],
         chudoProjector: 'Chudo Projector',
         chudoProjectorDesc:
@@ -397,20 +433,48 @@ export const resources = {
         ],
         arColoring: 'AR Coloring',
         arColoringDesc:
-          'Мобильное AR-приложение, превращающее бумажные раскраски в анимированный 3D-контент.',
+          'Мобильное AR-приложение Chudoboxes, превращающее бумажные раскраски в ожившие анимации через камеру смартфона.',
         arColoringPoints: [
-          'Реализовал отслеживание маркеров и передачу текстур',
-          'Настроил доставку динамического контента через AssetBundle',
-          'Создал галерею и сценарии сезонных событий',
+          'Реализовал сценарий QR-код / обложка → раскраска → сканирование → AR-анимация',
+          'Настроил распознавание печатных изображений и показ контента поверх раскраски',
+          'Поддерживал мобильные релизы для iOS и Android и тематические наборы контента',
+        ],
+        arColoringMediaHome:
+          'Главный экран AR Coloring с брендингом Chudoboxes Coloring',
+        arColoringMediaThemes: 'Экран выбора тематического набора раскрасок',
+        arColoringMediaAnimals:
+          'Экран набора Wild Animals с контентом животных',
+        arColoringMetrics: [
+          { value: 'iOS + Android', label: 'платформы' },
+          { value: '1.7 / 11', label: 'последние версии iOS / Android' },
+          { value: '5', label: 'именованных контент-паков iOS' },
+          { value: '200', label: 'загрузок Android по архивной метрике' },
         ],
         chudobooks: 'Chudobooks',
-        arChudaboxes: 'AR Chudoboxes',
+        arChudaboxes: 'AR Chudoboxes / Chudoboxes EKO',
         chudobooksDesc:
           'AR-контент для детских журналов с интерактивными книгами и аудиосценариями.',
         chudobooksPoints: [
           'Реализовал AR-сцены на основе маркеров',
           'Создал доставку контента через AssetBundle',
           'Связал сценарии интерактивной книги и аудиокниги',
+        ],
+        arChudaboxesDesc:
+          'Коммерческий мобильный AR-компаньон интерактивной детской книги: печатные страницы и промоматериалы запускали анимации персонажей, AR-фото и AR-видео. Версия Chudoboxes EKO расширила экосистему коллекционными наклейками, открыткой и мини-играми для кампании ЕКО Маркет.',
+        arChudaboxesPoints: [
+          'Развивал marker-based AR-сценарии для печатных материалов',
+          'Связал интерактивный контент книги с фото- и видеосценариями',
+          'Поддерживал мобильный AR-продукт и его EKO Market-вариант',
+        ],
+        arChudaboxesMediaOne: 'Исторический стартовый экран AR Chudoboxes',
+        arChudaboxesMediaTwo: 'Исторический экран библиотеки AR Chudoboxes',
+        arChudaboxesMediaThree: 'Исторический экран контента AR Chudoboxes',
+        projectFootprint: 'ОХВАТ ПРОЕКТА',
+        arChudaboxesMetrics: [
+          { value: '1.3K+', label: 'Android installs across variants' },
+          { value: '1.26M+', label: 'EKO promo video views' },
+          { value: '137 · 15', label: 'stores · regions in campaign' },
+          { value: 'iOS + Android', label: 'commercial mobile AR' },
         ],
         chudoFloor: 'Chudo Floor',
         chudoFloorDesc:
@@ -1024,13 +1088,23 @@ export const resources = {
           'Implemented authentication, refresh tokens and password recovery',
           'Created progress dashboards, charts and avatar upload/cropping',
         ],
-        virtualCity: 'Virtual city for apartment sales',
-        virtualCityDesc:
-          'React interface connected to an Unreal Engine Pixel Streaming experience for exploring apartments.',
-        virtualCityPoints: [
-          'Integrated Unreal Engine Pixel Streaming',
-          'Forwarded selection, clicks and furniture placement to the 3D scene',
-          'Connected web UI state with the interactive application',
+        neo4Sightline: 'Neo4 Web / Interior Sightline',
+        neo4SightlineDesc:
+          'Neo4 Web — browser-based real-time 3D visualization of properties and cityscapes, with a related Sightline interior-design direction.',
+        neo4SightlinePoints: [
+          'Developed a browser interface for navigating the virtual environment and inspecting apartments',
+          'Connected user actions with a real-time Unreal Engine 3D scene',
+          'Supported interior-selection flows and interactive commands sent to the 3D application',
+        ],
+        neo4SightlineMediaCelsius:
+          'Brf Celsius visualization in Gothenburg — Neo4 Web client context',
+        neo4SightlineMediaSightline:
+          'Sightline Vision visual material about real-time 3D visualization',
+        neo4SightlineMetrics: [
+          { value: '2015+', label: 'Neo4 Web publicly documented since' },
+          { value: '91', label: 'apartments in the Brf Celsius client case' },
+          { value: '21', label: 'residential floors in the client case' },
+          { value: '23', label: 'floors in the client’s Brf Celsius building' },
         ],
         fuelCms: 'Fuel supplier CMS',
         fuelCmsDesc:
@@ -1056,13 +1130,39 @@ export const resources = {
           'Implemented content administration flows',
           'Connected Redux and React Query state',
         ],
-        villaKrim: 'Villa Krim',
-        villaKrimDesc:
-          'AR wine-bottle experience with image recognition and interactive product content.',
-        villaKrimPoints: [
-          'Implemented bottle scanning and AR presentation',
-          'Integrated interactive product content',
-          'Prepared mobile Unity delivery',
+        virtualSommelierVillaKrim: 'Virtual Sommelier Villa Krim',
+        virtualSommelierVillaKrimDesc:
+          'Mobile AR application that turned a Villa Krim label into an interactive guide to wine, tasting and food pairings.',
+        virtualSommelierVillaKrimPoints: [
+          'Implemented bottle-label recognition and AR scenario launch',
+          'Integrated virtual sommelier Luigi Antonio, pairing advice and a short quiz',
+          'Prepared two Android releases for Russian- and Ukrainian-speaking audiences',
+        ],
+        virtualSommelierVillaKrimMediaRu:
+          'Icon of the Russian Virtual Sommelier Villa Krim release',
+        virtualSommelierVillaKrimMediaUa:
+          'Icon of the Ukrainian Віртуальний сомельє Villa Krim release',
+        virtualSommelierVillaKrimMetrics: [
+          { value: '2', label: 'localized Android releases' },
+          { value: '3', label: 'confirmed package IDs in the family' },
+          { value: '5.1+', label: 'minimum Android version' },
+          { value: '2020–2021', label: 'documented releases' },
+        ],
+        authorsWineVillaKrim: 'Author’s Wine Villa Krim',
+        authorsWineVillaKrimDesc:
+          'Separate AR application for the Villa Krim author’s collection: the label revealed the wine’s story, winemaker and gastronomic character.',
+        authorsWineVillaKrimPoints: [
+          'Implemented smartphone camera recognition of the bottle label',
+          'Integrated AR stories about the winemaker’s path and the creation of each wine',
+          'Prepared a mobile Unity product covering blends, taste, aroma and food pairings',
+        ],
+        authorsWineVillaKrimMedia:
+          'Icon of the Author’s Wine Villa Krim application',
+        authorsWineVillaKrimMetrics: [
+          { value: '1.2', label: 'documented application version' },
+          { value: '5.1+', label: 'minimum Android version' },
+          { value: '2020', label: 'documented release' },
+          { value: '1', label: 'separate author’s collection app' },
         ],
         chudoProjector: 'Chudo Projector',
         chudoProjectorDesc:
@@ -1074,20 +1174,47 @@ export const resources = {
         ],
         arColoring: 'AR Coloring',
         arColoringDesc:
-          'Mobile AR application turning paper coloring pages into animated 3D content.',
+          'Mobile Chudoboxes AR application that turns paper coloring pages into animated experiences through a smartphone camera.',
         arColoringPoints: [
-          'Implemented marker tracking and texture transfer',
-          'Delivered dynamic AssetBundle content',
-          'Built gallery and seasonal event flows',
+          'Implemented the QR code / cover → color → scan → AR animation flow',
+          'Configured printed-image recognition and content rendering over the coloring page',
+          'Supported iOS and Android releases with themed content packs',
+        ],
+        arColoringMediaHome:
+          'AR Coloring home screen with Chudoboxes Coloring branding',
+        arColoringMediaThemes: 'Coloring theme selection screen',
+        arColoringMediaAnimals: 'Wild Animals theme screen with animal content',
+        arColoringMetrics: [
+          { value: 'iOS + Android', label: 'platforms' },
+          { value: '1.7 / 11', label: 'latest iOS / Android versions' },
+          { value: '5', label: 'named iOS content packs' },
+          { value: '200', label: 'Android downloads in archived metric' },
         ],
         chudobooks: 'Chudobooks',
-        arChudaboxes: 'AR Chudoboxes',
+        arChudaboxes: 'AR Chudoboxes / Chudoboxes EKO',
         chudobooksDesc:
           'AR content for children’s magazines with interactive books and audio experiences.',
         chudobooksPoints: [
           'Implemented marker-based AR scenes',
           'Built AssetBundle content delivery',
           'Connected interactive book and audiobook flows',
+        ],
+        arChudaboxesDesc:
+          'A commercial mobile AR companion for an interactive children’s book: printed pages and promotional materials launched animated characters, AR photos and AR videos. The Chudoboxes EKO release expanded the ecosystem with collectible stickers, an interactive postcard and mini-games for an EKO Market campaign.',
+        arChudaboxesPoints: [
+          'Extended marker-based AR scenarios for printed materials',
+          'Connected interactive book content with photo and video flows',
+          'Supported the mobile AR product and its EKO Market variant',
+        ],
+        arChudaboxesMediaOne: 'Historical AR Chudoboxes start screen',
+        arChudaboxesMediaTwo: 'Historical AR Chudoboxes library screen',
+        arChudaboxesMediaThree: 'Historical AR Chudoboxes content screen',
+        projectFootprint: 'PROJECT FOOTPRINT',
+        arChudaboxesMetrics: [
+          { value: '1.3K+', label: 'Android installs across variants' },
+          { value: '1.26M+', label: 'EKO promo video views' },
+          { value: '137 · 15', label: 'stores · regions in campaign' },
+          { value: 'iOS + Android', label: 'commercial mobile AR' },
         ],
         chudoFloor: 'Chudo Floor',
         chudoFloorDesc:

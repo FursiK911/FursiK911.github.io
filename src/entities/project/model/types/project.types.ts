@@ -14,6 +14,11 @@ export type ProjectMedia =
   | { kind: 'youtube'; videoId: string; startSeconds?: number }
 export type ProjectPeriod = { from: string; to?: string }
 
+export type ProjectMetric = {
+  label: string
+  value: string
+}
+
 export type Project = {
   id: string
   titleKey: string
@@ -27,5 +32,6 @@ export type Project = {
   period: ProjectPeriod
   actions?: ProjectAction[]
   media?: ProjectMedia[]
+  metricsKey?: string
   featured?: boolean
 }

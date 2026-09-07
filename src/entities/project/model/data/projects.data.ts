@@ -138,16 +138,48 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 'virtual-city',
-    titleKey: 'virtualCity',
+    id: 'neo4-sightline',
+    titleKey: 'neo4Sightline',
     category: ['web', 'unity'],
     platformKey: 'platformWeb',
     roleKey: 'juniorFrontend',
-    descriptionKey: 'virtualCityDesc',
-    pointsKey: 'virtualCityPoints',
-    tech: ['React', 'Unreal Pixel Streaming', 'WebSocket', 'JavaScript'],
+    descriptionKey: 'neo4SightlineDesc',
+    pointsKey: 'neo4SightlinePoints',
+    tech: [
+      'React',
+      'JavaScript',
+      'WebSocket',
+      'Unreal Engine 4',
+      'Pixel Streaming',
+      'Real-time 3D',
+    ],
     company: 'Yellow Element',
     period: { from: '02.2021', to: '02.2022' },
+    actions: [
+      {
+        type: 'external',
+        label: 'Neo4 Web · product history',
+        href: 'https://www.sightline.se/neo4-web',
+      },
+      {
+        type: 'external',
+        label: 'Neo4 Web · Peab launch',
+        href: 'https://se.linkedin.com/posts/pontusjakobsson_neo4web-neo4-bostadsv%C3%A4ljare-activity-6799958750041010176-QRqf',
+      },
+    ],
+    media: [
+      {
+        kind: 'image',
+        src: 'https://mb.cision.com/Public/21587/3627270/bbd6eff72bf4be44_org.jpg',
+        altKey: 'neo4SightlineMediaCelsius',
+      },
+      {
+        kind: 'image',
+        src: 'https://media.licdn.com/dms/image/v2/C4D12AQGYpgP3WRC16w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1600002841521?e=2147483647&t=BROb2YEVr0_IoetFtJUrHeJHWUU76r352aGRjGRAHCM&v=beta',
+        altKey: 'neo4SightlineMediaSightline',
+      },
+    ],
+    metricsKey: 'neo4SightlineMetrics',
     featured: true,
   },
   {
@@ -255,15 +287,72 @@ export const projects: Project[] = [
   },
   {
     id: 'villa-krim',
-    titleKey: 'villaKrim',
+    titleKey: 'virtualSommelierVillaKrim',
     category: ['mobile', 'unity', 'xr-ar'],
     platformKey: 'platformMobile',
     roleKey: 'juniorUnity',
-    descriptionKey: 'villaKrimDesc',
-    pointsKey: 'villaKrimPoints',
-    tech: ['Unity', 'C#', 'Vuforia', 'AssetBundles', 'Android', 'iOS'],
+    descriptionKey: 'virtualSommelierVillaKrimDesc',
+    pointsKey: 'virtualSommelierVillaKrimPoints',
+    tech: ['Unity', 'C#', 'Vuforia', 'AR', 'Android'],
     company: 'Yellow Element',
     period: { from: '10.2019', to: '02.2022' },
+    actions: [
+      {
+        type: 'external',
+        label: 'APKPure · RU',
+        href: 'https://apkpure.net/ru/%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D1%81%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%D0%B5-villa-krim/com.alefvinal.appvillakrim',
+      },
+      {
+        type: 'external',
+        label: 'APKPure · RU versions',
+        href: 'https://apkpure.net/ru/%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D1%81%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%D0%B5-villa-krim/com.alefvinal.appvillakrim/versions',
+      },
+      {
+        type: 'external',
+        label: 'APKPure · UA',
+        href: 'https://apkpure.net/ru/%D0%B2%D1%96%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9-%D1%81%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%D1%94-villa-krim/com.villakrim.VillaKrim',
+      },
+    ],
+    media: [
+      {
+        kind: 'image',
+        src: 'https://image-eo.winudf.com/v2/image1/Y29tLmFsZWZ2aW5hbC5hcHB2aWxsYWtyaW1faWNvbl8xNTk3NzUxMTgwXzAzMQ/icon.webp?fakeurl=1&type=.webp&w=512',
+        altKey: 'virtualSommelierVillaKrimMediaRu',
+      },
+      {
+        kind: 'image',
+        src: 'https://image-eo.winudf.com/v2/image1/Y29tLnZpbGxha3JpbS5WaWxsYUtyaW1faWNvbl8xNTk3MTY5MjM3XzA2Mg/icon.webp?fakeurl=1&type=.webp&w=512',
+        altKey: 'virtualSommelierVillaKrimMediaUa',
+      },
+    ],
+    metricsKey: 'virtualSommelierVillaKrimMetrics',
+  },
+  {
+    id: 'authors-wine-villa-krim',
+    titleKey: 'authorsWineVillaKrim',
+    category: ['mobile', 'unity', 'xr-ar'],
+    platformKey: 'platformMobile',
+    roleKey: 'juniorUnity',
+    descriptionKey: 'authorsWineVillaKrimDesc',
+    pointsKey: 'authorsWineVillaKrimPoints',
+    tech: ['Unity', 'C#', 'Vuforia', 'AR', 'Android'],
+    company: 'Yellow Element',
+    period: { from: '10.2019', to: '02.2022' },
+    actions: [
+      {
+        type: 'external',
+        label: 'APKPure',
+        href: 'https://apkpure.net/ru/%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D1%81%D1%8C%D0%BA%D0%B5-%D0%B2%D0%B8%D0%BD%D0%BE-villa-krim/com.alefvinal.appauthorswine',
+      },
+    ],
+    media: [
+      {
+        kind: 'image',
+        src: 'https://image-eo.winudf.com/v2/image1/Y29tLmFsZWZ2aW5hbC5hcHBhdXRob3Jzd2luZV9pY29uXzE2MDQyMTgzNjBfMDcx/icon.webp?fakeurl=1&type=.webp&w=512',
+        altKey: 'authorsWineVillaKrimMedia',
+      },
+    ],
+    metricsKey: 'authorsWineVillaKrimMetrics',
   },
   {
     id: 'chudo-projector',
@@ -285,9 +374,39 @@ export const projects: Project[] = [
     roleKey: 'juniorUnity',
     descriptionKey: 'arColoringDesc',
     pointsKey: 'arColoringPoints',
-    tech: ['Unity', 'C#', 'AR', 'AssetBundles', 'Android', 'iOS'],
+    tech: ['Unity', 'C#', 'AR', 'Image tracking', 'QR', 'Android', 'iOS'],
     company: 'Yellow Element',
     period: { from: '10.2019', to: '02.2022' },
+    actions: [
+      {
+        type: 'external',
+        label: 'App Store',
+        href: 'https://apps.apple.com/us/app/ar-coloring/id1528022162?l=ru&platform=ipad',
+      },
+      {
+        type: 'external',
+        label: 'Android archive',
+        href: 'https://apkpure.net/ar-coloring/com.chudobox.arcoloringapp',
+      },
+    ],
+    media: [
+      {
+        kind: 'image',
+        src: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/5f/5c/ca/5f5cca75-e695-8e40-f53b-d835b01a60eb/c798994d-07d4-44bf-b5c4-b8c762777826_Screen_2048x2732_12.02.2023_18.18.51.png/576x768bb.png',
+        altKey: 'arColoringMediaHome',
+      },
+      {
+        kind: 'image',
+        src: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/06/3d/68/063d684a-f34d-d805-c2e9-c39ef3f0a46c/3a5b39db-051b-47be-a61c-b8d71dfbf34b_Screen_2048x2732_12.02.2023_18.20.00.png/576x768bb.png',
+        altKey: 'arColoringMediaThemes',
+      },
+      {
+        kind: 'image',
+        src: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/3f/46/71/3f46717a-51dc-8cdb-6f49-cf3093286de9/8b25940e-f916-4d96-93c4-70e8d57c4b42_Screen_2048x2732_12.02.2023_18.20.07.png/576x768bb.png',
+        altKey: 'arColoringMediaAnimals',
+      },
+    ],
+    metricsKey: 'arColoringMetrics',
   },
   {
     id: 'chudobooks',
@@ -307,11 +426,47 @@ export const projects: Project[] = [
     category: ['mobile', 'unity', 'xr-ar'],
     platformKey: 'platformMobile',
     roleKey: 'juniorUnity',
-    descriptionKey: 'chudobooksDesc',
-    pointsKey: 'chudobooksPoints',
-    tech: ['Unity', 'C#', 'AR', 'AssetBundles', 'Android', 'iOS'],
+    descriptionKey: 'arChudaboxesDesc',
+    pointsKey: 'arChudaboxesPoints',
+    tech: ['AR', 'Android', 'iOS', 'Image tracking', 'Camera / video', 'QR'],
     company: 'Yellow Element',
     period: { from: '10.2019', to: '02.2022' },
+    actions: [
+      {
+        type: 'external',
+        label: 'EKO promo · YouTube',
+        href: 'https://www.youtube.com/watch?v=2r2FjaOVyII',
+      },
+      {
+        type: 'external',
+        label: 'AR Chudoboxes · archive',
+        href: 'https://www.appbrain.com/app/ar-chudoboxes/com.DesignOrbita.Chudoboxes',
+      },
+      {
+        type: 'external',
+        label: 'Chudoboxes EKO · archive',
+        href: 'https://apprecs.com/android/chudoboxes.eko.store/chudoboxes-eko',
+      },
+    ],
+    media: [
+      { kind: 'youtube', videoId: '2r2FjaOVyII' },
+      {
+        kind: 'image',
+        src: 'https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/db/30/23/db302333-2af3-57e8-b7d1-bd35fab779a8/pr_source.jpg/392x696bb.jpg',
+        altKey: 'arChudaboxesMediaOne',
+      },
+      {
+        kind: 'image',
+        src: 'https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/d8/e6/8e/d8e68ee6-4c1d-aeaf-6489-540e3ed7715f/pr_source.jpg/392x696bb.jpg',
+        altKey: 'arChudaboxesMediaTwo',
+      },
+      {
+        kind: 'image',
+        src: 'https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/e1/98/29/e19829d3-52c6-6e85-2fcc-2658a209065d/pr_source.jpg/392x696bb.jpg',
+        altKey: 'arChudaboxesMediaThree',
+      },
+    ],
+    metricsKey: 'arChudaboxesMetrics',
   },
   {
     id: 'chudo-floor',

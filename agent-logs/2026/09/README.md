@@ -1,5 +1,33 @@
 # September 2026
 
+| 2026-09-07 | ui, hero, portrait, css, testing | [2026-09-07.md](2026-09-07.md#removed-hero-portrait-inner-fill) |
+
+| 2026-09-07 | ui, projects, modal, media, responsive, css, testing | [2026-09-07.md](2026-09-07.md#matched-image-screen-size-to-media-bounds) |
+
+| 2026-09-07 | ui, project-page, hero, css, testing | [2026-09-07.md](2026-09-07.md#removed-project-hero-frame-styling) |
+
+| 2026-09-07 | ui, projects, modal, media, responsive, css, testing | [2026-09-07.md](2026-09-07.md#explicitly-constrained-project-image-width) |
+
+| 2026-09-07 | ui, projects, modal, media, responsive, css, testing | [2026-09-07.md](2026-09-07.md#constrained-project-media-images) |
+
+| 2026-09-07 | projects, villa-krim, ar, mobile, media, metrics, i18n, testing, research | [2026-09-07.md](2026-09-07.md#villa-krim-project-content) |
+
+| 2026-09-07 | projects, neo4, sightline, web, realtime-3d, media, i18n, testing | [daily log](2026-09-07.md#neo4-web--interior-sightline-project-content) |
+
+| 2026-09-07 | projects, ar, media, i18n, portfolio, research, testing | [daily log](2026-09-07.md#ar-coloring-project-content) |
+
+| 2026-09-07 | ui, loading, animation, hero, glitch, accessibility, testing | [daily log](2026-09-07.md#seamless-hero-portrait-handoff) |
+
+| 2026-09-07 | portfolio, content, i18n, media, metrics, testing | [daily log](2026-09-07.md#2026-09-07-2210-0300--filled-the-ar-chudoboxes-portfolio-case) |
+
+| 2026-09-07 | documentation, research, graphify, portfolio, agents | [daily log](2026-09-07.md#2026-09-07-2235-0300--added-the-portfolio-research-source-map) |
+
+| 2026-09-06 | ui, projects, media, gallery, responsive, testing | [daily log](2026-09-06.md#persistent-project-media-mock) |
+
+| 2026-09-06 | ui, loading, animation, hero, hud, accessibility, responsive, testing | [daily log](2026-09-06.md#1858-0300--feature-transfer-the-loader-portrait-into-the-hero-scene) |
+
+| 2026-09-07 | ui, loading, portrait-handoff, glitch, animation, testing, graphify | [daily log](2026-09-07.md#2026-09-07-2121-0300) |
+
 | 2026-09-05 | ui, projects, modal, responsive, overflow, testing | [daily log](2026-09-05.md#adaptive-project-modal-height) |
 
 | 2026-09-04 | ui, projects, modal, routing, media, scroll, hud, animation, performance, accessibility, responsive, i18n, testing | [daily log](2026-09-04.md#hud-scroll-indicator-and-overflow-correction) |

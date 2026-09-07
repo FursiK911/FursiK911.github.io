@@ -30,7 +30,7 @@ it('renders rejected and matched row states with video fallback', () => {
         { id: '#DF2026', name: 'DMITRY FURSOV', status: 'matched' },
       ]}
       cursorClicked
-      phase="exiting"
+      phase="result"
       resultVisible
       videoFallback
     />,

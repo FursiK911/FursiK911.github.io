@@ -15,8 +15,13 @@ export const loadingAnimationConfig = {
   matchedRevealDelay: 800, // пауза между галочкой Дмитрия и модальным окном
   candidateFadeDelay: 400, // пауза после FAILED перед приглушением карточки
   candidateFadeDuration: 700, // длительность приглушения failed-карточки
-  resultHold: 1900, // время показа успешного результата до выхода заставки
-  exitDuration: 1.64, // длительность slide-up заставки в секундах
+  postScanHold: 250, // акцент после завершения сканирования портрета
+  loaderFadeDuration: 0.55, // затухание заставки без портрета в секундах
+  portraitTransferDuration: 0.85, // перелёт портрета в Hero в секундах
+  portraitHandoffDuration: 0.1, // crossfade клона в настоящий Hero-портрет
+  portraitHandoffFallbackDelay: 0.25, // защита от зависшей готовности изображения
+  pageRevealDuration: 0.95, // каскадное проявление первого экрана в секундах
+  skipFadeDuration: 0.25, // быстрый выход по SKIP в секундах
   css: {
     blink: 2.2, // мигание индикатора статуса загрузки
     cursorOpacity: 0.4, // затухание фальшивого курсора

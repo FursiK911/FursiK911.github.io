@@ -8,9 +8,9 @@ const allowedCategories = new Set([
   'xr-ar',
   'multiplayer',
 ])
-it('contains 21 unique projects with valid categories', () => {
-  expect(projects).toHaveLength(21)
-  expect(new Set(projects.map((project) => project.id)).size).toBe(21)
+it('contains 22 unique projects with valid categories', () => {
+  expect(projects).toHaveLength(22)
+  expect(new Set(projects.map((project) => project.id)).size).toBe(22)
   projects.forEach((project) => {
     expect(project.category.length).toBeGreaterThan(0)
     project.category.forEach((category) => {

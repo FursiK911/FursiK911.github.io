@@ -17,7 +17,7 @@ npm run dev
 
 ## Project assets
 
-Сейчас карточки используют честные CSS/HUD placeholders. Когда появятся реальные материалы, добавляйте их по папкам:
+Карточки используют честные CSS/HUD placeholders, а подтверждённые внешние медиа подключаются из публичных источников. Локальные материалы добавляйте по папкам:
 
 ```text
 public/projects/<slug>/cover.webp
@@ -26,7 +26,7 @@ public/projects/<slug>/02.webp
 public/projects/<slug>/preview.webm
 ```
 
-Каталог включает проекты `mychess-web`, `mobile-rts`, `rosatom`, `mychessvr`, `cat-citten`, `industrial-vr`, `aptive-education`, `virtual-city`, `fuel-cms`, `drilling-vr`, `vulkan-verse`, `korobka`, `doors-cms`, `earth-dragons`, `villa-krim`, `chudo-projector`, `ar-coloring`, `goons-balatroon`, `chudobooks`, `chudo-floor`, `photon-fps` и `quest-room`.
+Каталог включает проекты `mychess-web`, `mobile-rts`, `rosatom`, `mychessvr`, `cat-citten`, `industrial-vr`, `aptive-education`, `neo4-sightline`, `fuel-cms`, `drilling-vr`, `vulkan-verse`, `korobka`, `doors-cms`, `earth-dragons`, `villa-krim`, `authors-wine-villa-krim`, `chudo-projector`, `ar-coloring`, `goons-balatroon`, `chudobooks`, `chudo-floor`, `photon-fps` и `quest-room`.
 
 CV ожидается по адресу `public/cv/Dmitry-Fursov-Unity-Developer-CV.pdf`.
 
@@ -35,3 +35,10 @@ CV ожидается по адресу `public/cv/Dmitry-Fursov-Unity-Developer
 Vite настроен с `base: '/'` для user-site `FursiK911/fursik.github.io`. Workflow находится в `.github/workflows/deploy.yml` и запускается вручную (`workflow_dispatch`), потому что текущий репозиторий приватный и Pages должен быть включён в настройках GitHub перед публикацией.
 
 После включения Pages: Actions → Deploy to GitHub Pages → Run workflow.
+
+## Portfolio research
+
+The external project research index is available at
+[docs/portfolio-research-sources.md](docs/portfolio-research-sources.md). It
+lists the source directory and all currently available project research files
+for AI agents and Graphify discovery.

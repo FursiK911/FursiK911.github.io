@@ -11,7 +11,16 @@ import '../styles/Profile.module.css'
 import type { HeroProps } from './types/Hero.types'
 import { heroItemVariants } from './config/heroItemVariants.config'
 
-export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
+export function Hero({
+  typedRole,
+  reducedMotion,
+  entered = true,
+  onPortraitReady,
+  portraitEffectsActive = true,
+  portraitEffectsReady = true,
+  portraitTargetRef,
+  portraitVisible = true,
+}: HeroProps) {
   const { t } = useTranslation()
   return (
     <motion.div
@@ -59,21 +68,28 @@ export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
           </ActionLink>
         </motion.div>
       </motion.div>
-      <motion.div
-        className={cx(styles.heroPortrait)}
-        variants={heroItemVariants}
-      >
-        <div className={cx(styles.portraitFrame)}>
+      <div className={cx(styles.heroPortrait)}>
+        <div
+          className={cx(
+            styles.portraitFrame,
+            !portraitEffectsReady && styles.isPortraitPending,
+            portraitVisible && styles.isBasePortraitVisible,
+            !portraitEffectsReady && styles.isPortraitHandoff,
+          )}
+        >
           <GlitchPortrait
             src={portrait}
             alt={t('hero.portraitAlt')}
-            active={entered}
+            active={entered && portraitEffectsActive}
+            imageRef={portraitTargetRef}
+            onPortraitReady={onPortraitReady}
+            portraitVisible={portraitVisible}
             reducedMotion={reducedMotion}
           />
           <span className={cx(styles.frameLabel)}>PROFILE_IMAGE // 001</span>
         </div>
         <div className={cx(styles.portraitNote)}>{t('hero.languages')}</div>
-      </motion.div>
+      </div>
     </motion.div>
   )
 }

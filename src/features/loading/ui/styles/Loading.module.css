@@ -11,6 +11,24 @@
   isolation: isolate;
 }
 
+:global(.intro-portrait-transition) {
+  position: fixed;
+  z-index: 60;
+  overflow: hidden;
+  border: 1px solid rgba(167, 243, 246, 0.7);
+  background: #0b151a;
+  box-shadow: 0 0 24px rgba(167, 243, 246, 0.16);
+  pointer-events: none;
+}
+
+:global(.intro-portrait-transition) img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.7) contrast(1.1);
+}
+
 :global(.loading-video),
 :global(.loading-overlay),
 :global(.loading-noise) {
@@ -403,6 +421,10 @@
   filter: saturate(0.7) contrast(1.1);
   animation: photo-reveal var(--loading-scan-duration)
     var(--loading-photo-delay) ease-in-out both;
+}
+
+:global(.loading-screen):global(.is-fading) :global(.loading-result-photo) {
+  visibility: hidden;
 }
 
 :global(.loading-scan-line) {

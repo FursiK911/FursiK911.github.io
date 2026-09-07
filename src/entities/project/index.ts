@@ -10,5 +10,6 @@ export type {
   ProjectActionType,
   ProjectCategory,
   ProjectMedia,
+  ProjectMetric,
   ProjectPeriod,
 } from './model/types/project.types'
