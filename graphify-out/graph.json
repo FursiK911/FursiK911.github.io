@@ -5746,6 +5746,127 @@
       "norm_label": "profile/index.ts"
     },
     {
+      "label": "directionsMotion.config.ts",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_widgets_profile_model_directions_config_directionsmotion_config",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "directionsmotion.config.ts"
+    },
+    {
+      "label": "DIRECTION_CARD_STAGGER_MS",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_card_stagger_ms",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "direction_card_stagger_ms"
+    },
+    {
+      "label": "DIRECTION_CONTENT_DELAY_MS",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_content_delay_ms",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "direction_content_delay_ms"
+    },
+    {
+      "label": "DIRECTION_TOOLS_DELAY_MS",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_tools_delay_ms",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "direction_tools_delay_ms"
+    },
+    {
+      "label": "DIRECTION_TOOL_PULSE_MS",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_tool_pulse_ms",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "direction_tool_pulse_ms"
+    },
+    {
+      "label": "DIRECTION_METRIC_DELAY_MS",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_metric_delay_ms",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "direction_metric_delay_ms"
+    },
+    {
+      "label": "DIRECTION_METRIC_LABEL_DELAY_MS",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_metric_label_delay_ms",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "direction_metric_label_delay_ms"
+    },
+    {
+      "label": "DIRECTION_SCAN_DURATION_MS",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_scan_duration_ms",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "direction_scan_duration_ms"
+    },
+    {
+      "label": "DIRECTION_SCAN_INTERVAL_MS",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_scan_interval_ms",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "direction_scan_interval_ms"
+    },
+    {
+      "label": "DIRECTIONS_ENTRANCE_DURATION_MS",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "src_widgets_profile_model_directions_config_directionsmotion_config_directions_entrance_duration_ms",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "directions_entrance_duration_ms"
+    },
+    {
+      "label": "DIRECTION_TILT_LIMIT",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_tilt_limit",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "direction_tilt_limit"
+    },
+    {
       "label": "directions.data.ts",
       "file_type": "code",
       "source_file": "src/widgets/profile/model/directions/data/directions.data.ts",
@@ -5766,6 +5887,61 @@
       "community": 7,
       "community_name": "profile/index.ts",
       "norm_label": "directions"
+    },
+    {
+      "label": "useDirectionsMotion.types.ts",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/model/directions/model/useDirectionsMotion/types/useDirectionsMotion.types.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_widgets_profile_model_directions_model_usedirectionsmotion_types_usedirectionsmotion_types",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "usedirectionsmotion.types.ts"
+    },
+    {
+      "label": "UseDirectionsMotionParams",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/model/directions/model/useDirectionsMotion/types/useDirectionsMotion.types.ts",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_widgets_profile_model_directions_model_usedirectionsmotion_types_usedirectionsmotion_types_usedirectionsmotionparams",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "usedirectionsmotionparams"
+    },
+    {
+      "label": "UseDirectionsMotionResult",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/model/directions/model/useDirectionsMotion/types/useDirectionsMotion.types.ts",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "src_widgets_profile_model_directions_model_usedirectionsmotion_types_usedirectionsmotion_types_usedirectionsmotionresult",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "usedirectionsmotionresult"
+    },
+    {
+      "label": "useDirectionsMotion.ts",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/model/directions/model/useDirectionsMotion/useDirectionsMotion.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_widgets_profile_model_directions_model_usedirectionsmotion_usedirectionsmotion",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "usedirectionsmotion.ts"
+    },
+    {
+      "label": "useDirectionsMotion()",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/model/directions/model/useDirectionsMotion/useDirectionsMotion.ts",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "src_widgets_profile_model_directions_model_usedirectionsmotion_usedirectionsmotion_usedirectionsmotion",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "usedirectionsmotion()"
     },
     {
       "label": "directions.types.ts",
@@ -5988,6 +6164,28 @@
       "norm_label": "directions.starts-metrics-immediately-when-reduced-motion-is-requested.test.tsx"
     },
     {
+      "label": "directionsTestUtils.ts",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/ui/Directions/__tests__/directionsTestUtils.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_widgets_profile_ui_directions_tests_directionstestutils",
+      "community": 116,
+      "community_name": "Directions.holds-metrics-until-the-section-entrance-completes.test.tsx",
+      "norm_label": "directionstestutils.ts"
+    },
+    {
+      "label": "installDirectionsIntersectionObserverMock()",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/ui/Directions/__tests__/directionsTestUtils.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_widgets_profile_ui_directions_tests_directionstestutils_installdirectionsintersectionobservermock",
+      "community": 116,
+      "community_name": "Directions.holds-metrics-until-the-section-entrance-completes.test.tsx",
+      "norm_label": "installdirectionsintersectionobservermock()"
+    },
+    {
       "label": "Directions.types.ts",
       "file_type": "code",
       "source_file": "src/widgets/profile/ui/Directions/types/Directions.types.ts",
@@ -6008,6 +6206,105 @@
       "community": 7,
       "community_name": "profile/index.ts",
       "norm_label": "directionsprops"
+    },
+    {
+      "label": "DirectionCard.tsx",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/DirectionCard.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_widgets_profile_ui_directions_ui_directioncard_directioncard",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "directioncard.tsx"
+    },
+    {
+      "label": "DirectionCard()",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/DirectionCard.tsx",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "src_widgets_profile_ui_directions_ui_directioncard_directioncard_directioncard",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "directioncard()"
+    },
+    {
+      "label": "useDirectionCardMotion.types.ts",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/model/useDirectionCardMotion/types/useDirectionCardMotion.types.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_types_usedirectioncardmotion_types",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "usedirectioncardmotion.types.ts"
+    },
+    {
+      "label": "UseDirectionCardMotionParams",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/model/useDirectionCardMotion/types/useDirectionCardMotion.types.ts",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_types_usedirectioncardmotion_types_usedirectioncardmotionparams",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "usedirectioncardmotionparams"
+    },
+    {
+      "label": "UseDirectionCardMotionResult",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/model/useDirectionCardMotion/types/useDirectionCardMotion.types.ts",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_types_usedirectioncardmotion_types_usedirectioncardmotionresult",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "usedirectioncardmotionresult"
+    },
+    {
+      "label": "useDirectionCardMotion.ts",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/model/useDirectionCardMotion/useDirectionCardMotion.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_usedirectioncardmotion",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "usedirectioncardmotion.ts"
+    },
+    {
+      "label": "useDirectionCardMotion()",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/model/useDirectionCardMotion/useDirectionCardMotion.ts",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_usedirectioncardmotion_usedirectioncardmotion",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "usedirectioncardmotion()"
+    },
+    {
+      "label": "DirectionCard.types.ts",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/types/DirectionCard.types.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_widgets_profile_ui_directions_ui_directioncard_types_directioncard_types",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "directioncard.types.ts"
+    },
+    {
+      "label": "DirectionCardProps",
+      "file_type": "code",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/types/DirectionCard.types.ts",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_widgets_profile_ui_directions_ui_directioncard_types_directioncard_types_directioncardprops",
+      "community": 7,
+      "community_name": "profile/index.ts",
+      "norm_label": "directioncardprops"
     },
     {
       "label": "GlitchPortrait.tsx",
@@ -8481,41 +8778,41 @@
       "_origin": "ast",
       "id": "readme",
       "community": 22,
-      "community_name": "Dmitry Fursov — Software Developer",
+      "community_name": "Dmitry Fursov \u2014 Software Developer",
       "norm_label": "readme.md"
     },
     {
-      "label": "Dmitry Fursov — Software Developer",
+      "label": "Dmitry Fursov \u2014 Software Developer",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L1",
       "_origin": "ast",
       "id": "readme_dmitry_fursov_software_developer",
       "community": 22,
-      "community_name": "Dmitry Fursov — Software Developer",
-      "norm_label": "dmitry fursov — software developer"
+      "community_name": "Dmitry Fursov \u2014 Software Developer",
+      "norm_label": "dmitry fursov \u2014 software developer"
     },
     {
-      "label": "Локальная разработка",
+      "label": "\u041b\u043e\u043a\u0430\u043b\u044c\u043d\u0430\u044f \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "readme_локальная_разработка",
+      "id": "readme_\u043b\u043e\u043a\u0430\u043b\u044c\u043d\u0430\u044f_\u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430",
       "community": 22,
-      "community_name": "Dmitry Fursov — Software Developer",
-      "norm_label": "локальная разработка"
+      "community_name": "Dmitry Fursov \u2014 Software Developer",
+      "norm_label": "\u043b\u043e\u043a\u0430\u043b\u044c\u043d\u0430\u044f \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430"
     },
     {
-      "label": "Языки",
+      "label": "\u042f\u0437\u044b\u043a\u0438",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "readme_языки",
+      "id": "readme_\u044f\u0437\u044b\u043a\u0438",
       "community": 22,
-      "community_name": "Dmitry Fursov — Software Developer",
-      "norm_label": "языки"
+      "community_name": "Dmitry Fursov \u2014 Software Developer",
+      "norm_label": "\u044f\u0437\u044b\u043a\u0438"
     },
     {
       "label": "Project assets",
@@ -8525,7 +8822,7 @@
       "_origin": "ast",
       "id": "readme_project_assets",
       "community": 22,
-      "community_name": "Dmitry Fursov — Software Developer",
+      "community_name": "Dmitry Fursov \u2014 Software Developer",
       "norm_label": "project assets"
     },
     {
@@ -8536,7 +8833,7 @@
       "_origin": "ast",
       "id": "readme_github_pages",
       "community": 22,
-      "community_name": "Dmitry Fursov — Software Developer",
+      "community_name": "Dmitry Fursov \u2014 Software Developer",
       "norm_label": "github pages"
     },
     {
@@ -8547,7 +8844,7 @@
       "_origin": "ast",
       "id": "readme_portfolio_research",
       "community": 22,
-      "community_name": "Dmitry Fursov — Software Developer",
+      "community_name": "Dmitry Fursov \u2014 Software Developer",
       "norm_label": "portfolio research"
     },
     {
@@ -8573,7 +8870,7 @@
       "norm_label": "2026-08-25"
     },
     {
-      "label": "01:36 +03:00 — [scaffold] Initialize the portfolio project",
+      "label": "01:36 +03:00 \u2014 [scaffold] Initialize the portfolio project",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-25.md",
       "source_location": "L10",
@@ -8581,10 +8878,10 @@
       "id": "agent_logs_2026_08_2026_08_25_01_36_03_00_scaffold_initialize_the_portfolio_project",
       "community": 37,
       "community_name": "2026-08-25",
-      "norm_label": "01:36 +03:00 — [scaffold] initialize the portfolio project"
+      "norm_label": "01:36 +03:00 \u2014 [scaffold] initialize the portfolio project"
     },
     {
-      "label": "01:45 +03:00 — [graphify] Build the initial project knowledge graph",
+      "label": "01:45 +03:00 \u2014 [graphify] Build the initial project knowledge graph",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-25.md",
       "source_location": "L18",
@@ -8592,10 +8889,10 @@
       "id": "agent_logs_2026_08_2026_08_25_01_45_03_00_graphify_build_the_initial_project_knowledge_graph",
       "community": 37,
       "community_name": "2026-08-25",
-      "norm_label": "01:45 +03:00 — [graphify] build the initial project knowledge graph"
+      "norm_label": "01:45 +03:00 \u2014 [graphify] build the initial project knowledge graph"
     },
     {
-      "label": "01:46 +03:00 — [governance] Normalize repository line endings",
+      "label": "01:46 +03:00 \u2014 [governance] Normalize repository line endings",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-25.md",
       "source_location": "L26",
@@ -8603,7 +8900,7 @@
       "id": "agent_logs_2026_08_2026_08_25_01_46_03_00_governance_normalize_repository_line_endings",
       "community": 37,
       "community_name": "2026-08-25",
-      "norm_label": "01:46 +03:00 — [governance] normalize repository line endings"
+      "norm_label": "01:46 +03:00 \u2014 [governance] normalize repository line endings"
     },
     {
       "label": "Decision DEC-20260825-01",
@@ -8672,7 +8969,7 @@
       "norm_label": "2026-08-27"
     },
     {
-      "label": "01:50 +03:00 — [remote] Confirm the private GitHub destination",
+      "label": "01:50 +03:00 \u2014 [remote] Confirm the private GitHub destination",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-27.md",
       "source_location": "L10",
@@ -8680,7 +8977,7 @@
       "id": "agent_logs_2026_08_2026_08_27_01_50_03_00_remote_confirm_the_private_github_destination",
       "community": 16,
       "community_name": "2026-08-27",
-      "norm_label": "01:50 +03:00 — [remote] confirm the private github destination"
+      "norm_label": "01:50 +03:00 \u2014 [remote] confirm the private github destination"
     },
     {
       "label": "Decision DEC-20260827-01",
@@ -8694,7 +8991,7 @@
       "norm_label": "decision dec-20260827-01"
     },
     {
-      "label": "01:55 +03:00 — [ci] Keep Pages deployment manual for the private repository",
+      "label": "01:55 +03:00 \u2014 [ci] Keep Pages deployment manual for the private repository",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-27.md",
       "source_location": "L23",
@@ -8702,7 +8999,7 @@
       "id": "agent_logs_2026_08_2026_08_27_01_55_03_00_ci_keep_pages_deployment_manual_for_the_private_repository",
       "community": 16,
       "community_name": "2026-08-27",
-      "norm_label": "01:55 +03:00 — [ci] keep pages deployment manual for the private repository"
+      "norm_label": "01:55 +03:00 \u2014 [ci] keep pages deployment manual for the private repository"
     },
     {
       "label": "Decision DEC-20260827-02",
@@ -8716,7 +9013,7 @@
       "norm_label": "decision dec-20260827-02"
     },
     {
-      "label": "02:24 +03:00 — [portfolio] Implement the Dmitry Fursov portfolio",
+      "label": "02:24 +03:00 \u2014 [portfolio] Implement the Dmitry Fursov portfolio",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-27.md",
       "source_location": "L36",
@@ -8724,10 +9021,10 @@
       "id": "agent_logs_2026_08_2026_08_27_02_24_03_00_portfolio_implement_the_dmitry_fursov_portfolio",
       "community": 16,
       "community_name": "2026-08-27",
-      "norm_label": "02:24 +03:00 — [portfolio] implement the dmitry fursov portfolio"
+      "norm_label": "02:24 +03:00 \u2014 [portfolio] implement the dmitry fursov portfolio"
     },
     {
-      "label": "02:30 +03:00 — [verification] Complete the portfolio quality gate",
+      "label": "02:30 +03:00 \u2014 [verification] Complete the portfolio quality gate",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-27.md",
       "source_location": "L45",
@@ -8735,7 +9032,7 @@
       "id": "agent_logs_2026_08_2026_08_27_02_30_03_00_verification_complete_the_portfolio_quality_gate",
       "community": 16,
       "community_name": "2026-08-27",
-      "norm_label": "02:30 +03:00 — [verification] complete the portfolio quality gate"
+      "norm_label": "02:30 +03:00 \u2014 [verification] complete the portfolio quality gate"
     },
     {
       "label": "Decision DEC-20260827-03",
@@ -8749,7 +9046,7 @@
       "norm_label": "decision dec-20260827-03"
     },
     {
-      "label": "14:23 +03:00 — [governance] Add the grilling skill to project agent rules",
+      "label": "14:23 +03:00 \u2014 [governance] Add the grilling skill to project agent rules",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-27.md",
       "source_location": "L59",
@@ -8757,7 +9054,7 @@
       "id": "agent_logs_2026_08_2026_08_27_14_23_03_00_governance_add_the_grilling_skill_to_project_agent_rules",
       "community": 16,
       "community_name": "2026-08-27",
-      "norm_label": "14:23 +03:00 — [governance] add the grilling skill to project agent rules"
+      "norm_label": "14:23 +03:00 \u2014 [governance] add the grilling skill to project agent rules"
     },
     {
       "label": "Decision DEC-20260827-04",
@@ -8771,7 +9068,7 @@
       "norm_label": "decision dec-20260827-04"
     },
     {
-      "label": "14:30 +03:00 — [refactor] Split monolithic React components",
+      "label": "14:30 +03:00 \u2014 [refactor] Split monolithic React components",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-27.md",
       "source_location": "L73",
@@ -8779,7 +9076,7 @@
       "id": "agent_logs_2026_08_2026_08_27_14_30_03_00_refactor_split_monolithic_react_components",
       "community": 16,
       "community_name": "2026-08-27",
-      "norm_label": "14:30 +03:00 — [refactor] split monolithic react components"
+      "norm_label": "14:30 +03:00 \u2014 [refactor] split monolithic react components"
     },
     {
       "label": "Decision DEC-20260827-05",
@@ -8793,7 +9090,7 @@
       "norm_label": "decision dec-20260827-05"
     },
     {
-      "label": "14:54 +03:00 — [tooling] Configure Mantine Codex integration",
+      "label": "14:54 +03:00 \u2014 [tooling] Configure Mantine Codex integration",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-27.md",
       "source_location": "L87",
@@ -8801,7 +9098,7 @@
       "id": "agent_logs_2026_08_2026_08_27_14_54_03_00_tooling_configure_mantine_codex_integration",
       "community": 16,
       "community_name": "2026-08-27",
-      "norm_label": "14:54 +03:00 — [tooling] configure mantine codex integration"
+      "norm_label": "14:54 +03:00 \u2014 [tooling] configure mantine codex integration"
     },
     {
       "label": "Decision DEC-20260827-06",
@@ -8815,7 +9112,7 @@
       "norm_label": "decision dec-20260827-06"
     },
     {
-      "label": "15:49 +03:00 — [mantine] Adopt Mantine selectively for interactive behavior",
+      "label": "15:49 +03:00 \u2014 [mantine] Adopt Mantine selectively for interactive behavior",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-27.md",
       "source_location": "L101",
@@ -8823,7 +9120,7 @@
       "id": "agent_logs_2026_08_2026_08_27_15_49_03_00_mantine_adopt_mantine_selectively_for_interactive_behavior",
       "community": 16,
       "community_name": "2026-08-27",
-      "norm_label": "15:49 +03:00 — [mantine] adopt mantine selectively for interactive behavior"
+      "norm_label": "15:49 +03:00 \u2014 [mantine] adopt mantine selectively for interactive behavior"
     },
     {
       "label": "Decision DEC-20260827-07",
@@ -8859,7 +9156,7 @@
       "norm_label": "2026-08-29"
     },
     {
-      "label": "23:52 +03:00 — [config] Temporarily replay and slow the loader",
+      "label": "23:52 +03:00 \u2014 [config] Temporarily replay and slow the loader",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-29.md",
       "source_location": "L10",
@@ -8867,10 +9164,10 @@
       "id": "agent_logs_2026_08_2026_08_29_23_52_03_00_config_temporarily_replay_and_slow_the_loader",
       "community": 38,
       "community_name": "2026-08-29",
-      "norm_label": "23:52 +03:00 — [config] temporarily replay and slow the loader"
+      "norm_label": "23:52 +03:00 \u2014 [config] temporarily replay and slow the loader"
     },
     {
-      "label": "23:32 +03:00 — [feature] Add cyberpunk personnel search loader",
+      "label": "23:32 +03:00 \u2014 [feature] Add cyberpunk personnel search loader",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-29.md",
       "source_location": "L19",
@@ -8878,7 +9175,7 @@
       "id": "agent_logs_2026_08_2026_08_29_23_32_03_00_feature_add_cyberpunk_personnel_search_loader",
       "community": 38,
       "community_name": "2026-08-29",
-      "norm_label": "23:32 +03:00 — [feature] add cyberpunk personnel search loader"
+      "norm_label": "23:32 +03:00 \u2014 [feature] add cyberpunk personnel search loader"
     },
     {
       "label": "Decision DEC-20260829-02",
@@ -8892,7 +9189,7 @@
       "norm_label": "decision dec-20260829-02"
     },
     {
-      "label": "22:56 +03:00 — [governance] Require grilling in Plan Mode",
+      "label": "22:56 +03:00 \u2014 [governance] Require grilling in Plan Mode",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-29.md",
       "source_location": "L33",
@@ -8900,7 +9197,7 @@
       "id": "agent_logs_2026_08_2026_08_29_22_56_03_00_governance_require_grilling_in_plan_mode",
       "community": 38,
       "community_name": "2026-08-29",
-      "norm_label": "22:56 +03:00 — [governance] require grilling in plan mode"
+      "norm_label": "22:56 +03:00 \u2014 [governance] require grilling in plan mode"
     },
     {
       "label": "Decision DEC-20260829-01",
@@ -8914,7 +9211,7 @@
       "norm_label": "decision dec-20260829-01"
     },
     {
-      "label": "21:10 +03:00 — [ui] Add synchronized typing roles to Header and Hero",
+      "label": "21:10 +03:00 \u2014 [ui] Add synchronized typing roles to Header and Hero",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-29.md",
       "source_location": "L47",
@@ -8922,10 +9219,10 @@
       "id": "agent_logs_2026_08_2026_08_29_21_10_03_00_ui_add_synchronized_typing_roles_to_header_and_hero",
       "community": 38,
       "community_name": "2026-08-29",
-      "norm_label": "21:10 +03:00 — [ui] add synchronized typing roles to header and hero"
+      "norm_label": "21:10 +03:00 \u2014 [ui] add synchronized typing roles to header and hero"
     },
     {
-      "label": "21:13 +03:00 — [i18n] Localize the Header name",
+      "label": "21:13 +03:00 \u2014 [i18n] Localize the Header name",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-29.md",
       "source_location": "L56",
@@ -8933,7 +9230,7 @@
       "id": "agent_logs_2026_08_2026_08_29_21_13_03_00_i18n_localize_the_header_name",
       "community": 38,
       "community_name": "2026-08-29",
-      "norm_label": "21:13 +03:00 — [i18n] localize the header name"
+      "norm_label": "21:13 +03:00 \u2014 [i18n] localize the header name"
     },
     {
       "label": "2026-08-30.md",
@@ -8958,15 +9255,15 @@
       "norm_label": "2026-08-30"
     },
     {
-      "label": "20:58 +03:00 — Replaced timeline axis with animated SVG wave",
+      "label": "20:58 +03:00 \u2014 Replaced timeline axis with animated SVG wave",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L3",
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_20_58_03_00_replaced_timeline_axis_with_animated_svg_wave",
       "community": 92,
-      "community_name": "20:58 +03:00 — Replaced timeline axis with animated SVG wave",
-      "norm_label": "20:58 +03:00 — replaced timeline axis with animated svg wave"
+      "community_name": "20:58 +03:00 \u2014 Replaced timeline axis with animated SVG wave",
+      "norm_label": "20:58 +03:00 \u2014 replaced timeline axis with animated svg wave"
     },
     {
       "label": "Decision DEC-20260830-14",
@@ -8976,11 +9273,11 @@
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_decision_dec_20260830_14",
       "community": 92,
-      "community_name": "20:58 +03:00 — Replaced timeline axis with animated SVG wave",
+      "community_name": "20:58 +03:00 \u2014 Replaced timeline axis with animated SVG wave",
       "norm_label": "decision dec-20260830-14"
     },
     {
-      "label": "20:40 +03:00 — Finalized timeline semantics and interaction polish",
+      "label": "20:40 +03:00 \u2014 Finalized timeline semantics and interaction polish",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L16",
@@ -8988,18 +9285,18 @@
       "id": "agent_logs_2026_08_2026_08_30_20_40_03_00_finalized_timeline_semantics_and_interaction_polish",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "20:40 +03:00 — finalized timeline semantics and interaction polish"
+      "norm_label": "20:40 +03:00 \u2014 finalized timeline semantics and interaction polish"
     },
     {
-      "label": "20:24 +03:00 — Rebuilt EXPERIENCE LOG as a data-driven career timeline",
+      "label": "20:24 +03:00 \u2014 Rebuilt EXPERIENCE LOG as a data-driven career timeline",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L25",
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_20_24_03_00_rebuilt_experience_log_as_a_data_driven_career_timeline",
       "community": 91,
-      "community_name": "20:24 +03:00 — Rebuilt EXPERIENCE LOG as a data-driven career timeline",
-      "norm_label": "20:24 +03:00 — rebuilt experience log as a data-driven career timeline"
+      "community_name": "20:24 +03:00 \u2014 Rebuilt EXPERIENCE LOG as a data-driven career timeline",
+      "norm_label": "20:24 +03:00 \u2014 rebuilt experience log as a data-driven career timeline"
     },
     {
       "label": "Decision DEC-20260830-13",
@@ -9009,11 +9306,11 @@
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_decision_dec_20260830_13",
       "community": 91,
-      "community_name": "20:24 +03:00 — Rebuilt EXPERIENCE LOG as a data-driven career timeline",
+      "community_name": "20:24 +03:00 \u2014 Rebuilt EXPERIENCE LOG as a data-driven career timeline",
       "norm_label": "decision dec-20260830-13"
     },
     {
-      "label": "02:29 +03:00 — Set CONTACT button text to black",
+      "label": "02:29 +03:00 \u2014 Set CONTACT button text to black",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L38",
@@ -9021,10 +9318,10 @@
       "id": "agent_logs_2026_08_2026_08_30_02_29_03_00_set_contact_button_text_to_black",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "02:29 +03:00 — set contact button text to black"
+      "norm_label": "02:29 +03:00 \u2014 set contact button text to black"
     },
     {
-      "label": "02:31 +03:00 — Fixed invisible ABOUT fact values",
+      "label": "02:31 +03:00 \u2014 Fixed invisible ABOUT fact values",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L47",
@@ -9032,10 +9329,10 @@
       "id": "agent_logs_2026_08_2026_08_30_02_31_03_00_fixed_invisible_about_fact_values",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "02:31 +03:00 — fixed invisible about fact values"
+      "norm_label": "02:31 +03:00 \u2014 fixed invisible about fact values"
     },
     {
-      "label": "02:24 +03:00 — Improved ABOUT and CONTACT text contrast",
+      "label": "02:24 +03:00 \u2014 Improved ABOUT and CONTACT text contrast",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L56",
@@ -9043,10 +9340,10 @@
       "id": "agent_logs_2026_08_2026_08_30_02_24_03_00_improved_about_and_contact_text_contrast",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "02:24 +03:00 — improved about and contact text contrast"
+      "norm_label": "02:24 +03:00 \u2014 improved about and contact text contrast"
     },
     {
-      "label": "00:42 +03:00 — Fixed site header",
+      "label": "00:42 +03:00 \u2014 Fixed site header",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L65",
@@ -9054,18 +9351,18 @@
       "id": "agent_logs_2026_08_2026_08_30_00_42_03_00_fixed_site_header",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "00:42 +03:00 — fixed site header"
+      "norm_label": "00:42 +03:00 \u2014 fixed site header"
     },
     {
-      "label": "00:06 +03:00 — Configuration-driven loader speed controls",
+      "label": "00:06 +03:00 \u2014 Configuration-driven loader speed controls",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L74",
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_00_06_03_00_configuration_driven_loader_speed_controls",
       "community": 80,
-      "community_name": "00:06 +03:00 — Configuration-driven loader speed controls",
-      "norm_label": "00:06 +03:00 — configuration-driven loader speed controls"
+      "community_name": "00:06 +03:00 \u2014 Configuration-driven loader speed controls",
+      "norm_label": "00:06 +03:00 \u2014 configuration-driven loader speed controls"
     },
     {
       "label": "Decision DEC-20260830-01",
@@ -9075,11 +9372,11 @@
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_decision_dec_20260830_01",
       "community": 80,
-      "community_name": "00:06 +03:00 — Configuration-driven loader speed controls",
+      "community_name": "00:06 +03:00 \u2014 Configuration-driven loader speed controls",
       "norm_label": "decision dec-20260830-01"
     },
     {
-      "label": "00:14 +03:00 — Candidate list overflow fix",
+      "label": "00:14 +03:00 \u2014 Candidate list overflow fix",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L87",
@@ -9087,10 +9384,10 @@
       "id": "agent_logs_2026_08_2026_08_30_00_14_03_00_candidate_list_overflow_fix",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "00:14 +03:00 — candidate list overflow fix"
+      "norm_label": "00:14 +03:00 \u2014 candidate list overflow fix"
     },
     {
-      "label": "00:17 +03:00 — Fixed loader terminal height",
+      "label": "00:17 +03:00 \u2014 Fixed loader terminal height",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L96",
@@ -9098,10 +9395,10 @@
       "id": "agent_logs_2026_08_2026_08_30_00_17_03_00_fixed_loader_terminal_height",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "00:17 +03:00 — fixed loader terminal height"
+      "norm_label": "00:17 +03:00 \u2014 fixed loader terminal height"
     },
     {
-      "label": "00:27 +03:00 — Added verified final candidate stage",
+      "label": "00:27 +03:00 \u2014 Added verified final candidate stage",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L105",
@@ -9109,10 +9406,10 @@
       "id": "agent_logs_2026_08_2026_08_30_00_27_03_00_added_verified_final_candidate_stage",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "00:27 +03:00 — added verified final candidate stage"
+      "norm_label": "00:27 +03:00 \u2014 added verified final candidate stage"
     },
     {
-      "label": "00:30 +03:00 — Matched candidate uses normal spawn cadence",
+      "label": "00:30 +03:00 \u2014 Matched candidate uses normal spawn cadence",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L114",
@@ -9120,10 +9417,10 @@
       "id": "agent_logs_2026_08_2026_08_30_00_30_03_00_matched_candidate_uses_normal_spawn_cadence",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "00:30 +03:00 — matched candidate uses normal spawn cadence"
+      "norm_label": "00:30 +03:00 \u2014 matched candidate uses normal spawn cadence"
     },
     {
-      "label": "00:42 +03:00 — Added candidate scan loop",
+      "label": "00:42 +03:00 \u2014 Added candidate scan loop",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L123",
@@ -9131,10 +9428,10 @@
       "id": "agent_logs_2026_08_2026_08_30_00_42_03_00_added_candidate_scan_loop",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "00:42 +03:00 — added candidate scan loop"
+      "norm_label": "00:42 +03:00 \u2014 added candidate scan loop"
     },
     {
-      "label": "00:45 +03:00 — Added candidate scan status indicator",
+      "label": "00:45 +03:00 \u2014 Added candidate scan status indicator",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L132",
@@ -9142,10 +9439,10 @@
       "id": "agent_logs_2026_08_2026_08_30_00_45_03_00_added_candidate_scan_status_indicator",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "00:45 +03:00 — added candidate scan status indicator"
+      "norm_label": "00:45 +03:00 \u2014 added candidate scan status indicator"
     },
     {
-      "label": "00:51 +03:00 — Anchored scan label and accelerated card scan",
+      "label": "00:51 +03:00 \u2014 Anchored scan label and accelerated card scan",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L141",
@@ -9153,10 +9450,10 @@
       "id": "agent_logs_2026_08_2026_08_30_00_51_03_00_anchored_scan_label_and_accelerated_card_scan",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "00:51 +03:00 — anchored scan label and accelerated card scan"
+      "norm_label": "00:51 +03:00 \u2014 anchored scan label and accelerated card scan"
     },
     {
-      "label": "00:52 +03:00 — Changed candidate scan to one-shot",
+      "label": "00:52 +03:00 \u2014 Changed candidate scan to one-shot",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L150",
@@ -9164,10 +9461,10 @@
       "id": "agent_logs_2026_08_2026_08_30_00_52_03_00_changed_candidate_scan_to_one_shot",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "00:52 +03:00 — changed candidate scan to one-shot"
+      "norm_label": "00:52 +03:00 \u2014 changed candidate scan to one-shot"
     },
     {
-      "label": "00:56 +03:00 — Changed candidate scan direction",
+      "label": "00:56 +03:00 \u2014 Changed candidate scan direction",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L159",
@@ -9175,10 +9472,10 @@
       "id": "agent_logs_2026_08_2026_08_30_00_56_03_00_changed_candidate_scan_direction",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "00:56 +03:00 — changed candidate scan direction"
+      "norm_label": "00:56 +03:00 \u2014 changed candidate scan direction"
     },
     {
-      "label": "01:09 +03:00 — Added failed-card fade sequence",
+      "label": "01:09 +03:00 \u2014 Added failed-card fade sequence",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L168",
@@ -9186,10 +9483,10 @@
       "id": "agent_logs_2026_08_2026_08_30_01_09_03_00_added_failed_card_fade_sequence",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "01:09 +03:00 — added failed-card fade sequence"
+      "norm_label": "01:09 +03:00 \u2014 added failed-card fade sequence"
     },
     {
-      "label": "01:18 +03:00 — Removed candidate scan beam",
+      "label": "01:18 +03:00 \u2014 Removed candidate scan beam",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L177",
@@ -9197,18 +9494,18 @@
       "id": "agent_logs_2026_08_2026_08_30_01_18_03_00_removed_candidate_scan_beam",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "01:18 +03:00 — removed candidate scan beam"
+      "norm_label": "01:18 +03:00 \u2014 removed candidate scan beam"
     },
     {
-      "label": "01:28 +03:00 — Added intermittent cyberpunk portrait glitch",
+      "label": "01:28 +03:00 \u2014 Added intermittent cyberpunk portrait glitch",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L186",
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_01_28_03_00_added_intermittent_cyberpunk_portrait_glitch",
       "community": 81,
-      "community_name": "01:28 +03:00 — Added intermittent cyberpunk portrait glitch",
-      "norm_label": "01:28 +03:00 — added intermittent cyberpunk portrait glitch"
+      "community_name": "01:28 +03:00 \u2014 Added intermittent cyberpunk portrait glitch",
+      "norm_label": "01:28 +03:00 \u2014 added intermittent cyberpunk portrait glitch"
     },
     {
       "label": "Decision DEC-20260830-02",
@@ -9218,19 +9515,19 @@
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_decision_dec_20260830_02",
       "community": 81,
-      "community_name": "01:28 +03:00 — Added intermittent cyberpunk portrait glitch",
+      "community_name": "01:28 +03:00 \u2014 Added intermittent cyberpunk portrait glitch",
       "norm_label": "decision dec-20260830-02"
     },
     {
-      "label": "01:40 +03:00 — Made portrait glitch visibly readable",
+      "label": "01:40 +03:00 \u2014 Made portrait glitch visibly readable",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L199",
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_01_40_03_00_made_portrait_glitch_visibly_readable",
       "community": 82,
-      "community_name": "01:40 +03:00 — Made portrait glitch visibly readable",
-      "norm_label": "01:40 +03:00 — made portrait glitch visibly readable"
+      "community_name": "01:40 +03:00 \u2014 Made portrait glitch visibly readable",
+      "norm_label": "01:40 +03:00 \u2014 made portrait glitch visibly readable"
     },
     {
       "label": "Decision DEC-20260830-03",
@@ -9240,11 +9537,11 @@
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_decision_dec_20260830_03",
       "community": 82,
-      "community_name": "01:40 +03:00 — Made portrait glitch visibly readable",
+      "community_name": "01:40 +03:00 \u2014 Made portrait glitch visibly readable",
       "norm_label": "decision dec-20260830-03"
     },
     {
-      "label": "01:24 +03:00 — Synchronized modal portrait reveal and scan",
+      "label": "01:24 +03:00 \u2014 Synchronized modal portrait reveal and scan",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L212",
@@ -9252,10 +9549,10 @@
       "id": "agent_logs_2026_08_2026_08_30_01_24_03_00_synchronized_modal_portrait_reveal_and_scan",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "01:24 +03:00 — synchronized modal portrait reveal and scan"
+      "norm_label": "01:24 +03:00 \u2014 synchronized modal portrait reveal and scan"
     },
     {
-      "label": "01:40 +03:00 — Added focused query caret",
+      "label": "01:40 +03:00 \u2014 Added focused query caret",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L221",
@@ -9263,18 +9560,18 @@
       "id": "agent_logs_2026_08_2026_08_30_01_40_03_00_added_focused_query_caret",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "01:40 +03:00 — added focused query caret"
+      "norm_label": "01:40 +03:00 \u2014 added focused query caret"
     },
     {
-      "label": "01:49 +03:00 — Stabilized the portrait base layer",
+      "label": "01:49 +03:00 \u2014 Stabilized the portrait base layer",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L230",
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_01_49_03_00_stabilized_the_portrait_base_layer",
       "community": 83,
-      "community_name": "01:49 +03:00 — Stabilized the portrait base layer",
-      "norm_label": "01:49 +03:00 — stabilized the portrait base layer"
+      "community_name": "01:49 +03:00 \u2014 Stabilized the portrait base layer",
+      "norm_label": "01:49 +03:00 \u2014 stabilized the portrait base layer"
     },
     {
       "label": "Decision DEC-20260830-04",
@@ -9284,19 +9581,19 @@
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_decision_dec_20260830_04",
       "community": 83,
-      "community_name": "01:49 +03:00 — Stabilized the portrait base layer",
+      "community_name": "01:49 +03:00 \u2014 Stabilized the portrait base layer",
       "norm_label": "decision dec-20260830-04"
     },
     {
-      "label": "02:01 +03:00 — Replaced slices with bounded corruption blocks",
+      "label": "02:01 +03:00 \u2014 Replaced slices with bounded corruption blocks",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L243",
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_02_01_03_00_replaced_slices_with_bounded_corruption_blocks",
       "community": 84,
-      "community_name": "02:01 +03:00 — Replaced slices with bounded corruption blocks",
-      "norm_label": "02:01 +03:00 — replaced slices with bounded corruption blocks"
+      "community_name": "02:01 +03:00 \u2014 Replaced slices with bounded corruption blocks",
+      "norm_label": "02:01 +03:00 \u2014 replaced slices with bounded corruption blocks"
     },
     {
       "label": "Decision DEC-20260830-05",
@@ -9306,19 +9603,19 @@
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_decision_dec_20260830_05",
       "community": 84,
-      "community_name": "02:01 +03:00 — Replaced slices with bounded corruption blocks",
+      "community_name": "02:01 +03:00 \u2014 Replaced slices with bounded corruption blocks",
       "norm_label": "decision dec-20260830-05"
     },
     {
-      "label": "02:03 +03:00 — Verified block-only portrait corruption",
+      "label": "02:03 +03:00 \u2014 Verified block-only portrait corruption",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L256",
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_02_03_03_00_verified_block_only_portrait_corruption",
       "community": 85,
-      "community_name": "02:03 +03:00 — Verified block-only portrait corruption",
-      "norm_label": "02:03 +03:00 — verified block-only portrait corruption"
+      "community_name": "02:03 +03:00 \u2014 Verified block-only portrait corruption",
+      "norm_label": "02:03 +03:00 \u2014 verified block-only portrait corruption"
     },
     {
       "label": "Decision DEC-20260830-06",
@@ -9328,19 +9625,19 @@
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_decision_dec_20260830_06",
       "community": 85,
-      "community_name": "02:03 +03:00 — Verified block-only portrait corruption",
+      "community_name": "02:03 +03:00 \u2014 Verified block-only portrait corruption",
       "norm_label": "decision dec-20260830-06"
     },
     {
-      "label": "02:27 +03:00 — Switched to a cellular data-corruption glitch",
+      "label": "02:27 +03:00 \u2014 Switched to a cellular data-corruption glitch",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L269",
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_02_27_03_00_switched_to_a_cellular_data_corruption_glitch",
       "community": 86,
-      "community_name": "02:27 +03:00 — Switched to a cellular data-corruption glitch",
-      "norm_label": "02:27 +03:00 — switched to a cellular data-corruption glitch"
+      "community_name": "02:27 +03:00 \u2014 Switched to a cellular data-corruption glitch",
+      "norm_label": "02:27 +03:00 \u2014 switched to a cellular data-corruption glitch"
     },
     {
       "label": "Decision DEC-20260830-07",
@@ -9350,11 +9647,11 @@
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_decision_dec_20260830_07",
       "community": 86,
-      "community_name": "02:27 +03:00 — Switched to a cellular data-corruption glitch",
+      "community_name": "02:27 +03:00 \u2014 Switched to a cellular data-corruption glitch",
       "norm_label": "decision dec-20260830-07"
     },
     {
-      "label": "02:31 +03:00 — Reduced active cellular glitch density",
+      "label": "02:31 +03:00 \u2014 Reduced active cellular glitch density",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L282",
@@ -9362,10 +9659,10 @@
       "id": "agent_logs_2026_08_2026_08_30_02_31_03_00_reduced_active_cellular_glitch_density",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "02:31 +03:00 — reduced active cellular glitch density"
+      "norm_label": "02:31 +03:00 \u2014 reduced active cellular glitch density"
     },
     {
-      "label": "02:34 +03:00 — Increased responsive cellular grid resolution",
+      "label": "02:34 +03:00 \u2014 Increased responsive cellular grid resolution",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L291",
@@ -9373,10 +9670,10 @@
       "id": "agent_logs_2026_08_2026_08_30_02_34_03_00_increased_responsive_cellular_grid_resolution",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "02:34 +03:00 — increased responsive cellular grid resolution"
+      "norm_label": "02:34 +03:00 \u2014 increased responsive cellular grid resolution"
     },
     {
-      "label": "13:02 +03:00 — Added grouped cell growth and frame caching",
+      "label": "13:02 +03:00 \u2014 Added grouped cell growth and frame caching",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L300",
@@ -9384,10 +9681,10 @@
       "id": "agent_logs_2026_08_2026_08_30_13_02_03_00_added_grouped_cell_growth_and_frame_caching",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "13:02 +03:00 — added grouped cell growth and frame caching"
+      "norm_label": "13:02 +03:00 \u2014 added grouped cell growth and frame caching"
     },
     {
-      "label": "13:10 +03:00 — Reused decorative typing caret in loading query",
+      "label": "13:10 +03:00 \u2014 Reused decorative typing caret in loading query",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L309",
@@ -9395,10 +9692,10 @@
       "id": "agent_logs_2026_08_2026_08_30_13_10_03_00_reused_decorative_typing_caret_in_loading_query",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "13:10 +03:00 — reused decorative typing caret in loading query"
+      "norm_label": "13:10 +03:00 \u2014 reused decorative typing caret in loading query"
     },
     {
-      "label": "13:12 +03:00 — Restored right-aligned loading query button",
+      "label": "13:12 +03:00 \u2014 Restored right-aligned loading query button",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L318",
@@ -9406,10 +9703,10 @@
       "id": "agent_logs_2026_08_2026_08_30_13_12_03_00_restored_right_aligned_loading_query_button",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "13:12 +03:00 — restored right-aligned loading query button"
+      "norm_label": "13:12 +03:00 \u2014 restored right-aligned loading query button"
     },
     {
-      "label": "13:15 +03:00 — Completed loading query typing and caret lifetime",
+      "label": "13:15 +03:00 \u2014 Completed loading query typing and caret lifetime",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L327",
@@ -9417,10 +9714,10 @@
       "id": "agent_logs_2026_08_2026_08_30_13_15_03_00_completed_loading_query_typing_and_caret_lifetime",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "13:15 +03:00 — completed loading query typing and caret lifetime"
+      "norm_label": "13:15 +03:00 \u2014 completed loading query typing and caret lifetime"
     },
     {
-      "label": "13:17 +03:00 — Prevented query text horizontal clipping",
+      "label": "13:17 +03:00 \u2014 Prevented query text horizontal clipping",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L336",
@@ -9428,10 +9725,10 @@
       "id": "agent_logs_2026_08_2026_08_30_13_17_03_00_prevented_query_text_horizontal_clipping",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "13:17 +03:00 — prevented query text horizontal clipping"
+      "norm_label": "13:17 +03:00 \u2014 prevented query text horizontal clipping"
     },
     {
-      "label": "13:30 +03:00 — Aligned query caret with final character",
+      "label": "13:30 +03:00 \u2014 Aligned query caret with final character",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L345",
@@ -9439,10 +9736,10 @@
       "id": "agent_logs_2026_08_2026_08_30_13_30_03_00_aligned_query_caret_with_final_character",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "13:30 +03:00 — aligned query caret with final character"
+      "norm_label": "13:30 +03:00 \u2014 aligned query caret with final character"
     },
     {
-      "label": "13:32 +03:00 — Removed native query scrolling from fake terminal",
+      "label": "13:32 +03:00 \u2014 Removed native query scrolling from fake terminal",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L354",
@@ -9450,18 +9747,18 @@
       "id": "agent_logs_2026_08_2026_08_30_13_32_03_00_removed_native_query_scrolling_from_fake_terminal",
       "community": 5,
       "community_name": "2026-08-30",
-      "norm_label": "13:32 +03:00 — removed native query scrolling from fake terminal"
+      "norm_label": "13:32 +03:00 \u2014 removed native query scrolling from fake terminal"
     },
     {
-      "label": "16:06 +03:00 — Replaced cellular portrait glitch with Glitch.js",
+      "label": "16:06 +03:00 \u2014 Replaced cellular portrait glitch with Glitch.js",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L363",
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_16_06_03_00_replaced_cellular_portrait_glitch_with_glitch_js",
       "community": 87,
-      "community_name": "16:06 +03:00 — Replaced cellular portrait glitch with Glitch.js",
-      "norm_label": "16:06 +03:00 — replaced cellular portrait glitch with glitch.js"
+      "community_name": "16:06 +03:00 \u2014 Replaced cellular portrait glitch with Glitch.js",
+      "norm_label": "16:06 +03:00 \u2014 replaced cellular portrait glitch with glitch.js"
     },
     {
       "label": "Decision DEC-20260830-09",
@@ -9471,19 +9768,19 @@
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_decision_dec_20260830_09",
       "community": 87,
-      "community_name": "16:06 +03:00 — Replaced cellular portrait glitch with Glitch.js",
+      "community_name": "16:06 +03:00 \u2014 Replaced cellular portrait glitch with Glitch.js",
       "norm_label": "decision dec-20260830-09"
     },
     {
-      "label": "16:31 +03:00 — Switched portrait glitch to continuous demo mode",
+      "label": "16:31 +03:00 \u2014 Switched portrait glitch to continuous demo mode",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L376",
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_16_31_03_00_switched_portrait_glitch_to_continuous_demo_mode",
       "community": 88,
-      "community_name": "16:31 +03:00 — Switched portrait glitch to continuous demo mode",
-      "norm_label": "16:31 +03:00 — switched portrait glitch to continuous demo mode"
+      "community_name": "16:31 +03:00 \u2014 Switched portrait glitch to continuous demo mode",
+      "norm_label": "16:31 +03:00 \u2014 switched portrait glitch to continuous demo mode"
     },
     {
       "label": "Decision DEC-20260830-10",
@@ -9493,19 +9790,19 @@
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_decision_dec_20260830_10",
       "community": 88,
-      "community_name": "16:31 +03:00 — Switched portrait glitch to continuous demo mode",
+      "community_name": "16:31 +03:00 \u2014 Switched portrait glitch to continuous demo mode",
       "norm_label": "decision dec-20260830-10"
     },
     {
-      "label": "19:46 +03:00 — Added localized resume link to header",
+      "label": "19:46 +03:00 \u2014 Added localized resume link to header",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L389",
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_19_46_03_00_added_localized_resume_link_to_header",
       "community": 89,
-      "community_name": "19:46 +03:00 — Added localized resume link to header",
-      "norm_label": "19:46 +03:00 — added localized resume link to header"
+      "community_name": "19:46 +03:00 \u2014 Added localized resume link to header",
+      "norm_label": "19:46 +03:00 \u2014 added localized resume link to header"
     },
     {
       "label": "Decision DEC-20260830-11",
@@ -9515,19 +9812,19 @@
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_decision_dec_20260830_11",
       "community": 89,
-      "community_name": "19:46 +03:00 — Added localized resume link to header",
+      "community_name": "19:46 +03:00 \u2014 Added localized resume link to header",
       "norm_label": "decision dec-20260830-11"
     },
     {
-      "label": "20:01 +03:00 — Standardized cyan resume download buttons",
+      "label": "20:01 +03:00 \u2014 Standardized cyan resume download buttons",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-30.md",
       "source_location": "L402",
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_20_01_03_00_standardized_cyan_resume_download_buttons",
       "community": 90,
-      "community_name": "20:01 +03:00 — Standardized cyan resume download buttons",
-      "norm_label": "20:01 +03:00 — standardized cyan resume download buttons"
+      "community_name": "20:01 +03:00 \u2014 Standardized cyan resume download buttons",
+      "norm_label": "20:01 +03:00 \u2014 standardized cyan resume download buttons"
     },
     {
       "label": "Decision DEC-20260830-12",
@@ -9537,7 +9834,7 @@
       "_origin": "ast",
       "id": "agent_logs_2026_08_2026_08_30_decision_dec_20260830_12",
       "community": 90,
-      "community_name": "20:01 +03:00 — Standardized cyan resume download buttons",
+      "community_name": "20:01 +03:00 \u2014 Standardized cyan resume download buttons",
       "norm_label": "decision dec-20260830-12"
     },
     {
@@ -9563,7 +9860,7 @@
       "norm_label": "2026-08-31"
     },
     {
-      "label": "23:07 +03:00 — Replaced tentative experience wording",
+      "label": "23:07 +03:00 \u2014 Replaced tentative experience wording",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-31.md",
       "source_location": "L3",
@@ -9571,7 +9868,7 @@
       "id": "agent_logs_2026_08_2026_08_31_23_07_03_00_replaced_tentative_experience_wording",
       "community": 10,
       "community_name": "2026-08-31",
-      "norm_label": "23:07 +03:00 — replaced tentative experience wording"
+      "norm_label": "23:07 +03:00 \u2014 replaced tentative experience wording"
     },
     {
       "label": "Decision DEC-20260831-10",
@@ -9585,7 +9882,7 @@
       "norm_label": "decision dec-20260831-10"
     },
     {
-      "label": "22:54 +03:00 — Unified portfolio around Software Developer positioning",
+      "label": "22:54 +03:00 \u2014 Unified portfolio around Software Developer positioning",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-31.md",
       "source_location": "L16",
@@ -9593,7 +9890,7 @@
       "id": "agent_logs_2026_08_2026_08_31_22_54_03_00_unified_portfolio_around_software_developer_positioning",
       "community": 10,
       "community_name": "2026-08-31",
-      "norm_label": "22:54 +03:00 — unified portfolio around software developer positioning"
+      "norm_label": "22:54 +03:00 \u2014 unified portfolio around software developer positioning"
     },
     {
       "label": "Decision DEC-20260831-09",
@@ -9607,7 +9904,7 @@
       "norm_label": "decision dec-20260831-09"
     },
     {
-      "label": "19:44 +03:00 — Switched timeline runner to GSAP MotionPathPlugin",
+      "label": "19:44 +03:00 \u2014 Switched timeline runner to GSAP MotionPathPlugin",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-31.md",
       "source_location": "L29",
@@ -9615,7 +9912,7 @@
       "id": "agent_logs_2026_08_2026_08_31_19_44_03_00_switched_timeline_runner_to_gsap_motionpathplugin",
       "community": 10,
       "community_name": "2026-08-31",
-      "norm_label": "19:44 +03:00 — switched timeline runner to gsap motionpathplugin"
+      "norm_label": "19:44 +03:00 \u2014 switched timeline runner to gsap motionpathplugin"
     },
     {
       "label": "Decision DEC-20260831-01",
@@ -9629,7 +9926,7 @@
       "norm_label": "decision dec-20260831-01"
     },
     {
-      "label": "19:59 +03:00 — Matched Hero portrait with the Glitch.js BROKEN HOLO demo",
+      "label": "19:59 +03:00 \u2014 Matched Hero portrait with the Glitch.js BROKEN HOLO demo",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-31.md",
       "source_location": "L42",
@@ -9637,7 +9934,7 @@
       "id": "agent_logs_2026_08_2026_08_31_19_59_03_00_matched_hero_portrait_with_the_glitch_js_broken_holo_demo",
       "community": 10,
       "community_name": "2026-08-31",
-      "norm_label": "19:59 +03:00 — matched hero portrait with the glitch.js broken holo demo"
+      "norm_label": "19:59 +03:00 \u2014 matched hero portrait with the glitch.js broken holo demo"
     },
     {
       "label": "Decision DEC-20260831-02",
@@ -9651,7 +9948,7 @@
       "norm_label": "decision dec-20260831-02"
     },
     {
-      "label": "20:09 +03:00 — Unified the Experience timeline scene geometry",
+      "label": "20:09 +03:00 \u2014 Unified the Experience timeline scene geometry",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-31.md",
       "source_location": "L55",
@@ -9659,7 +9956,7 @@
       "id": "agent_logs_2026_08_2026_08_31_20_09_03_00_unified_the_experience_timeline_scene_geometry",
       "community": 10,
       "community_name": "2026-08-31",
-      "norm_label": "20:09 +03:00 — unified the experience timeline scene geometry"
+      "norm_label": "20:09 +03:00 \u2014 unified the experience timeline scene geometry"
     },
     {
       "label": "Decision DEC-20260831-03",
@@ -9673,7 +9970,7 @@
       "norm_label": "decision dec-20260831-03"
     },
     {
-      "label": "20:29 +03:00 — Added randomized short Glitch.js bursts",
+      "label": "20:29 +03:00 \u2014 Added randomized short Glitch.js bursts",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-31.md",
       "source_location": "L68",
@@ -9681,7 +9978,7 @@
       "id": "agent_logs_2026_08_2026_08_31_20_29_03_00_added_randomized_short_glitch_js_bursts",
       "community": 10,
       "community_name": "2026-08-31",
-      "norm_label": "20:29 +03:00 — added randomized short glitch.js bursts"
+      "norm_label": "20:29 +03:00 \u2014 added randomized short glitch.js bursts"
     },
     {
       "label": "Decision DEC-20260831-04",
@@ -9695,7 +9992,7 @@
       "norm_label": "decision dec-20260831-04"
     },
     {
-      "label": "20:32 +03:00 — Anchored evenly spaced Experience milestones to the SVG wave",
+      "label": "20:32 +03:00 \u2014 Anchored evenly spaced Experience milestones to the SVG wave",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-31.md",
       "source_location": "L81",
@@ -9703,7 +10000,7 @@
       "id": "agent_logs_2026_08_2026_08_31_20_32_03_00_anchored_evenly_spaced_experience_milestones_to_the_svg_wave",
       "community": 10,
       "community_name": "2026-08-31",
-      "norm_label": "20:32 +03:00 — anchored evenly spaced experience milestones to the svg wave"
+      "norm_label": "20:32 +03:00 \u2014 anchored evenly spaced experience milestones to the svg wave"
     },
     {
       "label": "Decision DEC-20260831-05",
@@ -9717,7 +10014,7 @@
       "norm_label": "decision dec-20260831-05"
     },
     {
-      "label": "20:55 +03:00 — Introduced shared action components",
+      "label": "20:55 +03:00 \u2014 Introduced shared action components",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-31.md",
       "source_location": "L94",
@@ -9725,7 +10022,7 @@
       "id": "agent_logs_2026_08_2026_08_31_20_55_03_00_introduced_shared_action_components",
       "community": 10,
       "community_name": "2026-08-31",
-      "norm_label": "20:55 +03:00 — introduced shared action components"
+      "norm_label": "20:55 +03:00 \u2014 introduced shared action components"
     },
     {
       "label": "Decision DEC-20260831-06",
@@ -9739,7 +10036,7 @@
       "norm_label": "decision dec-20260831-06"
     },
     {
-      "label": "21:05 +03:00 — Added persistent hologram with burst-only distortions",
+      "label": "21:05 +03:00 \u2014 Added persistent hologram with burst-only distortions",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-31.md",
       "source_location": "L107",
@@ -9747,7 +10044,7 @@
       "id": "agent_logs_2026_08_2026_08_31_21_05_03_00_added_persistent_hologram_with_burst_only_distortions",
       "community": 10,
       "community_name": "2026-08-31",
-      "norm_label": "21:05 +03:00 — added persistent hologram with burst-only distortions"
+      "norm_label": "21:05 +03:00 \u2014 added persistent hologram with burst-only distortions"
     },
     {
       "label": "Decision DEC-20260831-07",
@@ -9761,7 +10058,7 @@
       "norm_label": "decision dec-20260831-07"
     },
     {
-      "label": "21:05 +03:00 — Updated header layout and resume CTA",
+      "label": "21:05 +03:00 \u2014 Updated header layout and resume CTA",
       "file_type": "document",
       "source_file": "agent-logs/2026/08/2026-08-31.md",
       "source_location": "L120",
@@ -9769,7 +10066,7 @@
       "id": "agent_logs_2026_08_2026_08_31_21_05_03_00_updated_header_layout_and_resume_cta",
       "community": 10,
       "community_name": "2026-08-31",
-      "norm_label": "21:05 +03:00 — updated header layout and resume cta"
+      "norm_label": "21:05 +03:00 \u2014 updated header layout and resume cta"
     },
     {
       "label": "Decision DEC-20260831-08",
@@ -9871,7 +10168,7 @@
       "norm_label": "decision dec-20260901-02"
     },
     {
-      "label": "01:02 +03:00 — Reframed Directions as four experience categories",
+      "label": "01:02 +03:00 \u2014 Reframed Directions as four experience categories",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-01.md",
       "source_location": "L29",
@@ -9879,7 +10176,7 @@
       "id": "agent_logs_2026_09_2026_09_01_01_02_03_00_reframed_directions_as_four_experience_categories",
       "community": 18,
       "community_name": "2026-09-01",
-      "norm_label": "01:02 +03:00 — reframed directions as four experience categories"
+      "norm_label": "01:02 +03:00 \u2014 reframed directions as four experience categories"
     },
     {
       "label": "Decision DEC-20260901-03",
@@ -9893,7 +10190,7 @@
       "norm_label": "decision dec-20260901-03"
     },
     {
-      "label": "01:20 +03:00 — Added reusable animated metric counters",
+      "label": "01:20 +03:00 \u2014 Added reusable animated metric counters",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-01.md",
       "source_location": "L42",
@@ -9901,7 +10198,7 @@
       "id": "agent_logs_2026_09_2026_09_01_01_20_03_00_added_reusable_animated_metric_counters",
       "community": 18,
       "community_name": "2026-09-01",
-      "norm_label": "01:20 +03:00 — added reusable animated metric counters"
+      "norm_label": "01:20 +03:00 \u2014 added reusable animated metric counters"
     },
     {
       "label": "Decision DEC-20260901-04",
@@ -9915,7 +10212,7 @@
       "norm_label": "decision dec-20260901-04"
     },
     {
-      "label": "01:41 +03:00 — Deferred metric animation until Directions entrance",
+      "label": "01:41 +03:00 \u2014 Deferred metric animation until Directions entrance",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-01.md",
       "source_location": "L55",
@@ -9923,7 +10220,7 @@
       "id": "agent_logs_2026_09_2026_09_01_01_41_03_00_deferred_metric_animation_until_directions_entrance",
       "community": 18,
       "community_name": "2026-09-01",
-      "norm_label": "01:41 +03:00 — deferred metric animation until directions entrance"
+      "norm_label": "01:41 +03:00 \u2014 deferred metric animation until directions entrance"
     },
     {
       "label": "Decision DEC-20260901-06",
@@ -9937,7 +10234,7 @@
       "norm_label": "decision dec-20260901-06"
     },
     {
-      "label": "01:45 +03:00 — Anchored direction tools to card bottoms",
+      "label": "01:45 +03:00 \u2014 Anchored direction tools to card bottoms",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-01.md",
       "source_location": "L68",
@@ -9945,10 +10242,10 @@
       "id": "agent_logs_2026_09_2026_09_01_01_45_03_00_anchored_direction_tools_to_card_bottoms",
       "community": 18,
       "community_name": "2026-09-01",
-      "norm_label": "01:45 +03:00 — anchored direction tools to card bottoms"
+      "norm_label": "01:45 +03:00 \u2014 anchored direction tools to card bottoms"
     },
     {
-      "label": "01:50 +03:00 — Removed direction card numbering and tightened cells",
+      "label": "01:50 +03:00 \u2014 Removed direction card numbering and tightened cells",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-01.md",
       "source_location": "L77",
@@ -9956,10 +10253,10 @@
       "id": "agent_logs_2026_09_2026_09_01_01_50_03_00_removed_direction_card_numbering_and_tightened_cells",
       "community": 18,
       "community_name": "2026-09-01",
-      "norm_label": "01:50 +03:00 — removed direction card numbering and tightened cells"
+      "norm_label": "01:50 +03:00 \u2014 removed direction card numbering and tightened cells"
     },
     {
-      "label": "01:27 +03:00 — Synchronized Directions entrance with Hero",
+      "label": "01:27 +03:00 \u2014 Synchronized Directions entrance with Hero",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-01.md",
       "source_location": "L86",
@@ -9967,7 +10264,7 @@
       "id": "agent_logs_2026_09_2026_09_01_01_27_03_00_synchronized_directions_entrance_with_hero",
       "community": 18,
       "community_name": "2026-09-01",
-      "norm_label": "01:27 +03:00 — synchronized directions entrance with hero"
+      "norm_label": "01:27 +03:00 \u2014 synchronized directions entrance with hero"
     },
     {
       "label": "2026-09-02.md",
@@ -9987,8 +10284,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_fixed_responsive_experience_runner_path",
-      "community": 8,
-      "community_name": "2026-09-02.md",
+      "community": 70,
+      "community_name": "Fixed responsive Experience runner path",
       "norm_label": "fixed responsive experience runner path"
     },
     {
@@ -9998,8 +10295,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_2026_09_02_21_10_03_00",
-      "community": 8,
-      "community_name": "2026-09-02.md",
+      "community": 70,
+      "community_name": "Fixed responsive Experience runner path",
       "norm_label": "2026-09-02 21:10 +03:00"
     },
     {
@@ -10009,8 +10306,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_decision_dec_20260902_15",
-      "community": 8,
-      "community_name": "2026-09-02.md",
+      "community": 70,
+      "community_name": "Fixed responsive Experience runner path",
       "norm_label": "decision dec-20260902-15"
     },
     {
@@ -10020,8 +10317,8 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_vertically_centered_education_metadata_pairs",
-      "community": 71,
-      "community_name": "Vertically centered Education metadata pairs",
+      "community": 8,
+      "community_name": "2026-09-02.md",
       "norm_label": "vertically centered education metadata pairs"
     },
     {
@@ -10031,8 +10328,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_2026_09_02_21_38_03_00",
-      "community": 71,
-      "community_name": "Vertically centered Education metadata pairs",
+      "community": 8,
+      "community_name": "2026-09-02.md",
       "norm_label": "2026-09-02 21:38 +03:00"
     },
     {
@@ -10042,8 +10339,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_decision_dec_20260902_16",
-      "community": 71,
-      "community_name": "Vertically centered Education metadata pairs",
+      "community": 8,
+      "community_name": "2026-09-02.md",
       "norm_label": "decision dec-20260902-16"
     },
     {
@@ -10053,8 +10350,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_completed_final_education_timeline_axis_segment",
-      "community": 8,
-      "community_name": "2026-09-02.md",
+      "community": 72,
+      "community_name": "Completed final Education Timeline axis segment",
       "norm_label": "completed final education timeline axis segment"
     },
     {
@@ -10064,8 +10361,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_2026_09_02_21_58_03_00",
-      "community": 8,
-      "community_name": "2026-09-02.md",
+      "community": 72,
+      "community_name": "Completed final Education Timeline axis segment",
       "norm_label": "2026-09-02 21:58 +03:00"
     },
     {
@@ -10075,8 +10372,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_decision_dec_20260902_19",
-      "community": 8,
-      "community_name": "2026-09-02.md",
+      "community": 72,
+      "community_name": "Completed final Education Timeline axis segment",
       "norm_label": "decision dec-20260902-19"
     },
     {
@@ -10086,8 +10383,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_centered_education_bullets_within_cards",
-      "community": 72,
-      "community_name": "Centered Education bullets within cards",
+      "community": 8,
+      "community_name": "2026-09-02.md",
       "norm_label": "centered education bullets within cards"
     },
     {
@@ -10097,8 +10394,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_2026_09_02_21_52_03_00",
-      "community": 72,
-      "community_name": "Centered Education bullets within cards",
+      "community": 8,
+      "community_name": "2026-09-02.md",
       "norm_label": "2026-09-02 21:52 +03:00"
     },
     {
@@ -10108,8 +10405,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_decision_dec_20260902_18",
-      "community": 72,
-      "community_name": "Centered Education bullets within cards",
+      "community": 8,
+      "community_name": "2026-09-02.md",
       "norm_label": "decision dec-20260902-18"
     },
     {
@@ -10119,8 +10416,8 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_centered_education_cards_around_timeline_bullets",
-      "community": 8,
-      "community_name": "2026-09-02.md",
+      "community": 71,
+      "community_name": "Centered Education cards around Timeline bullets",
       "norm_label": "centered education cards around timeline bullets"
     },
     {
@@ -10130,8 +10427,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_2026_09_02_21_45_03_00",
-      "community": 8,
-      "community_name": "2026-09-02.md",
+      "community": 71,
+      "community_name": "Centered Education cards around Timeline bullets",
       "norm_label": "2026-09-02 21:45 +03:00"
     },
     {
@@ -10141,8 +10438,8 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_decision_dec_20260902_17",
-      "community": 8,
-      "community_name": "2026-09-02.md",
+      "community": 71,
+      "community_name": "Centered Education cards around Timeline bullets",
       "norm_label": "decision dec-20260902-17"
     },
     {
@@ -10152,8 +10449,8 @@
       "source_location": "L76",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_centered_education_detail_metadata",
-      "community": 70,
-      "community_name": "Centered Education detail metadata",
+      "community": 8,
+      "community_name": "2026-09-02.md",
       "norm_label": "centered education detail metadata"
     },
     {
@@ -10163,8 +10460,8 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_2026_09_02_20_36_03_00",
-      "community": 70,
-      "community_name": "Centered Education detail metadata",
+      "community": 8,
+      "community_name": "2026-09-02.md",
       "norm_label": "2026-09-02 20:36 +03:00"
     },
     {
@@ -10174,8 +10471,8 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_decision_dec_20260902_14",
-      "community": 70,
-      "community_name": "Centered Education detail metadata",
+      "community": 8,
+      "community_name": "2026-09-02.md",
       "norm_label": "decision dec-20260902-14"
     },
     {
@@ -10218,8 +10515,8 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_fixed_mantine_centered_education_timeline_axis",
-      "community": 8,
-      "community_name": "2026-09-02.md",
+      "community": 67,
+      "community_name": "Fixed Mantine centered Education Timeline axis",
       "norm_label": "fixed mantine centered education timeline axis"
     },
     {
@@ -10229,8 +10526,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_2026_09_02_16_37_03_00",
-      "community": 8,
-      "community_name": "2026-09-02.md",
+      "community": 67,
+      "community_name": "Fixed Mantine centered Education Timeline axis",
       "norm_label": "2026-09-02 16:37 +03:00"
     },
     {
@@ -10240,8 +10537,8 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_decision_dec_20260902_10",
-      "community": 8,
-      "community_name": "2026-09-02.md",
+      "community": 67,
+      "community_name": "Fixed Mantine centered Education Timeline axis",
       "norm_label": "decision dec-20260902-10"
     },
     {
@@ -10251,8 +10548,8 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_education_timeline_centered_axis_layout",
-      "community": 67,
-      "community_name": "Education timeline centered-axis layout",
+      "community": 8,
+      "community_name": "2026-09-02.md",
       "norm_label": "education timeline centered-axis layout"
     },
     {
@@ -10262,8 +10559,8 @@
       "source_location": "L123",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_2026_09_02_16_07_03_00",
-      "community": 67,
-      "community_name": "Education timeline centered-axis layout",
+      "community": 8,
+      "community_name": "2026-09-02.md",
       "norm_label": "2026-09-02 16:07 +03:00"
     },
     {
@@ -10273,8 +10570,8 @@
       "source_location": "L132",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_decision_dec_20260902_08",
-      "community": 67,
-      "community_name": "Education timeline centered-axis layout",
+      "community": 8,
+      "community_name": "2026-09-02.md",
       "norm_label": "decision dec-20260902-08"
     },
     {
@@ -10317,8 +10614,8 @@
       "source_location": "L151",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_education_timeline_and_language_terminal",
-      "community": 8,
-      "community_name": "2026-09-02.md",
+      "community": 65,
+      "community_name": "Education timeline and language terminal",
       "norm_label": "education timeline and language terminal"
     },
     {
@@ -10328,8 +10625,8 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_2026_09_02_15_32_03_00",
-      "community": 8,
-      "community_name": "2026-09-02.md",
+      "community": 65,
+      "community_name": "Education timeline and language terminal",
       "norm_label": "2026-09-02 15:32 +03:00"
     },
     {
@@ -10339,8 +10636,8 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_decision_dec_20260902_06",
-      "community": 8,
-      "community_name": "2026-09-02.md",
+      "community": 65,
+      "community_name": "Education timeline and language terminal",
       "norm_label": "decision dec-20260902-06"
     },
     {
@@ -10350,8 +10647,8 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_disabled_loading_animation_speed_debug_panel",
-      "community": 65,
-      "community_name": "Disabled loading animation speed debug panel",
+      "community": 8,
+      "community_name": "2026-09-02.md",
       "norm_label": "disabled loading animation speed debug panel"
     },
     {
@@ -10361,8 +10658,8 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_2026_09_02_12_58_03_00",
-      "community": 65,
-      "community_name": "Disabled loading animation speed debug panel",
+      "community": 8,
+      "community_name": "2026-09-02.md",
       "norm_label": "2026-09-02 12:58 +03:00"
     },
     {
@@ -10372,8 +10669,8 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "agent_logs_2026_09_2026_09_02_decision_dec_20260902_01",
-      "community": 65,
-      "community_name": "Disabled loading animation speed debug panel",
+      "community": 8,
+      "community_name": "2026-09-02.md",
       "norm_label": "decision dec-20260902-01"
     },
     {
@@ -10872,7 +11169,7 @@
       "norm_label": "decision dec-20260906-01"
     },
     {
-      "label": "18:58 +03:00 — [feature] Transfer the loader portrait into the Hero scene",
+      "label": "18:58 +03:00 \u2014 [feature] Transfer the loader portrait into the Hero scene",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-06.md",
       "source_location": "L16",
@@ -10880,7 +11177,7 @@
       "id": "agent_logs_2026_09_2026_09_06_18_58_03_00_feature_transfer_the_loader_portrait_into_the_hero_scene",
       "community": 51,
       "community_name": "Persistent project media mock",
-      "norm_label": "18:58 +03:00 — [feature] transfer the loader portrait into the hero scene"
+      "norm_label": "18:58 +03:00 \u2014 [feature] transfer the loader portrait into the hero scene"
     },
     {
       "label": "Decision DEC-20260906-02",
@@ -10916,7 +11213,7 @@
       "norm_label": "seamless hero portrait handoff"
     },
     {
-      "label": "2026-09-07 22:55 +03:00 — Contained the Hero display title within its column",
+      "label": "2026-09-07 22:55 +03:00 \u2014 Contained the Hero display title within its column",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L3",
@@ -10924,10 +11221,10 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_22_55_03_00_contained_the_hero_display_title_within_its_column",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 22:55 +03:00 — contained the hero display title within its column"
+      "norm_label": "2026-09-07 22:55 +03:00 \u2014 contained the hero display title within its column"
     },
     {
-      "label": "2026-09-07 22:53 +03:00 — Restored left alignment for expanded education details",
+      "label": "2026-09-07 22:53 +03:00 \u2014 Restored left alignment for expanded education details",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L12",
@@ -10935,7 +11232,7 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_22_53_03_00_restored_left_alignment_for_expanded_education_details",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 22:53 +03:00 — restored left alignment for expanded education details"
+      "norm_label": "2026-09-07 22:53 +03:00 \u2014 restored left alignment for expanded education details"
     },
     {
       "label": "Decision DEC-20260907-12",
@@ -10949,7 +11246,7 @@
       "norm_label": "decision dec-20260907-12"
     },
     {
-      "label": "2026-09-07 22:51 +03:00 — Scaled Unbounded display typography to its layout contexts",
+      "label": "2026-09-07 22:51 +03:00 \u2014 Scaled Unbounded display typography to its layout contexts",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L25",
@@ -10957,10 +11254,10 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_22_51_03_00_scaled_unbounded_display_typography_to_its_layout_contexts",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 22:51 +03:00 — scaled unbounded display typography to its layout contexts"
+      "norm_label": "2026-09-07 22:51 +03:00 \u2014 scaled unbounded display typography to its layout contexts"
     },
     {
-      "label": "2026-09-07 22:45 +03:00 — Replaced display typography with Unbounded",
+      "label": "2026-09-07 22:45 +03:00 \u2014 Replaced display typography with Unbounded",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L34",
@@ -10968,7 +11265,7 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_22_45_03_00_replaced_display_typography_with_unbounded",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 22:45 +03:00 — replaced display typography with unbounded"
+      "norm_label": "2026-09-07 22:45 +03:00 \u2014 replaced display typography with unbounded"
     },
     {
       "label": "Decision DEC-20260907-11",
@@ -10982,7 +11279,7 @@
       "norm_label": "decision dec-20260907-11"
     },
     {
-      "label": "2026-09-07 23:25 +03:00 — Removed Hero portrait inner fill",
+      "label": "2026-09-07 23:25 +03:00 \u2014 Removed Hero portrait inner fill",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L47",
@@ -10990,7 +11287,7 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_23_25_03_00_removed_hero_portrait_inner_fill",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 23:25 +03:00 — removed hero portrait inner fill"
+      "norm_label": "2026-09-07 23:25 +03:00 \u2014 removed hero portrait inner fill"
     },
     {
       "label": "Decision DEC-20260907-10",
@@ -11004,7 +11301,7 @@
       "norm_label": "decision dec-20260907-10"
     },
     {
-      "label": "2026-09-07 23:20 +03:00 — Removed project Hero frame styling",
+      "label": "2026-09-07 23:20 +03:00 \u2014 Removed project Hero frame styling",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L60",
@@ -11012,7 +11309,7 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_23_20_03_00_removed_project_hero_frame_styling",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 23:20 +03:00 — removed project hero frame styling"
+      "norm_label": "2026-09-07 23:20 +03:00 \u2014 removed project hero frame styling"
     },
     {
       "label": "Decision DEC-20260907-09",
@@ -11026,7 +11323,7 @@
       "norm_label": "decision dec-20260907-09"
     },
     {
-      "label": "2026-09-07 22:13 +03:00 — Constrained project media images",
+      "label": "2026-09-07 22:13 +03:00 \u2014 Constrained project media images",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L73",
@@ -11034,7 +11331,7 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_22_13_03_00_constrained_project_media_images",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 22:13 +03:00 — constrained project media images"
+      "norm_label": "2026-09-07 22:13 +03:00 \u2014 constrained project media images"
     },
     {
       "label": "Decision DEC-20260907-08",
@@ -11048,7 +11345,7 @@
       "norm_label": "decision dec-20260907-08"
     },
     {
-      "label": "2026-09-07 22:22 +03:00 — Matched image screen size to media bounds",
+      "label": "2026-09-07 22:22 +03:00 \u2014 Matched image screen size to media bounds",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L86",
@@ -11056,10 +11353,10 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_22_22_03_00_matched_image_screen_size_to_media_bounds",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 22:22 +03:00 — matched image screen size to media bounds"
+      "norm_label": "2026-09-07 22:22 +03:00 \u2014 matched image screen size to media bounds"
     },
     {
-      "label": "2026-09-07 22:16 +03:00 — Explicitly constrained project image width",
+      "label": "2026-09-07 22:16 +03:00 \u2014 Explicitly constrained project image width",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L95",
@@ -11067,10 +11364,10 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_22_16_03_00_explicitly_constrained_project_image_width",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 22:16 +03:00 — explicitly constrained project image width"
+      "norm_label": "2026-09-07 22:16 +03:00 \u2014 explicitly constrained project image width"
     },
     {
-      "label": "2026-09-07 22:05 +03:00 — Villa Krim project content",
+      "label": "2026-09-07 22:05 +03:00 \u2014 Villa Krim project content",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L104",
@@ -11078,7 +11375,7 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_22_05_03_00_villa_krim_project_content",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 22:05 +03:00 — villa krim project content"
+      "norm_label": "2026-09-07 22:05 +03:00 \u2014 villa krim project content"
     },
     {
       "label": "Decision DEC-20260907-06",
@@ -11092,7 +11389,7 @@
       "norm_label": "decision dec-20260907-06"
     },
     {
-      "label": "2026-09-07 22:20 +03:00 — Expanded Author’s Wine Villa Krim research",
+      "label": "2026-09-07 22:20 +03:00 \u2014 Expanded Author\u2019s Wine Villa Krim research",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L117",
@@ -11100,7 +11397,7 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_22_20_03_00_expanded_author_s_wine_villa_krim_research",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 22:20 +03:00 — expanded author’s wine villa krim research"
+      "norm_label": "2026-09-07 22:20 +03:00 \u2014 expanded author\u2019s wine villa krim research"
     },
     {
       "label": "Neo4 Web / Interior Sightline project content",
@@ -11202,7 +11499,7 @@
       "norm_label": "2026-09-07 22:30 +03:00"
     },
     {
-      "label": "2026-09-07 22:10 +03:00 — Filled the AR Chudoboxes portfolio case",
+      "label": "2026-09-07 22:10 +03:00 \u2014 Filled the AR Chudoboxes portfolio case",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L178",
@@ -11210,10 +11507,10 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_22_10_03_00_filled_the_ar_chudoboxes_portfolio_case",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 22:10 +03:00 — filled the ar chudoboxes portfolio case"
+      "norm_label": "2026-09-07 22:10 +03:00 \u2014 filled the ar chudoboxes portfolio case"
     },
     {
-      "label": "2026-09-07 22:35 +03:00 — Added the portfolio research source map",
+      "label": "2026-09-07 22:35 +03:00 \u2014 Added the portfolio research source map",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L187",
@@ -11221,7 +11518,7 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_22_35_03_00_added_the_portfolio_research_source_map",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 22:35 +03:00 — added the portfolio research source map"
+      "norm_label": "2026-09-07 22:35 +03:00 \u2014 added the portfolio research source map"
     },
     {
       "label": "Decision DEC-20260907-03",
@@ -11235,7 +11532,7 @@
       "norm_label": "decision dec-20260907-03"
     },
     {
-      "label": "2026-09-07 23:17 +03:00 — Removed redundant footer bottom block",
+      "label": "2026-09-07 23:17 +03:00 \u2014 Removed redundant footer bottom block",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L200",
@@ -11243,7 +11540,7 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_23_17_03_00_removed_redundant_footer_bottom_block",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 23:17 +03:00 — removed redundant footer bottom block"
+      "norm_label": "2026-09-07 23:17 +03:00 \u2014 removed redundant footer bottom block"
     },
     {
       "label": "Decision DEC-20260907-13",
@@ -11257,7 +11554,7 @@
       "norm_label": "decision dec-20260907-13"
     },
     {
-      "label": "2026-09-07 23:24 +03:00 — Removed contact introduction paragraph",
+      "label": "2026-09-07 23:24 +03:00 \u2014 Removed contact introduction paragraph",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L213",
@@ -11265,7 +11562,7 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_23_24_03_00_removed_contact_introduction_paragraph",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 23:24 +03:00 — removed contact introduction paragraph"
+      "norm_label": "2026-09-07 23:24 +03:00 \u2014 removed contact introduction paragraph"
     },
     {
       "label": "Decision DEC-20260907-14",
@@ -11279,7 +11576,7 @@
       "norm_label": "decision dec-20260907-14"
     },
     {
-      "label": "2026-09-07 23:31 +03:00 — Vertically centered contact columns",
+      "label": "2026-09-07 23:31 +03:00 \u2014 Vertically centered contact columns",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L226",
@@ -11287,7 +11584,7 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_23_31_03_00_vertically_centered_contact_columns",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 23:31 +03:00 — vertically centered contact columns"
+      "norm_label": "2026-09-07 23:31 +03:00 \u2014 vertically centered contact columns"
     },
     {
       "label": "Decision DEC-20260907-15",
@@ -11301,7 +11598,7 @@
       "norm_label": "decision dec-20260907-15"
     },
     {
-      "label": "2026-09-07 23:37 +03:00 — Reduced footer link spacing",
+      "label": "2026-09-07 23:37 +03:00 \u2014 Reduced footer link spacing",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/2026-09-07.md",
       "source_location": "L239",
@@ -11309,7 +11606,7 @@
       "id": "agent_logs_2026_09_2026_09_07_2026_09_07_23_37_03_00_reduced_footer_link_spacing",
       "community": 4,
       "community_name": "Seamless Hero portrait handoff",
-      "norm_label": "2026-09-07 23:37 +03:00 — reduced footer link spacing"
+      "norm_label": "2026-09-07 23:37 +03:00 \u2014 reduced footer link spacing"
     },
     {
       "label": "Decision DEC-20260907-16",
@@ -11477,6 +11774,39 @@
       "norm_label": "2026-09-08 00:20 +03:00"
     },
     {
+      "label": "Directions reference redesign",
+      "file_type": "document",
+      "source_file": "agent-logs/2026/09/2026-09-08.md",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "agent_logs_2026_09_2026_09_08_directions_reference_redesign",
+      "community": 27,
+      "community_name": "2026-09-08.md",
+      "norm_label": "directions reference redesign"
+    },
+    {
+      "label": "Directions technology row alignment",
+      "file_type": "document",
+      "source_file": "agent-logs/2026/09/2026-09-08.md",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "agent_logs_2026_09_2026_09_08_directions_technology_row_alignment",
+      "community": 27,
+      "community_name": "2026-09-08.md",
+      "norm_label": "directions technology row alignment"
+    },
+    {
+      "label": "Directions HUD motion system",
+      "file_type": "document",
+      "source_file": "agent-logs/2026/09/2026-09-08.md",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "agent_logs_2026_09_2026_09_08_directions_hud_motion_system",
+      "community": 27,
+      "community_name": "2026-09-08.md",
+      "norm_label": "directions hud motion system"
+    },
+    {
       "label": "09/README.md",
       "file_type": "document",
       "source_file": "agent-logs/2026/09/README.md",
@@ -11546,7 +11876,7 @@
       "label": "Latest entries",
       "file_type": "document",
       "source_file": "agent-logs/README.md",
-      "source_location": "L123",
+      "source_location": "L127",
       "_origin": "ast",
       "id": "agent_logs_readme_latest_entries",
       "community": 59,
@@ -11557,7 +11887,7 @@
       "label": "Browse by period",
       "file_type": "document",
       "source_file": "agent-logs/README.md",
-      "source_location": "L154",
+      "source_location": "L158",
       "_origin": "ast",
       "id": "agent_logs_readme_browse_by_period",
       "community": 59,
@@ -11568,7 +11898,7 @@
       "label": "Browse by decision",
       "file_type": "document",
       "source_file": "agent-logs/README.md",
-      "source_location": "L161",
+      "source_location": "L165",
       "_origin": "ast",
       "id": "agent_logs_readme_browse_by_decision",
       "community": 59,
@@ -11582,53 +11912,9 @@
       "source_location": "L1",
       "_origin": "explicit-source-map",
       "community": 22,
-      "community_name": "Dmitry Fursov — Software Developer",
+      "community_name": "Dmitry Fursov \u2014 Software Developer",
       "norm_label": "portfolio research sources",
       "id": "docs_portfolio_research_sources"
-    },
-    {
-      "label": "AR Chudoboxes / Chudoboxes EKO research",
-      "file_type": "document",
-      "source_file": "external/ar-chudoboxes-portfolio-research.md",
-      "source_location": "L1",
-      "_origin": "explicit-source-map",
-      "community": 22,
-      "community_name": "Dmitry Fursov — Software Developer",
-      "norm_label": "ar chudoboxes / chudoboxes eko research",
-      "id": "ar_chudoboxes_portfolio_research"
-    },
-    {
-      "label": "AR Coloring research",
-      "file_type": "document",
-      "source_file": "external/ar-coloring-research.md",
-      "source_location": "L1",
-      "_origin": "explicit-source-map",
-      "community": 22,
-      "community_name": "Dmitry Fursov — Software Developer",
-      "norm_label": "ar coloring research",
-      "id": "ar_coloring_research"
-    },
-    {
-      "label": "Villa Krim / Virtual Sommelier research",
-      "file_type": "document",
-      "source_file": "external/virtual-sommelier-villa-krim-research.md",
-      "source_location": "L1",
-      "_origin": "explicit-source-map",
-      "community": 22,
-      "community_name": "Dmitry Fursov — Software Developer",
-      "norm_label": "villa krim / virtual sommelier research",
-      "id": "virtual_sommelier_villa_krim_research"
-    },
-    {
-      "label": "Neo4 Sightline research",
-      "file_type": "document",
-      "source_file": "external/neo4-sightline-research.md",
-      "source_location": "L1",
-      "_origin": "explicit-source-map",
-      "community": 22,
-      "community_name": "Dmitry Fursov — Software Developer",
-      "norm_label": "neo4 sightline research",
-      "id": "neo4_sightline_research"
     }
   ],
   "links": [
@@ -21893,6 +22179,284 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_config_directionsmotion_config",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_card_stagger_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_config_directionsmotion_config",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_content_delay_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_config_directionsmotion_config",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_metric_delay_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_config_directionsmotion_config",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_metric_label_delay_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_config_directionsmotion_config",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_scan_duration_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_config_directionsmotion_config",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_scan_interval_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_config_directionsmotion_config",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_tilt_limit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_config_directionsmotion_config",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_tool_pulse_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_config_directionsmotion_config",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_tools_delay_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/config/directionsMotion.config.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_config_directionsmotion_config",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_directions_entrance_duration_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/model/useDirectionsMotion/useDirectionsMotion.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_model_usedirectionsmotion_usedirectionsmotion",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/DirectionCard.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_directioncard",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/model/useDirectionCardMotion/useDirectionCardMotion.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_usedirectioncardmotion",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/DirectionCard.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_directioncard",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_card_stagger_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/model/useDirectionCardMotion/useDirectionCardMotion.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_usedirectioncardmotion",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_card_stagger_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/DirectionCard.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_directioncard",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_content_delay_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/DirectionCard.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_directioncard",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_tools_delay_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/DirectionCard.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_directioncard",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_tool_pulse_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/model/useDirectionCardMotion/useDirectionCardMotion.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_usedirectioncardmotion",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_metric_delay_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/model/useDirectionCardMotion/useDirectionCardMotion.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_usedirectioncardmotion",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_metric_label_delay_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/model/useDirectionsMotion/useDirectionsMotion.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_model_usedirectionsmotion_usedirectionsmotion",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_scan_duration_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/model/useDirectionsMotion/useDirectionsMotion.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_model_usedirectionsmotion_usedirectionsmotion",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_scan_interval_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/model/useDirectionsMotion/useDirectionsMotion.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_model_usedirectionsmotion_usedirectionsmotion",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_directions_entrance_duration_ms",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/model/useDirectionCardMotion/useDirectionCardMotion.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_usedirectioncardmotion",
+      "target": "src_widgets_profile_model_directions_config_directionsmotion_config_direction_tilt_limit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/widgets/profile/model/directions/data/directions.data.ts",
       "source_location": "L9",
       "weight": 1.0,
@@ -21930,7 +22494,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/widgets/profile/ui/Directions/Directions.tsx",
-      "source_location": "L6",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_widgets_profile_ui_directions_directions",
@@ -21942,7 +22506,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/widgets/profile/ui/Directions/Directions.tsx",
-      "source_location": "L6",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_widgets_profile_ui_directions_directions",
@@ -21952,11 +22516,140 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/model/useDirectionsMotion/types/useDirectionsMotion.types.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_model_usedirectionsmotion_types_usedirectionsmotion_types",
+      "target": "src_widgets_profile_model_directions_model_usedirectionsmotion_types_usedirectionsmotion_types_usedirectionsmotionparams",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/model/useDirectionsMotion/types/useDirectionsMotion.types.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_model_usedirectionsmotion_types_usedirectionsmotion_types",
+      "target": "src_widgets_profile_model_directions_model_usedirectionsmotion_types_usedirectionsmotion_types_usedirectionsmotionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/model/useDirectionsMotion/useDirectionsMotion.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_model_usedirectionsmotion_usedirectionsmotion",
+      "target": "src_widgets_profile_model_directions_model_usedirectionsmotion_types_usedirectionsmotion_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/model/useDirectionsMotion/useDirectionsMotion.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_model_usedirectionsmotion_usedirectionsmotion",
+      "target": "src_widgets_profile_model_directions_model_usedirectionsmotion_types_usedirectionsmotion_types_usedirectionsmotionparams",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/model/useDirectionsMotion/useDirectionsMotion.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_model_usedirectionsmotion_usedirectionsmotion",
+      "target": "src_widgets_profile_model_directions_model_usedirectionsmotion_types_usedirectionsmotion_types_usedirectionsmotionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/model/directions/model/useDirectionsMotion/useDirectionsMotion.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_model_directions_model_usedirectionsmotion_usedirectionsmotion",
+      "target": "src_widgets_profile_model_directions_model_usedirectionsmotion_usedirectionsmotion_usedirectionsmotion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/Directions.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_directions",
+      "target": "src_widgets_profile_model_directions_model_usedirectionsmotion_usedirectionsmotion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/Directions.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_directions",
+      "target": "src_widgets_profile_model_directions_model_usedirectionsmotion_usedirectionsmotion_usedirectionsmotion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/widgets/profile/ui/Directions/Directions.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_directions_directions",
+      "target": "src_widgets_profile_model_directions_model_usedirectionsmotion_usedirectionsmotion_usedirectionsmotion"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/widgets/profile/model/directions/types/directions.types.ts",
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_widgets_profile_model_directions_types_directions_types",
+      "target": "src_widgets_profile_model_directions_types_directions_types_direction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/types/DirectionCard.types.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_types_directioncard_types",
+      "target": "src_widgets_profile_model_directions_types_directions_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/types/DirectionCard.types.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_types_directioncard_types",
       "target": "src_widgets_profile_model_directions_types_directions_types_direction",
       "confidence_score": 1.0
     },
@@ -22245,6 +22938,30 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/Directions.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_directions",
+      "target": "src_widgets_profile_ui_directions_ui_directioncard_directioncard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/Directions.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_directions",
+      "target": "src_widgets_profile_ui_directions_ui_directioncard_directioncard_directioncard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/widgets/profile/ui/Profile/Profile.tsx",
       "source_location": "L3",
       "weight": 1.0,
@@ -22266,6 +22983,41 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/__tests__/Directions.holds-metrics-until-the-section-entrance-completes.test.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_tests_directions_holds_metrics_until_the_section_entrance_completes_test",
+      "target": "src_widgets_profile_ui_directions_tests_directionstestutils",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/__tests__/Directions.holds-metrics-until-the-section-entrance-completes.test.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_tests_directions_holds_metrics_until_the_section_entrance_completes_test",
+      "target": "src_widgets_profile_ui_directions_tests_directionstestutils_installdirectionsintersectionobservermock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/__tests__/directionsTestUtils.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_tests_directionstestutils",
+      "target": "src_widgets_profile_ui_directions_tests_directionstestutils_installdirectionsintersectionobservermock",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/widgets/profile/ui/Directions/types/Directions.types.ts",
@@ -22274,6 +23026,157 @@
       "_origin": "ast",
       "source": "src_widgets_profile_ui_directions_types_directions_types",
       "target": "src_widgets_profile_ui_directions_types_directions_types_directionsprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/DirectionCard.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_directioncard",
+      "target": "src_widgets_profile_ui_directions_ui_directioncard_directioncard_directioncard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/DirectionCard.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_directioncard",
+      "target": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_usedirectioncardmotion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/DirectionCard.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_directioncard",
+      "target": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_usedirectioncardmotion_usedirectioncardmotion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/DirectionCard.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_directioncard",
+      "target": "src_widgets_profile_ui_directions_ui_directioncard_types_directioncard_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/DirectionCard.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_directioncard",
+      "target": "src_widgets_profile_ui_directions_ui_directioncard_types_directioncard_types_directioncardprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/DirectionCard.tsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_directioncard_directioncard",
+      "target": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_usedirectioncardmotion_usedirectioncardmotion"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/model/useDirectionCardMotion/types/useDirectionCardMotion.types.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_types_usedirectioncardmotion_types",
+      "target": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_types_usedirectioncardmotion_types_usedirectioncardmotionparams",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/model/useDirectionCardMotion/types/useDirectionCardMotion.types.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_types_usedirectioncardmotion_types",
+      "target": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_types_usedirectioncardmotion_types_usedirectioncardmotionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/model/useDirectionCardMotion/useDirectionCardMotion.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_usedirectioncardmotion",
+      "target": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_types_usedirectioncardmotion_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/model/useDirectionCardMotion/useDirectionCardMotion.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_usedirectioncardmotion",
+      "target": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_types_usedirectioncardmotion_types_usedirectioncardmotionparams",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/model/useDirectionCardMotion/useDirectionCardMotion.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_usedirectioncardmotion",
+      "target": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_types_usedirectioncardmotion_types_usedirectioncardmotionresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/model/useDirectionCardMotion/useDirectionCardMotion.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_usedirectioncardmotion",
+      "target": "src_widgets_profile_ui_directions_ui_directioncard_model_usedirectioncardmotion_usedirectioncardmotion_usedirectioncardmotion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/widgets/profile/ui/Directions/ui/DirectionCard/types/DirectionCard.types.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_widgets_profile_ui_directions_ui_directioncard_types_directioncard_types",
+      "target": "src_widgets_profile_ui_directions_ui_directioncard_types_directioncard_types_directioncardprops",
       "confidence_score": 1.0
     },
     {
@@ -26915,7 +27818,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "readme_dmitry_fursov_software_developer",
-      "target": "readme_локальная_разработка",
+      "target": "readme_\u043b\u043e\u043a\u0430\u043b\u044c\u043d\u0430\u044f_\u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430",
       "confidence_score": 1.0
     },
     {
@@ -26926,7 +27829,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "readme_dmitry_fursov_software_developer",
-      "target": "readme_языки",
+      "target": "readme_\u044f\u0437\u044b\u043a\u0438",
       "confidence_score": 1.0
     },
     {
@@ -26966,7 +27869,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L152",
+      "source_location": "L156",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme",
@@ -27087,7 +27990,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L147",
+      "source_location": "L151",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme",
@@ -27296,7 +28199,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L125",
+      "source_location": "L129",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme",
@@ -27417,7 +28320,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L115",
+      "source_location": "L119",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme",
@@ -28044,7 +28947,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L97",
+      "source_location": "L101",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme",
@@ -28286,7 +29189,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L158",
+      "source_location": "L162",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme",
@@ -28308,7 +29211,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/2026/09/README.md",
-      "source_location": "L105",
+      "source_location": "L109",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_2026_09_readme",
@@ -28330,7 +29233,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L93",
+      "source_location": "L97",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme",
@@ -28660,7 +29563,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/2026/09/README.md",
-      "source_location": "L65",
+      "source_location": "L69",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_2026_09_readme",
@@ -28682,7 +29585,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L53",
+      "source_location": "L57",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme",
@@ -29166,7 +30069,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/2026/09/README.md",
-      "source_location": "L61",
+      "source_location": "L65",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_2026_09_readme",
@@ -29188,7 +30091,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L49",
+      "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme",
@@ -29254,7 +30157,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/2026/09/README.md",
-      "source_location": "L59",
+      "source_location": "L63",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_2026_09_readme",
@@ -29276,7 +30179,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L47",
+      "source_location": "L51",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme",
@@ -29386,7 +30289,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/2026/09/README.md",
-      "source_location": "L57",
+      "source_location": "L61",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_2026_09_readme",
@@ -29397,7 +30300,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L45",
+      "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme",
@@ -29430,7 +30333,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/2026/09/README.md",
-      "source_location": "L51",
+      "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_2026_09_readme",
@@ -29452,7 +30355,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L41",
+      "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme",
@@ -29518,7 +30421,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/2026/09/README.md",
-      "source_location": "L13",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_2026_09_readme",
@@ -29540,7 +30443,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L13",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme",
@@ -30133,6 +31036,39 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "agent-logs/2026/09/2026-09-08.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agent_logs_2026_09_2026_09_08_dynamic_live_cam_hud_refinement",
+      "target": "agent_logs_2026_09_2026_09_08_directions_hud_motion_system",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agent-logs/2026/09/2026-09-08.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agent_logs_2026_09_2026_09_08_dynamic_live_cam_hud_refinement",
+      "target": "agent_logs_2026_09_2026_09_08_directions_reference_redesign",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agent-logs/2026/09/2026-09-08.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agent_logs_2026_09_2026_09_08_dynamic_live_cam_hud_refinement",
+      "target": "agent_logs_2026_09_2026_09_08_directions_technology_row_alignment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "agent-logs/2026/09/README.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -30145,7 +31081,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L159",
+      "source_location": "L163",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme",
@@ -30167,7 +31103,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L163",
+      "source_location": "L167",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme",
@@ -30189,7 +31125,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L161",
+      "source_location": "L165",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme_ai_agent_change_log_index",
@@ -30200,7 +31136,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L154",
+      "source_location": "L158",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme_ai_agent_change_log_index",
@@ -30211,58 +31147,14 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "agent-logs/README.md",
-      "source_location": "L123",
+      "source_location": "L127",
       "weight": 1.0,
       "_origin": "ast",
       "source": "agent_logs_readme_ai_agent_change_log_index",
       "target": "agent_logs_readme_latest_entries",
       "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/portfolio-research-sources.md",
-      "source_location": "L18",
-      "weight": 1.0,
-      "_origin": "explicit-source-map",
-      "source": "docs_portfolio_research_sources",
-      "target": "ar_chudoboxes_portfolio_research"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/portfolio-research-sources.md",
-      "source_location": "L18",
-      "weight": 1.0,
-      "_origin": "explicit-source-map",
-      "source": "docs_portfolio_research_sources",
-      "target": "ar_coloring_research"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/portfolio-research-sources.md",
-      "source_location": "L18",
-      "weight": 1.0,
-      "_origin": "explicit-source-map",
-      "source": "docs_portfolio_research_sources",
-      "target": "neo4_sightline_research"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/portfolio-research-sources.md",
-      "source_location": "L18",
-      "weight": 1.0,
-      "_origin": "explicit-source-map",
-      "source": "docs_portfolio_research_sources",
-      "target": "virtual_sommelier_villa_krim_research"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "cdb6f3295950bd248e6bc2395d1c430a41d35dbd"
+  "built_at_commit": "b03b00d5bbc57424a8282fe012f335fafb6d6ca3"
 }

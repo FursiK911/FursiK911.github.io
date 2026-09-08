@@ -1,5 +1,7 @@
 # AI Agent Change Log Index
 
+| 2026-09-08 | ui, directions, animation, accessibility, responsive, testing, graphify | [directions HUD motion system](2026/09/2026-09-08.md#directions-hud-motion-system) |
+
 | 2026-09-08 | ui, directions, responsive, i18n, testing | [directions reference redesign](2026/09/2026-09-08.md#directions-reference-redesign) |
 
 | 2026-09-08 | ui, hero, live-cam, terminal, animation, responsive, testing, graphify | [centered slow LiveCam terminal](2026/09/2026-09-08.md#centered-slow-livecam-terminal) |

@@ -1,0 +1,932 @@
+- generic [ref=f6e3]:
+    - banner [ref=f6e4]:
+        - generic [ref=f6e5]:
+            - link "Главная — Дмитрий Фурсов" [ref=f6e6] [cursor=pointer]:
+                - /url: '#top'
+                - generic [ref=f6e7]: Дмитрий Фурсов
+                - generic "Software Developer" [ref=f6e8]
+            - navigation "Primary navigation" [ref=f6e9]:
+                - link "01Профиль" [ref=f6e10] [cursor=pointer]:
+                    - /url: '#top'
+                    - generic [ref=f6e11]: '01'
+                    - text: Профиль
+                - link "02Проекты" [ref=f6e12] [cursor=pointer]:
+                    - /url: '#projects'
+                    - generic [ref=f6e13]: '02'
+                    - text: Проекты
+                - link "03Опыт" [ref=f6e14] [cursor=pointer]:
+                    - /url: '#experience'
+                    - generic [ref=f6e15]: '03'
+                    - text: Опыт
+                - link "04Стек" [ref=f6e16] [cursor=pointer]:
+                    - /url: '#stack'
+                    - generic [ref=f6e17]: '04'
+                    - text: Стек
+                - link "05Образование" [ref=f6e18] [cursor=pointer]:
+                    - /url: '#education'
+                    - generic [ref=f6e19]: '05'
+                    - text: Образование
+                - link "06Контакты" [ref=f6e20] [cursor=pointer]:
+                    - /url: '#contact'
+                    - generic [ref=f6e21]: '06'
+                    - text: Контакты
+            - generic [ref=f6e22]:
+                - link "СКАЧАТЬ РЕЗЮМЕ" [ref=f6e23] [cursor=pointer]:
+                    - /url: /cv/Dmitry-Fursov-Unity-Developer-CV.pdf
+                - button "Change language" [ref=f6e27] [cursor=pointer]: EN
+    - main [ref=f6e28]:
+        - generic [ref=f6e29]:
+            - generic [ref=f6e30]:
+                - generic [ref=f6e31]:
+                    - generic [ref=f6e32]: PLAYER_PROFILE ● ONLINE
+                    - heading "ПРИВЕТ, Я ДМИТРИЙ ФУРСОВ" [level=1] [ref=f6e33]:
+                        - generic [ref=f6e34]: ПРИВЕТ, Я
+                        - text: ДМИТРИЙ ФУРСОВ
+                    - paragraph [ref=f6e35]:
+                        - generic "Software Developer" [ref=f6e36]
+                    - region "Камера прямой трансляции" [ref=f6e38]:
+                        - status [ref=f6e39]:
+                            - generic [ref=f6e40]: SIGNAL LOST // RECONNECTING
+                    - generic [ref=f6e45]:
+                        - link "СМОТРЕТЬ ПРОЕКТЫ ↘" [ref=f6e46] [cursor=pointer]:
+                            - /url: '#projects'
+                            - text: СМОТРЕТЬ ПРОЕКТЫ
+                            - generic [ref=f6e47]: ↘
+                        - link "СКАЧАТЬ РЕЗЮМЕ" [ref=f6e48] [cursor=pointer]:
+                            - /url: /cv/Dmitry-Fursov-Unity-Developer-CV.pdf
+                        - link "СВЯЗАТЬСЯ ↗" [ref=f6e52] [cursor=pointer]:
+                            - /url: '#contact'
+                - generic [ref=f6e53]:
+                    - generic [ref=f6e54]:
+                        - img "Дмитрий Фурсов, Software Developer" [ref=f6e57]
+                        - generic [ref=f6e58]: PROFILE_IMAGE // 001
+                    - generic [ref=f6e59]: 'LANG: RU_NATIVE / UA_B2 / EN_B1'
+            - generic [ref=f6e62]:
+                - article [ref=f6e63]:
+                    - generic [aria-hidden] [ref=f6e64]: '01'
+                    - generic [ref=f6e71]:
+                        - heading "WEB" [level=3] [ref=f6e72]
+                        - generic [ref=f6e73]: Современные веб-приложения и платформы
+                    - list [ref=f6e74]:
+                        - listitem [ref=f6e75]: React
+                        - listitem [ref=f6e76]: TypeScript
+                        - listitem [ref=f6e77]: Vue
+                        - listitem [ref=f6e78]: Next.js
+                    - generic "8+ ПРОЕКТОВ" [ref=f6e80]:
+                        - generic [ref=f6e81]:
+                            - generic [ref=f6e82]: '8'
+                            - generic [ref=f6e87]: +
+                        - generic [ref=f6e90]: ПРОЕКТОВ
+                - article [ref=f6e91]:
+                    - generic [aria-hidden] [ref=f6e92]: '02'
+                    - generic [ref=f6e98]:
+                        - heading "GAME ENGINES" [level=3] [ref=f6e99]
+                        - generic [ref=f6e100]: Интерактивные 3D-проекты и симуляции
+                    - list [ref=f6e101]:
+                        - listitem [ref=f6e102]: Unity
+                        - listitem [ref=f6e103]: C#
+                        - listitem [ref=f6e104]: Unigine
+                        - listitem [ref=f6e105]: WebGL
+                    - generic "15+ ПРОЕКТОВ" [ref=f6e107]:
+                        - generic [ref=f6e108]:
+                            - generic [ref=f6e111]:
+                                - generic [ref=f6e112]: '1'
+                                - generic [ref=f6e114]: '5'
+                            - generic [ref=f6e116]: +
+                        - generic [ref=f6e119]: ПРОЕКТОВ
+                - article [ref=f6e120]:
+                    - generic [aria-hidden] [ref=f6e121]: '03'
+                    - generic [ref=f6e126]:
+                        - heading "MOBILE" [level=3] [ref=f6e127]
+                        - generic [ref=f6e128]: Нативные и кроссплатформенные приложения
+                    - list [ref=f6e129]:
+                        - listitem [ref=f6e130]: Android
+                        - listitem [ref=f6e131]: iOS
+                        - listitem [ref=f6e132]: Unity
+                        - listitem [ref=f6e133]: Vuforia
+                    - generic "5+ ПРОЕКТОВ" [ref=f6e135]:
+                        - generic [ref=f6e136]:
+                            - generic [ref=f6e137]: '5'
+                            - generic [ref=f6e142]: +
+                        - generic [ref=f6e145]: ПРОЕКТОВ
+                - article [ref=f6e146]:
+                    - generic [aria-hidden] [ref=f6e147]: '04'
+                    - generic [ref=f6e152]:
+                        - heading "XR" [level=3] [ref=f6e153]
+                        - generic [ref=f6e154]: VR · AR · MR
+                    - list [ref=f6e155]:
+                        - listitem [ref=f6e156]: OpenXR
+                        - listitem [ref=f6e157]: SteamVR
+                        - listitem [ref=f6e158]: Vuforia
+                        - listitem [ref=f6e159]: OpenCV
+                    - generic "10+ ПРОЕКТОВ" [ref=f6e161]:
+                        - generic [ref=f6e162]:
+                            - generic [ref=f6e165]:
+                                - generic [ref=f6e166]: '1'
+                                - generic [ref=f6e168]: '0'
+                            - generic [ref=f6e170]: +
+                        - generic [ref=f6e173]: ПРОЕКТОВ
+        - generic [ref=f6e174]:
+            - generic [ref=f6e175]: 02 // ПРОЕКТЫ
+            - generic [ref=f6e178]:
+                - heading "ПРОЕКТЫ" [level=2] [ref=f6e179]
+                - paragraph [ref=f6e180]: Системы, симуляции, игры и интерфейсы, созданные на Unity, XR и web.
+            - group "Project filters" [ref=f6e181]:
+                - button "ВСЕ" [pressed] [ref=f6e182] [cursor=pointer]
+                - button "WEB" [ref=f6e183] [cursor=pointer]
+                - button "MOBILE" [ref=f6e184] [cursor=pointer]
+                - button "UNITY" [ref=f6e185] [cursor=pointer]
+                - button "UNIGINE" [ref=f6e186] [cursor=pointer]
+                - button "XR / AR" [ref=f6e187] [cursor=pointer]
+                - button "МУЛЬТИПЛЕЕР" [ref=f6e188] [cursor=pointer]
+            - generic [ref=f6e189]:
+                - article [ref=f6e190]:
+                    - button "VIEW PROJECT — myChess" [ref=f6e191] [cursor=pointer]:
+                        - generic [ref=f6e193]: MYCHESS-WEB // 01
+                        - generic [ref=f6e194]: ⌘
+                        - generic [ref=f6e195]: Web
+                    - generic [ref=f6e196]:
+                        - generic [ref=f6e197]:
+                            - text: WEB / МУЛЬТИПЛЕЕР
+                            - heading "myChess" [level=3] [ref=f6e198]
+                        - button "VIEW PROJECT ↗" [ref=f6e199] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e200]: ↗
+                    - generic [ref=f6e201]:
+                        - generic [ref=f6e202]: ООО ЦУП
+                        - time [ref=f6e203]: 09.2023 — 10.2024
+                    - paragraph [ref=f6e204]: Онлайн-шахматная платформа с мультиплеерными партиями, турнирами, анализом, головоломками и функциями сообщества.
+                    - generic [ref=f6e205]:
+                        - generic [ref=f6e206]: React
+                        - generic [ref=f6e207]: TypeScript
+                        - generic [ref=f6e208]: Redux Toolkit
+                        - generic [ref=f6e209]: React Query
+                        - generic [ref=f6e210]: Socket.io
+                - article [ref=f6e211]:
+                    - button "VIEW PROJECT — Мобильная multiplayer RTS" [ref=f6e212] [cursor=pointer]:
+                        - generic [ref=f6e214]: MOBILE-RTS // 02
+                        - generic [ref=f6e215]: ▣
+                        - generic [ref=f6e216]: Android / iOS
+                    - generic [ref=f6e217]:
+                        - generic [ref=f6e218]:
+                            - text: MOBILE / UNITY / МУЛЬТИПЛЕЕР
+                            - heading "Мобильная multiplayer RTS" [level=3] [ref=f6e219]
+                        - button "VIEW PROJECT ↗" [ref=f6e220] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e221]: ↗
+                    - generic [ref=f6e222]:
+                        - generic [ref=f6e223]: Yellow Element
+                        - time [ref=f6e224]: 09.2025 — 03.2026
+                    - paragraph [ref=f6e225]: Мобильная RTS с мультиплеерным PvP, турнирами, серверными событиями и сетевой инфраструктурой.
+                    - generic [ref=f6e226]:
+                        - generic [ref=f6e227]: Unity
+                        - generic [ref=f6e228]: C#
+                        - generic [ref=f6e229]: Mirror
+                        - generic [ref=f6e230]: PlayFab
+                        - generic [ref=f6e231]: Firebase
+                        - generic [ref=f6e232]: Azure Functions
+                - article [ref=f6e233]:
+                    - button "VIEW PROJECT — Промышленный VR-тренажёр" [ref=f6e234] [cursor=pointer]:
+                        - generic [ref=f6e236]: ROSATOM // 03
+                        - generic [ref=f6e237]: ◈
+                        - generic [ref=f6e238]: HTC VIVE Pro / Astra Linux
+                    - generic [ref=f6e239]:
+                        - generic [ref=f6e240]:
+                            - text: UNIGINE / XR / AR / МУЛЬТИПЛЕЕР
+                            - heading "Промышленный VR-тренажёр" [level=3] [ref=f6e241]
+                        - button "VIEW PROJECT ↗" [ref=f6e242] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e243]: ↗
+                    - generic [ref=f6e244]:
+                        - generic [ref=f6e245]: IT Tab
+                        - time [ref=f6e246]: 04.2023 — 09.2023
+                    - paragraph [ref=f6e247]: VR-тренажёр управления промышленным оборудованием с одиночным и мультиплеерным режимами, а также сценарием инструктора.
+                    - generic [ref=f6e248]:
+                        - generic [ref=f6e249]: Unigine
+                        - generic [ref=f6e250]: C#
+                        - generic [ref=f6e251]: SteamVR
+                        - generic [ref=f6e252]: Astra Linux
+                        - generic [ref=f6e253]: Custom VOIP
+                - article [ref=f6e254]:
+                    - button "VIEW PROJECT — MyChessVR" [ref=f6e255] [cursor=pointer]:
+                        - generic [ref=f6e257]: MYCHESSVR // 04
+                        - generic [ref=f6e258]: ◈
+                        - generic [ref=f6e259]: PC VR / Steam
+                    - generic [ref=f6e260]:
+                        - generic [ref=f6e261]:
+                            - text: UNITY / XR / AR
+                            - heading "MyChessVR" [level=3] [ref=f6e262]
+                        - button "VIEW PROJECT ↗" [ref=f6e263] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e264]: ↗
+                    - generic [ref=f6e265]:
+                        - generic [ref=f6e266]: ООО ЦУП
+                        - time [ref=f6e267]: 10.2024 — 02.2025
+                    - paragraph [ref=f6e268]: Полноценный VR-шахматный опыт с несколькими режимами игры, головоломками, AI-соперником, IK-взаимодействиями и анализом ходов Stockfish.
+                    - generic [ref=f6e269]:
+                        - generic [ref=f6e270]: Unity
+                        - generic [ref=f6e271]: C#
+                        - generic [ref=f6e272]: XR Interaction Toolkit
+                        - generic [ref=f6e273]: OpenXR
+                        - generic [ref=f6e274]: Final IK
+                        - generic [ref=f6e275]: Stockfish
+                - article [ref=f6e276]:
+                    - button "VIEW PROJECT — Сайт компании Cat-citten" [ref=f6e277] [cursor=pointer]:
+                        - generic [ref=f6e279]: CAT-CITTEN // 05
+                        - generic [ref=f6e280]: ⌘
+                        - generic [ref=f6e281]: Web
+                    - generic [ref=f6e282]:
+                        - generic [ref=f6e283]:
+                            - text: WEB
+                            - heading "Сайт компании Cat-citten" [level=3] [ref=f6e284]
+                        - button "VIEW PROJECT ↗" [ref=f6e285] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e286]: ↗
+                    - generic [ref=f6e287]:
+                        - generic [ref=f6e288]: ООО ЦУП
+                        - time [ref=f6e289]: 02.2025 — 07.2025
+                    - paragraph [ref=f6e290]: Интернет-магазин с каталогом товаров, фильтрацией по категориям, заказами и отдельными B2B/B2C-аккаунтами.
+                    - generic [ref=f6e291]:
+                        - generic [ref=f6e292]: Next.js
+                        - generic [ref=f6e293]: React
+                        - generic [ref=f6e294]: TypeScript
+                        - generic [ref=f6e295]: Tailwind CSS
+                        - generic [ref=f6e296]: React Hook Form
+                        - generic [ref=f6e297]: Zod
+                - article [ref=f6e298]:
+                    - button "VIEW PROJECT — Промышленные VR-тренажёры" [ref=f6e299] [cursor=pointer]:
+                        - generic [ref=f6e301]: INDUSTRIAL-VR // 06
+                        - generic [ref=f6e302]: ◈
+                        - generic [ref=f6e303]: Meta Quest 2 / 3S / 3
+                    - generic [ref=f6e304]:
+                        - generic [ref=f6e305]:
+                            - text: UNITY / XR / AR
+                            - heading "Промышленные VR-тренажёры" [level=3] [ref=f6e306]
+                        - button "VIEW PROJECT ↗" [ref=f6e307] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e308]: ↗
+                    - generic [ref=f6e309]:
+                        - generic [ref=f6e310]: TOO ME GROUP
+                        - time [ref=f6e311]: 03.2026 — НАСТОЯЩЕЕ ВРЕМЯ
+                    - paragraph [ref=f6e312]: Интерактивные промышленные сценарии обучения с пошаговыми операциями, проверкой действий, подсказками, обработкой ошибок и реалистичным взаимодействием с оборудованием.
+                    - generic [ref=f6e313]:
+                        - generic [ref=f6e314]: Unity
+                        - generic [ref=f6e315]: C#
+                        - generic [ref=f6e316]: Meta Quest
+                        - generic [ref=f6e317]: XR Interaction Toolkit
+                        - generic [ref=f6e318]: Zenject
+                        - generic [ref=f6e319]: Addressables
+                - article [ref=f6e320]:
+                    - button "VIEW PROJECT — Aptive Education" [ref=f6e321] [cursor=pointer]:
+                        - generic [ref=f6e323]: APTIVE-EDUCATION // 07
+                        - generic [ref=f6e324]: ⌘
+                        - generic [ref=f6e325]: Web
+                    - generic [ref=f6e326]:
+                        - generic [ref=f6e327]:
+                            - text: WEB
+                            - heading "Aptive Education" [level=3] [ref=f6e328]
+                        - button "VIEW PROJECT ↗" [ref=f6e329] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e330]: ↗
+                    - generic [ref=f6e331]:
+                        - generic [ref=f6e332]: Yellow Element
+                        - time [ref=f6e333]: 02.2021 — 02.2022
+                    - paragraph [ref=f6e334]: Образовательная платформа для учеников, учителей и родителей с учебными сценариями и отслеживанием прогресса.
+                    - generic [ref=f6e335]:
+                        - generic [ref=f6e336]: Vue.js
+                        - generic [ref=f6e337]: Vuex
+                        - generic [ref=f6e338]: GraphQL
+                        - generic [ref=f6e339]: Apollo Client
+                        - generic [ref=f6e340]: Vuetify
+                        - generic [ref=f6e341]: Chart.js
+                - article [ref=f6e342]:
+                    - button "VIEW PROJECT — Neo4 Web / Interior Sightline" [ref=f6e343] [cursor=pointer]:
+                        - generic [ref=f6e345]: NEO4-SIGHTLINE // 08
+                        - generic [ref=f6e346]: ⌘
+                        - generic [ref=f6e347]: Web
+                    - generic [ref=f6e348]:
+                        - generic [ref=f6e349]:
+                            - text: WEB / UNITY
+                            - heading "Neo4 Web / Interior Sightline" [level=3] [ref=f6e350]
+                        - button "VIEW PROJECT ↗" [ref=f6e351] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e352]: ↗
+                    - generic [ref=f6e353]:
+                        - generic [ref=f6e354]: Yellow Element
+                        - time [ref=f6e355]: 02.2021 — 02.2022
+                    - paragraph [ref=f6e356]: Neo4 Web — интерактивная real-time 3D-визуализация недвижимости и городской среды для браузера, с отдельным интерьерным направлением Sightline.
+                    - generic [ref=f6e357]:
+                        - generic [ref=f6e358]: React
+                        - generic [ref=f6e359]: JavaScript
+                        - generic [ref=f6e360]: WebSocket
+                        - generic [ref=f6e361]: Unreal Engine 4
+                        - generic [ref=f6e362]: Pixel Streaming
+                        - generic [ref=f6e363]: Real-time 3D
+                - article [ref=f6e364]:
+                    - button "VIEW PROJECT — CMS поставщика топлива" [ref=f6e365] [cursor=pointer]:
+                        - generic [ref=f6e367]: FUEL-CMS // 09
+                        - generic [ref=f6e368]: ⌘
+                        - generic [ref=f6e369]: Web
+                    - generic [ref=f6e370]:
+                        - generic [ref=f6e371]:
+                            - text: WEB
+                            - heading "CMS поставщика топлива" [level=3] [ref=f6e372]
+                        - button "VIEW PROJECT ↗" [ref=f6e373] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e374]: ↗
+                    - generic [ref=f6e375]:
+                        - generic [ref=f6e376]: ООО ЦУП
+                        - time [ref=f6e377]: 02.2025 — 07.2025
+                    - paragraph [ref=f6e378]: Административная система для поставок, учёта заправок и расчёта цен.
+                    - generic [ref=f6e379]:
+                        - generic [ref=f6e380]: React
+                        - generic [ref=f6e381]: React Query
+                        - generic [ref=f6e382]: Mantine
+                        - generic [ref=f6e383]: HTML
+                        - generic [ref=f6e384]: CSS
+                - article [ref=f6e385]:
+                    - button "VIEW PROJECT — VR-демо буровой установки" [ref=f6e386] [cursor=pointer]:
+                        - generic [ref=f6e388]: DRILLING-VR // 010
+                        - generic [ref=f6e389]: ◈
+                        - generic [ref=f6e390]: VR
+                    - generic [ref=f6e391]:
+                        - generic [ref=f6e392]:
+                            - text: UNITY / XR / AR / МУЛЬТИПЛЕЕР
+                            - heading "VR-демо буровой установки" [level=3] [ref=f6e393]
+                        - button "VIEW PROJECT ↗" [ref=f6e394] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e395]: ↗
+                    - generic [ref=f6e396]:
+                        - generic [ref=f6e397]: ООО ЦУП
+                        - time [ref=f6e398]: 10.2024 — 02.2025
+                    - paragraph [ref=f6e399]: Мультиплеерное VR-демо с рабочими процессами бурового оборудования и взаимодействием операторов.
+                    - generic [ref=f6e400]:
+                        - generic [ref=f6e401]: Unity
+                        - generic [ref=f6e402]: C#
+                        - generic [ref=f6e403]: XR Interaction Toolkit
+                        - generic [ref=f6e404]: Netcode for GameObjects
+                        - generic [ref=f6e405]: Final IK
+                        - generic [ref=f6e406]: Blender
+                - article [ref=f6e407]:
+                    - button "VIEW PROJECT — Vulkan Verse — Tartarus" [ref=f6e408] [cursor=pointer]:
+                        - generic [ref=f6e410]: VULKAN-VERSE // 011
+                        - generic [ref=f6e411]: ◌
+                        - generic [ref=f6e412]: PC / Web
+                    - generic [ref=f6e413]:
+                        - generic [ref=f6e414]:
+                            - text: UNITY / МУЛЬТИПЛЕЕР
+                            - heading "Vulkan Verse — Tartarus" [level=3] [ref=f6e415]
+                        - button "VIEW PROJECT ↗" [ref=f6e416] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e417]: ↗
+                    - generic [ref=f6e418]:
+                        - generic [ref=f6e419]: Yellow Element
+                        - time [ref=f6e420]: 09.2025 — 03.2026
+                    - paragraph [ref=f6e421]: Игровые механики и клиент-серверная функциональность для локации Tartarus в Vulkan Verse.
+                    - generic [ref=f6e422]:
+                        - generic [ref=f6e423]: Unity
+                        - generic [ref=f6e424]: C#
+                        - generic [ref=f6e425]: Photon
+                        - generic [ref=f6e426]: Addressables
+                        - generic [ref=f6e427]: Zenject
+                        - generic [ref=f6e428]: UniTask
+                - article [ref=f6e429]:
+                    - button "VIEW PROJECT — Сайт транспортной компании Korobka" [ref=f6e430] [cursor=pointer]:
+                        - generic [ref=f6e432]: KOROBKA // 012
+                        - generic [ref=f6e433]: ⌘
+                        - generic [ref=f6e434]: Web
+                    - generic [ref=f6e435]:
+                        - generic [ref=f6e436]:
+                            - text: WEB
+                            - heading "Сайт транспортной компании Korobka" [level=3] [ref=f6e437]
+                        - button "VIEW PROJECT ↗" [ref=f6e438] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e439]: ↗
+                    - generic [ref=f6e440]:
+                        - generic [ref=f6e441]: IT Tab
+                        - time [ref=f6e442]: 01.2023 — 04.2023
+                    - paragraph [ref=f6e443]: Адаптивный сайт транспортной компании, реализованный по дизайн-системе.
+                    - generic [ref=f6e444]:
+                        - generic [ref=f6e445]: React
+                        - generic [ref=f6e446]: JavaScript
+                        - generic [ref=f6e447]: Ant Design
+                        - generic [ref=f6e448]: HTML
+                        - generic [ref=f6e449]: CSS
+                - article [ref=f6e450]:
+                    - button "VIEW PROJECT — CMS магазина дверей" [ref=f6e451] [cursor=pointer]:
+                        - generic [ref=f6e453]: DOORS-CMS // 013
+                        - generic [ref=f6e454]: ⌘
+                        - generic [ref=f6e455]: Web
+                    - generic [ref=f6e456]:
+                        - generic [ref=f6e457]:
+                            - text: WEB
+                            - heading "CMS магазина дверей" [level=3] [ref=f6e458]
+                        - button "VIEW PROJECT ↗" [ref=f6e459] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e460]: ↗
+                    - generic [ref=f6e461]:
+                        - generic [ref=f6e462]: IT Tab
+                        - time [ref=f6e463]: 01.2023 — 04.2023
+                    - paragraph [ref=f6e464]: Административная система для управления каталогом, заказами и контентом магазина дверей.
+                    - generic [ref=f6e465]:
+                        - generic [ref=f6e466]: React
+                        - generic [ref=f6e467]: TypeScript
+                        - generic [ref=f6e468]: Redux
+                        - generic [ref=f6e469]: React Query
+                        - generic [ref=f6e470]: Ant Design
+                - article [ref=f6e471]:
+                    - button "VIEW PROJECT — Земля драконов" [ref=f6e472] [cursor=pointer]:
+                        - generic [ref=f6e474]: EARTH-DRAGONS // 014
+                        - generic [ref=f6e475]: ◈
+                        - generic [ref=f6e476]: Android / iOS
+                    - generic [ref=f6e477]:
+                        - generic [ref=f6e478]:
+                            - text: MOBILE / UNITY / XR / AR
+                            - heading "Земля драконов" [level=3] [ref=f6e479]
+                        - button "VIEW PROJECT ↗" [ref=f6e480] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e481]: ↗
+                    - generic [ref=f6e482]:
+                        - generic [ref=f6e483]: Yellow Element
+                        - time [ref=f6e484]: 10.2019 — 02.2022
+                    - paragraph [ref=f6e485]: Мобильное AR-приложение, в котором физические карточки открывают коллекционных драконов и интерактивный контент.
+                    - generic [ref=f6e486]:
+                        - generic [ref=f6e487]: Unity
+                        - generic [ref=f6e488]: C#
+                        - generic [ref=f6e489]: Vuforia
+                        - generic [ref=f6e490]: AssetBundles
+                        - generic [ref=f6e491]: Android
+                        - generic [ref=f6e492]: iOS
+                - article [ref=f6e493]:
+                    - button "VIEW PROJECT — Виртуальный сомелье Villa Krim" [ref=f6e494] [cursor=pointer]:
+                        - generic [ref=f6e496]: VILLA-KRIM // 015
+                        - generic [ref=f6e497]: ◈
+                        - generic [ref=f6e498]: Android / iOS
+                    - generic [ref=f6e499]:
+                        - generic [ref=f6e500]:
+                            - text: MOBILE / UNITY / XR / AR
+                            - heading "Виртуальный сомелье Villa Krim" [level=3] [ref=f6e501]
+                        - button "VIEW PROJECT ↗" [ref=f6e502] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e503]: ↗
+                    - generic [ref=f6e504]:
+                        - generic [ref=f6e505]: Yellow Element
+                        - time [ref=f6e506]: 10.2019 — 02.2022
+                    - paragraph [ref=f6e507]: Мобильное AR-приложение, превращавшее этикетку Villa Krim в интерактивную консультацию по вину, дегустации и сочетаниям с едой.
+                    - generic [ref=f6e508]:
+                        - generic [ref=f6e509]: Unity
+                        - generic [ref=f6e510]: C#
+                        - generic [ref=f6e511]: Vuforia
+                        - generic [ref=f6e512]: AR
+                        - generic [ref=f6e513]: Android
+                - article [ref=f6e514]:
+                    - button "VIEW PROJECT — Авторське вино Villa Krim" [ref=f6e515] [cursor=pointer]:
+                        - generic [ref=f6e517]: AUTHORS-WINE-VILLA-KRIM // 016
+                        - generic [ref=f6e518]: ◈
+                        - generic [ref=f6e519]: Android / iOS
+                    - generic [ref=f6e520]:
+                        - generic [ref=f6e521]:
+                            - text: MOBILE / UNITY / XR / AR
+                            - heading "Авторське вино Villa Krim" [level=3] [ref=f6e522]
+                        - button "VIEW PROJECT ↗" [ref=f6e523] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e524]: ↗
+                    - generic [ref=f6e525]:
+                        - generic [ref=f6e526]: Yellow Element
+                        - time [ref=f6e527]: 10.2019 — 02.2022
+                    - paragraph [ref=f6e528]: 'AR-кампания авторской коллекции Villa Krim: QR-код и этикетка бутылки запускали приложение с историями вин, винодела и гастрономическими сочетаниями.'
+                    - generic [ref=f6e529]:
+                        - generic [ref=f6e530]: Unity
+                        - generic [ref=f6e531]: C#
+                        - generic [ref=f6e532]: Vuforia
+                        - generic [ref=f6e533]: AR
+                        - generic [ref=f6e534]: Android
+                - article [ref=f6e535]:
+                    - button "VIEW PROJECT — Chudo Projector" [ref=f6e536] [cursor=pointer]:
+                        - generic [ref=f6e538]: CHUDO-PROJECTOR // 017
+                        - generic [ref=f6e539]: ◈
+                        - generic [ref=f6e540]: Windows
+                    - generic [ref=f6e541]:
+                        - generic [ref=f6e542]:
+                            - text: UNITY / XR / AR / МУЛЬТИПЛЕЕР
+                            - heading "Chudo Projector" [level=3] [ref=f6e543]
+                        - button "VIEW PROJECT ↗" [ref=f6e544] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e545]: ↗
+                    - generic [ref=f6e546]:
+                        - generic [ref=f6e547]: Yellow Element
+                        - time [ref=f6e548]: 10.2019 — 02.2022
+                    - paragraph [ref=f6e549]: Интерактивное проекционное приложение на базе компьютерного зрения и desktop-компаньона.
+                    - generic [ref=f6e550]:
+                        - generic [ref=f6e551]: Unity
+                        - generic [ref=f6e552]: C#
+                        - generic [ref=f6e553]: OpenCV
+                        - generic [ref=f6e554]: Photon
+                        - generic [ref=f6e555]: Windows
+                - article [ref=f6e556]:
+                    - button "VIEW PROJECT — AR Coloring" [ref=f6e557] [cursor=pointer]:
+                        - generic [ref=f6e559]: AR-COLORING // 018
+                        - generic [ref=f6e560]: ◈
+                        - generic [ref=f6e561]: Android / iOS
+                    - generic [ref=f6e562]:
+                        - generic [ref=f6e563]:
+                            - text: MOBILE / UNITY / XR / AR
+                            - heading "AR Coloring" [level=3] [ref=f6e564]
+                        - button "VIEW PROJECT ↗" [ref=f6e565] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e566]: ↗
+                    - generic [ref=f6e567]:
+                        - generic [ref=f6e568]: Yellow Element
+                        - time [ref=f6e569]: 10.2019 — 02.2022
+                    - paragraph [ref=f6e570]: Мобильное AR-приложение Chudoboxes, превращающее бумажные раскраски в ожившие анимации через камеру смартфона.
+                    - generic [ref=f6e571]:
+                        - generic [ref=f6e572]: Unity
+                        - generic [ref=f6e573]: C#
+                        - generic [ref=f6e574]: AR
+                        - generic [ref=f6e575]: Image tracking
+                        - generic [ref=f6e576]: QR
+                        - generic [ref=f6e577]: Android
+                - article [ref=f6e578]:
+                    - button "VIEW PROJECT — Chudobooks" [ref=f6e579] [cursor=pointer]:
+                        - generic [ref=f6e581]: CHUDOBOOKS // 019
+                        - generic [ref=f6e582]: ◈
+                        - generic [ref=f6e583]: Android / iOS
+                    - generic [ref=f6e584]:
+                        - generic [ref=f6e585]:
+                            - text: MOBILE / UNITY / XR / AR
+                            - heading "Chudobooks" [level=3] [ref=f6e586]
+                        - button "VIEW PROJECT ↗" [ref=f6e587] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e588]: ↗
+                    - generic [ref=f6e589]:
+                        - generic [ref=f6e590]: Yellow Element
+                        - time [ref=f6e591]: 10.2019 — 02.2022
+                    - paragraph [ref=f6e592]: 'Мобильное AR-приложение для детской книги Chudoboxes: печатные маркеры запускали 3D-персонажей, сцены, интерактивную книгу и аудиосценарии.'
+                    - generic [ref=f6e593]:
+                        - generic [ref=f6e594]: Unity
+                        - generic [ref=f6e595]: C#
+                        - generic [ref=f6e596]: AR
+                        - generic [ref=f6e597]: AssetBundles
+                        - generic [ref=f6e598]: Android
+                        - generic [ref=f6e599]: iOS
+                - article [ref=f6e600]:
+                    - button "VIEW PROJECT — AR Chudoboxes / Chudoboxes EKO" [ref=f6e601] [cursor=pointer]:
+                        - generic [ref=f6e603]: AR-CHUDABOXES // 020
+                        - generic [ref=f6e604]: ◈
+                        - generic [ref=f6e605]: Android / iOS
+                    - generic [ref=f6e606]:
+                        - generic [ref=f6e607]:
+                            - text: MOBILE / UNITY / XR / AR
+                            - heading "AR Chudoboxes / Chudoboxes EKO" [level=3] [ref=f6e608]
+                        - button "VIEW PROJECT ↗" [ref=f6e609] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e610]: ↗
+                    - generic [ref=f6e611]:
+                        - generic [ref=f6e612]: Yellow Element
+                        - time [ref=f6e613]: 10.2019 — 02.2022
+                    - paragraph [ref=f6e614]: 'Коммерческий мобильный AR-компаньон интерактивной детской книги: печатные страницы и промоматериалы запускали анимации персонажей, AR-фото и AR-видео. Версия Chudoboxes EKO расширила экосистему коллекционными наклейками, открыткой и мини-играми для кампании ЕКО Маркет.'
+                    - generic [ref=f6e615]:
+                        - generic [ref=f6e616]: AR
+                        - generic [ref=f6e617]: Android
+                        - generic [ref=f6e618]: iOS
+                        - generic [ref=f6e619]: Image tracking
+                        - generic [ref=f6e620]: Camera / video
+                        - generic [ref=f6e621]: QR
+                - article [ref=f6e622]:
+                    - button "VIEW PROJECT — Chudo Floor" [ref=f6e623] [cursor=pointer]:
+                        - generic [ref=f6e625]: CHUDO-FLOOR // 021
+                        - generic [ref=f6e626]: ◈
+                        - generic [ref=f6e627]: Windows
+                    - generic [ref=f6e628]:
+                        - generic [ref=f6e629]:
+                            - text: UNITY / XR / AR
+                            - heading "Chudo Floor" [level=3] [ref=f6e630]
+                        - button "VIEW PROJECT ↗" [ref=f6e631] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e632]: ↗
+                    - generic [ref=f6e633]:
+                        - generic [ref=f6e634]: Yellow Element
+                        - time [ref=f6e635]: 10.2019 — 02.2022
+                    - paragraph [ref=f6e636]: Интерактивная игра для проекционного пола с отслеживанием людей и несколькими режимами.
+                    - generic [ref=f6e637]:
+                        - generic [ref=f6e638]: Unity
+                        - generic [ref=f6e639]: C#
+                        - generic [ref=f6e640]: OpenCV
+                        - generic [ref=f6e641]: Windows
+                        - generic [ref=f6e642]: Projection
+                - article [ref=f6e643]:
+                    - button "VIEW PROJECT — Quest room testing" [ref=f6e644] [cursor=pointer]:
+                        - generic [ref=f6e646]: QUEST-ROOM // 022
+                        - generic [ref=f6e647]: ◌
+                        - generic [ref=f6e648]: PC / Web
+                    - generic [ref=f6e649]:
+                        - generic [ref=f6e650]:
+                            - text: UNITY / МУЛЬТИПЛЕЕР
+                            - heading "Quest room testing" [level=3] [ref=f6e651]
+                        - button "VIEW PROJECT ↗" [ref=f6e652] [cursor=pointer]:
+                            - text: VIEW PROJECT
+                            - generic [ref=f6e653]: ↗
+                    - generic [ref=f6e654]:
+                        - generic [ref=f6e655]: Yellow Element
+                        - time [ref=f6e656]: 10.2019 — 02.2022
+                    - paragraph [ref=f6e657]: Ручное тестирование головоломок и Photon-мультиплеера в Unity-проекте квест-комнаты.
+                    - generic [ref=f6e658]:
+                        - generic [ref=f6e659]: Unity
+                        - generic [ref=f6e660]: Photon
+                        - generic [ref=f6e661]: Manual testing
+                        - generic [ref=f6e662]: Bug tracking
+        - generic [ref=f6e663]:
+            - generic [ref=f6e664]: 03 // EXPERIENCE LOG
+            - generic [ref=f6e668]:
+                - heading "EXPERIENCE LOG" [level=2] [ref=f6e669]
+                - paragraph [ref=f6e670]: PAST · CURRENT · NEXT
+            - generic "Карьерная хронология" [ref=f6e671]:
+                - generic [ref=f6e672]:
+                    - article [ref=f6e673]:
+                        - generic [ref=f6e675]:
+                            - generic [ref=f6e677]: YE
+                            - time [ref=f6e678]: 10.2019 — 02.2022
+                            - generic [ref=f6e679]: YELLOW ELEMENT
+                            - heading "Unity / Frontend разработчик" [level=3] [ref=f6e680]
+                            - paragraph [ref=f6e681]: AR applications · Web platforms
+                            - generic [ref=f6e682]:
+                                - generic [ref=f6e683]: Unity
+                                - generic [ref=f6e684]: C#
+                                - generic [ref=f6e685]: React
+                                - generic [ref=f6e686]: Vue.js
+                                - generic [ref=f6e687]: Vuforia
+                                - generic [ref=f6e688]: AssetBundles
+                    - article [ref=f6e689]:
+                        - generic [ref=f6e691]:
+                            - generic [ref=f6e693]: IT
+                            - time [ref=f6e694]: 01.2023 — 09.2023
+                            - generic [ref=f6e695]: IT TAB
+                            - heading "Frontend / Unigine разработчик" [level=3] [ref=f6e696]
+                            - paragraph [ref=f6e697]: React projects · РосАтом VR-тренажёр
+                            - generic [ref=f6e698]:
+                                - generic [ref=f6e699]: React
+                                - generic [ref=f6e700]: JavaScript
+                                - generic [ref=f6e701]: Unigine
+                                - generic [ref=f6e702]: C#
+                                - generic [ref=f6e703]: SteamVR
+                                - generic [ref=f6e704]: Astra Linux
+                    - article [ref=f6e705]:
+                        - generic [ref=f6e707]:
+                            - generic [ref=f6e709]: ОЦ
+                            - time [ref=f6e710]: 09.2023 — 07.2025
+                            - generic [ref=f6e711]: ООО ЦУП
+                            - heading "Frontend / Unity Developer" [level=3] [ref=f6e712]
+                            - paragraph [ref=f6e713]: myChess · MyChessVR · product interfaces
+                            - generic [ref=f6e714]:
+                                - generic [ref=f6e715]: React
+                                - generic [ref=f6e716]: TypeScript
+                                - generic [ref=f6e717]: Unity
+                                - generic [ref=f6e718]: C#
+                                - generic [ref=f6e719]: XR Interaction Toolkit
+                                - generic [ref=f6e720]: Stockfish
+                    - article [ref=f6e721]:
+                        - generic [ref=f6e723]:
+                            - generic [ref=f6e725]: YE
+                            - time [ref=f6e726]: 09.2025 — 03.2026
+                            - generic [ref=f6e727]: YELLOW ELEMENT
+                            - heading "Unity-разработчик" [level=3] [ref=f6e728]
+                            - paragraph [ref=f6e729]: Mobile RTS · Vulkan Verse
+                            - generic [ref=f6e730]:
+                                - generic [ref=f6e731]: Unity
+                                - generic [ref=f6e732]: C#
+                                - generic [ref=f6e733]: Mirror
+                                - generic [ref=f6e734]: PlayFab
+                                - generic [ref=f6e735]: Firebase
+                                - generic [ref=f6e736]: Azure Functions
+                    - article [ref=f6e737]:
+                        - generic [ref=f6e739]:
+                            - generic [ref=f6e741]: TMG
+                            - time [ref=f6e742]: 03.2026 — НАСТОЯЩЕЕ ВРЕМЯ
+                            - generic [ref=f6e743]: TOO ME GROUP
+                            - heading "VR-разработчик" [level=3] [ref=f6e744]
+                            - paragraph [ref=f6e745]: Industrial VR training simulations · Meta Quest
+                            - generic [ref=f6e746]:
+                                - generic [ref=f6e747]: Unity
+                                - generic [ref=f6e748]: C#
+                                - generic [ref=f6e749]: VR
+                                - generic [ref=f6e750]: Meta Quest
+                                - generic [ref=f6e751]: XR Interaction Toolkit
+                                - generic [ref=f6e752]: Addressables
+                    - article [ref=f6e753]:
+                        - generic [ref=f6e755]:
+                            - generic [ref=f6e759]: ДАЛЬШЕ
+                            - heading "Новый проект?" [level=3] [ref=f6e760]
+                            - link "НАНЯТЬ МЕНЯ" [ref=f6e761] [cursor=pointer]:
+                                - /url: '#contact'
+                                - text: НАНЯТЬ МЕНЯ ↗
+            - button "ПОДРОБНЕЕ" [ref=f6e762] [cursor=pointer]:
+                - text: ПОДРОБНЕЕ
+                - generic [aria-hidden] [ref=f6e763]: ↓
+        - generic [ref=f6e764]:
+            - generic [ref=f6e765]: 04 // TECH STACK
+            - generic [ref=f6e768]:
+                - generic [ref=f6e769]:
+                    - heading "WEB" [level=3] [ref=f6e770]
+                    - generic [ref=f6e771]:
+                        - button "React" [ref=f6e772] [cursor=pointer]
+                        - button "TypeScript" [ref=f6e773] [cursor=pointer]
+                        - button "JavaScript" [ref=f6e774] [cursor=pointer]
+                        - button "Next.js" [ref=f6e775] [cursor=pointer]
+                        - button "Vue.js" [ref=f6e776] [cursor=pointer]
+                        - button "Redux Toolkit" [ref=f6e777] [cursor=pointer]
+                        - button "React Query" [ref=f6e778] [cursor=pointer]
+                        - button "Socket.io" [ref=f6e779] [cursor=pointer]
+                        - button "Vite" [ref=f6e780] [cursor=pointer]
+                - generic [ref=f6e781]:
+                    - heading "MOBILE" [level=3] [ref=f6e782]
+                    - generic [ref=f6e783]:
+                        - button "Android" [ref=f6e784] [cursor=pointer]
+                        - button "iOS" [ref=f6e785] [cursor=pointer]
+                        - button "Unity mobile" [ref=f6e786] [cursor=pointer]
+                        - button "Vuforia" [ref=f6e787] [cursor=pointer]
+                        - button "AssetBundles" [ref=f6e788] [cursor=pointer]
+                        - button "WebGL" [ref=f6e789] [cursor=pointer]
+                - generic [ref=f6e790]:
+                    - heading "UNITY" [level=3] [ref=f6e791]
+                    - generic [ref=f6e792]:
+                        - button "Unity" [ref=f6e793] [cursor=pointer]
+                        - button "C#" [ref=f6e794] [cursor=pointer]
+                        - button "URP" [ref=f6e795] [cursor=pointer]
+                        - button "ScriptableObject" [ref=f6e796] [cursor=pointer]
+                        - button "Addressables" [ref=f6e797] [cursor=pointer]
+                        - button "DOTween" [ref=f6e798] [cursor=pointer]
+                        - button "UniTask" [ref=f6e799] [cursor=pointer]
+                        - button "Zenject" [ref=f6e800] [cursor=pointer]
+                - generic [ref=f6e801]:
+                    - heading "UNIGINE" [level=3] [ref=f6e802]
+                    - generic [ref=f6e803]:
+                        - button "Unigine" [ref=f6e804] [cursor=pointer]
+                        - button "C#" [ref=f6e805] [cursor=pointer]
+                        - button "SteamVR" [ref=f6e806] [cursor=pointer]
+                        - button "Astra Linux" [ref=f6e807] [cursor=pointer]
+                        - button "Client-server architecture" [ref=f6e808] [cursor=pointer]
+                - generic [ref=f6e809]:
+                    - heading "XR / AR" [level=3] [ref=f6e810]
+                    - generic [ref=f6e811]:
+                        - button "Meta Quest" [ref=f6e812] [cursor=pointer]
+                        - button "OpenXR" [ref=f6e813] [cursor=pointer]
+                        - button "XR Interaction Toolkit" [ref=f6e814] [cursor=pointer]
+                        - button "SteamVR" [ref=f6e815] [cursor=pointer]
+                        - button "Final IK" [ref=f6e816] [cursor=pointer]
+                        - button "Vuforia" [ref=f6e817] [cursor=pointer]
+                        - button "OpenCV" [ref=f6e818] [cursor=pointer]
+                - generic [ref=f6e819]:
+                    - heading "МУЛЬТИПЛЕЕР" [level=3] [ref=f6e820]
+                    - generic [ref=f6e821]:
+                        - button "Mirror" [ref=f6e822] [cursor=pointer]
+                        - button "Photon" [ref=f6e823] [cursor=pointer]
+                        - button "Netcode for GameObjects" [ref=f6e824] [cursor=pointer]
+                        - button "PlayFab" [ref=f6e825] [cursor=pointer]
+                        - button "Firebase" [ref=f6e826] [cursor=pointer]
+                        - button "Azure Functions" [ref=f6e827] [cursor=pointer]
+                        - button "VOIP" [ref=f6e828] [cursor=pointer]
+        - generic [ref=f6e829]:
+            - generic [ref=f6e830]: 05 // ОБРАЗОВАНИЕ
+            - generic [ref=f6e833]:
+                - heading "ОБРАЗОВАНИЕ И КУРСЫ" [level=2] [ref=f6e834]
+                - paragraph [ref=f6e835]: СИСТЕМНАЯ ПОДГОТОВКА · КУРСЫ · СЕРТИФИКАЦИИ
+            - generic [ref=f6e836]:
+                - generic [ref=f6e838]:
+                    - generic [ref=f6e840]:
+                        - time [ref=f6e841]: '2023'
+                        - generic [ref=f6e842]: Магистратура
+                    - generic [ref=f6e843]:
+                        - generic [ref=f6e844]: Донецкий национальный университет
+                        - button "ПОДРОБНЕЕ" [ref=f6e845] [cursor=pointer]:
+                            - text: ПОДРОБНЕЕ
+                            - generic [aria-hidden] [ref=f6e846]: ↓
+                - generic [ref=f6e856]:
+                    - generic [ref=f6e858]:
+                        - time [ref=f6e859]: '2020'
+                        - generic [ref=f6e860]: Бакалавриат
+                    - generic [ref=f6e861]:
+                        - generic [ref=f6e862]: Донецкий национальный университет
+                        - button "ПОДРОБНЕЕ" [ref=f6e863] [cursor=pointer]:
+                            - text: ПОДРОБНЕЕ
+                            - generic [aria-hidden] [ref=f6e864]: ↓
+                - generic [ref=f6e866]:
+                    - generic [ref=f6e868]:
+                        - time [ref=f6e869]: '2019'
+                        - generic [ref=f6e870]: CCNA 2 — Routing and Switching Essentials
+                    - generic [ref=f6e871]:
+                        - generic [ref=f6e872]: Cisco Networking Academy
+                        - button "ПОДРОБНЕЕ" [ref=f6e873] [cursor=pointer]:
+                            - text: ПОДРОБНЕЕ
+                            - generic [aria-hidden] [ref=f6e874]: ↓
+                - generic [ref=f6e886]:
+                    - generic [ref=f6e888]:
+                        - time [ref=f6e889]: '2018'
+                        - generic [ref=f6e890]: Cybersecurity Essentials
+                    - generic [ref=f6e891]:
+                        - generic [ref=f6e892]: Cisco Networking Academy
+                        - button "ПОДРОБНЕЕ" [ref=f6e893] [cursor=pointer]:
+                            - text: ПОДРОБНЕЕ
+                            - generic [aria-hidden] [ref=f6e894]: ↓
+                - generic [ref=f6e896]:
+                    - generic [ref=f6e898]:
+                        - time [ref=f6e899]: '2018'
+                        - generic [ref=f6e900]: Introduction to Packet Tracer
+                    - generic [ref=f6e901]:
+                        - generic [ref=f6e902]: Cisco Networking Academy
+                        - button "ПОДРОБНЕЕ" [ref=f6e903] [cursor=pointer]:
+                            - text: ПОДРОБНЕЕ
+                            - generic [aria-hidden] [ref=f6e904]: ↓
+                - generic [ref=f6e916]:
+                    - generic [ref=f6e918]:
+                        - time [ref=f6e919]: '2018'
+                        - generic [ref=f6e920]: CCNA 1 — Introduction to Networks
+                    - generic [ref=f6e921]:
+                        - generic [ref=f6e922]: Cisco Networking Academy
+                        - button "ПОДРОБНЕЕ" [ref=f6e923] [cursor=pointer]:
+                            - text: ПОДРОБНЕЕ
+                            - generic [aria-hidden] [ref=f6e924]: ↓
+                - generic [ref=f6e926]:
+                    - generic [ref=f6e928]:
+                        - time [ref=f6e929]: '2016'
+                        - generic [ref=f6e930]: Программирование
+                    - generic [ref=f6e931]:
+                        - generic [ref=f6e932]: SOS COMPUTER
+                        - button "ПОДРОБНЕЕ" [ref=f6e933] [cursor=pointer]:
+                            - text: ПОДРОБНЕЕ
+                            - generic [aria-hidden] [ref=f6e934]: ↓
+                - generic [ref=f6e946]:
+                    - generic [ref=f6e948]:
+                        - time [ref=f6e949]: '2015'
+                        - generic [ref=f6e950]: Курс растровой и векторной графики
+                    - generic [ref=f6e951]:
+                        - generic [ref=f6e952]: SOS COMPUTER
+                        - button "ПОДРОБНЕЕ" [ref=f6e953] [cursor=pointer]:
+                            - text: ПОДРОБНЕЕ
+                            - generic [aria-hidden] [ref=f6e954]: ↓
+        - generic [ref=f6e955]:
+            - generic [ref=f6e956]: 06 // CONTACT CHANNEL
+            - generic [ref=f6e959]:
+                - heading "СОЗДАДИМ ЧТО-НИБУДЬ ВМЕСТЕ." [level=2] [ref=f6e961]
+                - generic [ref=f6e962]:
+                    - generic [ref=f6e963]:
+                        - generic [ref=f6e964]: EMAIL
+                        - link "19fursik99@gmail.com ↗" [ref=f6e965] [cursor=pointer]:
+                            - /url: mailto:19fursik99@gmail.com
+                        - button "КОПИРОВАТЬ EMAIL" [ref=f6e966] [cursor=pointer]
+                    - generic [ref=f6e967]:
+                        - generic [ref=f6e968]: TELEGRAM
+                        - link "@FursiK911 ↗" [ref=f6e969] [cursor=pointer]:
+                            - /url: https://t.me/FursiK911
+                    - link "СКАЧАТЬ РЕЗЮМЕ" [ref=f6e970] [cursor=pointer]:
+                        - /url: /cv/Dmitry-Fursov-Unity-Developer-CV.pdf
+    - contentinfo [ref=f6e974]:
+        - generic [ref=f6e975]:
+            - generic [ref=f6e976]:
+                - link "DMITRY_FURSOV" [ref=f6e977] [cursor=pointer]:
+                    - /url: '#top'
+                - generic [ref=f6e978]: SOFTWARE DEVELOPER
+                - link "19fursik99@gmail.com ↗" [ref=f6e979] [cursor=pointer]:
+                    - /url: mailto:19fursik99@gmail.com
+            - generic [ref=f6e980]:
+                - generic [ref=f6e981]: КОНТАКТЫ
+                - generic [ref=f6e982]:
+                    - link "Telegram" [ref=f6e983] [cursor=pointer]:
+                        - /url: https://t.me/FursiK911
+                    - link "LinkedIn" [ref=f6e986] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/dmitry-fursov-251097213/
+                    - link "GitHub" [ref=f6e990] [cursor=pointer]:
+                        - /url: https://github.com/FursiK911
+            - generic [ref=f6e993]:
+                - generic [ref=f6e994]: НАВИГАЦИЯ
+                - navigation "НАВИГАЦИЯ" [ref=f6e995]:
+                    - link "01 Профиль" [ref=f6e996] [cursor=pointer]:
+                        - /url: '#top'
+                        - generic [ref=f6e997]: '01'
+                        - text: Профиль
+                    - link "02 Проекты" [ref=f6e998] [cursor=pointer]:
+                        - /url: '#projects'
+                        - generic [ref=f6e999]: '02'
+                        - text: Проекты
+                    - link "03 Опыт" [ref=f6e1000] [cursor=pointer]:
+                        - /url: '#experience'
+                        - generic [ref=f6e1001]: '03'
+                        - text: Опыт
+                    - link "04 Стек" [ref=f6e1002] [cursor=pointer]:
+                        - /url: '#stack'
+                        - generic [ref=f6e1003]: '04'
+                        - text: Стек
+                    - link "05 Образование" [ref=f6e1004] [cursor=pointer]:
+                        - /url: '#education'
+                        - generic [ref=f6e1005]: '05'
+                        - text: Образование
+                    - link "06 Контакты" [ref=f6e1006] [cursor=pointer]:
+                        - /url: '#contact'
+                        - generic [ref=f6e1007]: '06'
+                        - text: Контакты
+            - generic [ref=f6e1008]:
+                - link "СКАЧАТЬ РЕЗЮМЕ" [ref=f6e1009] [cursor=pointer]:
+                    - /url: /cv/Dmitry-Fursov-Unity-Developer-CV.pdf
+                - link "Политика конфиденциальности" [ref=f6e1013] [cursor=pointer]:
+                    - /url: /privacy/
+                - link "Условия использования" [ref=f6e1014] [cursor=pointer]:
+                    - /url: /terms/

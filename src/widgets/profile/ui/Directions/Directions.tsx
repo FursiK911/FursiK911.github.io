@@ -1,10 +1,10 @@
 import localStyles from './styles/Directions.module.css'
 import { cx, styles } from '@/shared/styles'
-import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'motion/react'
 import { directions } from '../../model/directions/data/directions.data'
-import { MetricCounter } from '@/shared/ui/MetricCounter'
+import { useDirectionsMotion } from '../../model/directions/model/useDirectionsMotion/useDirectionsMotion'
+import { DirectionCard } from './ui/DirectionCard/DirectionCard'
 import type { DirectionsProps } from './types/Directions.types'
 
 export function Directions({
@@ -12,80 +12,32 @@ export function Directions({
   entered = true,
   embedded = false,
 }: DirectionsProps) {
-  const { t } = useTranslation()
-  const [metricsStarted, setMetricsStarted] = useState(entered)
+  const { i18n } = useTranslation()
+  const { hasEntered, scanningCardIndex, sectionRef } = useDirectionsMotion({
+    cardCount: directions.length,
+    entered,
+    reducedMotion,
+  })
 
   return (
     <motion.section
+      ref={sectionRef}
       className={cx(
         styles.directionsSection,
         embedded && styles.directionsSectionEmbedded,
       )}
-      initial={reducedMotion || entered ? false : 'hidden'}
-      animate={reducedMotion || entered ? 'visible' : 'hidden'}
-      variants={{
-        hidden: { opacity: 0, y: 18 },
-        visible: {
-          opacity: 1,
-          y: 0,
-          transition: { duration: 0.45, delay: embedded ? 0.57 : 0.12 },
-        },
-      }}
-      onAnimationStart={() => {
-        if (!entered) setMetricsStarted(false)
-      }}
-      onAnimationComplete={() => {
-        if (entered) setMetricsStarted(true)
-      }}
     >
       <div className={embedded ? undefined : cx(styles.sectionShell)}>
         <div className={cx(styles.directionsGrid, localStyles.directionsGrid)}>
           {directions.map((direction, index) => (
-            <article
-              className={cx(styles.directionCard, localStyles.directionsCard)}
-              key={direction.id}
-            >
-              <span className={localStyles.directionsNumber} aria-hidden="true">
-                {String(index + 1).padStart(2, '0')}
-              </span>
-              <div className={localStyles.directionsIcon} aria-hidden="true">
-                <direction.icon size={36} stroke={1.6} />
-              </div>
-              <div
-                className={cx(
-                  styles.directionContent,
-                  localStyles.directionsContent,
-                )}
-              >
-                <h3>{t(`directions.${direction.titleKey}`)}</h3>
-                {direction.qualifierKey && (
-                  <span
-                    className={cx(
-                      styles.directionQualifier,
-                      localStyles.directionsDescription,
-                    )}
-                  >
-                    {t(`directions.${direction.qualifierKey}`)}
-                  </span>
-                )}
-              </div>
-              <ul
-                className={cx(
-                  styles.directionTools,
-                  localStyles.directionsTools,
-                )}
-              >
-                {direction.tools.map((tool) => (
-                  <li key={tool}>{tool}</li>
-                ))}
-              </ul>
-              <MetricCounter
-                value={direction.metric}
-                suffix="+"
-                label={t(`directions.${direction.metricLabelKey}`)}
-                active={entered && metricsStarted}
-              />
-            </article>
+            <DirectionCard
+              direction={direction}
+              hasEntered={hasEntered}
+              index={index}
+              key={`${i18n.language}-${direction.id}`}
+              reducedMotion={reducedMotion}
+              scanning={scanningCardIndex === index}
+            />
           ))}
         </div>
       </div>

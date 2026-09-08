@@ -161,3 +161,5 @@ This is an index, not a second copy of the change log. Follow the source link fo
 | DEC-20260908-01 | Keep Chudobooks as a separate AR book case and use only its own package, App Store record, features, and Android metrics; do not merge related AR Chudoboxes, AR Coloring, or Chudoboxes EKO data.  | projects, ar, mobile, i18n, research      | [2026-09-08](2026/09/2026-09-08.md#chudobooks-project-content)             |
 
 Directions reference redesign (2026-09-08) keeps existing architecture and motion policy; no new global decision. See [daily log](2026/09/2026-09-08.md#directions-reference-redesign).
+
+Directions HUD motion system (2026-09-08) keeps motion local to the profile Directions slice and respects the existing reduced-motion contract. See [daily log](2026/09/2026-09-08.md#directions-hud-motion-system).
