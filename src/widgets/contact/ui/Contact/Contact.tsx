@@ -5,9 +5,11 @@ import { IconDownload } from '@tabler/icons-react'
 import { cvUrl } from '@/entities/project'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
 import { ActionLink } from '@/shared/ui/ActionLink'
+import { ContactPortrait } from '../ContactPortrait/ContactPortrait'
 import '../styles/Contact.module.css'
+import type { ContactProps } from './types/Contact.types'
 
-export function Contact() {
+export function Contact({ reducedMotion, entered = true }: ContactProps) {
   const { t } = useTranslation()
   return (
     <section
@@ -16,9 +18,7 @@ export function Contact() {
     >
       <SectionHeading index="06" title={t('sections.contact')} />
       <div className={cx(styles.contactGrid)}>
-        <div>
-          <h2>{t('contact.title')}</h2>
-        </div>
+        <ContactPortrait entered={entered} reducedMotion={reducedMotion} />
         <div className={cx(styles.contactLinks)}>
           <div>
             <span>{t('contact.email')}</span>

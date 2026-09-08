@@ -9,7 +9,7 @@
       rgba(57, 83, 105, 0.18),
       transparent 30%
     ),
-    var(--bg);
+    transparent;
 }
 
 @media (min-width: 901px) {
@@ -18,19 +18,6 @@
   :global(html.has-hud-scroll-indicator) :global(.site-header-inner) {
     width: min(1092px, calc(100% - 176px));
   }
-}
-
-:global(.app-shell):before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.18;
-  background-image:
-    linear-gradient(rgba(180, 230, 232, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(180, 230, 232, 0.06) 1px, transparent 1px);
-  background-size: 48px 48px;
-  mask-image: linear-gradient(to bottom, #000, transparent 75%);
 }
 
 :global(.site-header) {

@@ -30,17 +30,6 @@ export function useLoadingSequence(query: string) {
   const [cursorClicked, setCursorClicked] = useState(false)
   const [resultVisible, setResultVisible] = useState(false)
   const [candidates, setCandidates] = useState<LoadingCandidate[]>([])
-  const [heroPortraitReady, setHeroPortraitReady] = useState(
-    () => hasSeenIntro() || reducedMotion,
-  )
-  const [portraitHandoffComplete, setPortraitHandoffComplete] = useState(
-    () => hasSeenIntro() || reducedMotion,
-  )
-  const [pageRevealComplete, setPageRevealComplete] = useState(
-    () => hasSeenIntro() || reducedMotion,
-  )
-  const portraitHandoffCompleteRef = useRef(portraitHandoffComplete)
-  const pageRevealCompleteRef = useRef(pageRevealComplete)
   const timers = useRef<Array<() => void>>([])
   const started = useRef(false)
 
@@ -216,11 +205,6 @@ export function useLoadingSequence(query: string) {
 
   const complete = useCallback(() => {
     sessionStorage.setItem(INTRO_STORAGE_KEY, '1')
-    setHeroPortraitReady(true)
-    setPortraitHandoffComplete(true)
-    setPageRevealComplete(true)
-    portraitHandoffCompleteRef.current = true
-    pageRevealCompleteRef.current = true
     setPhase('complete')
   }, [])
 
@@ -259,23 +243,8 @@ export function useLoadingSequence(query: string) {
   ])
 
   const finishFade = useCallback(() => {
-    if (phase === 'fading') setPhase('transferring')
+    if (phase === 'fading') setPhase('revealing')
   }, [phase])
-
-  const finishTransfer = useCallback(() => {
-    if (phase === 'transferring') setPhase('revealing')
-  }, [phase])
-
-  const notifyHeroPortraitReady = useCallback(() => {
-    if (phase === 'revealing') setHeroPortraitReady(true)
-  }, [phase])
-
-  const finishPortraitHandoff = useCallback(() => {
-    if (phase !== 'revealing') return
-    portraitHandoffCompleteRef.current = true
-    setPortraitHandoffComplete(true)
-    if (pageRevealCompleteRef.current) complete()
-  }, [complete, phase])
 
   const finishSkip = useCallback(() => {
     if (phase === 'skipping') complete()
@@ -303,31 +272,7 @@ export function useLoadingSequence(query: string) {
 
   useEffect(() => {
     if (phase !== 'revealing') return
-    const completeReveal = schedule(() => {
-      pageRevealCompleteRef.current = true
-      setPageRevealComplete(true)
-      if (portraitHandoffCompleteRef.current) complete()
-    }, loadingAnimationConfig.pageRevealDuration * 1000)
-    const forcePortraitReady = schedule(
-      () => setHeroPortraitReady(true),
-      loadingAnimationConfig.portraitHandoffFallbackDelay * 1000,
-    )
-    const forcePortraitHandoff = schedule(
-      () => {
-        portraitHandoffCompleteRef.current = true
-        setPortraitHandoffComplete(true)
-        if (pageRevealCompleteRef.current) complete()
-      },
-      (loadingAnimationConfig.portraitHandoffFallbackDelay +
-        loadingAnimationConfig.portraitHandoffDuration +
-        0.02) *
-        1000,
-    )
-    return () => {
-      completeReveal()
-      forcePortraitReady()
-      forcePortraitHandoff()
-    }
+    return schedule(complete, loadingAnimationConfig.pageRevealDuration * 1000)
   }, [complete, phase, schedule])
 
   useEffect(() => clearTimers, [clearTimers])
@@ -339,17 +284,12 @@ export function useLoadingSequence(query: string) {
     complete,
     cursorClicked,
     finishFade,
-    finishPortraitHandoff,
     finishSkip,
-    finishTransfer,
-    heroPortraitReady,
     notifyVideo,
-    notifyHeroPortraitReady,
     phase,
     queryText,
     resultVisible,
     reducedMotion,
-    portraitHandoffComplete,
     skip,
     videoFallback,
   }

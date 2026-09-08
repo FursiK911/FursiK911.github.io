@@ -1,8 +1,8 @@
 import { cx, styles } from '@/shared/styles'
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useActiveSection } from '../../model/useActiveSection/useActiveSection'
-import { IntroPortraitTransition, useLoadingSequence } from '@/features/loading'
+import { useLoadingSequence } from '@/features/loading'
 import { Header, HudScrollIndicator } from '@/widgets/site-layout'
 import { Footer } from '@/widgets/site-layout'
 import { LoadingScreen } from '@/features/loading'
@@ -24,8 +24,6 @@ export default function App() {
       : 'Find the best developer for our project',
   )
   const active = useActiveSection(sectionIds, 'top')
-  const loadingPhotoRef = useRef<HTMLDivElement>(null)
-  const heroPhotoRef = useRef<HTMLImageElement>(null)
   const isRevealing =
     loader.phase === 'revealing' || loader.phase === 'complete'
   const roles = i18n.t('hero.roles', { returnObjects: true }) as string[]
@@ -52,21 +50,11 @@ export default function App() {
         onFadeComplete={loader.finishFade}
         onSkipComplete={loader.finishSkip}
         notifyVideo={loader.notifyVideo}
-        photoRef={loadingPhotoRef}
         phase={loader.phase}
         queryText={loader.queryText}
         resultVisible={loader.resultVisible}
         skip={loader.skip}
         videoFallback={loader.videoFallback}
-      />
-      <IntroPortraitTransition
-        heroPortraitReady={loader.heroPortraitReady}
-        handoffComplete={loader.portraitHandoffComplete}
-        onHandoffComplete={loader.finishPortraitHandoff}
-        onTransferComplete={loader.finishTransfer}
-        phase={loader.phase}
-        sourceRef={loadingPhotoRef}
-        targetRef={heroPhotoRef}
       />
       <div
         className={cx(styles.appShell)}
@@ -85,20 +73,12 @@ export default function App() {
             typedRole={displayText}
             reducedMotion={reducedMotion}
             entered={isRevealing}
-            onPortraitReady={loader.notifyHeroPortraitReady}
-            portraitEffectsActive={
-              isRevealing &&
-              (loader.heroPortraitReady || loader.portraitHandoffComplete)
-            }
-            portraitEffectsReady={loader.portraitHandoffComplete}
-            portraitTargetRef={heroPhotoRef}
-            portraitVisible={isRevealing}
           />
           <Projects />
           <Experience />
           <Skills />
           <Education />
-          <Contact />
+          <Contact entered={isRevealing} reducedMotion={reducedMotion} />
         </main>
         <Footer />
         <HudScrollIndicator

@@ -1,5 +1,17 @@
 # September 2026
 
+| 2026-09-08 | ui, hero, live-cam, contact, portrait, desktop, responsive, testing, graphify | [Desktop Hero broadcast and Contact quote](2026-09-08.md#desktop-hero-broadcast-and-contact-quote) |
+
+| 2026-09-08 | i18n, section-heading, intro, testing | [English section eyebrows and localized intro titles](2026-09-08.md#english-section-eyebrows-and-localized-intro-titles) |
+
+| 2026-09-08 | projects, actions, unavailable, tooltip, accessibility, i18n, testing, graphify | [Disabled unavailable project actions](2026-09-08.md#disabled-unavailable-project-actions) |
+
+| 2026-09-08 | projects, mychess, mobile, flutter, i18n, metrics, portfolio, research, testing, graphify | [MyChess and MyChess Mobile project content](2026-09-08.md#mychess-and-mychess-mobile-project-content) |
+
+| 2026-09-08 | ui, directions, animation, responsive, testing | [directions mobile and XR icon centering](2026-09-08.md#directions-mobile-and-xr-icon-centering) |
+
+| 2026-09-08 | ui, directions, animation, accessibility, responsive, testing, graphify | [directions hover and icon motion correction](2026-09-08.md#directions-hover-and-icon-motion-correction) |
+
 | 2026-09-08 | ui, directions, animation, accessibility, responsive, testing, graphify | [directions HUD motion system](2026-09-08.md#directions-hud-motion-system) |
 
 | 2026-09-08 | ui, directions, responsive, i18n, testing | [directions reference redesign](2026-09-08.md#directions-reference-redesign) |
@@ -115,3 +127,5 @@
 | 2026-09-01 | ui, directions, component, animation, accessibility, responsive, testing, dependency | [daily log](2026-09-01.md#added-reusable-animated-metric-counters)             |
 | 2026-09-01 | ui, directions, portfolio, i18n, responsive, testing, graphify                       | [daily log](2026-09-01.md#reframed-directions-as-four-experience-categories)   |
 | 2026-09-01 | ui, footer, legal, i18n, routing, seo, testing                                       | [daily log](2026-09-01.md#footer-legal-pages-and-social-contacts)              |
+| 2026-09-08 | ui, background, three, webgl, responsive, accessibility, testing, graphify           | [daily log](2026-09-08.md#grid-scan-desktop-background)                        |
+| 2026-09-08 | ui, background, layering, css, testing                                               | [daily log](2026-09-08.md#opaque-page-content-layer)                           |

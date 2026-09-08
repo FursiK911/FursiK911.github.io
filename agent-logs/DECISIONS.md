@@ -1,5 +1,15 @@
 # Global Decision Index
 
+| DEC-20260908-09 | Keep the desktop LiveCam at 100% of the right Hero column, render `contact.title` as a full-width opaque bottom overlay inside the photo frame, and leave mobile layout unchanged until a dedicated iteration. | ui, hero, live-cam, contact, portrait, desktop, responsive | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-09) |
+
+| DEC-20260908-08 | Keep section-heading eyebrow labels English-only while giving intro title rows their own localized i18n keys. | i18n, section-heading, intro, localization | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-08) |
+
+| DEC-20260908-07 | Model unavailable project actions with localized reason keys in project and experience data; render them as disabled buttons under a translucent info overlay with a hover/focus tooltip, while leaving still-working actions available. | projects, actions, unavailable, tooltip, accessibility | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-07) |
+
+| DEC-20260908-06 | Keep MyChess and MyChess Mobile as separate portfolio records, assign research-backed product metrics to the relevant record, and defer MyChessVR content until its dedicated research pass. | projects, mychess, mobile, flutter, metrics | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-06) |
+
+| DEC-20260908-05 | Keep hover light as a separate opacity-controlled layer that fades at its last pointer position; give every direction icon a one-time entrance pulse and repeat it only with the existing 6.5-second per-card HUD scan. | ui, directions, animation, accessibility | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-05) |
+
 | DEC-20260908-04 | Keep the LiveCam terminal in the vertically centered right-side zone at 28% width; generate every character delay independently in the 48–84 ms range and wait 3–4 seconds between entries. | ui, hero, live-cam, terminal, animation, responsive | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-04) |
 
 | DEC-20260908-03 | Model the live-camera HUD as an intentionally degraded but functional stream: independent metrics use stable-width cells, the terminal keeps severity-coded diagnostics, and reduced motion stays static. | ui, hero, live-cam, hud, telemetry, animation, accessibility | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-03) |
@@ -163,3 +173,5 @@ This is an index, not a second copy of the change log. Follow the source link fo
 Directions reference redesign (2026-09-08) keeps existing architecture and motion policy; no new global decision. See [daily log](2026/09/2026-09-08.md#directions-reference-redesign).
 
 Directions HUD motion system (2026-09-08) keeps motion local to the profile Directions slice and respects the existing reduced-motion contract. See [daily log](2026/09/2026-09-08.md#directions-hud-motion-system).
+
+| DEC-20260908-09 | Use the React Bits Grid Scan as a fixed desktop-only background for every route; disable webcam/model loading in the site adapter and use a static cyan grid when reduced motion is preferred. | ui, background, three, webgl, responsive, accessibility | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-09) |

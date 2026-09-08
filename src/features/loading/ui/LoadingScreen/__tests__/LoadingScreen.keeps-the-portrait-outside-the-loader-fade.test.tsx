@@ -1,12 +1,9 @@
-import { createRef } from 'react'
 import { screen } from '@testing-library/react'
 import { expect, it, vi } from 'vitest'
 import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { LoadingScreen } from '../LoadingScreen'
 
-it('marks the source portrait as excluded when the loader starts fading', () => {
-  const photoRef = createRef<HTMLDivElement>()
-
+it('keeps the result portrait in the fading loader', () => {
   const { container } = renderWithProviders(
     <LoadingScreen
       allReady
@@ -15,7 +12,6 @@ it('marks the source portrait as excluded when the loader starts fading', () => 
       cursorClicked
       notifyVideo={vi.fn()}
       phase="fading"
-      photoRef={photoRef}
       queryText="Find Dmitry"
       resultVisible
       skip={vi.fn()}
@@ -24,5 +20,7 @@ it('marks the source portrait as excluded when the loader starts fading', () => 
   )
 
   expect(container.querySelector('.loading-screen')).toHaveClass('is-fading')
-  expect(photoRef.current).toBe(screen.getByRole('img').parentElement)
+  expect(screen.getByRole('img').parentElement).not.toHaveStyle({
+    visibility: 'hidden',
+  })
 })

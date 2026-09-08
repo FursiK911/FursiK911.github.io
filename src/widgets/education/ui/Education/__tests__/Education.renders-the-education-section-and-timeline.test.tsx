@@ -7,7 +7,7 @@ it('renders the education section and timeline', async () => {
   renderWithProviders(<Education />)
   expect(document.querySelector('#education')).toBeInTheDocument()
   expect(document.querySelector('.section-heading .eyebrow')).toHaveTextContent(
-    '05 // ОБРАЗОВАНИЕ',
+    '05 // EDUCATION',
   )
   expect(screen.getAllByText('Донецкий национальный университет').length).toBe(
     2,

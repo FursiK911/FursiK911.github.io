@@ -7,11 +7,6 @@ export function Profile({
   typedRole,
   reducedMotion,
   entered = true,
-  onPortraitReady,
-  portraitEffectsActive = true,
-  portraitEffectsReady = true,
-  portraitTargetRef,
-  portraitVisible = true,
 }: ProfileProps) {
   return (
     <section
@@ -22,11 +17,6 @@ export function Profile({
         typedRole={typedRole}
         reducedMotion={reducedMotion}
         entered={entered}
-        onPortraitReady={onPortraitReady}
-        portraitEffectsActive={portraitEffectsActive}
-        portraitEffectsReady={portraitEffectsReady}
-        portraitTargetRef={portraitTargetRef}
-        portraitVisible={portraitVisible}
       />
       <Directions reducedMotion={reducedMotion} entered={entered} embedded />
     </section>

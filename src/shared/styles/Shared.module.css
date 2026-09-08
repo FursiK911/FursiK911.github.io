@@ -83,9 +83,9 @@ p {
   min-height: 560px;
   padding-top: 125px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 360px;
-  gap: 80px;
-  align-items: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(48px, 7vw, 104px);
+  align-items: center;
 }
 
 :global(.hero) h1 {
@@ -840,11 +840,6 @@ body:global(.is-loading) {
     padding-top: 0;
     grid-template-columns: 1fr;
     gap: 44px;
-  }
-  :global(.hero-portrait) {
-    max-width: 320px;
-    padding-top: 0;
-    order: -1;
   }
   :global(.projects-section),
   :global(.experience-section),

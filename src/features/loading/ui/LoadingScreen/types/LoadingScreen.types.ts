@@ -9,11 +9,9 @@ export interface LoadingScreenProps {
   onFadeComplete?: () => void
   onSkipComplete?: () => void
   notifyVideo: (available: boolean) => void
-  photoRef?: RefObject<HTMLDivElement | null>
   phase: LoadingPhase
   queryText: string
   resultVisible: boolean
   skip: () => void
   videoFallback: boolean
 }
-import type { RefObject } from 'react'

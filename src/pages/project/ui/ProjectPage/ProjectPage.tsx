@@ -4,6 +4,7 @@ import { getProjectById } from '@/entities/project'
 import type { ProjectMetric } from '@/entities/project'
 import { ProjectMediaGallery } from '@/features/project-details'
 import { ActionLink } from '@/shared/ui/ActionLink'
+import { UnavailableAction } from '@/shared/ui/UnavailableAction'
 import { Footer, Header, HudScrollIndicator } from '@/widgets/site-layout'
 import styles from './styles/ProjectPage.module.css'
 import type { ProjectPageProps } from './types/ProjectPage.types'
@@ -77,19 +78,35 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
                   </div>
                 </dl>
                 <div className={styles.actions}>
-                  {project.actions?.map((action) => (
-                    <ActionLink
-                      href={action.href}
-                      target="_blank"
-                      rel="noreferrer"
-                      key={action.href}
-                      variant={action.type === 'live' ? 'primary' : 'secondary'}
-                    >
-                      {action.type === 'external'
+                  {project.actions?.map((action) => {
+                    const label =
+                      action.type === 'external'
                         ? `${action.label} ↗`
-                        : `${t(`projects.actions.${action.type}`)} · ${action.label}`}
-                    </ActionLink>
-                  ))}
+                        : `${t(`projects.actions.${action.type}`)} · ${action.label}`
+                    return action.unavailableReasonKey ? (
+                      <UnavailableAction
+                        key={action.href}
+                        reason={t(action.unavailableReasonKey)}
+                        variant={
+                          action.type === 'live' ? 'primary' : 'secondary'
+                        }
+                      >
+                        {label}
+                      </UnavailableAction>
+                    ) : (
+                      <ActionLink
+                        href={action.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        key={action.href}
+                        variant={
+                          action.type === 'live' ? 'primary' : 'secondary'
+                        }
+                      >
+                        {label}
+                      </ActionLink>
+                    )
+                  })}
                 </div>
               </div>
             </div>

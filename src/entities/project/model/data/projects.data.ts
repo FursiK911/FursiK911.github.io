@@ -13,7 +13,18 @@ export const projects: Project[] = [
     company: 'ООО ЦУП',
     period: { from: '09.2023', to: '10.2024' },
     actions: [
-      { type: 'live', label: 'Website', href: 'https://info.mychess.app/' },
+      {
+        type: 'live',
+        label: 'Website',
+        href: 'https://info.mychess.app/',
+        unavailableReasonKey: 'projects.unavailableActions.mychessWebsite',
+      },
+      {
+        type: 'external',
+        label: 'MyChess platform',
+        href: 'https://mychess.app/',
+        unavailableReasonKey: 'projects.unavailableActions.mychessWebsite',
+      },
       {
         type: 'external',
         label: 'YouTube',
@@ -21,6 +32,7 @@ export const projects: Project[] = [
       },
     ],
     media: [{ kind: 'youtube', videoId: 't-PDCpjdJvs' }],
+    metricsKey: 'mychessMetrics',
     featured: true,
   },
   {
@@ -524,5 +536,32 @@ export const projects: Project[] = [
     tech: ['Unity', 'Photon', 'Manual testing', 'Bug tracking'],
     company: 'Yellow Element',
     period: { from: '10.2019', to: '02.2022' },
+  },
+  {
+    id: 'mychess-mobile',
+    titleKey: 'mychessMobile',
+    category: ['mobile', 'multiplayer'],
+    platformKey: 'platformMobile',
+    roleKey: 'mobileDeveloper',
+    descriptionKey: 'mychessMobileDesc',
+    pointsKey: 'mychessMobilePoints',
+    tech: ['Flutter', 'Dart', 'Android', 'iOS'],
+    company: 'ООО ЦУП',
+    period: { from: '09.2023', to: '10.2024' },
+    actions: [
+      {
+        type: 'download',
+        label: 'App Store',
+        href: 'https://apps.apple.com/app/mychess/id6532618342',
+      },
+      {
+        type: 'external',
+        label: 'RuStore',
+        href: 'https://apps.rustore.ru/app/com.mychess.app',
+      },
+      { type: 'live', label: 'Website', href: 'https://mychess.app/' },
+    ],
+    metricsKey: 'mychessMobileMetrics',
+    featured: true,
   },
 ]

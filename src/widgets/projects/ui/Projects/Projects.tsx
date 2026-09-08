@@ -35,7 +35,7 @@ export function Projects() {
     >
       <SectionHeading index="02" title={t('sections.projects')} />
       <div className={cx(styles.projectsIntro)}>
-        <h2>{t('sections.projects')}</h2>
+        <h2>{t('projects.title')}</h2>
         <p>{t('projects.intro')}</p>
       </div>
       <ProjectFilters active={filter} onChange={setFilter} />

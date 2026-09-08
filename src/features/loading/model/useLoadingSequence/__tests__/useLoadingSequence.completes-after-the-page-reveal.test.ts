@@ -4,7 +4,7 @@ import { useLoadingSequence } from '../useLoadingSequence'
 
 beforeEach(() => sessionStorage.clear())
 
-it('persists the intro only after the portrait transfer and page reveal complete', () => {
+it('persists the intro after the page reveal completes without a portrait transfer', () => {
   vi.useFakeTimers({ toFake: ['Date', 'setTimeout', 'clearTimeout'] })
   vi.spyOn(Math, 'random').mockReturnValue(0)
   const { result } = renderHook(() => useLoadingSequence('QUERY'))
@@ -15,8 +15,6 @@ it('persists the intro only after the portrait transfer and page reveal complete
   expect(sessionStorage.getItem('df-intro-seen')).toBeNull()
 
   act(() => result.current.finishFade())
-  expect(result.current.phase).toBe('transferring')
-  act(() => result.current.finishTransfer())
   expect(result.current.phase).toBe('revealing')
   act(() => vi.advanceTimersByTime(950))
 

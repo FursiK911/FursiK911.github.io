@@ -3,7 +3,7 @@
   overflow: hidden;
   background:
     radial-gradient(circle at 75% 8%, rgba(57, 83, 105, 0.24), transparent 28%),
-    var(--bg);
+    transparent;
 }
 
 .page {

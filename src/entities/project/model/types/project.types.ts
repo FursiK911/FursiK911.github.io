@@ -7,6 +7,7 @@ export type ProjectAction = {
   type: ProjectActionType
   label: string
   href: string
+  unavailableReasonKey?: string
 }
 
 export type ProjectMedia =

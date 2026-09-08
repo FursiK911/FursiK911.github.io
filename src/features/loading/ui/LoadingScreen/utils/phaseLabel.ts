@@ -8,7 +8,6 @@ export function phaseLabel(
   if (phase === 'searching') return translate('loader.status.scanning')
   if (
     phase === 'fading' ||
-    phase === 'transferring' ||
     phase === 'revealing' ||
     phase === 'skipping' ||
     phase === 'complete'

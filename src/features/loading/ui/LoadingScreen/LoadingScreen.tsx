@@ -18,7 +18,6 @@ export function LoadingScreen({
   onFadeComplete = () => undefined,
   onSkipComplete = () => undefined,
   notifyVideo,
-  photoRef,
   phase,
   queryText,
   resultVisible,
@@ -28,8 +27,7 @@ export function LoadingScreen({
   const { t } = useTranslation()
   const animationSpeed = useLoadingAnimationSpeed()
   const animationFactor = Math.max(animationSpeed, 0.01)
-  const visible =
-    phase !== 'complete' && phase !== 'transferring' && phase !== 'revealing'
+  const visible = phase !== 'complete' && phase !== 'revealing'
   const statusText = phaseLabel(phase, t)
   const candidatesRef = useRef<HTMLDivElement>(null)
 
@@ -220,7 +218,7 @@ export function LoadingScreen({
                 {t('loader.result.kicker')}
               </div>
               <h1>{t('loader.result.title')}</h1>
-              <div className={cx(styles.loadingResultPhoto)} ref={photoRef}>
+              <div className={cx(styles.loadingResultPhoto)}>
                 <img src={portrait} alt={t('hero.portraitAlt')} />
                 <span
                   className={cx(styles.loadingScanLine)}

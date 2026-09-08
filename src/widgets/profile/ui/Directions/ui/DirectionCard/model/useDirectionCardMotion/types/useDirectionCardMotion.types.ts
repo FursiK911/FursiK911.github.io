@@ -5,6 +5,7 @@ export type UseDirectionCardMotionParams = {
   hasEntered: boolean
   index: number
   reducedMotion: boolean
+  scanning: boolean
 }
 
 export type UseDirectionCardMotionResult = {
@@ -18,6 +19,7 @@ export type UseDirectionCardMotionResult = {
     y: MotionValue<number>
   }
   isHovering: boolean
+  isIconAnimating: boolean
   isMetricActive: boolean
   isMetricLabelVisible: boolean
   onPointerLeave: () => void

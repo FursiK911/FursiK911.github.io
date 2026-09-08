@@ -4,7 +4,6 @@ export type LoadingPhase =
   | 'searching'
   | 'result'
   | 'fading'
-  | 'transferring'
   | 'revealing'
   | 'skipping'
   | 'complete'

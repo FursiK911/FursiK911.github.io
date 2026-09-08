@@ -98,13 +98,14 @@ export const resources = {
         languages: 'LANG: RU_NATIVE / UA_B2 / EN_B1',
       },
       sections: {
-        projects: 'ПРОЕКТЫ',
+        projects: 'PROJECTS',
         experience: 'EXPERIENCE LOG',
         stack: 'TECH STACK',
-        education: 'ОБРАЗОВАНИЕ',
+        education: 'EDUCATION',
         contact: 'CONTACT CHANNEL',
       },
       experience: {
+        title: 'ОПЫТ',
         intro: 'PAST · CURRENT · NEXT',
         present: 'НАСТОЯЩЕЕ ВРЕМЯ',
         moreDetails: 'ПОДРОБНЕЕ',
@@ -138,6 +139,7 @@ export const resources = {
         cupProject: 'myChess · MyChessVR · product interfaces',
         cupAchievements: [
           'Web-платформа с мультиплеерными играми, турнирами и анализом Stockfish',
+          'Кроссплатформенное мобильное приложение myChess на Flutter и Dart',
           'Полная VR-реализация MyChessVR с IK-взаимодействиями',
           'Разработка мультиплеерных VR-демо для промышленных сценариев',
         ],
@@ -184,7 +186,7 @@ export const resources = {
         cupFrontendPhaseAchievements: [
           'Realtime games, tournaments, communities and chats',
           'Stockfish analysis, Chessbox and responsive UI',
-          'React/TypeScript architecture with Socket.io',
+          'React/TypeScript web architecture and Flutter/Dart mobile development',
         ],
         cupUnityPhaseRole: 'Middle Unity / VR Developer',
         cupUnityPhaseSummary: 'MyChessVR and drilling training demo',
@@ -221,6 +223,7 @@ export const resources = {
         testing: 'Manual QA / Testing',
         unityDeveloper: 'Unity Developer',
         middleFrontend: 'Middle Frontend Developer',
+        mobileDeveloper: 'Middle Mobile Developer',
       },
       platforms: {
         platformPcVrSteam: 'PC VR / Steam',
@@ -234,6 +237,7 @@ export const resources = {
         platformWebGl: 'WebGL',
       },
       projects: {
+        title: 'ПРОЕКТЫ',
         intro:
           'Системы, симуляции, игры и интерфейсы, созданные на Unity, XR и web.',
         all: 'ВСЕ',
@@ -273,6 +277,10 @@ export const resources = {
           download: 'СКАЧАТЬ',
           external: 'ВНЕШНЯЯ ССЫЛКА',
         },
+        unavailableActions: {
+          mychessWebsite:
+            'Сайт MyChess закрыт и больше недоступен для просмотра.',
+        },
         mychessvr: 'MyChessVR',
         industrial: 'Промышленные VR-тренажёры',
         drilling: 'VR-демо буровой установки',
@@ -281,6 +289,7 @@ export const resources = {
         earthDragons: 'Земля драконов',
         vulkanVerse: 'Vulkan Verse — Tartarus',
         mychessWeb: 'myChess',
+        mychessMobile: 'MyChess Mobile',
         mychessvrDesc:
           'Полноценный VR-шахматный опыт с несколькими режимами игры, головоломками, AI-соперником, IK-взаимодействиями и анализом ходов Stockfish.',
         industrialDesc:
@@ -296,7 +305,29 @@ export const resources = {
         vulkanVerseDesc:
           'Игровые механики и клиент-серверная функциональность для локации Tartarus в Vulkan Verse.',
         mychessWebDesc:
-          'Онлайн-шахматная платформа с мультиплеерными партиями, турнирами, анализом, головоломками и функциями сообщества.',
+          'Первая российская шахматная экосистема с веб- и мобильными версиями: онлайн-партии, турниры, сообщества, стримы, обучение и ИИ-аватары гроссмейстеров.',
+        mychessMobileDesc:
+          'Мобильное приложение экосистемы myChess на Flutter для онлайн-партий, турниров, сообществ, стримов и обучения на Android и iOS.',
+        mychessMetrics: [
+          { value: '100K+', label: 'загрузок в RuStore · февраль 2025' },
+          { value: '26K+', label: 'онлайн-участников Суперфинала 2025' },
+          { value: '694', label: 'участника рекордного Суперфинала' },
+          {
+            value: '633 / 767',
+            label: 'зарегистрированных пользователей в бете',
+          },
+        ],
+        mychessMobilePoints: [
+          'Разрабатывал кроссплатформенное приложение на Flutter и Dart',
+          'Адаптировал игровые, турнирные и социальные сценарии myChess для мобильных устройств',
+          'Поддерживал публикационные версии для Android и iOS',
+        ],
+        mychessMobileMetrics: [
+          { value: 'Flutter', label: 'кроссплатформенный мобильный стек' },
+          { value: 'Android + iOS', label: 'поддерживаемые платформы' },
+          { value: '100K+', label: 'загрузок в RuStore · февраль 2025' },
+          { value: '3.4 / 5', label: 'рейтинг RuStore · 371 отзыв' },
+        ],
         mychessvrPoints: [
           'Полная реализация на Unity в качестве единственного разработчика',
           'Режимы Classic, Rapid и Blitz с настраиваемым AI',
@@ -869,6 +900,7 @@ export const resources = {
         contact: 'CONTACT CHANNEL',
       },
       experience: {
+        title: 'EXPERIENCE',
         intro: 'PAST · CURRENT · NEXT',
         present: 'PRESENT',
         moreDetails: 'MORE DETAILS',
@@ -902,6 +934,7 @@ export const resources = {
         cupProject: 'myChess · MyChessVR · product interfaces',
         cupAchievements: [
           'Built a web platform with multiplayer games, tournaments and Stockfish analysis',
+          'Built the cross-platform myChess mobile application with Flutter and Dart',
           'Delivered the MyChessVR experience with IK interactions',
           'Developed multiplayer VR demos for industrial scenarios',
         ],
@@ -948,7 +981,7 @@ export const resources = {
         cupFrontendPhaseAchievements: [
           'Realtime games, tournaments, communities and chats',
           'Stockfish analysis, Chessbox and responsive UI',
-          'React/TypeScript architecture with Socket.io',
+          'React/TypeScript web architecture and Flutter/Dart mobile development',
         ],
         cupUnityPhaseRole: 'Middle Unity / VR Developer',
         cupUnityPhaseSummary: 'MyChessVR and drilling training demo',
@@ -985,6 +1018,7 @@ export const resources = {
         testing: 'Manual QA / Testing',
         unityDeveloper: 'Unity Developer',
         middleFrontend: 'Middle Frontend Developer',
+        mobileDeveloper: 'Middle Mobile Developer',
       },
       platforms: {
         platformPcVrSteam: 'PC VR / Steam',
@@ -998,6 +1032,7 @@ export const resources = {
         platformWebGl: 'WebGL',
       },
       projects: {
+        title: 'PROJECTS',
         intro:
           'Systems, simulations, games and interfaces shipped across Unity, XR and web.',
         all: 'ALL',
@@ -1037,6 +1072,10 @@ export const resources = {
           download: 'DOWNLOAD',
           external: 'EXTERNAL LINK',
         },
+        unavailableActions: {
+          mychessWebsite:
+            'The MyChess website is closed and no longer available to open.',
+        },
         mychessvr: 'MyChessVR',
         industrial: 'Industrial VR Training Simulations',
         drilling: 'VR Drilling Training Demo',
@@ -1045,6 +1084,7 @@ export const resources = {
         earthDragons: 'Earth of Dragons',
         vulkanVerse: 'Vulkan Verse — Tartarus',
         mychessWeb: 'myChess',
+        mychessMobile: 'MyChess Mobile',
         mychessvrDesc:
           'A complete VR chess experience with multiple game modes, puzzles, an AI opponent, IK interactions and Stockfish move analysis.',
         industrialDesc:
@@ -1060,7 +1100,26 @@ export const resources = {
         vulkanVerseDesc:
           'Gameplay mechanics and client-server functionality developed for the Tartarus location of Vulkan Verse.',
         mychessWebDesc:
-          'An online chess platform with multiplayer games, tournaments, analysis, puzzles and community functionality.',
+          'A Russian chess ecosystem with web and mobile versions, online games, tournaments, communities, streams, learning and grandmaster AI avatars.',
+        mychessMobileDesc:
+          'A Flutter mobile application for the myChess ecosystem, bringing online games, tournaments, communities, streams and learning to Android and iOS.',
+        mychessMetrics: [
+          { value: '100K+', label: 'RuStore downloads · February 2025' },
+          { value: '26K+', label: 'online Superfinal 2025 participants' },
+          { value: '694', label: 'participants in the record Superfinal' },
+          { value: '633 / 767', label: 'registered beta users reported' },
+        ],
+        mychessMobilePoints: [
+          'Developed a cross-platform application with Flutter and Dart',
+          'Adapted myChess game, tournament and social flows for mobile devices',
+          'Supported release versions for Android and iOS',
+        ],
+        mychessMobileMetrics: [
+          { value: 'Flutter', label: 'cross-platform mobile stack' },
+          { value: 'Android + iOS', label: 'supported platforms' },
+          { value: '100K+', label: 'RuStore downloads · February 2025' },
+          { value: '3.4 / 5', label: 'RuStore rating · 371 reviews' },
+        ],
         mychessvrPoints: [
           'Full Unity implementation as sole developer',
           'Classic, Rapid and Blitz modes with configurable AI',

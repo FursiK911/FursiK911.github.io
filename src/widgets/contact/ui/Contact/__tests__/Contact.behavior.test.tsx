@@ -4,10 +4,16 @@ import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { changeLanguage } from '@/shared/config/i18n'
 it('renders contact actions', async () => {
   await changeLanguage('ru')
-  renderWithProviders(<Contact />)
+  renderWithProviders(<Contact reducedMotion />)
   expect(
-    screen.getByRole('heading', { name: /СОЗДАДИМ ЧТО-НИБУДЬ ВМЕСТЕ/i }),
-  ).toBeVisible()
+    screen.queryByRole('heading', { name: /СОЗДАДИМ ЧТО-НИБУДЬ ВМЕСТЕ/i }),
+  ).not.toBeInTheDocument()
+  expect(screen.getByRole('img', { name: /Дмитрий Фурсов/i })).toBeVisible()
+  expect(screen.getByText('PROFILE_IMAGE // 001')).toBeVisible()
+  const quote = screen.getByRole('blockquote')
+  expect(quote).toBeVisible()
+  expect(quote).toHaveClass('contact-quote')
+  expect(quote.closest('.portrait-frame')).toBeInTheDocument()
   expect(
     screen.getByRole('link', { name: /19fursik99@gmail.com/ }),
   ).toBeVisible()

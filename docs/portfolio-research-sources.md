@@ -20,6 +20,7 @@ resolved directory is `C:\Work\Резюме\app_from_portfolio_information\`.
 - [AR Coloring](C:/Work/Резюме/app_from_portfolio_information/ar-coloring-research.md)
 - [Villa Krim / Virtual Sommelier](C:/Work/Резюме/app_from_portfolio_information/virtual-sommelier-villa-krim-research.md)
 - [Neo4 Sightline](C:/Work/Резюме/app_from_portfolio_information/neo4-sightline-research.md)
+- [MyChess](C:/Work/Резюме/app_from_portfolio_information/mychess-research.md)
 
 ## Agent workflow
 

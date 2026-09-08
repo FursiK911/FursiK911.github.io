@@ -1,0 +1,23 @@
+.background {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.78;
+}
+
+.gridScan {
+  position: absolute;
+  inset: 0;
+}
+
+.staticGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(167, 243, 246, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(167, 243, 246, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, #000, transparent 78%);
+}

@@ -1,6 +1,7 @@
 import { cx, styles } from '@/shared/styles'
 import { useTranslation } from 'react-i18next'
 import { ActionLink } from '@/shared/ui/ActionLink'
+import { UnavailableAction } from '@/shared/ui/UnavailableAction'
 import type { ExperiencePhaseProps } from './types/ExperiencePhase.types'
 
 export function ExperiencePhase({ phase }: ExperiencePhaseProps) {
@@ -50,7 +51,15 @@ export function ExperiencePhase({ phase }: ExperiencePhaseProps) {
               >
                 <div className={cx(styles.experienceProjectHeading)}>
                   <h5>{t(project.titleKey)}</h5>
-                  {project.url ? (
+                  {project.url && project.unavailableReasonKey ? (
+                    <UnavailableAction
+                      reason={t(project.unavailableReasonKey)}
+                      variant="inline"
+                    >
+                      {project.linkLabel ?? t('projects.view')}{' '}
+                      <span aria-hidden="true">↗</span>
+                    </UnavailableAction>
+                  ) : project.url ? (
                     <ActionLink
                       href={project.url}
                       target="_blank"

@@ -5,6 +5,7 @@ export interface ExperienceProject {
   pointsKey: string
   url?: string
   linkLabel?: string
+  unavailableReasonKey?: string
 }
 
 export interface ExperienceRolePhase {

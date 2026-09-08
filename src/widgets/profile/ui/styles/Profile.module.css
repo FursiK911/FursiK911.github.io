@@ -12,8 +12,22 @@
 }
 
 :global(.hero-copy) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   min-width: 0;
   max-width: 100%;
+}
+
+:global(.hero-broadcast) {
+  min-width: 0;
+}
+
+@media (min-width: 901px) {
+  :global(.hero-broadcast) :global(.live-cam) {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 :global(.hero-role) {
@@ -23,98 +37,16 @@
   font-size: 0.9rem;
 }
 
+:global(.hero-languages) {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font: 0.65rem var(--mono);
+  letter-spacing: 0.08em;
+}
+
 :global(.hero-actions) {
   display: flex;
   align-items: center;
   gap: 18px;
   margin-top: 38px;
-}
-
-:global(.hero-portrait) {
-  padding-top: 35px;
-}
-
-:global(.portrait-frame) {
-  position: relative;
-  border: 1px solid var(--line);
-  padding: 12px 12px 38px;
-}
-
-:global(.portrait-frame):before,
-:global(.portrait-frame):after {
-  content: '';
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  border-color: var(--cyan);
-}
-
-:global(.portrait-frame):before {
-  top: -1px;
-  left: -1px;
-  border-top: 1px solid;
-  border-left: 1px solid;
-}
-
-:global(.portrait-frame):after {
-  bottom: -1px;
-  right: -1px;
-  border-bottom: 1px solid;
-  border-right: 1px solid;
-}
-
-:global(.portrait-frame) img {
-  width: 100%;
-  display: block;
-}
-
-:global(.portrait-frame):global(.is-portrait-pending) {
-  border-color: transparent;
-  background: transparent;
-}
-
-:global(.portrait-frame):global(.is-portrait-pending):before,
-:global(.portrait-frame):global(.is-portrait-pending):after,
-:global(.portrait-frame):global(.is-portrait-pending) :global(.frame-label),
-:global(.portrait-frame):global(.is-portrait-pending)
-  + :global(.portrait-note) {
-  opacity: 0;
-}
-
-:global(.portrait-frame):global(.is-portrait-pending):not(
-    :global(.is-base-portrait-visible)
-  )
-  :global(.portrait-glitch) {
-  opacity: 0;
-}
-
-:global(.portrait-frame):global(.is-portrait-handoff)
-  :global(.portrait-glitch)
-  img {
-  filter: saturate(0.7) contrast(1.1);
-}
-
-:global(.portrait-glitch) {
-  position: relative;
-  overflow: visible;
-  isolation: isolate;
-}
-
-:global(.frame-label) {
-  position: absolute;
-  bottom: 12px;
-  left: 12px;
-  color: var(--cyan);
-}
-
-:global(.portrait-note) {
-  line-height: 1.8;
-  margin-top: 20px;
-  text-align: right;
-}
-
-:global(.contact-links) {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
 }

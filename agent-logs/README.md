@@ -1,5 +1,15 @@
 # AI Agent Change Log Index
 
+| 2026-09-08 | i18n, section-heading, intro, testing | [English section eyebrows and localized intro titles](2026/09/2026-09-08.md#english-section-eyebrows-and-localized-intro-titles) |
+
+| 2026-09-08 | projects, actions, unavailable, tooltip, accessibility, i18n, testing, graphify | [Disabled unavailable project actions](2026/09/2026-09-08.md#disabled-unavailable-project-actions) |
+
+| 2026-09-08 | projects, mychess, mobile, flutter, i18n, metrics, portfolio, research, testing, graphify | [MyChess and MyChess Mobile project content](2026/09/2026-09-08.md#mychess-and-mychess-mobile-project-content) |
+
+| 2026-09-08 | ui, directions, animation, responsive, testing | [directions mobile and XR icon centering](2026/09/2026-09-08.md#directions-mobile-and-xr-icon-centering) |
+
+| 2026-09-08 | ui, directions, animation, accessibility, responsive, testing, graphify | [directions hover and icon motion correction](2026/09/2026-09-08.md#directions-hover-and-icon-motion-correction) |
+
 | 2026-09-08 | ui, directions, animation, accessibility, responsive, testing, graphify | [directions HUD motion system](2026/09/2026-09-08.md#directions-hud-motion-system) |
 
 | 2026-09-08 | ui, directions, responsive, i18n, testing | [directions reference redesign](2026/09/2026-09-08.md#directions-reference-redesign) |
@@ -125,6 +135,10 @@
 Use this file to locate history without scanning every daily log.
 
 ## Latest entries
+
+Grid Scan desktop background (2026-09-08) adds a shared route-level WebGL background with mobile and reduced-motion safeguards. See [daily log](2026/09/2026-09-08.md#grid-scan-desktop-background).
+
+Opaque page content layer (2026-09-08) keeps the Grid Scan behind the route content boundary. See [daily log](2026/09/2026-09-08.md#opaque-page-content-layer).
 
 | 2026-08-29 | ui, animation, testing | [daily log](2026/08/2026-08-29.md) |
 | 2026-08-29 | ui, animation, i18n, accessibility, testing | [daily log](2026/08/2026-08-29.md) |

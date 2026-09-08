@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Modal } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
 import { ActionLink } from '@/shared/ui/ActionLink'
+import { UnavailableAction } from '@/shared/ui/UnavailableAction'
 import { ProjectMediaGallery } from '../ProjectMediaGallery/ProjectMediaGallery'
 import styles from './styles/ProjectDetails.module.css'
 import type { ProjectDetailsProps } from './types/ProjectDetails.types'
@@ -89,17 +90,27 @@ export function ProjectDetails({
                 </ActionLink>
                 {project.actions
                   ?.filter((action) => action.type !== 'external')
-                  .map((action) => (
-                    <ActionLink
-                      href={action.href}
-                      target="_blank"
-                      rel="noreferrer"
-                      key={action.href}
-                      variant="secondary"
-                    >
-                      {t(`projects.actions.${action.type}`)}
-                    </ActionLink>
-                  ))}
+                  .map((action) => {
+                    const label = t(`projects.actions.${action.type}`)
+                    return action.unavailableReasonKey ? (
+                      <UnavailableAction
+                        key={action.href}
+                        reason={t(action.unavailableReasonKey)}
+                      >
+                        {label}
+                      </UnavailableAction>
+                    ) : (
+                      <ActionLink
+                        href={action.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        key={action.href}
+                        variant="secondary"
+                      >
+                        {label}
+                      </ActionLink>
+                    )
+                  })}
               </div>
             </div>
           </div>

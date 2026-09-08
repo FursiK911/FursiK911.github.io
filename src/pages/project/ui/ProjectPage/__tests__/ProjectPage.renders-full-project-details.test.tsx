@@ -12,6 +12,7 @@ it('renders the full project details and external actions', async () => {
   ).toBeInTheDocument()
   expect(screen.getByText('Technology stack')).toBeInTheDocument()
   expect(screen.getByText('Project contribution')).toBeInTheDocument()
+  expect(screen.getByRole('button', { name: /OPEN LIVE DEMO/i })).toBeDisabled()
   expect(screen.getByRole('link', { name: /YouTube/i })).toHaveAttribute(
     'href',
     'https://www.youtube.com/watch?v=t-PDCpjdJvs',

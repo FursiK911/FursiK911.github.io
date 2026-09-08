@@ -8,12 +8,12 @@ it('localizes project descriptions and points in Russian', async () => {
   renderWithProviders(<ExperienceDetailsItem entry={workExperience[2]} />)
   expect(
     screen.getByText(
-      'Онлайн-шахматная платформа с мультиплеерными партиями, турнирами, анализом, головоломками и функциями сообщества.',
+      'Первая российская шахматная экосистема с веб- и мобильными версиями: онлайн-партии, турниры, сообщества, стримы, обучение и ИИ-аватары гроссмейстеров.',
     ),
   ).toBeInTheDocument()
   expect(
     screen.queryByText(
-      'An online chess platform with multiplayer games, tournaments, analysis, puzzles and community functionality.',
+      'A Russian chess ecosystem with web and mobile versions, online games, tournaments, communities, streams, learning and grandmaster AI avatars.',
     ),
   ).not.toBeInTheDocument()
 })

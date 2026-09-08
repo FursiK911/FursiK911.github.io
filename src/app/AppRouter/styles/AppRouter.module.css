@@ -1,0 +1,15 @@
+.root {
+  position: relative;
+  min-height: 100dvh;
+  background: var(--bg);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.content :global(#page-content) {
+  position: relative;
+  background: var(--bg);
+}

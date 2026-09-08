@@ -25,12 +25,18 @@ export function DirectionCard({
     cardStyle,
     gamepadStyle,
     isHovering,
+    isIconAnimating,
     isMetricActive,
     isMetricLabelVisible,
     onPointerLeave,
     onPointerMove,
     pointerStyle,
-  } = useDirectionCardMotion({ hasEntered, index, reducedMotion })
+  } = useDirectionCardMotion({
+    hasEntered,
+    index,
+    reducedMotion,
+    scanning,
+  })
   const cardDelay = index * DIRECTION_CARD_STAGGER_MS
   const isStatic = reducedMotion || hasEntered
 
@@ -38,7 +44,9 @@ export function DirectionCard({
     <motion.article
       className={cx(styles.directionCard, localStyles.directionCard)}
       data-entrance={isStatic ? 'complete' : 'pending'}
+      data-direction={direction.id}
       data-hovering={isHovering}
+      data-icon-animating={isIconAnimating}
       data-scanning={scanning}
       initial={reducedMotion ? false : { opacity: 0, scale: 0.985 }}
       animate={
@@ -52,6 +60,7 @@ export function DirectionCard({
       onPointerMove={onPointerMove}
       style={{ ...cardStyle, ...pointerStyle }}
     >
+      <span className={localStyles.directionPointerGlow} aria-hidden="true" />
       <span className={localStyles.directionBorderScan} aria-hidden="true" />
       <span className={localStyles.directionNumber} aria-hidden="true">
         {String(index + 1).padStart(2, '0')}
@@ -60,27 +69,21 @@ export function DirectionCard({
         className={localStyles.directionIcon}
         aria-hidden="true"
         initial={reducedMotion ? false : { opacity: 0, y: 6 }}
-        animate={
-          isStatic
-            ? {
-                opacity: 1,
-                rotate: direction.id === 'web' && scanning ? [0, -2, 2, 0] : 0,
-                y: 0,
-              }
-            : { opacity: 0, y: 6 }
-        }
+        animate={isStatic ? { opacity: 1, y: 0 } : { opacity: 0, y: 6 }}
         transition={{
           delay: reducedMotion
             ? 0
             : (cardDelay + DIRECTION_CONTENT_DELAY_MS) / 1000,
-          duration: direction.id === 'web' && scanning ? 0.8 : 0.22,
+          duration: 0.22,
         }}
       >
-        <motion.span
-          className={localStyles.directionIconGlyph}
-          style={direction.id === 'game-engines' ? gamepadStyle : undefined}
-        >
-          <direction.icon size={36} stroke={1.6} />
+        <motion.span className={localStyles.directionIconGlyph}>
+          <motion.span
+            className={localStyles.directionIconPointerGlyph}
+            style={direction.id === 'game-engines' ? gamepadStyle : undefined}
+          >
+            <direction.icon size={36} stroke={1.6} />
+          </motion.span>
         </motion.span>
         {direction.id === 'mobile' && (
           <span className={localStyles.directionIconScan} />

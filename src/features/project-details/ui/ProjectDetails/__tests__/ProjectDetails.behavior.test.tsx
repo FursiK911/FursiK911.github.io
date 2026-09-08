@@ -19,8 +19,10 @@ it('renders accessible project dialog', async () => {
     'href',
     '/projects/mychess-web',
   )
-  expect(screen.getByRole('link', { name: /OPEN LIVE DEMO/i })).toHaveAttribute(
-    'href',
-    'https://info.mychess.app/',
-  )
+  expect(screen.getByRole('button', { name: /OPEN LIVE DEMO/i })).toBeDisabled()
+  expect(
+    screen.getByRole('button', {
+      name: 'The MyChess website is closed and no longer available to open.',
+    }),
+  ).toBeInTheDocument()
 })

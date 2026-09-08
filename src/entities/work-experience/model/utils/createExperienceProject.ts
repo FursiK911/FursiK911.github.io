@@ -7,6 +7,15 @@ export function createExperienceProject(
   pointsKey: string,
   url?: string,
   linkLabel?: string,
+  unavailableReasonKey?: string,
 ): ExperienceProject {
-  return { id, titleKey, descriptionKey, pointsKey, url, linkLabel }
+  return {
+    id,
+    titleKey,
+    descriptionKey,
+    pointsKey,
+    url,
+    linkLabel,
+    unavailableReasonKey,
+  }
 }

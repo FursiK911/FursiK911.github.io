@@ -32,7 +32,7 @@ export function Experience() {
         <SectionHeading index="03" title={t('sections.experience')} />
       </motion.div>
       <div className={cx(styles.experienceIntro)}>
-        <h2>{t('sections.experience')}</h2>
+        <h2>{t('experience.title')}</h2>
         <p>{t('experience.intro')}</p>
       </div>
       <ExperienceTimeline entries={workExperience} />

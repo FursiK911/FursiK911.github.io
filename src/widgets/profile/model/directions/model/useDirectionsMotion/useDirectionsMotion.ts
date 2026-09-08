@@ -55,8 +55,8 @@ export function useDirectionsMotion({
     }
 
     let currentIndex = 0
-    let scanTimeout: ReturnType<typeof setTimeout> | undefined
-    let clearTimeout: ReturnType<typeof setTimeout> | undefined
+    let scanTimeout: number | undefined
+    let clearTimeout: number | undefined
 
     const runScan = () => {
       setScanningCardIndex(currentIndex)

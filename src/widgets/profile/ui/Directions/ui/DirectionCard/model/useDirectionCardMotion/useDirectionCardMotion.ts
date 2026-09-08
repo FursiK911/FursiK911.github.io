@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 import type { PointerEvent } from 'react'
 import {
   DIRECTION_CARD_STAGGER_MS,
+  DIRECTION_CONTENT_DELAY_MS,
+  DIRECTION_ICON_PULSE_DURATION_MS,
   DIRECTION_METRIC_DELAY_MS,
   DIRECTION_METRIC_LABEL_DELAY_MS,
   DIRECTION_TILT_LIMIT,
@@ -16,6 +18,7 @@ export function useDirectionCardMotion({
   hasEntered,
   index,
   reducedMotion,
+  scanning,
 }: UseDirectionCardMotionParams): UseDirectionCardMotionResult {
   const pointerX = useMotionValue(0)
   const pointerY = useMotionValue(0)
@@ -35,18 +38,18 @@ export function useDirectionCardMotion({
     ),
     { damping: 18, mass: 0.4, stiffness: 150 },
   )
-  const gamepadX = useSpring(useTransform(pointerX, [-1, 1], [-1.5, 1.5]), {
+  const gamepadX = useSpring(useTransform(pointerX, [-1, 1], [-2.5, 2.5]), {
     damping: 18,
     mass: 0.4,
     stiffness: 160,
   })
-  const gamepadY = useSpring(useTransform(pointerY, [-1, 1], [-1.5, 1.5]), {
+  const gamepadY = useSpring(useTransform(pointerY, [-1, 1], [-2.5, 2.5]), {
     damping: 18,
     mass: 0.4,
     stiffness: 160,
   })
   const gamepadRotate = useSpring(
-    useTransform(pointerX, [-1, 1], [-0.75, 0.75]),
+    useTransform(pointerX, [-1, 1], [-1.25, 1.25]),
     {
       damping: 18,
       mass: 0.4,
@@ -54,6 +57,7 @@ export function useDirectionCardMotion({
     },
   )
   const [isHovering, setIsHovering] = useState(false)
+  const [isIconPulseActive, setIsIconPulseActive] = useState(false)
   const [hasMetricStarted, setHasMetricStarted] = useState(false)
   const [hasMetricLabelAppeared, setHasMetricLabelAppeared] = useState(false)
   const [pointerStyle, setPointerStyle] = useState({
@@ -80,6 +84,25 @@ export function useDirectionCardMotion({
     }
   }, [hasEntered, index, reducedMotion])
 
+  useEffect(() => {
+    if (reducedMotion || !hasEntered) return
+
+    const delay = index * DIRECTION_CARD_STAGGER_MS + DIRECTION_CONTENT_DELAY_MS
+    const pulseTimer = window.setTimeout(
+      () => setIsIconPulseActive(true),
+      delay,
+    )
+    const clearTimer = window.setTimeout(
+      () => setIsIconPulseActive(false),
+      delay + DIRECTION_ICON_PULSE_DURATION_MS,
+    )
+
+    return () => {
+      window.clearTimeout(pulseTimer)
+      window.clearTimeout(clearTimer)
+    }
+  }, [hasEntered, index, reducedMotion])
+
   function onPointerMove(event: PointerEvent<HTMLElement>) {
     if (reducedMotion || event.pointerType !== 'mouse') return
 
@@ -99,10 +122,6 @@ export function useDirectionCardMotion({
   function onPointerLeave() {
     pointerX.set(0)
     pointerY.set(0)
-    setPointerStyle({
-      '--directions-pointer-x': '50%',
-      '--directions-pointer-y': '50%',
-    })
     setIsHovering(false)
   }
 
@@ -110,6 +129,7 @@ export function useDirectionCardMotion({
     cardStyle: { rotateX, rotateY },
     gamepadStyle: { rotate: gamepadRotate, x: gamepadX, y: gamepadY },
     isHovering,
+    isIconAnimating: !reducedMotion && (isIconPulseActive || scanning),
     isMetricActive: reducedMotion || hasMetricStarted,
     isMetricLabelVisible: reducedMotion || hasMetricLabelAppeared,
     onPointerLeave,
