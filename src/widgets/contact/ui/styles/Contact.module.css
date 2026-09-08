@@ -1,8 +1,4 @@
 /* Styles owned by the contact slice. */
-:global(.contact-grid) p {
-  color: #d5e1e3;
-}
-
 :global(.contact-links) button {
   border: 0;
   background: transparent;
@@ -16,6 +12,7 @@
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 100px;
+  align-items: center;
 }
 
 :global(.contact-section) {

@@ -26,8 +26,7 @@
   text-wrap: balance;
 }
 
-:global(.projects-intro) p,
-:global(.contact-grid) p {
+:global(.projects-intro) p {
   color: var(--muted);
   max-width: 340px;
   line-height: 1.6;

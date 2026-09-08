@@ -6,6 +6,7 @@ import { cvUrl } from '@/entities/project'
 import portrait from '@/shared/assets/dmitry-fursov.webp'
 import { TypingText } from '@/shared/ui/TypingText'
 import { GlitchPortrait } from '../GlitchPortrait/GlitchPortrait'
+import { LiveCam } from '../LiveCam/LiveCam'
 import { ActionLink } from '@/shared/ui/ActionLink'
 import '../styles/Profile.module.css'
 import type { HeroProps } from './types/Hero.types'
@@ -46,12 +47,9 @@ export function Hero({
         <motion.p className={cx(styles.heroRole)} variants={heroItemVariants}>
           <TypingText text={typedRole} reducedMotion={reducedMotion} />
         </motion.p>
-        <motion.p
-          className={cx(styles.terminalLine)}
-          variants={heroItemVariants}
-        >
-          <span>›_</span> {t('hero.terminal')}
-        </motion.p>
+        <motion.div variants={heroItemVariants}>
+          <LiveCam entered={entered} reducedMotion={reducedMotion} />
+        </motion.div>
         <motion.div
           className={cx(styles.heroActions)}
           variants={heroItemVariants}

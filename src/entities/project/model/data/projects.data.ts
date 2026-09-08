@@ -434,6 +434,24 @@ export const projects: Project[] = [
     tech: ['Unity', 'C#', 'AR', 'AssetBundles', 'Android', 'iOS'],
     company: 'Yellow Element',
     period: { from: '10.2019', to: '02.2022' },
+    actions: [
+      {
+        type: 'external',
+        label: 'App Store',
+        href: 'https://apps.apple.com/ru/app/chudobooks/id1487856701',
+      },
+      {
+        type: 'external',
+        label: 'Android archive',
+        href: 'https://apkpure.net/ru/chudobooks/com.chudobooks',
+      },
+      {
+        type: 'external',
+        label: 'AppBrain',
+        href: 'https://www.appbrain.com/app/chudobooks/com.chudobooks',
+      },
+    ],
+    metricsKey: 'chudobooksMetrics',
   },
   {
     id: 'ar-chudaboxes',

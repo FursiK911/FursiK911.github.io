@@ -1,5 +1,17 @@
 # Global Decision Index
 
+| DEC-20260908-03 | Model the live-camera HUD as an intentionally degraded but functional stream: independent metrics use stable-width cells, the terminal keeps severity-coded diagnostics, and reduced motion stays static. | ui, hero, live-cam, hud, telemetry, animation, accessibility | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-03) |
+
+| DEC-20260908-02 | Use a viewport-activated, muted loop video with a two-second minimum connect state, signal-loss reconnect backoff, viewport pause/resume, and a static no-download reduced-motion fallback for the Hero live-cam HUD. | ui, hero, live-cam, video, hud, animation, accessibility | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-02) |
+
+| DEC-20260907-16 | Use a 4px vertical gap between footer social, navigation, and action links while preserving their 28px minimum hit areas. | ui, footer, css | [2026-09-07](2026/09/2026-09-07.md#decision-dec-20260907-16) |
+
+| DEC-20260907-15 | Use vertical center alignment for the desktop contact-grid columns and start alignment for its mobile one-column layout. | ui, contact, responsive, css | [2026-09-07](2026/09/2026-09-07.md#decision-dec-20260907-15) |
+
+| DEC-20260907-14 | Keep the contact grid focused on its heading and direct contact actions; omit the localized descriptive paragraph and its dedicated styling. | ui, contact, i18n, css | [2026-09-07](2026/09/2026-09-07.md#decision-dec-20260907-14) |
+
+| DEC-20260907-13 | Keep the portfolio footer limited to primary brand, contact, navigation, resume, and legal actions; remove the redundant bottom strip and its dedicated localization keys. | ui, footer, css, i18n | [2026-09-07](2026/09/2026-09-07.md#decision-dec-20260907-13) |
+
 | DEC-20260907-11 | Use locally bundled Unbounded Variable as the shared display font for large headings, with neutral letter spacing; keep body copy and mono UI labels unchanged. | ui, typography, fonts, responsive | [2026-09-07](2026/09/2026-09-07.md#decision-dec-20260907-11) |
 
 | DEC-20260907-10 | Use the page background behind the Hero portrait instead of a separate panel fill. | ui, hero, portrait, css | [2026-09-07](2026/09/2026-09-07.md#decision-dec-20260907-10) |
@@ -144,3 +156,4 @@ This is an index, not a second copy of the change log. Follow the source link fo
 | DEC-20260825-04 | Commit queryable Graphify data and report only.                                                                                                                                                     | graphify, governance                      | [2026-08-25](2026/08/2026-08-25.md#decision-dec-20260825-04)               |
 | DEC-20260831-06 | Use shared ActionLink and ActionButton components with explicit CTA variants to keep primary hover colors stable and prevent context-specific CSS conflicts.                                        | ui, components, navigation, accessibility | [2026-08-31](2026/08/2026-08-31.md#decision-dec-20260831-06)               |
 | DEC-20260907-04 | Populate AR Coloring with source-grounded Apple screenshots, store/archive links, and iOS/Android product metrics; exclude related-product metrics and technologies marked unverified for this app. | projects, ar, media, i18n, research       | [2026-09-07](2026/09/2026-09-07.md#ar-coloring-project-content)            |
+| DEC-20260908-01 | Keep Chudobooks as a separate AR book case and use only its own package, App Store record, features, and Android metrics; do not merge related AR Chudoboxes, AR Coloring, or Chudoboxes EKO data.  | projects, ar, mobile, i18n, research      | [2026-09-08](2026/09/2026-09-08.md#chudobooks-project-content)             |

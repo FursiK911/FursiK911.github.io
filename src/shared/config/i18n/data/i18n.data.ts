@@ -75,7 +75,21 @@ export const resources = {
           'Unity Developer',
           'Unigine Developer',
         ],
-        terminal: 'currently_building: cross-platform software systems_',
+        liveCam: {
+          ariaLabel: 'Камера прямой трансляции',
+          live: 'LIVE CAM',
+          channel: 'CH-09 // EAST SECTOR',
+          status: {
+            connecting: 'UPLINK INITIALIZING...',
+            signalLost: 'SIGNAL LOST // RECONNECTING',
+          },
+          telemetry: {
+            signal: 'SIGNAL',
+            uplink: 'UPLINK',
+            latency: 'LATENCY',
+            fps: 'FPS',
+          },
+        },
         projects: 'СМОТРЕТЬ ПРОЕКТЫ',
         cv: 'СКАЧАТЬ РЕЗЮМЕ',
         contact: 'СВЯЗАТЬСЯ',
@@ -455,11 +469,17 @@ export const resources = {
         chudobooks: 'Chudobooks',
         arChudaboxes: 'AR Chudoboxes / Chudoboxes EKO',
         chudobooksDesc:
-          'AR-контент для детских журналов с интерактивными книгами и аудиосценариями.',
+          'Мобильное AR-приложение для детской книги Chudoboxes: печатные маркеры запускали 3D-персонажей, сцены, интерактивную книгу и аудиосценарии.',
         chudobooksPoints: [
-          'Реализовал AR-сцены на основе маркеров',
-          'Создал доставку контента через AssetBundle',
-          'Связал сценарии интерактивной книги и аудиокниги',
+          'Реализовал marker-based AR-сцены и распознавание печатных страниц через Vuforia',
+          'Настроил динамическую загрузку 3D/AR-контента через AssetBundle',
+          'Связал интерактивную книгу, аудиосценарии и фото/видео с AR-персонажами',
+        ],
+        chudobooksMetrics: [
+          { value: 'iOS + Android', label: 'платформы' },
+          { value: '1.9 / 1.11', label: 'последние версии iOS / Android' },
+          { value: '~900', label: 'Android-установок по архивной метрике' },
+          { value: '3.64 / 5', label: 'рейтинг Android по 14 оценкам' },
         ],
         arChudaboxesDesc:
           'Коммерческий мобильный AR-компаньон интерактивной детской книги: печатные страницы и промоматериалы запускали анимации персонажей, AR-фото и AR-видео. Версия Chudoboxes EKO расширила экосистему коллекционными наклейками, открыткой и мини-играми для кампании ЕКО Маркет.',
@@ -675,7 +695,6 @@ export const resources = {
       },
       contact: {
         title: 'СОЗДАДИМ ЧТО-НИБУДЬ ВМЕСТЕ.',
-        body: 'Открыт к задачам в web и mobile, к мультиплеерным, Unity/Unigine- и другим интерактивным продуктам.',
         email: 'EMAIL',
         telegram: 'TELEGRAM',
         copy: 'КОПИРОВАТЬ EMAIL',
@@ -683,14 +702,12 @@ export const resources = {
         cv: 'СКАЧАТЬ РЕЗЮМЕ',
       },
       footer: {
-        tagline: 'Построено на React + TypeScript.',
         role: 'SOFTWARE DEVELOPER',
         connect: 'КОНТАКТЫ',
         explore: 'НАВИГАЦИЯ',
         cv: 'СКАЧАТЬ РЕЗЮМЕ',
         privacy: 'Политика конфиденциальности',
         terms: 'Условия использования',
-        signature: 'WEB · MOBILE · UNITY · MULTIPLAYER',
       },
       legal: {
         back: 'На главную',
@@ -818,7 +835,21 @@ export const resources = {
           'Unity Developer',
           'Unigine Developer',
         ],
-        terminal: 'currently_building: cross-platform software systems_',
+        liveCam: {
+          ariaLabel: 'Live camera feed',
+          live: 'LIVE CAM',
+          channel: 'CH-09 // EAST SECTOR',
+          status: {
+            connecting: 'UPLINK INITIALIZING...',
+            signalLost: 'SIGNAL LOST // RECONNECTING',
+          },
+          telemetry: {
+            signal: 'SIGNAL',
+            uplink: 'UPLINK',
+            latency: 'LATENCY',
+            fps: 'FPS',
+          },
+        },
         projects: 'VIEW PROJECTS',
         cv: 'DOWNLOAD CV',
         contact: 'GET IN TOUCH',
@@ -1197,11 +1228,17 @@ export const resources = {
         chudobooks: 'Chudobooks',
         arChudaboxes: 'AR Chudoboxes / Chudoboxes EKO',
         chudobooksDesc:
-          'AR content for children’s magazines with interactive books and audio experiences.',
+          'Mobile AR application for the Chudoboxes children’s book: printed markers launched 3D characters, scenes, interactive book content and audio experiences.',
         chudobooksPoints: [
-          'Implemented marker-based AR scenes',
-          'Built AssetBundle content delivery',
-          'Connected interactive book and audiobook flows',
+          'Implemented marker-based AR scenes and printed-page recognition with Vuforia',
+          'Configured dynamic 3D/AR content delivery through AssetBundles',
+          'Connected interactive book, audio, and AR character photo/video flows',
+        ],
+        chudobooksMetrics: [
+          { value: 'iOS + Android', label: 'platforms' },
+          { value: '1.9 / 1.11', label: 'latest iOS / Android versions' },
+          { value: '~900', label: 'Android installs in archived metric' },
+          { value: '3.64 / 5', label: 'Android rating from 14 ratings' },
         ],
         arChudaboxesDesc:
           'A commercial mobile AR companion for an interactive children’s book: printed pages and promotional materials launched animated characters, AR photos and AR videos. The Chudoboxes EKO release expanded the ecosystem with collectible stickers, an interactive postcard and mini-games for an EKO Market campaign.',
@@ -1412,7 +1449,6 @@ export const resources = {
       },
       contact: {
         title: 'LET’S BUILD SOMETHING.',
-        body: 'Open to work across web, mobile, multiplayer, Unity/Unigine and interactive products.',
         email: 'EMAIL',
         telegram: 'TELEGRAM',
         copy: 'COPY EMAIL',
@@ -1420,14 +1456,12 @@ export const resources = {
         cv: 'DOWNLOAD CV',
       },
       footer: {
-        tagline: 'Built with React + TypeScript.',
         role: 'SOFTWARE DEVELOPER',
         connect: 'CONNECT',
         explore: 'EXPLORE',
         cv: 'DOWNLOAD CV',
         privacy: 'Privacy Policy',
         terms: 'Terms of Use',
-        signature: 'WEB · MOBILE · UNITY · MULTIPLAYER',
       },
       legal: {
         back: 'Back home',

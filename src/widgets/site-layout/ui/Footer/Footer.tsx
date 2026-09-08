@@ -60,12 +60,6 @@ export function Footer() {
           <a href="/terms/">{t('footer.terms')}</a>
         </div>
       </div>
-      <div className={cx(styles.siteFooterBottom)}>
-        <small>
-          © {new Date().getFullYear()} · {t('footer.tagline')}
-        </small>
-        <span>{t('footer.signature')}</span>
-      </div>
     </footer>
   )
 }

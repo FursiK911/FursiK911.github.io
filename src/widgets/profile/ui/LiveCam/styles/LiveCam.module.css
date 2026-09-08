@@ -1,0 +1,411 @@
+:global(.live-cam) {
+  position: relative;
+  isolation: isolate;
+  aspect-ratio: 16 / 9;
+  width: min(100%, 560px);
+  margin-top: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(167, 243, 246, 0.45);
+  background: #061016;
+  box-shadow:
+    inset 0 0 36px rgba(76, 231, 236, 0.06),
+    0 0 30px rgba(76, 231, 236, 0.08);
+  color: var(--cyan);
+  font: 0.56rem var(--mono);
+  letter-spacing: 0.08em;
+}
+
+:global(.live-cam-video),
+:global(.live-cam-video-shade),
+:global(.live-cam-noise) {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+:global(.live-cam-video) {
+  z-index: -4;
+  display: block;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+:global(.live-cam-live) :global(.live-cam-video) {
+  opacity: 0.86;
+}
+
+:global(.live-cam-video-shade) {
+  z-index: -3;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 12, 17, 0.45),
+      transparent 32%,
+      transparent 70%,
+      rgba(4, 12, 17, 0.52)
+    ),
+    linear-gradient(0deg, rgba(4, 12, 17, 0.72), transparent 38%);
+}
+
+:global(.live-cam-noise) {
+  z-index: -1;
+  opacity: 0.2;
+  background-image: radial-gradient(
+    rgba(202, 255, 255, 0.72) 0.5px,
+    transparent 0.7px
+  );
+  background-size: 4px 4px;
+}
+
+:global(.live-cam-header),
+:global(.live-cam-journal),
+:global(.live-cam-tracker),
+:global(.live-cam-telemetry),
+:global(.live-cam-waveform),
+:global(.live-cam-status) {
+  position: absolute;
+  z-index: 2;
+}
+
+:global(.live-cam-header) {
+  top: 12px;
+  right: 14px;
+  left: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  text-shadow: 0 0 10px rgba(167, 243, 246, 0.8);
+}
+
+:global(.live-cam-live-mark) {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #d7ffe8;
+}
+
+:global(.live-cam-live-mark) i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ff5767;
+  box-shadow: 0 0 10px #ff5767;
+  animation: live-cam-rec 1s step-end infinite;
+}
+
+:global(.live-cam-journal) {
+  top: 39px;
+  right: 14px;
+  z-index: 2;
+  display: grid;
+  width: 25%;
+  gap: 3px;
+  font-size: 0.72em;
+  line-height: 1.25;
+  text-align: right;
+}
+
+:global(.live-cam-journal-entry) {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: end;
+  column-gap: 4px;
+  color: rgba(198, 237, 240, 0.88);
+  text-shadow: 0 0 8px rgba(167, 243, 246, 0.5);
+}
+
+:global(.live-cam-journal-entry) time,
+:global(.live-cam-journal-entry) i {
+  color: rgba(167, 243, 246, 0.72);
+  font-style: normal;
+}
+
+:global(.live-cam-journal-entry) b {
+  font-weight: 500;
+}
+
+:global(.live-cam-journal-entry) em {
+  grid-column: 1 / -1;
+  font-style: normal;
+}
+
+:global(.live-cam-journal-entry)[data-journal-severity='success'] b,
+:global(.live-cam-journal-entry)[data-journal-severity='success'] em {
+  color: #75ffa5;
+}
+
+:global(.live-cam-journal-entry)[data-journal-severity='warning'] b,
+:global(.live-cam-journal-entry)[data-journal-severity='warning'] em {
+  color: #ffd166;
+}
+
+:global(.live-cam-journal-entry)[data-journal-severity='failed'] b,
+:global(.live-cam-journal-entry)[data-journal-severity='failed'] em {
+  color: #ff8b96;
+}
+
+:global(.live-cam-tracker) {
+  position: absolute;
+  z-index: 2;
+  inset: 0 25% 0 0;
+  pointer-events: none;
+}
+
+:global(.live-cam-tracker-frame) {
+  position: absolute;
+  top: var(--tracker-y);
+  left: var(--tracker-x);
+  display: grid;
+  width: clamp(70px, 16vw, 112px);
+  min-height: 45px;
+  padding: 5px 7px;
+  border: 1px solid rgba(167, 243, 246, 0.78);
+  background: rgba(4, 12, 17, 0.08);
+  box-shadow:
+    inset 0 0 12px rgba(167, 243, 246, 0.12),
+    0 0 12px rgba(167, 243, 246, 0.28);
+  color: var(--cyan);
+  opacity: 0.6;
+  font-size: 0.82em;
+  line-height: 1.35;
+  transform: translate(-50%, -50%);
+  transition:
+    top 1.4s cubic-bezier(0.22, 1, 0.36, 1),
+    left 1.4s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+:global(.live-cam-tracker-frame)::before,
+:global(.live-cam-tracker-frame)::after {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-color: currentcolor;
+  content: '';
+}
+
+:global(.live-cam-tracker-frame)::before {
+  top: -3px;
+  left: -3px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+}
+
+:global(.live-cam-tracker-frame)::after {
+  right: -3px;
+  bottom: -3px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+}
+
+:global(.live-cam-tracker-frame) b {
+  color: #d7ffe8;
+  font-weight: 400;
+}
+
+:global(.live-cam-signal-lost) :global(.live-cam-tracker-frame) {
+  border-color: rgba(255, 87, 103, 0.74);
+  color: #ff9ca7;
+}
+
+:global(.live-cam-telemetry) {
+  right: 14px;
+  bottom: 13px;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 12px;
+  gap: 5px;
+  justify-content: start;
+  color: #c1d9dc;
+  text-align: left;
+  text-shadow: 0 0 8px rgba(167, 243, 246, 0.55);
+}
+
+:global(.live-cam-metric) {
+  display: grid;
+  grid-template-columns: max-content 7ch;
+  gap: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+:global(.live-cam-metric) i {
+  font-style: normal;
+}
+
+:global(.live-cam-metric) b {
+  color: var(--cyan);
+  font-weight: 400;
+  text-align: left;
+}
+
+:global(.live-cam-waveform) {
+  bottom: 13px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  width: 27%;
+  height: 32px;
+  gap: 3px;
+}
+
+:global(.live-cam-waveform) i {
+  width: 100%;
+  height: var(--wave-height);
+  background: linear-gradient(var(--cyan), rgba(167, 243, 246, 0.2));
+  box-shadow: 0 0 6px rgba(167, 243, 246, 0.56);
+  animation: live-cam-wave 1.3s ease-in-out infinite alternate;
+  transition: height 0.26s ease;
+}
+
+:global(.live-cam-waveform) i:nth-child(3n) {
+  animation-delay: -0.45s;
+}
+
+:global(.live-cam-waveform) i:nth-child(3n + 1) {
+  animation-delay: -0.85s;
+}
+
+:global(.live-cam-status) {
+  inset: 50% auto auto 50%;
+  display: grid;
+  width: max-content;
+  max-width: calc(100% - 30px);
+  transform: translate(-50%, -50%);
+  color: var(--cyan);
+  font-size: clamp(0.62rem, 1.5vw, 0.78rem);
+  text-align: center;
+  text-shadow: 0 0 14px rgba(167, 243, 246, 0.9);
+}
+
+:global(.live-cam-status) span {
+  padding: 10px 14px;
+  border: 1px solid rgba(167, 243, 246, 0.42);
+  background: rgba(4, 12, 17, 0.72);
+}
+
+:global(.live-cam-signal-lost) :global(.live-cam-status) span {
+  border-color: rgba(255, 87, 103, 0.62);
+  color: #ff9ca7;
+  text-shadow: 0 0 12px rgba(255, 87, 103, 0.75);
+}
+
+:global(.live-cam-corner) {
+  position: absolute;
+  z-index: 3;
+  width: 17px;
+  height: 17px;
+  border-color: var(--cyan);
+  filter: drop-shadow(0 0 6px rgba(167, 243, 246, 0.72));
+}
+
+:global(.live-cam-corner-top-left) {
+  top: -1px;
+  left: -1px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+}
+
+:global(.live-cam-corner-top-right) {
+  top: -1px;
+  right: -1px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+}
+
+:global(.live-cam-corner-bottom-left) {
+  bottom: -1px;
+  left: -1px;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+}
+
+:global(.live-cam-corner-bottom-right) {
+  right: -1px;
+  bottom: -1px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+}
+
+:global(.live-cam-signal-lost) :global(.live-cam-waveform),
+:global(.live-cam-signal-lost) :global(.live-cam-live-mark) i,
+:global(.live-cam-signal-lost) :global(.live-cam-waveform) i,
+:global(.live-cam-idle) :global(.live-cam-waveform),
+:global(.live-cam-idle) :global(.live-cam-live-mark) i,
+:global(.live-cam-idle) :global(.live-cam-waveform) i {
+  animation: none;
+}
+
+@keyframes :global(live-cam-rec) {
+  50% {
+    opacity: 0.18;
+  }
+}
+
+@keyframes :global(live-cam-wave) {
+  from {
+    transform: scaleY(0.55);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@media (max-width: 560px) {
+  :global(.live-cam) {
+    width: 100%;
+    margin-top: 22px;
+    font-size: 0.46rem;
+  }
+
+  :global(.live-cam-header),
+  :global(.live-cam-telemetry) {
+    right: 9px;
+    left: 9px;
+  }
+
+  :global(.live-cam-header) {
+    gap: 5px;
+  }
+
+  :global(.live-cam-telemetry) {
+    right: 9px;
+    left: auto;
+    bottom: 9px;
+    gap: 3px;
+    column-gap: 7px;
+  }
+
+  :global(.live-cam-journal) {
+    top: 32px;
+    right: 9px;
+    width: 34%;
+    gap: 2px;
+    font-size: 0.75em;
+  }
+
+  :global(.live-cam-journal-entry):nth-child(-n + 4) {
+    display: none;
+  }
+
+  :global(.live-cam-tracker) {
+    right: 34%;
+  }
+
+  :global(.live-cam-tracker-frame) {
+    width: 68px;
+    min-height: 38px;
+    padding: 4px 5px;
+    font-size: 0.75em;
+  }
+
+  :global(.live-cam-waveform) {
+    bottom: 9px;
+    left: 9px;
+    width: 24%;
+    height: 25px;
+  }
+}

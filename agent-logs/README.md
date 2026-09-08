@@ -1,5 +1,21 @@
 # AI Agent Change Log Index
 
+| 2026-09-08 | ui, hero, live-cam, hud, telemetry, animation, accessibility, responsive, testing, graphify | [dynamic live-cam HUD refinement](2026/09/2026-09-08.md#dynamic-live-cam-hud-refinement) |
+
+| 2026-09-08 | ui, hero, live-cam, video, hud, css | [simplified live-cam overlays](2026/09/2026-09-08.md#simplified-live-cam-overlays) |
+
+| 2026-09-08 | ui, hero, live-cam, video, hud, animation, accessibility, responsive, i18n, testing, graphify | [live-cam in Hero](2026/09/2026-09-08.md#live-cam-in-hero) |
+
+| 2026-09-08 | projects, ar, mobile, media, i18n, portfolio, research, testing | [daily log](2026/09/2026-09-08.md#chudobooks-project-content) |
+
+| 2026-09-07 | ui, footer, css, testing | [daily log](2026/09/2026-09-07.md#reduced-footer-link-spacing) |
+
+| 2026-09-07 | ui, contact, responsive, css, testing | [daily log](2026/09/2026-09-07.md#vertically-centered-contact-columns) |
+
+| 2026-09-07 | ui, contact, i18n, css, testing | [daily log](2026/09/2026-09-07.md#removed-contact-introduction-paragraph) |
+
+| 2026-09-07 | ui, footer, css, i18n, testing | [daily log](2026/09/2026-09-07.md#removed-redundant-footer-bottom-block) |
+
 | 2026-09-07 | ui, hero, typography, css, responsive, testing | [daily log](2026/09/2026-09-07.md#contained-the-hero-display-title-within-its-column) |
 
 | 2026-09-07 | ui, typography, fonts, responsive, projects, modal, css, testing | [daily log](2026/09/2026-09-07.md#scaled-unbounded-display-typography-to-its-layout-contexts) |

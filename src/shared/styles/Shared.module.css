@@ -865,6 +865,7 @@ body:global(.is-loading) {
   :global(.contact-grid) {
     grid-template-columns: 1fr;
     gap: 42px;
+    align-items: start;
   }
   :global(.skills-grid) {
     gap: 35px 22px;
@@ -877,10 +878,6 @@ body:global(.is-loading) {
   }
   :global(.site-footer-brand) {
     grid-column: 1 / -1;
-  }
-  :global(.site-footer-bottom) {
-    flex-direction: column;
-    gap: 10px;
   }
 }
 

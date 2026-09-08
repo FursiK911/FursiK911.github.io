@@ -18,7 +18,6 @@ export function Contact() {
       <div className={cx(styles.contactGrid)}>
         <div>
           <h2>{t('contact.title')}</h2>
-          <p>{t('contact.body')}</p>
         </div>
         <div className={cx(styles.contactLinks)}>
           <div>

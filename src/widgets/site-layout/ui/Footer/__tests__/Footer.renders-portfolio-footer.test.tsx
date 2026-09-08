@@ -41,4 +41,5 @@ it('renders portfolio footer', () => {
     'href',
     '#education',
   )
+  expect(document.querySelector('.site-footer-bottom')).not.toBeInTheDocument()
 })

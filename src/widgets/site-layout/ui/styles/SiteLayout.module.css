@@ -216,7 +216,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 4px;
 }
 
 :global(.site-footer-socials) a,
@@ -240,19 +240,6 @@
 
 :global(.site-footer-actions) a:first-child {
   color: var(--cyan);
-}
-
-:global(.site-footer) small {
-  color: #5d6b70;
-}
-
-:global(.site-footer-bottom) {
-  padding-top: 20px;
-  border-top: 1px solid var(--line);
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  color: #5d6b70;
 }
 
 :global(.legal-shell) {
