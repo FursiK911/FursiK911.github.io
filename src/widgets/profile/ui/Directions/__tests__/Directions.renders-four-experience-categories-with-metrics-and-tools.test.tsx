@@ -11,6 +11,11 @@ it('renders four experience categories with metrics and tools', async () => {
   expect(
     document.querySelector('.section-shell > .directions-grid'),
   ).toBeInTheDocument()
+  expect(
+    screen.getByText('Современные веб-приложения и платформы'),
+  ).toBeInTheDocument()
+  expect(screen.getByText('04')).toBeInTheDocument()
+  expect(document.querySelectorAll('article svg')).toHaveLength(4)
   expect(screen.getAllByRole('article')).toHaveLength(4)
   expect(screen.getByText('WEB')).toBeInTheDocument()
   expect(screen.getByText('GAME ENGINES')).toBeInTheDocument()
@@ -26,6 +31,12 @@ it('renders four experience categories with metrics and tools', async () => {
   expect(screen.getByText('Android')).toBeInTheDocument()
   expect(screen.getByText('OpenXR')).toBeInTheDocument()
   expect(screen.getAllByText('VR · AR · MR')).toHaveLength(1)
+  expect(
+    document.querySelectorAll('.direction-card > .direction-tools'),
+  ).toHaveLength(4)
+  expect(
+    document.querySelectorAll('.direction-content .direction-tools'),
+  ).toHaveLength(0)
   expect(document.querySelectorAll('.metric-counter')).toHaveLength(4)
   expect(
     document.querySelectorAll('.direction-card .metric-counter'),

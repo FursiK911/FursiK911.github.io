@@ -517,6 +517,9 @@ export const resources = {
         ],
       },
       directions: {
+        webDescription: 'Современные веб-приложения и платформы',
+        gameDescription: 'Интерактивные 3D-проекты и симуляции',
+        mobileDescription: 'Нативные и кроссплатформенные приложения',
         web: 'WEB',
         gameEngines: 'GAME ENGINES',
         mobile: 'MOBILE',
@@ -1277,6 +1280,9 @@ export const resources = {
         ],
       },
       directions: {
+        webDescription: 'Modern web applications and platforms',
+        gameDescription: 'Interactive 3D experiences and simulations',
+        mobileDescription: 'Native and cross-platform applications',
         web: 'WEB',
         gameEngines: 'GAME ENGINES',
         mobile: 'MOBILE',

@@ -1007,14 +1007,6 @@ body:global(.is-loading) {
   :global(.education-timeline-details) dl div {
     grid-template-columns: 1fr;
   }
-  :global(.directions-grid) {
-    grid-template-columns: 1fr;
-  }
-  :global(.direction-card) {
-    min-height: 116px;
-    padding: 14px 15px;
-    gap: 12px;
-  }
   :global(.metric-counter) {
     min-width: 78px;
   }

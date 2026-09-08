@@ -1,3 +1,4 @@
+import localStyles from './styles/Directions.module.css'
 import { cx, styles } from '@/shared/styles'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -38,22 +39,46 @@ export function Directions({
       }}
     >
       <div className={embedded ? undefined : cx(styles.sectionShell)}>
-        <div className={cx(styles.directionsGrid)}>
-          {directions.map((direction) => (
-            <article className={cx(styles.directionCard)} key={direction.id}>
-              <div className={cx(styles.directionContent)}>
+        <div className={cx(styles.directionsGrid, localStyles.directionsGrid)}>
+          {directions.map((direction, index) => (
+            <article
+              className={cx(styles.directionCard, localStyles.directionsCard)}
+              key={direction.id}
+            >
+              <span className={localStyles.directionsNumber} aria-hidden="true">
+                {String(index + 1).padStart(2, '0')}
+              </span>
+              <div className={localStyles.directionsIcon} aria-hidden="true">
+                <direction.icon size={36} stroke={1.6} />
+              </div>
+              <div
+                className={cx(
+                  styles.directionContent,
+                  localStyles.directionsContent,
+                )}
+              >
                 <h3>{t(`directions.${direction.titleKey}`)}</h3>
                 {direction.qualifierKey && (
-                  <span className={cx(styles.directionQualifier)}>
+                  <span
+                    className={cx(
+                      styles.directionQualifier,
+                      localStyles.directionsDescription,
+                    )}
+                  >
                     {t(`directions.${direction.qualifierKey}`)}
                   </span>
                 )}
-                <ul className={cx(styles.directionTools)}>
-                  {direction.tools.map((tool) => (
-                    <li key={tool}>{tool}</li>
-                  ))}
-                </ul>
               </div>
+              <ul
+                className={cx(
+                  styles.directionTools,
+                  localStyles.directionsTools,
+                )}
+              >
+                {direction.tools.map((tool) => (
+                  <li key={tool}>{tool}</li>
+                ))}
+              </ul>
               <MetricCounter
                 value={direction.metric}
                 suffix="+"

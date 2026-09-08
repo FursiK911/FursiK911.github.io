@@ -113,62 +113,6 @@
   text-align: right;
 }
 
-:global(.directions-section) {
-  padding: 42px 0 16px;
-}
-
-:global(.directions-grid) {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
-}
-
-:global(.direction-card) {
-  min-height: 136px;
-  padding: 16px 18px;
-  background: var(--panel);
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 18px;
-}
-
-:global(.direction-content) {
-  align-self: stretch;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-:global(.direction-qualifier) {
-  color: var(--cyan);
-  font: 0.62rem var(--mono);
-  letter-spacing: 0.08em;
-}
-
-:global(.direction-card) h3 {
-  margin: 0;
-  font-size: clamp(1.4rem, 2.5vw, 2rem);
-}
-
-:global(.direction-qualifier) {
-  color: #a7b8bc;
-}
-
-:global(.direction-tools) {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px 14px;
-  list-style: none;
-  margin: auto 0 0;
-  padding: 3px 0 0;
-  color: #d5e1e3;
-  font: 0.72rem var(--mono);
-}
-
 :global(.contact-links) {
   display: flex;
   flex-direction: column;

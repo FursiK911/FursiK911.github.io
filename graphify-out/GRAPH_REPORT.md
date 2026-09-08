@@ -1,18 +1,19 @@
-# Graph Report - . (2026-09-08)
+# Graph Report - fursik.github.io (2026-09-08)
 
 ## Corpus Check
 
-- cluster-only mode — file stats not available
+- 350 files · ~94,580 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
 
-- 1054 nodes · 1608 edges · 130 communities (91 shown, 39 thin omitted)
+- 1057 nodes · 1611 edges · 130 communities (91 shown, 39 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
 
-- Built from commit: `4ca3935d`
+- Built from commit: `cdb6f329`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -83,13 +84,13 @@
 - TermsPage.tsx
 - Contact.tsx
 - Skills.tsx
-- Education timeline and language terminal
-- Centered cyan education timeline
+- Disabled loading animation speed debug panel
+- Hero spacing and portfolio taxonomy update
 - Education timeline centered-axis layout
-- Fixed Mantine centered Education Timeline axis
-- Cyan experience project titles
-- Fixed responsive Experience runner path
-- Centered Education cards around Timeline bullets
+- Localized experience project details
+- Professionalized SOS COMPUTER course content
+- Centered Education detail metadata
+- Vertically centered Education metadata pairs
 - Centered Education bullets within cards
 - Separated source responsibilities
 - Grouped role folders for source responsibilities
@@ -125,8 +126,8 @@
 2. `Seamless Hero portrait handoff` - 38 edges
 3. `LiveCam()` - 23 edges
 4. `compilerOptions` - 21 edges
-5. `2026-08-27` - 16 edges
-6. `installIntersectionObserverMock()` - 16 edges
+5. `installIntersectionObserverMock()` - 16 edges
+6. `2026-08-27` - 16 edges
 7. `compilerOptions` - 15 edges
 8. `scripts` - 14 edges
 9. `useLoadingSequence()` - 14 edges
@@ -194,7 +195,7 @@ Nodes (11): directions, Direction, Directions(), DirectionsProps, GlitchPortrait
 ### Community 8 - "2026-09-02.md"
 
 Cohesion: 0.09
-Nodes (21): 2026-09-02 12:58 +03:00, 2026-09-02 16:24 +03:00, 2026-09-02 17:28 +03:00, 2026-09-02 17:56 +03:00, 2026-09-02 20:36 +03:00, 2026-09-02 21:38 +03:00, 2026-09-02 21:58 +03:00, Centered Education detail metadata (+13 more)
+Nodes (21): 2026-09-02 15:32 +03:00, 2026-09-02 15:54 +03:00, 2026-09-02 16:37 +03:00, 2026-09-02 17:31 +03:00, 2026-09-02 21:10 +03:00, 2026-09-02 21:45 +03:00, 2026-09-02 21:58 +03:00, Centered cyan education timeline (+13 more)
 
 ### Community 9 - "entities/project/index.ts"
 
@@ -288,8 +289,8 @@ Nodes (6): usePortraitGlitch(), createBurstGlitch(), createHologram(), getBurstD
 
 ### Community 27 - "2026-09-08.md"
 
-Cohesion: 0.18
-Nodes (10): 2026-09-08 00:20 +03:00, 2026-09-08 02:12 +03:00, 2026-09-08 02:19 +03:00, 2026-09-08 03:05 +03:00, Chudobooks project content, Decision DEC-20260908-02, Decision DEC-20260908-03, Dynamic live-cam HUD refinement (+2 more)
+Cohesion: 0.14
+Nodes (13): 2026-09-08 00:20 +03:00, 2026-09-08 02:12 +03:00, 2026-09-08 02:19 +03:00, 2026-09-08 03:05 +03:00, 2026-09-08 15:37 +03:00, Centered slow LiveCam terminal, Chudobooks project content, Decision DEC-20260908-02 (+5 more)
 
 ### Community 28 - "ExperienceDetailsItem.tsx"
 
@@ -406,40 +407,40 @@ Nodes (5): lint-staged, *.{json,md,yml,yaml,css,html}, *.{ts,tsx,js,jsx}, eslint
 Cohesion: 0.50
 Nodes (4): AI Agent Change Log Index, Browse by decision, Browse by period, Latest entries
 
-### Community 65 - "Education timeline and language terminal"
+### Community 65 - "Disabled loading animation speed debug panel"
 
 Cohesion: 0.67
-Nodes (3): 2026-09-02 15:32 +03:00, Decision DEC-20260902-06, Education timeline and language terminal
+Nodes (3): 2026-09-02 12:58 +03:00, Decision DEC-20260902-01, Disabled loading animation speed debug panel
 
-### Community 66 - "Centered cyan education timeline"
+### Community 66 - "Hero spacing and portfolio taxonomy update"
 
 Cohesion: 0.67
-Nodes (3): 2026-09-02 15:54 +03:00, Centered cyan education timeline, Decision DEC-20260902-07
+Nodes (3): 2026-09-02 16:24 +03:00, Decision DEC-20260902-09, Hero spacing and portfolio taxonomy update
 
 ### Community 67 - "Education timeline centered-axis layout"
 
 Cohesion: 0.67
 Nodes (3): 2026-09-02 16:07 +03:00, Decision DEC-20260902-08, Education timeline centered-axis layout
 
-### Community 68 - "Fixed Mantine centered Education Timeline axis"
+### Community 68 - "Localized experience project details"
 
 Cohesion: 0.67
-Nodes (3): 2026-09-02 16:37 +03:00, Decision DEC-20260902-10, Fixed Mantine centered Education Timeline axis
+Nodes (3): 2026-09-02 17:28 +03:00, Decision DEC-20260902-11, Localized experience project details
 
-### Community 69 - "Cyan experience project titles"
-
-Cohesion: 0.67
-Nodes (3): 2026-09-02 17:31 +03:00, Cyan experience project titles, Decision DEC-20260902-12
-
-### Community 70 - "Fixed responsive Experience runner path"
+### Community 69 - "Professionalized SOS COMPUTER course content"
 
 Cohesion: 0.67
-Nodes (3): 2026-09-02 21:10 +03:00, Decision DEC-20260902-15, Fixed responsive Experience runner path
+Nodes (3): 2026-09-02 17:56 +03:00, Decision DEC-20260902-13, Professionalized SOS COMPUTER course content
 
-### Community 71 - "Centered Education cards around Timeline bullets"
+### Community 70 - "Centered Education detail metadata"
 
 Cohesion: 0.67
-Nodes (3): 2026-09-02 21:45 +03:00, Centered Education cards around Timeline bullets, Decision DEC-20260902-17
+Nodes (3): 2026-09-02 20:36 +03:00, Centered Education detail metadata, Decision DEC-20260902-14
+
+### Community 71 - "Vertically centered Education metadata pairs"
+
+Cohesion: 0.67
+Nodes (3): 2026-09-02 21:38 +03:00, Decision DEC-20260902-16, Vertically centered Education metadata pairs
 
 ### Community 72 - "Centered Education bullets within cards"
 
@@ -458,7 +459,7 @@ Nodes (3): 2026-09-03 01:07 +03:00, Decision DEC-20260903-02, Grouped role folde
 
 ## Knowledge Gaps
 
-- **356 isolated node(s):** `name`, `private`, `version`, `type`, `node` (+351 more)
+- **358 isolated node(s):** `name`, `private`, `version`, `type`, `node` (+353 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **39 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -467,13 +468,13 @@ Nodes (3): 2026-09-03 01:07 +03:00, Decision DEC-20260903-02, Grouped role folde
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `2026-08-30` connect `2026-08-30` to `agent-logs/README.md`, `00:06 +03:00 — Configuration-driven loader speed controls`, `01:28 +03:00 — Added intermittent cyberpunk portrait glitch`, `01:40 +03:00 — Made portrait glitch visibly readable`, `01:49 +03:00 — Stabilized the portrait base layer`, `02:01 +03:00 — Replaced slices with bounded corruption blocks`, `02:03 +03:00 — Verified block-only portrait corruption`, `02:27 +03:00 — Switched to a cellular data-corruption glitch`, `16:06 +03:00 — Replaced cellular portrait glitch with Glitch.js`, `16:31 +03:00 — Switched portrait glitch to continuous demo mode`, `19:46 +03:00 — Added localized resume link to header`, `20:01 +03:00 — Standardized cyan resume download buttons`, `20:24 +03:00 — Rebuilt EXPERIENCE LOG as a data-driven career timeline`, `20:58 +03:00 — Replaced timeline axis with animated SVG wave`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
 - **Why does `Seamless Hero portrait handoff` connect `Seamless Hero portrait handoff` to `agent-logs/README.md`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
-- **Why does `2026-08-31` connect `2026-08-31` to `agent-logs/README.md`?**
-  _High betweenness centrality (0.009) - this node is a cross-community bridge._
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
+- **Why does `devDependencies` connect `devDependencies` to `package.json`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _356 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _358 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `loading/index.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.060240963855421686 - nodes in this community are weakly interconnected._
 - **Should `LiveCam.tsx` be split into smaller, more focused modules?**
