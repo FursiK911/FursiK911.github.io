@@ -1,6 +1,6 @@
 import type {
-  LiveCamJournalEventTemplate,
   LiveCamTelemetryState,
+  LiveCamTerminalEntry,
   LiveCamTrackerState,
 } from '../types/LiveCamHud.types'
 
@@ -21,28 +21,115 @@ export const initialLiveCamWaveform = [
   18, 32, 24, 52, 38, 70, 28, 46, 62, 35, 76, 44, 57, 23, 68, 39,
 ]
 
-export const liveCamHudEvents: Record<
-  'connecting' | 'live' | 'signalLost' | 'restored',
-  LiveCamJournalEventTemplate[]
-> = {
-  connecting: [
-    { code: 'LINK-01', message: 'UPLINK WAKE', severity: 'warning' },
-    { code: 'OPT-11', message: 'OPTICS SYNC', severity: 'success' },
-    { code: 'BUF-04', message: 'BUFFER PRIME', severity: 'warning' },
-  ],
-  live: [
-    { code: 'TRK-07', message: 'TRACK LOCK', severity: 'success' },
-    { code: 'BUF-22', message: 'BUFFER RECOVERED', severity: 'success' },
-    { code: 'NET-16', message: 'PACKET RETRY', severity: 'warning' },
-    { code: 'OPT-42', message: 'AUX SENSOR FAILED', severity: 'failed' },
-    { code: 'FRM-03', message: 'FRAME DROP', severity: 'warning' },
-    { code: 'UPL-09', message: 'UPLINK NOMINAL', severity: 'success' },
-  ],
-  signalLost: [
-    { code: 'TRK-07', message: 'TRACK LOCK LOST', severity: 'failed' },
-    { code: 'NET-00', message: 'SIGNAL LOST', severity: 'failed' },
-  ],
-  restored: [
-    { code: 'UPL-09', message: 'UPLINK RESTORED', severity: 'success' },
-  ],
-}
+export const liveCamTerminalEntries: LiveCamTerminalEntry[] = [
+  {
+    id: 'unix-relay',
+    tokens: [
+      { text: '$ ', tone: 'prompt' },
+      { text: 'sudo', tone: 'keyword' },
+      { text: ' systemctl restart ', tone: 'plain' },
+      { text: 'media-relay', tone: 'function' },
+    ],
+  },
+  {
+    id: 'powershell-build',
+    tokens: [
+      { text: 'PS> ', tone: 'prompt' },
+      { text: 'npm', tone: 'function' },
+      { text: ' run ', tone: 'plain' },
+      { text: 'build', tone: 'string' },
+    ],
+  },
+  {
+    id: 'typescript-frame',
+    tokens: [
+      { text: 'const ', tone: 'keyword' },
+      { text: 'frame', tone: 'function' },
+      { text: ' = ', tone: 'plain' },
+      { text: 'await', tone: 'keyword' },
+      { text: ' capture(', tone: 'plain' },
+      { text: '30', tone: 'number' },
+      { text: ')', tone: 'plain' },
+    ],
+  },
+  {
+    id: 'sql-build',
+    tokens: [
+      { text: 'SELECT', tone: 'keyword' },
+      { text: ' status ', tone: 'plain' },
+      { text: 'FROM', tone: 'keyword' },
+      { text: ' builds ', tone: 'plain' },
+      { text: 'WHERE', tone: 'keyword' },
+      { text: ' id=', tone: 'plain' },
+      { text: '42', tone: 'number' },
+    ],
+  },
+  {
+    id: 'qa-message',
+    tokens: [
+      { text: '[qa]', tone: 'comment' },
+      { text: ' smoke tests queued', tone: 'plain' },
+    ],
+  },
+  {
+    id: 'git-push',
+    tokens: [
+      { text: '$ ', tone: 'prompt' },
+      { text: 'git', tone: 'function' },
+      { text: ' push origin ', tone: 'plain' },
+      { text: 'main', tone: 'string' },
+    ],
+  },
+  {
+    id: 'csharp-sync',
+    tokens: [
+      { text: 'public ', tone: 'keyword' },
+      { text: 'Task ', tone: 'keyword' },
+      { text: 'SyncFeed()', tone: 'function' },
+    ],
+  },
+  {
+    id: 'design-message',
+    tokens: [
+      { text: '[design]', tone: 'comment' },
+      { text: ' overlay approved', tone: 'plain' },
+    ],
+  },
+  {
+    id: 'javascript-reconnect',
+    tokens: [
+      { text: 'await', tone: 'keyword' },
+      { text: ' reconnect()', tone: 'function' },
+      { text: '.then(', tone: 'plain' },
+      { text: 'render', tone: 'function' },
+      { text: ')', tone: 'plain' },
+    ],
+  },
+]
+
+export const liveCamTerminalStatusEntries: LiveCamTerminalEntry[] = [
+  {
+    id: 'build-success',
+    severity: 'success',
+    tokens: [
+      { text: 'build :: ', tone: 'plain' },
+      { text: 'SUCCESS', tone: 'success' },
+    ],
+  },
+  {
+    id: 'lint-warning',
+    severity: 'warning',
+    tokens: [
+      { text: 'lint :: ', tone: 'plain' },
+      { text: 'WARNING', tone: 'warning' },
+    ],
+  },
+  {
+    id: 'worker-failed',
+    severity: 'failed',
+    tokens: [
+      { text: 'worker :: ', tone: 'plain' },
+      { text: 'FAILED', tone: 'failed' },
+    ],
+  },
+]

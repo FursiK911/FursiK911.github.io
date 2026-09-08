@@ -9,9 +9,8 @@ afterEach(() => {
   vi.useRealTimers()
 })
 
-it('renders changing stream telemetry without coordinates', async () => {
+it('renders decorative HUD only after the live feed starts', async () => {
   vi.useFakeTimers()
-  vi.spyOn(Math, 'random').mockReturnValue(1)
   vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined)
   const observer = installIntersectionObserverMock()
   const { container } = renderWithProviders(
@@ -19,24 +18,33 @@ it('renders changing stream telemetry without coordinates', async () => {
   )
   const video = container.querySelector('video') as HTMLVideoElement
 
+  expect(
+    container.querySelector('[data-live-cam-terminal]'),
+  ).not.toBeInTheDocument()
+  expect(
+    container.querySelector('[data-live-cam-telemetry]'),
+  ).not.toBeInTheDocument()
+
   act(() => observer.emit(true))
   fireEvent.canPlay(video)
+
+  expect(container.querySelector('[role="status"]')).toHaveTextContent(
+    'UPLINK INITIALIZING',
+  )
+  expect(
+    container.querySelector('[data-live-cam-tracker]'),
+  ).not.toBeInTheDocument()
+
   await act(async () => {
     vi.advanceTimersByTime(2000)
     await Promise.resolve()
   })
-  const telemetry = container.querySelector('[data-live-cam-telemetry]')
 
-  expect(telemetry).toHaveTextContent('SIGNAL:62.5%')
-  expect(telemetry).toHaveTextContent('UPLINK:6 MB/S')
-  expect(telemetry).toHaveTextContent('LATENCY:155 MS')
-  expect(telemetry).toHaveTextContent('FPS:24.5')
-  expect(telemetry).not.toHaveTextContent('COORD')
-
-  act(() => vi.advanceTimersByTime(650))
-
-  expect(telemetry).toHaveTextContent('SIGNAL:63.2%')
-  expect(telemetry).toHaveTextContent('UPLINK:6.4 MB/S')
-  expect(telemetry).toHaveTextContent('LATENCY:169 MS')
-  expect(telemetry).toHaveTextContent('FPS:24.8')
+  expect(
+    container.querySelector('[data-live-cam-terminal]'),
+  ).toBeInTheDocument()
+  expect(
+    container.querySelector('[data-live-cam-telemetry]'),
+  ).toBeInTheDocument()
+  expect(container.querySelector('[data-live-cam-tracker]')).toBeInTheDocument()
 })

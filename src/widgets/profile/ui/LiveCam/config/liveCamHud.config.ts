@@ -1,5 +1,4 @@
 export const liveCamHudConfig = {
-  eventIntervalMs: 1300,
   fps: { initial: 24.5, intervalMs: 580, maximum: 28, minimum: 21, step: 0.34 },
   latency: {
     initial: 155,
@@ -27,4 +26,13 @@ export const liveCamHudConfig = {
     step: 0.4,
   },
   waveformIntervalMs: 320,
+} as const
+
+export const liveCamTerminalConfig = {
+  completedLineLimit: 6,
+  pauseMaximumMs: 4000,
+  pauseMinimumMs: 3000,
+  statusFrequency: 0.1,
+  typingMaximumMs: 84,
+  typingMinimumMs: 48,
 } as const

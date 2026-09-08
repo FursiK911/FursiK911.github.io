@@ -1,5 +1,7 @@
 # Global Decision Index
 
+| DEC-20260908-04 | Keep the LiveCam terminal in the vertically centered right-side zone at 28% width; generate every character delay independently in the 48–84 ms range and wait 3–4 seconds between entries. | ui, hero, live-cam, terminal, animation, responsive | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-04) |
+
 | DEC-20260908-03 | Model the live-camera HUD as an intentionally degraded but functional stream: independent metrics use stable-width cells, the terminal keeps severity-coded diagnostics, and reduced motion stays static. | ui, hero, live-cam, hud, telemetry, animation, accessibility | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-03) |
 
 | DEC-20260908-02 | Use a viewport-activated, muted loop video with a two-second minimum connect state, signal-loss reconnect backoff, viewport pause/resume, and a static no-download reduced-motion fallback for the Hero live-cam HUD. | ui, hero, live-cam, video, hud, animation, accessibility | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-02) |

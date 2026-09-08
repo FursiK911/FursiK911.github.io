@@ -9,15 +9,15 @@ afterEach(() => {
   vi.useRealTimers()
 })
 
-it('keeps eight terminal entries with every severity in the live journal', async () => {
+it('keeps no more than six completed terminal lines without timestamps', async () => {
   vi.useFakeTimers()
+  vi.spyOn(Math, 'random').mockReturnValue(0)
   vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined)
   const observer = installIntersectionObserverMock()
   const { container } = renderWithProviders(
     <LiveCam entered reducedMotion={false} />,
   )
   const video = container.querySelector('video') as HTMLVideoElement
-  const journal = container.querySelector('[data-live-cam-journal]')
 
   act(() => observer.emit(true))
   fireEvent.canPlay(video)
@@ -25,10 +25,16 @@ it('keeps eight terminal entries with every severity in the live journal', async
     vi.advanceTimersByTime(2000)
     await Promise.resolve()
   })
-  act(() => vi.advanceTimersByTime(2600))
+  await act(async () => {
+    await vi.advanceTimersByTimeAsync(20000)
+  })
 
-  expect(journal?.querySelectorAll('[data-journal-severity]')).toHaveLength(8)
-  expect(journal).toHaveTextContent('SUCCESS')
-  expect(journal).toHaveTextContent('WARNING')
-  expect(journal).toHaveTextContent('FAILED')
+  const terminal = container.querySelector('[data-live-cam-terminal]')
+  const completed = terminal?.querySelectorAll(
+    '[data-terminal-severity], .live-cam-terminal-entry:not([data-terminal-active])',
+  )
+
+  expect(completed?.length).toBeLessThanOrEqual(6)
+  expect(terminal).not.toHaveTextContent('00:')
+  expect(terminal).toHaveTextContent('PS>')
 })

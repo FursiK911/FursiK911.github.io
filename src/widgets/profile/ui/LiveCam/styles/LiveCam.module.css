@@ -61,7 +61,7 @@
 }
 
 :global(.live-cam-header),
-:global(.live-cam-journal),
+:global(.live-cam-terminal),
 :global(.live-cam-tracker),
 :global(.live-cam-telemetry),
 :global(.live-cam-waveform),
@@ -96,61 +96,104 @@
   animation: live-cam-rec 1s step-end infinite;
 }
 
-:global(.live-cam-journal) {
-  top: 39px;
+:global(.live-cam-terminal) {
+  top: 50%;
   right: 14px;
   z-index: 2;
   display: grid;
-  width: 25%;
-  gap: 3px;
+  width: 28%;
+  gap: 4px;
   font-size: 0.72em;
   line-height: 1.25;
-  text-align: right;
+  text-align: left;
+  transform: translateY(-50%);
 }
 
-:global(.live-cam-journal-entry) {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: end;
-  column-gap: 4px;
+:global(.live-cam-terminal-entry) {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
   color: rgba(198, 237, 240, 0.88);
+  font-style: normal;
+  white-space: nowrap;
   text-shadow: 0 0 8px rgba(167, 243, 246, 0.5);
 }
 
-:global(.live-cam-journal-entry) time,
-:global(.live-cam-journal-entry) i {
-  color: rgba(167, 243, 246, 0.72);
+:global(.live-cam-terminal-entry) i {
   font-style: normal;
 }
 
-:global(.live-cam-journal-entry) b {
-  font-weight: 500;
+:global(.live-cam-terminal-entry) [data-terminal-tone='prompt'] {
+  color: #8edee4;
 }
 
-:global(.live-cam-journal-entry) em {
-  grid-column: 1 / -1;
-  font-style: normal;
+:global(.live-cam-terminal-entry) [data-terminal-tone='keyword'] {
+  color: #c89bff;
 }
 
-:global(.live-cam-journal-entry)[data-journal-severity='success'] b,
-:global(.live-cam-journal-entry)[data-journal-severity='success'] em {
+:global(.live-cam-terminal-entry) [data-terminal-tone='function'] {
+  color: #7ee6dc;
+}
+
+:global(.live-cam-terminal-entry) [data-terminal-tone='string'] {
+  color: #f6c875;
+}
+
+:global(.live-cam-terminal-entry) [data-terminal-tone='number'] {
+  color: #f79bb1;
+}
+
+:global(.live-cam-terminal-entry) [data-terminal-tone='comment'] {
+  color: rgba(167, 243, 246, 0.62);
+}
+
+:global(.live-cam-terminal-entry) [data-terminal-tone='success'] {
   color: #75ffa5;
 }
 
-:global(.live-cam-journal-entry)[data-journal-severity='warning'] b,
-:global(.live-cam-journal-entry)[data-journal-severity='warning'] em {
+:global(.live-cam-terminal-entry) [data-terminal-tone='warning'] {
   color: #ffd166;
 }
 
-:global(.live-cam-journal-entry)[data-journal-severity='failed'] b,
-:global(.live-cam-journal-entry)[data-journal-severity='failed'] em {
+:global(.live-cam-terminal-entry) [data-terminal-tone='failed'] {
   color: #ff8b96;
+}
+
+:global(.live-cam-terminal-entry-active) {
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+:global(.live-cam-terminal-entry-active)::-webkit-scrollbar {
+  display: none;
+}
+
+:global(.live-cam-terminal-entry-active) > span {
+  display: inline-block;
+  min-width: max-content;
+}
+
+:global(.live-cam-terminal-caret) {
+  display: inline-block;
+  margin-left: 1px;
+  color: var(--cyan);
+  font-weight: 400;
+  animation: live-cam-caret 0.85s step-end infinite;
+}
+
+:global(.live-cam-terminal-entry)[data-terminal-severity] {
+  text-shadow: 0 0 10px currentcolor;
+}
+
+:global(.live-cam-terminal-entry) b {
+  font-style: normal;
 }
 
 :global(.live-cam-tracker) {
   position: absolute;
   z-index: 2;
-  inset: 0 25% 0 0;
+  inset: 0 28% 0 0;
   pointer-events: none;
 }
 
@@ -227,9 +270,11 @@
 
 :global(.live-cam-metric) {
   display: grid;
-  grid-template-columns: max-content 7ch;
+  grid-template-columns: max-content 10ch;
   gap: 4px;
+  min-width: max-content;
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 :global(.live-cam-metric) i {
@@ -240,6 +285,7 @@
   color: var(--cyan);
   font-weight: 400;
   text-align: left;
+  white-space: nowrap;
 }
 
 :global(.live-cam-waveform) {
@@ -330,15 +376,6 @@
   border-bottom: 2px solid;
 }
 
-:global(.live-cam-signal-lost) :global(.live-cam-waveform),
-:global(.live-cam-signal-lost) :global(.live-cam-live-mark) i,
-:global(.live-cam-signal-lost) :global(.live-cam-waveform) i,
-:global(.live-cam-idle) :global(.live-cam-waveform),
-:global(.live-cam-idle) :global(.live-cam-live-mark) i,
-:global(.live-cam-idle) :global(.live-cam-waveform) i {
-  animation: none;
-}
-
 @keyframes :global(live-cam-rec) {
   50% {
     opacity: 0.18;
@@ -351,6 +388,12 @@
   }
   to {
     transform: scaleY(1);
+  }
+}
+
+@keyframes :global(live-cam-caret) {
+  50% {
+    opacity: 0;
   }
 }
 
@@ -379,20 +422,20 @@
     column-gap: 7px;
   }
 
-  :global(.live-cam-journal) {
-    top: 32px;
+  :global(.live-cam-terminal) {
+    top: 50%;
     right: 9px;
-    width: 34%;
+    width: 28%;
     gap: 2px;
     font-size: 0.75em;
   }
 
-  :global(.live-cam-journal-entry):nth-child(-n + 4) {
+  :global(.live-cam-terminal-entry):nth-child(-n + 4) {
     display: none;
   }
 
   :global(.live-cam-tracker) {
-    right: 34%;
+    right: 28%;
   }
 
   :global(.live-cam-tracker-frame) {

@@ -14,21 +14,39 @@ export interface LiveCamTrackerState {
   y: number
 }
 
-export type LiveCamJournalSeverity = 'success' | 'warning' | 'failed'
+export type LiveCamTerminalTone =
+  | 'comment'
+  | 'failed'
+  | 'function'
+  | 'keyword'
+  | 'number'
+  | 'plain'
+  | 'prompt'
+  | 'string'
+  | 'success'
+  | 'warning'
 
-export interface LiveCamJournalEvent {
-  code: string
-  message: string
-  severity: LiveCamJournalSeverity
-  time: number
+export type LiveCamTerminalSeverity = 'success' | 'warning' | 'failed'
+
+export interface LiveCamTerminalToken {
+  text: string
+  tone: LiveCamTerminalTone
 }
 
-export type LiveCamJournalEventTemplate = Omit<LiveCamJournalEvent, 'time'>
+export interface LiveCamTerminalEntry {
+  id: string
+  severity?: LiveCamTerminalSeverity
+  tokens: LiveCamTerminalToken[]
+}
+
+export interface LiveCamTerminalLine {
+  entry: LiveCamTerminalEntry
+  typedLength: number
+}
 
 export interface UseLiveCamHudArgs {
   isInViewport: boolean
   reducedMotion: boolean
-  retryRemainingSeconds: number | null
   status: LiveCamStatus
 }
 

@@ -1,6 +1,7 @@
 import { act, fireEvent } from '@testing-library/react'
 import { afterEach, expect, it, vi } from 'vitest'
 import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
+import { liveCamTerminalConfig } from '../config/liveCamHud.config'
 import { LiveCam } from '../LiveCam'
 import { installIntersectionObserverMock } from './liveCamTestUtils'
 
@@ -9,7 +10,7 @@ afterEach(() => {
   vi.useRealTimers()
 })
 
-it('continues the stream time by wall clock after a viewport pause', async () => {
+it('waits for the configured three-second minimum before starting the next terminal entry', async () => {
   vi.useFakeTimers()
   vi.spyOn(Math, 'random').mockReturnValue(0)
   vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined)
@@ -25,20 +26,24 @@ it('continues the stream time by wall clock after a viewport pause', async () =>
     vi.advanceTimersByTime(2000)
     await Promise.resolve()
   })
-  const streamTime = container.querySelector('[data-live-cam-stream-time]')
 
-  expect(streamTime).toHaveTextContent('00:15:02')
+  const terminal = container.querySelector('[data-live-cam-terminal]')
+  const firstEntryLength = '$ sudo systemctl restart media-relay'.length
 
-  act(() => vi.advanceTimersByTime(1000))
+  await act(async () => {
+    await vi.advanceTimersByTimeAsync(
+      firstEntryLength * liveCamTerminalConfig.typingMinimumMs,
+    )
+  })
+  await act(async () => {
+    await vi.advanceTimersByTimeAsync(liveCamTerminalConfig.pauseMinimumMs - 1)
+  })
 
-  expect(streamTime).toHaveTextContent('00:15:03')
+  expect(terminal?.querySelectorAll('.live-cam-terminal-entry')).toHaveLength(1)
 
-  act(() => observer.emit(false))
-  act(() => vi.advanceTimersByTime(5000))
+  await act(async () => {
+    await vi.advanceTimersByTimeAsync(1)
+  })
 
-  expect(streamTime).toHaveTextContent('00:15:03')
-
-  act(() => observer.emit(true))
-
-  expect(streamTime).toHaveTextContent('00:15:08')
+  expect(terminal?.querySelectorAll('.live-cam-terminal-entry')).toHaveLength(2)
 })

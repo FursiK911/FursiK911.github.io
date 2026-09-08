@@ -81,6 +81,7 @@ export const resources = {
           channel: 'CH-09 // EAST SECTOR',
           status: {
             connecting: 'UPLINK INITIALIZING...',
+            retry: 'RETRY IN {{seconds}}S',
             signalLost: 'SIGNAL LOST // RECONNECTING',
           },
           telemetry: {
@@ -841,6 +842,7 @@ export const resources = {
           channel: 'CH-09 // EAST SECTOR',
           status: {
             connecting: 'UPLINK INITIALIZING...',
+            retry: 'RETRY IN {{seconds}}S',
             signalLost: 'SIGNAL LOST // RECONNECTING',
           },
           telemetry: {

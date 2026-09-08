@@ -1,13 +1,11 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { liveCamHudConfig } from '../../config/liveCamHud.config'
 import {
   initialLiveCamTelemetry,
   initialLiveCamTracker,
   initialLiveCamWaveform,
-  liveCamHudEvents,
 } from '../../data/liveCamHud.data'
 import type {
-  LiveCamJournalEvent,
   LiveCamTelemetryState,
   LiveCamTrackerState,
   UseLiveCamHudArgs,
@@ -16,7 +14,6 @@ import type {
 export function useLiveCamHud({
   isInViewport,
   reducedMotion,
-  retryRemainingSeconds,
   status,
 }: UseLiveCamHudArgs) {
   const [streamOffset] = useState(
@@ -30,8 +27,6 @@ export function useLiveCamHud({
       ),
   )
   const [streamStartedAt] = useState(() => Date.now())
-  const previousStatusRef = useRef(status)
-  const streamTimeRef = useRef(streamOffset)
   const [streamTime, setStreamTime] = useState(streamOffset)
   const [telemetry, setTelemetry] = useState<LiveCamTelemetryState>(
     initialLiveCamTelemetry,
@@ -40,14 +35,8 @@ export function useLiveCamHud({
   const [tracker, setTracker] = useState<LiveCamTrackerState>(
     initialLiveCamTracker,
   )
-  const [events, setEvents] = useState<LiveCamJournalEvent[]>([])
-
   useEffect(() => {
-    streamTimeRef.current = streamTime
-  }, [streamTime])
-
-  useEffect(() => {
-    if (reducedMotion || !isInViewport) return
+    if (reducedMotion || !isInViewport || status !== 'live') return
 
     const updateStreamTime = () => {
       setStreamTime(
@@ -58,7 +47,7 @@ export function useLiveCamHud({
     updateStreamTime()
     const timer = window.setInterval(updateStreamTime, 1000)
     return () => window.clearInterval(timer)
-  }, [isInViewport, reducedMotion, streamOffset, streamStartedAt])
+  }, [isInViewport, reducedMotion, status, streamOffset, streamStartedAt])
 
   useEffect(() => {
     if (!isInViewport || reducedMotion || status !== 'live') return
@@ -148,23 +137,13 @@ export function useLiveCamHud({
   }, [isInViewport, reducedMotion, status])
 
   useEffect(() => {
-    if (
-      !isInViewport ||
-      reducedMotion ||
-      (status !== 'connecting' && status !== 'live')
-    ) {
-      return
-    }
+    if (!isInViewport || reducedMotion || status !== 'live') return
 
     const timer = window.setInterval(() => {
       setWaveform((current) =>
         current.map((height) => {
-          const multiplier = status === 'connecting' ? 0.55 : 1
           return Math.round(
-            Math.min(
-              88,
-              Math.max(12, height + (Math.random() * 2 - 1) * 24) * multiplier,
-            ),
+            Math.min(88, Math.max(12, height + (Math.random() * 2 - 1) * 24)),
           )
         }),
       )
@@ -201,62 +180,7 @@ export function useLiveCamHud({
     }
   }, [isInViewport, reducedMotion, status])
 
-  useEffect(() => {
-    if (reducedMotion) return
-
-    const previousStatus = previousStatusRef.current
-    previousStatusRef.current = status
-
-    if (status === 'signal-lost') {
-      setEvents([
-        ...liveCamHudEvents.signalLost.map((event) => ({
-          ...event,
-          time: streamTimeRef.current,
-        })),
-        {
-          code: 'RTRY-01',
-          message: `RETRY IN ${retryRemainingSeconds ?? 0}S`,
-          severity: 'warning',
-          time: streamTimeRef.current,
-        },
-      ])
-      return
-    }
-
-    if (!isInViewport || (status !== 'connecting' && status !== 'live')) return
-
-    const source =
-      status === 'connecting'
-        ? liveCamHudEvents.connecting
-        : [
-            ...(previousStatus === 'signal-lost'
-              ? liveCamHudEvents.restored
-              : []),
-            ...liveCamHudEvents.live,
-          ]
-    let eventIndex = 0
-    setEvents(
-      source.slice(0, 8).map((event) => ({
-        ...event,
-        time: streamTimeRef.current,
-      })),
-    )
-
-    const timer = window.setInterval(() => {
-      setEvents((current) => [
-        ...current.slice(-7),
-        {
-          ...source[eventIndex++ % source.length],
-          time: streamTimeRef.current,
-        },
-      ])
-    }, liveCamHudConfig.eventIntervalMs)
-
-    return () => window.clearInterval(timer)
-  }, [isInViewport, reducedMotion, retryRemainingSeconds, status])
-
   return {
-    events,
     streamTime,
     telemetry,
     tracker,

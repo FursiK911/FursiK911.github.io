@@ -1,4 +1,4 @@
-import { act } from '@testing-library/react'
+import { act, fireEvent } from '@testing-library/react'
 import { afterEach, expect, it, vi } from 'vitest'
 import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { LiveCam } from '../LiveCam'
@@ -9,14 +9,20 @@ afterEach(() => {
   vi.useRealTimers()
 })
 
-it('clears every active HUD timer on unmount', () => {
+it('clears every active HUD timer on unmount', async () => {
   vi.useFakeTimers()
+  vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined)
   const observer = installIntersectionObserverMock()
-  const { unmount } = renderWithProviders(
+  const { container, unmount } = renderWithProviders(
     <LiveCam entered reducedMotion={false} />,
   )
 
   act(() => observer.emit(true))
+  fireEvent.canPlay(container.querySelector('video') as HTMLVideoElement)
+  await act(async () => {
+    vi.advanceTimersByTime(2000)
+    await Promise.resolve()
+  })
 
   expect(vi.getTimerCount()).toBeGreaterThan(0)
 

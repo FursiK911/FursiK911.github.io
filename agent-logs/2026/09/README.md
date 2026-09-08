@@ -1,5 +1,7 @@
 # September 2026
 
+| 2026-09-08 | ui, hero, live-cam, terminal, animation, responsive, testing, graphify | [centered slow LiveCam terminal](2026-09-08.md#centered-slow-livecam-terminal) |
+
 | 2026-09-08 | ui, hero, live-cam, hud, telemetry, animation, accessibility, responsive, testing, graphify | [dynamic live-cam HUD refinement](2026-09-08.md#dynamic-live-cam-hud-refinement) |
 
 | 2026-09-08 | ui, hero, live-cam, video, hud, css | [simplified live-cam overlays](2026-09-08.md#simplified-live-cam-overlays) |
