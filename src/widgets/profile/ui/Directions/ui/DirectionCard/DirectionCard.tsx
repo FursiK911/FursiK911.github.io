@@ -23,7 +23,7 @@ export function DirectionCard({
   const { t } = useTranslation()
   const {
     cardStyle,
-    gamepadStyle,
+    iconPointerStyle,
     isHovering,
     isIconAnimating,
     isMetricActive,
@@ -80,17 +80,12 @@ export function DirectionCard({
         <motion.span className={localStyles.directionIconGlyph}>
           <motion.span
             className={localStyles.directionIconPointerGlyph}
-            style={direction.id === 'game-engines' ? gamepadStyle : undefined}
+            style={iconPointerStyle}
           >
             <direction.icon size={36} stroke={1.6} />
           </motion.span>
         </motion.span>
-        {direction.id === 'mobile' && (
-          <span className={localStyles.directionIconScan} />
-        )}
-        {direction.id === 'xr' && (
-          <span className={localStyles.directionIconGlow} />
-        )}
+        <span className={localStyles.directionIconScan} />
       </motion.div>
       <motion.div
         className={cx(styles.directionContent, localStyles.directionContent)}

@@ -1,3 +1,4 @@
+import { Blockquote } from '@mantine/core'
 import { useInViewport } from '@mantine/hooks'
 import { useTranslation } from 'react-i18next'
 import { cx, styles } from '@/shared/styles'
@@ -21,9 +22,9 @@ export function ContactPortrait({
           reducedMotion={reducedMotion}
           src={portrait}
         />
-        <blockquote className={cx(styles.contactQuote)}>
-          <p>{t('contact.title')}</p>
-        </blockquote>
+        <Blockquote className={cx(styles.contactQuote)} icon={null} unstyled>
+          {t('contact.title')}
+        </Blockquote>
         <span className={cx(styles.frameLabel)}>PROFILE_IMAGE // 001</span>
       </div>
     </figure>

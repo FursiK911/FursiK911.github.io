@@ -1,0 +1,41 @@
+.core {
+  display: grid;
+  place-items: center;
+  gap: 5px;
+  min-width: 52px;
+  color: var(--muted);
+  font: 0.52rem var(--mono);
+  letter-spacing: 0.07em;
+  text-align: center;
+}
+.diamond {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  color: var(--muted);
+  font-size: 2.2rem;
+  line-height: 1;
+  transition:
+    color 180ms ease,
+    text-shadow 180ms ease;
+  animation: project-circuit-core 6s linear infinite;
+}
+.powered {
+  color: var(--cyan);
+}
+.powered .diamond {
+  color: var(--cyan);
+  text-shadow: 0 0 18px rgba(167, 243, 246, 0.9);
+}
+@keyframes project-circuit-core {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .diamond {
+    animation: none;
+    transition: none;
+  }
+}

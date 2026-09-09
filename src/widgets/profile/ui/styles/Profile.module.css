@@ -1,6 +1,6 @@
 /* Styles owned by the profile slice. */
 :global(.profile-section) {
-  padding-top: 120px;
+  padding-top: 88px;
 }
 
 :global(.profile-section) :global(.hero) {
@@ -30,6 +30,26 @@
   }
 }
 
+@media (min-width: 1200px) {
+  :global(.hero-broadcast) :global(.live-cam) {
+    width: 100%;
+    max-width: none;
+    justify-self: stretch;
+  }
+}
+
+@media (max-width: 900px) {
+  :global(.profile-section) {
+    padding-top: 78px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1199px) {
+  :global(.hero-broadcast) :global(.live-cam) {
+    width: min(100%, 720px);
+  }
+}
+
 :global(.hero-role) {
   color: var(--cyan);
   font-family: var(--mono);
@@ -47,6 +67,6 @@
 :global(.hero-actions) {
   display: flex;
   align-items: center;
-  gap: 18px;
-  margin-top: 38px;
+  gap: 16px;
+  margin-top: 32px;
 }

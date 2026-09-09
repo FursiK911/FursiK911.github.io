@@ -1,0 +1,85 @@
+.tile,
+.emptyTile {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  min-width: 36px;
+  border: 1px solid transparent;
+  background: transparent;
+}
+
+.tile {
+  cursor: pointer;
+}
+.tile:hover,
+.tile:focus-visible {
+  border-color: rgba(167, 243, 246, 0.4);
+}
+.tile:disabled {
+  cursor: default;
+}
+.tile:focus-visible {
+  outline: 1px solid var(--cyan);
+  outline-offset: 2px;
+}
+.wire {
+  position: absolute;
+  inset: 10%;
+  display: block;
+  transition: filter 180ms ease;
+}
+.tile:hover .wire {
+  filter: drop-shadow(0 0 5px rgba(167, 243, 246, 0.8));
+}
+.segment {
+  position: absolute;
+  display: block;
+  background: var(--muted);
+}
+.segment.top,
+.segment.bottom {
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 50%;
+}
+.segment.top {
+  top: 0;
+}
+.segment.bottom {
+  bottom: 0;
+}
+.segment.left,
+.segment.right {
+  top: calc(50% - 1px);
+  height: 2px;
+  width: 50%;
+}
+.segment.left {
+  left: 0;
+}
+.segment.right {
+  right: 0;
+}
+.node {
+  position: absolute;
+  top: calc(50% - 4px);
+  left: calc(50% - 4px);
+  width: 8px;
+  height: 8px;
+  border: 2px solid var(--muted);
+  border-radius: 50%;
+  background: var(--bg);
+}
+.powered .segment {
+  background: var(--cyan);
+  box-shadow: 0 0 8px rgba(167, 243, 246, 0.75);
+}
+.powered .node {
+  border-color: var(--cyan);
+  box-shadow: 0 0 8px rgba(167, 243, 246, 0.75);
+}
+@media (prefers-reduced-motion: reduce) {
+  .wire {
+    transition: none;
+  }
+}

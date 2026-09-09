@@ -1,5 +1,31 @@
 # September 2026
 
+| 2026-09-09 | projects, chudobooks, unity, vuforia, assetbundles, qr, iap, localization, source-analysis, testing, graphify | [Chudobooks source project analysis](2026-09-09.md#chudobooks-source-project-analysis) |
+
+| 2026-09-09 | projects, modal, typography, responsive, css, testing, graphify | [Project modal width and title typography](2026-09-09.md#project-modal-width-and-title-typography) |
+
+| 2026-09-09 | ui, directions, animation, pointer, accessibility, responsive, testing, graphify | [Unified Directions icon motion](2026-09-09.md#unified-directions-icon-motion) |
+
+| 2026-09-09 | projects, mychess, mobile, flutter, frontend, realtime, chess, i18n, unavailable, testing | [MyChess frontend project content enrichment](2026-09-09.md#mychess-frontend-project-content-enrichment) |
+
+| 2026-09-09 | projects, mini-game, feature-flag, responsive, testing | [Temporarily hid Project Circuit](2026-09-09.md#temporarily-hid-project-circuit) |
+
+| 2026-09-09 | projects, mini-game, interaction, accessibility, responsive, animation, i18n, testing | [Project Circuit mini-game in Projects](2026-09-09.md#project-circuit-mini-game-in-projects) |
+
+| 2026-09-09 | projects, modal, media, responsive, animation, accessibility, testing | [Project quick-view modal redesign](2026-09-09.md#project-quick-view-modal-redesign) |
+
+| 2026-09-09 | ui, header, layout, responsive, css, testing | [Aligned header content rail](2026-09-09.md#aligned-header-content-rail) |
+
+| 2026-09-09 | projects, project-page, gallery, media, responsive, animation, i18n, accessibility, testing | [Cinematic project case pages and unavailable-action icon refinement](2026-09-09.md#cinematic-project-case-pages-and-unavailable-action-icon-refinement) |
+
+| 2026-09-09 | ui, layout, spacing, hero, live-cam, experience, timeline, responsive, css, testing | [Widened and tightened home page layout](2026-09-09.md#widened-and-tightened-home-page-layout) |
+
+| 2026-09-09 | ui, routing, background, hero, live-cam, hud, animation, responsive, testing | [Hero background and intermittent LiveCam tracker](2026-09-09.md#hero-background-and-intermittent-livecam-tracker) |
+
+| 2026-09-09 | ui, hero, live-cam, desktop, responsive, css, testing | [Larger desktop Hero broadcast](2026-09-09.md#larger-desktop-hero-broadcast) |
+
+| 2026-09-08 | ui, hero, live-cam, contact, mantine, desktop, testing, graphify | [Desktop LiveCam and compact Mantine quote](2026-09-08.md#desktop-livecam-and-compact-mantine-quote) |
+
 | 2026-09-08 | ui, hero, live-cam, contact, portrait, desktop, responsive, testing, graphify | [Desktop Hero broadcast and Contact quote](2026-09-08.md#desktop-hero-broadcast-and-contact-quote) |
 
 | 2026-09-08 | i18n, section-heading, intro, testing | [English section eyebrows and localized intro titles](2026-09-08.md#english-section-eyebrows-and-localized-intro-titles) |
@@ -129,3 +155,4 @@
 | 2026-09-01 | ui, footer, legal, i18n, routing, seo, testing                                       | [daily log](2026-09-01.md#footer-legal-pages-and-social-contacts)              |
 | 2026-09-08 | ui, background, three, webgl, responsive, accessibility, testing, graphify           | [daily log](2026-09-08.md#grid-scan-desktop-background)                        |
 | 2026-09-08 | ui, background, layering, css, testing                                               | [daily log](2026-09-08.md#opaque-page-content-layer)                           |
+| 2026-09-08 | ui, background, layout, css, routing, testing                                        | [daily log](2026-09-08.md#unified-route-content-frame)                         |

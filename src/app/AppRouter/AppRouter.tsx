@@ -20,9 +20,14 @@ export function AppRouter() {
   )
 
   return (
-    <div className={styles.root}>
+    <div className={styles.appRouterRoot}>
       <DesktopGridScanBackground />
-      <div className={styles.content}>{page}</div>
+      <div
+        className={styles.appRouterContent}
+        data-testid="route-content-frame"
+      >
+        {page}
+      </div>
     </div>
   )
 }

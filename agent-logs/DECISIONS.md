@@ -1,5 +1,31 @@
 # Global Decision Index
 
+| DEC-20260909-12 | Treat the external repository as a shared Chudoboxes/AR Coloring-family Unity codebase; expose only capabilities confirmed in the relevant AR book, content delivery, QR, audio/video, and localization paths in the Chudobooks case. | projects, chudobooks, unity, source-analysis | [2026-09-09](2026/09/2026-09-09.md#decision-dec-20260909-12) |
+
+| DEC-20260909-11 | Bound desktop project quick views to `min(75vw, 1280px)`, keep the existing 900px/600px breakpoints, and use balanced display typography with `word-break: keep-all` for project titles so words never split across lines. | projects, modal, typography, responsive, css | [2026-09-09](2026/09/2026-09-09.md#decision-dec-20260909-11) |
+
+| DEC-20260909-10 | Use the Mobile icon brightness/drop-shadow and scan-line effect for all Directions cards, remove direction-specific Web/Game Engines/XR icon animation layers, and apply the existing Game Engines pointer X/Y and rotation springs to every icon while preserving timing and reduced-motion behavior. | ui, directions, animation, pointer, accessibility, responsive | [2026-09-09](2026/09/2026-09-09.md#decision-dec-20260909-10) |
+
+| DEC-20260909-09 | Use confirmed frontend technologies and implementation areas for MyChess achievements; keep backend architecture out of the personal stack, preserve MyChess Mobile as a separate Flutter/Dart case, and apply the closed-site tooltip to its Website action. | projects, mychess, mobile, flutter, frontend, i18n, unavailable | [2026-09-09](2026/09/2026-09-09.md#decision-dec-20260909-09) |
+
+| DEC-20260909-08 | Keep `projectCircuitGameEnabled` set to `false` in the Projects config; render the existing localized intro copy while the feature remains available in source for a later enablement. | projects, mini-game, feature-flag, i18n | [2026-09-09](2026/09/2026-09-09.md#decision-dec-20260909-08) |
+
+| DEC-20260909-07 | Keep the Project Circuit game as a local React feature with three deterministic 5×2 puzzles, English HUD labels in both locales, localized accessibility copy, CSS-only mobile disclosure, and a locked solved state until RESET or NEW ROUTE. | projects, mini-game, interaction, accessibility, responsive, i18n | [2026-09-09](2026/09/2026-09-09.md#decision-dec-20260909-07) |
+
+| DEC-20260909-06 | Keep the quick-view focused on media, title, description, and role; use a 55/45 media-to-content grid on desktop, stack below 900px, and switch to a full-screen dialog below 600px. Keep extended project facts on the dedicated case page. | projects, modal, media, responsive, accessibility | [2026-09-09](2026/09/2026-09-09.md#decision-dec-20260909-06) |
+
+| DEC-20260909-05 | Constrain only `.site-header-inner` with `min(calc(100% - gutter), calc(1440px - gutter))`; keep the fixed `.site-header` viewport-wide and preserve its height, background, navigation, and mobile behavior. | ui, header, layout, responsive, css | [2026-09-09](2026/09/2026-09-09.md#decision-dec-20260909-05) |
+
+| DEC-20260909-04 | Keep unavailable-action overlays translucent via an RGBA background while setting the overlay and info icon opacity to 1, including a solid background fill for the icon glyph so its signal stays legible. | ui, projects, unavailable, accessibility, overlay | [2026-09-09](2026/09/2026-09-09.md#decision-dec-20260909-04) |
+
+| DEC-20260909-03 | Use the existing 1440px app shell with 32px desktop gutters (40px tablet, 14px mobile), make all home page/header/footer rails use the available width, keep the Hero at 0.4fr / 0.6fr, and compact the desktop Experience SVG scene to `clamp(440px, 30vw, 500px)` while preserving its GSAP and mobile behavior. | ui, layout, spacing, hero, live-cam, experience, timeline, responsive | [2026-09-09](2026/09/2026-09-09.md#decision-dec-20260909-03) |
+
+| DEC-20260909-02 | Render the LiveCam tracker at `opacity: 0.45` for three seconds after a randomized 5–10 second hidden interval measured from fade completion; use 300 ms opacity transitions and preserve reduced-motion suppression. | ui, hero, live-cam, hud, animation, accessibility | [2026-09-09](2026/09/2026-09-09.md#decision-dec-20260909-02) |
+
+| DEC-20260909-01 | Allocate the desktop Hero grid as 0.75fr / 1.25fr so LiveCam is the dominant right-hand panel; preserve its 16:9 ratio and leave the 900px responsive breakpoint unchanged. | ui, hero, live-cam, desktop, responsive, css | [2026-09-09](2026/09/2026-09-09.md#decision-dec-20260909-01) |
+
+| DEC-20260908-10 | Give the desktop LiveCam the larger 1.15fr Hero column with a 24–48px gap, and use Mantine Blockquote with compact typography for the photo overlay. | ui, hero, live-cam, contact, mantine, desktop | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-10) |
+
 | DEC-20260908-09 | Keep the desktop LiveCam at 100% of the right Hero column, render `contact.title` as a full-width opaque bottom overlay inside the photo frame, and leave mobile layout unchanged until a dedicated iteration. | ui, hero, live-cam, contact, portrait, desktop, responsive | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-09) |
 
 | DEC-20260908-08 | Keep section-heading eyebrow labels English-only while giving intro title rows their own localized i18n keys. | i18n, section-heading, intro, localization | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-08) |

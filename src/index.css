@@ -65,6 +65,21 @@ a {
   --font-display:
     'Unbounded Variable', 'Unbounded', Inter, ui-sans-serif, system-ui,
     sans-serif;
+  --layout-gutter-width: 64px;
+  --section-space: 40px;
+  --section-space-mobile: 32px;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --layout-gutter-width: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  :root {
+    --layout-gutter-width: 28px;
+  }
 }
 
 h1,

@@ -1,15 +1,16 @@
-.root {
+.appRouterRoot {
   position: relative;
   min-height: 100dvh;
   background: var(--bg);
 }
 
-.content {
+.appRouterContent {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
-}
-
-.content :global(#page-content) {
-  position: relative;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at 80% 10%, rgb(15 25 33), transparent 30%),
+    var(--bg);
 }

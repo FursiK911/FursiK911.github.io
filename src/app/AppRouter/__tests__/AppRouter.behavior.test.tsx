@@ -11,7 +11,12 @@ afterEach(() => {
 })
 it('routes privacy and terms paths to legal pages', async () => {
   await changeLanguage('ru')
-  const { rerender } = renderWithProviders(<AppRouter />)
+  const { container, rerender } = renderWithProviders(<AppRouter />)
+  const contentFrame = screen.getByTestId('route-content-frame')
+  expect(contentFrame).toContainElement(
+    container.querySelector('#page-content'),
+  )
+  expect(contentFrame).toContainElement(container.querySelector('.site-footer'))
   expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
     'ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ',
   )

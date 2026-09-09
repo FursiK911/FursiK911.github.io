@@ -2,7 +2,7 @@
 :global(.skills-grid) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 48px 80px;
+  gap: 32px 40px;
 }
 
 :global(.skill-group) h3 {

@@ -1,0 +1,138 @@
+.game {
+  container-type: inline-size;
+  width: min(100%, 520px);
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid rgba(167, 243, 246, 0.32);
+  background: linear-gradient(
+    135deg,
+    rgba(9, 25, 33, 0.94),
+    rgba(4, 10, 16, 0.92)
+  );
+  color: var(--text);
+  position: relative;
+  overflow: hidden;
+}
+.game::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background: linear-gradient(
+    transparent 49%,
+    rgba(167, 243, 246, 0.08) 50%,
+    transparent 51%
+  );
+  background-size: 100% 8px;
+}
+.heading,
+.board,
+.footer {
+  position: relative;
+  z-index: 1;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 14px;
+}
+.kicker,
+.instruction,
+.footer,
+.mobileToggle {
+  font: 0.58rem var(--mono);
+  letter-spacing: 0.08em;
+}
+.kicker {
+  color: var(--cyan);
+}
+.instruction {
+  margin: 7px 0 0;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+}
+.board {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr) 58px;
+  align-items: center;
+  gap: 6px;
+  margin-top: 13px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  color: var(--muted);
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 10px;
+}
+.actions button,
+.mobileToggle {
+  padding: 4px 0;
+  border: 0;
+  color: var(--cyan);
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+.actions button:hover,
+.actions button:focus-visible,
+.mobileToggle:hover,
+.mobileToggle:focus-visible {
+  color: var(--text);
+}
+.mobileToggle {
+  display: none;
+}
+.solved::before {
+  animation: project-circuit-scan 900ms steps(2, end) 1;
+}
+@keyframes project-circuit-scan {
+  50% {
+    opacity: 0.7;
+    transform: translateY(3px);
+  }
+}
+@container (max-width: 420px) {
+  .heading {
+    display: block;
+  }
+  .heading > div:last-child {
+    margin-top: 10px;
+  }
+  .board {
+    grid-template-columns: 44px minmax(0, 1fr) 44px;
+  }
+  .game {
+    padding: 10px;
+  }
+}
+@media (max-width: 560px) {
+  .game {
+    width: 100%;
+  }
+  .mobileToggle {
+    display: block;
+    margin-top: 12px;
+  }
+  .board {
+    display: none;
+  }
+  .board[data-expanded='true'] {
+    display: grid;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .game::before,
+  .solved::before {
+    animation: none;
+  }
+}

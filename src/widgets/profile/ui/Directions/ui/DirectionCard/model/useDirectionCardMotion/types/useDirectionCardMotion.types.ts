@@ -13,7 +13,7 @@ export type UseDirectionCardMotionResult = {
     rotateX: MotionValue<number>
     rotateY: MotionValue<number>
   }
-  gamepadStyle: {
+  iconPointerStyle: {
     rotate: MotionValue<number>
     x: MotionValue<number>
     y: MotionValue<number>

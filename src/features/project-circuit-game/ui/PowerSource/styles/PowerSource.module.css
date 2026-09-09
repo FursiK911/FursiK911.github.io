@@ -1,0 +1,31 @@
+.source {
+  display: grid;
+  place-items: center;
+  gap: 5px;
+  min-width: 52px;
+  color: var(--cyan);
+  font: 0.52rem var(--mono);
+  letter-spacing: 0.07em;
+  text-align: center;
+}
+.icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--cyan);
+  border-radius: 50%;
+  font-size: 1rem;
+  box-shadow: 0 0 16px rgba(167, 243, 246, 0.45);
+  animation: project-circuit-breathe 3s ease-in-out infinite;
+}
+@keyframes project-circuit-breathe {
+  50% {
+    box-shadow: 0 0 24px rgba(167, 243, 246, 0.8);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .icon {
+    animation: none;
+  }
+}

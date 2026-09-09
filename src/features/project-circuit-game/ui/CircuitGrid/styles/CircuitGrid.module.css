@@ -1,0 +1,14 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(36px, 1fr));
+  gap: 3px;
+  min-width: 0;
+  padding: 5px;
+  border: 1px solid rgba(167, 243, 246, 0.18);
+  background-image: radial-gradient(
+    rgba(167, 243, 246, 0.2) 1px,
+    transparent 1px
+  );
+  background-size: 14px 14px;
+  background-color: rgba(4, 16, 23, 0.5);
+}

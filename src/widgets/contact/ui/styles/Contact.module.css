@@ -11,12 +11,22 @@
 :global(.contact-grid) {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.82fr);
-  gap: clamp(52px, 8vw, 120px);
+  gap: 40px;
   align-items: center;
 }
 
 :global(.contact-section) {
-  padding-bottom: 120px;
+  padding-bottom: var(--section-space);
+}
+
+@media (max-width: 900px) {
+  :global(.contact-section) {
+    padding-bottom: var(--section-space-mobile);
+  }
+
+  :global(.contact-grid) {
+    gap: 32px;
+  }
 }
 
 :global(.contact-portrait) {
@@ -82,6 +92,14 @@
   padding: 18px 18px 16px 44px;
   background: var(--panel);
   border-top: 1px solid var(--line);
+  border-left: 0;
+  color: var(--cyan);
+  font-family: var(--font-display);
+  font-size: clamp(0.85rem, 1.5vw, 1.6rem);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.08;
+  text-wrap: balance;
 }
 
 :global(.contact-quote)::before {
@@ -91,18 +109,6 @@
   color: var(--cyan);
   content: '“';
   font: 2.4rem/1 var(--font-display);
-}
-
-:global(.contact-quote) p {
-  max-width: 12ch;
-  margin: 0;
-  color: var(--cyan);
-  font-family: var(--font-display);
-  font-size: clamp(1.7rem, 3vw, 3.25rem);
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 0.98;
-  text-wrap: balance;
 }
 
 :global(.contact-links) {

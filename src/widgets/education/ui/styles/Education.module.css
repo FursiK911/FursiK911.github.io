@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: end;
   gap: 32px;
-  margin-bottom: 42px;
+  margin-bottom: 24px;
 }
 
 :global(.education-intro) h2 {

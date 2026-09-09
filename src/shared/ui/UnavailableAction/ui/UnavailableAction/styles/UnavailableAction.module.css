@@ -26,11 +26,10 @@
   background: rgba(8, 11, 15, 0.28);
   cursor: help;
   font: inherit;
-  opacity: 0.72;
+  opacity: 1;
   transition:
     background 0.2s ease,
-    border-color 0.2s ease,
-    opacity 0.2s ease;
+    border-color 0.2s ease;
 }
 
 .overlay:hover,
@@ -42,6 +41,9 @@
 }
 
 .icon {
+  color: var(--cyan);
+  fill: var(--bg);
+  opacity: 1;
   filter: drop-shadow(0 0 7px rgba(167, 243, 246, 0.55));
 }
 

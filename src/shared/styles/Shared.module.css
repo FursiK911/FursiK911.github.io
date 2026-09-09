@@ -19,7 +19,8 @@ p {
 }
 
 :global(.section-shell) {
-  width: min(1180px, calc(100% - 64px));
+  width: calc(100% - var(--layout-gutter-width));
+  max-width: none;
   margin: auto;
   position: relative;
   scroll-margin-top: 92px;
@@ -80,11 +81,11 @@ p {
 }
 
 :global(.hero) {
-  min-height: 560px;
+  min-height: 480px;
   padding-top: 125px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(48px, 7vw, 104px);
+  grid-template-columns: minmax(0, 0.4fr) minmax(0, 0.6fr);
+  gap: clamp(24px, 3vw, 48px);
   align-items: center;
 }
 
@@ -209,7 +210,7 @@ p {
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 44px;
+  margin-bottom: 24px;
 }
 
 :global(.heading-rule) {
@@ -482,9 +483,9 @@ p {
 
 :global(.experience-timeline) {
   position: relative;
-  height: clamp(570px, 38vw, 620px);
+  height: clamp(440px, 30vw, 500px);
   min-width: 0;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 :global(.experience-timeline-axis) {
@@ -795,6 +796,14 @@ body:global(.is-loading) {
   }
 }
 
+@media (min-width: 901px) and (max-width: 1199px) {
+  :global(.profile-section) :global(.hero) {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+}
+
 @media (max-width: 900px) {
   html {
     scroll-padding-top: 82px;
@@ -803,7 +812,7 @@ body:global(.is-loading) {
   :global(.section-shell),
   :global(.site-footer),
   :global(.site-header-inner) {
-    width: min(100% - 40px, 680px);
+    width: calc(100% - var(--layout-gutter-width));
   }
   :global(.site-header) {
     height: 66px;
@@ -832,21 +841,11 @@ body:global(.is-loading) {
   :global(.menu-toggle) {
     display: inline-flex;
   }
-  :global(.profile-section) {
-    padding-top: 82px;
-  }
   :global(.hero) {
     min-height: auto;
     padding-top: 0;
     grid-template-columns: 1fr;
     gap: 44px;
-  }
-  :global(.projects-section),
-  :global(.experience-section),
-  :global(.skills-section),
-  :global(.education-section),
-  :global(.contact-section) {
-    padding-top: 88px;
   }
   :global(.directions-section) {
     padding: 26px 0 8px;
@@ -906,7 +905,7 @@ body:global(.is-loading) {
   :global(.section-shell),
   :global(.site-footer),
   :global(.site-header-inner) {
-    width: calc(100% - 28px);
+    width: calc(100% - var(--layout-gutter-width));
   }
   :global(.header-actions) > a {
     display: none;
@@ -940,9 +939,6 @@ body:global(.is-loading) {
   :global(.hero-actions) :global(.action-control--text) {
     width: 100%;
     margin-top: 5px;
-  }
-  :global(.projects-intro) {
-    display: block;
   }
   :global(.experience-intro) {
     display: block;

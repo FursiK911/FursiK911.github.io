@@ -35,6 +35,7 @@ export function useLiveCamHud({
   const [tracker, setTracker] = useState<LiveCamTrackerState>(
     initialLiveCamTracker,
   )
+  const [isTrackerVisible, setIsTrackerVisible] = useState(false)
   useEffect(() => {
     if (reducedMotion || !isInViewport || status !== 'live') return
 
@@ -69,6 +70,48 @@ export function useLiveCamHud({
     }, liveCamHudConfig.signal.intervalMs)
 
     return () => window.clearInterval(timer)
+  }, [isInViewport, reducedMotion, status])
+
+  useEffect(() => {
+    if (!isInViewport || reducedMotion || status !== 'live') return
+
+    let timer: number | undefined
+    let isDisposed = false
+
+    function getHiddenDuration() {
+      return (
+        liveCamHudConfig.trackerHiddenMinimumMs +
+        Math.round(
+          Math.random() *
+            (liveCamHudConfig.trackerHiddenMaximumMs -
+              liveCamHudConfig.trackerHiddenMinimumMs),
+        )
+      )
+    }
+
+    function scheduleAppearance(delay: number) {
+      timer = window.setTimeout(() => {
+        if (isDisposed) return
+
+        setIsTrackerVisible(true)
+        timer = window.setTimeout(() => {
+          if (isDisposed) return
+
+          setIsTrackerVisible(false)
+          scheduleAppearance(
+            liveCamHudConfig.trackerFadeDurationMs + getHiddenDuration(),
+          )
+        }, liveCamHudConfig.trackerVisibleDurationMs)
+      }, delay)
+    }
+
+    scheduleAppearance(getHiddenDuration())
+
+    return () => {
+      isDisposed = true
+      if (timer !== undefined) window.clearTimeout(timer)
+      setIsTrackerVisible(false)
+    }
   }, [isInViewport, reducedMotion, status])
 
   useEffect(() => {
@@ -184,6 +227,7 @@ export function useLiveCamHud({
     streamTime,
     telemetry,
     tracker,
+    isTrackerVisible,
     waveform,
   }
 }

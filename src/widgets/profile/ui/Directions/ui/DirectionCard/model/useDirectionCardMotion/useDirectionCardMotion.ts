@@ -127,7 +127,7 @@ export function useDirectionCardMotion({
 
   return {
     cardStyle: { rotateX, rotateY },
-    gamepadStyle: { rotate: gamepadRotate, x: gamepadX, y: gamepadY },
+    iconPointerStyle: { rotate: gamepadRotate, x: gamepadX, y: gamepadY },
     isHovering,
     isIconAnimating: !reducedMotion && (isIconPulseActive || scanning),
     isMetricActive: reducedMotion || hasMetricStarted,

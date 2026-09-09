@@ -1,9 +1,13 @@
 import type { Resource } from 'i18next'
+import { projectCaseCopy } from './projectCase.data'
+import { projectCircuitGameCopy } from './projectCircuitGame.data'
 
 export const resources = {
   ru: {
     translation: {
       language: 'RU',
+      projectCase: projectCaseCopy.ru,
+      projectCircuitGame: projectCircuitGameCopy.ru,
       header: {
         name: 'Дмитрий Фурсов',
         homeLabel: 'Главная — Дмитрий Фурсов',
@@ -257,7 +261,7 @@ export const resources = {
         overview: 'ОБЗОР',
         worked: 'ЧТО СДЕЛАНО',
         close: 'ЗАКРЫТЬ',
-        viewDetails: 'ПОСМОТРЕТЬ ДЕТАЛИ',
+        viewDetails: 'ПОДРОБНЕЕ О ПРОЕКТЕ',
         backToProjects: 'К ПРОЕКТАМ',
         techStack: 'Технологии',
         contributions: 'Вклад в проект',
@@ -305,9 +309,9 @@ export const resources = {
         vulkanVerseDesc:
           'Игровые механики и клиент-серверная функциональность для локации Tartarus в Vulkan Verse.',
         mychessWebDesc:
-          'Первая российская шахматная экосистема с веб- и мобильными версиями: онлайн-партии, турниры, сообщества, стримы, обучение и ИИ-аватары гроссмейстеров.',
+          'Пользовательский React/TypeScript-клиент первой российской шахматной экосистемы: адаптивные desktop- и mobile-сценарии, онлайн-партии, турниры, сообщества, стримы, обучение и ИИ-аватары гроссмейстеров.',
         mychessMobileDesc:
-          'Мобильное приложение экосистемы myChess на Flutter для онлайн-партий, турниров, сообществ, стримов и обучения на Android и iOS.',
+          'Кроссплатформенный Flutter-клиент экосистемы myChess для мобильных игровых, турнирных и социальных сценариев, стримов и обучения на Android и iOS.',
         mychessMetrics: [
           { value: '100K+', label: 'загрузок в RuStore · февраль 2025' },
           { value: '26K+', label: 'онлайн-участников Суперфинала 2025' },
@@ -320,7 +324,7 @@ export const resources = {
         mychessMobilePoints: [
           'Разрабатывал кроссплатформенное приложение на Flutter и Dart',
           'Адаптировал игровые, турнирные и социальные сценарии myChess для мобильных устройств',
-          'Поддерживал публикационные версии для Android и iOS',
+          'Поддерживал публикационные версии приложения для Android и iOS',
         ],
         mychessMobileMetrics: [
           { value: 'Flutter', label: 'кроссплатформенный мобильный стек' },
@@ -372,10 +376,12 @@ export const resources = {
           'Интеграция Addressables, Zenject и UniTask',
         ],
         mychessWebPoints: [
-          'Мультиплеерные шахматные партии и одновременные сессии',
-          'Форматы турниров и шахматные головоломки',
-          'Режимы анализа Stockfish и Chessbox',
-          'Frontend-архитектура на React/TypeScript',
+          'Реализовал отдельные desktop- и mobile-роутеры с адаптивными игровыми интерфейсами',
+          'Разработал realtime-сценарии партий, matchmaking, турниров, чатов и сообществ через Socket.IO и общие WebSocket-модули',
+          'Интегрировал шахматную доску на Chessground/react-dnd и игровую логику chess.js',
+          'Подключил Stockfish WebAssembly для клиентских режимов анализа и AI-сценариев',
+          'Выстроил слой состояния и запросов на Redux Toolkit, TanStack Query и RxJS',
+          'Интегрировал mediasoup-client/WebRTC для стриминга и обучающих медиасценариев',
         ],
         catCitten: 'Сайт компании Cat-citten',
         catCittenDesc:
@@ -501,17 +507,20 @@ export const resources = {
         chudobooks: 'Chudobooks',
         arChudaboxes: 'AR Chudoboxes / Chudoboxes EKO',
         chudobooksDesc:
-          'Мобильное AR-приложение для детской книги Chudoboxes: печатные маркеры запускали 3D-персонажей, сцены, интерактивную книгу и аудиосценарии.',
+          'Мобильное AR-приложение для детской книги Chudoboxes: печатные маркеры запускали 3D-персонажей и сцены, а загружаемый контент, аудио, фото и видео связывали физическую книгу с интерактивным приложением.',
         chudobooksPoints: [
+          'Собрал сценовый flow Root → MainMenu → QR/Scanning → CardSets для работы с наборами контента',
           'Реализовал marker-based AR-сцены и распознавание печатных страниц через Vuforia',
-          'Настроил динамическую загрузку 3D/AR-контента через AssetBundle',
-          'Связал интерактивную книгу, аудиосценарии и фото/видео с AR-персонажами',
+          'Настроил проверку MD5 и динамическую загрузку платформенных 3D/AR AssetBundle-пакетов с CDN',
+          'Связал QR-активацию наборов, локализацию RU/EN/UK, аудиосценарии и фото/видео с AR-персонажами',
         ],
         chudobooksMetrics: [
           { value: 'iOS + Android', label: 'платформы' },
           { value: '1.9 / 1.11', label: 'последние версии iOS / Android' },
           { value: '~900', label: 'Android-установок по архивной метрике' },
           { value: '3.64 / 5', label: 'рейтинг Android по 14 оценкам' },
+          { value: 'Unity 2018.4', label: 'версия движка в исходном проекте' },
+          { value: 'v9.0', label: 'версия CDN-контентных пакетов' },
         ],
         arChudaboxesDesc:
           'Коммерческий мобильный AR-компаньон интерактивной детской книги: печатные страницы и промоматериалы запускали анимации персонажей, AR-фото и AR-видео. Версия Chudoboxes EKO расширила экосистему коллекционными наклейками, открыткой и мини-играми для кампании ЕКО Маркет.',
@@ -525,10 +534,16 @@ export const resources = {
         arChudaboxesMediaThree: 'Исторический экран контента AR Chudoboxes',
         projectFootprint: 'ОХВАТ ПРОЕКТА',
         arChudaboxesMetrics: [
-          { value: '1.3K+', label: 'Android installs across variants' },
-          { value: '1.26M+', label: 'EKO promo video views' },
-          { value: '137 · 15', label: 'stores · regions in campaign' },
-          { value: 'iOS + Android', label: 'commercial mobile AR' },
+          {
+            value: '1.3K+',
+            label: 'установок Android для вариантов приложения',
+          },
+          { value: '1.26M+', label: 'просмотров проморолика EKO' },
+          { value: '137 · 15', label: 'магазинов · регионов в кампании' },
+          {
+            value: 'iOS + Android',
+            label: 'коммерческое мобильное AR-приложение',
+          },
         ],
         chudoFloor: 'Chudo Floor',
         chudoFloorDesc:
@@ -799,6 +814,8 @@ export const resources = {
   en: {
     translation: {
       language: 'EN',
+      projectCase: projectCaseCopy.en,
+      projectCircuitGame: projectCircuitGameCopy.en,
       header: {
         name: 'Dmitry Fursov',
         homeLabel: 'Home — Dmitry Fursov',
@@ -1052,7 +1069,7 @@ export const resources = {
         overview: 'OVERVIEW',
         worked: 'WHAT I WORKED ON',
         close: 'CLOSE',
-        viewDetails: 'VIEW DETAILS',
+        viewDetails: 'MORE ABOUT THE PROJECT',
         backToProjects: 'BACK TO PROJECTS',
         techStack: 'Technology stack',
         contributions: 'Project contribution',
@@ -1100,9 +1117,9 @@ export const resources = {
         vulkanVerseDesc:
           'Gameplay mechanics and client-server functionality developed for the Tartarus location of Vulkan Verse.',
         mychessWebDesc:
-          'A Russian chess ecosystem with web and mobile versions, online games, tournaments, communities, streams, learning and grandmaster AI avatars.',
+          'A React/TypeScript client for Russia’s first chess ecosystem, with responsive desktop and mobile flows for online games, tournaments, communities, streams, learning and grandmaster AI avatars.',
         mychessMobileDesc:
-          'A Flutter mobile application for the myChess ecosystem, bringing online games, tournaments, communities, streams and learning to Android and iOS.',
+          'A cross-platform Flutter client for the myChess ecosystem, bringing mobile game, tournament and social flows, streams and learning to Android and iOS.',
         mychessMetrics: [
           { value: '100K+', label: 'RuStore downloads · February 2025' },
           { value: '26K+', label: 'online Superfinal 2025 participants' },
@@ -1112,7 +1129,7 @@ export const resources = {
         mychessMobilePoints: [
           'Developed a cross-platform application with Flutter and Dart',
           'Adapted myChess game, tournament and social flows for mobile devices',
-          'Supported release versions for Android and iOS',
+          'Supported release builds for Android and iOS',
         ],
         mychessMobileMetrics: [
           { value: 'Flutter', label: 'cross-platform mobile stack' },
@@ -1164,10 +1181,12 @@ export const resources = {
           'Addressables, Zenject and UniTask integration',
         ],
         mychessWebPoints: [
-          'Real-time chess games and simultaneous sessions',
-          'Tournament formats and chess puzzles',
-          'Stockfish analysis modes and Chessbox',
-          'React/TypeScript frontend architecture',
+          'Implemented separate desktop and mobile routers with responsive game interfaces',
+          'Built real-time game, matchmaking, tournament, chat and community flows with Socket.IO and shared WebSocket modules',
+          'Integrated a Chessground/react-dnd chessboard and chess.js game logic',
+          'Connected Stockfish WebAssembly for client-side analysis and AI flows',
+          'Built the client state and data layer with Redux Toolkit, TanStack Query and RxJS',
+          'Integrated mediasoup-client/WebRTC for streaming and learning media flows',
         ],
         catCitten: 'Cat-citten company website',
         catCittenDesc:
@@ -1292,17 +1311,20 @@ export const resources = {
         chudobooks: 'Chudobooks',
         arChudaboxes: 'AR Chudoboxes / Chudoboxes EKO',
         chudobooksDesc:
-          'Mobile AR application for the Chudoboxes children’s book: printed markers launched 3D characters, scenes, interactive book content and audio experiences.',
+          'Mobile AR application for the Chudoboxes children’s book: printed markers launched 3D characters and scenes, while downloadable content, audio, photos, and video connected the physical book to the interactive app.',
         chudobooksPoints: [
+          'Built the Root → MainMenu → QR/Scanning → CardSets scene flow for content sets',
           'Implemented marker-based AR scenes and printed-page recognition with Vuforia',
-          'Configured dynamic 3D/AR content delivery through AssetBundles',
-          'Connected interactive book, audio, and AR character photo/video flows',
+          'Configured MD5 validation and dynamic platform-specific 3D/AR AssetBundle delivery from a CDN',
+          'Connected QR set activation, RU/EN/UK localization, audio scenarios, and AR character photo/video flows',
         ],
         chudobooksMetrics: [
           { value: 'iOS + Android', label: 'platforms' },
           { value: '1.9 / 1.11', label: 'latest iOS / Android versions' },
           { value: '~900', label: 'Android installs in archived metric' },
           { value: '3.64 / 5', label: 'Android rating from 14 ratings' },
+          { value: 'Unity 2018.4', label: 'engine version in source project' },
+          { value: 'v9.0', label: 'CDN content bundle version' },
         ],
         arChudaboxesDesc:
           'A commercial mobile AR companion for an interactive children’s book: printed pages and promotional materials launched animated characters, AR photos and AR videos. The Chudoboxes EKO release expanded the ecosystem with collectible stickers, an interactive postcard and mini-games for an EKO Market campaign.',

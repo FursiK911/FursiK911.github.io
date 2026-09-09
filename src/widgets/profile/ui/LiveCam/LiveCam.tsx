@@ -29,11 +29,12 @@ export function LiveCam({ entered, reducedMotion }: LiveCamProps) {
     status,
   } = useLiveCam({ containerRef, entered, reducedMotion, videoRef })
   const isLive = status === 'live'
-  const { streamTime, telemetry, tracker, waveform } = useLiveCamHud({
-    isInViewport,
-    reducedMotion,
-    status,
-  })
+  const { isTrackerVisible, streamTime, telemetry, tracker, waveform } =
+    useLiveCamHud({
+      isInViewport,
+      reducedMotion,
+      status,
+    })
   const { activeLine, completedLines } = useLiveCamTerminal({
     isInViewport,
     isLive,
@@ -140,6 +141,7 @@ export function LiveCam({ entered, reducedMotion }: LiveCamProps) {
           >
             <div
               className={cx(styles.liveCamTrackerFrame)}
+              data-live-cam-tracker-visible={isTrackerVisible}
               style={
                 {
                   '--tracker-x': `${tracker.x}%`,

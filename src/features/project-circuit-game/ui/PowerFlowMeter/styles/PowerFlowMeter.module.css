@@ -1,0 +1,19 @@
+.meter {
+  display: grid;
+  gap: 4px;
+  justify-items: end;
+  color: var(--muted);
+  font: 0.58rem var(--mono);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+.label {
+  color: var(--text);
+}
+.bar {
+  color: var(--cyan);
+  letter-spacing: 0;
+}
+.value {
+  color: var(--cyan);
+}

@@ -3,21 +3,6 @@
   max-width: 1440px;
   margin: auto;
   overflow: hidden;
-  background:
-    radial-gradient(
-      circle at 80% 10%,
-      rgba(57, 83, 105, 0.18),
-      transparent 30%
-    ),
-    transparent;
-}
-
-@media (min-width: 901px) {
-  :global(html.has-hud-scroll-indicator) :global(.section-shell),
-  :global(html.has-hud-scroll-indicator) :global(.site-footer),
-  :global(html.has-hud-scroll-indicator) :global(.site-header-inner) {
-    width: min(1092px, calc(100% - 176px));
-  }
 }
 
 :global(.site-header) {
@@ -40,7 +25,10 @@
 }
 
 :global(.site-header-inner) {
-  width: min(1280px, calc(100% - 64px));
+  width: min(
+    calc(100% - var(--layout-gutter-width)),
+    calc(1440px - var(--layout-gutter-width))
+  );
   height: 100%;
   margin: auto;
   display: flex;
@@ -136,7 +124,7 @@
 }
 
 :global(.site-footer) {
-  width: min(1180px, calc(100% - 64px));
+  width: calc(100% - var(--layout-gutter-width));
   margin: auto;
   padding: 72px 0 34px;
   border-top: 1px solid var(--line);

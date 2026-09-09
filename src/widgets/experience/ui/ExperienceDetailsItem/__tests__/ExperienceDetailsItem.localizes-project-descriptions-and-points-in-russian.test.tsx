@@ -8,7 +8,7 @@ it('localizes project descriptions and points in Russian', async () => {
   renderWithProviders(<ExperienceDetailsItem entry={workExperience[2]} />)
   expect(
     screen.getByText(
-      'Первая российская шахматная экосистема с веб- и мобильными версиями: онлайн-партии, турниры, сообщества, стримы, обучение и ИИ-аватары гроссмейстеров.',
+      'Пользовательский React/TypeScript-клиент первой российской шахматной экосистемы: адаптивные desktop- и mobile-сценарии, онлайн-партии, турниры, сообщества, стримы, обучение и ИИ-аватары гроссмейстеров.',
     ),
   ).toBeInTheDocument()
   expect(

@@ -16,8 +16,12 @@ export const liveCamHudConfig = {
   },
   streamOffsetMaximumSeconds: 5400,
   streamOffsetMinimumSeconds: 900,
+  trackerFadeDurationMs: 300,
+  trackerHiddenMaximumMs: 10000,
+  trackerHiddenMinimumMs: 5000,
   trackerIntervalMs: 640,
   trackerPositionIntervalMs: 2100,
+  trackerVisibleDurationMs: 3000,
   uplink: {
     initial: 6,
     intervalMs: 610,
