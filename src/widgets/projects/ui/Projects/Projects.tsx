@@ -7,7 +7,9 @@ import type { Project, ProjectCategory } from '@/entities/project'
 import { ProjectCard } from '@/entities/project'
 import { ProjectDetails } from '@/features/project-details'
 import { ProjectFilters, filters } from '@/features/project-filtering'
+import { ProjectCircuitGame } from '@/features/project-circuit-game'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
+import { projectCircuitGameEnabled } from '../../model/config/projects.config'
 import '../styles/Projects.module.css'
 
 export function Projects() {
@@ -36,7 +38,11 @@ export function Projects() {
       <SectionHeading index="02" title={t('sections.projects')} />
       <div className={cx(styles.projectsIntro)}>
         <h2>{t('projects.title')}</h2>
-        <p>{t('projects.intro')}</p>
+        {projectCircuitGameEnabled ? (
+          <ProjectCircuitGame />
+        ) : (
+          <p>{t('projects.intro')}</p>
+        )}
       </div>
       <ProjectFilters active={filter} onChange={setFilter} />
       <motion.div className={cx(styles.projectGrid)} layout>

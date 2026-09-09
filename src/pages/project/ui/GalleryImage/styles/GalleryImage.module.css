@@ -1,0 +1,19 @@
+.galleryImageUnavailable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  min-height: 120px;
+  height: 100%;
+  padding: 16px;
+  color: var(--muted);
+  background: linear-gradient(135deg, #11232c, #0b1118);
+  font: 0.75rem/1.6 var(--mono);
+  text-align: center;
+}
+.galleryImageUnavailable svg {
+  width: 26px;
+  height: 26px;
+}

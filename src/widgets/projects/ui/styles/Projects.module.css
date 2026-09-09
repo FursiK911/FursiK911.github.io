@@ -4,14 +4,26 @@
 :global(.skills-section),
 :global(.education-section),
 :global(.contact-section) {
-  padding-top: 120px;
+  padding-top: var(--section-space);
+}
+
+@media (max-width: 900px) {
+  :global(.projects-section),
+  :global(.experience-section),
+  :global(.skills-section),
+  :global(.education-section),
+  :global(.contact-section) {
+    padding-top: var(--section-space-mobile);
+  }
 }
 
 :global(.projects-intro) {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  margin-bottom: 34px;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 24px;
 }
 
 :global(.projects-intro) h2,
@@ -27,17 +39,26 @@
 }
 
 :global(.projects-intro) p {
-  color: var(--muted);
   max-width: 340px;
+  color: var(--muted);
   line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  :global(.projects-intro) {
+    align-items: stretch;
+  }
+  :global(.projects-intro) > *:last-child {
+    flex-basis: 100%;
+  }
 }
 
 :global(.filter-row) {
   display: flex;
   gap: 8px;
   border-bottom: 1px solid var(--line);
-  padding-bottom: 14px;
-  margin-bottom: 28px;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
   flex-wrap: wrap;
 }
 

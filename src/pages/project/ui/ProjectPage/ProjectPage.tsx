@@ -1,11 +1,20 @@
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { IconArrowUpLeft } from '@tabler/icons-react'
 import { getProjectById } from '@/entities/project'
 import type { ProjectMetric } from '@/entities/project'
-import { ProjectMediaGallery } from '@/features/project-details'
 import { ActionLink } from '@/shared/ui/ActionLink'
-import { UnavailableAction } from '@/shared/ui/UnavailableAction'
 import { Footer, Header, HudScrollIndicator } from '@/widgets/site-layout'
+import { partitionMetrics } from '../../model/utils/partitionMetrics'
+import { canReturnWithinSite } from '../../model/utils/canReturnWithinSite'
+import { CaseAtmosphere } from '../CaseAtmosphere/CaseAtmosphere'
+import { CaseNavigation } from '../CaseNavigation/CaseNavigation'
+import { CaseSection } from '../CaseSection/CaseSection'
+import { ProjectIntro } from '../ProjectIntro/ProjectIntro'
+import { ProjectGallery } from '../ProjectGallery/ProjectGallery'
+import { ProjectResults } from '../ProjectResults/ProjectResults'
+import { ProjectContribution } from '../ProjectContribution/ProjectContribution'
+import { ProjectStack } from '../ProjectStack/ProjectStack'
 import styles from './styles/ProjectPage.module.css'
 import type { ProjectPageProps } from './types/ProjectPage.types'
 
@@ -18,20 +27,42 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
   const description = project
     ? t(`projects.${project.descriptionKey}`)
     : t('projects.notFoundDescription')
-
+  const metrics = partitionMetrics(
+    project?.metricsKey,
+    project?.metricsKey
+      ? (t(`projects.${project.metricsKey}`, {
+          returnObjects: true,
+        }) as ProjectMetric[])
+      : [],
+  )
+  const hasMedia = Boolean(project?.media?.length)
+  const hasPoints = project
+    ? (t(`projects.${project.pointsKey}`, { returnObjects: true }) as string[])
+        .length > 0
+    : false
+  const sections = [
+    { id: 'overview', label: t('projectCase.overview') },
+    ...(hasMedia ? [{ id: 'media', label: t('projectCase.media') }] : []),
+    ...(metrics.achievements.length
+      ? [{ id: 'achievements', label: t('projectCase.achievements') }]
+      : []),
+    ...(hasPoints
+      ? [{ id: 'contribution', label: t('projectCase.contribution') }]
+      : []),
+    ...(project?.tech.length
+      ? [{ id: 'stack', label: t('projectCase.stack') }]
+      : []),
+  ]
   useEffect(() => {
     document.title = title
     document.documentElement.lang = i18n.language.startsWith('ru') ? 'ru' : 'en'
-    const url = new URL(window.location.href)
-    url.search = ''
-    url.hash = ''
     document
       .querySelector<HTMLMetaElement>('meta[name="description"]')
       ?.setAttribute('content', description)
   }, [description, i18n.language, title])
-
   return (
-    <div className={styles.shell}>
+    <div className={styles.projectPageShell}>
+      <CaseAtmosphere />
       <Header
         active=""
         onLanguage={() =>
@@ -40,123 +71,84 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
         typedRole={t('header.legalRole')}
         reducedMotion
       />
-      <main id="page-content" className={styles.page}>
+      <main id="page-content" className={styles.projectPagePage}>
         {project ? (
-          <article className={styles.project}>
-            <a className={styles.backLink} href="/#projects">
-              ← {t('projects.backToProjects')}
+          <article>
+            <a
+              className={styles.projectPageBackLink}
+              href="/#projects"
+              onClick={(event) => {
+                if (
+                  canReturnWithinSite(
+                    document.referrer,
+                    window.location.origin,
+                    window.history.length,
+                  )
+                ) {
+                  event.preventDefault()
+                  window.history.back()
+                }
+              }}
+            >
+              <IconArrowUpLeft aria-hidden="true" />
+              {t('projectCase.back')}
             </a>
-            <div className={styles.hero}>
-              <ProjectMediaGallery project={project} variant="detail" />
-              <div className={styles.heroContent}>
-                <p className={styles.kicker}>
-                  {t('projects.details')} // {project.id.toUpperCase()}
-                </p>
-                <h1>{t(`projects.${project.titleKey}`)}</h1>
-                <p>{t(`projects.${project.descriptionKey}`)}</p>
-                <dl className={styles.facts}>
-                  <div>
-                    <dt>{t('projects.company')}</dt>
-                    <dd>{project.company}</dd>
-                  </div>
-                  <div>
-                    <dt>{t('projects.period')}</dt>
-                    <dd>
-                      {project.period.from} —{' '}
-                      {project.period.to ?? t('experience.present')}
-                    </dd>
-                  </div>
-                  <div>
-                    <dt>{t('projects.role')}</dt>
-                    <dd>
-                      {project.roleKey ? t(`roles.${project.roleKey}`) : '—'}
-                    </dd>
-                  </div>
-                  <div>
-                    <dt>{t('projects.platform')}</dt>
-                    <dd>{t(`platforms.${project.platformKey}`)}</dd>
-                  </div>
-                </dl>
-                <div className={styles.actions}>
-                  {project.actions?.map((action) => {
-                    const label =
-                      action.type === 'external'
-                        ? `${action.label} ↗`
-                        : `${t(`projects.actions.${action.type}`)} · ${action.label}`
-                    return action.unavailableReasonKey ? (
-                      <UnavailableAction
-                        key={action.href}
-                        reason={t(action.unavailableReasonKey)}
-                        variant={
-                          action.type === 'live' ? 'primary' : 'secondary'
-                        }
-                      >
-                        {label}
-                      </UnavailableAction>
-                    ) : (
-                      <ActionLink
-                        href={action.href}
-                        target="_blank"
-                        rel="noreferrer"
-                        key={action.href}
-                        variant={
-                          action.type === 'live' ? 'primary' : 'secondary'
-                        }
-                      >
-                        {label}
-                      </ActionLink>
-                    )
-                  })}
-                </div>
+            <ProjectIntro project={project} facts={metrics.facts} />
+            <CaseNavigation sections={sections} />
+            {hasMedia ? (
+              <CaseSection
+                id="media"
+                number="01"
+                title={t('projectCase.media')}
+              >
+                <ProjectGallery key={project.id} project={project} />
+              </CaseSection>
+            ) : (
+              <div className={styles.projectPageCover}>
+                <ProjectGallery key={project.id} project={project} />
               </div>
-            </div>
-            <div className={styles.details}>
-              {project.metricsKey && (
-                <section className={styles.metricsSection}>
-                  <p className={styles.kicker}>
-                    {t('projects.projectFootprint')}
-                  </p>
-                  <div className={styles.metrics}>
-                    {(
-                      t(`projects.${project.metricsKey}`, {
-                        returnObjects: true,
-                      }) as ProjectMetric[]
-                    ).map((metric) => (
-                      <div className={styles.metric} key={metric.label}>
-                        <strong>{metric.value}</strong>
-                        <span>{metric.label}</span>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-              )}
-              <section>
-                <p className={styles.kicker}>{t('projects.overview')}</p>
-                <h2>{t('projects.techStack')}</h2>
-                <div className={styles.tags}>
-                  {project.tech.map((tech) => (
-                    <span key={tech}>{tech}</span>
-                  ))}
-                </div>
-              </section>
-              <section>
-                <p className={styles.kicker}>{t('projects.worked')}</p>
-                <h2>{t('projects.contributions')}</h2>
-                <ul>
-                  {(
-                    t(`projects.${project.pointsKey}`, {
-                      returnObjects: true,
-                    }) as string[]
-                  ).map((point) => (
-                    <li key={point}>{point}</li>
-                  ))}
-                </ul>
-              </section>
-            </div>
+            )}
+            {metrics.achievements.length > 0 && (
+              <CaseSection
+                id="achievements"
+                number={String(
+                  sections.findIndex(
+                    (section) => section.id === 'achievements',
+                  ),
+                ).padStart(2, '0')}
+                title={t('projectCase.achievements')}
+              >
+                <ProjectResults metrics={metrics.achievements} />
+              </CaseSection>
+            )}
+            {hasPoints && (
+              <CaseSection
+                id="contribution"
+                number={String(
+                  sections.findIndex(
+                    (section) => section.id === 'contribution',
+                  ),
+                ).padStart(2, '0')}
+                title={t('projects.contributions')}
+              >
+                <ProjectContribution project={project} />
+              </CaseSection>
+            )}
+            {project.tech.length > 0 && (
+              <CaseSection
+                id="stack"
+                number={String(
+                  sections.findIndex((section) => section.id === 'stack'),
+                ).padStart(2, '0')}
+                title={t('projects.techStack')}
+              >
+                <ProjectStack project={project} />
+              </CaseSection>
+            )}
           </article>
         ) : (
-          <section className={styles.notFound}>
-            <p className={styles.kicker}>404 // PROJECT</p>
+          <section className={styles.projectPageNotFound}>
+            <p>404 // PROJECT</p>
             <h1>{t('projects.notFoundTitle')}</h1>
             <p>{t('projects.notFoundDescription')}</p>
             <ActionLink href="/#projects" variant="primary">

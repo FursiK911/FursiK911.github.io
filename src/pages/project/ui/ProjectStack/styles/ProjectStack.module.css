@@ -1,0 +1,33 @@
+.projectStackStack p {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.projectStackStack ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.projectStackStack li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 22px;
+  border: 1px solid var(--line);
+  background: rgb(167 243 246 / 3%);
+  color: var(--text);
+  font: 0.86rem/1.4 var(--mono);
+  transition:
+    border-color 0.25s,
+    background-color 0.25s;
+}
+.projectStackStack li span {
+  color: var(--cyan);
+}
+.projectStackStack li:hover {
+  background: rgb(167 243 246 / 9%);
+  border-color: var(--cyan);
+}

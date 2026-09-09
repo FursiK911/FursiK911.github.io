@@ -1,0 +1,39 @@
+.projectResultsResults {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 16px;
+  margin: 0;
+}
+.projectResultsMetric {
+  position: relative;
+  padding: 34px 24px 26px;
+  border: 1px solid var(--line);
+  border-top-color: #73b7be;
+  background: linear-gradient(150deg, rgb(167 243 246 / 7%), transparent 80%);
+  transition:
+    border-color 0.25s,
+    background-color 0.25s;
+}
+.projectResultsMetric:hover {
+  border-color: var(--cyan);
+  background-color: rgb(167 243 246 / 4%);
+}
+.projectResultsIndex {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  color: var(--muted);
+  font: 0.6rem var(--mono);
+}
+.projectResultsMetric dd {
+  margin: 8px 0 20px;
+  color: var(--cyan);
+  font: 500 clamp(1.7rem, 3vw, 2.7rem)/1.25 var(--mono);
+  overflow-wrap: break-word;
+}
+.projectResultsMetric dt {
+  max-width: 32ch;
+  color: #b7c9cf;
+  font-size: 0.87rem;
+  line-height: 1.6;
+}

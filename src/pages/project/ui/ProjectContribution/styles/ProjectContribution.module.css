@@ -1,0 +1,37 @@
+.projectContributionContent > p {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.projectContributionContent ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.projectContributionContent li {
+  display: flex;
+  gap: clamp(16px, 3vw, 40px);
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+  transition: border-color 0.25s;
+}
+.projectContributionContent li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.projectContributionContent li:hover {
+  border-top-color: var(--cyan);
+}
+.projectContributionContent li > span {
+  flex-shrink: 0;
+  padding-top: 5px;
+  font: 0.72rem/1.8 var(--mono);
+  color: var(--cyan);
+}
+.projectContributionContent li p {
+  max-width: 74ch;
+  margin: 0;
+  color: #ccdadd;
+  font-size: clamp(1rem, 1.3vw, 1.1rem);
+  line-height: 1.85;
+  text-wrap: pretty;
+}

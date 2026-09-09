@@ -1,23 +1,21 @@
 import { screen } from '@testing-library/react'
 import { ProjectDetails } from '../ProjectDetails'
 import { projects } from '@/entities/project'
-import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { changeLanguage } from '@/shared/config/i18n'
-it('renders accessible project dialog', async () => {
+import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
+
+it('shows the unavailable website state for MyChess Mobile', async () => {
   await changeLanguage('en')
+  const project = projects.find((item) => item.id === 'mychess-mobile')
+
   renderWithProviders(
     <ProjectDetails
-      project={projects[0]}
+      project={project!}
       returnFocus={null}
       onClose={() => undefined}
     />,
   )
-  expect(screen.getByRole('dialog')).toBeInTheDocument()
-  expect(screen.getByText(/PROJECT DETAILS/)).toBeInTheDocument()
-  expect(screen.getByText('Middle Frontend Developer')).toBeInTheDocument()
-  expect(
-    screen.getByRole('link', { name: /MORE ABOUT THE PROJECT/i }),
-  ).toHaveAttribute('href', '/projects/mychess-web')
+
   expect(screen.getByRole('button', { name: /OPEN LIVE DEMO/i })).toBeDisabled()
   expect(
     screen.getByRole('button', {

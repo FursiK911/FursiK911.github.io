@@ -1,0 +1,117 @@
+.projectIntroIntro {
+  position: relative;
+  padding: 40px 0 52px;
+  scroll-margin-top: 160px;
+}
+.projectIntroEyebrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  color: var(--cyan);
+  font: 0.68rem/1.5 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+.projectIntroEyebrow span:last-child {
+  color: var(--muted);
+}
+.projectIntroIntro h1 {
+  max-width: 100%;
+  margin: 24px 0 28px;
+  font: 600 clamp(2rem, 5.6vw, 5rem)/1.14 var(--font-display);
+  text-wrap: balance;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+.projectIntroDescription {
+  max-width: 70ch;
+  margin: 0;
+  color: #c5d6d9;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.85;
+  text-wrap: pretty;
+}
+.projectIntroFacts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  border-block: 1px solid var(--line);
+  padding: 26px 0;
+  margin: 36px 0 24px;
+}
+.projectIntroFacts dt {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font: 0.63rem/1.5 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.projectIntroFacts dd {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+.projectIntroActions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.projectIntroActions > * {
+  max-width: 100%;
+}
+.projectIntroActions a {
+  white-space: normal;
+}
+.projectIntroAdditional {
+  max-width: 76ch;
+  margin-bottom: 24px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.projectIntroAdditional summary {
+  cursor: pointer;
+  padding: 12px 0;
+  color: var(--cyan);
+}
+.projectIntroAdditional summary span {
+  margin-left: 12px;
+}
+.projectIntroAdditional dl {
+  margin: 8px 0;
+}
+.projectIntroAdditional dl > div {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+.projectIntroAdditional dd {
+  color: var(--text);
+  margin: 0;
+  flex-shrink: 0;
+}
+@media (max-width: 900px) {
+  .projectIntroFacts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  .projectIntroIntro {
+    padding: 28px 0 32px;
+  }
+  .projectIntroIntro h1 {
+    font-size: clamp(1.55rem, 6.9vw, 2.1rem);
+  }
+  .projectIntroFacts {
+    gap: 22px;
+  }
+  .projectIntroFacts dd {
+    font-size: 0.85rem;
+  }
+  .projectIntroAdditional dl > div {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

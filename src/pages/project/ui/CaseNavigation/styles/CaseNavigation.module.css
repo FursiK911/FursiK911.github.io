@@ -1,0 +1,60 @@
+.caseNavigationNavigation {
+  position: sticky;
+  top: 76px;
+  z-index: 10;
+  display: flex;
+  gap: clamp(8px, 2vw, 28px);
+  overflow-x: auto;
+  padding: 0 8px;
+  border-block: 1px solid var(--line);
+  background: rgb(8 11 15 / 94%);
+  backdrop-filter: blur(18px);
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+.caseNavigationNavigation a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-shrink: 0;
+  min-height: 54px;
+  padding: 10px 6px;
+  color: var(--muted);
+  font: 0.65rem/1.4 var(--mono);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+.caseNavigationNavigation a span {
+  font-size: 0.55rem;
+  opacity: 0.6;
+}
+.caseNavigationNavigation a[aria-current],
+.caseNavigationNavigation a:hover {
+  color: var(--cyan);
+  border-bottom-color: var(--cyan);
+}
+.caseNavigationNavigation a:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: -4px;
+}
+@media (max-width: 600px) {
+  .caseNavigationNavigation {
+    margin-inline: -16px;
+    padding-inline: 16px;
+    gap: 12px;
+  }
+  .caseNavigationNavigation a {
+    font-size: 0.6rem;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 900px) {
+  .caseNavigationNavigation {
+    top: 66px;
+  }
+}

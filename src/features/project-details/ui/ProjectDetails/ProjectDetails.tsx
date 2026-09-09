@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Modal } from '@mantine/core'
+import { motion, useReducedMotion } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import { ActionLink } from '@/shared/ui/ActionLink'
 import { UnavailableAction } from '@/shared/ui/UnavailableAction'
@@ -13,6 +14,7 @@ export function ProjectDetails({
   onClose,
 }: ProjectDetailsProps) {
   const { t } = useTranslation()
+  const reducedMotion = useReducedMotion()
   useEffect(() => {
     return () => {
       returnFocus?.focus()
@@ -27,8 +29,11 @@ export function ProjectDetails({
       closeOnEscape
       trapFocus
       lockScroll
-      transitionProps={{ transition: 'fade-up', duration: 220 }}
-      size="60rem"
+      transitionProps={{
+        transition: reducedMotion ? 'fade' : 'fade-up',
+        duration: reducedMotion ? 0 : 260,
+      }}
+      size="70rem"
       classNames={{
         root: styles.root,
         overlay: styles.backdrop,
@@ -51,36 +56,33 @@ export function ProjectDetails({
           />
         </Modal.Header>
         <Modal.Body>
-          <div className={styles.layout}>
+          <div className={styles.projectDetailsLayout}>
             <ProjectMediaGallery project={project} variant="preview" />
-            <div className={styles.content}>
-              <p className={styles.kicker}>
+            <motion.div
+              className={styles.projectDetailsContent}
+              initial={reducedMotion ? false : { opacity: 0, x: 18 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: reducedMotion ? 0 : 0.35,
+                delay: reducedMotion ? 0 : 0.08,
+              }}
+            >
+              <p className={styles.projectDetailsKicker}>
                 {t('projects.details')} // {project.id.toUpperCase()}
               </p>
-              <h2>{t(`projects.${project.titleKey}`)}</h2>
-              <p className={styles.description}>
+              <h2 className={styles.projectDetailsTitle}>
+                {t(`projects.${project.titleKey}`)}
+              </h2>
+              <p className={styles.projectDetailsDescription}>
                 {t(`projects.${project.descriptionKey}`)}
               </p>
-              <dl className={styles.facts}>
-                <div>
-                  <dt>{t('projects.company')}</dt>
-                  <dd>{project.company}</dd>
-                </div>
-                <div>
-                  <dt>{t('projects.period')}</dt>
-                  <dd>
-                    {project.period.from} —{' '}
-                    {project.period.to ?? t('experience.present')}
-                  </dd>
-                </div>
-                <div>
-                  <dt>{t('projects.role')}</dt>
-                  <dd>
-                    {project.roleKey ? t(`roles.${project.roleKey}`) : '—'}
-                  </dd>
-                </div>
-              </dl>
-              <div className={styles.actions}>
+              <div className={styles.projectDetailsRole}>
+                <span>{t('projects.role')}</span>
+                <strong>
+                  {project.roleKey ? t(`roles.${project.roleKey}`) : '—'}
+                </strong>
+              </div>
+              <div className={styles.projectDetailsActions}>
                 <ActionLink
                   href={`/projects/${project.id}`}
                   variant="primary"
@@ -112,7 +114,7 @@ export function ProjectDetails({
                     )
                   })}
               </div>
-            </div>
+            </motion.div>
           </div>
         </Modal.Body>
       </Modal.Content>

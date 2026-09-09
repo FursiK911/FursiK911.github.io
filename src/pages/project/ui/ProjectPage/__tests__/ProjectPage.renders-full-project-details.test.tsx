@@ -10,6 +10,12 @@ it('renders the full project details and external actions', async () => {
   expect(
     screen.getByRole('heading', { level: 1, name: 'myChess' }),
   ).toBeInTheDocument()
+  expect(
+    screen.getByRole('navigation', { name: 'Project sections' }),
+  ).toBeInTheDocument()
+  expect(
+    screen.getByRole('heading', { name: 'Achievements' }),
+  ).toBeInTheDocument()
   expect(screen.getByText('Technology stack')).toBeInTheDocument()
   expect(screen.getByText('Project contribution')).toBeInTheDocument()
   expect(screen.getByRole('button', { name: /OPEN LIVE DEMO/i })).toBeDisabled()

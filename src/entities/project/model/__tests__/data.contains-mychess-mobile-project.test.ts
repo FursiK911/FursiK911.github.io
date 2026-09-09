@@ -20,6 +20,11 @@ it('defines the MyChess Mobile Flutter project with mobile store actions', () =>
         label: 'RuStore',
         href: 'https://apps.rustore.ru/app/com.mychess.app',
       }),
+      expect.objectContaining({
+        label: 'Website',
+        href: 'https://mychess.app/',
+        unavailableReasonKey: 'projects.unavailableActions.mychessWebsite',
+      }),
     ]),
   )
 })
