@@ -1,6 +1,7 @@
 import type { Project } from '../types/project.types'
+import { projectCardPresentations } from './project-card-presentations.data'
 
-export const projects: Project[] = [
+const projectDefinitions: Array<Omit<Project, 'card'>> = [
   {
     id: 'mychess-web',
     titleKey: 'mychessWeb',
@@ -65,24 +66,47 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 'rosatom',
-    titleKey: 'rosatom',
-    category: ['unigine', 'xr-ar', 'multiplayer'],
-    platformKey: 'platformViveAstra',
+    id: 'saridu-actuator',
+    titleKey: 'sariduActuator',
+    category: ['xr-ar'],
+    platformKey: 'platformVr',
     roleKey: 'middleVr',
-    descriptionKey: 'rosatomDesc',
-    pointsKey: 'rosatomPoints',
-    tech: ['Unigine', 'C#', 'SteamVR', 'Astra Linux', 'Custom VOIP'],
+    descriptionKey: 'sariduActuatorDesc',
+    pointsKey: 'sariduActuatorPoints',
+    tech: [
+      'Virtual Reality (VR)',
+      '3D computer environment',
+      'Procedural checks',
+      'Electrical safety checks',
+      'Operation timing',
+    ],
     company: 'IT Tab',
     period: { from: '04.2023', to: '09.2023' },
     actions: [
       {
         type: 'external',
-        label: 'YouTube',
-        href: 'https://youtu.be/nnmgHldVKMg',
+        label: 'Презентация AtomSkills-2023',
+        href: 'https://centerofsport.ru/novosti-atomnoj-promyishlennosti/%C2%ABatomenergoremont%C2%BB-predstavil-na-ploshhadke-atomskills-2023-unikalnyij-vr-trenazher-dlya-podgotovki-proizvodstvennogo-personala/',
+      },
+      {
+        type: 'external',
+        label: 'Годовой отчёт Росатома · 2023',
+        href: 'https://report.rosatom.ru/go/2023/rea_2023.pdf',
+      },
+      {
+        type: 'external',
+        label: 'Годовой отчёт Росатома · 2024',
+        href: 'https://report.rosatom.ru/go/2024/rea_2024.pdf',
       },
     ],
-    media: [{ kind: 'youtube', videoId: 'nnmgHldVKMg' }],
+    media: [
+      {
+        kind: 'image',
+        src: 'https://centerofsport.ru/assets/components/phpthumbof/cache/e46073ee9ebdc20962490c2b20a5091c.d09ef5d87d81fea0f852ecde469ac20b.jpg',
+        altKey: 'sariduActuatorMediaAtomSkills',
+      },
+    ],
+    metricsKey: 'sariduActuatorMetrics',
     featured: true,
   },
   {
@@ -163,6 +187,36 @@ export const projects: Project[] = [
     tech: ['Vue.js', 'Vuex', 'GraphQL', 'Apollo Client', 'Vuetify', 'Chart.js'],
     company: 'Yellow Element',
     period: { from: '02.2021', to: '02.2022' },
+    featured: true,
+  },
+  {
+    id: 'frieze-viewing-room',
+    titleKey: 'friezeViewingRoom',
+    category: ['mobile'],
+    platformKey: 'platformMobile',
+    roleKey: 'reactNativeDeveloper',
+    descriptionKey: 'friezeViewingRoomDesc',
+    pointsKey: 'friezeViewingRoomPoints',
+    tech: ['React Native', 'JavaScript', 'ARKit', 'ARCore'],
+    company: 'FGP',
+    period: { from: '2021', to: '2021' },
+    actions: [
+      {
+        type: 'external',
+        label: 'App Store',
+        href: 'https://apps.apple.com/gb/app/frieze-viewing-room/id1500340570',
+        unavailableReasonKey:
+          'projects.unavailableActions.friezeViewingRoomApp',
+      },
+      {
+        type: 'external',
+        label: 'Google Play',
+        href: 'https://play.google.com/store/apps/details?id=com.frieze.viewingroom',
+        unavailableReasonKey:
+          'projects.unavailableActions.friezeViewingRoomApp',
+      },
+    ],
+    metricsKey: 'friezeViewingRoomMetrics',
     featured: true,
   },
   {
@@ -262,7 +316,46 @@ export const projects: Project[] = [
     period: { from: '09.2025', to: '03.2026' },
     actions: [
       { type: 'live', label: 'Website', href: 'https://vv.vulcanforged.com/' },
+      {
+        type: 'external',
+        label: 'Gameplay video',
+        href: 'https://www.youtube.com/watch?v=VYT8kBTMOf0',
+      },
+      {
+        type: 'external',
+        label: 'Habr Career',
+        href: 'https://career.habr.com/fursik1',
+      },
     ],
+    media: [
+      {
+        kind: 'image',
+        src: 'https://servreality.com/case-studies/vulcan-verse/vulcan-verse.webp',
+        altKey: 'vulkanVerseMediaCity',
+      },
+      {
+        kind: 'image',
+        src: 'https://servreality.com/case-studies/vulcan-verse/vulcan-verse-9.webp',
+        altKey: 'vulkanVerseMediaShrine',
+      },
+      {
+        kind: 'image',
+        src: 'https://servreality.com/case-studies/vulcan-verse/vulcan-verse-4.webp',
+        altKey: 'vulkanVerseMediaWorld',
+      },
+      {
+        kind: 'image',
+        src: 'https://servreality.com/case-studies/vulcan-verse/vulcan-verse-5.webp',
+        altKey: 'vulkanVerseMediaTemple',
+      },
+      {
+        kind: 'image',
+        src: 'https://servreality.com/case-studies/vulcan-verse/vulcan-verse-8.webp',
+        altKey: 'vulkanVerseMediaNotus',
+      },
+      { kind: 'youtube', videoId: 'VYT8kBTMOf0' },
+    ],
+    metricsKey: 'vulkanVerseMetrics',
   },
   {
     id: 'korobka',
@@ -311,7 +404,45 @@ export const projects: Project[] = [
         href: 'https://youtu.be/iXrNLl6rpXI?si=cJY1EeP8mlEvtxuc&t=483',
       },
     ],
-    media: [{ kind: 'youtube', videoId: 'iXrNLl6rpXI', startSeconds: 483 }],
+    media: [
+      { kind: 'youtube', videoId: 'iXrNLl6rpXI', startSeconds: 483 },
+      {
+        kind: 'image',
+        src: 'https://cdn3.appshunter.io/i/PurpleSource125/594903702a9ce9b10cb820083e6715c8/663c8550-78c1-43ac-9f63-b4ac328b687b_Unknown.jpg/643x0w.webp',
+        altKey: 'earthDragonsMediaSplash',
+      },
+      {
+        kind: 'image',
+        src: 'https://cdn3.appshunter.io/i/PurpleSource125/9e441f0447458e3c1b9d81667e4cdddc/bfc640dc-e8cf-4492-88b0-385d4bce1a5f_photo_2021-04-29_01-31-37.jpg/643x0w.webp',
+        altKey: 'earthDragonsMediaCollection',
+      },
+      {
+        kind: 'image',
+        src: 'https://cdn3.appshunter.io/i/PurpleSource125/ec1566a5c829abb537bad810984712e8/22415326-fab5-41e5-a7b2-76ec915ede30_photo_2021-04-29_01-31-50.jpg/643x0w.webp',
+        altKey: 'earthDragonsMediaDragon',
+      },
+      {
+        kind: 'image',
+        src: 'https://cdn3.appshunter.io/i/PurpleSource125/a16893c23ada691f3314b50c07635d8a/a3f29dfe-17b8-4d8b-b0d9-2dffd3ce9235_photo_2021-04-29_01-32-00.jpg/643x0w.webp',
+        altKey: 'earthDragonsMediaRunner',
+      },
+      {
+        kind: 'image',
+        src: 'https://cdn3.appshunter.io/i/PurpleSource125/1e3a1946c5b00caab173729823fb2274/70b5074e-9a5f-470d-b45e-6c3c8c3f5886_photo_2021-04-29_01-31-47.jpg/643x0w.webp',
+        altKey: 'earthDragonsMediaDie',
+      },
+      {
+        kind: 'image',
+        src: 'https://img3.zakaz.ua/upload.version_1.0.93f0b32d162e72c3a16b84159a5bace3.350x350.jpeg',
+        altKey: 'earthDragonsMediaPhysicalSet',
+      },
+      {
+        kind: 'image',
+        src: 'https://promoter.in.ua/wp-content/uploads/2021/05/zemlya-drakonov_auchan_free_works_if_ua.jpg',
+        altKey: 'earthDragonsMediaPoster',
+      },
+    ],
+    metricsKey: 'earthDragonsMetrics',
   },
   {
     id: 'villa-krim',
@@ -597,3 +728,26 @@ export const projects: Project[] = [
     featured: true,
   },
 ]
+
+export const projects: Project[] = projectDefinitions.map((project) => {
+  const card = projectCardPresentations[project.id]
+  const images =
+    project.media?.filter(
+      (
+        media,
+      ): media is Extract<(typeof project.media)[number], { kind: 'image' }> =>
+        media.kind === 'image',
+    ) ?? []
+
+  return {
+    ...project,
+    card: {
+      direction: card.direction,
+      teaserKey: card.teaserKey,
+      tags: card.tags,
+      previewImages: card.previewImageIndexes.flatMap((index) =>
+        images[index] ? [images[index]] : [],
+      ),
+    },
+  }
+})

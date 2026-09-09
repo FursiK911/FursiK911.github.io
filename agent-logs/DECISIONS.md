@@ -1,5 +1,15 @@
 # Global Decision Index
 
+| DEC-20260910-05 | Represent Frieze Viewing Room only as a mobile application with the user's React Native Developer contribution at FGP; exclude the broader web platform and mixed media. | projects, frieze, fgp, react-native, mobile, content | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-05) |
+
+| DEC-20260910-04 | Present every project as a data-driven card with one of three directions, curated tags, approved preview images only, a localized missing-image icon, direct case links, and reduced-motion-safe preview rotation. | projects, cards, filters, media, motion, accessibility | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-04) |
+
+| DEC-20260910-03 | Use `Unity Developer` for the two projects currently using `soloUnity` and add bilingual end-to-end release ownership achievements to both project cases. | projects, unity, mychessvr, drilling, i18n | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-03) |
+
+| DEC-20260910-02 | Use the official Auchan Earth of Dragons campaign identity, connect the mobile AR app with its physical cards/comic, and expose only the dossier-supported media and facts while excluding unverified scale, backend, and platform claims. | projects, earth-dragons, auchan, ar, mobile, media, research | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-02) |
+
+| DEC-20260910-01 | Rename the Rosatom project card to the official SARiDU actuator VR trainer identity, use only source-supported product facts, and keep unverified engine, headset, multiplayer, VOIP, and video claims out of the case. | projects, vr, saridu, rosatom, media, research | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-01) |
+
 | DEC-20260909-12 | Treat the external repository as a shared Chudoboxes/AR Coloring-family Unity codebase; expose only capabilities confirmed in the relevant AR book, content delivery, QR, audio/video, and localization paths in the Chudobooks case. | projects, chudobooks, unity, source-analysis | [2026-09-09](2026/09/2026-09-09.md#decision-dec-20260909-12) |
 
 | DEC-20260909-11 | Bound desktop project quick views to `min(75vw, 1280px)`, keep the existing 900px/600px breakpoints, and use balanced display typography with `word-break: keep-all` for project titles so words never split across lines. | projects, modal, typography, responsive, css | [2026-09-09](2026/09/2026-09-09.md#decision-dec-20260909-11) |
@@ -166,6 +176,7 @@ This is an index, not a second copy of the change log. Follow the source link fo
 
 | ID              | Decision                                                                                                                                                                                            | Tags                                      | Source                                                                     |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | -------------------------------------------------------------------------- |
+| DEC-20260910-01 | Present the portfolio case under `Vulkan Verse`; retain Tartarus as a location/experience and describe only the contributor-specific mechanics and client-server work.                              | projects, vulkan-verse, tartarus, content | [2026-09-10](2026/09/2026-09-10.md#vulkan-verse-project-case-enrichment)   |
 | DEC-20260830-11 | Reuse the existing CV PDF for a localized, mobile-visible resume link in the header: `резюме` in Russian and `CV` in English.                                                                       | ui, navigation, responsive, i18n          | [2026-08-30](2026/08/2026-08-30.md#decision-dec-20260830-11)               |
 | DEC-20260830-12 | Use Tabler `IconDownload` and the shared `button button-primary` style for all localized resume download buttons.                                                                                   | ui, navigation, i18n, icons               | [2026-08-30](2026/08/2026-08-30.md#decision-dec-20260830-12)               |
 | DEC-20260830-10 | Use Glitch.js in continuous always-active mode for direct comparison with the official demo.                                                                                                        | ui, animation, dependency                 | [2026-08-30](2026/08/2026-08-30.md#decision-dec-20260830-10)               |

@@ -31,9 +31,13 @@ it('renders the hero and filters projects', async () => {
       (section) => section.id,
     ),
   ).toEqual(['top', 'projects', 'experience', 'stack', 'education', 'contact'])
-  await userEvent.click(screen.getByRole('button', { name: 'WEB' }))
+  await userEvent.click(
+    screen.getByRole('button', { name: /Web platforms\s*7/ }),
+  )
   expect(screen.getByRole('heading', { name: 'myChess' })).toBeVisible()
-  expect(
-    screen.queryByRole('heading', { name: 'MyChessVR' }),
-  ).not.toBeInTheDocument()
+  await waitFor(() =>
+    expect(
+      screen.queryByRole('heading', { name: 'MyChessVR' }),
+    ).not.toBeInTheDocument(),
+  )
 }, 10000)

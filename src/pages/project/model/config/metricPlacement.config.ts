@@ -8,4 +8,5 @@ export const metricPlacement: Record<string, MetricPlacement> = {
   arColoringMetrics: { achievements: [2, 3], facts: [1] },
   chudobooksMetrics: { achievements: [2, 3], facts: [1] },
   arChudaboxesMetrics: { achievements: [0, 1, 2], facts: [] },
+  earthDragonsMetrics: { achievements: [], facts: [0, 1, 2, 3] },
 }

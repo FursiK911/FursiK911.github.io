@@ -13,6 +13,28 @@ export type ProjectAction = {
 export type ProjectMedia =
   | { kind: 'image'; src: string; altKey: string }
   | { kind: 'youtube'; videoId: string; startSeconds?: number }
+
+export type ProjectDirection = 'web' | 'games-apps' | 'vr-training'
+
+export type ProjectCardTag =
+  | 'React'
+  | 'Vue'
+  | 'Unity'
+  | 'Unreal Engine'
+  | 'Flutter'
+  | 'VR'
+  | 'AR'
+  | 'Mobile'
+  | 'TypeScript'
+  | 'OpenCV'
+  | 'Photon'
+
+export type ProjectCardPresentation = {
+  direction: ProjectDirection
+  teaserKey: string
+  tags: ProjectCardTag[]
+  previewImages: Array<Extract<ProjectMedia, { kind: 'image' }>>
+}
 export type ProjectPeriod = { from: string; to?: string }
 
 export type ProjectMetric = {
@@ -33,6 +55,7 @@ export type Project = {
   period: ProjectPeriod
   actions?: ProjectAction[]
   media?: ProjectMedia[]
+  card: ProjectCardPresentation
   metricsKey?: string
   featured?: boolean
 }

@@ -1,5 +1,17 @@
 # AI Agent Change Log Index
 
+| 2026-09-10 | projects, frieze, fgp, react-native, mobile, ar, i18n, testing | [Frieze Viewing Room mobile project](2026/09/2026-09-10.md#frieze-viewing-room-mobile-project) |
+
+| 2026-09-10 | projects, cards, filters, media, i18n, motion, accessibility, responsive, testing | [Project showcase redesign](2026/09/2026-09-10.md#project-showcase-redesign) |
+
+| 2026-09-10 | projects, unity, mychessvr, drilling, i18n, testing | [Standardized solo Unity project roles and achievements](2026/09/2026-09-10.md#standardized-solo-unity-project-roles-and-achievements) |
+
+| 2026-09-10 | projects, earth-dragons, auchan, unity, ar, mobile, media, i18n, metrics, research, testing, graphify | [Earth of Dragons project case enrichment](2026/09/2026-09-10.md#earth-of-dragons-project-case-enrichment) |
+
+| 2026-09-10 | projects, vr, saridu, rosatom, media, i18n, research, testing, graphify | [SARiDU industrial VR trainer project content](2026/09/2026-09-10.md#saridu-industrial-vr-trainer-project-content) |
+
+| 2026-09-10 | projects, vulkan-verse, unity, multiplayer, media, i18n, metrics, research, testing, graphify | [Vulkan Verse project case enrichment](2026/09/2026-09-10.md#vulkan-verse-project-case-enrichment) |
+
 | 2026-09-09 | projects, chudobooks, unity, vuforia, assetbundles, qr, iap, localization, source-analysis, testing, graphify | [Chudobooks source project analysis](2026/09/2026-09-09.md#chudobooks-source-project-analysis) |
 
 | 2026-09-09 | projects, modal, typography, responsive, css, testing, graphify | [Project modal width and title typography](2026/09/2026-09-09.md#project-modal-width-and-title-typography) |

@@ -214,12 +214,10 @@ export const workExperience: WorkExperience[] = [
         'projects.doorsCmsPoints',
       ),
       project(
-        'rosatom',
-        'projects.rosatom',
-        'projects.rosatomDesc',
-        'projects.rosatomPoints',
-        'https://youtu.be/nnmgHldVKMg',
-        'YouTube',
+        'saridu-actuator',
+        'projects.sariduActuator',
+        'projects.sariduActuatorDesc',
+        'projects.sariduActuatorPoints',
       ),
     ],
     phases: [
@@ -266,12 +264,10 @@ export const workExperience: WorkExperience[] = [
         ],
         projects: [
           project(
-            'rosatom',
-            'projects.rosatom',
-            'projects.rosatomDesc',
-            'projects.rosatomPoints',
-            'https://youtu.be/nnmgHldVKMg',
-            'YouTube',
+            'saridu-actuator',
+            'projects.sariduActuator',
+            'projects.sariduActuatorDesc',
+            'projects.sariduActuatorPoints',
           ),
         ],
       },

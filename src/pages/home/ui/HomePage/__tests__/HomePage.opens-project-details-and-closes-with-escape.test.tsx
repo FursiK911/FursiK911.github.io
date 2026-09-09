@@ -1,5 +1,4 @@
 import { fireEvent, screen, waitFor } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
 import { HomePage } from '@/pages/home'
 import { changeLanguage } from '@/shared/config/i18n'
 import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
@@ -20,15 +19,11 @@ async function renderReadyApp() {
     ).toBeInTheDocument(),
   )
 }
-it('opens project details and closes with Escape', async () => {
+it('links project cards to their full cases', async () => {
   await changeLanguage('en')
   await renderReadyApp()
-  await userEvent.click(
-    screen.getByRole('button', { name: /VIEW PROJECT — MyChessVR/i }),
-  )
-  expect(screen.getByRole('dialog')).toBeVisible()
-  await userEvent.keyboard('{Escape}')
-  await waitFor(() =>
-    expect(screen.queryByRole('dialog')).not.toBeInTheDocument(),
+  expect(screen.getByRole('link', { name: /MyChessVR/i })).toHaveAttribute(
+    'href',
+    '/projects/mychessvr',
   )
 }, 10000)

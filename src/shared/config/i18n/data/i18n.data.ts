@@ -218,12 +218,13 @@ export const resources = {
         ],
       },
       roles: {
-        soloUnity: 'Единственный Unity-разработчик',
+        soloUnity: 'Unity Developer',
         middleVr: 'Middle VR Developer',
         soloFunctionality: 'Разработчик функциональности',
         middleUnity: 'Middle Unity Developer',
         juniorUnity: 'Intern / Junior Unity Developer',
         juniorFrontend: 'Junior Frontend Developer',
+        reactNativeDeveloper: 'React Native Developer',
         testing: 'Manual QA / Testing',
         unityDeveloper: 'Unity Developer',
         middleFrontend: 'Middle Frontend Developer',
@@ -253,6 +254,16 @@ export const resources = {
         'xr-ar': 'XR / AR',
         multiplayer: 'МУЛЬТИПЛЕЕР',
         view: 'VIEW PROJECT',
+        technologies: 'Технологии',
+        directions: 'Направления проектов',
+        technologyFilters: 'Технологии проектов',
+        allTechnologies: 'Все технологии',
+        webPlatforms: 'Веб-платформы',
+        gamesApps: 'Игры и приложения',
+        vrTraining: 'VR-тренажёры',
+        photoUnavailable: 'Фото пока нет',
+        resetFilters: 'Сбросить фильтры',
+        noMatchingProjects: 'Проекты с такими фильтрами не найдены.',
         details: 'ДЕТАЛИ ПРОЕКТА',
         role: 'РОЛЬ',
         platform: 'ПЛАТФОРМА',
@@ -284,34 +295,109 @@ export const resources = {
         unavailableActions: {
           mychessWebsite:
             'Сайт MyChess закрыт и больше недоступен для просмотра.',
+          friezeViewingRoomApp:
+            'Историческое мобильное приложение Frieze Viewing Room больше недоступно в магазине.',
         },
         mychessvr: 'MyChessVR',
         industrial: 'Промышленные VR-тренажёры',
         drilling: 'VR-демо буровой установки',
-        rosatom: 'Промышленный VR-тренажёр',
+        sariduActuator: 'VR-тренажёр САРиДУ и исполнительный механизм',
         mobileRts: 'Мобильная multiplayer RTS',
-        earthDragons: 'Земля драконов',
-        vulkanVerse: 'Vulkan Verse — Tartarus',
+        earthDragons: 'Земля драконов АШАН',
+        vulkanVerse: 'Vulkan Verse',
         mychessWeb: 'myChess',
         mychessMobile: 'MyChess Mobile',
+        friezeViewingRoom: 'Frieze Viewing Room',
+        cardTeasers: {
+          mychessWeb:
+            'Шахматная экосистема для игры, турниров, стримов и обучения. Внутри — партии онлайн и инструменты анализа Stockfish.',
+          mobileRts:
+            'Мобильная PvP-стратегия с турнирами и повторами сражений. Сетевые сценарии и серверные события собраны в единый игровой контур.',
+          sariduActuator:
+            'VR-тренажёр для безопасной отработки операций на оборудовании атомной энергетики. Сценарии проверяют действия и требования электробезопасности.',
+          mychessvr:
+            'Шахматы в VR с классическими партиями, головоломками и анализом ходов. Игрок взаимодействует с доской руками в нескольких окружениях.',
+          catCitten:
+            'Интернет-магазин с каталогом, заказами и отдельными B2B/B2C-кабинетами. Интерфейс помогает пройти путь от выбора товара до оформления.',
+          industrial:
+            'Интерактивные VR-сценарии для обучения работе с промышленным оборудованием. Пошаговые операции и проверка ошибок делают практику понятной.',
+          aptiveEducation:
+            'Образовательная платформа для учеников, родителей и преподавателей. Прогресс, задания и рабочие пространства собраны в одном интерфейсе.',
+          friezeViewingRoom:
+            'Мобильное приложение Frieze Viewing Room для поиска произведений искусства, просмотра галерей и AR-размещения работ в пространстве пользователя.',
+          neo4Sightline:
+            'Браузерная real-time 3D-визуализация недвижимости. Навигация по пространству связана с интерактивной сценой Unreal Engine.',
+          fuelCms:
+            'CMS для поставок топлива, учёта заправок и расчёта цен. Рабочие экраны помогают управлять ежедневными операциями.',
+          drilling:
+            'VR-демо рабочих процессов буровой установки для нескольких операторов. Участники синхронно взаимодействуют с оборудованием.',
+          vulkanVerse:
+            'Разработка механик для открытого multiplayer-мира VulcanVerse. Игровая локация Tartarus соединена с клиент-серверными сценариями.',
+          korobka:
+            'Адаптивный сайт транспортной компании, собранный по дизайн-системе. Компоненты и навигация работают на любом экране.',
+          doorsCms:
+            'CMS магазина дверей для каталога, заказов и контента. Административные сценарии собраны в понятные рабочие экраны.',
+          earthDragons:
+            'AR-приложение кампании АШАН, где карточки и комикс оживляют коллекцию драконов. Есть коллекция, runner-режим и виртуальный кубик.',
+          virtualSommelierVillaKrim:
+            'AR-приложение, в котором этикетка вина открывает виртуального сомелье. История продукта разворачивается через камеру смартфона.',
+          authorsWineVillaKrim:
+            'AR-история авторского вина, запускаемая с этикетки. Камера смартфона превращает упаковку в интерактивный рассказ.',
+          chudoProjector:
+            'Интерактивная инсталляция на Unity и OpenCV для большого экрана. Взаимодействие посетителей синхронизируется через Photon.',
+          arColoring:
+            'Раскраски оживают через камеру смартфона. AR-персонажи и тематические сцены превращают печатную страницу в игру.',
+          chudobooks:
+            'Детские книги с AR-сценами, которые запускаются с печатных страниц. Контент доставляется и обновляется внутри приложения.',
+          arChudaboxes:
+            'AR-приложение для промо-материалов: изображение становится интерактивной сценой через камеру смартфона.',
+          chudoFloor:
+            'Интерактивный пол, реагирующий на движения посетителей. Проекционная инсталляция собрана на Unity и OpenCV.',
+          questRoom:
+            'Тестирование сетевой Unity-игры с поиском и описанием ошибок. Проверял multiplayer-сценарии и стабильность игровых потоков.',
+          mychessMobile:
+            'Мобильный клиент myChess для партий, турниров, стримов и обучения. Один продукт поддерживает Android и iOS.',
+        },
         mychessvrDesc:
           'Полноценный VR-шахматный опыт с несколькими режимами игры, головоломками, AI-соперником, IK-взаимодействиями и анализом ходов Stockfish.',
         industrialDesc:
           'Интерактивные промышленные сценарии обучения с пошаговыми операциями, проверкой действий, подсказками, обработкой ошибок и реалистичным взаимодействием с оборудованием.',
         drillingDesc:
           'Мультиплеерное VR-демо с рабочими процессами бурового оборудования и взаимодействием операторов.',
-        rosatomDesc:
-          'VR-тренажёр управления промышленным оборудованием с одиночным и мультиплеерным режимами, а также сценарием инструктора.',
+        sariduActuatorDesc:
+          'Промышленный VR-тренажёр для обучения схеме управления электроприводной арматуры САРиДУ и исполнительным механизмом на оборудовании атомной энергетики.',
         mobileRtsDesc:
           'Мобильная RTS с мультиплеерным PvP, турнирами, серверными событиями и сетевой инфраструктурой.',
         earthDragonsDesc:
-          'Мобильное AR-приложение, в котором физические карточки открывают коллекционных драконов и интерактивный контент.',
+          'Мобильное AR-приложение промо-кампании АШАН: физические карточки и комикс открывают коллекцию из 16 драконов на планете Заурус.',
+        earthDragonsMetrics: [
+          { value: '16', label: 'драконов в коллекции' },
+          { value: '26.04–13.06.2021', label: 'период кампании в Украине' },
+          {
+            value: 'iOS 1.3',
+            label: 'последняя подтверждённая версия · 30.10.2023',
+          },
+          { value: 'Android 0.4', label: 'сохранённая версия · 07.01.2022' },
+        ],
         vulkanVerseDesc:
-          'Игровые механики и клиент-серверная функциональность для локации Tartarus в Vulkan Verse.',
+          'Клиентская игровая разработка для VulcanVerse — открытого multiplayer-мира на Unity с сетевыми механиками, исследованием мира и локацией Tartarus.',
         mychessWebDesc:
           'Пользовательский React/TypeScript-клиент первой российской шахматной экосистемы: адаптивные desktop- и mobile-сценарии, онлайн-партии, турниры, сообщества, стримы, обучение и ИИ-аватары гроссмейстеров.',
         mychessMobileDesc:
           'Кроссплатформенный Flutter-клиент экосистемы myChess для мобильных игровых, турнирных и социальных сценариев, стримов и обучения на Android и iOS.',
+        friezeViewingRoomDesc:
+          'Мобильное приложение Frieze Viewing Room для поиска и просмотра произведений искусства. В 2021 году я работал над ним как React Native Developer в составе FGP.',
+        friezeViewingRoomPoints: [
+          'Разрабатывал мобильные экраны и пользовательские сценарии на React Native',
+          'Реализовывал поиск, фильтрацию и просмотр произведений искусства в приложении',
+          'Поддерживал AR-сценарий размещения произведений в пространстве пользователя',
+        ],
+        friezeViewingRoomMetrics: [
+          { value: 'React Native', label: 'мобильный стек' },
+          { value: 'ARKit / ARCore', label: 'AR-платформы' },
+          { value: '2021', label: 'период работы в составе FGP' },
+          { value: '8 месяцев', label: 'заявленный срок разработки' },
+        ],
         mychessMetrics: [
           { value: '100K+', label: 'загрузок в RuStore · февраль 2025' },
           { value: '26K+', label: 'онлайн-участников Суперфинала 2025' },
@@ -334,6 +420,7 @@ export const resources = {
         ],
         mychessvrPoints: [
           'Полная реализация на Unity в качестве единственного разработчика',
+          'Полный цикл разработки приложения — от нуля до релиза — выполнен самостоятельно',
           'Режимы Classic, Rapid и Blitz с настраиваемым AI',
           'Система головоломок с десятками типов заданий',
           'Режим Play with Teacher на базе Stockfish',
@@ -348,15 +435,30 @@ export const resources = {
         ],
         drillingPoints: [
           'Полностью функциональное демо, разработанное самостоятельно',
+          'Полный цикл разработки приложения — от нуля до релиза — выполнен самостоятельно',
           'Интерактивные рабочие процессы бурового оборудования',
           'Мультиплеерная синхронизация через Netcode',
           'Ассеты Blender и взаимодействия Final IK',
         ],
-        rosatomPoints: [
-          'Сценарии обучения, экзамена и совместной работы',
-          'Интерфейс мониторинга инструктора',
-          'Кастомный VOIP и взаимодействие с аватарами',
-          'Поддержка HTC VIVE Pro и Astra Linux',
+        sariduActuatorPoints: [
+          '3D-модель реального оборудования атомных электростанций',
+          'Отработка поиска и устранения неисправностей в безопасной среде',
+          'Проверка соблюдения технологии работ и требований электробезопасности',
+          'Наблюдение инструктора и группы на внешнем мониторе с хронометражем операций',
+        ],
+        sariduActuatorMediaAtomSkills:
+          'Презентация VR-тренажёра САРиДУ на AtomSkills-2023',
+        sariduActuatorMetrics: [
+          {
+            value: '06.2023',
+            label: 'первая публичная презентация · AtomSkills',
+          },
+          { value: '2023', label: 'проект создания реализован' },
+          { value: '2024', label: 'доработка и актуализация' },
+          {
+            value: '3,25 млн ₽',
+            label: 'начальная максимальная цена связанной закупки',
+          },
         ],
         mobileRtsPoints: [
           'Клиент-серверное PvP-взаимодействие на Mirror',
@@ -368,13 +470,37 @@ export const resources = {
           'Распознавание изображений через Vuforia и анимированные AR-персонажи',
           'Доставка и кэширование динамических AssetBundle',
           'Обновление контента по хэшу с повторной обработкой ошибок',
-          'Коллекционные персонажи, раннер и публикация в соцсетях',
+          'Связка мобильного AR-приложения с физическими карточками и комиксом кампании',
+          'Коллекция из 16 персонажей, runner-режим, виртуальный кубик и публикация в соцсетях',
         ],
+        earthDragonsMediaSplash:
+          'Стартовый экран приложения «Земля Драконів» с логотипом АШАН',
+        earthDragonsMediaCollection:
+          'Экран коллекции с 16 слотами драконов и открытыми персонажами',
+        earthDragonsMediaDragon:
+          'Карточка персонажа ЕЛЬНУС с управлением AR-приложения',
+        earthDragonsMediaRunner:
+          'Runner-режим с драконом, препятствиями и счётчиками',
+        earthDragonsMediaDie: 'AR-интерфейс виртуального кубика',
+        earthDragonsMediaPhysicalSet:
+          'Физический комикс и упаковка коллекционных материалов кампании',
+        earthDragonsMediaPoster: 'Промо-постер кампании «Земля Драконів» АШАН',
         vulkanVersePoints: [
-          'Игровые механики для локации Tartarus',
-          'Клиент-серверная функциональность на Photon',
-          'Интеграция Addressables, Zenject и UniTask',
+          'Разрабатывал и интегрировал игровые механики локации Tartarus в основной клиент VulcanVerse',
+          'Реализовывал клиент-серверное взаимодействие и multiplayer-сценарии на Photon',
+          'Подключал Addressables, Zenject и UniTask в production-код проекта',
         ],
+        vulkanVerseMetrics: [
+          { value: '3 × 3 км', label: 'размер игрового мира' },
+          { value: '4', label: 'тематических региона вокруг Vulcan City' },
+          { value: '20 × 20 м', label: 'размер земельного участка' },
+          { value: 'Windows', label: 'основная платформа клиента' },
+        ],
+        vulkanVerseMediaCity: 'Классическая городская сцена Vulcan Verse',
+        vulkanVerseMediaShrine: 'Лесная дорожка и святилище в игровом мире',
+        vulkanVerseMediaWorld: 'Панорамный вид на окружение Vulcan Verse',
+        vulkanVerseMediaTemple: 'Храмовая площадь с символикой регионов',
+        vulkanVerseMediaNotus: 'Пустынная сцена региона Notus',
         mychessWebPoints: [
           'Реализовал отдельные desktop- и mobile-роутеры с адаптивными игровыми интерфейсами',
           'Разработал realtime-сценарии партий, matchmaking, турниров, чатов и сообществ через Socket.IO и общие WebSocket-модули',
@@ -1026,12 +1152,13 @@ export const resources = {
         ],
       },
       roles: {
-        soloUnity: 'Solo Unity Developer',
+        soloUnity: 'Unity Developer',
         middleVr: 'Middle VR Developer',
         soloFunctionality: 'Solo functionality developer',
         middleUnity: 'Middle Unity Developer',
         juniorUnity: 'Intern / Junior Unity Developer',
         juniorFrontend: 'Junior Frontend Developer',
+        reactNativeDeveloper: 'React Native Developer',
         testing: 'Manual QA / Testing',
         unityDeveloper: 'Unity Developer',
         middleFrontend: 'Middle Frontend Developer',
@@ -1061,6 +1188,16 @@ export const resources = {
         'xr-ar': 'XR / AR',
         multiplayer: 'MULTIPLAYER',
         view: 'VIEW PROJECT',
+        technologies: 'Technologies',
+        directions: 'Project directions',
+        technologyFilters: 'Project technologies',
+        allTechnologies: 'All technologies',
+        webPlatforms: 'Web platforms',
+        gamesApps: 'Games and apps',
+        vrTraining: 'VR training simulators',
+        photoUnavailable: 'Photo coming soon',
+        resetFilters: 'Reset filters',
+        noMatchingProjects: 'No projects match these filters.',
         details: 'PROJECT DETAILS',
         role: 'ROLE',
         platform: 'PLATFORM',
@@ -1092,34 +1229,106 @@ export const resources = {
         unavailableActions: {
           mychessWebsite:
             'The MyChess website is closed and no longer available to open.',
+          friezeViewingRoomApp:
+            'The historical Frieze Viewing Room mobile app is no longer available in the store.',
         },
         mychessvr: 'MyChessVR',
         industrial: 'Industrial VR Training Simulations',
         drilling: 'VR Drilling Training Demo',
-        rosatom: 'Industrial VR Training Simulator',
+        sariduActuator: 'SARiDU Actuator VR Training Simulator',
         mobileRts: 'Mobile Multiplayer RTS',
-        earthDragons: 'Earth of Dragons',
-        vulkanVerse: 'Vulkan Verse — Tartarus',
+        earthDragons: 'Earth of Dragons — Auchan',
+        vulkanVerse: 'Vulkan Verse',
         mychessWeb: 'myChess',
         mychessMobile: 'MyChess Mobile',
+        friezeViewingRoom: 'Frieze Viewing Room',
+        cardTeasers: {
+          mychessWeb:
+            'A chess ecosystem for games, tournaments, streams and learning. Online matches and Stockfish analysis tools live in one client.',
+          mobileRts:
+            'A mobile PvP strategy game with tournaments and battle replays. Network flows and server events support the match experience.',
+          sariduActuator:
+            'A VR simulator for safely practising operations on nuclear-power equipment. Scenarios validate actions and electrical-safety requirements.',
+          mychessvr:
+            'VR chess with classic games, puzzles and move analysis. Players interact with the board by hand across several environments.',
+          catCitten:
+            'An online store with catalogue, ordering and separate B2B/B2C accounts. The interface supports the full path from product choice to checkout.',
+          industrial:
+            'Interactive VR scenarios for industrial-equipment training. Step-by-step operations and error validation make practice clear.',
+          aptiveEducation:
+            'An education platform for students, parents and teachers. Progress, assignments and workspaces share one interface.',
+          friezeViewingRoom:
+            'A Frieze mobile app for artwork discovery, gallery browsing and placing artworks in the user’s space with AR.',
+          neo4Sightline:
+            'A browser-based real-time 3D property visualizer. Space navigation connects directly to an interactive Unreal Engine scene.',
+          fuelCms:
+            'A CMS for fuel deliveries, refuelling records and price calculations. Working screens support everyday operations.',
+          drilling:
+            'A VR drilling-rig workflow demo for several operators. Participants interact with equipment in synchronized sessions.',
+          vulkanVerse:
+            'Gameplay work for the open multiplayer world of VulcanVerse. The Tartarus location connects to client-server gameplay flows.',
+          korobka:
+            'A responsive transport-company site built from a design system. Components and navigation work across screen sizes.',
+          doorsCms:
+            'A door-store CMS for catalogue, orders and content. Administrative workflows are collected in clear working screens.',
+          earthDragons:
+            'An Auchan AR campaign where cards and a comic bring a dragon collection to life. It includes collecting, a runner mode and a virtual die.',
+          virtualSommelierVillaKrim:
+            'An AR app where a wine label reveals a virtual sommelier. A product story unfolds through the phone camera.',
+          authorsWineVillaKrim:
+            'An AR story about author wine, launched from its label. A phone camera turns packaging into an interactive narrative.',
+          chudoProjector:
+            'An interactive Unity and OpenCV installation for a large screen. Visitor interaction synchronizes through Photon.',
+          arColoring:
+            'Colouring pages come alive through a phone camera. AR characters and themed scenes turn a printed page into a game.',
+          chudobooks:
+            'Children’s books with AR scenes launched from printed pages. Content is delivered and updated inside the app.',
+          arChudaboxes:
+            'An AR app for promotional materials: an image becomes an interactive scene through the phone camera.',
+          chudoFloor:
+            'An interactive floor that reacts to visitor movement. The projection installation is built with Unity and OpenCV.',
+          questRoom:
+            'Testing a networked Unity game by finding and documenting defects. Multiplayer scenarios and gameplay-flow stability were checked.',
+          mychessMobile:
+            'The myChess mobile client for games, tournaments, streams and learning. One product supports Android and iOS.',
+        },
         mychessvrDesc:
           'A complete VR chess experience with multiple game modes, puzzles, an AI opponent, IK interactions and Stockfish move analysis.',
         industrialDesc:
           'Interactive industrial training scenarios with step-by-step operations, action validation, hints, error handling and realistic equipment interactions.',
         drillingDesc:
           'A multiplayer VR training demo reproducing drilling equipment workflows and operator interactions.',
-        rosatomDesc:
-          'A VR training simulator for industrial equipment operation with single-player, multiplayer and instructor workflows.',
+        sariduActuatorDesc:
+          'An industrial VR training simulator for learning the SARiDU electric-actuated valve control scheme and actuator operation on nuclear-power equipment.',
         mobileRtsDesc:
           'A mobile RTS with multiplayer PvP, tournament systems, server-driven events and multiplayer infrastructure.',
         earthDragonsDesc:
-          'A mobile AR application where physical cards unlock animated collectible dragons and interactive content.',
+          'A mobile AR application for Auchan’s campaign: physical cards and a comic unlock a collection of 16 dragons on the planet Zaurus.',
+        earthDragonsMetrics: [
+          { value: '16', label: 'dragons in the collection' },
+          { value: '26 Apr–13 Jun 2021', label: 'campaign period in Ukraine' },
+          { value: 'iOS 1.3', label: 'latest confirmed version · 30 Oct 2023' },
+          { value: 'Android 0.4', label: 'preserved build · 7 Jan 2022' },
+        ],
         vulkanVerseDesc:
-          'Gameplay mechanics and client-server functionality developed for the Tartarus location of Vulkan Verse.',
+          'Client-side game development for VulcanVerse, an open-world multiplayer Unity game with networked mechanics, world exploration and the Tartarus location.',
         mychessWebDesc:
           'A React/TypeScript client for Russia’s first chess ecosystem, with responsive desktop and mobile flows for online games, tournaments, communities, streams, learning and grandmaster AI avatars.',
         mychessMobileDesc:
           'A cross-platform Flutter client for the myChess ecosystem, bringing mobile game, tournament and social flows, streams and learning to Android and iOS.',
+        friezeViewingRoomDesc:
+          'A Frieze mobile app for exploring and viewing artworks. In 2021, I worked on it as a React Native Developer at FGP.',
+        friezeViewingRoomPoints: [
+          'Developed mobile screens and user flows with React Native',
+          'Implemented artwork search, filtering and viewing inside the app',
+          'Supported the AR scenario for placing artworks in the user’s space',
+        ],
+        friezeViewingRoomMetrics: [
+          { value: 'React Native', label: 'mobile stack' },
+          { value: 'ARKit / ARCore', label: 'AR platforms' },
+          { value: '2021', label: 'FGP project period' },
+          { value: '8 months', label: 'reported development timeline' },
+        ],
         mychessMetrics: [
           { value: '100K+', label: 'RuStore downloads · February 2025' },
           { value: '26K+', label: 'online Superfinal 2025 participants' },
@@ -1139,6 +1348,7 @@ export const resources = {
         ],
         mychessvrPoints: [
           'Full Unity implementation as sole developer',
+          'Owned the complete application lifecycle from scratch to release',
           'Classic, Rapid and Blitz modes with configurable AI',
           'Puzzle system with dozens of task types',
           'Stockfish-powered Play with Teacher mode',
@@ -1153,15 +1363,27 @@ export const resources = {
         ],
         drillingPoints: [
           'Full functional demo developed independently',
+          'Owned the complete application lifecycle from scratch to release',
           'Interactive drilling equipment workflows',
           'Netcode multiplayer synchronization',
           'Blender assets and Final IK interactions',
         ],
-        rosatomPoints: [
-          'Training, examination and cooperative scenarios',
-          'Instructor monitoring interface',
-          'Custom VOIP and avatar interaction',
-          'HTC VIVE Pro and Astra Linux support',
+        sariduActuatorPoints: [
+          'A 3D model of real equipment used at nuclear power plants',
+          'Safe practice for locating and correcting equipment faults',
+          'Checks for work-procedure and electrical-safety compliance',
+          'Instructor and group observation on an external monitor with operation timing',
+        ],
+        sariduActuatorMediaAtomSkills:
+          'SARiDU VR trainer presented at AtomSkills-2023',
+        sariduActuatorMetrics: [
+          { value: '06.2023', label: 'first public presentation · AtomSkills' },
+          { value: '2023', label: 'trainer creation project implemented' },
+          { value: '2024', label: 'refined and updated' },
+          {
+            value: '₽3.25m',
+            label: 'initial maximum price of related procurement',
+          },
         ],
         mobileRtsPoints: [
           'Mirror client-server PvP interaction',
@@ -1173,13 +1395,36 @@ export const resources = {
           'Vuforia image tracking and animated AR characters',
           'Dynamic AssetBundle delivery and caching',
           'Hash-based content updates with retry handling',
-          'Collectible characters, runner and social sharing',
+          'Connected the mobile AR app with the campaign’s physical cards and comic',
+          '16-character collection, runner mode, virtual die and social sharing',
         ],
+        earthDragonsMediaSplash:
+          'Earth of Dragons splash screen with the Auchan logo',
+        earthDragonsMediaCollection:
+          'Collection screen with 16 dragon slots and unlocked characters',
+        earthDragonsMediaDragon: 'Elnus character screen in the AR application',
+        earthDragonsMediaRunner:
+          'Runner mode with dragon, obstacles and counters',
+        earthDragonsMediaDie: 'Virtual AR die interface',
+        earthDragonsMediaPhysicalSet:
+          'Physical comic and campaign collectible packaging',
+        earthDragonsMediaPoster: 'Auchan Earth of Dragons campaign poster',
         vulkanVersePoints: [
-          'Gameplay mechanics for the Tartarus location',
-          'Client-server functionality with Photon',
-          'Addressables, Zenject and UniTask integration',
+          'Developed and integrated gameplay mechanics for the Tartarus location into the main VulcanVerse client',
+          'Implemented client-server interaction and multiplayer flows with Photon',
+          'Integrated Addressables, Zenject and UniTask into the production codebase',
         ],
+        vulkanVerseMetrics: [
+          { value: '3 × 3 km', label: 'game world size' },
+          { value: '4', label: 'themed regions around Vulcan City' },
+          { value: '20 × 20 m', label: 'land plot size' },
+          { value: 'Windows', label: 'primary client platform' },
+        ],
+        vulkanVerseMediaCity: 'Classical city scene in Vulcan Verse',
+        vulkanVerseMediaShrine: 'Wooded path and shrine in the game world',
+        vulkanVerseMediaWorld: 'Panoramic Vulcan Verse environment',
+        vulkanVerseMediaTemple: 'Temple plaza with regional symbols',
+        vulkanVerseMediaNotus: 'Desert scene from the Notus region',
         mychessWebPoints: [
           'Implemented separate desktop and mobile routers with responsive game interfaces',
           'Built real-time game, matchmaking, tournament, chat and community flows with Socket.IO and shared WebSocket modules',

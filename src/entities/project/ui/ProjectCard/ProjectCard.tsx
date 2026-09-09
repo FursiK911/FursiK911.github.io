@@ -1,84 +1,63 @@
-import { cx, styles } from '@/shared/styles'
-import { motion } from 'motion/react'
+import { motion, useReducedMotion } from 'motion/react'
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { projects } from '../../model/data/projects.data'
-import { ActionButton } from '@/shared/ui/ActionButton'
+import { ProjectCardPreview } from '../ProjectCardPreview/ProjectCardPreview'
+import styles from './styles/ProjectCard.module.css'
 import type { ProjectCardProps } from './types/ProjectCard.types'
 
-export function ProjectCard({ project, onOpen }: ProjectCardProps) {
+export function ProjectCard({ project }: ProjectCardProps) {
   const { t } = useTranslation()
+  const reducedMotion = useReducedMotion()
+  const [isPreviewActive, setIsPreviewActive] = useState(false)
   const title = t(`projects.${project.titleKey}`)
   return (
     <motion.article
-      className={
-        project.featured
-          ? cx(styles.projectCard, styles.featured)
-          : cx(styles.projectCard)
-      }
-      layout
-      initial={{ opacity: 0, y: 14 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 14 }}
-      transition={{ duration: 0.28 }}
+      className={styles.card}
+      layout={!reducedMotion}
+      initial={reducedMotion ? false : { opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      exit={reducedMotion ? undefined : { opacity: 0, y: 16 }}
+      transition={{ duration: reducedMotion ? 0 : 0.35 }}
+      viewport={{ once: true }}
     >
-      <button
-        className={cx(styles.projectVisual)}
-        type="button"
-        onClick={(event) => onOpen(project, event.currentTarget)}
-        aria-label={`${t('projects.view')} — ${title}`}
+      <a
+        className={styles.link}
+        href={`/projects/${project.id}`}
+        onPointerEnter={(event) => {
+          if (event.pointerType === 'mouse') setIsPreviewActive(true)
+        }}
+        onPointerLeave={() => setIsPreviewActive(false)}
       >
-        <span className={cx(styles.visualGrid)} />
-        <span className={cx(styles.visualId)}>
-          {project.id.toUpperCase()} // 0{projects.indexOf(project) + 1}
-        </span>
-        <span className={cx(styles.visualMark)}>
-          {project.category.includes('xr-ar')
-            ? '◈'
-            : project.category.includes('unigine')
-              ? '◇'
-              : project.category.includes('mobile')
-                ? '▣'
-                : project.category.includes('web')
-                  ? '⌘'
-                  : project.category.includes('multiplayer')
-                    ? '◌'
-                    : '◆'}
-        </span>
-        <span className={cx(styles.visualPlatform)}>
-          {t(`platforms.${project.platformKey}`)}
-        </span>
-      </button>
-      <div className={cx(styles.projectMeta)}>
-        <div>
-          <span className={cx(styles.projectCategory)}>
-            {project.category
-              .map((category) => t(`projects.${category}`))
-              .join(' / ')}
-          </span>
-          <h3>{title}</h3>
+        <ProjectCardPreview
+          active={isPreviewActive}
+          images={project.card.previewImages}
+          key={isPreviewActive ? 'active-preview' : 'cover-preview'}
+        />
+        <div className={styles.content}>
+          <h3 className={styles.title}>{title}</h3>
+          <p className={styles.teaser}>{t(project.card.teaserKey)}</p>
+          <div
+            className={styles.tagList}
+            aria-label={`${t('projects.technologies')}: ${project.card.tags
+              .slice(0, 4)
+              .join(', ')}`}
+          >
+            {project.card.tags.slice(0, 4).map((tag) => (
+              <span className={styles.tag} key={tag}>
+                {tag}
+              </span>
+            ))}
+          </div>
+          <div className={styles.metadata}>
+            <span>{project.company}</span>
+            <time dateTime={project.period.to ?? project.period.from}>
+              {project.period.from} —{' '}
+              {project.period.to ?? t('experience.present')}
+            </time>
+          </div>
+          <p className={styles.action}>{t('projects.view')} ↗</p>
         </div>
-        <ActionButton
-          type="button"
-          onClick={(event) => onOpen(project, event.currentTarget)}
-          variant="action"
-        >
-          {t('projects.view')} <span>↗</span>
-        </ActionButton>
-      </div>
-      <div className={cx(styles.projectContext)}>
-        <span>{project.company}</span>
-        <time dateTime={project.period.to ?? project.period.from}>
-          {project.period.from} — {project.period.to ?? t('experience.present')}
-        </time>
-      </div>
-      <p className={cx(styles.projectDescription)}>
-        {t(`projects.${project.descriptionKey}`)}
-      </p>
-      <div className={cx(styles.tagRow)}>
-        {project.tech.slice(0, 6).map((tech) => (
-          <span key={tech}>{tech}</span>
-        ))}
-      </div>
+      </a>
     </motion.article>
   )
 }

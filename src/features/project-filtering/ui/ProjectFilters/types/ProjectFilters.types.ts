@@ -1,6 +1,10 @@
-import type { filters } from '../../../model/data/project-filter-options.data'
+import type { ProjectCardTag, ProjectDirection } from '@/entities/project'
 
 export interface ProjectFiltersProps {
-  active: (typeof filters)[number]
-  onChange: (filter: (typeof filters)[number]) => void
+  direction: 'all' | ProjectDirection
+  directionCounts: Record<'all' | ProjectDirection, number>
+  technologies: ProjectCardTag[]
+  technology: ProjectCardTag | null
+  onDirectionChange: (direction: 'all' | ProjectDirection) => void
+  onTechnologyChange: (technology: ProjectCardTag | null) => void
 }

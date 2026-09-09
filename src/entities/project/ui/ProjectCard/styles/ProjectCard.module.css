@@ -1,0 +1,122 @@
+.card {
+  min-width: 0;
+  height: 100%;
+}
+.link {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  color: inherit;
+  text-decoration: none;
+  background: color-mix(in srgb, var(--panel) 92%, transparent);
+  border: 1px solid var(--line);
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+.link::before,
+.link::after {
+  position: absolute;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  content: '';
+  border-color: var(--cyan);
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+.link::before {
+  top: 9px;
+  left: 9px;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+.link::after {
+  right: 9px;
+  bottom: 9px;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+.link:hover,
+.link:focus-visible {
+  border-color: var(--cyan);
+  box-shadow: 0 16px 38px rgba(116, 225, 230, 0.08);
+  outline: none;
+  transform: translateY(-4px);
+}
+.link:hover::before,
+.link:hover::after,
+.link:focus-visible::before,
+.link:focus-visible::after {
+  opacity: 1;
+}
+.content {
+  display: flex;
+  height: 100%;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px;
+}
+.title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.28;
+}
+.teaser {
+  margin: 14px 0 18px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.tag {
+  padding: 5px 8px;
+  color: var(--cyan);
+  background: rgba(167, 243, 246, 0.06);
+  border: 1px solid rgba(167, 243, 246, 0.28);
+  font: 0.62rem var(--mono);
+  letter-spacing: 0.04em;
+}
+.metadata {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 20px;
+  color: var(--muted);
+  font: 0.62rem var(--mono);
+  letter-spacing: 0.04em;
+}
+.metadata time {
+  color: var(--cyan);
+  white-space: nowrap;
+}
+.action {
+  margin: 18px 0 0;
+  color: var(--cyan);
+  font: 0.66rem var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+@media (max-width: 700px) {
+  .content {
+    padding: 16px;
+  }
+  .link:hover {
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .link {
+    transition: none;
+  }
+}

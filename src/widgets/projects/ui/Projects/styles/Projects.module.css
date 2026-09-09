@@ -1,0 +1,31 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.empty {
+  display: grid;
+  gap: 12px;
+  min-height: 180px;
+  place-items: center;
+  padding: 32px;
+  color: var(--muted);
+  text-align: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+.reset {
+  padding: 9px 12px;
+  color: var(--cyan);
+  background: transparent;
+  border: 1px solid var(--cyan);
+  font: 0.66rem var(--mono);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}

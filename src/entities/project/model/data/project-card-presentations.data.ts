@@ -1,0 +1,151 @@
+import type { ProjectCardPresentationDefinition } from '../types/project-card-presentation-definition.types'
+
+export const projectCardPresentations: Record<
+  string,
+  ProjectCardPresentationDefinition
+> = {
+  'mychess-web': {
+    direction: 'web',
+    teaserKey: 'projects.cardTeasers.mychessWeb',
+    tags: ['React', 'TypeScript'],
+    previewImageIndexes: [],
+  },
+  'mobile-rts': {
+    direction: 'games-apps',
+    teaserKey: 'projects.cardTeasers.mobileRts',
+    tags: ['Unity', 'Mobile'],
+    previewImageIndexes: [],
+  },
+  'saridu-actuator': {
+    direction: 'vr-training',
+    teaserKey: 'projects.cardTeasers.sariduActuator',
+    tags: ['VR'],
+    previewImageIndexes: [0],
+  },
+  mychessvr: {
+    direction: 'games-apps',
+    teaserKey: 'projects.cardTeasers.mychessvr',
+    tags: ['Unity', 'VR'],
+    previewImageIndexes: [],
+  },
+  'cat-citten': {
+    direction: 'web',
+    teaserKey: 'projects.cardTeasers.catCitten',
+    tags: ['React', 'TypeScript'],
+    previewImageIndexes: [],
+  },
+  'industrial-vr': {
+    direction: 'vr-training',
+    teaserKey: 'projects.cardTeasers.industrial',
+    tags: ['Unity', 'VR'],
+    previewImageIndexes: [],
+  },
+  'aptive-education': {
+    direction: 'web',
+    teaserKey: 'projects.cardTeasers.aptiveEducation',
+    tags: ['Vue'],
+    previewImageIndexes: [],
+  },
+  'frieze-viewing-room': {
+    direction: 'games-apps',
+    teaserKey: 'projects.cardTeasers.friezeViewingRoom',
+    tags: ['React', 'Mobile', 'AR'],
+    previewImageIndexes: [],
+  },
+  'neo4-sightline': {
+    direction: 'web',
+    teaserKey: 'projects.cardTeasers.neo4Sightline',
+    tags: ['React', 'Unreal Engine'],
+    previewImageIndexes: [0, 1],
+  },
+  'fuel-cms': {
+    direction: 'web',
+    teaserKey: 'projects.cardTeasers.fuelCms',
+    tags: ['React'],
+    previewImageIndexes: [],
+  },
+  'drilling-vr': {
+    direction: 'vr-training',
+    teaserKey: 'projects.cardTeasers.drilling',
+    tags: ['Unity', 'VR'],
+    previewImageIndexes: [],
+  },
+  'vulkan-verse': {
+    direction: 'games-apps',
+    teaserKey: 'projects.cardTeasers.vulkanVerse',
+    tags: ['Unity', 'Photon'],
+    previewImageIndexes: [0, 1, 2, 3, 4],
+  },
+  korobka: {
+    direction: 'web',
+    teaserKey: 'projects.cardTeasers.korobka',
+    tags: ['React'],
+    previewImageIndexes: [],
+  },
+  'doors-cms': {
+    direction: 'web',
+    teaserKey: 'projects.cardTeasers.doorsCms',
+    tags: ['React', 'TypeScript'],
+    previewImageIndexes: [],
+  },
+  'earth-dragons': {
+    direction: 'games-apps',
+    teaserKey: 'projects.cardTeasers.earthDragons',
+    tags: ['Unity', 'AR', 'Mobile'],
+    previewImageIndexes: [0, 1, 2, 3, 4],
+  },
+  'villa-krim': {
+    direction: 'games-apps',
+    teaserKey: 'projects.cardTeasers.virtualSommelierVillaKrim',
+    tags: ['Unity', 'AR', 'Mobile'],
+    previewImageIndexes: [],
+  },
+  'authors-wine-villa-krim': {
+    direction: 'games-apps',
+    teaserKey: 'projects.cardTeasers.authorsWineVillaKrim',
+    tags: ['Unity', 'AR', 'Mobile'],
+    previewImageIndexes: [0],
+  },
+  'chudo-projector': {
+    direction: 'games-apps',
+    teaserKey: 'projects.cardTeasers.chudoProjector',
+    tags: ['Unity', 'OpenCV', 'Photon'],
+    previewImageIndexes: [],
+  },
+  'ar-coloring': {
+    direction: 'games-apps',
+    teaserKey: 'projects.cardTeasers.arColoring',
+    tags: ['Unity', 'AR', 'Mobile'],
+    previewImageIndexes: [0, 1, 2],
+  },
+  chudobooks: {
+    direction: 'games-apps',
+    teaserKey: 'projects.cardTeasers.chudobooks',
+    tags: ['Unity', 'AR', 'Mobile'],
+    previewImageIndexes: [],
+  },
+  'ar-chudaboxes': {
+    direction: 'games-apps',
+    teaserKey: 'projects.cardTeasers.arChudaboxes',
+    tags: ['AR', 'Mobile'],
+    previewImageIndexes: [0, 1, 2],
+  },
+  'chudo-floor': {
+    direction: 'games-apps',
+    teaserKey: 'projects.cardTeasers.chudoFloor',
+    tags: ['Unity', 'OpenCV'],
+    previewImageIndexes: [],
+  },
+  'quest-room': {
+    direction: 'games-apps',
+    teaserKey: 'projects.cardTeasers.questRoom',
+    tags: ['Unity', 'Photon'],
+    previewImageIndexes: [],
+  },
+  'mychess-mobile': {
+    direction: 'games-apps',
+    teaserKey: 'projects.cardTeasers.mychessMobile',
+    tags: ['Flutter', 'Mobile'],
+    previewImageIndexes: [],
+  },
+}
