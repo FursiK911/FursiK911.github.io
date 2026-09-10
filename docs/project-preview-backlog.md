@@ -4,7 +4,6 @@ The cards below currently have no approved photographic or screenshot preview. T
 
 | ID               | Project                            |
 | ---------------- | ---------------------------------- |
-| mychess-web      | myChess                            |
 | mobile-rts       | Mobile Multiplayer RTS             |
 | mychessvr        | MyChessVR                          |
 | cat-citten       | Cat-citten company website         |

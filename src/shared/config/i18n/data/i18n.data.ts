@@ -311,7 +311,7 @@ export const resources = {
         friezeViewingRoom: 'Frieze Viewing Room',
         cardTeasers: {
           mychessWeb:
-            'Шахматная экосистема для игры, турниров, стримов и обучения. Внутри — партии онлайн и инструменты анализа Stockfish.',
+            'Веб-версия шахматной экосистемы myChess: realtime-партии, AI-чемпионы, турниры, сообщества, стримы и Stockfish-анализ. Платформа проводила турниры с участием 2 000+ игроков и объединяет игру, обучение и общение в одном пространстве.',
           mobileRts:
             'Мобильная PvP-стратегия с турнирами и повторами сражений. Сетевые сценарии и серверные события собраны в единый игровой контур.',
           sariduActuator:
@@ -383,7 +383,7 @@ export const resources = {
         vulkanVerseDesc:
           'Клиентская игровая разработка для VulcanVerse — открытого multiplayer-мира на Unity с сетевыми механиками, исследованием мира и локацией Tartarus.',
         mychessWebDesc:
-          'Первая российская шахматная экосистема, которая уже объединила 121 577 зарегистрированных пользователей, 665 880 сыгранных партий и 459 созданных сообществ — в веб- и мобильных приложениях для игры, турниров, общения, стримов и обучения.',
+          'Веб-версия myChess — это шахматная экосистема, в которой аккаунты, регистрация и восстановление доступа соседствуют с realtime-партиями, играми с друзьями, матчмейкингом и рейтингом. Платформа поддерживает bullet, blitz, rapid и classical, индивидуальные и командные турниры, лидерборды по категориям, сообщества и лобби с чатами, личную переписку, уведомления, верификацию пользователей и подтверждение Elo. Игроки могут сражаться с AI-чемпионами, обученными на партиях известных шахматистов — Яна Непомнящего, Михаила Ботвинника, Магнуса Карлсена и Владимира Крамника, — участвовать в одновременных играх, chessboxing и трансляциях через MediaSoup. В разделе обучения доступны шахматные задачи и серии решений; в партии можно просматривать историю ходов, пожаловаться на соперника, поделиться игрой и запустить разбор Stockfish. Анализ работает в трёх вариантах: кешированный глубокий, облачный и локальный в браузере с WebAssembly, включая лучшие ходы, зевки, варианты и альтернативные ветки. Интерфейс адаптирован под desktop и mobile, а крупнейшие турниры собирали 2 000+ участников.',
         mychessMobileDesc:
           'Кроссплатформенный Flutter-клиент экосистемы myChess, которая уже объединила 121 577 пользователей, 665 880 сыгранных партий и 459 сообществ в мобильных игровых, турнирных и социальных сценариях, стримах и обучении.',
         friezeViewingRoomDesc:
@@ -403,6 +403,8 @@ export const resources = {
           { value: '121 577', label: 'зарегистрированных пользователей' },
           { value: '665 880', label: 'сыгранных партий' },
           { value: '459', label: 'созданных сообществ' },
+          { value: '50+', label: 'проведённых турниров' },
+          { value: '2 000+', label: 'участников в крупнейшем турнире' },
         ],
         mychessMobilePoints: [
           'Разрабатывал кроссплатформенное приложение на Flutter и Dart',
@@ -413,6 +415,8 @@ export const resources = {
           { value: '121 577', label: 'зарегистрированных пользователей' },
           { value: '665 880', label: 'сыгранных партий' },
           { value: '459', label: 'созданных сообществ' },
+          { value: '50+', label: 'проведённых турниров' },
+          { value: '2 000+', label: 'участников в крупнейшем турнире' },
         ],
         mychessvrPoints: [
           'Полная реализация на Unity в качестве единственного разработчика',
@@ -531,10 +535,21 @@ export const resources = {
         mychessMobileMedia4: 'Профиль в myChess Mobile',
         mychessMobileMedia5: 'Социальный экран myChess Mobile',
         mychessWebPoints: [
+          'Реализовал аккаунты, регистрацию, восстановление доступа и пользовательскую верификацию',
           'Реализовал отдельные desktop- и mobile-роутеры с адаптивными игровыми интерфейсами',
-          'Разработал realtime-сценарии партий, matchmaking, турниров, чатов и сообществ через Socket.IO и общие WebSocket-модули',
+          'Разработал realtime-сценарии партий, игры с друзьями, matchmaking, рейтинговых матчей, турниров, чатов и сообществ через Socket.IO и общие WebSocket-модули',
+          'Добавил режимы bullet, blitz, rapid и classical, лидерборды по категориям и подтверждение Elo',
+          'Интегрировал AI-чемпионов с профилями Яна Непомнящего, Михаила Ботвинника, Магнуса Карлсена и Владимира Крамника',
+          'Реализовал сольные и командные турниры, выдерживающие крупнейшие события с 2 000+ участниками',
+          'Сделал два режима одновременной игры: один игрок против нескольких соперников и коллективное голосование за ход против одного игрока',
+          'Реализовал уникальный режим chessboxing с чередованием шахматных партий и боксерских раундов',
+          'Интегрировал сообщества, лобби, турнирные и личные чаты, систему уведомлений и обмен сообщениями',
+          'Разработал античит и MyChess Patrol для наблюдения за чужими партиями и вынесения вердиктов',
+          'Создал раздел обучения с шахматными задачами, матами в один/несколько ходов и сериями решений',
+          'Интегрировал историю ходов с переключением позиций, жалобы на игроков, sharing партий и пост-игровой анализ',
           'Интегрировал шахматную доску на Chessground/react-dnd и игровую логику chess.js',
           'Подключил Stockfish WebAssembly для клиентских режимов анализа и AI-сценариев',
+          'Реализовал три уровня анализа Stockfish: кешированный глубокий, облачный и локальный в браузере с вариантами и альтернативными ветками',
           'Выстроил слой состояния и запросов на Redux Toolkit, TanStack Query и RxJS',
           'Интегрировал mediasoup-client/WebRTC для стриминга и обучающих медиасценариев',
         ],
@@ -1274,7 +1289,7 @@ export const resources = {
         friezeViewingRoom: 'Frieze Viewing Room',
         cardTeasers: {
           mychessWeb:
-            'A chess ecosystem for games, tournaments, streams and learning. Online matches and Stockfish analysis tools live in one client.',
+            'The web edition of the myChess chess ecosystem: real-time games, AI champions, tournaments, communities, streams and Stockfish analysis. The platform has hosted tournaments with 2,000+ players, bringing play, learning and communication into one space.',
           mobileRts:
             'A mobile PvP strategy game with tournaments and battle replays. Network flows and server events support the match experience.',
           sariduActuator:
@@ -1343,7 +1358,7 @@ export const resources = {
         vulkanVerseDesc:
           'Client-side game development for VulcanVerse, an open-world multiplayer Unity game with networked mechanics, world exploration and the Tartarus location.',
         mychessWebDesc:
-          'Russia’s first chess ecosystem has already brought together 121,577 registered users, 665,880 games played and 459 communities across web and mobile apps for play, tournaments, social interaction, streaming and learning.',
+          'myChess Web is the browser edition of a chess ecosystem where accounts, registration and recovery sit alongside real-time games, friend matches, matchmaking and rating play. The platform supports bullet, blitz, rapid and classical time controls, individual and team tournaments, category leaderboards, communities and lobbies with chat, direct messaging, notifications, user verification and Elo confirmation. Players can face AI champions trained on games of notable chess players — Ian Nepomniachtchi, Mikhail Botvinnik, Magnus Carlsen and Vladimir Kramnik — join simultaneous games, play chessboxing and watch or run broadcasts through MediaSoup. The learning section includes chess puzzles and solving streaks; during a game, players can review move history, report an opponent, share the game and launch a Stockfish review. Analysis is available in three forms: cached deep analysis, cloud analysis and local in-browser WebAssembly analysis with best moves, blunders, variations and alternative lines. The interface is adapted for desktop and mobile, while the largest tournaments reached 2,000+ participants.',
         mychessMobileDesc:
           'A cross-platform Flutter client for the myChess ecosystem, already bringing 121,577 users, 665,880 games played and 459 communities to mobile game, tournament and social flows, streaming and learning.',
         friezeViewingRoomDesc:
@@ -1363,6 +1378,8 @@ export const resources = {
           { value: '121,577', label: 'registered users' },
           { value: '665,880', label: 'games played' },
           { value: '459', label: 'communities created' },
+          { value: '50+', label: 'tournaments held' },
+          { value: '2,000+', label: 'participants in the largest tournament' },
         ],
         mychessMobilePoints: [
           'Developed a cross-platform application with Flutter and Dart',
@@ -1373,6 +1390,8 @@ export const resources = {
           { value: '121,577', label: 'registered users' },
           { value: '665,880', label: 'games played' },
           { value: '459', label: 'communities created' },
+          { value: '50+', label: 'tournaments held' },
+          { value: '2,000+', label: 'participants in the largest tournament' },
         ],
         mychessvrPoints: [
           'Full Unity implementation as sole developer',
@@ -1487,10 +1506,21 @@ export const resources = {
         mychessMobileMedia4: 'myChess Mobile profile',
         mychessMobileMedia5: 'myChess Mobile social screen',
         mychessWebPoints: [
+          'Implemented accounts, registration, account recovery and user verification',
           'Implemented separate desktop and mobile routers with responsive game interfaces',
-          'Built real-time game, matchmaking, tournament, chat and community flows with Socket.IO and shared WebSocket modules',
+          'Built real-time games, friend matches, matchmaking, rated games, tournaments, chat and community flows with Socket.IO and shared WebSocket modules',
+          'Added bullet, blitz, rapid and classical time controls, category leaderboards and Elo confirmation',
+          'Integrated AI champions with profiles styled after Ian Nepomniachtchi, Mikhail Botvinnik, Magnus Carlsen and Vladimir Kramnik',
+          'Implemented solo and team tournaments supporting the largest events with 2,000+ participants',
+          'Built two simultaneous-play modes: one player against multiple opponents and a group voting on moves against one player',
+          'Implemented the unique chessboxing mode, alternating chess games with boxing rounds',
+          'Integrated communities, lobbies, tournament and direct chats, notifications and messaging',
+          'Developed anti-cheat features and MyChess Patrol for reviewing games and issuing player verdicts',
+          'Created the learning section with chess puzzles, mate-in-one/mate-in-several tasks and solving streaks',
+          'Integrated move history navigation, player reports, game sharing and post-game analysis',
           'Integrated a Chessground/react-dnd chessboard and chess.js game logic',
           'Connected Stockfish WebAssembly for client-side analysis and AI flows',
+          'Implemented three Stockfish analysis levels: cached deep, cloud and local in-browser analysis with variations and alternative lines',
           'Built the client state and data layer with Redux Toolkit, TanStack Query and RxJS',
           'Integrated mediasoup-client/WebRTC for streaming and learning media flows',
         ],

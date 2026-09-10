@@ -17,11 +17,8 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       'Mantine',
       'Redux Toolkit',
       'TanStack Query',
-      'RxJS',
       'Socket.IO',
       'chess.js',
-      'Chessground',
-      'react-dnd',
       'Stockfish',
       'WebAssembly',
       'mediasoup',
@@ -52,6 +49,16 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       { kind: 'youtube', videoId: 't-PDCpjdJvs' },
       {
         kind: 'image',
+        src: '/images/projects/my-chess-web/logo.webp',
+        altKey: 'mychessWebMediaLogo',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-web/profile.webp',
+        altKey: 'mychessWebMediaProfile',
+      },
+      {
+        kind: 'image',
         src: '/images/projects/my-chess-web/all-versus-one.webp',
         altKey: 'mychessWebMediaAllVersusOne',
       },
@@ -72,11 +79,6 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-web/logo.webp',
-        altKey: 'mychessWebMediaLogo',
-      },
-      {
-        kind: 'image',
         src: '/images/projects/my-chess-web/messages.webp',
         altKey: 'mychessWebMediaMessages',
       },
@@ -89,11 +91,6 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
         kind: 'image',
         src: '/images/projects/my-chess-web/observer-tournament.webp',
         altKey: 'mychessWebMediaObserverTournament',
-      },
-      {
-        kind: 'image',
-        src: '/images/projects/my-chess-web/profile.webp',
-        altKey: 'mychessWebMediaProfile',
       },
       {
         kind: 'image',

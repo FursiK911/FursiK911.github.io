@@ -19,4 +19,31 @@ it('defines complete galleries and homepage previews for all MyChess projects', 
       project?.card.previewImages.every((image) => image.src.endsWith('.webp')),
     ).toBe(true)
   })
+
+  const mychessWeb = projects.find((item) => item.id === 'mychess-web')
+  expect(
+    mychessWeb?.media
+      ?.filter((media) => media.kind === 'image')
+      .map((media) => media.src),
+  ).toEqual([
+    '/images/projects/my-chess-web/logo.webp',
+    '/images/projects/my-chess-web/profile.webp',
+    '/images/projects/my-chess-web/all-versus-one.webp',
+    '/images/projects/my-chess-web/analysis.webp',
+    '/images/projects/my-chess-web/authorization.webp',
+    '/images/projects/my-chess-web/champions.webp',
+    '/images/projects/my-chess-web/messages.webp',
+    '/images/projects/my-chess-web/notifications.webp',
+    '/images/projects/my-chess-web/observer-tournament.webp',
+    '/images/projects/my-chess-web/puzzles.webp',
+    '/images/projects/my-chess-web/puzzles-2.webp',
+    '/images/projects/my-chess-web/select-game.webp',
+    '/images/projects/my-chess-web/tournament.webp',
+  ])
+  expect(
+    mychessWeb?.card.previewImages.slice(0, 2).map((image) => image.src),
+  ).toEqual([
+    '/images/projects/my-chess-web/logo.webp',
+    '/images/projects/my-chess-web/profile.webp',
+  ])
 })

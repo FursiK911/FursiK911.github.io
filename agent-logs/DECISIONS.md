@@ -1,5 +1,7 @@
 # Global Decision Index
 
+| DEC-20260910-16 | Use logo → profile → remaining images for MyChess Web previews, video → logo → profile → remaining images for its galleries, five shared Web/Mobile platform metrics including 50+ tournaments and 2,000+ participants, owner-confirmed AI names including Magnus Carlsen, and a Russian provenance brief; preserve links and historical contribution technology mentions while removing the three technologies from the public stack. | projects, mychess, media, metrics, i18n, documentation |
+
 | DEC-20260910-15 | Enrich the SARiDU project card and IT Tab experience phase from the read-only source repository with Unigine/.NET/C# stack, custom UDP networking, VOIP, HTC VIVE, training modes, defect scenarios, result recording, and Type A/Type M/pneumatic-system coverage; omit Oculus/OpenXR/Meta Quest and internal network details. | projects, saridu, unigine, dotnet, networking, voip, htc-vive, research | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-15) |
 
 | DEC-20260910-14 | Use all available project images in the homepage card previews; normalize horizontal MyChess web images to 1920×1080 and preserve MyChess Mobile portrait composition at 1080×1920, using WebP quality 85. | projects, mychess, media, webp, homepage | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-14) |

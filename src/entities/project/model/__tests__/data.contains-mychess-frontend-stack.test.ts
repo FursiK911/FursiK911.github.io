@@ -12,15 +12,16 @@ it('defines the MyChess frontend stack and implementation areas', () => {
       'Mantine',
       'Redux Toolkit',
       'TanStack Query',
-      'RxJS',
       'Socket.IO',
       'chess.js',
-      'Chessground',
       'Stockfish',
       'WebAssembly',
       'mediasoup',
       'WebRTC',
     ]),
+  )
+  expect(project?.tech).not.toEqual(
+    expect.arrayContaining(['RxJS', 'Chessground', 'react-dnd']),
   )
   expect(project?.actions).toEqual(
     expect.arrayContaining([

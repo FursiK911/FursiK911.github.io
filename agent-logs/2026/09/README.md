@@ -1,5 +1,7 @@
 # September 2026
 
+| 2026-09-10 | projects, mychess, media, i18n, metrics, contribution, documentation, testing, graphify | [MyChess Web content and media refinement](2026-09-10.md#mychess-web-content-and-media-refinement) |
+
 | 2026-09-10 | projects, mychess, media, webp, homepage, i18n, testing, graphify | [MyChess galleries and homepage previews](2026-09-10.md#mychess-galleries-and-homepage-previews) |
 
 | 2026-09-10 | projects, gallery, responsive, accessibility, css, testing | [Hidden project gallery scrollbars](2026-09-10.md#hidden-project-gallery-scrollbars) |

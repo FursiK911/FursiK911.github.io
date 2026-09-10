@@ -7,7 +7,7 @@ it('renders only the showcase card content and direct case link', async () => {
   await changeLanguage('en')
   renderWithProviders(<ProjectCard project={projects[0]} />)
   expect(screen.getByRole('heading', { name: 'myChess' })).toBeInTheDocument()
-  expect(screen.getByText(/A chess ecosystem/)).toBeInTheDocument()
+  expect(screen.getByText(/The web edition of the myChess/)).toBeInTheDocument()
   expect(screen.getByText('React')).toBeInTheDocument()
   expect(screen.getByText('TypeScript')).toBeInTheDocument()
   expect(screen.queryByText('ООО ЦУП')).not.toBeInTheDocument()
