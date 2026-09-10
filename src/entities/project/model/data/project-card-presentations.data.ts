@@ -19,7 +19,7 @@ export const projectCardPresentations: Record<
   'saridu-actuator': {
     direction: 'vr-training',
     teaserKey: 'projects.cardTeasers.sariduActuator',
-    tags: ['VR'],
+    tags: ['Unigine', 'VR'],
     previewImageIndexes: [0],
   },
   mychessvr: {

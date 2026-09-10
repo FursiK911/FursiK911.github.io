@@ -1,5 +1,11 @@
 # AI Agent Change Log Index
 
+| 2026-09-10 | projects, saridu, metrics, achievements, i18n, testing | [SARiDU achievements mode grouping](2026/09/2026-09-10.md#saridu-achievements-mode-grouping) |
+
+| 2026-09-10 | projects, mychess, cards, copy, contributions, i18n, testing | [MyChess product copy and contributions refinement](2026/09/2026-09-10.md#mychess-product-copy-and-contributions-refinement) |
+
+| 2026-09-10 | projects, saridu, unigine, astra-linux, steamvr, vk, metrics, i18n, testing, graphify | [SARiDU project page and card revision](2026/09/2026-09-10.md#saridu-project-page-and-card-revision) |
+
 | 2026-09-10 | projects, saridu, unigine, dotnet, networking, voip, htc-vive, i18n, testing, graphify | [SARiDU source analysis enrichment](2026/09/2026-09-10.md#saridu-source-analysis-enrichment) |
 
 | 2026-09-10 | projects, mychess, media, webp, homepage, i18n, testing, graphify | [MyChess galleries and homepage previews](2026/09/2026-09-10.md#mychess-galleries-and-homepage-previews) |

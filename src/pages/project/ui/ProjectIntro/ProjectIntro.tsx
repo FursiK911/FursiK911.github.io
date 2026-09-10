@@ -53,10 +53,13 @@ export function ProjectIntro({ project, facts }: ProjectIntroProps) {
       )}
       <div className={styles.projectIntroActions}>
         {project.actions?.map((action) => {
+          const actionLabel = action.labelKey
+            ? t(action.labelKey)
+            : action.label
           const label =
             action.type === 'external'
-              ? `${action.label} ↗`
-              : `${t(`projects.actions.${action.type}`)} · ${action.label}`
+              ? `${actionLabel} ↗`
+              : `${t(`projects.actions.${action.type}`)} · ${actionLabel}`
           return action.unavailableReasonKey ? (
             <UnavailableAction
               key={action.href}

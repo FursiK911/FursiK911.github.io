@@ -7,6 +7,7 @@ export type ProjectAction = {
   type: ProjectActionType
   label: string
   href: string
+  labelKey?: string
   unavailableReasonKey?: string
 }
 
@@ -19,6 +20,7 @@ export type ProjectDirection = 'web' | 'games-apps' | 'vr-training'
 export type ProjectCardTag =
   | 'React'
   | 'Vue'
+  | 'Unigine'
   | 'Unity'
   | 'Unreal Engine'
   | 'Flutter'

@@ -1,5 +1,11 @@
 # Global Decision Index
 
+| DEC-20260910-20 | Group Training, Exam and Observer into one SARiDU achievements metric while keeping Single + Co-op as the separate interaction-mode metric. | projects, saridu, metrics, achievements, i18n | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-20) |
+
+| DEC-20260910-19 | Use a web-edition MyChess teaser focused on real-player rated matches, AI champions, chess puzzles, tournaments with more than 2,000 simultaneous players, communities, multiple chess modes and Stockfish; describe the project page as a product overview and keep the contribution list feature-focused without stack names. | projects, mychess, cards, copy, contributions, i18n | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-19) |
+
+| DEC-20260910-17 | Use Unigine → VR card tags, PC / Astra Linux platform metadata, product metrics for scenarios/equipment/modes, supplied VK links instead of Rosatom annual reports, and active resume-style bilingual SARiDU contribution copy. | projects, saridu, unigine, astra-linux, steamvr, vk, metrics, i18n | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-17) |
+
 | DEC-20260910-16 | Use logo → profile → remaining images for MyChess Web previews, video → logo → profile → remaining images for its galleries, five shared Web/Mobile platform metrics including 50+ tournaments and 2,000+ participants, owner-confirmed AI names including Magnus Carlsen, and a Russian provenance brief; preserve links and historical contribution technology mentions while removing the three technologies from the public stack. | projects, mychess, media, metrics, i18n, documentation |
 
 | DEC-20260910-15 | Enrich the SARiDU project card and IT Tab experience phase from the read-only source repository with Unigine/.NET/C# stack, custom UDP networking, VOIP, HTC VIVE, training modes, defect scenarios, result recording, and Type A/Type M/pneumatic-system coverage; omit Oculus/OpenXR/Meta Quest and internal network details. | projects, saridu, unigine, dotnet, networking, voip, htc-vive, research | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-15) |

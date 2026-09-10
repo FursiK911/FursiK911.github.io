@@ -13,6 +13,10 @@ it('keeps client context outside achievements and avoids duplicating stack and p
     achievements: mychessValues,
     facts: [],
   })
+  expect(partitionMetrics('sariduActuatorMetrics', values)).toEqual({
+    achievements: values,
+    facts: [],
+  })
   expect(partitionMetrics(undefined, [])).toEqual({
     achievements: [],
     facts: [],

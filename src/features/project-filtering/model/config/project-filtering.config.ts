@@ -10,6 +10,7 @@ export const projectDirections: Array<'all' | ProjectDirection> = [
 export const projectTechnologyOrder: ProjectCardTag[] = [
   'React',
   'Vue',
+  'Unigine',
   'Unity',
   'Unreal Engine',
   'Flutter',

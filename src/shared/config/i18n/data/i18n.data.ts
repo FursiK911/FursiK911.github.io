@@ -235,6 +235,7 @@ export const resources = {
         platformMetaQuest: 'Meta Quest 2 / 3S / 3',
         platformVr: 'VR',
         platformViveAstra: 'HTC VIVE Pro / Astra Linux',
+        platformPcAstraLinux: 'ПК / Astra Linux',
         platformVive: 'HTC VIVE',
         platformMobile: 'Android / iOS',
         platformPcWeb: 'PC / Web',
@@ -293,6 +294,10 @@ export const resources = {
           download: 'СКАЧАТЬ',
           external: 'ВНЕШНЯЯ ССЫЛКА',
         },
+        actionLabels: {
+          sariduVkPost1: 'VK · публикация 1',
+          sariduVkPost2: 'VK · публикация 2',
+        },
         unavailableActions: {
           mychessWebsite:
             'Сайт MyChess закрыт и больше недоступен для просмотра.',
@@ -311,11 +316,11 @@ export const resources = {
         friezeViewingRoom: 'Frieze Viewing Room',
         cardTeasers: {
           mychessWeb:
-            'Веб-версия шахматной экосистемы myChess: realtime-партии, AI-чемпионы, турниры, сообщества, стримы и Stockfish-анализ. Платформа проводила турниры с участием 2 000+ игроков и объединяет игру, обучение и общение в одном пространстве.',
+            'myChess — веб-версия шахматной экосистемы, где можно играть с реальными соперниками в рейтинговых матчах или мериться силами с AI-чемпионами, решать шахматные задачи, участвовать в турнирах, в которых одновременно играли более 2 000 участников, и вступать в сообщества, чтобы общаться, учиться и играть вместе в разных режимах с анализом партий на Stockfish.',
           mobileRts:
             'Мобильная PvP-стратегия с турнирами и повторами сражений. Сетевые сценарии и серверные события собраны в единый игровой контур.',
           sariduActuator:
-            'VR-тренажёр для безопасной отработки операций на оборудовании атомной энергетики. Сценарии проверяют действия и требования электробезопасности.',
+            'VR-тренажёр на Unigine, который превращает отработку неисправностей на атомном оборудовании в безопасную и реалистичную практику с 15+ сценариями. Одиночный и кооперативный режимы, три варианта оборудования и встроенный экзамен помогают проверить готовность сотрудника на полностью российском ПО, лицензированном для использования в РФ.',
           mychessvr:
             'Шахматы в VR с классическими партиями, головоломками и анализом ходов. Игрок взаимодействует с доской руками в нескольких окружениях.',
           catCitten:
@@ -366,7 +371,7 @@ export const resources = {
         drillingDesc:
           'Мультиплеерное VR-демо с рабочими процессами бурового оборудования и взаимодействием операторов.',
         sariduActuatorDesc:
-          'Промышленный VR-тренажёр для обучения схеме управления электроприводной арматуры САРиДУ и исполнительным механизмом на оборудовании атомной энергетики.',
+          'Промышленное VR-приложение предназначено для обучения сотрудников действиям при неисправностях на рабочем месте. Пользователь может проходить сценарии самостоятельно или в кооперативе с другим участником в VR-шлеме. Приложение полностью построено на российском программном обеспечении, лицензированном для использования в РФ. В нём смоделированы рабочее место и реальное оборудование, включая Type A, Type M и пневматическую систему, а режимы обучения и экзамена позволяют сначала освоить правильный алгоритм, а затем проверить знания и навыки.',
         mobileRtsDesc:
           'Мобильная RTS с мультиплеерным PvP, турнирами, серверными событиями и сетевой инфраструктурой.',
         earthDragonsDesc:
@@ -383,7 +388,7 @@ export const resources = {
         vulkanVerseDesc:
           'Клиентская игровая разработка для VulcanVerse — открытого multiplayer-мира на Unity с сетевыми механиками, исследованием мира и локацией Tartarus.',
         mychessWebDesc:
-          'Веб-версия myChess — это шахматная экосистема, в которой аккаунты, регистрация и восстановление доступа соседствуют с realtime-партиями, играми с друзьями, матчмейкингом и рейтингом. Платформа поддерживает bullet, blitz, rapid и classical, индивидуальные и командные турниры, лидерборды по категориям, сообщества и лобби с чатами, личную переписку, уведомления, верификацию пользователей и подтверждение Elo. Игроки могут сражаться с AI-чемпионами, обученными на партиях известных шахматистов — Яна Непомнящего, Михаила Ботвинника, Магнуса Карлсена и Владимира Крамника, — участвовать в одновременных играх, chessboxing и трансляциях через MediaSoup. В разделе обучения доступны шахматные задачи и серии решений; в партии можно просматривать историю ходов, пожаловаться на соперника, поделиться игрой и запустить разбор Stockfish. Анализ работает в трёх вариантах: кешированный глубокий, облачный и локальный в браузере с WebAssembly, включая лучшие ходы, зевки, варианты и альтернативные ветки. Интерфейс адаптирован под desktop и mobile, а крупнейшие турниры собирали 2 000+ участников.',
+          'Веб-версия myChess — это шахматная экосистема с доступом из браузера для игры, обучения и общения. Во время крупнейших турнирных событий на платформе одновременно проходили партии более чем у 2 000 участников: игроки могли подключаться к рейтинговым матчам с реальными соперниками, играть с друзьями или с AI-чемпионами, а также выбирать подходящий режим игры. В разделе обучения доступны шахматные задачи и серии решений, а в партии — история ходов, возможность поделиться игрой и подробный анализ Stockfish с лучшими ходами, зевками, вариантами развития и альтернативными линиями. Платформа объединяет одиночные и командные турниры, лобби и сообщества, где пользователи создают свои группы, организуют соревнования, собираются в команды, общаются в чатах и участвуют в совместных активностях. Дополнительно myChess включает одновременные игры, MyChess Patrol для рассмотрения жалоб на подозрительные партии, верификацию пользователей и подтверждение Elo, прямые шахматные трансляции, личную переписку и систему уведомлений.',
         mychessMobileDesc:
           'Кроссплатформенный Flutter-клиент экосистемы myChess, которая уже объединила 121 577 пользователей, 665 880 сыгранных партий и 459 сообществ в мобильных игровых, турнирных и социальных сценариях, стримах и обучении.',
         friezeViewingRoomDesc:
@@ -441,28 +446,27 @@ export const resources = {
           'Ассеты Blender и взаимодействия Final IK',
         ],
         sariduActuatorPoints: [
-          '3D-модель реального оборудования атомных электростанций',
-          'Отработка поиска и устранения неисправностей в безопасной среде',
-          'Проверка соблюдения технологии работ и требований электробезопасности',
-          'Наблюдение инструктора и группы на внешнем мониторе с хронометражем операций',
-          'Режимы обучения и экзамена для Type A, Type M и пневматической системы',
-          'Одиночные и multiplayer-сессии с синхронизацией участников и VOIP',
-          'Запись действий пользователя и таблица результатов испытаний',
+          'Разработал приложение полностью на российском ПО, лицензированном для использования в РФ',
+          'Реализовал одиночный и кооперативный режимы с синхронизацией двух участников в VR-шлемах',
+          'Разработал режимы обучения и экзамена для проверки знаний и навыков сотрудника',
+          'Реализовал 15+ сценариев неисправностей для Type A, Type M и пневматической системы',
+          'Смоделировал рабочее место и три варианта реального оборудования атомных электростанций',
+          'Добавил режим наблюдателя для экзаменатора и группы на внешнем мониторе без VR-шлема',
+          'Реализовал хронометраж экзамена, работу с инструментами, переключение проводов и разборку оборудования',
+          'Добавил журнал действий пользователя, сохранение и выгрузку результатов, а также таблицу сравнения',
+          'Разработал собственный voice chat через микрофон без сторонних плагинов',
         ],
         sariduActuatorMediaAtomSkills:
           'Презентация VR-тренажёра САРиДУ на AtomSkills-2023',
         sariduActuatorMediaManInVr:
           'Участник демонстрации VR-тренажёра САРиДУ в гарнитуре',
         sariduActuatorMetrics: [
+          { value: '15+', label: 'сценариев неисправностей' },
+          { value: '3', label: 'варианта оборудования' },
+          { value: 'Single + Co-op', label: 'режимы взаимодействия' },
           {
-            value: '06.2023',
-            label: 'первая публичная презентация · AtomSkills',
-          },
-          { value: '2023', label: 'проект создания реализован' },
-          { value: '2024', label: 'доработка и актуализация' },
-          {
-            value: '3,25 млн ₽',
-            label: 'начальная максимальная цена связанной закупки',
+            value: 'Training + Exam + Observer',
+            label: 'режимы обучения, экзамена и наблюдения',
           },
         ],
         mobileRtsPoints: [
@@ -535,23 +539,23 @@ export const resources = {
         mychessMobileMedia4: 'Профиль в myChess Mobile',
         mychessMobileMedia5: 'Социальный экран myChess Mobile',
         mychessWebPoints: [
-          'Реализовал аккаунты, регистрацию, восстановление доступа и пользовательскую верификацию',
-          'Реализовал отдельные desktop- и mobile-роутеры с адаптивными игровыми интерфейсами',
-          'Разработал realtime-сценарии партий, игры с друзьями, matchmaking, рейтинговых матчей, турниров, чатов и сообществ через Socket.IO и общие WebSocket-модули',
-          'Добавил режимы bullet, blitz, rapid и classical, лидерборды по категориям и подтверждение Elo',
-          'Интегрировал AI-чемпионов с профилями Яна Непомнящего, Михаила Ботвинника, Магнуса Карлсена и Владимира Крамника',
-          'Реализовал сольные и командные турниры, выдерживающие крупнейшие события с 2 000+ участниками',
-          'Сделал два режима одновременной игры: один игрок против нескольких соперников и коллективное голосование за ход против одного игрока',
+          'Реализовал пользовательские аккаунты с регистрацией, восстановлением доступа и верификацией профиля',
+          'В качестве фронтенда реализовал отдельные страницы для десктопа и мобильных устройств',
+          'Реализовал удобную отзывчивую игру в реальном времени: соперники могли играть партии без перезагрузки, возвращаться в матч после разрыва соединения и пользоваться игрой даже на менее мощных устройствах',
+          'Связал рейтинговые матчи с матчмейкингом, рейтингами и лидербордами по категориям',
+          'Добавил поддержку множества режимов игры в шахматы и подтверждение Elo игрока',
+          'Интегрировал AI-чемпионов с профилями сильнейших шахматистов: игроки могли проверить себя, например, против Яна Непомнящего или Магнуса Карлсена',
+          'Разработал систему одиночных и командных турниров разных форматов: пользователи могли создавать собственные соревнования, а во время крупнейших событий одновременно играли более 2 000 участников',
+          'Реализовал сообщества: пользователи могли создавать свои группы, вступать в них, собираться в команды и модерировать состав участников',
+          'Организовал лобби для совместной игры и общения перед началом матча или турнира',
+          'Реализовал чаты в лобби, турнирах и сообществах, личную переписку и систему уведомлений',
+          'Реализовал два режима одновременной игры: один игрок против нескольких соперников и коллективное голосование за ход против одного игрока',
           'Реализовал уникальный режим chessboxing с чередованием шахматных партий и боксерских раундов',
-          'Интегрировал сообщества, лобби, турнирные и личные чаты, систему уведомлений и обмен сообщениями',
-          'Разработал античит и MyChess Patrol для наблюдения за чужими партиями и вынесения вердиктов',
+          'Разработал MyChess Patrol для просмотра чужих партий и рассмотрения жалоб на подозрительные действия игроков',
           'Создал раздел обучения с шахматными задачами, матами в один/несколько ходов и сериями решений',
-          'Интегрировал историю ходов с переключением позиций, жалобы на игроков, sharing партий и пост-игровой анализ',
-          'Интегрировал шахматную доску на Chessground/react-dnd и игровую логику chess.js',
-          'Подключил Stockfish WebAssembly для клиентских режимов анализа и AI-сценариев',
-          'Реализовал три уровня анализа Stockfish: кешированный глубокий, облачный и локальный в браузере с вариантами и альтернативными ветками',
-          'Выстроил слой состояния и запросов на Redux Toolkit, TanStack Query и RxJS',
-          'Интегрировал mediasoup-client/WebRTC для стриминга и обучающих медиасценариев',
+          'Добавил историю ходов с переключением позиций, возможность пожаловаться на игрока, поделиться партией и запустить пост-игровой разбор',
+          'Реализовал многоуровневый анализ партий с Stockfish: кешированный глубокий, облачный и локальный прямо в браузере — с лучшими ходами, зевками, вариантами и альтернативными линиями',
+          'Реализовал шахматные трансляции, чтобы пользователи могли проводить и смотреть прямые эфиры матчей на платформе',
         ],
         catCitten: 'Сайт компании Cat-citten',
         catCittenDesc:
@@ -1213,6 +1217,7 @@ export const resources = {
         platformMetaQuest: 'Meta Quest 2 / 3S / 3',
         platformVr: 'VR',
         platformViveAstra: 'HTC VIVE Pro / Astra Linux',
+        platformPcAstraLinux: 'PC / Astra Linux',
         platformVive: 'HTC VIVE',
         platformMobile: 'Android / iOS',
         platformPcWeb: 'PC / Web',
@@ -1271,6 +1276,10 @@ export const resources = {
           download: 'DOWNLOAD',
           external: 'EXTERNAL LINK',
         },
+        actionLabels: {
+          sariduVkPost1: 'VK · post 1',
+          sariduVkPost2: 'VK · post 2',
+        },
         unavailableActions: {
           mychessWebsite:
             'The MyChess website is closed and no longer available to open.',
@@ -1289,11 +1298,11 @@ export const resources = {
         friezeViewingRoom: 'Frieze Viewing Room',
         cardTeasers: {
           mychessWeb:
-            'The web edition of the myChess chess ecosystem: real-time games, AI champions, tournaments, communities, streams and Stockfish analysis. The platform has hosted tournaments with 2,000+ players, bringing play, learning and communication into one space.',
+            'myChess is the web edition of a chess ecosystem where players can compete against real opponents in rated matches or test themselves against AI champions, practise with chess puzzles, join tournaments where more than 2,000 people played simultaneously, and become part of communities for learning, conversation, shared play and Stockfish game analysis across many chess modes.',
           mobileRts:
             'A mobile PvP strategy game with tournaments and battle replays. Network flows and server events support the match experience.',
           sariduActuator:
-            'A VR simulator for safely practising operations on nuclear-power equipment. Scenarios validate actions and electrical-safety requirements.',
+            'A Unigine VR trainer that turns fault response on nuclear-power equipment into safe, realistic practice across 15+ scenarios. Solo and co-op modes, three equipment variants and an integrated exam help verify operator readiness on an application built entirely on Russian software licensed for use in Russia.',
           mychessvr:
             'VR chess with classic games, puzzles and move analysis. Players interact with the board by hand across several environments.',
           catCitten:
@@ -1344,7 +1353,7 @@ export const resources = {
         drillingDesc:
           'A multiplayer VR training demo reproducing drilling equipment workflows and operator interactions.',
         sariduActuatorDesc:
-          'An industrial VR training simulator for learning the SARiDU electric-actuated valve control scheme and actuator operation on nuclear-power equipment.',
+          'This industrial VR application trains employees to respond to faults at a real-world workstation. A user can complete scenarios alone or cooperate with another participant wearing a VR headset. The application is built entirely on Russian software licensed for use in Russia. It models the workstation and real equipment, including Type A, Type M and the pneumatic system, while training and examination modes first teach the correct procedure and then assess the employee’s knowledge and skills.',
         mobileRtsDesc:
           'A mobile RTS with multiplayer PvP, tournament systems, server-driven events and multiplayer infrastructure.',
         earthDragonsDesc:
@@ -1358,7 +1367,7 @@ export const resources = {
         vulkanVerseDesc:
           'Client-side game development for VulcanVerse, an open-world multiplayer Unity game with networked mechanics, world exploration and the Tartarus location.',
         mychessWebDesc:
-          'myChess Web is the browser edition of a chess ecosystem where accounts, registration and recovery sit alongside real-time games, friend matches, matchmaking and rating play. The platform supports bullet, blitz, rapid and classical time controls, individual and team tournaments, category leaderboards, communities and lobbies with chat, direct messaging, notifications, user verification and Elo confirmation. Players can face AI champions trained on games of notable chess players — Ian Nepomniachtchi, Mikhail Botvinnik, Magnus Carlsen and Vladimir Kramnik — join simultaneous games, play chessboxing and watch or run broadcasts through MediaSoup. The learning section includes chess puzzles and solving streaks; during a game, players can review move history, report an opponent, share the game and launch a Stockfish review. Analysis is available in three forms: cached deep analysis, cloud analysis and local in-browser WebAssembly analysis with best moves, blunders, variations and alternative lines. The interface is adapted for desktop and mobile, while the largest tournaments reached 2,000+ participants.',
+          'myChess Web is the web edition of a chess ecosystem for playing, learning and connecting. During the largest tournament events, more than 2,000 participants were playing real-time games on the platform simultaneously: players could enter rated matches against real opponents, play with friends or face AI champions, and choose the game mode that suited them. The learning section offers chess puzzles and solving streaks, while each game includes move history, game sharing and detailed Stockfish analysis with best moves, blunders, variations and alternative lines. The platform brings together individual and team tournaments, lobbies and communities where users can create groups, organize competitions, build teams, chat and take part in shared activities. myChess also includes simultaneous play, MyChess Patrol for reviewing complaints about suspicious games, user verification and Elo confirmation, live chess broadcasts, direct messaging and notifications.',
         mychessMobileDesc:
           'A cross-platform Flutter client for the myChess ecosystem, already bringing 121,577 users, 665,880 games played and 459 communities to mobile game, tournament and social flows, streaming and learning.',
         friezeViewingRoomDesc:
@@ -1416,25 +1425,27 @@ export const resources = {
           'Blender assets and Final IK interactions',
         ],
         sariduActuatorPoints: [
-          'A 3D model of real equipment used at nuclear power plants',
-          'Safe practice for locating and correcting equipment faults',
-          'Checks for work-procedure and electrical-safety compliance',
-          'Instructor and group observation on an external monitor with operation timing',
-          'Training and examination modes for Type A, Type M and the pneumatic system',
-          'Single-player and multiplayer sessions with participant synchronization and VOIP',
-          'User action recording and a training-results leaderboard',
+          'Built the application entirely on Russian software licensed for use in Russia',
+          'Implemented solo and co-op modes with synchronization for two participants in VR headsets',
+          'Developed training and examination modes for assessing employee knowledge and skills',
+          'Implemented 15+ fault scenarios for Type A, Type M and the pneumatic system',
+          'Modelled the workstation and three variants of real nuclear-power equipment',
+          'Added an observer mode for the examiner and group on an external monitor without a VR headset',
+          'Implemented examination timing, tool handling, wire switching and equipment disassembly',
+          'Added a user action log, result saving and export, plus a comparison table',
+          'Developed a custom microphone voice chat without third-party plugins',
         ],
         sariduActuatorMediaAtomSkills:
           'SARiDU VR trainer presented at AtomSkills-2023',
         sariduActuatorMediaManInVr:
           'Participant demonstrating the SARiDU VR trainer in a headset',
         sariduActuatorMetrics: [
-          { value: '06.2023', label: 'first public presentation · AtomSkills' },
-          { value: '2023', label: 'trainer creation project implemented' },
-          { value: '2024', label: 'refined and updated' },
+          { value: '15+', label: 'fault scenarios' },
+          { value: '3', label: 'equipment variants' },
+          { value: 'Single + Co-op', label: 'interaction modes' },
           {
-            value: '₽3.25m',
-            label: 'initial maximum price of related procurement',
+            value: 'Training + Exam + Observer',
+            label: 'training, examination and observer modes',
           },
         ],
         mobileRtsPoints: [
@@ -1506,23 +1517,23 @@ export const resources = {
         mychessMobileMedia4: 'myChess Mobile profile',
         mychessMobileMedia5: 'myChess Mobile social screen',
         mychessWebPoints: [
-          'Implemented accounts, registration, account recovery and user verification',
-          'Implemented separate desktop and mobile routers with responsive game interfaces',
-          'Built real-time games, friend matches, matchmaking, rated games, tournaments, chat and community flows with Socket.IO and shared WebSocket modules',
-          'Added bullet, blitz, rapid and classical time controls, category leaderboards and Elo confirmation',
-          'Integrated AI champions with profiles styled after Ian Nepomniachtchi, Mikhail Botvinnik, Magnus Carlsen and Vladimir Kramnik',
-          'Implemented solo and team tournaments supporting the largest events with 2,000+ participants',
-          'Built two simultaneous-play modes: one player against multiple opponents and a group voting on moves against one player',
+          'Implemented user accounts with registration, account recovery and profile verification',
+          'Built separate frontend pages for desktop and mobile devices',
+          'Implemented a responsive real-time game experience: opponents could play without page reloads, reconnect after a dropped connection and use the game comfortably on less powerful devices',
+          'Connected rated matches with matchmaking, ratings and category leaderboards',
+          'Added support for many chess game modes and player Elo confirmation',
+          'Integrated AI champions with profiles of leading chess players, allowing users to test themselves against figures such as Ian Nepomniachtchi or Magnus Carlsen',
+          'Developed solo and team tournaments across different formats: users could create their own competitions, while more than 2,000 participants played simultaneously during the largest events',
+          'Implemented communities where users could create groups, join them, form teams and moderate membership',
+          'Organized lobbies for shared play and conversation before a match or tournament',
+          'Implemented chat in lobbies, tournaments and communities, alongside direct messaging and notifications',
+          'Implemented two simultaneous-play modes: one player against multiple opponents and a group voting on moves against one player',
           'Implemented the unique chessboxing mode, alternating chess games with boxing rounds',
-          'Integrated communities, lobbies, tournament and direct chats, notifications and messaging',
-          'Developed anti-cheat features and MyChess Patrol for reviewing games and issuing player verdicts',
+          'Developed MyChess Patrol for reviewing games and handling complaints about suspicious player activity',
           'Created the learning section with chess puzzles, mate-in-one/mate-in-several tasks and solving streaks',
-          'Integrated move history navigation, player reports, game sharing and post-game analysis',
-          'Integrated a Chessground/react-dnd chessboard and chess.js game logic',
-          'Connected Stockfish WebAssembly for client-side analysis and AI flows',
-          'Implemented three Stockfish analysis levels: cached deep, cloud and local in-browser analysis with variations and alternative lines',
-          'Built the client state and data layer with Redux Toolkit, TanStack Query and RxJS',
-          'Integrated mediasoup-client/WebRTC for streaming and learning media flows',
+          'Added move-history navigation, player reports, game sharing and post-game review',
+          'Implemented multi-level Stockfish game analysis: cached deep, cloud and local in-browser modes with best moves, blunders, variations and alternative lines',
+          'Implemented live chess broadcasts so users could host and watch match streams on the platform',
         ],
         catCitten: 'Cat-citten company website',
         catCittenDesc:
