@@ -3,6 +3,7 @@ export type { ProjectCardProps } from './ui/ProjectCard/types/ProjectCard.types'
 export { cvUrl } from './model/config/project.config'
 export { projects } from './model/data/projects.data'
 export { getProjectById } from './model/utils/getProjectById'
+export { orderProjectMedia } from './model/utils/orderProjectMedia'
 export { skillGroups } from './model/data/skill-groups.data'
 export type {
   Project,

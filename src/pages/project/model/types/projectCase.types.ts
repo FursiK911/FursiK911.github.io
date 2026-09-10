@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import type { ReactNode, TouchEvent } from 'react'
 import type { Project, ProjectMedia, ProjectMetric } from '@/entities/project'
 export type ProjectContentProps = { project: Project }
 export type CaseSectionProps = {
@@ -20,6 +20,21 @@ export type GallerySlideProps = {
   playing: boolean
   onPlay: () => void
   onExpand: () => void
+}
+export type ProjectGalleryFullscreenProps = {
+  opened: boolean
+  media: ProjectMedia
+  title: string
+  index: number
+  total: number
+  playing: boolean
+  reducedMotion: boolean | null
+  onClose: () => void
+  onPlay: () => void
+  onPrevious: () => void
+  onNext: () => void
+  onTouchStart: (event: TouchEvent<HTMLElement>) => void
+  onTouchEnd: (event: TouchEvent<HTMLElement>) => void
 }
 export type ProjectResultsProps = { metrics: ProjectMetric[] }
 export type ProjectIntroProps = ProjectContentProps & { facts: ProjectMetric[] }

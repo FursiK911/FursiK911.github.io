@@ -13,7 +13,7 @@ it('opens a photo in a focused dialog and returns focus after Escape', async () 
   )
   const trigger = screen.getByRole('button', { name: 'View full-screen photo' })
   await user.click(trigger)
-  const dialog = await screen.findByRole('dialog', { name: 'Photo viewer' })
+  const dialog = await screen.findByRole('dialog', { name: 'Media viewer' })
   expect(dialog).toContainElement(
     screen.getByRole('button', { name: 'Close viewer' }),
   )

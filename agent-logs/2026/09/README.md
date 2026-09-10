@@ -1,5 +1,11 @@
 # September 2026
 
+| 2026-09-10 | images, photos, saridu, resize, crop, full-hd, 16:9 | [Normalize SARiDU photos to Full HD 16:9](2026-09-10.md#normalize-saridu-photos-to-full-hd-169) |
+
+| 2026-09-10 | projects, gallery, fullscreen, video, keyboard, touch, accessibility, i18n, testing, graphify | [Fullscreen project media navigation](2026-09-10.md#fullscreen-project-media-navigation) |
+
+| 2026-09-10 | projects, gallery, media, responsive, fullscreen, accessibility, testing, graphify | [Stable project gallery media ordering and viewport](2026-09-10.md#stable-project-gallery-media-ordering-and-viewport) |
+
 | 2026-09-10 | projects, frieze, fgp, react-native, mobile, ar, i18n, testing | [Frieze Viewing Room mobile project](2026-09-10.md#frieze-viewing-room-mobile-project) |
 
 | 2026-09-10 | projects, cards, filters, media, i18n, motion, accessibility, responsive, testing | [Project showcase redesign](2026-09-10.md#project-showcase-redesign) |

@@ -90,6 +90,11 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       },
       {
         type: 'external',
+        label: 'Видео',
+        href: 'https://youtu.be/nnmgHldVKMg',
+      },
+      {
+        type: 'external',
         label: 'Годовой отчёт Росатома · 2023',
         href: 'https://report.rosatom.ru/go/2023/rea_2023.pdf',
       },
@@ -102,9 +107,15 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: 'https://centerofsport.ru/assets/components/phpthumbof/cache/e46073ee9ebdc20962490c2b20a5091c.d09ef5d87d81fea0f852ecde469ac20b.jpg',
+        src: '/images/projects/vr-saridu/man_in_vr.jpg',
+        altKey: 'sariduActuatorMediaManInVr',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/vr-saridu/woman_in_vr.jpg',
         altKey: 'sariduActuatorMediaAtomSkills',
       },
+      { kind: 'youtube', videoId: 'nnmgHldVKMg' },
     ],
     metricsKey: 'sariduActuatorMetrics',
     featured: true,

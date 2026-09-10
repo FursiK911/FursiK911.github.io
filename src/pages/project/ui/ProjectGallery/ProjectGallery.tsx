@@ -1,23 +1,44 @@
-import { Modal } from '@mantine/core'
 import {
   IconChevronLeft,
   IconChevronRight,
   IconPlayerPlay,
 } from '@tabler/icons-react'
 import { motion, useReducedMotion } from 'motion/react'
+import { useRef } from 'react'
 import { useTranslation } from 'react-i18next'
+import { orderProjectMedia } from '@/entities/project'
 import { useProjectGallery } from '../../model/useProjectGallery/useProjectGallery'
 import type { ProjectContentProps } from '../../model/types/projectCase.types'
 import { GallerySlide } from '../GallerySlide/GallerySlide'
 import { GalleryImage } from '../GalleryImage/GalleryImage'
+import { ProjectGalleryFullscreen } from '../ProjectGalleryFullscreen/ProjectGalleryFullscreen'
 import styles from './styles/ProjectGallery.module.css'
 export function ProjectGallery({ project }: ProjectContentProps) {
   const { t } = useTranslation()
   const reduced = useReducedMotion()
-  const media = project.media ?? []
+  const media = orderProjectMedia(project.media ?? [])
   const gallery = useProjectGallery(media.length)
+  const galleryRootRef = useRef<HTMLDivElement>(null)
+  const expandTriggerRef = useRef<HTMLButtonElement | null>(null)
   const current = media[gallery.active]
   const title = t(`projects.${project.titleKey}`)
+  const handleExpand = () => {
+    expandTriggerRef.current = document.activeElement as HTMLButtonElement
+    gallery.setExpanded(true)
+  }
+  const handleClose = () => {
+    gallery.setPlaying(false)
+    gallery.setExpanded(false)
+    requestAnimationFrame(() => {
+      if (expandTriggerRef.current?.isConnected) {
+        expandTriggerRef.current.focus()
+        return
+      }
+      galleryRootRef.current
+        ?.querySelector<HTMLButtonElement>('button[aria-current="true"]')
+        ?.focus()
+    })
+  }
   if (!current)
     return (
       <div className={styles.projectGalleryCover}>
@@ -31,7 +52,7 @@ export function ProjectGallery({ project }: ProjectContentProps) {
       </div>
     )
   return (
-    <div className={styles.projectGalleryGallery}>
+    <div ref={galleryRootRef} className={styles.projectGalleryGallery}>
       <div className={styles.projectGalleryBar}>
         <span>
           {t(
@@ -63,9 +84,9 @@ export function ProjectGallery({ project }: ProjectContentProps) {
           <GallerySlide
             media={current}
             title={title}
-            playing={gallery.playing}
+            playing={gallery.playing && !gallery.expanded}
             onPlay={() => gallery.setPlaying(true)}
-            onExpand={() => gallery.setExpanded(true)}
+            onExpand={handleExpand}
           />
         </motion.div>
         {media.length > 1 && (
@@ -114,30 +135,21 @@ export function ProjectGallery({ project }: ProjectContentProps) {
           </div>
         )}
       </div>
-      <Modal
+      <ProjectGalleryFullscreen
         opened={gallery.expanded}
-        onClose={() => gallery.setExpanded(false)}
-        fullScreen
-        title={t('projectCase.fullscreen')}
-        closeButtonProps={{ 'aria-label': t('projectCase.close') }}
-        trapFocus
-        returnFocus
-        closeOnEscape
-        transitionProps={{ duration: reduced ? 0 : 180 }}
-        classNames={{
-          content: styles.projectGalleryModal,
-          header: styles.projectGalleryModalHeader,
-          body: styles.projectGalleryModalBody,
-        }}
-      >
-        {current.kind === 'image' && (
-          <GalleryImage
-            key={current.src}
-            src={current.src}
-            alt={t(`projects.${current.altKey}`)}
-          />
-        )}
-      </Modal>
+        media={current}
+        title={title}
+        index={gallery.active}
+        total={media.length}
+        playing={gallery.playing}
+        reducedMotion={reduced}
+        onClose={handleClose}
+        onPlay={() => gallery.setPlaying(true)}
+        onPrevious={() => gallery.select(gallery.active - 1)}
+        onNext={() => gallery.select(gallery.active + 1)}
+        onTouchStart={gallery.onTouchStart}
+        onTouchEnd={gallery.onTouchEnd}
+      />
     </div>
   )
 }

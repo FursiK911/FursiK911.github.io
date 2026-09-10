@@ -1,5 +1,11 @@
 # Global Decision Index
 
+| DEC-20260910-08 | Normalize existing SARiDU photos by centered 16:9 cropping and Lanczos resizing to 1920×1080, retaining filenames and JPEG format. | images, photos, saridu, resize, crop, full-hd | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-08) |
+
+| DEC-20260910-07 | Keep fullscreen synchronized with the main project gallery: show arrows and a counter without thumbnails, use a centered 16:9 video poster/player with click-to-load playback, and stop the shared video state on navigation or close. | projects, gallery, fullscreen, video, keyboard, touch, accessibility | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-07) |
+
+| DEC-20260910-06 | Keep project media ordering as a derived video-first view array without mutating source data; use a shared 16:9 stage with `cover` for gallery and thumbnails, and reserve `contain` fullscreen viewing for the full project page. | projects, gallery, media, responsive, fullscreen, accessibility | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-06) |
+
 | DEC-20260910-05 | Represent Frieze Viewing Room only as a mobile application with the user's React Native Developer contribution at FGP; exclude the broader web platform and mixed media. | projects, frieze, fgp, react-native, mobile, content | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-05) |
 
 | DEC-20260910-04 | Present every project as a data-driven card with one of three directions, curated tags, approved preview images only, a localized missing-image icon, direct case links, and reduced-motion-safe preview rotation. | projects, cards, filters, media, motion, accessibility | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-04) |

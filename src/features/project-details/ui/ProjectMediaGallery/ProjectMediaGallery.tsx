@@ -7,6 +7,7 @@ import {
 import { motion, useReducedMotion } from 'motion/react'
 import { useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { orderProjectMedia } from '@/entities/project'
 import type { KeyboardEvent, TouchEvent } from 'react'
 import styles from './styles/ProjectMediaGallery.module.css'
 import type { ProjectMediaGalleryProps } from './types/ProjectMediaGallery.types'
@@ -21,7 +22,7 @@ export function ProjectMediaGallery({
   const [isPlaying, setIsPlaying] = useState(false)
   const [imageFailed, setImageFailed] = useState(false)
   const touchStart = useRef<{ x: number; y: number } | null>(null)
-  const media = project.media ?? []
+  const media = orderProjectMedia(project.media ?? [])
   const activeMedia = media[activeIndex]
   const title = t(`projects.${project.titleKey}`)
 

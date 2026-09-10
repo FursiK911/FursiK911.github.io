@@ -448,6 +448,8 @@ export const resources = {
         ],
         sariduActuatorMediaAtomSkills:
           'Презентация VR-тренажёра САРиДУ на AtomSkills-2023',
+        sariduActuatorMediaManInVr:
+          'Участник демонстрации VR-тренажёра САРиДУ в гарнитуре',
         sariduActuatorMetrics: [
           {
             value: '06.2023',
@@ -1376,6 +1378,8 @@ export const resources = {
         ],
         sariduActuatorMediaAtomSkills:
           'SARiDU VR trainer presented at AtomSkills-2023',
+        sariduActuatorMediaManInVr:
+          'Participant demonstrating the SARiDU VR trainer in a headset',
         sariduActuatorMetrics: [
           { value: '06.2023', label: 'first public presentation · AtomSkills' },
           { value: '2023', label: 'trainer creation project implemented' },
