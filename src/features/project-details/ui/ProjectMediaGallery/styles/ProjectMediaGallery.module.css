@@ -217,7 +217,13 @@
   gap: 8px;
   overflow-x: auto;
   padding: 2px;
-  scrollbar-width: thin;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.projectMediaThumbnails::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
 }
 .projectMediaThumbnail {
   position: relative;

@@ -8,7 +8,7 @@ export const projectCardPresentations: Record<
     direction: 'web',
     teaserKey: 'projects.cardTeasers.mychessWeb',
     tags: ['React', 'TypeScript'],
-    previewImageIndexes: [],
+    previewImageIndexes: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   },
   'mobile-rts': {
     direction: 'games-apps',
@@ -26,7 +26,7 @@ export const projectCardPresentations: Record<
     direction: 'games-apps',
     teaserKey: 'projects.cardTeasers.mychessvr',
     tags: ['Unity', 'VR'],
-    previewImageIndexes: [],
+    previewImageIndexes: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
   },
   'cat-citten': {
     direction: 'web',
@@ -146,6 +146,6 @@ export const projectCardPresentations: Record<
     direction: 'games-apps',
     teaserKey: 'projects.cardTeasers.mychessMobile',
     tags: ['Flutter', 'Mobile'],
-    previewImageIndexes: [],
+    previewImageIndexes: [0, 1, 2, 3, 4],
   },
 }

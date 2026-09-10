@@ -48,14 +48,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
               </span>
             ))}
           </div>
-          <div className={styles.metadata}>
-            <span>{project.company}</span>
-            <time dateTime={project.period.to ?? project.period.from}>
-              {project.period.from} —{' '}
-              {project.period.to ?? t('experience.present')}
-            </time>
-          </div>
-          <p className={styles.action}>{t('projects.view')} ↗</p>
         </div>
       </a>
     </motion.article>

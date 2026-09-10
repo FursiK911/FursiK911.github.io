@@ -257,9 +257,12 @@ export const workExperience: WorkExperience[] = [
         technologies: [
           'Unigine',
           'C#',
-          'SteamVR',
-          'Astra Linux',
-          'HTC VIVE Pro',
+          '.NET 6',
+          'UnigineSharp',
+          'Newtonsoft.Json',
+          'NAudio',
+          'Custom UDP networking',
+          'HTC VIVE',
           'Custom VOIP',
         ],
         projects: [

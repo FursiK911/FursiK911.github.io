@@ -1,15 +1,16 @@
-# Graph Report - .  (2026-09-10)
+# Graph Report - fursik.github.io  (2026-09-10)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 462 files · ~942,066 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1324 nodes · 2100 edges · 156 communities (98 shown, 58 thin omitted)
+- 1375 nodes · 2149 edges · 161 communities (102 shown, 59 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f45737c8`
+- Built from commit: `1d1dd75a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -52,7 +53,7 @@
 - work-experience/index.ts
 - useKonamiCode.ts
 - MetricCounter.tsx
-- ExperienceTimeline
+- ExperienceTimeline.renders-the-complete-career-path-and-future-milestone.test.tsx
 - ExperienceTimeline.cancels-a-pending-refresh-when-the-timeline-unmounts.test.tsx
 - ExperienceTimeline.keeps-the-runner-static-when-reduced-motion-is-requested.test.tsx
 - ExperienceTimeline.rebuilds-the-runner-after-a-desktop-resize-and-preserves-its-progress.test.tsx
@@ -63,7 +64,7 @@
 - Dmitry Fursov — Software Developer
 - package.json
 - HomePage.tsx
-- ExperienceTimeline.localizes-short-timeline-roles-and-the-future-cta-in-russian.test.tsx
+- ExperienceTimeline
 - ExperienceTimelineItem.tsx
 - devDependencies
 - TestProviders.tsx
@@ -71,7 +72,7 @@
 - styles/index.ts
 - UnavailableAction.tsx
 - Persistent project media mock
-- Project Circuit mini-game in Projects
+- 2026-09-10
 - lint-staged
 - AppRouter.tsx
 - IntersectionObserverStub
@@ -83,11 +84,11 @@
 - PrivacyPage.tsx
 - TermsPage.tsx
 - Skills.tsx
+- Project modal width and title typography
+- Education timeline and language terminal
 - Localized experience project details
-- Professionalized SOS COMPUTER course content
-- Fixed responsive Experience runner path
+- Cyan experience project titles
 - Vertically centered Education metadata pairs
-- Centered Education bullets within cards
 - Separated source responsibilities
 - Grouped role folders for source responsibilities
 - Directions.holds-metrics-until-the-section-entrance-completes.test.tsx
@@ -105,18 +106,18 @@
 - 20:01 +03:00 — Standardized cyan resume download buttons
 - 20:24 +03:00 — Rebuilt EXPERIENCE LOG as a data-driven career timeline
 - 20:58 +03:00 — Replaced timeline axis with animated SVG wave
-- eslint-config-prettier
-- @eslint/js
-- eslint-plugin-react-refresh
+- Project preview backlog
+- eslint-plugin-jsx-a11y
 - eslint-plugin-react-hooks
+- eslint-plugin-react-refresh
 - globals
+- gsap
 - husky
 - i18next-browser-languagedetector
 - jsdom
 - lint-staged
 - @mantine/core
 - @mantine/hooks
-- gsap
 - oxlint
 - react
 - react-dom
@@ -136,18 +137,19 @@
 - vitest
 - @vitest/coverage-v8
 - data.contains-21-unique-projects-with-valid-categories.test.ts
+- @eslint/js
 
 ## God Nodes (most connected - your core abstractions)
 1. `2026-08-30` - 41 edges
 2. `Seamless Hero portrait handoff` - 38 edges
-3. `LiveCam()` - 24 edges
-4. `compilerOptions` - 21 edges
-5. `Dynamic live-cam HUD refinement` - 18 edges
-6. `installIntersectionObserverMock()` - 17 edges
-7. `2026-08-27` - 16 edges
-8. `compilerOptions` - 15 edges
-9. `scripts` - 14 edges
-10. `useLoadingSequence()` - 14 edges
+3. `2026-09-10` - 34 edges
+4. `LiveCam()` - 24 edges
+5. `compilerOptions` - 21 edges
+6. `Dynamic live-cam HUD refinement` - 18 edges
+7. `installIntersectionObserverMock()` - 17 edges
+8. `2026-08-27` - 16 edges
+9. `compilerOptions` - 15 edges
+10. `scripts` - 14 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `useLoadingAnimationSpeed()` --indirect_call--> `getLoadingAnimationSpeed()`  [INFERRED]
@@ -164,7 +166,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (156 total, 58 thin omitted)
+## Communities (161 total, 59 thin omitted)
 
 ### Community 0 - "loading/index.ts"
 Cohesion: 0.06
@@ -200,7 +202,7 @@ Nodes (38): 2026-09-07 20:42 +03:00, 2026-09-07 21:21 +03:00, 2026-09-07 21:55 +
 
 ### Community 8 - "2026-09-02.md"
 Cohesion: 0.06
-Nodes (30): 2026-09-02 12:58 +03:00, 2026-09-02 15:32 +03:00, 2026-09-02 15:54 +03:00, 2026-09-02 16:07 +03:00, 2026-09-02 16:24 +03:00, 2026-09-02 16:37 +03:00, 2026-09-02 17:31 +03:00, 2026-09-02 20:36 +03:00 (+22 more)
+Nodes (33): 2026-09-02 12:58 +03:00, 2026-09-02 15:54 +03:00, 2026-09-02 16:07 +03:00, 2026-09-02 16:24 +03:00, 2026-09-02 16:37 +03:00, 2026-09-02 17:56 +03:00, 2026-09-02 20:36 +03:00, 2026-09-02 21:10 +03:00 (+25 more)
 
 ### Community 9 - "usePortraitGlitch.ts"
 Cohesion: 0.12
@@ -215,19 +217,19 @@ Cohesion: 0.07
 Nodes (27): DOM, src, vite/client, vitest/globals, compilerOptions, allowArbitraryExtensions, allowImportingTsExtensions, baseUrl (+19 more)
 
 ### Community 12 - "Dynamic live-cam HUD refinement"
-Cohesion: 0.09
-Nodes (22): 2026-09-08 00:20 +03:00, 2026-09-08 03:05 +03:00, 2026-09-08 23:18 +03:00, 2026-09-08 23:49 +03:00, 2026-09-08 23:58 +03:00, Decision DEC-20260908-03, Decision DEC-20260908-05, Decision DEC-20260908-08 (+14 more)
+Cohesion: 0.11
+Nodes (18): 2026-09-08 00:20 +03:00, 2026-09-08 03:05 +03:00, 2026-09-08 23:18 +03:00, Decision DEC-20260908-03, Decision DEC-20260908-05, Decision DEC-20260908-08, Decision DEC-20260908-09, Directions hover and icon motion correction (+10 more)
 
 ### Community 13 - "2026-09-09.md"
-Cohesion: 0.09
-Nodes (21): 2026-09-09 14:27 +03:00, 2026-09-09 18:24 +03:00, 2026-09-09 21:03 +03:00, 2026-09-09 21:46 +03:00, 2026-09-09 21:55 +03:00, 2026-09-09 23:20 +03:00, 2026-09-09 23:30 +03:00, Aligned header content rail (+13 more)
+Cohesion: 0.07
+Nodes (27): 2026-09-09 10:00 +03:00, 2026-09-09 14:27 +03:00, 2026-09-09 18:24 +03:00, 2026-09-09 21:03 +03:00, 2026-09-09 21:46 +03:00, 2026-09-09 21:55 +03:00, 2026-09-09 22:52 +03:00, 2026-09-09 23:01 +03:00 (+19 more)
 
 ### Community 14 - "2026-08-31"
 Cohesion: 0.10
 Nodes (21): 19:44 +03:00 — Switched timeline runner to GSAP MotionPathPlugin, 19:59 +03:00 — Matched Hero portrait with the Glitch.js BROKEN HOLO demo, 2026-08-31, 20:09 +03:00 — Unified the Experience timeline scene geometry, 20:29 +03:00 — Added randomized short Glitch.js bursts, 20:32 +03:00 — Anchored evenly spaced Experience milestones to the SVG wave, 20:55 +03:00 — Introduced shared action components, 21:05 +03:00 — Added persistent hologram with burst-only distortions (+13 more)
 
 ### Community 15 - "agent-logs/README.md"
-Cohesion: 0.21
+Cohesion: 0.20
 Nodes (5): August 2026, 2026-09-05 01:07 +03:00, Adaptive project modal height, September 2026, Global Decision Index
 
 ### Community 16 - "compilerOptions"
@@ -263,8 +265,8 @@ Cohesion: 0.12
 Nodes (16): 01:50 +03:00 — [remote] Confirm the private GitHub destination, 01:55 +03:00 — [ci] Keep Pages deployment manual for the private repository, 02:24 +03:00 — [portfolio] Implement the Dmitry Fursov portfolio, 02:30 +03:00 — [verification] Complete the portfolio quality gate, 14:23 +03:00 — [governance] Add the grilling skill to project agent rules, 14:30 +03:00 — [refactor] Split monolithic React components, 14:54 +03:00 — [tooling] Configure Mantine Codex integration, 15:49 +03:00 — [mantine] Adopt Mantine selectively for interactive behavior (+8 more)
 
 ### Community 24 - "2026-09-08.md"
-Cohesion: 0.12
-Nodes (15): 2026-09-08 02:12 +03:00, 2026-09-08 02:19 +03:00, 2026-09-08 15:37 +03:00, 2026-09-08 22:50 +03:00, 2026-09-08 23:06 +03:00, Centered slow LiveCam terminal, Chudobooks project content, Decision DEC-20260908-02 (+7 more)
+Cohesion: 0.10
+Nodes (20): 2026-09-08 02:12 +03:00, 2026-09-08 02:19 +03:00, 2026-09-08 15:37 +03:00, 2026-09-08 22:50 +03:00, 2026-09-08 23:06 +03:00, 2026-09-08 23:49 +03:00, 2026-09-08 23:58 +03:00, Centered slow LiveCam terminal (+12 more)
 
 ### Community 25 - "2026-09-01"
 Cohesion: 0.14
@@ -310,9 +312,9 @@ Nodes (5): workExperience, ExperienceProject, ExperienceRolePhase, WorkExperienc
 Cohesion: 0.39
 Nodes (3): KONAMI_CODE, useKonamiCode(), KonamiDebug()
 
-### Community 38 - "ExperienceTimeline"
-Cohesion: 0.22
-Nodes (5): ExperienceTimeline(), animationFrames, { gsapSet, gsapTo, runnerTweens }, resizeDisconnect, resizeObserve
+### Community 38 - "ExperienceTimeline.renders-the-complete-career-path-and-future-milestone.test.tsx"
+Cohesion: 0.25
+Nodes (4): animationFrames, { gsapSet, gsapTo, runnerTweens }, resizeDisconnect, resizeObserve
 
 ### Community 39 - "ExperienceTimeline.cancels-a-pending-refresh-when-the-timeline-unmounts.test.tsx"
 Cohesion: 0.22
@@ -354,9 +356,9 @@ Nodes (7): engines, node, npm, name, private, type, version
 Cohesion: 0.39
 Nodes (3): sectionIds, useActiveSection(), App()
 
-### Community 49 - "ExperienceTimeline.localizes-short-timeline-roles-and-the-future-cta-in-russian.test.tsx"
-Cohesion: 0.25
-Nodes (4): animationFrames, { gsapSet, gsapTo, runnerTweens }, resizeDisconnect, resizeObserve
+### Community 49 - "ExperienceTimeline"
+Cohesion: 0.22
+Nodes (5): ExperienceTimeline(), animationFrames, { gsapSet, gsapTo, runnerTweens }, resizeDisconnect, resizeObserve
 
 ### Community 50 - "ExperienceTimelineItem.tsx"
 Cohesion: 0.43
@@ -364,7 +366,7 @@ Nodes (3): ExperienceTimelineItem(), ExperienceTimelineItemProps, getCompanyInit
 
 ### Community 51 - "devDependencies"
 Cohesion: 0.29
-Nodes (7): eslint, eslint-plugin-jsx-a11y, devDependencies, eslint, eslint-plugin-jsx-a11y, @testing-library/user-event, @testing-library/user-event
+Nodes (7): eslint, eslint-config-prettier, devDependencies, eslint, eslint-config-prettier, @testing-library/user-event, @testing-library/user-event
 
 ### Community 52 - "TestProviders.tsx"
 Cohesion: 0.48
@@ -382,9 +384,9 @@ Nodes (3): styles, className(), cx()
 Cohesion: 0.40
 Nodes (5): 18:58 +03:00 — [feature] Transfer the loader portrait into the Hero scene, 2026-09-06 18:40 +03:00, Decision DEC-20260906-01, Decision DEC-20260906-02, Persistent project media mock
 
-### Community 57 - "Project Circuit mini-game in Projects"
-Cohesion: 0.40
-Nodes (5): 2026-09-09 22:52 +03:00, 2026-09-09 23:01 +03:00, Decision DEC-20260909-07, Decision DEC-20260909-08, Project Circuit mini-game in Projects
+### Community 57 - "2026-09-10"
+Cohesion: 0.06
+Nodes (35): 2026-09-10, 2026-09-10 00:00 +03:00, Decision DEC-20260910-01, Decision DEC-20260910-01, Decision DEC-20260910-02, Decision DEC-20260910-03, Decision DEC-20260910-04, Decision DEC-20260910-05 (+27 more)
 
 ### Community 58 - "lint-staged"
 Cohesion: 0.40
@@ -394,25 +396,25 @@ Nodes (5): lint-staged, *.{json,md,yml,yaml,css,html}, *.{ts,tsx,js,jsx}, eslint
 Cohesion: 0.50
 Nodes (4): AI Agent Change Log Index, Browse by decision, Browse by period, Latest entries
 
-### Community 69 - "Localized experience project details"
+### Community 69 - "Project modal width and title typography"
+Cohesion: 0.40
+Nodes (5): 2026-09-09 23:30 +03:00, 2026-09-09 23:40 +03:00, Decision DEC-20260909-10, Decision DEC-20260909-11, Project modal width and title typography
+
+### Community 70 - "Education timeline and language terminal"
+Cohesion: 0.67
+Nodes (3): 2026-09-02 15:32 +03:00, Decision DEC-20260902-06, Education timeline and language terminal
+
+### Community 71 - "Localized experience project details"
 Cohesion: 0.67
 Nodes (3): 2026-09-02 17:28 +03:00, Decision DEC-20260902-11, Localized experience project details
 
-### Community 70 - "Professionalized SOS COMPUTER course content"
+### Community 72 - "Cyan experience project titles"
 Cohesion: 0.67
-Nodes (3): 2026-09-02 17:56 +03:00, Decision DEC-20260902-13, Professionalized SOS COMPUTER course content
+Nodes (3): 2026-09-02 17:31 +03:00, Cyan experience project titles, Decision DEC-20260902-12
 
-### Community 71 - "Fixed responsive Experience runner path"
-Cohesion: 0.67
-Nodes (3): 2026-09-02 21:10 +03:00, Decision DEC-20260902-15, Fixed responsive Experience runner path
-
-### Community 72 - "Vertically centered Education metadata pairs"
+### Community 73 - "Vertically centered Education metadata pairs"
 Cohesion: 0.67
 Nodes (3): 2026-09-02 21:38 +03:00, Decision DEC-20260902-16, Vertically centered Education metadata pairs
-
-### Community 73 - "Centered Education bullets within cards"
-Cohesion: 0.67
-Nodes (3): 2026-09-02 21:52 +03:00, Centered Education bullets within cards, Decision DEC-20260902-18
 
 ### Community 74 - "Separated source responsibilities"
 Cohesion: 0.67
@@ -423,24 +425,24 @@ Cohesion: 0.67
 Nodes (3): 2026-09-03 01:07 +03:00, Decision DEC-20260903-02, Grouped role folders for source responsibilities
 
 ## Knowledge Gaps
-- **396 isolated node(s):** `name`, `private`, `version`, `type`, `node` (+391 more)
+- **436 isolated node(s):** `name`, `private`, `version`, `type`, `node` (+431 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **58 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **59 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `2026-08-30` connect `2026-08-30` to `00:06 +03:00 — Configuration-driven loader speed controls`, `01:28 +03:00 — Added intermittent cyberpunk portrait glitch`, `01:40 +03:00 — Made portrait glitch visibly readable`, `01:49 +03:00 — Stabilized the portrait base layer`, `agent-logs/README.md`, `02:01 +03:00 — Replaced slices with bounded corruption blocks`, `02:03 +03:00 — Verified block-only portrait corruption`, `02:27 +03:00 — Switched to a cellular data-corruption glitch`, `16:06 +03:00 — Replaced cellular portrait glitch with Glitch.js`, `16:31 +03:00 — Switched portrait glitch to continuous demo mode`, `19:46 +03:00 — Added localized resume link to header`, `20:24 +03:00 — Rebuilt EXPERIENCE LOG as a data-driven career timeline`, `20:58 +03:00 — Replaced timeline axis with animated SVG wave`, `20:01 +03:00 — Standardized cyan resume download buttons`?**
-  _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **Why does `Seamless Hero portrait handoff` connect `Seamless Hero portrait handoff` to `agent-logs/README.md`?**
-  _High betweenness centrality (0.012) - this node is a cross-community bridge._
-- **Why does `devDependencies` connect `devDependencies` to `package.json`, `eslint-config-prettier`, `@eslint/js`, `eslint-plugin-react-refresh`, `eslint-plugin-react-hooks`, `globals`, `husky`, `jsdom`, `lint-staged`, `oxlint`, `prettier`, `@testing-library/jest-dom`, `@testing-library/react`, `@types/node`, `@types/react`, `@types/react-dom`, `@types/three`, `typescript`, `typescript-eslint`, `vite`, `@vitejs/plugin-react`, `vitest`, `@vitest/coverage-v8`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
+- **Why does `2026-09-10` connect `2026-09-10` to `agent-logs/README.md`?**
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
+- **Why does `2026-08-30` connect `2026-08-30` to `00:06 +03:00 — Configuration-driven loader speed controls`, `01:28 +03:00 — Added intermittent cyberpunk portrait glitch`, `01:40 +03:00 — Made portrait glitch visibly readable`, `01:49 +03:00 — Stabilized the portrait base layer`, `agent-logs/README.md`, `02:01 +03:00 — Replaced slices with bounded corruption blocks`, `02:03 +03:00 — Verified block-only portrait corruption`, `02:27 +03:00 — Switched to a cellular data-corruption glitch`, `16:06 +03:00 — Replaced cellular portrait glitch with Glitch.js`, `16:31 +03:00 — Switched portrait glitch to continuous demo mode`, `19:46 +03:00 — Added localized resume link to header`, `20:24 +03:00 — Rebuilt EXPERIENCE LOG as a data-driven career timeline`, `20:58 +03:00 — Replaced timeline axis with animated SVG wave`, `20:01 +03:00 — Standardized cyan resume download buttons`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _396 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _436 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `loading/index.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.06327006327006326 - nodes in this community are weakly interconnected._
 - **Should `ProjectPage.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.06057945566286216 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.061018437225636525 - nodes in this community are weakly interconnected._
 - **Should `LiveCam.tsx` be split into smaller, more focused modules?**
   _Cohesion score 0.08065268065268065 - nodes in this community are weakly interconnected._

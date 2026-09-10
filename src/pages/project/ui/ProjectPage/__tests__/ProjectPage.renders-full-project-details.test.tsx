@@ -18,6 +18,10 @@ it('renders the full project details and external actions', async () => {
   ).toBeInTheDocument()
   expect(screen.getByText('Technology stack')).toBeInTheDocument()
   expect(screen.getByText('Project contribution')).toBeInTheDocument()
+  expect(screen.getByText('Key contributions')).toBeInTheDocument()
+  expect(
+    screen.queryByText('The work I was responsible for'),
+  ).not.toBeInTheDocument()
   expect(screen.getByRole('button', { name: /OPEN LIVE DEMO/i })).toBeDisabled()
   expect(screen.getByRole('link', { name: /YouTube/i })).toHaveAttribute(
     'href',

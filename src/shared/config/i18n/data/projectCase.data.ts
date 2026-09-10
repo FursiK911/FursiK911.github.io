@@ -21,7 +21,7 @@ export const projectCaseCopy = {
     select: 'Открыть медиа {{index}}',
     position: '{{current}} из {{total}}',
     fullscreen: 'Просмотр медиа',
-    contributionNote: 'Задачи, за которые я отвечал',
+    contributionNote: 'Ключевой вклад',
     stackNote: 'Технологии, с которыми построен проект',
   },
   en: {
@@ -46,7 +46,7 @@ export const projectCaseCopy = {
     select: 'Open media {{index}}',
     position: '{{current}} of {{total}}',
     fullscreen: 'Media viewer',
-    contributionNote: 'The work I was responsible for',
+    contributionNote: 'Key contributions',
     stackNote: 'Technologies behind the project',
   },
 }

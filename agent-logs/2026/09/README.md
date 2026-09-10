@@ -1,5 +1,17 @@
 # September 2026
 
+| 2026-09-10 | projects, mychess, media, webp, homepage, i18n, testing, graphify | [MyChess galleries and homepage previews](2026-09-10.md#mychess-galleries-and-homepage-previews) |
+
+| 2026-09-10 | projects, gallery, responsive, accessibility, css, testing | [Hidden project gallery scrollbars](2026-09-10.md#hidden-project-gallery-scrollbars) |
+
+| 2026-09-10 | projects, mychessvr, youtube, images, webp, media, i18n, testing | [MyChessVR gallery media](2026-09-10.md#mychessvr-gallery-media) |
+
+| 2026-09-10 | projects, mychess, mobile, metrics, i18n, testing | [MyChess platform statistics](2026-09-10.md#mychess-platform-statistics) |
+
+| 2026-09-10 | projects, images, webp, local-assets, testing | [Local project image assets](2026-09-10.md#local-project-image-assets) |
+
+| 2026-09-10 | projects, cards, layout, responsive, testing | [Project card context simplification](2026-09-10.md#project-card-context-simplification) |
+
 | 2026-09-10 | images, photos, saridu, resize, crop, full-hd, 16:9 | [Normalize SARiDU photos to Full HD 16:9](2026-09-10.md#normalize-saridu-photos-to-full-hd-169) |
 
 | 2026-09-10 | projects, gallery, fullscreen, video, keyboard, touch, accessibility, i18n, testing, graphify | [Fullscreen project media navigation](2026-09-10.md#fullscreen-project-media-navigation) |

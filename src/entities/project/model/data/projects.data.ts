@@ -48,7 +48,74 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
         href: 'https://www.youtube.com/watch?v=t-PDCpjdJvs',
       },
     ],
-    media: [{ kind: 'youtube', videoId: 't-PDCpjdJvs' }],
+    media: [
+      { kind: 'youtube', videoId: 't-PDCpjdJvs' },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-web/all-versus-one.webp',
+        altKey: 'mychessWebMediaAllVersusOne',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-web/analysis.webp',
+        altKey: 'mychessWebMediaAnalysis',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-web/authorization.webp',
+        altKey: 'mychessWebMediaAuthorization',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-web/champions.webp',
+        altKey: 'mychessWebMediaChampions',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-web/logo.webp',
+        altKey: 'mychessWebMediaLogo',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-web/messages.webp',
+        altKey: 'mychessWebMediaMessages',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-web/notifications.webp',
+        altKey: 'mychessWebMediaNotifications',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-web/observer-tournament.webp',
+        altKey: 'mychessWebMediaObserverTournament',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-web/profile.webp',
+        altKey: 'mychessWebMediaProfile',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-web/puzzles.webp',
+        altKey: 'mychessWebMediaPuzzles',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-web/puzzles-2.webp',
+        altKey: 'mychessWebMediaPuzzles2',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-web/select-game.webp',
+        altKey: 'mychessWebMediaSelectGame',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-web/tournament.webp',
+        altKey: 'mychessWebMediaTournament',
+      },
+    ],
     metricsKey: 'mychessMetrics',
     featured: true,
   },
@@ -68,17 +135,21 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
   {
     id: 'saridu-actuator',
     titleKey: 'sariduActuator',
-    category: ['xr-ar'],
-    platformKey: 'platformVr',
+    category: ['unigine', 'xr-ar', 'multiplayer'],
+    platformKey: 'platformVive',
     roleKey: 'middleVr',
     descriptionKey: 'sariduActuatorDesc',
     pointsKey: 'sariduActuatorPoints',
     tech: [
-      'Virtual Reality (VR)',
-      '3D computer environment',
-      'Procedural checks',
-      'Electrical safety checks',
-      'Operation timing',
+      'Unigine',
+      'C#',
+      '.NET 6',
+      'UnigineSharp',
+      'Newtonsoft.Json',
+      'NAudio',
+      'Custom UDP networking',
+      'Custom VOIP',
+      'HTC VIVE',
     ],
     company: 'IT Tab',
     period: { from: '04.2023', to: '09.2023' },
@@ -143,6 +214,59 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
         type: 'download',
         label: 'Steam',
         href: 'https://store.steampowered.com/app/3468250/myChess_VR',
+      },
+    ],
+    media: [
+      { kind: 'youtube', videoId: 'Q8PqTr5Yfvw' },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-vr/chess_puzzles.webp',
+        altKey: 'mychessvrMediaChessPuzzles',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-vr/gameplay1.webp',
+        altKey: 'mychessvrMediaGameplay1',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-vr/gameplay2.webp',
+        altKey: 'mychessvrMediaGameplay2',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-vr/gameplay3.webp',
+        altKey: 'mychessvrMediaGameplay3',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-vr/gameplay4.webp',
+        altKey: 'mychessvrMediaGameplay4',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-vr/gameplay5.webp',
+        altKey: 'mychessvrMediaGameplay5',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-vr/location_cafe.webp',
+        altKey: 'mychessvrMediaLocationCafe',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-vr/location_library.webp',
+        altKey: 'mychessvrMediaLocationLibrary',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-vr/location_park.webp',
+        altKey: 'mychessvrMediaLocationPark',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-vr/stockfish_analysis.webp',
+        altKey: 'mychessvrMediaStockfishAnalysis',
       },
     ],
     featured: true,
@@ -263,12 +387,12 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: 'https://mb.cision.com/Public/21587/3627270/bbd6eff72bf4be44_org.jpg',
+        src: '/images/projects/neo4-sightline/neo4-sightline-celsius.webp',
         altKey: 'neo4SightlineMediaCelsius',
       },
       {
         kind: 'image',
-        src: 'https://media.licdn.com/dms/image/v2/C4D12AQGYpgP3WRC16w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1600002841521?e=2147483647&t=BROb2YEVr0_IoetFtJUrHeJHWUU76r352aGRjGRAHCM&v=beta',
+        src: '/images/projects/neo4-sightline/neo4-sightline-sightline.webp',
         altKey: 'neo4SightlineMediaSightline',
       },
     ],
@@ -341,27 +465,27 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: 'https://servreality.com/case-studies/vulcan-verse/vulcan-verse.webp',
+        src: '/images/projects/vulkan-verse/vulkan-verse-city.webp',
         altKey: 'vulkanVerseMediaCity',
       },
       {
         kind: 'image',
-        src: 'https://servreality.com/case-studies/vulcan-verse/vulcan-verse-9.webp',
+        src: '/images/projects/vulkan-verse/vulkan-verse-shrine.webp',
         altKey: 'vulkanVerseMediaShrine',
       },
       {
         kind: 'image',
-        src: 'https://servreality.com/case-studies/vulcan-verse/vulcan-verse-4.webp',
+        src: '/images/projects/vulkan-verse/vulkan-verse-world.webp',
         altKey: 'vulkanVerseMediaWorld',
       },
       {
         kind: 'image',
-        src: 'https://servreality.com/case-studies/vulcan-verse/vulcan-verse-5.webp',
+        src: '/images/projects/vulkan-verse/vulkan-verse-temple.webp',
         altKey: 'vulkanVerseMediaTemple',
       },
       {
         kind: 'image',
-        src: 'https://servreality.com/case-studies/vulcan-verse/vulcan-verse-8.webp',
+        src: '/images/projects/vulkan-verse/vulkan-verse-notus.webp',
         altKey: 'vulkanVerseMediaNotus',
       },
       { kind: 'youtube', videoId: 'VYT8kBTMOf0' },
@@ -419,37 +543,37 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       { kind: 'youtube', videoId: 'iXrNLl6rpXI', startSeconds: 483 },
       {
         kind: 'image',
-        src: 'https://cdn3.appshunter.io/i/PurpleSource125/594903702a9ce9b10cb820083e6715c8/663c8550-78c1-43ac-9f63-b4ac328b687b_Unknown.jpg/643x0w.webp',
+        src: '/images/projects/earth-dragons/earth-dragons-splash.webp',
         altKey: 'earthDragonsMediaSplash',
       },
       {
         kind: 'image',
-        src: 'https://cdn3.appshunter.io/i/PurpleSource125/9e441f0447458e3c1b9d81667e4cdddc/bfc640dc-e8cf-4492-88b0-385d4bce1a5f_photo_2021-04-29_01-31-37.jpg/643x0w.webp',
+        src: '/images/projects/earth-dragons/earth-dragons-collection.webp',
         altKey: 'earthDragonsMediaCollection',
       },
       {
         kind: 'image',
-        src: 'https://cdn3.appshunter.io/i/PurpleSource125/ec1566a5c829abb537bad810984712e8/22415326-fab5-41e5-a7b2-76ec915ede30_photo_2021-04-29_01-31-50.jpg/643x0w.webp',
+        src: '/images/projects/earth-dragons/earth-dragons-dragon.webp',
         altKey: 'earthDragonsMediaDragon',
       },
       {
         kind: 'image',
-        src: 'https://cdn3.appshunter.io/i/PurpleSource125/a16893c23ada691f3314b50c07635d8a/a3f29dfe-17b8-4d8b-b0d9-2dffd3ce9235_photo_2021-04-29_01-32-00.jpg/643x0w.webp',
+        src: '/images/projects/earth-dragons/earth-dragons-runner.webp',
         altKey: 'earthDragonsMediaRunner',
       },
       {
         kind: 'image',
-        src: 'https://cdn3.appshunter.io/i/PurpleSource125/1e3a1946c5b00caab173729823fb2274/70b5074e-9a5f-470d-b45e-6c3c8c3f5886_photo_2021-04-29_01-31-47.jpg/643x0w.webp',
+        src: '/images/projects/earth-dragons/earth-dragons-die.webp',
         altKey: 'earthDragonsMediaDie',
       },
       {
         kind: 'image',
-        src: 'https://img3.zakaz.ua/upload.version_1.0.93f0b32d162e72c3a16b84159a5bace3.350x350.jpeg',
+        src: '/images/projects/earth-dragons/earth-dragons-physical-set.webp',
         altKey: 'earthDragonsMediaPhysicalSet',
       },
       {
         kind: 'image',
-        src: 'https://promoter.in.ua/wp-content/uploads/2021/05/zemlya-drakonov_auchan_free_works_if_ua.jpg',
+        src: '/images/projects/earth-dragons/earth-dragons-poster.webp',
         altKey: 'earthDragonsMediaPoster',
       },
     ],
@@ -486,12 +610,12 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: 'https://image-eo.winudf.com/v2/image1/Y29tLmFsZWZ2aW5hbC5hcHB2aWxsYWtyaW1faWNvbl8xNTk3NzUxMTgwXzAzMQ/icon.webp?fakeurl=1&type=.webp&w=512',
+        src: '/images/projects/villa-krim/virtual-sommelier-villa-krim-ru.webp',
         altKey: 'virtualSommelierVillaKrimMediaRu',
       },
       {
         kind: 'image',
-        src: 'https://image-eo.winudf.com/v2/image1/Y29tLnZpbGxha3JpbS5WaWxsYUtyaW1faWNvbl8xNTk3MTY5MjM3XzA2Mg/icon.webp?fakeurl=1&type=.webp&w=512',
+        src: '/images/projects/villa-krim/virtual-sommelier-villa-krim-ua.webp',
         altKey: 'virtualSommelierVillaKrimMediaUa',
       },
     ],
@@ -528,12 +652,12 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: 'https://24tv.ua/resources/photos/news/202005/1347926.jpg',
+        src: '/images/projects/authors-wine-villa-krim/authors-wine-villa-krim-campaign.webp',
         altKey: 'authorsWineVillaKrimMediaCampaign',
       },
       {
         kind: 'image',
-        src: 'https://image-eo.winudf.com/v2/image1/Y29tLmFsZWZ2aW5hbC5hcHBhdXRob3Jzd2luZV9pY29uXzE2MDQyMTgzNjBfMDcx/icon.webp?fakeurl=1&type=.webp&w=512',
+        src: '/images/projects/authors-wine-villa-krim/authors-wine-villa-krim-app.webp',
         altKey: 'authorsWineVillaKrimMediaApp',
       },
     ],
@@ -577,17 +701,17 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/5f/5c/ca/5f5cca75-e695-8e40-f53b-d835b01a60eb/c798994d-07d4-44bf-b5c4-b8c762777826_Screen_2048x2732_12.02.2023_18.18.51.png/576x768bb.png',
+        src: '/images/projects/ar-coloring/ar-coloring-home.webp',
         altKey: 'arColoringMediaHome',
       },
       {
         kind: 'image',
-        src: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/06/3d/68/063d684a-f34d-d805-c2e9-c39ef3f0a46c/3a5b39db-051b-47be-a61c-b8d71dfbf34b_Screen_2048x2732_12.02.2023_18.20.00.png/576x768bb.png',
+        src: '/images/projects/ar-coloring/ar-coloring-themes.webp',
         altKey: 'arColoringMediaThemes',
       },
       {
         kind: 'image',
-        src: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/3f/46/71/3f46717a-51dc-8cdb-6f49-cf3093286de9/8b25940e-f916-4d96-93c4-70e8d57c4b42_Screen_2048x2732_12.02.2023_18.20.07.png/576x768bb.png',
+        src: '/images/projects/ar-coloring/ar-coloring-animals.webp',
         altKey: 'arColoringMediaAnimals',
       },
     ],
@@ -666,17 +790,17 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       { kind: 'youtube', videoId: '2r2FjaOVyII' },
       {
         kind: 'image',
-        src: 'https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/db/30/23/db302333-2af3-57e8-b7d1-bd35fab779a8/pr_source.jpg/392x696bb.jpg',
+        src: '/images/projects/ar-chudaboxes/ar-chudaboxes-one.webp',
         altKey: 'arChudaboxesMediaOne',
       },
       {
         kind: 'image',
-        src: 'https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/d8/e6/8e/d8e68ee6-4c1d-aeaf-6489-540e3ed7715f/pr_source.jpg/392x696bb.jpg',
+        src: '/images/projects/ar-chudaboxes/ar-chudaboxes-two.webp',
         altKey: 'arChudaboxesMediaTwo',
       },
       {
         kind: 'image',
-        src: 'https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/e1/98/29/e19829d3-52c6-6e85-2fcc-2658a209065d/pr_source.jpg/392x696bb.jpg',
+        src: '/images/projects/ar-chudaboxes/ar-chudaboxes-three.webp',
         altKey: 'arChudaboxesMediaThree',
       },
     ],
@@ -733,6 +857,33 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
         label: 'Website',
         href: 'https://mychess.app/',
         unavailableReasonKey: 'projects.unavailableActions.mychessWebsite',
+      },
+    ],
+    media: [
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-mobile/mychess-1.webp',
+        altKey: 'mychessMobileMedia1',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-mobile/mychess-2.webp',
+        altKey: 'mychessMobileMedia2',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-mobile/mychess-3.webp',
+        altKey: 'mychessMobileMedia3',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-mobile/mychess-4.webp',
+        altKey: 'mychessMobileMedia4',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/my-chess-mobile/mychess-5.webp',
+        altKey: 'mychessMobileMedia5',
       },
     ],
     metricsKey: 'mychessMobileMetrics',

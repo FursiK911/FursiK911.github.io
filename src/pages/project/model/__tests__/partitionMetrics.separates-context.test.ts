@@ -4,12 +4,13 @@ it('keeps client context outside achievements and avoids duplicating stack and p
     value: String(index),
     label: String(index),
   }))
+  const mychessValues = values.slice(0, 3)
   expect(partitionMetrics('neo4SightlineMetrics', values)).toEqual({
     achievements: [],
     facts: values,
   })
   expect(partitionMetrics('mychessMobileMetrics', values)).toEqual({
-    achievements: values.slice(2),
+    achievements: mychessValues,
     facts: [],
   })
   expect(partitionMetrics(undefined, [])).toEqual({

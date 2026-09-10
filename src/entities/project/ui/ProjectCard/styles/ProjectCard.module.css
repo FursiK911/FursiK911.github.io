@@ -24,6 +24,7 @@
   width: 18px;
   height: 18px;
   content: '';
+  color: var(--cyan);
   border-color: var(--cyan);
   opacity: 0;
   transition: opacity 180ms ease;
@@ -85,27 +86,6 @@
   border: 1px solid rgba(167, 243, 246, 0.28);
   font: 0.62rem var(--mono);
   letter-spacing: 0.04em;
-}
-.metadata {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  margin-top: auto;
-  padding-top: 20px;
-  color: var(--muted);
-  font: 0.62rem var(--mono);
-  letter-spacing: 0.04em;
-}
-.metadata time {
-  color: var(--cyan);
-  white-space: nowrap;
-}
-.action {
-  margin: 18px 0 0;
-  color: var(--cyan);
-  font: 0.66rem var(--mono);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 @media (max-width: 700px) {
   .content {
