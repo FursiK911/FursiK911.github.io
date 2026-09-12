@@ -1,16 +1,16 @@
 # Graph Report - fursik.github.io  (2026-09-12)
 
 ## Corpus Check
-- 473 files · ~1,050,255 words
+- 474 files · ~1,906,041 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1427 nodes · 2208 edges · 166 communities (105 shown, 61 thin omitted)
+- 1430 nodes · 2210 edges · 167 communities (106 shown, 61 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `afe8485d`
+- Built from commit: `e07f1af8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -88,7 +88,7 @@
 - TermsPage.tsx
 - Skills.tsx
 - Centered Education cards around Timeline bullets
-- eslint-config-prettier
+- @eslint/js
 - Completed final Education Timeline axis segment
 - Separated source responsibilities
 - Grouped role folders for source responsibilities
@@ -111,6 +111,7 @@
 - Key contribution label
 - Hero desktop edge alignment
 - Profile section top padding
+- @mantine/hooks
 - eslint-plugin-jsx-a11y
 - eslint-plugin-react-hooks
 - eslint-plugin-react-refresh
@@ -121,7 +122,6 @@
 - jsdom
 - lint-staged
 - @mantine/core
-- motion
 - oxlint
 - react
 - react-dom
@@ -148,9 +148,9 @@
 3. `Seamless Hero portrait handoff` - 38 edges
 4. `LiveCam()` - 24 edges
 5. `compilerOptions` - 21 edges
-6. `Dynamic live-cam HUD refinement` - 18 edges
-7. `installIntersectionObserverMock()` - 17 edges
-8. `2026-09-12` - 17 edges
+6. `2026-09-12` - 19 edges
+7. `Dynamic live-cam HUD refinement` - 18 edges
+8. `installIntersectionObserverMock()` - 17 edges
 9. `2026-08-27` - 16 edges
 10. `compilerOptions` - 15 edges
 
@@ -169,7 +169,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (166 total, 61 thin omitted)
+## Communities (167 total, 61 thin omitted)
 
 ### Community 0 - "loading/index.ts"
 Cohesion: 0.06
@@ -261,7 +261,7 @@ Nodes (5): Education(), EducationTimeline(), EducationCopy, getYear(), toIsoDate
 
 ### Community 22 - "dependencies"
 Cohesion: 0.12
-Nodes (17): face-api.js, @fontsource-variable/unbounded, i18next, @isonimus/glitch-js, @mantine/hooks, @number-flow/react, dependencies, face-api.js (+9 more)
+Nodes (17): face-api.js, @fontsource-variable/unbounded, i18next, @isonimus/glitch-js, motion, @number-flow/react, dependencies, face-api.js (+9 more)
 
 ### Community 23 - "experience/index.ts"
 Cohesion: 0.24
@@ -376,8 +376,8 @@ Cohesion: 0.43
 Nodes (3): ExperienceTimelineItem(), ExperienceTimelineItemProps, getCompanyInitials()
 
 ### Community 52 - "2026-09-12"
-Cohesion: 0.12
-Nodes (17): 2026-09-12, Contained project images over blurred backgrounds, Decision DEC-20260912-01, Decision DEC-20260912-02, Decision DEC-20260912-03, Decision DEC-20260912-04, Decision DEC-20260912-05, Decision DEC-20260912-06 (+9 more)
+Cohesion: 0.11
+Nodes (19): 2026-09-12, Contained project images over blurred backgrounds, Decision DEC-20260912-01, Decision DEC-20260912-02, Decision DEC-20260912-03, Decision DEC-20260912-04, Decision DEC-20260912-05, Decision DEC-20260912-06 (+11 more)
 
 ### Community 53 - "MyChess Web — project brief"
 Cohesion: 0.29
@@ -385,7 +385,7 @@ Nodes (6): MyChess Web — project brief, Личный вклад, Медиа и
 
 ### Community 54 - "devDependencies"
 Cohesion: 0.29
-Nodes (7): eslint, @eslint/js, devDependencies, eslint, @eslint/js, @testing-library/user-event, @testing-library/user-event
+Nodes (7): eslint, eslint-config-prettier, devDependencies, eslint, eslint-config-prettier, @testing-library/user-event, @testing-library/user-event
 
 ### Community 55 - "TestProviders.tsx"
 Cohesion: 0.48
@@ -432,7 +432,7 @@ Cohesion: 0.67
 Nodes (3): 2026-09-03 01:07 +03:00, Decision DEC-20260903-02, Grouped role folders for source responsibilities
 
 ## Knowledge Gaps
-- **472 isolated node(s):** `name`, `private`, `version`, `type`, `node` (+467 more)
+- **474 isolated node(s):** `name`, `private`, `version`, `type`, `node` (+469 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **61 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -440,13 +440,13 @@ Nodes (3): 2026-09-03 01:07 +03:00, Decision DEC-20260903-02, Grouped role folde
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `2026-09-10` connect `2026-09-10` to `Hero desktop edge alignment`, `Key contribution label`, `agent-logs/README.md`, `Profile section top padding`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
 - **Why does `2026-08-30` connect `2026-08-30` to `agent-logs/README.md`, `00:06 +03:00 — Configuration-driven loader speed controls`, `01:28 +03:00 — Added intermittent cyberpunk portrait glitch`, `01:40 +03:00 — Made portrait glitch visibly readable`, `01:49 +03:00 — Stabilized the portrait base layer`, `02:01 +03:00 — Replaced slices with bounded corruption blocks`, `02:03 +03:00 — Verified block-only portrait corruption`, `02:27 +03:00 — Switched to a cellular data-corruption glitch`, `16:06 +03:00 — Replaced cellular portrait glitch with Glitch.js`, `16:31 +03:00 — Switched portrait glitch to continuous demo mode`, `19:46 +03:00 — Added localized resume link to header`, `20:01 +03:00 — Standardized cyan resume download buttons`, `20:24 +03:00 — Rebuilt EXPERIENCE LOG as a data-driven career timeline`, `20:58 +03:00 — Replaced timeline axis with animated SVG wave`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **Why does `Seamless Hero portrait handoff` connect `Seamless Hero portrait handoff` to `agent-logs/README.md`?**
   _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _472 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _474 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `loading/index.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.06327006327006326 - nodes in this community are weakly interconnected._
 - **Should `ProjectPage.tsx` be split into smaller, more focused modules?**

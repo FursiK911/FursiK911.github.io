@@ -1,5 +1,27 @@
 # Global Decision Index
 
+| DEC-20260912-13 | Use the approved social-infrastructure wording for MyChess web point six; preserve all other content and VR data. | projects, mychess, frontend, social, i18n | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-13) |
+
+| DEC-20260912-12 | Use competition-scenario wording for the MyChess tournament contribution and preserve all other points and VR data. | projects, mychess, frontend, tournaments, i18n | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-12) |
+
+| DEC-20260912-11 | Keep YouTube before images in the full gallery, but order card/image media as logo, gameplay 1–3, then App Store screenshots 01–08; convert PNGs to quality-85 WebP at original dimensions and retain source PNGs. | projects, earth-dragons, app-store, gameplay, logo, webp, media | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-11) |
+
+| DEC-20260912-07 | Describe the MyChess AI feature as a game mode with AI champions modeled after famous chess players; preserve Mobile and VR data. | projects, mychess, frontend, ai, i18n | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-07) |
+
+| DEC-20260912-06 | Use “Обеспечил” / “Ensured” for the MyChess real-time gameplay contribution point; preserve Mobile and VR data. | projects, mychess, frontend, i18n | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-06) |
+
+| DEC-20260912-05 | Combine chess modes, the in-game rating system, matchmaking and rating leaderboards into one contribution point; preserve Mobile and VR data. | projects, mychess, frontend, i18n | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-05) |
+
+| DEC-20260912-04 | Emphasize stable and convenient real-time gameplay, with the responsive interface as supporting detail; preserve Mobile and VR data. | projects, mychess, frontend, i18n | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-04) |
+
+| DEC-20260912-03 | Use the approved Russian wording for the MyChess web contribution and its English translation; preserve Mobile and VR data. | projects, mychess, frontend, i18n | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-03) |
+
+| DEC-20260912-02 | Describe the MyChess web contribution as complete frontend and layout implementation across desktop and mobile pages; preserve Mobile and VR data. | projects, mychess, frontend, i18n | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-02) |
+
+| DEC-20260912-10 | Use exactly the eight NL App Store screenshots for app ID `1563999015` as ordered local WebP media, remove the seven previously connected project photos, and retain the existing YouTube video. | projects, earth-dragons, app-store, screenshots, webp, media | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-10) |
+
+| DEC-20260912-09 | Store drilling training photos as `screen_1.webp` through `screen_9.webp`, encoded at quality 85 while preserving the PNG originals; display them after the existing YouTube media in numeric screen order. | projects, drilling, vr, screenshots, webp, media | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-09) |
+
 | DEC-20260912-08 | Render project-card and primary-gallery photos over a darkened `cover` copy of the same image while keeping the foreground uncropped with `contain`; exclude thumbnails, video, fullscreen, and the legacy gallery. | projects, cards, gallery, images, mobile, responsive | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-08) |
 
 | DEC-20260912-07 | Store Neo4 source screens as `screen_1.webp` through `screen_5.webp` at 1920×1080, using direct resizing with quality 90 and deleting the explicitly selected PNG originals; preserve the source array order for gallery display. | projects, neo4, screenshots, webp, full-hd, media | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-07) |

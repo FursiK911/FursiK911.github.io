@@ -1,5 +1,27 @@
 # AI Agent Change Log Index
 
+| 2026-09-12 | projects, mychess, frontend, social, i18n, testing | [Refine MyChess social infrastructure contribution wording](2026/09/2026-09-12.md#refine-mychess-social-infrastructure-contribution-wording) |
+
+| 2026-09-12 | projects, mychess, frontend, tournaments, i18n, testing | [Refine MyChess tournament contribution wording](2026/09/2026-09-12.md#refine-mychess-tournament-contribution-wording) |
+
+| 2026-09-12 | projects, earth-dragons, app-store, screenshots, gameplay, logo, webp, media, testing, graphify | [Earth of Dragons card preview ordering and gameplay WebP assets](2026/09/2026-09-12.md#earth-of-dragons-card-preview-ordering-and-gameplay-webp-assets) |
+
+| 2026-09-12 | projects, mychess, frontend, ai, i18n, testing | [Clarify MyChess AI champions contribution](2026/09/2026-09-12.md#clarify-mychess-ai-champions-contribution) |
+
+| 2026-09-12 | projects, mychess, frontend, i18n, testing | [Adjust MyChess gameplay contribution verb](2026/09/2026-09-12.md#adjust-mychess-gameplay-contribution-verb) |
+
+| 2026-09-12 | projects, mychess, frontend, i18n, testing | [Combine MyChess modes and rating contribution points](2026/09/2026-09-12.md#combine-mychess-modes-and-rating-contribution-points) |
+
+| 2026-09-12 | projects, mychess, frontend, i18n, testing | [Refine MyChess real-time gameplay wording](2026/09/2026-09-12.md#refine-mychess-real-time-gameplay-wording) |
+
+| 2026-09-12 | projects, mychess, frontend, i18n, testing | [Finalize MyChess frontend contribution wording](2026/09/2026-09-12.md#finalize-mychess-frontend-contribution-wording) |
+
+| 2026-09-12 | projects, mychess, frontend, i18n, testing | [Clarify MyChess frontend ownership](2026/09/2026-09-12.md#clarify-mychess-frontend-ownership) |
+
+| 2026-09-12 | projects, earth-dragons, auchan, app-store, screenshots, webp, media, i18n, testing, graphify | [Earth of Dragons App Store screenshot replacement](2026/09/2026-09-12.md#earth-of-dragons-app-store-screenshot-replacement) |
+
+| 2026-09-12 | projects, drilling, vr, screenshots, webp, media, i18n, testing, graphify | [VR drilling training WebP gallery media](2026/09/2026-09-12.md#vr-drilling-training-webp-gallery-media) |
+
 | 2026-09-12 | projects, cards, gallery, images, mobile, blur, responsive, accessibility, testing, graphify | [Contained project images over blurred backgrounds](2026/09/2026-09-12.md#contained-project-images-over-blurred-backgrounds) |
 
 | 2026-09-12 | projects, neo4, screenshots, webp, full-hd, media, i18n, testing, graphify | [Neo4 Full HD WebP screens](2026/09/2026-09-12.md#neo4-full-hd-webp-screens) |

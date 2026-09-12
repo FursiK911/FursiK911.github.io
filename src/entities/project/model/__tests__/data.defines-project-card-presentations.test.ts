@@ -19,8 +19,12 @@ it('defines card directions, tags and approved preview images for every project'
   expect(
     projects.find((project) => project.id === 'earth-dragons')?.card
       .previewImages,
-  ).toHaveLength(5)
+  ).toHaveLength(12)
   expect(
     projects.find((project) => project.id === 'villa-krim')?.card.previewImages,
   ).toEqual([])
+  expect(
+    projects.find((project) => project.id === 'drilling-vr')?.card
+      .previewImages,
+  ).toHaveLength(9)
 })

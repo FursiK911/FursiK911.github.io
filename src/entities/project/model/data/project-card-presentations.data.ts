@@ -68,7 +68,7 @@ export const projectCardPresentations: Record<
     direction: 'vr-training',
     teaserKey: 'projects.cardTeasers.drilling',
     tags: ['Unity', 'VR'],
-    previewImageIndexes: [],
+    previewImageIndexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
   },
   'vulkan-verse': {
     direction: 'games-apps',
@@ -92,7 +92,7 @@ export const projectCardPresentations: Record<
     direction: 'games-apps',
     teaserKey: 'projects.cardTeasers.earthDragons',
     tags: ['Unity', 'AR', 'Mobile'],
-    previewImageIndexes: [0, 1, 2, 3, 4],
+    previewImageIndexes: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
   },
   'villa-krim': {
     direction: 'games-apps',

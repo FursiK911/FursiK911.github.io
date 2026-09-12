@@ -445,6 +445,15 @@ export const resources = {
           'Мультиплеерная синхронизация через Netcode',
           'Ассеты Blender и взаимодействия Final IK',
         ],
+        drillingMediaScreen1: 'Сцена VR-обучения бурению — экран 1',
+        drillingMediaScreen2: 'Сцена VR-обучения бурению — экран 2',
+        drillingMediaScreen3: 'Сцена VR-обучения бурению — экран 3',
+        drillingMediaScreen4: 'Сцена VR-обучения бурению — экран 4',
+        drillingMediaScreen5: 'Сцена VR-обучения бурению — экран 5',
+        drillingMediaScreen6: 'Сцена VR-обучения бурению — экран 6',
+        drillingMediaScreen7: 'Сцена VR-обучения бурению — экран 7',
+        drillingMediaScreen8: 'Сцена VR-обучения бурению — экран 8',
+        drillingMediaScreen9: 'Сцена VR-обучения бурению — экран 9',
         sariduActuatorPoints: [
           'Разработал приложение полностью на российском ПО, лицензированном для использования в РФ',
           'Реализовал одиночный и кооперативный режимы с синхронизацией двух участников в VR-шлемах',
@@ -484,16 +493,22 @@ export const resources = {
         ],
         earthDragonsMediaSplash:
           'Стартовый экран приложения «Земля Драконів» с логотипом АШАН',
+        earthDragonsMediaLogo: 'Логотип приложения «Земля Драконів»',
+        earthDragonsMediaGameplayOne: 'Геймплейный экран приложения, сцена 1',
+        earthDragonsMediaGameplayTwo: 'Геймплейный экран приложения, сцена 2',
+        earthDragonsMediaGameplayThree: 'Геймплейный экран приложения, сцена 3',
+        earthDragonsMediaDragonElnus:
+          'Карточка персонажа ЕЛЬНУС в AR-приложении',
+        earthDragonsMediaDragonNaura:
+          'Карточка персонажа НАУРА в AR-приложении',
         earthDragonsMediaCollection:
           'Экран коллекции с 16 слотами драконов и открытыми персонажами',
-        earthDragonsMediaDragon:
-          'Карточка персонажа ЕЛЬНУС с управлением AR-приложения',
+        earthDragonsMediaPreview: '3D-просмотр дракона перед запуском игры',
         earthDragonsMediaRunner:
           'Runner-режим с драконом, препятствиями и счётчиками',
+        earthDragonsMediaRunnerScore:
+          'Runner-режим с результатом, дистанцией и собранными кристаллами',
         earthDragonsMediaDie: 'AR-интерфейс виртуального кубика',
-        earthDragonsMediaPhysicalSet:
-          'Физический комикс и упаковка коллекционных материалов кампании',
-        earthDragonsMediaPoster: 'Промо-постер кампании «Земля Драконів» АШАН',
         vulkanVersePoints: [
           'Разрабатывал и интегрировал игровые механики локации Tartarus в основной клиент VulcanVerse',
           'Реализовывал клиент-серверное взаимодействие и multiplayer-сценарии на Photon',
@@ -549,15 +564,12 @@ export const resources = {
         mychessMobileMedia4: 'Профиль в myChess Mobile',
         mychessMobileMedia5: 'Социальный экран myChess Mobile',
         mychessWebPoints: [
-          'Реализовал пользовательские аккаунты с регистрацией, восстановлением доступа и верификацией профиля',
-          'В качестве фронтенда реализовал отдельные страницы для десктопа и мобильных устройств',
-          'Реализовал удобную отзывчивую игру в реальном времени: соперники могли играть партии без перезагрузки, возвращаться в матч после разрыва соединения и пользоваться игрой даже на менее мощных устройствах',
-          'Связал рейтинговые матчи с матчмейкингом, рейтингами и лидербордами по категориям',
-          'Добавил поддержку множества режимов игры в шахматы и подтверждение Elo игрока',
-          'Интегрировал AI-чемпионов с профилями сильнейших шахматистов: игроки могли проверить себя, например, против Яна Непомнящего или Магнуса Карлсена',
-          'Разработал систему одиночных и командных турниров разных форматов: пользователи могли создавать собственные соревнования, а во время крупнейших событий одновременно играли более 2 000 участников',
-          'Реализовал сообщества: пользователи могли создавать свои группы, вступать в них, собираться в команды и модерировать состав участников',
-          'Организовал лобби для совместной игры и общения перед началом матча или турнира',
+          'Разработал весь пользовательский интерфейс MyChess для десктопных и мобильных устройств',
+          'Обеспечил стабильный и удобный игровой процесс в реальном времени с отзывчивым интерфейсом',
+          'Реализовал различные шахматные режимы, внутриигровую систему рейтингов, матчмейкинг и лидерборды по рейтингу',
+          'Интегрировал режим игры с AI-чемпионами, созданными по образу известных шахматистов, включая Яна Непомнящего и Магнуса Карлсена',
+          'Разработал систему соревновательных сценариев для одиночных и командных турниров разных форматов, включая создание пользовательских соревнований и поддержку событий с аудиторией свыше 2 000 участников',
+          'Разработал социальную инфраструктуру платформы: сообщества, командные пространства и инструменты управления участниками',
           'Реализовал чаты в лобби, турнирах и сообществах, личную переписку и систему уведомлений',
           'Реализовал два режима одновременной игры: один игрок против нескольких соперников и коллективное голосование за ход против одного игрока',
           'Реализовал уникальный режим chessboxing с чередованием шахматных партий и боксерских раундов',
@@ -1435,6 +1447,15 @@ export const resources = {
           'Netcode multiplayer synchronization',
           'Blender assets and Final IK interactions',
         ],
+        drillingMediaScreen1: 'VR drilling training scene — screen 1',
+        drillingMediaScreen2: 'VR drilling training scene — screen 2',
+        drillingMediaScreen3: 'VR drilling training scene — screen 3',
+        drillingMediaScreen4: 'VR drilling training scene — screen 4',
+        drillingMediaScreen5: 'VR drilling training scene — screen 5',
+        drillingMediaScreen6: 'VR drilling training scene — screen 6',
+        drillingMediaScreen7: 'VR drilling training scene — screen 7',
+        drillingMediaScreen8: 'VR drilling training scene — screen 8',
+        drillingMediaScreen9: 'VR drilling training scene — screen 9',
         sariduActuatorPoints: [
           'Built the application entirely on Russian software licensed for use in Russia',
           'Implemented solo and co-op modes with synchronization for two participants in VR headsets',
@@ -1474,15 +1495,22 @@ export const resources = {
         ],
         earthDragonsMediaSplash:
           'Earth of Dragons splash screen with the Auchan logo',
+        earthDragonsMediaLogo: 'Earth of Dragons application logo',
+        earthDragonsMediaGameplayOne: 'Application gameplay screen, scene 1',
+        earthDragonsMediaGameplayTwo: 'Application gameplay screen, scene 2',
+        earthDragonsMediaGameplayThree: 'Application gameplay screen, scene 3',
+        earthDragonsMediaDragonElnus:
+          'Elnus character screen in the AR application',
+        earthDragonsMediaDragonNaura:
+          'Naura character screen in the AR application',
         earthDragonsMediaCollection:
           'Collection screen with 16 dragon slots and unlocked characters',
-        earthDragonsMediaDragon: 'Elnus character screen in the AR application',
+        earthDragonsMediaPreview: '3D dragon preview before starting the game',
         earthDragonsMediaRunner:
           'Runner mode with dragon, obstacles and counters',
+        earthDragonsMediaRunnerScore:
+          'Runner mode with score, distance and collected crystals',
         earthDragonsMediaDie: 'Virtual AR die interface',
-        earthDragonsMediaPhysicalSet:
-          'Physical comic and campaign collectible packaging',
-        earthDragonsMediaPoster: 'Auchan Earth of Dragons campaign poster',
         vulkanVersePoints: [
           'Developed and integrated gameplay mechanics for the Tartarus location into the main VulcanVerse client',
           'Implemented client-server interaction and multiplayer flows with Photon',
@@ -1536,15 +1564,12 @@ export const resources = {
         mychessMobileMedia4: 'myChess Mobile profile',
         mychessMobileMedia5: 'myChess Mobile social screen',
         mychessWebPoints: [
-          'Implemented user accounts with registration, account recovery and profile verification',
-          'Built separate frontend pages for desktop and mobile devices',
-          'Implemented a responsive real-time game experience: opponents could play without page reloads, reconnect after a dropped connection and use the game comfortably on less powerful devices',
-          'Connected rated matches with matchmaking, ratings and category leaderboards',
-          'Added support for many chess game modes and player Elo confirmation',
-          'Integrated AI champions with profiles of leading chess players, allowing users to test themselves against figures such as Ian Nepomniachtchi or Magnus Carlsen',
-          'Developed solo and team tournaments across different formats: users could create their own competitions, while more than 2,000 participants played simultaneously during the largest events',
-          'Implemented communities where users could create groups, join them, form teams and moderate membership',
-          'Organized lobbies for shared play and conversation before a match or tournament',
+          'Developed the entire MyChess user interface for desktop and mobile devices',
+          'Ensured a stable and convenient real-time gameplay experience with a responsive interface',
+          'Implemented various chess modes, an in-game rating system, matchmaking and rating leaderboards',
+          'Integrated a game mode with AI champions modeled after famous chess players, including Ian Nepomniachtchi and Magnus Carlsen',
+          'Developed a competition framework for individual and team tournaments across different formats, including user-created competitions and events supporting more than 2,000 participants',
+          'Developed the platform’s social infrastructure with communities, team spaces and participant management tools',
           'Implemented chat in lobbies, tournaments and communities, alongside direct messaging and notifications',
           'Implemented two simultaneous-play modes: one player against multiple opponents and a group voting on moves against one player',
           'Implemented the unique chessboxing mode, alternating chess games with boxing rounds',

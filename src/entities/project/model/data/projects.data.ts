@@ -481,7 +481,54 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
         href: 'https://youtu.be/LLJtFASLiHM',
       },
     ],
-    media: [{ kind: 'youtube', videoId: 'LLJtFASLiHM' }],
+    media: [
+      { kind: 'youtube', videoId: 'LLJtFASLiHM' },
+      {
+        kind: 'image',
+        src: '/images/projects/vr-drilling-training/screen_1.webp',
+        altKey: 'drillingMediaScreen1',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/vr-drilling-training/screen_2.webp',
+        altKey: 'drillingMediaScreen2',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/vr-drilling-training/screen_3.webp',
+        altKey: 'drillingMediaScreen3',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/vr-drilling-training/screen_4.webp',
+        altKey: 'drillingMediaScreen4',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/vr-drilling-training/screen_5.webp',
+        altKey: 'drillingMediaScreen5',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/vr-drilling-training/screen_6.webp',
+        altKey: 'drillingMediaScreen6',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/vr-drilling-training/screen_7.webp',
+        altKey: 'drillingMediaScreen7',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/vr-drilling-training/screen_8.webp',
+        altKey: 'drillingMediaScreen8',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/vr-drilling-training/screen_9.webp',
+        altKey: 'drillingMediaScreen9',
+      },
+    ],
   },
   {
     id: 'vulkan-verse',
@@ -588,38 +635,63 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       { kind: 'youtube', videoId: 'iXrNLl6rpXI', startSeconds: 483 },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/earth-dragons-splash.webp',
+        src: '/images/projects/earth-dragons/logo.webp',
+        altKey: 'earthDragonsMediaLogo',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/earth-dragons/gameplay_1.webp',
+        altKey: 'earthDragonsMediaGameplayOne',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/earth-dragons/gameplay_2.webp',
+        altKey: 'earthDragonsMediaGameplayTwo',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/earth-dragons/gameplay_3.webp',
+        altKey: 'earthDragonsMediaGameplayThree',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/earth-dragons/earth-dragons-01.webp',
         altKey: 'earthDragonsMediaSplash',
       },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/earth-dragons-collection.webp',
+        src: '/images/projects/earth-dragons/earth-dragons-02.webp',
+        altKey: 'earthDragonsMediaDragonElnus',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/earth-dragons/earth-dragons-03.webp',
+        altKey: 'earthDragonsMediaDragonNaura',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/earth-dragons/earth-dragons-04.webp',
         altKey: 'earthDragonsMediaCollection',
       },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/earth-dragons-dragon.webp',
-        altKey: 'earthDragonsMediaDragon',
+        src: '/images/projects/earth-dragons/earth-dragons-05.webp',
+        altKey: 'earthDragonsMediaPreview',
       },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/earth-dragons-runner.webp',
+        src: '/images/projects/earth-dragons/earth-dragons-06.webp',
         altKey: 'earthDragonsMediaRunner',
       },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/earth-dragons-die.webp',
+        src: '/images/projects/earth-dragons/earth-dragons-07.webp',
+        altKey: 'earthDragonsMediaRunnerScore',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/earth-dragons/earth-dragons-08.webp',
         altKey: 'earthDragonsMediaDie',
-      },
-      {
-        kind: 'image',
-        src: '/images/projects/earth-dragons/earth-dragons-physical-set.webp',
-        altKey: 'earthDragonsMediaPhysicalSet',
-      },
-      {
-        kind: 'image',
-        src: '/images/projects/earth-dragons/earth-dragons-poster.webp',
-        altKey: 'earthDragonsMediaPoster',
       },
     ],
     metricsKey: 'earthDragonsMetrics',
