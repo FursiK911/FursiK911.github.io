@@ -11,7 +11,7 @@ describe('project image assets', () => {
         project.media?.filter((media) => media.kind === 'image') ?? [],
     )
 
-    expect(images).toHaveLength(77)
+    expect(images).toHaveLength(83)
     images.forEach((image) => {
       expect(image.src).not.toMatch(/^https?:\/\//)
       expect(existsSync(resolve('public', image.src.slice(1)))).toBe(true)

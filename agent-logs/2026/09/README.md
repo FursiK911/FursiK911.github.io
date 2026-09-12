@@ -1,5 +1,11 @@
 # September 2026
 
+| 2026-09-12 | projects, ar-chudoboxes, media, webp, paths, testing, graphify | [Rename AR Chudoboxes media directory](2026-09-12.md#rename-ar-chudoboxes-media-directory) |
+
+| 2026-09-12 | projects, villa-krim, authors-wine-villa-krim, cards, logos, screenshots, webp, testing, graphify | [Villa Krim project card media](2026-09-12.md#villa-krim-project-card-media) |
+
+| 2026-09-12 | projects, villa-krim, authors-wine-villa-krim, logos, screenshots, webp, media, i18n, testing, graphify | [Villa Krim WebP gallery media](2026-09-12.md#villa-krim-webp-gallery-media) |
+
 | 2026-09-12 | projects, mychess, frontend, social, i18n, testing | [Refine MyChess social infrastructure contribution wording](2026-09-12.md#refine-mychess-social-infrastructure-contribution-wording) |
 
 | 2026-09-12 | projects, mychess, frontend, tournaments, i18n, testing | [Refine MyChess tournament contribution wording](2026-09-12.md#refine-mychess-tournament-contribution-wording) |

@@ -22,7 +22,18 @@ it('defines card directions, tags and approved preview images for every project'
   ).toHaveLength(12)
   expect(
     projects.find((project) => project.id === 'villa-krim')?.card.previewImages,
-  ).toEqual([])
+  ).toHaveLength(5)
+  expect(
+    projects.find((project) => project.id === 'authors-wine-villa-krim')?.card
+      .previewImages,
+  ).toHaveLength(5)
+  const villaKrimProjectIds = ['villa-krim', 'authors-wine-villa-krim']
+  villaKrimProjectIds.forEach((projectId) => {
+    const project = projects.find((item) => item.id === projectId)
+    expect(project?.card.previewImages).toEqual(
+      project?.media?.filter((media) => media.kind === 'image'),
+    )
+  })
   expect(
     projects.find((project) => project.id === 'drilling-vr')?.card
       .previewImages,

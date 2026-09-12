@@ -727,14 +727,19 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: '/images/projects/villa-krim/virtual-sommelier-villa-krim-ru.webp',
-        altKey: 'virtualSommelierVillaKrimMediaRu',
+        src: '/images/projects/villa-krim/logo_1.webp',
+        altKey: 'virtualSommelierVillaKrimMediaLogo1',
       },
       {
         kind: 'image',
-        src: '/images/projects/villa-krim/virtual-sommelier-villa-krim-ua.webp',
-        altKey: 'virtualSommelierVillaKrimMediaUa',
+        src: '/images/projects/villa-krim/logo_2.webp',
+        altKey: 'virtualSommelierVillaKrimMediaLogo2',
       },
+      ...[1, 2, 3].map((screen) => ({
+        kind: 'image' as const,
+        src: `/images/projects/villa-krim/screen_${screen}.webp`,
+        altKey: `virtualSommelierVillaKrimMediaScreen${screen}`,
+      })),
     ],
     metricsKey: 'virtualSommelierVillaKrimMetrics',
   },
@@ -769,14 +774,19 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: '/images/projects/authors-wine-villa-krim/authors-wine-villa-krim-campaign.webp',
-        altKey: 'authorsWineVillaKrimMediaCampaign',
+        src: '/images/projects/authors-wine-villa-krim/logo_1.webp',
+        altKey: 'authorsWineVillaKrimMediaLogo1',
       },
       {
         kind: 'image',
-        src: '/images/projects/authors-wine-villa-krim/authors-wine-villa-krim-app.webp',
-        altKey: 'authorsWineVillaKrimMediaApp',
+        src: '/images/projects/authors-wine-villa-krim/logo_2.webp',
+        altKey: 'authorsWineVillaKrimMediaLogo2',
       },
+      ...[1, 2, 3].map((screen) => ({
+        kind: 'image' as const,
+        src: `/images/projects/authors-wine-villa-krim/screen_${screen}.webp`,
+        altKey: `authorsWineVillaKrimMediaScreen${screen}`,
+      })),
     ],
     metricsKey: 'authorsWineVillaKrimMetrics',
   },
@@ -907,17 +917,17 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       { kind: 'youtube', videoId: '2r2FjaOVyII' },
       {
         kind: 'image',
-        src: '/images/projects/ar-chudaboxes/ar-chudaboxes-one.webp',
+        src: '/images/projects/ar-chudoboxes/ar-chudaboxes-one.webp',
         altKey: 'arChudaboxesMediaOne',
       },
       {
         kind: 'image',
-        src: '/images/projects/ar-chudaboxes/ar-chudaboxes-two.webp',
+        src: '/images/projects/ar-chudoboxes/ar-chudaboxes-two.webp',
         altKey: 'arChudaboxesMediaTwo',
       },
       {
         kind: 'image',
-        src: '/images/projects/ar-chudaboxes/ar-chudaboxes-three.webp',
+        src: '/images/projects/ar-chudoboxes/ar-chudaboxes-three.webp',
         altKey: 'arChudaboxesMediaThree',
       },
     ],

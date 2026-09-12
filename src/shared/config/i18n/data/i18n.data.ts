@@ -650,6 +650,16 @@ export const resources = {
           'Иконка русскоязычной версии «Виртуального сомелье Villa Krim»',
         virtualSommelierVillaKrimMediaUa:
           'Иконка украиноязычной версии «Віртуальний сомельє Villa Krim»',
+        virtualSommelierVillaKrimMediaLogo1:
+          'Промо-изображение приложения «Виртуальный сомелье Villa Krim»',
+        virtualSommelierVillaKrimMediaLogo2:
+          'Иконка приложения «Виртуальный сомелье Villa Krim»',
+        virtualSommelierVillaKrimMediaScreen1:
+          'Первый экран приложения «Виртуальный сомелье Villa Krim»',
+        virtualSommelierVillaKrimMediaScreen2:
+          'Второй экран приложения «Виртуальный сомелье Villa Krim»',
+        virtualSommelierVillaKrimMediaScreen3:
+          'Третий экран приложения «Виртуальный сомелье Villa Krim»',
         virtualSommelierVillaKrimMetrics: [
           { value: '2', label: 'локализованные Android-версии' },
           { value: '3', label: 'подтверждённых package ID в экосистеме' },
@@ -668,6 +678,16 @@ export const resources = {
           'Промо-изображение AR-сценария Villa Krim: пользователь сканирует бутылку смартфоном',
         authorsWineVillaKrimMediaApp:
           'Иконка приложения «Авторське вино Villa Krim»',
+        authorsWineVillaKrimMediaLogo1:
+          'Промо-изображение приложения «Авторське вино Villa Krim»',
+        authorsWineVillaKrimMediaLogo2:
+          'Иконка приложения «Авторське вино Villa Krim»',
+        authorsWineVillaKrimMediaScreen1:
+          'Первый экран приложения «Авторське вино Villa Krim»',
+        authorsWineVillaKrimMediaScreen2:
+          'Второй экран приложения «Авторське вино Villa Krim»',
+        authorsWineVillaKrimMediaScreen3:
+          'Третий экран приложения «Авторське вино Villa Krim»',
         authorsWineVillaKrimMetrics: [
           { value: '3', label: 'подтверждённых Android-приложения серии' },
           { value: '3', label: 'подтверждённых компонента стека' },
@@ -1650,6 +1670,16 @@ export const resources = {
           'Icon of the Russian Virtual Sommelier Villa Krim release',
         virtualSommelierVillaKrimMediaUa:
           'Icon of the Ukrainian Віртуальний сомельє Villa Krim release',
+        virtualSommelierVillaKrimMediaLogo1:
+          'Promotional image for the Virtual Sommelier Villa Krim app',
+        virtualSommelierVillaKrimMediaLogo2:
+          'Virtual Sommelier Villa Krim app icon',
+        virtualSommelierVillaKrimMediaScreen1:
+          'First screen of the Virtual Sommelier Villa Krim app',
+        virtualSommelierVillaKrimMediaScreen2:
+          'Second screen of the Virtual Sommelier Villa Krim app',
+        virtualSommelierVillaKrimMediaScreen3:
+          'Third screen of the Virtual Sommelier Villa Krim app',
         virtualSommelierVillaKrimMetrics: [
           { value: '2', label: 'localized Android releases' },
           { value: '3', label: 'confirmed package IDs in the family' },
@@ -1668,6 +1698,15 @@ export const resources = {
           'Villa Krim AR campaign visual: a user scans a bottle with a smartphone',
         authorsWineVillaKrimMediaApp:
           'Icon of the Author’s Wine Villa Krim application',
+        authorsWineVillaKrimMediaLogo1:
+          'Promotional image for the Author’s Wine Villa Krim app',
+        authorsWineVillaKrimMediaLogo2: 'Author’s Wine Villa Krim app icon',
+        authorsWineVillaKrimMediaScreen1:
+          'First screen of the Author’s Wine Villa Krim app',
+        authorsWineVillaKrimMediaScreen2:
+          'Second screen of the Author’s Wine Villa Krim app',
+        authorsWineVillaKrimMediaScreen3:
+          'Third screen of the Author’s Wine Villa Krim app',
         authorsWineVillaKrimMetrics: [
           { value: '3', label: 'confirmed Android apps in the series' },
           { value: '3', label: 'confirmed stack components' },

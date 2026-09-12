@@ -98,13 +98,13 @@ export const projectCardPresentations: Record<
     direction: 'games-apps',
     teaserKey: 'projects.cardTeasers.virtualSommelierVillaKrim',
     tags: ['Unity', 'AR', 'Mobile'],
-    previewImageIndexes: [],
+    previewImageIndexes: [0, 1, 2, 3, 4],
   },
   'authors-wine-villa-krim': {
     direction: 'games-apps',
     teaserKey: 'projects.cardTeasers.authorsWineVillaKrim',
     tags: ['Unity', 'AR', 'Mobile'],
-    previewImageIndexes: [0],
+    previewImageIndexes: [0, 1, 2, 3, 4],
   },
   'chudo-projector': {
     direction: 'games-apps',

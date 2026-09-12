@@ -1,5 +1,11 @@
 # Global Decision Index
 
+| DEC-20260912-17 | Rename only the AR Chudoboxes media directory and asset paths to `ar-chudoboxes`; retain project id, route, and filenames. | projects, ar-chudoboxes, media, paths | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-17) |
+
+| DEC-20260912-16 | Use preview indexes 0–4 for both Villa Krim cards so cards cycle through logo 1–2 and screens 1–3 in gallery order. | projects, villa-krim, authors-wine-villa-krim, cards, logos, screenshots, webp, media | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-16) |
+
+| DEC-20260912-15 | Store both Villa Krim galleries as logo 1–2 followed by screens 1–3 in WebP, removing the supplied PNG originals. | projects, villa-krim, authors-wine-villa-krim, logos, screenshots, webp, media | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-15) |
+
 | DEC-20260912-13 | Use the approved social-infrastructure wording for MyChess web point six; preserve all other content and VR data. | projects, mychess, frontend, social, i18n | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-13) |
 
 | DEC-20260912-12 | Use competition-scenario wording for the MyChess tournament contribution and preserve all other points and VR data. | projects, mychess, frontend, tournaments, i18n | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-12) |
