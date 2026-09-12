@@ -336,16 +336,44 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       {
         type: 'external',
         label: 'App Store',
-        href: 'https://apps.apple.com/gb/app/frieze-viewing-room/id1500340570',
-        unavailableReasonKey:
-          'projects.unavailableActions.friezeViewingRoomApp',
+        href: 'https://apps.apple.com/me/app/frieze/id1582362408',
       },
       {
         type: 'external',
         label: 'Google Play',
-        href: 'https://play.google.com/store/apps/details?id=com.frieze.viewingroom',
-        unavailableReasonKey:
-          'projects.unavailableActions.friezeViewingRoomApp',
+        href: 'https://play.google.com/store/apps/details?id=com.frieze.friezeapp&hl=ru',
+      },
+    ],
+    media: [
+      {
+        kind: 'image',
+        src: '/images/projects/frieze-viewing-room/screen-1.webp',
+        altKey: 'friezeViewingRoomMediaCover',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/frieze-viewing-room/screen-2.webp',
+        altKey: 'friezeViewingRoomMediaInquiry',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/frieze-viewing-room/screen-3.webp',
+        altKey: 'friezeViewingRoomMediaFilters',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/frieze-viewing-room/screen-4.webp',
+        altKey: 'friezeViewingRoomMediaSections',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/frieze-viewing-room/screen-5.webp',
+        altKey: 'friezeViewingRoomMediaArtwork',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/frieze-viewing-room/screen-6.webp',
+        altKey: 'friezeViewingRoomMediaGallery',
       },
     ],
     metricsKey: 'friezeViewingRoomMetrics',
@@ -371,6 +399,11 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     period: { from: '02.2021', to: '02.2022' },
     actions: [
       {
+        type: 'live',
+        label: 'Neo4 demo',
+        href: 'https://apm.locka.com/demo/apm-nacka/building',
+      },
+      {
         type: 'external',
         label: 'Neo4 Web · product history',
         href: 'https://www.sightline.se/neo4-web',
@@ -384,13 +417,28 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: '/images/projects/neo4-sightline/neo4-sightline-celsius.webp',
-        altKey: 'neo4SightlineMediaCelsius',
+        src: '/images/projects/neo4-sightline/screen_1.webp',
+        altKey: 'neo4SightlineMediaScreen1',
       },
       {
         kind: 'image',
-        src: '/images/projects/neo4-sightline/neo4-sightline-sightline.webp',
-        altKey: 'neo4SightlineMediaSightline',
+        src: '/images/projects/neo4-sightline/screen_2.webp',
+        altKey: 'neo4SightlineMediaScreen2',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/neo4-sightline/screen_3.webp',
+        altKey: 'neo4SightlineMediaScreen3',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/neo4-sightline/screen_4.webp',
+        altKey: 'neo4SightlineMediaScreen4',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/neo4-sightline/screen_5.webp',
+        altKey: 'neo4SightlineMediaScreen5',
       },
     ],
     metricsKey: 'neo4SightlineMetrics',

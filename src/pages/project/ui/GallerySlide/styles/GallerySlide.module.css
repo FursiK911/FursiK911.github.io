@@ -73,14 +73,31 @@
   border: 0;
   background: radial-gradient(ellipse at center, #152733, #0b1118 70%);
 }
-.gallerySlidePhoto > img {
+.gallerySlidePhoto::before {
+  position: absolute;
+  inset: 0;
+  background-image: var(--project-image-background);
+  background-position: center;
+  background-size: cover;
+  content: '';
+  filter: blur(24px) brightness(0.4) saturate(0.85);
+  transform: scale(1.18);
+}
+.gallerySlideImage {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+}
+.gallerySlidePhoto > [role='img'] {
+  position: relative;
+  z-index: 1;
 }
 .gallerySlideExpand {
   position: absolute;
+  z-index: 2;
   right: 16px;
   bottom: 16px;
   display: flex;

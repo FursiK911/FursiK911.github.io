@@ -37,10 +37,7 @@
 
   :global(.hero-copy) {
     align-self: stretch;
-  }
-
-  :global(.hero-actions) {
-    margin-top: auto;
+    justify-content: space-between;
   }
 
   :global(.hero-broadcast) :global(.live-cam) {

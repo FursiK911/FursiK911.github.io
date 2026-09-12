@@ -1,5 +1,19 @@
 # Global Decision Index
 
+| DEC-20260912-08 | Render project-card and primary-gallery photos over a darkened `cover` copy of the same image while keeping the foreground uncropped with `contain`; exclude thumbnails, video, fullscreen, and the legacy gallery. | projects, cards, gallery, images, mobile, responsive | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-08) |
+
+| DEC-20260912-07 | Store Neo4 source screens as `screen_1.webp` through `screen_5.webp` at 1920×1080, using direct resizing with quality 90 and deleting the explicitly selected PNG originals; preserve the source array order for gallery display. | projects, neo4, screenshots, webp, full-hd, media | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-07) |
+
+| DEC-20260912-06 | Store six unique Google Play screenshots as `screen-1.webp` through `screen-6.webp` at 1080×1920, centering the 887×1920 source content on the target canvas to avoid distortion. | projects, frieze, mobile, screenshots, webp, full-hd, media | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-06) |
+
+| DEC-20260912-05 | Use the supplied current Frieze App Store and Google Play listings (`id1582362408` / `com.frieze.friezeapp`) as active mobile-app links. | projects, frieze, mobile, app-store, google-play, links | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-05) |
+
+| DEC-20260912-04 | Use `https://apm.locka.com/demo/apm-nacka/building` as Neo4's primary `live` action while retaining historical product and launch references as external links. | projects, neo4, demo, external-link | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-04) |
+
+| DEC-20260912-03 | Position MyChess as the first Russian chess ecosystem; use approved RU/EN card and project-page copy with 100,000+ users, 600,000+ games, Stockfish, social and fair-play capabilities, and Russian software registry status while leaving exact metric cards and personal contributions unchanged. | projects, mychess, cards, copy, i18n | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-03) |
+
+| DEC-20260912-02 | Keep the historical Frieze Viewing Room App Store action active, keep the removed Google Play listing unavailable, and use all six supplied mobile images in the gallery with the first three as card previews. | projects, frieze, mobile, app-store, media | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-02) |
+
 | DEC-20260910-21 | Keep the six requested project definitions intact and exclude their IDs only from the public Projects widget; derive direction counts, technology options, and visible cards from the remaining showcase projects so hidden entries do not appear through filters. | projects, cards, filters, temporary | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-21) |
 
 | DEC-20260910-20 | Group Training, Exam and Observer into one SARiDU achievements metric while keeping Single + Co-op as the separate interaction-mode metric. | projects, saridu, metrics, achievements, i18n | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-20) |
@@ -243,3 +257,4 @@ Directions HUD motion system (2026-09-08) keeps motion local to the profile Dire
 | DEC-20260910-01 | Use «Ключевой вклад» / «Key contributions» as the contribution list note while preserving the existing section heading. | projects, contribution, i18n, testing | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-01) |
 | DEC-20260910-22 | At desktop widths only, size the Hero grid row from the broadcast, stretch the copy column to that row, and anchor its actions with `margin-top: auto`; retain the existing layout below 1200 px. | ui, hero, live-cam, desktop, responsive | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-22) |
 | DEC-20260910-23 | Use a uniform `120px` top padding for `.profile-section` at all viewport widths; remove the previous mobile-specific reduction. | ui, profile, spacing, responsive | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-23) |
+| DEC-20260912-01 | Use three explicit Hero copy zones and `justify-content: space-between` at desktop widths; keep the pre-existing document flow below 1200px. | ui, hero, live-cam, desktop, responsive | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-01) |

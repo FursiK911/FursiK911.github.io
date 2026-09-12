@@ -316,7 +316,7 @@ export const resources = {
         friezeViewingRoom: 'Frieze Viewing Room',
         cardTeasers: {
           mychessWeb:
-            'myChess — веб-версия шахматной экосистемы, где можно играть с реальными соперниками в рейтинговых матчах или мериться силами с AI-чемпионами, решать шахматные задачи, участвовать в турнирах, в которых одновременно играли более 2 000 участников, и вступать в сообщества, чтобы общаться, учиться и играть вместе в разных режимах с анализом партий на Stockfish.',
+            'myChess — первая российская шахматная экосистема, объединяющая онлайн-игры, турниры, обучение и общение на одной платформе. Реальные соперники, AI-чемпионы, шахматные задачи и анализ партий Stockfish создают пространство для игроков любого уровня.',
           mobileRts:
             'Мобильная PvP-стратегия с турнирами и повторами сражений. Сетевые сценарии и серверные события собраны в единый игровой контур.',
           sariduActuator:
@@ -388,7 +388,7 @@ export const resources = {
         vulkanVerseDesc:
           'Клиентская игровая разработка для VulcanVerse — открытого multiplayer-мира на Unity с сетевыми механиками, исследованием мира и локацией Tartarus.',
         mychessWebDesc:
-          'Веб-версия myChess — это шахматная экосистема с доступом из браузера для игры, обучения и общения. Во время крупнейших турнирных событий на платформе одновременно проходили партии более чем у 2 000 участников: игроки могли подключаться к рейтинговым матчам с реальными соперниками, играть с друзьями или с AI-чемпионами, а также выбирать подходящий режим игры. В разделе обучения доступны шахматные задачи и серии решений, а в партии — история ходов, возможность поделиться игрой и подробный анализ Stockfish с лучшими ходами, зевками, вариантами развития и альтернативными линиями. Платформа объединяет одиночные и командные турниры, лобби и сообщества, где пользователи создают свои группы, организуют соревнования, собираются в команды, общаются в чатах и участвуют в совместных активностях. Дополнительно myChess включает одновременные игры, MyChess Patrol для рассмотрения жалоб на подозрительные партии, верификацию пользователей и подтверждение Elo, прямые шахматные трансляции, личную переписку и систему уведомлений.',
+          'myChess — первая российская шахматная экосистема, созданная как единое цифровое пространство для игры, соревнований, обучения и общения. На платформе зарегистрировались более 100 000 пользователей, сыгравших свыше 600 000 партий: они могут находить равных соперников, играть с друзьями и AI-чемпионами, участвовать в индивидуальных и командных турнирах, решать шахматные задачи и подробно анализировать свои партии с помощью Stockfish. Сообщества, команды, чаты, трансляции, рейтинги и инструменты честной игры формируют вокруг шахмат полноценную социальную среду. Масштаб и зрелость продукта подтверждает его включение в реестр российского программного обеспечения.',
         mychessMobileDesc:
           'Кроссплатформенный Flutter-клиент экосистемы myChess, которая уже объединила 121 577 пользователей, 665 880 сыгранных партий и 459 сообществ в мобильных игровых, турнирных и социальных сценариях, стримах и обучении.',
         friezeViewingRoomDesc:
@@ -533,6 +533,16 @@ export const resources = {
         mychessWebMediaPuzzles2: 'Дополнительный экран головоломок',
         mychessWebMediaSelectGame: 'Выбор шахматной партии',
         mychessWebMediaTournament: 'Турнирный экран myChess',
+        friezeViewingRoomMediaCover:
+          'Обложка мобильного приложения Frieze Viewing Room',
+        friezeViewingRoomMediaInquiry:
+          'Экран обращения к галерее по поводу произведения искусства',
+        friezeViewingRoomMediaFilters: 'Экран фильтров произведений искусства',
+        friezeViewingRoomMediaSections:
+          'Экран тематических разделов приложения',
+        friezeViewingRoomMediaArtwork: 'Экран просмотра произведения искусства',
+        friezeViewingRoomMediaGallery:
+          'Экран просмотра произведения из другой галереи',
         mychessMobileMedia1: 'Экран мобильного приложения myChess',
         mychessMobileMedia2: 'Игровой экран myChess Mobile',
         mychessMobileMedia3: 'Турнирный экран myChess Mobile',
@@ -581,10 +591,11 @@ export const resources = {
           'Связывал действия пользователя с real-time 3D-сценой на Unreal Engine',
           'Поддерживал сценарии выбора интерьера и передачи интерактивных команд в 3D-приложение',
         ],
-        neo4SightlineMediaCelsius:
-          'Визуализация Brf Celsius в Гётеборге — клиентский контекст Neo4 Web',
-        neo4SightlineMediaSightline:
-          'Визуальный материал Sightline Vision о real-time 3D-визуализации',
+        neo4SightlineMediaScreen1: 'Neo4 Web — экран 1',
+        neo4SightlineMediaScreen2: 'Neo4 Web — экран 2',
+        neo4SightlineMediaScreen3: 'Neo4 Web — экран 3',
+        neo4SightlineMediaScreen4: 'Neo4 Web — экран 4',
+        neo4SightlineMediaScreen5: 'Neo4 Web — экран 5',
         neo4SightlineMetrics: [
           { value: '2015+', label: 'Neo4 Web публично известен' },
           { value: '91', label: 'квартир в клиентском кейсе Brf Celsius' },
@@ -1298,7 +1309,7 @@ export const resources = {
         friezeViewingRoom: 'Frieze Viewing Room',
         cardTeasers: {
           mychessWeb:
-            'myChess is the web edition of a chess ecosystem where players can compete against real opponents in rated matches or test themselves against AI champions, practise with chess puzzles, join tournaments where more than 2,000 people played simultaneously, and become part of communities for learning, conversation, shared play and Stockfish game analysis across many chess modes.',
+            'myChess is the first Russian chess ecosystem, bringing online games, tournaments, learning and communication together on one platform. Real opponents, AI champions, chess puzzles and Stockfish game analysis create a space for players at every level.',
           mobileRts:
             'A mobile PvP strategy game with tournaments and battle replays. Network flows and server events support the match experience.',
           sariduActuator:
@@ -1367,7 +1378,7 @@ export const resources = {
         vulkanVerseDesc:
           'Client-side game development for VulcanVerse, an open-world multiplayer Unity game with networked mechanics, world exploration and the Tartarus location.',
         mychessWebDesc:
-          'myChess Web is the web edition of a chess ecosystem for playing, learning and connecting. During the largest tournament events, more than 2,000 participants were playing real-time games on the platform simultaneously: players could enter rated matches against real opponents, play with friends or face AI champions, and choose the game mode that suited them. The learning section offers chess puzzles and solving streaks, while each game includes move history, game sharing and detailed Stockfish analysis with best moves, blunders, variations and alternative lines. The platform brings together individual and team tournaments, lobbies and communities where users can create groups, organize competitions, build teams, chat and take part in shared activities. myChess also includes simultaneous play, MyChess Patrol for reviewing complaints about suspicious games, user verification and Elo confirmation, live chess broadcasts, direct messaging and notifications.',
+          'myChess is the first Russian chess ecosystem, created as a unified digital space for playing, competing, learning and connecting. More than 100,000 users have joined the platform and played over 600,000 games: they can find evenly matched opponents, play with friends and AI champions, enter individual and team tournaments, solve chess puzzles and analyse their games in depth with Stockfish. Communities, teams, chats, broadcasts, ratings and fair-play tools form a complete social environment around chess. The product’s scale and maturity are reinforced by its inclusion in the Russian software registry.',
         mychessMobileDesc:
           'A cross-platform Flutter client for the myChess ecosystem, already bringing 121,577 users, 665,880 games played and 459 communities to mobile game, tournament and social flows, streaming and learning.',
         friezeViewingRoomDesc:
@@ -1511,6 +1522,14 @@ export const resources = {
         mychessWebMediaPuzzles2: 'Additional puzzle screen',
         mychessWebMediaSelectGame: 'Chess game selection screen',
         mychessWebMediaTournament: 'myChess tournament screen',
+        friezeViewingRoomMediaCover: 'Frieze Viewing Room mobile app cover',
+        friezeViewingRoomMediaInquiry:
+          'Artwork inquiry screen connecting the user with a gallery',
+        friezeViewingRoomMediaFilters: 'Artwork filters screen',
+        friezeViewingRoomMediaSections: 'Themed sections screen',
+        friezeViewingRoomMediaArtwork: 'Artwork viewing screen',
+        friezeViewingRoomMediaGallery:
+          'Artwork viewing screen from another gallery',
         mychessMobileMedia1: 'myChess mobile app screen',
         mychessMobileMedia2: 'myChess Mobile gameplay screen',
         mychessMobileMedia3: 'myChess Mobile tournament screen',
@@ -1559,10 +1578,11 @@ export const resources = {
           'Connected user actions with a real-time Unreal Engine 3D scene',
           'Supported interior-selection flows and interactive commands sent to the 3D application',
         ],
-        neo4SightlineMediaCelsius:
-          'Brf Celsius visualization in Gothenburg — Neo4 Web client context',
-        neo4SightlineMediaSightline:
-          'Sightline Vision visual material about real-time 3D visualization',
+        neo4SightlineMediaScreen1: 'Neo4 Web — screen 1',
+        neo4SightlineMediaScreen2: 'Neo4 Web — screen 2',
+        neo4SightlineMediaScreen3: 'Neo4 Web — screen 3',
+        neo4SightlineMediaScreen4: 'Neo4 Web — screen 4',
+        neo4SightlineMediaScreen5: 'Neo4 Web — screen 5',
         neo4SightlineMetrics: [
           { value: '2015+', label: 'Neo4 Web publicly documented since' },
           { value: '91', label: 'apartments in the Brf Celsius client case' },

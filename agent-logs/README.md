@@ -1,5 +1,15 @@
 # AI Agent Change Log Index
 
+| 2026-09-12 | projects, cards, gallery, images, mobile, blur, responsive, accessibility, testing, graphify | [Contained project images over blurred backgrounds](2026/09/2026-09-12.md#contained-project-images-over-blurred-backgrounds) |
+
+| 2026-09-12 | projects, neo4, screenshots, webp, full-hd, media, i18n, testing, graphify | [Neo4 Full HD WebP screens](2026/09/2026-09-12.md#neo4-full-hd-webp-screens) |
+
+| 2026-09-12 | projects, neo4, demo, external-link, testing | [Neo4 live demo link](2026/09/2026-09-12.md#neo4-live-demo-link) |
+
+| 2026-09-12 | projects, mychess, cards, copy, i18n, testing, graphify | [MyChess ecosystem product copy](2026/09/2026-09-12.md#mychess-ecosystem-product-copy) |
+
+| 2026-09-12 | ui, hero, live-cam, desktop, responsive, css, testing | [Three-zone desktop Hero alignment](2026/09/2026-09-12.md#three-zone-desktop-hero-alignment) |
+
 | 2026-09-10 | ui, profile, spacing, responsive, css | [Profile section top padding](2026/09/2026-09-10.md#profile-section-top-padding) |
 
 | 2026-09-10 | projects, cards, filters, temporary, testing, graphify | [Temporarily hidden project cards](2026/09/2026-09-10.md#temporarily-hidden-project-cards) |

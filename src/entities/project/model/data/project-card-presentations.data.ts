@@ -50,7 +50,7 @@ export const projectCardPresentations: Record<
     direction: 'games-apps',
     teaserKey: 'projects.cardTeasers.friezeViewingRoom',
     tags: ['React', 'Mobile', 'AR'],
-    previewImageIndexes: [],
+    previewImageIndexes: [0, 1, 2],
   },
   'neo4-sightline': {
     direction: 'web',

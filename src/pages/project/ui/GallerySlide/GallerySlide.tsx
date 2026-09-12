@@ -1,5 +1,6 @@
 import { IconArrowsMaximize, IconPlayerPlay } from '@tabler/icons-react'
 import { useTranslation } from 'react-i18next'
+import type { CSSProperties } from 'react'
 import { GalleryImage } from '../GalleryImage/GalleryImage'
 import type { GallerySlideProps } from '../../model/types/projectCase.types'
 import styles from './styles/GallerySlide.module.css'
@@ -16,10 +17,19 @@ export function GallerySlide({
       <button
         type="button"
         className={styles.gallerySlidePhoto}
+        style={
+          {
+            '--project-image-background': `url(${JSON.stringify(media.src)})`,
+          } as CSSProperties
+        }
         onClick={onExpand}
         aria-label={t('projectCase.expand')}
       >
-        <GalleryImage src={media.src} alt={t(`projects.${media.altKey}`)} />
+        <GalleryImage
+          src={media.src}
+          alt={t(`projects.${media.altKey}`)}
+          className={styles.gallerySlideImage}
+        />
         <span className={styles.gallerySlideExpand}>
           <IconArrowsMaximize aria-hidden="true" />
           {t('projectCase.expand')}

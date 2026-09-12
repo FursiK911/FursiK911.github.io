@@ -29,19 +29,21 @@ export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
         <motion.span className={cx(styles.eyebrow)} variants={heroItemVariants}>
           {t('hero.eyebrow')} <i>● ONLINE</i>
         </motion.span>
-        <motion.h1 variants={heroItemVariants}>
-          <span>{t('hero.hi')}</span>
-          {t('hero.name')}
-        </motion.h1>
-        <motion.p className={cx(styles.heroRole)} variants={heroItemVariants}>
-          <TypingText text={typedRole} reducedMotion={reducedMotion} />
-        </motion.p>
-        <motion.p
-          className={cx(styles.heroLanguages)}
-          variants={heroItemVariants}
-        >
-          {t('hero.languages')}
-        </motion.p>
+        <div className={cx(styles.heroSummary)}>
+          <motion.h1 variants={heroItemVariants}>
+            <span>{t('hero.hi')}</span>
+            {t('hero.name')}
+          </motion.h1>
+          <motion.p className={cx(styles.heroRole)} variants={heroItemVariants}>
+            <TypingText text={typedRole} reducedMotion={reducedMotion} />
+          </motion.p>
+          <motion.p
+            className={cx(styles.heroLanguages)}
+            variants={heroItemVariants}
+          >
+            {t('hero.languages')}
+          </motion.p>
+        </div>
         <motion.div
           className={cx(styles.heroActions)}
           variants={heroItemVariants}

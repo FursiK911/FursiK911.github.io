@@ -1,5 +1,21 @@
 # September 2026
 
+| 2026-09-12 | projects, cards, gallery, images, mobile, blur, responsive, accessibility, testing, graphify | [Contained project images over blurred backgrounds](2026-09-12.md#contained-project-images-over-blurred-backgrounds) |
+
+| 2026-09-12 | projects, neo4, screenshots, webp, full-hd, media, i18n, testing, graphify | [Neo4 Full HD WebP screens](2026-09-12.md#neo4-full-hd-webp-screens) |
+
+| 2026-09-12 | projects, frieze, mobile, screenshots, webp, full-hd, media, testing | [Frieze Full HD WebP screenshots](2026-09-12.md#frieze-full-hd-webp-screenshots) |
+
+| 2026-09-12 | projects, frieze, mobile, app-store, google-play, links, testing | [Frieze current store links](2026-09-12.md#frieze-current-store-links) |
+
+| 2026-09-12 | projects, neo4, demo, external-link, testing | [Neo4 live demo link](2026-09-12.md#neo4-live-demo-link) |
+
+| 2026-09-12 | projects, mychess, cards, copy, i18n, testing, graphify | [MyChess ecosystem product copy](2026-09-12.md#mychess-ecosystem-product-copy) |
+
+| 2026-09-12 | projects, frieze, mobile, react-native, app-store, media, i18n, testing | [Frieze Viewing Room active App Store link and media](2026-09-12.md#frieze-viewing-room-active-app-store-link-and-media) |
+
+| 2026-09-12 | ui, hero, live-cam, desktop, responsive, css, testing | [Three-zone desktop Hero alignment](2026-09-12.md#three-zone-desktop-hero-alignment) |
+
 | 2026-09-10 | ui, profile, spacing, responsive, css | [Profile section top padding](2026-09-10.md#profile-section-top-padding) |
 
 | 2026-09-10 | projects, cards, filters, temporary, testing, graphify | [Temporarily hidden project cards](2026-09-10.md#temporarily-hidden-project-cards) |
