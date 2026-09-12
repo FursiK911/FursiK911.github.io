@@ -1,6 +1,6 @@
 /* Styles owned by the profile slice. */
 :global(.profile-section) {
-  padding-top: 88px;
+  padding-top: 120px;
 }
 
 :global(.profile-section) :global(.hero) {
@@ -31,16 +31,22 @@
 }
 
 @media (min-width: 1200px) {
+  :global(.profile-section) :global(.hero) {
+    min-height: auto;
+  }
+
+  :global(.hero-copy) {
+    align-self: stretch;
+  }
+
+  :global(.hero-actions) {
+    margin-top: auto;
+  }
+
   :global(.hero-broadcast) :global(.live-cam) {
     width: 100%;
     max-width: none;
     justify-self: stretch;
-  }
-}
-
-@media (max-width: 900px) {
-  :global(.profile-section) {
-    padding-top: 78px;
   }
 }
 

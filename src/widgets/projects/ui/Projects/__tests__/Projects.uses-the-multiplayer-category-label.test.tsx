@@ -6,6 +6,6 @@ it('uses the games and apps direction label', async () => {
   await changeLanguage('ru')
   renderWithProviders(<Projects />)
   expect(
-    screen.getByRole('button', { name: /Игры и приложения\s*14/ }),
+    screen.getByRole('button', { name: /Игры и приложения\s*12/ }),
   ).toBeInTheDocument()
 })

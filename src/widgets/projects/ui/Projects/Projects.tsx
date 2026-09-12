@@ -12,7 +12,10 @@ import {
 } from '@/features/project-filtering'
 import { ProjectCircuitGame } from '@/features/project-circuit-game'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
-import { projectCircuitGameEnabled } from '../../model/config/projects.config'
+import {
+  hiddenProjectIds,
+  projectCircuitGameEnabled,
+} from '../../model/config/projects.config'
 import cardStyles from './styles/Projects.module.css'
 import '../styles/Projects.module.css'
 
@@ -21,6 +24,10 @@ export function Projects() {
   const reducedMotion = useReducedMotion()
   const [direction, setDirection] = useState<'all' | ProjectDirection>('all')
   const [technology, setTechnology] = useState<ProjectCardTag | null>(null)
+  const showcaseProjects = useMemo(
+    () => projects.filter((project) => !hiddenProjectIds.has(project.id)),
+    [],
+  )
   const directionCounts = useMemo(
     () =>
       projectDirections.reduce(
@@ -28,20 +35,23 @@ export function Projects() {
           ...counts,
           [item]:
             item === 'all'
-              ? projects.length
-              : projects.filter((project) => project.card.direction === item)
-                  .length,
+              ? showcaseProjects.length
+              : showcaseProjects.filter(
+                  (project) => project.card.direction === item,
+                ).length,
         }),
         {} as Record<'all' | ProjectDirection, number>,
       ),
-    [],
+    [showcaseProjects],
   )
   const projectsInDirection = useMemo(
     () =>
       direction === 'all'
-        ? projects
-        : projects.filter((project) => project.card.direction === direction),
-    [direction],
+        ? showcaseProjects
+        : showcaseProjects.filter(
+            (project) => project.card.direction === direction,
+          ),
+    [direction, showcaseProjects],
   )
   const technologies = useMemo(
     () =>

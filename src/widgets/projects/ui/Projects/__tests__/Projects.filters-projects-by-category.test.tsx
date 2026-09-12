@@ -7,6 +7,6 @@ it('filters projects by direction', async () => {
   const user = userEvent.setup()
   await changeLanguage('ru')
   renderWithProviders(<Projects />)
-  await user.click(screen.getByRole('button', { name: /Веб-платформы\s*7/ }))
+  await user.click(screen.getByRole('button', { name: /Веб-платформы\s*4/ }))
   expect(screen.getByRole('heading', { name: 'myChess' })).toBeVisible()
 })

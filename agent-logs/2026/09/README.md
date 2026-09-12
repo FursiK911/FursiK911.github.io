@@ -1,5 +1,11 @@
 # September 2026
 
+| 2026-09-10 | ui, profile, spacing, responsive, css | [Profile section top padding](2026-09-10.md#profile-section-top-padding) |
+
+| 2026-09-10 | projects, cards, filters, temporary, testing, graphify | [Temporarily hidden project cards](2026-09-10.md#temporarily-hidden-project-cards) |
+
+| 2026-09-10 | ui, hero, live-cam, desktop, responsive, css, testing | [Hero desktop edge alignment](2026-09-10.md#hero-desktop-edge-alignment) |
+
 | 2026-09-10 | projects, saridu, metrics, achievements, i18n, testing | [SARiDU achievements mode grouping](2026-09-10.md#saridu-achievements-mode-grouping) |
 
 | 2026-09-10 | projects, mychess, cards, copy, contributions, i18n, testing | [MyChess product copy and contributions refinement](2026-09-10.md#mychess-product-copy-and-contributions-refinement) |

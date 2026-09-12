@@ -1,5 +1,7 @@
 # Global Decision Index
 
+| DEC-20260910-21 | Keep the six requested project definitions intact and exclude their IDs only from the public Projects widget; derive direction counts, technology options, and visible cards from the remaining showcase projects so hidden entries do not appear through filters. | projects, cards, filters, temporary | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-21) |
+
 | DEC-20260910-20 | Group Training, Exam and Observer into one SARiDU achievements metric while keeping Single + Co-op as the separate interaction-mode metric. | projects, saridu, metrics, achievements, i18n | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-20) |
 
 | DEC-20260910-19 | Use a web-edition MyChess teaser focused on real-player rated matches, AI champions, chess puzzles, tournaments with more than 2,000 simultaneous players, communities, multiple chess modes and Stockfish; describe the project page as a product overview and keep the contribution list feature-focused without stack names. | projects, mychess, cards, copy, contributions, i18n | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-19) |
@@ -239,3 +241,5 @@ Directions HUD motion system (2026-09-08) keeps motion local to the profile Dire
 
 | DEC-20260908-09 | Use the React Bits Grid Scan as a fixed desktop-only background for every route; disable webcam/model loading in the site adapter and use a static cyan grid when reduced motion is preferred. | ui, background, three, webgl, responsive, accessibility | [2026-09-08](2026/09/2026-09-08.md#decision-dec-20260908-09) |
 | DEC-20260910-01 | Use «Ключевой вклад» / «Key contributions» as the contribution list note while preserving the existing section heading. | projects, contribution, i18n, testing | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-01) |
+| DEC-20260910-22 | At desktop widths only, size the Hero grid row from the broadcast, stretch the copy column to that row, and anchor its actions with `margin-top: auto`; retain the existing layout below 1200 px. | ui, hero, live-cam, desktop, responsive | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-22) |
+| DEC-20260910-23 | Use a uniform `120px` top padding for `.profile-section` at all viewport widths; remove the previous mobile-specific reduction. | ui, profile, spacing, responsive | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-23) |

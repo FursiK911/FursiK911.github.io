@@ -32,7 +32,7 @@ it('renders the hero and filters projects', async () => {
     ),
   ).toEqual(['top', 'projects', 'experience', 'stack', 'education', 'contact'])
   await userEvent.click(
-    screen.getByRole('button', { name: /Web platforms\s*7/ }),
+    screen.getByRole('button', { name: /Web platforms\s*4/ }),
   )
   expect(screen.getByRole('heading', { name: 'myChess' })).toBeVisible()
   await waitFor(() =>
