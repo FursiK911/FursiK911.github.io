@@ -10,12 +10,12 @@ it('localizes the solo Unity project roles and end-to-end achievements', () => {
     'Полный цикл разработки приложения — от нуля до релиза — выполнен самостоятельно',
   )
   expect(russian.projects.drillingPoints).toContain(
-    'Полный цикл разработки приложения — от нуля до релиза — выполнен самостоятельно',
+    'Полный цикл разработки приложения — от архитектуры и реализации до подготовки релизной версии — выполнен самостоятельно',
   )
   expect(english.projects.mychessvrPoints).toContain(
     'Owned the complete application lifecycle from scratch to release',
   )
   expect(english.projects.drillingPoints).toContain(
-    'Owned the complete application lifecycle from scratch to release',
+    'Owned the complete application lifecycle independently, from architecture and implementation to release preparation',
   )
 })

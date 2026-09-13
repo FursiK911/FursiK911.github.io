@@ -155,7 +155,11 @@ afterEach(() => {
 it('localizes short timeline roles and the future CTA in Russian', async () => {
   await changeLanguage('ru')
   renderWithProviders(
-    <ExperienceTimeline entries={workExperience} reducedMotion />,
+    <ExperienceTimeline
+      entries={workExperience}
+      onEntrySelect={vi.fn()}
+      reducedMotion
+    />,
   )
   expect(screen.getByText('Unity / Frontend разработчик')).toBeVisible()
   expect(screen.getByText('Новый проект?')).toBeVisible()

@@ -14,6 +14,9 @@ it('hides temporarily unlisted project cards from the showcase', async () => {
     'CMS поставщика топлива',
     'CMS магазина дверей',
     'Quest room testing',
+    'Aptive Education',
+    'Сайт транспортной компании Korobka',
+    'Chudo Floor',
   ]) {
     expect(
       screen.queryByRole('heading', { name: title }),

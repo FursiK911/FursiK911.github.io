@@ -9,6 +9,7 @@ it('falls back to initials when a logo cannot be loaded', () => {
       index={0}
       reducedMotion
       axisPoint={{ x: 8, y: 52 }}
+      onSelect={() => {}}
     />,
   )
   fireEvent.error(screen.getByAltText('YELLOW ELEMENT logo'))

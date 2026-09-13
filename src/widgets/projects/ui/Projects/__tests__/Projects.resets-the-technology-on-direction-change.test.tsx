@@ -13,7 +13,7 @@ it('resets the technology selection when the direction changes', async () => {
     'aria-pressed',
     'true',
   )
-  await user.click(screen.getByRole('button', { name: /Web platforms\s*4/ }))
+  await user.click(screen.getByRole('button', { name: /Web platforms\s*2/ }))
   expect(
     screen.getByRole('button', { name: 'All technologies' }),
   ).toHaveAttribute('aria-pressed', 'true')

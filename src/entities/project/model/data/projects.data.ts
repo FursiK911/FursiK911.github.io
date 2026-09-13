@@ -217,8 +217,8 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       { kind: 'youtube', videoId: 'Q8PqTr5Yfvw' },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-vr/chess_puzzles.webp',
-        altKey: 'mychessvrMediaChessPuzzles',
+        src: '/images/projects/my-chess-vr/location_library.webp',
+        altKey: 'mychessvrMediaLocationLibrary',
       },
       {
         kind: 'image',
@@ -247,13 +247,13 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-vr/location_cafe.webp',
-        altKey: 'mychessvrMediaLocationCafe',
+        src: '/images/projects/my-chess-vr/stockfish_analysis.webp',
+        altKey: 'mychessvrMediaStockfishAnalysis',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-vr/location_library.webp',
-        altKey: 'mychessvrMediaLocationLibrary',
+        src: '/images/projects/my-chess-vr/chess_puzzles.webp',
+        altKey: 'mychessvrMediaChessPuzzles',
       },
       {
         kind: 'image',
@@ -262,8 +262,8 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-vr/stockfish_analysis.webp',
-        altKey: 'mychessvrMediaStockfishAnalysis',
+        src: '/images/projects/my-chess-vr/location_cafe.webp',
+        altKey: 'mychessvrMediaLocationCafe',
       },
     ],
     featured: true,
@@ -441,7 +441,6 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
         altKey: 'neo4SightlineMediaScreen5',
       },
     ],
-    metricsKey: 'neo4SightlineMetrics',
     featured: true,
   },
   {
@@ -460,7 +459,7 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     id: 'drilling-vr',
     titleKey: 'drilling',
     category: ['unity', 'xr-ar', 'multiplayer'],
-    platformKey: 'platformVr',
+    platformKey: 'platformPcWindows',
     roleKey: 'soloUnity',
     descriptionKey: 'drillingDesc',
     pointsKey: 'drillingPoints',
@@ -471,9 +470,10 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       'Netcode for GameObjects',
       'Final IK',
       'Blender',
+      'SteamVR',
     ],
     company: 'ООО ЦУП',
-    period: { from: '10.2024', to: '02.2025' },
+    period: { from: '2024', to: '2024' },
     actions: [
       {
         type: 'external',
@@ -633,6 +633,9 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     ],
     media: [
       { kind: 'youtube', videoId: 'iXrNLl6rpXI', startSeconds: 483 },
+      { kind: 'youtube', videoId: '08QCrgqrIyQ' },
+      { kind: 'youtube', videoId: 'Xnmc3i2Xmko' },
+      { kind: 'youtube', videoId: 'Yy4j2gQdXW4' },
       {
         kind: 'image',
         src: '/images/projects/earth-dragons/logo.webp',
@@ -826,6 +829,8 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       },
     ],
     media: [
+      { kind: 'youtube', videoId: 'CIBXdduloJw' },
+      { kind: 'youtube', videoId: 'ep4Af8g-NEw' },
       {
         kind: 'image',
         src: '/images/projects/ar-coloring/ar-coloring-home.webp',
@@ -843,6 +848,53 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       },
     ],
     metricsKey: 'arColoringMetrics',
+  },
+  {
+    id: 'ar-coloring-zebra',
+    titleKey: 'arColoringZebra',
+    category: ['mobile', 'unity', 'xr-ar'],
+    platformKey: 'platformAndroid',
+    roleKey: 'juniorUnity',
+    descriptionKey: 'arColoringZebraDesc',
+    pointsKey: 'arColoringZebraPoints',
+    tech: ['Unity', 'C#', 'AR', 'Image tracking', 'QR', 'Android'],
+    company: 'Творческая мастерская Зебра',
+    period: { from: '09.2025' },
+    actions: [
+      {
+        type: 'external',
+        label: 'RuStore',
+        href: 'https://www.rustore.ru/catalog/app/com.zebra.arcoloringapp',
+      },
+    ],
+    media: [
+      {
+        kind: 'image',
+        src: '/images/projects/ar-coloring-zebra/screen-1.webp',
+        altKey: 'arColoringZebraMediaScreen1',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/ar-coloring-zebra/screen-2.webp',
+        altKey: 'arColoringZebraMediaScreen2',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/ar-coloring-zebra/screen-3.webp',
+        altKey: 'arColoringZebraMediaScreen3',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/ar-coloring-zebra/screen-4.webp',
+        altKey: 'arColoringZebraMediaScreen4',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/ar-coloring-zebra/screen-5.webp',
+        altKey: 'arColoringZebraMediaScreen5',
+      },
+    ],
+    metricsKey: 'arColoringZebraMetrics',
   },
   {
     id: 'chudobooks',
@@ -881,6 +933,18 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
         type: 'external',
         label: 'AppBrain',
         href: 'https://www.appbrain.com/app/chudobooks/com.chudobooks',
+      },
+    ],
+    media: [
+      {
+        kind: 'image',
+        src: '/images/projects/ar-chudobook/screen_1.webp',
+        altKey: 'chudobooksMediaScreen1',
+      },
+      {
+        kind: 'image',
+        src: '/images/projects/ar-chudobook/screen_2.webp',
+        altKey: 'chudobooksMediaScreen2',
       },
     ],
     metricsKey: 'chudobooksMetrics',

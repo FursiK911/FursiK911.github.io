@@ -2,13 +2,13 @@ import { expect, it } from 'vitest'
 import { projects } from '@/entities/project'
 
 it('defines card directions, tags and approved preview images for every project', () => {
-  expect(projects).toHaveLength(24)
+  expect(projects).toHaveLength(25)
   expect(
     projects.filter((project) => project.card.direction === 'web'),
   ).toHaveLength(7)
   expect(
     projects.filter((project) => project.card.direction === 'games-apps'),
-  ).toHaveLength(14)
+  ).toHaveLength(15)
   expect(
     projects.filter((project) => project.card.direction === 'vr-training'),
   ).toHaveLength(3)

@@ -1,4 +1,4 @@
-import { screen } from '@testing-library/react'
+import { act, screen } from '@testing-library/react'
 import { vi } from 'vitest'
 import { ExperienceTimeline } from '../ExperienceTimeline'
 import { workExperience } from '@/entities/work-experience'
@@ -152,7 +152,9 @@ afterEach(() => {
   vi.unstubAllGlobals()
 })
 it('renders the complete career path and future milestone', () => {
-  renderWithProviders(<ExperienceTimeline entries={workExperience} />)
+  renderWithProviders(
+    <ExperienceTimeline entries={workExperience} onEntrySelect={vi.fn()} />,
+  )
   expect(screen.getAllByRole('article')).toHaveLength(workExperience.length + 1)
   expect(screen.getByText('New Project?')).toBeInTheDocument()
   expect(document.querySelector('svg.experience-timeline-axis')).toBeVisible()
@@ -172,4 +174,18 @@ it('renders the complete career path and future milestone', () => {
   )
   expect(workExperience.some((entry) => 'pathProgress' in entry)).toBe(false)
   expect(screen.getAllByRole('article')[0]).toHaveStyle('--timeline-x: 50px')
+  act(() => {
+    const frames = [...animationFrames.values()]
+    animationFrames.clear()
+    frames.forEach((frame) => frame(0))
+  })
+  expect(gsapTo).toHaveBeenCalledWith(
+    expect.anything(),
+    expect.objectContaining({
+      duration: 12,
+      ease: 'none',
+      repeat: -1,
+      repeatDelay: 0,
+    }),
+  )
 })

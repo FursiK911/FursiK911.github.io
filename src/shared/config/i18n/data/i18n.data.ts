@@ -112,9 +112,10 @@ export const resources = {
         title: 'ОПЫТ',
         intro: 'PAST · CURRENT · NEXT',
         present: 'НАСТОЯЩЕЕ ВРЕМЯ',
-        moreDetails: 'ПОДРОБНЕЕ',
-        lessDetails: 'СВЕРНУТЬ',
         detailsLabel: 'CAREER_DETAILS',
+        openDetails: 'Открыть подробности о работе в {{company}} за {{period}}',
+        detailsTitle: 'Подробности о работе в {{company}} за {{period}}',
+        closeDetails: 'Закрыть подробности о работе',
         timelineLabel: 'Карьерная хронология',
         achievementsLabel: 'КЛЮЧЕВЫЕ ЗАДАЧИ',
         projectsLabel: 'ПРОЕКТЫ',
@@ -238,9 +239,11 @@ export const resources = {
         platformPcAstraLinux: 'ПК / Astra Linux',
         platformVive: 'HTC VIVE',
         platformMobile: 'Android / iOS',
+        platformAndroid: 'Android',
         platformPcWeb: 'PC / Web',
         platformWeb: 'Web',
         platformWindows: 'Windows',
+        platformPcWindows: 'ПК / Windows',
         platformWebGl: 'WebGL',
       },
       projects: {
@@ -306,7 +309,7 @@ export const resources = {
         },
         mychessvr: 'MyChessVR',
         industrial: 'Промышленные VR-тренажёры',
-        drilling: 'VR-демо буровой установки',
+        drilling: 'VR-тренажёр бурильщиков',
         sariduActuator: 'VR-тренажёр САРиДУ и исполнительный механизм',
         mobileRts: 'Мобильная multiplayer RTS',
         earthDragons: 'Земля драконов АШАН',
@@ -322,7 +325,7 @@ export const resources = {
           sariduActuator:
             'VR-тренажёр на Unigine, который превращает отработку неисправностей на атомном оборудовании в безопасную и реалистичную практику с 15+ сценариями. Одиночный и кооперативный режимы, три варианта оборудования и встроенный экзамен помогают проверить готовность сотрудника на полностью российском ПО, лицензированном для использования в РФ.',
           mychessvr:
-            'Шахматы в VR с классическими партиями, головоломками и анализом ходов. Игрок взаимодействует с доской руками в нескольких окружениях.',
+            'MyChess VR переносит шахматы в виртуальную реальность: здесь можно играть в классические партии, решать десятки шахматных головоломок и разбирать свои ходы с помощью Stockfish. Проект помогает играть, тренироваться и совершенствовать шахматные навыки.',
           catCitten:
             'Интернет-магазин с каталогом, заказами и отдельными B2B/B2C-кабинетами. Интерфейс помогает пройти путь от выбора товара до оформления.',
           industrial:
@@ -330,13 +333,13 @@ export const resources = {
           aptiveEducation:
             'Образовательная платформа для учеников, родителей и преподавателей. Прогресс, задания и рабочие пространства собраны в одном интерфейсе.',
           friezeViewingRoom:
-            'Мобильное приложение Frieze Viewing Room для поиска произведений искусства, просмотра галерей и AR-размещения работ в пространстве пользователя.',
+            'Мобильная галерея Frieze для знакомства с картинами ведущих галерей: тематические подборки, удобный поиск, детальные карточки работ, AR-примерка и более 10 000 пользователей.',
           neo4Sightline:
-            'Браузерная real-time 3D-визуализация недвижимости. Навигация по пространству связана с интерактивной сценой Unreal Engine.',
+            'Unreal Engine-визуализация жилых комплексов, доступная прямо в браузере с компьютера или смартфона: исследуйте территорию, выбирайте квартиры и настраивайте интерьер в интерактивном 3D.',
           fuelCms:
             'CMS для поставок топлива, учёта заправок и расчёта цен. Рабочие экраны помогают управлять ежедневными операциями.',
           drilling:
-            'VR-демо рабочих процессов буровой установки для нескольких операторов. Участники синхронно взаимодействуют с оборудованием.',
+            'VR-тренажёр бурильщиков для безопасной отработки рабочих процессов на буровой установке: взаимодействие с оборудованием, совместная работа нескольких операторов и реалистичная практика в виртуальной среде.',
           vulkanVerse:
             'Разработка механик для открытого multiplayer-мира VulcanVerse. Игровая локация Tartarus соединена с клиент-серверными сценариями.',
           korobka:
@@ -353,6 +356,8 @@ export const resources = {
             'Интерактивная инсталляция на Unity и OpenCV для большого экрана. Взаимодействие посетителей синхронизируется через Photon.',
           arColoring:
             'Раскраски оживают через камеру смартфона. AR-персонажи и тематические сцены превращают печатную страницу в игру.',
+          arColoringZebra:
+            'AR-раскраски для детей от Творческой мастерской Зебра: бумажные рисунки оживают в дополненной реальности.',
           chudobooks:
             'Детские книги с AR-сценами, которые запускаются с печатных страниц. Контент доставляется и обновляется внутри приложения.',
           arChudaboxes:
@@ -362,14 +367,14 @@ export const resources = {
           questRoom:
             'Тестирование сетевой Unity-игры с поиском и описанием ошибок. Проверял multiplayer-сценарии и стабильность игровых потоков.',
           mychessMobile:
-            'Мобильный клиент myChess для партий, турниров, стримов и обучения. Один продукт поддерживает Android и iOS.',
+            'Мобильная версия первой российской шахматной экосистемы myChess, объединяющая онлайн-игры, турниры, обучение и общение в мобильном приложении на Flutter. Реальные соперники, AI-чемпионы, шахматные задачи и анализ партий Stockfish доступны на Android и iOS.',
         },
         mychessvrDesc:
-          'Полноценный VR-шахматный опыт с несколькими режимами игры, головоломками, AI-соперником, IK-взаимодействиями и анализом ходов Stockfish.',
+          'MyChess VR переносит шахматы за пределы плоского экрана — в полноценное виртуальное пространство с физическим взаимодействием с доской, фигурами и игровыми объектами. Пользователь может брать фигуры руками, перемещать их по доске, взаимодействовать с шахматными часами и проходить партии в естественной для VR форме.\n\nВ классическом режиме доступны три формата игры: Classic, Rapid и Blitz, а также три уровня сложности соперника. Система шахматных часов добавляет партиям привычную механику контроля времени и делает игровой процесс ближе к настоящему турнирному формату.\n\nДля развития тактического мышления в MyChess VR предусмотрен режим шахматных пазлов. В нём собраны десятки типов задач, каждый из которых доступен на трёх уровнях сложности. Отдельный режим «Игра с учителем» использует локально запущенный Stockfish: после каждого хода система оценивает решение игрока, показывает более сильную альтернативу и отображает численное преимущество выбранной стороны.\n\nВсе режимы доступны в трёх игровых локациях: библиотеке, парке и ресторане. MyChess VR уже можно приобрести в Steam и запустить через SteamVR.',
         industrialDesc:
           'Интерактивные промышленные сценарии обучения с пошаговыми операциями, проверкой действий, подсказками, обработкой ошибок и реалистичным взаимодействием с оборудованием.',
         drillingDesc:
-          'Мультиплеерное VR-демо с рабочими процессами бурового оборудования и взаимодействием операторов.',
+          'VR-тренажёр бурильщиков, в котором операторы отрабатывают ключевые рабочие процессы на буровой установке в виртуальной среде. Приложение воспроизводит взаимодействие с оборудованием и инструментами, поддерживает совместную работу нескольких участников и синхронизирует действия в реальном времени, позволяя безопасно готовиться к производственным сценариям без остановки реального оборудования.',
         sariduActuatorDesc:
           'Промышленное VR-приложение предназначено для обучения сотрудников действиям при неисправностях на рабочем месте. Пользователь может проходить сценарии самостоятельно или в кооперативе с другим участником в VR-шлеме. Приложение полностью построено на российском программном обеспечении, лицензированном для использования в РФ. В нём смоделированы рабочее место и реальное оборудование, включая Type A, Type M и пневматическую систему, а режимы обучения и экзамена позволяют сначала освоить правильный алгоритм, а затем проверить знания и навыки.',
         mobileRtsDesc:
@@ -390,19 +395,18 @@ export const resources = {
         mychessWebDesc:
           'myChess — первая российская шахматная экосистема, созданная как единое цифровое пространство для игры, соревнований, обучения и общения. На платформе зарегистрировались более 100 000 пользователей, сыгравших свыше 600 000 партий: они могут находить равных соперников, играть с друзьями и AI-чемпионами, участвовать в индивидуальных и командных турнирах, решать шахматные задачи и подробно анализировать свои партии с помощью Stockfish. Сообщества, команды, чаты, трансляции, рейтинги и инструменты честной игры формируют вокруг шахмат полноценную социальную среду. Масштаб и зрелость продукта подтверждает его включение в реестр российского программного обеспечения.',
         mychessMobileDesc:
-          'Кроссплатформенный Flutter-клиент экосистемы myChess, которая уже объединила 121 577 пользователей, 665 880 сыгранных партий и 459 сообществ в мобильных игровых, турнирных и социальных сценариях, стримах и обучении.',
+          'MyChess Mobile — мобильная версия первой российской шахматной экосистемы, созданная как кроссплатформенное Flutter-приложение для Android и iOS. Более 100 000 пользователей уже сыграли свыше 600 000 партий: в приложении доступны матчи с реальными соперниками, друзьями и AI-чемпионами, индивидуальные и командные турниры, шахматные задачи и подробный анализ партий с помощью Stockfish. Сообщества, команды, чаты, трансляции, рейтинги и инструменты честной игры помогают оставаться в экосистеме независимо от того, где находится игрок. Как и веб-версия, мобильное приложение входит в реестр российского программного обеспечения.',
         friezeViewingRoomDesc:
-          'Мобильное приложение Frieze Viewing Room для поиска и просмотра произведений искусства. В 2021 году я работал над ним как React Native Developer в составе FGP.',
+          'Frieze Viewing Room превращает международную арт-ярмарку в персональную галерею в смартфоне. Пользователь может исследовать кураторские подборки и коллекции галерей, находить картины по художнику, цене, медиуму, разделу и дате, открывать подробную информацию о работе и рассматривать изображения высокого разрешения. Путь от первого знакомства с картиной до контакта с галереей выстроен прямо внутри приложения: заинтересованный покупатель может отправить запрос, добавить сообщение и свои контактные данные. AR-сценарий помогает примерить картину на стене и оценить её масштаб в реальном пространстве. Приложение уже выбрали более 10 000 пользователей Google Play — показатель востребованности цифрового опыта Frieze среди любителей искусства.',
         friezeViewingRoomPoints: [
-          'Разрабатывал мобильные экраны и пользовательские сценарии на React Native',
-          'Реализовывал поиск, фильтрацию и просмотр произведений искусства в приложении',
-          'Поддерживал AR-сценарий размещения произведений в пространстве пользователя',
+          'Разрабатывал кроссплатформенные мобильные интерфейсы и пользовательские сценарии Frieze на React Native для iOS и Android',
+          'Реализовывал поиск и многоуровневую фильтрацию картин по художнику, цене, галерее, разделу и дате',
+          'Собирал сценарии исследования коллекций: тематические подборки, галереи, карточки работ и просмотр изображений высокого разрешения',
+          'Проектировал сценарий прямого обращения к галерее по выбранной картине: сообщение и контактные данные пользователя собирались в одном понятном потоке',
+          'Поддерживал AR-сценарий размещения картины в пространстве пользователя с оценкой масштаба работы',
         ],
         friezeViewingRoomMetrics: [
-          { value: 'React Native', label: 'мобильный стек' },
-          { value: 'ARKit / ARCore', label: 'AR-платформы' },
-          { value: '2021', label: 'период работы в составе FGP' },
-          { value: '8 месяцев', label: 'заявленный срок разработки' },
+          { value: '10K+', label: 'скачиваний в Google Play' },
         ],
         mychessMetrics: [
           { value: '121 577', label: 'зарегистрированных пользователей' },
@@ -412,8 +416,7 @@ export const resources = {
           { value: '2 000+', label: 'участников в крупнейшем турнире' },
         ],
         mychessMobilePoints: [
-          'Разрабатывал кроссплатформенное приложение на Flutter и Dart',
-          'Адаптировал игровые, турнирные и социальные сценарии myChess для мобильных устройств',
+          'Разрабатывал кроссплатформенное приложение на Flutter',
           'Поддерживал публикационные версии приложения для Android и iOS',
         ],
         mychessMobileMetrics: [
@@ -439,11 +442,10 @@ export const resources = {
           'Локализация и расширение production-кода',
         ],
         drillingPoints: [
-          'Полностью функциональное демо, разработанное самостоятельно',
-          'Полный цикл разработки приложения — от нуля до релиза — выполнен самостоятельно',
-          'Интерактивные рабочие процессы бурового оборудования',
-          'Мультиплеерная синхронизация через Netcode',
-          'Ассеты Blender и взаимодействия Final IK',
+          'Полный цикл разработки приложения — от архитектуры и реализации до подготовки релизной версии — выполнен самостоятельно',
+          'Реализовал сетевое взаимодействие и синхронизацию действий нескольких операторов через Netcode for GameObjects',
+          'Реализовал рабочие процессы бурового оборудования и интерактивное взаимодействие с ключевыми элементами установки',
+          'Интегрировал Final IK для реалистичной кинематической модели персонажей и синхронизации их движений в VR',
         ],
         drillingMediaScreen1: 'Сцена VR-обучения бурению — экран 1',
         drillingMediaScreen2: 'Сцена VR-обучения бурению — экран 2',
@@ -597,23 +599,18 @@ export const resources = {
         ],
         neo4Sightline: 'Neo4 Web / Interior Sightline',
         neo4SightlineDesc:
-          'Neo4 Web — интерактивная real-time 3D-визуализация недвижимости и городской среды для браузера, с отдельным интерьерным направлением Sightline.',
+          'Neo4 превращает выбор жилья в полноценное 3D-путешествие по будущему жилому комплексу. Пользователь может рассмотреть архитектуру и территорию с любого ракурса, пройтись по двору, почувствовать ритм живого города, а затем перейти к подбору конкретной квартиры. В карточке каждого варианта доступны планировка, площадь, стоимость и другие параметры, а виртуальная прогулка позволяет заранее изучить все комнаты — от кухни до ванной. Интерьер можно адаптировать под себя: менять мебель, собирать собственную конфигурацию и сразу оценивать её влияние на итоговую стоимость. Смена времени суток и сезонов помогает увидеть проект в разных сценариях и почувствовать атмосферу места ещё до визита. За реалистичной графикой и плавной работой прямо в браузере — связка Unreal Engine и Pixel Streaming.',
         neo4SightlinePoints: [
-          'Разрабатывал браузерный интерфейс для навигации по виртуальному окружению и просмотров квартир',
-          'Связывал действия пользователя с real-time 3D-сценой на Unreal Engine',
-          'Поддерживал сценарии выбора интерьера и передачи интерактивных команд в 3D-приложение',
+          'Связывал браузерный интерфейс с интерактивной Unreal Engine-сценой через командный и событийный обмен данными',
+          'Реализовывал пользовательские сценарии выбора жилого комплекса, просмотра квартир, перехода в интерьер и настройки мебели',
+          'Реализовывал синхронизацию пользовательского ввода в браузере с Unreal Engine-приложением и обмен данными о состоянии интерфейса',
+          'Поддерживал навигацию по территории, смену времени суток и сезонов как единый пользовательский сценарий',
         ],
         neo4SightlineMediaScreen1: 'Neo4 Web — экран 1',
         neo4SightlineMediaScreen2: 'Neo4 Web — экран 2',
         neo4SightlineMediaScreen3: 'Neo4 Web — экран 3',
         neo4SightlineMediaScreen4: 'Neo4 Web — экран 4',
         neo4SightlineMediaScreen5: 'Neo4 Web — экран 5',
-        neo4SightlineMetrics: [
-          { value: '2015+', label: 'Neo4 Web публично известен' },
-          { value: '91', label: 'квартир в клиентском кейсе Brf Celsius' },
-          { value: '21', label: 'жилой этаж в клиентском кейсе' },
-          { value: '23', label: 'этажей в здании клиента Brf Celsius' },
-        ],
         fuelCms: 'CMS поставщика топлива',
         fuelCmsDesc:
           'Административная система для поставок, учёта заправок и расчёта цен.',
@@ -721,6 +718,25 @@ export const resources = {
           { value: '5', label: 'именованных контент-паков iOS' },
           { value: '200', label: 'загрузок Android по архивной метрике' },
         ],
+        arColoringZebra: 'AR Раскраски',
+        arColoringZebraDesc:
+          'Приложение AR Раскраски от Творческой мастерской Зебра превращает бумажные раскраски в 3D-анимации через камеру смартфона или планшета. Пользователь активирует набор по QR-коду, раскрашивает страницу, оживляет героев и может снять фото или видео.',
+        arColoringZebraPoints: [
+          'Реализовал flow QR-код → активация набора → раскрашивание → сканирование → AR-анимация',
+          'Настроил сравнение раскрашенной и авторской версии рисунка с оригинальными цветами художника',
+          'Поддержал AR-фото, AR-видео, социальный шеринг и счётчик оживших рисунков',
+        ],
+        arColoringZebraMediaScreen1: 'Скриншот 1 AR Раскраски из RuStore',
+        arColoringZebraMediaScreen2: 'Скриншот 2 AR Раскраски из RuStore',
+        arColoringZebraMediaScreen3: 'Скриншот 3 AR Раскраски из RuStore',
+        arColoringZebraMediaScreen4: 'Скриншот 4 AR Раскраски из RuStore',
+        arColoringZebraMediaScreen5: 'Скриншот 5 AR Раскраски из RuStore',
+        arColoringZebraMetrics: [
+          { value: 'Android', label: 'платформа RuStore' },
+          { value: '0.1', label: 'первая версия' },
+          { value: 'до 1K', label: 'скачиваний в RuStore' },
+          { value: '122.7 MB', label: 'размер приложения' },
+        ],
         chudobooks: 'Chudobooks',
         arChudaboxes: 'AR Chudoboxes / Chudoboxes EKO',
         chudobooksDesc:
@@ -731,6 +747,8 @@ export const resources = {
           'Настроил проверку MD5 и динамическую загрузку платформенных 3D/AR AssetBundle-пакетов с CDN',
           'Связал QR-активацию наборов, локализацию RU/EN/UK, аудиосценарии и фото/видео с AR-персонажами',
         ],
+        chudobooksMediaScreen1: 'Главный экран приложения Chudobooks',
+        chudobooksMediaScreen2: 'Игровой экран приложения Chudobooks',
         chudobooksMetrics: [
           { value: 'iOS + Android', label: 'платформы' },
           { value: '1.9 / 1.11', label: 'последние версии iOS / Android' },
@@ -1137,9 +1155,10 @@ export const resources = {
         title: 'EXPERIENCE',
         intro: 'PAST · CURRENT · NEXT',
         present: 'PRESENT',
-        moreDetails: 'MORE DETAILS',
-        lessDetails: 'LESS DETAILS',
         detailsLabel: 'CAREER_DETAILS',
+        openDetails: 'Open work details for {{company}}, {{period}}',
+        detailsTitle: 'Work details at {{company}}, {{period}}',
+        closeDetails: 'Close work details',
         timelineLabel: 'Career timeline',
         achievementsLabel: 'KEY CONTRIBUTIONS',
         projectsLabel: 'PROJECTS',
@@ -1263,9 +1282,11 @@ export const resources = {
         platformPcAstraLinux: 'PC / Astra Linux',
         platformVive: 'HTC VIVE',
         platformMobile: 'Android / iOS',
+        platformAndroid: 'Android',
         platformPcWeb: 'PC / Web',
         platformWeb: 'Web',
         platformWindows: 'Windows',
+        platformPcWindows: 'PC / Windows',
         platformWebGl: 'WebGL',
       },
       projects: {
@@ -1331,7 +1352,7 @@ export const resources = {
         },
         mychessvr: 'MyChessVR',
         industrial: 'Industrial VR Training Simulations',
-        drilling: 'VR Drilling Training Demo',
+        drilling: 'VR Drilling Training Simulator',
         sariduActuator: 'SARiDU Actuator VR Training Simulator',
         mobileRts: 'Mobile Multiplayer RTS',
         earthDragons: 'Earth of Dragons — Auchan',
@@ -1347,7 +1368,7 @@ export const resources = {
           sariduActuator:
             'A Unigine VR trainer that turns fault response on nuclear-power equipment into safe, realistic practice across 15+ scenarios. Solo and co-op modes, three equipment variants and an integrated exam help verify operator readiness on an application built entirely on Russian software licensed for use in Russia.',
           mychessvr:
-            'VR chess with classic games, puzzles and move analysis. Players interact with the board by hand across several environments.',
+            'MyChess VR brings chess into virtual reality: play classic games, solve dozens of chess puzzles and review your moves with Stockfish. The project helps players compete, train and improve their chess skills.',
           catCitten:
             'An online store with catalogue, ordering and separate B2B/B2C accounts. The interface supports the full path from product choice to checkout.',
           industrial:
@@ -1357,11 +1378,11 @@ export const resources = {
           friezeViewingRoom:
             'A Frieze mobile app for artwork discovery, gallery browsing and placing artworks in the user’s space with AR.',
           neo4Sightline:
-            'A browser-based real-time 3D property visualizer. Space navigation connects directly to an interactive Unreal Engine scene.',
+            'An Unreal Engine property experience available directly in the browser on desktop and mobile: explore the development, compare apartments and configure interiors in interactive 3D.',
           fuelCms:
             'A CMS for fuel deliveries, refuelling records and price calculations. Working screens support everyday operations.',
           drilling:
-            'A VR drilling-rig workflow demo for several operators. Participants interact with equipment in synchronized sessions.',
+            'A VR drilling training simulator for safely practising rig workflows: interact with equipment, coordinate several operators and build hands-on experience in a realistic virtual environment.',
           vulkanVerse:
             'Gameplay work for the open multiplayer world of VulcanVerse. The Tartarus location connects to client-server gameplay flows.',
           korobka:
@@ -1378,6 +1399,8 @@ export const resources = {
             'An interactive Unity and OpenCV installation for a large screen. Visitor interaction synchronizes through Photon.',
           arColoring:
             'Colouring pages come alive through a phone camera. AR characters and themed scenes turn a printed page into a game.',
+          arColoringZebra:
+            'A children’s AR coloring app from Zebra Creative Workshop: paper drawings come alive in augmented reality.',
           chudobooks:
             'Children’s books with AR scenes launched from printed pages. Content is delivered and updated inside the app.',
           arChudaboxes:
@@ -1387,14 +1410,14 @@ export const resources = {
           questRoom:
             'Testing a networked Unity game by finding and documenting defects. Multiplayer scenarios and gameplay-flow stability were checked.',
           mychessMobile:
-            'The myChess mobile client for games, tournaments, streams and learning. One product supports Android and iOS.',
+            'The mobile edition of the first Russian chess ecosystem, bringing online games, tournaments, learning and communication together in a Flutter app. Real opponents, AI champions, chess puzzles and Stockfish game analysis are available on Android and iOS.',
         },
         mychessvrDesc:
-          'A complete VR chess experience with multiple game modes, puzzles, an AI opponent, IK interactions and Stockfish move analysis.',
+          'MyChess VR takes chess beyond the flat screen and into a complete virtual space with physical interaction with the board, pieces and game objects. Players can pick up pieces by hand, move them across the board, interact with the chess clock and play games in a natural VR format.\n\nThe classic mode offers three game formats: Classic, Rapid and Blitz, along with three opponent difficulty levels. The chess clock adds familiar time-control mechanics and brings the gameplay closer to a real tournament format.\n\nMyChess VR also includes a chess puzzle mode designed to develop tactical thinking. It contains dozens of puzzle types, each available across three difficulty levels. The separate Play with Teacher mode uses Stockfish running locally: after every move, it evaluates the player’s decision, shows a stronger alternative and displays the numerical advantage for the selected side.\n\nAll modes are available in three game locations: a library, a park and a restaurant. MyChess VR is available to purchase on Steam and play through SteamVR.',
         industrialDesc:
           'Interactive industrial training scenarios with step-by-step operations, action validation, hints, error handling and realistic equipment interactions.',
         drillingDesc:
-          'A multiplayer VR training demo reproducing drilling equipment workflows and operator interactions.',
+          'A VR drilling training simulator where operators practise core rig workflows in a virtual environment. The application reproduces equipment and tool interactions, supports several participants working together and synchronizes their actions in real time, enabling safe preparation for production scenarios without interrupting real equipment operations.',
         sariduActuatorDesc:
           'This industrial VR application trains employees to respond to faults at a real-world workstation. A user can complete scenarios alone or cooperate with another participant wearing a VR headset. The application is built entirely on Russian software licensed for use in Russia. It models the workstation and real equipment, including Type A, Type M and the pneumatic system, while training and examination modes first teach the correct procedure and then assess the employee’s knowledge and skills.',
         mobileRtsDesc:
@@ -1412,19 +1435,18 @@ export const resources = {
         mychessWebDesc:
           'myChess is the first Russian chess ecosystem, created as a unified digital space for playing, competing, learning and connecting. More than 100,000 users have joined the platform and played over 600,000 games: they can find evenly matched opponents, play with friends and AI champions, enter individual and team tournaments, solve chess puzzles and analyse their games in depth with Stockfish. Communities, teams, chats, broadcasts, ratings and fair-play tools form a complete social environment around chess. The product’s scale and maturity are reinforced by its inclusion in the Russian software registry.',
         mychessMobileDesc:
-          'A cross-platform Flutter client for the myChess ecosystem, already bringing 121,577 users, 665,880 games played and 459 communities to mobile game, tournament and social flows, streaming and learning.',
+          'MyChess Mobile is the mobile edition of the first Russian chess ecosystem, built as a cross-platform Flutter application for Android and iOS. More than 100,000 users have already played over 600,000 games: the app offers matches with real opponents, friends and AI champions, individual and team tournaments, chess puzzles and in-depth Stockfish game analysis. Communities, teams, chats, broadcasts, ratings and fair-play tools help players stay connected to the ecosystem wherever they are. The myChess ecosystem is included in the Russian software registry.',
         friezeViewingRoomDesc:
-          'A Frieze mobile app for exploring and viewing artworks. In 2021, I worked on it as a React Native Developer at FGP.',
+          'Frieze Viewing Room turns an international art fair into a personal gallery on a smartphone. Users can explore curated selections and gallery collections, find paintings by artist, price, medium, section and date, open detailed artwork pages and browse high-resolution images. The journey from discovering a painting to contacting its gallery is built into the app: an interested buyer can send an inquiry, add a message and provide contact details. An AR scenario lets users preview a painting on their wall and understand its scale in a real space. More than 10,000 Google Play users have already chosen the app — a clear sign of the digital experience’s appeal to art lovers.',
         friezeViewingRoomPoints: [
-          'Developed mobile screens and user flows with React Native',
-          'Implemented artwork search, filtering and viewing inside the app',
-          'Supported the AR scenario for placing artworks in the user’s space',
+          'Developed cross-platform Frieze mobile interfaces and user flows with React Native for iOS and Android',
+          'Implemented multi-criteria painting search and filtering by artist, price, gallery, section and date',
+          'Built collection discovery flows with curated sections, gallery pages, artwork cards and high-resolution media viewing',
+          'Designed a direct inquiry flow for a selected painting, bringing the gallery message and user contact details into one clear journey',
+          'Supported the AR scenario for placing a painting in the user’s space and assessing its scale',
         ],
         friezeViewingRoomMetrics: [
-          { value: 'React Native', label: 'mobile stack' },
-          { value: 'ARKit / ARCore', label: 'AR platforms' },
-          { value: '2021', label: 'FGP project period' },
-          { value: '8 months', label: 'reported development timeline' },
+          { value: '10K+', label: 'Google Play downloads' },
         ],
         mychessMetrics: [
           { value: '121,577', label: 'registered users' },
@@ -1434,8 +1456,7 @@ export const resources = {
           { value: '2,000+', label: 'participants in the largest tournament' },
         ],
         mychessMobilePoints: [
-          'Developed a cross-platform application with Flutter and Dart',
-          'Adapted myChess game, tournament and social flows for mobile devices',
+          'Developed a cross-platform application with Flutter',
           'Supported release builds for Android and iOS',
         ],
         mychessMobileMetrics: [
@@ -1461,11 +1482,10 @@ export const resources = {
           'Localization and production-code extension',
         ],
         drillingPoints: [
-          'Full functional demo developed independently',
-          'Owned the complete application lifecycle from scratch to release',
-          'Interactive drilling equipment workflows',
-          'Netcode multiplayer synchronization',
-          'Blender assets and Final IK interactions',
+          'Owned the complete application lifecycle independently, from architecture and implementation to release preparation',
+          'Implemented networked interaction and multi-operator action synchronization with Netcode for GameObjects',
+          'Implemented drilling-equipment workflows and interactive operation of the rig’s key components',
+          'Integrated Final IK to provide a realistic character kinematic model and synchronized VR movement',
         ],
         drillingMediaScreen1: 'VR drilling training scene — screen 1',
         drillingMediaScreen2: 'VR drilling training scene — screen 2',
@@ -1617,23 +1637,18 @@ export const resources = {
         ],
         neo4Sightline: 'Neo4 Web / Interior Sightline',
         neo4SightlineDesc:
-          'Neo4 Web — browser-based real-time 3D visualization of properties and cityscapes, with a related Sightline interior-design direction.',
+          'Neo4 turns the search for a new home into a full 3D journey through a future residential development. Explore the architecture and grounds from any angle, move through the courtyard, experience the rhythm of a living city, and then move on to selecting a specific apartment. Each option presents its layout, area, price and other key details, while a virtual walkthrough lets you inspect every room, from the kitchen to the bathroom. The interior can be shaped around your preferences: change the furniture, assemble your own configuration and see how it affects the final price. Switching between seasons and times of day reveals the development in different scenarios and helps you feel the atmosphere of the place before a visit. Unreal Engine and Pixel Streaming provide the visual richness and smooth browser experience behind it all.',
         neo4SightlinePoints: [
-          'Developed a browser interface for navigating the virtual environment and inspecting apartments',
-          'Connected user actions with a real-time Unreal Engine 3D scene',
-          'Supported interior-selection flows and interactive commands sent to the 3D application',
+          'Connected the browser interface to the interactive Unreal Engine scene through command and event data exchange',
+          'Implemented user flows for selecting a development, exploring apartments, entering interiors and configuring furniture',
+          'Implemented synchronization between browser input and the Unreal Engine application, including the exchange of interface state data',
+          'Supported territory navigation, time-of-day and seasonal switching as one continuous product experience',
         ],
         neo4SightlineMediaScreen1: 'Neo4 Web — screen 1',
         neo4SightlineMediaScreen2: 'Neo4 Web — screen 2',
         neo4SightlineMediaScreen3: 'Neo4 Web — screen 3',
         neo4SightlineMediaScreen4: 'Neo4 Web — screen 4',
         neo4SightlineMediaScreen5: 'Neo4 Web — screen 5',
-        neo4SightlineMetrics: [
-          { value: '2015+', label: 'Neo4 Web publicly documented since' },
-          { value: '91', label: 'apartments in the Brf Celsius client case' },
-          { value: '21', label: 'residential floors in the client case' },
-          { value: '23', label: 'floors in the client’s Brf Celsius building' },
-        ],
         fuelCms: 'Fuel supplier CMS',
         fuelCmsDesc:
           'Administrative system for supplies, refueling records and price calculations.',
@@ -1739,6 +1754,25 @@ export const resources = {
           { value: '5', label: 'named iOS content packs' },
           { value: '200', label: 'Android downloads in archived metric' },
         ],
+        arColoringZebra: 'AR Coloring',
+        arColoringZebraDesc:
+          'AR Coloring by Zebra Creative Workshop turns paper coloring pages into 3D animations through a smartphone or tablet camera. Users activate a set with a QR code, color a page, bring its characters to life, and can capture photos or videos.',
+        arColoringZebraPoints: [
+          'Implemented the QR code → set activation → coloring → scanning → AR animation flow',
+          'Configured comparison between the user-colored version and the artist’s original colors',
+          'Supported AR photos, AR videos, social sharing and a counter of animated drawings',
+        ],
+        arColoringZebraMediaScreen1: 'AR Coloring screenshot 1 from RuStore',
+        arColoringZebraMediaScreen2: 'AR Coloring screenshot 2 from RuStore',
+        arColoringZebraMediaScreen3: 'AR Coloring screenshot 3 from RuStore',
+        arColoringZebraMediaScreen4: 'AR Coloring screenshot 4 from RuStore',
+        arColoringZebraMediaScreen5: 'AR Coloring screenshot 5 from RuStore',
+        arColoringZebraMetrics: [
+          { value: 'Android', label: 'RuStore platform' },
+          { value: '0.1', label: 'first version' },
+          { value: 'up to 1K', label: 'RuStore downloads' },
+          { value: '122.7 MB', label: 'app size' },
+        ],
         chudobooks: 'Chudobooks',
         arChudaboxes: 'AR Chudoboxes / Chudoboxes EKO',
         chudobooksDesc:
@@ -1749,6 +1783,8 @@ export const resources = {
           'Configured MD5 validation and dynamic platform-specific 3D/AR AssetBundle delivery from a CDN',
           'Connected QR set activation, RU/EN/UK localization, audio scenarios, and AR character photo/video flows',
         ],
+        chudobooksMediaScreen1: 'Chudobooks app home screen',
+        chudobooksMediaScreen2: 'Chudobooks app gameplay screen',
         chudobooksMetrics: [
           { value: 'iOS + Android', label: 'platforms' },
           { value: '1.9 / 1.11', label: 'latest iOS / Android versions' },

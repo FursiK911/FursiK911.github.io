@@ -157,7 +157,9 @@ afterEach(() => {
   vi.unstubAllGlobals()
 })
 it('stops on mobile and restarts from the beginning on desktop', () => {
-  renderWithProviders(<ExperienceTimeline entries={workExperience} />)
+  renderWithProviders(
+    <ExperienceTimeline entries={workExperience} onEntrySelect={vi.fn()} />,
+  )
   act(flushAnimationFrame)
   runnerTweens[0].setProgress(0.64)
   desktopMatches = false

@@ -159,7 +159,9 @@ afterEach(() => {
   vi.unstubAllGlobals()
 })
 it('rebuilds the runner after a desktop resize and preserves its progress', () => {
-  renderWithProviders(<ExperienceTimeline entries={workExperience} />)
+  renderWithProviders(
+    <ExperienceTimeline entries={workExperience} onEntrySelect={vi.fn()} />,
+  )
   act(flushAnimationFrame)
   expect(runnerTweens).toHaveLength(1)
   runnerTweens[0].setProgress(0.42)

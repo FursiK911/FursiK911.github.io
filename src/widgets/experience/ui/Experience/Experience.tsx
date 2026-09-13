@@ -2,15 +2,17 @@ import { cx, styles } from '@/shared/styles'
 import { motion, useReducedMotion } from 'motion/react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { workExperience } from '@/entities/work-experience'
+import { workExperience, type WorkExperience } from '@/entities/work-experience'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
-import { ExperienceDetails } from '../ExperienceDetails/ExperienceDetails'
+import { ExperienceDetailsModal } from '../ExperienceDetailsModal/ExperienceDetailsModal'
 import { ExperienceTimeline } from '../ExperienceTimeline/ExperienceTimeline'
 import '../styles/Experience.module.css'
 
 export function Experience() {
   const { t } = useTranslation()
-  const [expanded, setExpanded] = useState(false)
+  const [selectedEntry, setSelectedEntry] = useState<WorkExperience | null>(
+    null,
+  )
   const reducedMotion = useReducedMotion() ?? false
 
   return (
@@ -35,21 +37,13 @@ export function Experience() {
         <h2>{t('experience.title')}</h2>
         <p>{t('experience.intro')}</p>
       </div>
-      <ExperienceTimeline entries={workExperience} />
-      <button
-        className={cx(styles.experienceDetailsToggle)}
-        type="button"
-        aria-expanded={expanded}
-        aria-controls="work-experience-details"
-        onClick={() => setExpanded((value) => !value)}
-      >
-        {expanded ? t('experience.lessDetails') : t('experience.moreDetails')}
-        <span aria-hidden="true">{expanded ? '↑' : '↓'}</span>
-      </button>
-      <ExperienceDetails
+      <ExperienceTimeline
         entries={workExperience}
-        expanded={expanded}
-        reducedMotion={reducedMotion}
+        onEntrySelect={setSelectedEntry}
+      />
+      <ExperienceDetailsModal
+        entry={selectedEntry}
+        onClose={() => setSelectedEntry(null)}
       />
     </motion.section>
   )

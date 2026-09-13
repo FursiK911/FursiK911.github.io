@@ -7,6 +7,8 @@ describe('Earth of Dragons media', () => {
     const project = projects.find((item) => item.id === 'earth-dragons')
     const images =
       project?.media?.filter((media) => media.kind === 'image') ?? []
+    const videos =
+      project?.media?.filter((media) => media.kind === 'youtube') ?? []
 
     expect(images).toHaveLength(12)
     expect(images.map((image) => image.src)).toEqual([
@@ -21,6 +23,11 @@ describe('Earth of Dragons media', () => {
       ),
     ])
     expect(project?.card.previewImages).toEqual(images)
-    expect(project?.media?.some((media) => media.kind === 'youtube')).toBe(true)
+    expect(videos.map((video) => video.videoId)).toEqual([
+      'iXrNLl6rpXI',
+      '08QCrgqrIyQ',
+      'Xnmc3i2Xmko',
+      'Yy4j2gQdXW4',
+    ])
   })
 })

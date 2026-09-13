@@ -160,7 +160,7 @@ afterEach(() => {
 })
 it('cancels a pending refresh when the timeline unmounts', () => {
   const { unmount } = renderWithProviders(
-    <ExperienceTimeline entries={workExperience} />,
+    <ExperienceTimeline entries={workExperience} onEntrySelect={vi.fn()} />,
   )
   act(flushAnimationFrame)
   act(() => resizeCallback?.([], {} as ResizeObserver))

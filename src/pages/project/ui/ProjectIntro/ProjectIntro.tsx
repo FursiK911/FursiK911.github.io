@@ -27,8 +27,9 @@ export function ProjectIntro({ project, facts }: ProjectIntroProps) {
         <div>
           <dt>{t('projects.period')}</dt>
           <dd>
-            {project.period.from} —{' '}
-            {project.period.to ?? t('experience.present')}
+            {project.period.to === project.period.from
+              ? project.period.from
+              : `${project.period.from} — ${project.period.to ?? t('experience.present')}`}
           </dd>
         </div>
         <div>

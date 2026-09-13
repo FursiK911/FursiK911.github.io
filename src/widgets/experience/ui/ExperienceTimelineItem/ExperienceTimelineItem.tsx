@@ -5,12 +5,14 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import type { ExperienceTimelineItemProps } from './types/ExperienceTimelineItem.types'
 import { getCompanyInitials } from './utils/getCompanyInitials'
+import itemStyles from './styles/ExperienceTimelineItem.module.css'
 
 export function ExperienceTimelineItem({
   entry,
   index,
   reducedMotion,
   axisPoint,
+  onSelect,
 }: ExperienceTimelineItemProps) {
   const { t } = useTranslation()
   const [logoFailed, setLogoFailed] = useState(false)
@@ -58,6 +60,15 @@ export function ExperienceTimelineItem({
             <span key={technology}>{technology}</span>
           ))}
         </div>
+        <button
+          className={itemStyles.trigger}
+          type="button"
+          aria-label={t('experience.openDetails', {
+            company: entry.company,
+            period,
+          })}
+          onClick={onSelect}
+        />
       </motion.div>
     </article>
   )

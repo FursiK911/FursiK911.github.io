@@ -24,6 +24,7 @@ gsap.registerPlugin(MotionPathPlugin)
 
 export function ExperienceTimeline({
   entries,
+  onEntrySelect,
   reducedMotion: reducedMotionOverride,
 }: ExperienceTimelineProps) {
   const { t } = useTranslation()
@@ -67,7 +68,7 @@ export function ExperienceTimeline({
         duration: 12,
         ease: 'none',
         repeat: -1,
-        repeatDelay: 0.7,
+        repeatDelay: 0,
         paused: true,
         motionPath: {
           path,
@@ -194,6 +195,7 @@ export function ExperienceTimeline({
             index={index}
             reducedMotion={reducedMotion}
             axisPoint={axisPoints[index] ?? fallbackPoints[index]}
+            onSelect={() => onEntrySelect(entry)}
             key={entry.id}
           />
         ))}

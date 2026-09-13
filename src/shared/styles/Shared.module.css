@@ -983,9 +983,6 @@ body:global(.is-loading) {
   :global(.experience-timeline-card) {
     padding: 14px;
   }
-  :global(.experience-details) {
-    margin-top: 42px;
-  }
   :global(.experience-project-heading) {
     display: block;
   }

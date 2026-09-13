@@ -7,4 +7,7 @@ export const hiddenProjectIds = new Set([
   'fuel-cms',
   'doors-cms',
   'quest-room',
+  'aptive-education',
+  'korobka',
+  'chudo-floor',
 ])

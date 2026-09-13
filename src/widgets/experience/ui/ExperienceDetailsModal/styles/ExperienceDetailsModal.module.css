@@ -1,0 +1,142 @@
+.root {
+  z-index: 40;
+}
+
+.backdrop {
+  background: rgba(3, 6, 9, 0.84);
+  backdrop-filter: blur(10px);
+}
+
+.dialog {
+  --modal-size: min(68rem, calc(100vw - 48px));
+  width: var(--modal-size);
+  max-width: var(--modal-size);
+  max-height: calc(100dvh - 48px);
+  overflow: hidden;
+  border: 1px solid rgba(167, 243, 246, 0.52);
+  color: var(--text);
+  background: #081116;
+  box-shadow:
+    0 30px 110px rgba(0, 0, 0, 0.68),
+    0 0 0 1px rgba(141, 123, 255, 0.16);
+}
+
+.dialog::before {
+  position: absolute;
+  inset: 0;
+  content: '';
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at 82% 6%,
+      rgba(63, 110, 134, 0.24),
+      transparent 36%
+    ),
+    linear-gradient(120deg, transparent 48%, rgba(141, 123, 255, 0.06));
+}
+
+.header {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  min-height: 0;
+  padding: 14px;
+  background: transparent;
+}
+
+.close {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(167, 243, 246, 0.44);
+  color: var(--text);
+  background: rgba(6, 16, 21, 0.78);
+}
+
+.close:hover,
+.close:focus-visible {
+  border-color: var(--cyan);
+  color: #071016;
+  background: var(--cyan);
+}
+
+.body {
+  position: relative;
+  z-index: 1;
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+  padding: clamp(30px, 4vw, 56px);
+}
+
+.content {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.kicker {
+  margin: 0 0 22px;
+  color: var(--cyan);
+  font: 0.62rem/1.5 var(--mono);
+  letter-spacing: 0.14em;
+}
+
+.content :global(.experience-details-item) {
+  border-top: 1px solid var(--line);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .dialog {
+    --modal-size: 100vw;
+    width: 100vw;
+    max-width: none;
+    max-height: 100dvh;
+    min-height: 100dvh;
+    border-width: 0 1px;
+    border-radius: 0;
+  }
+
+  .header {
+    padding: 12px;
+  }
+
+  .body {
+    max-height: 100dvh;
+    min-height: 100dvh;
+    padding: 76px 22px 48px;
+  }
+
+  .content :global(.experience-details-item) {
+    grid-template-columns: 1fr;
+    padding-top: 22px;
+  }
+
+  .content :global(.experience-phases),
+  .content :global(.experience-detail-block),
+  .content :global(.experience-details-item) > :global(.experience-tags) {
+    grid-column: 1;
+  }
+
+  .content :global(.experience-phase-heading) {
+    display: block;
+  }
+
+  .content :global(.experience-phase-heading) p {
+    margin-top: 10px;
+    text-align: left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .close {
+    transition: none;
+  }
+}

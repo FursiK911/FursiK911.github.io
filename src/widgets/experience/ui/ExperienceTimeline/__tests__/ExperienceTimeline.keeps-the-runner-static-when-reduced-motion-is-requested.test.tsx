@@ -158,7 +158,11 @@ afterEach(() => {
 })
 it('keeps the runner static when reduced motion is requested', () => {
   renderWithProviders(
-    <ExperienceTimeline entries={workExperience} reducedMotion />,
+    <ExperienceTimeline
+      entries={workExperience}
+      onEntrySelect={vi.fn()}
+      reducedMotion
+    />,
   )
   act(flushAnimationFrame)
   expect(document.querySelector('.experience-timeline-runner')).toHaveAttribute(

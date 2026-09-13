@@ -3,4 +3,5 @@ export interface ExperienceTimelineItemProps {
   index: number
   reducedMotion: boolean
   axisPoint: { x: number; y: number }
+  onSelect: () => void
 }

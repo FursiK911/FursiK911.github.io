@@ -1,5 +1,37 @@
 # AI Agent Change Log Index
 
+| 2026-09-13 | projects, ar-coloring, youtube, media, testing | [AR Coloring video media](2026/09/2026-09-13.md#ar-coloring-video-media) |
+
+| 2026-09-13 | projects, ar-coloring, youtube, media, i18n, testing, graphify | [AR Coloring video media](2026/09/2026-09-13.md#ar-coloring-video-media) |
+
+| 2026-09-13 | experience, timeline, modal, accessibility, i18n, responsive, testing, graphify | [Work-experience details moved to selected-card dialogs](2026/09/2026-09-13.md#work-experience-details-moved-to-selected-card-dialogs) |
+
+| 2026-09-13 | projects, cards, filters, temporary, testing, graphify | [Temporarily hidden additional project cards](2026/09/2026-09-13.md#temporarily-hidden-additional-project-cards) |
+
+| 2026-09-13 | projects, mychessvr, cards, marketing-copy, steamvr, stockfish, i18n, testing | [MyChessVR product description refinement](2026/09/2026-09-13.md#mychessvr-product-description-refinement) |
+
+| 2026-09-13 | ui, experience, timeline, gsap, animation, testing | [Seamless experience timeline runner loop](2026/09/2026-09-13.md#seamless-experience-timeline-runner-loop) |
+
+| 2026-09-13 | projects, drilling, vr, copy, marketing, steamvr, netcode, final-ik, i18n, testing, graphify | [VR drilling training simulator project copy](2026/09/2026-09-13.md#vr-drilling-training-simulator-project-copy) |
+
+| 2026-09-13 | projects, neo4, unreal-engine, browser-input, synchronization, contributions, i18n, testing, graphify | [Neo4 contribution wording refined](2026/09/2026-09-13.md#neo4-contribution-wording-refined) |
+
+| 2026-09-13 | projects, neo4, sightline, unreal-engine, pixel-streaming, webp, marketing-copy, contributions, i18n, testing, graphify | [Neo4 Web product page and media completion](2026/09/2026-09-13.md#neo4-web-product-page-and-media-completion) |
+
+| 2026-09-13 | projects, mychess, mobile, contributions, i18n, testing | [MyChess Mobile contribution points](2026/09/2026-09-13.md#mychess-mobile-contribution-points) |
+
+| 2026-09-13 | projects, mychess, mobile, cards, copy, i18n, testing, graphify | [MyChess Mobile product copy](2026/09/2026-09-13.md#mychess-mobile-product-copy) |
+
+| 2026-09-12 | projects, mychess, mobile, media, renaming | [Reverse MyChess Mobile media order](2026/09/2026-09-12.md#reverse-mychess-mobile-media-order) |
+
+| 2026-09-12 | projects, earth-dragons, youtube, media, testing | [Earth of Dragons additional video media](2026/09/2026-09-12.md#earth-of-dragons-additional-video-media) |
+
+| 2026-09-12 | projects, mychess, mobile, rustore, screenshots, webp, media, testing | [MyChess Mobile RuStore screenshots](2026/09/2026-09-12.md#mychess-mobile-rustore-screenshots) |
+
+| 2026-09-12 | projects, ar-coloring, rustore, zebra, reskin, mobile, unity, i18n, testing | [AR Coloring RuStore reskin project](2026/09/2026-09-12.md#ar-coloring-rustore-reskin-project) |
+
+| 2026-09-12 | projects, chudobooks, screenshots, webp, media, i18n, testing, graphify | [Chudobooks WebP gallery media](2026/09/2026-09-12.md#chudobooks-webp-gallery-media) |
+
 | 2026-09-12 | projects, mychess, frontend, social, i18n, testing | [Refine MyChess social infrastructure contribution wording](2026/09/2026-09-12.md#refine-mychess-social-infrastructure-contribution-wording) |
 
 | 2026-09-12 | projects, mychess, frontend, tournaments, i18n, testing | [Refine MyChess tournament contribution wording](2026/09/2026-09-12.md#refine-mychess-tournament-contribution-wording) |

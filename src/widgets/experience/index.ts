@@ -1,12 +1,12 @@
 export { Experience } from './ui/Experience/Experience'
-export { ExperienceDetails } from './ui/ExperienceDetails/ExperienceDetails'
 export { ExperienceDetailsItem } from './ui/ExperienceDetailsItem/ExperienceDetailsItem'
+export { ExperienceDetailsModal } from './ui/ExperienceDetailsModal/ExperienceDetailsModal'
 export { ExperienceTimeline } from './ui/ExperienceTimeline/ExperienceTimeline'
 export { ExperienceTimelineItem } from './ui/ExperienceTimelineItem/ExperienceTimelineItem'
 export { FutureExperienceItem } from './ui/FutureExperienceItem/FutureExperienceItem'
 export { getEvenlySpacedX } from './model/experience-timeline-geometry/utils/experience-timeline-geometry'
-export type { ExperienceDetailsProps } from './ui/ExperienceDetails/types/ExperienceDetails.types'
 export type { ExperienceDetailsItemProps } from './ui/ExperienceDetailsItem/types/ExperienceDetailsItem.types'
+export type { ExperienceDetailsModalProps } from './ui/ExperienceDetailsModal/types/ExperienceDetailsModal.types'
 export type {
   ExperienceTimelineProps,
   ScenePoint,

@@ -50,7 +50,7 @@ export const projectCardPresentations: Record<
     direction: 'games-apps',
     teaserKey: 'projects.cardTeasers.friezeViewingRoom',
     tags: ['React', 'Mobile', 'AR'],
-    previewImageIndexes: [0, 1, 2],
+    previewImageIndexes: [0, 1, 2, 3, 4],
   },
   'neo4-sightline': {
     direction: 'web',
@@ -118,11 +118,17 @@ export const projectCardPresentations: Record<
     tags: ['Unity', 'AR', 'Mobile'],
     previewImageIndexes: [0, 1, 2],
   },
+  'ar-coloring-zebra': {
+    direction: 'games-apps',
+    teaserKey: 'projects.cardTeasers.arColoringZebra',
+    tags: ['Unity', 'AR', 'Mobile'],
+    previewImageIndexes: [0, 1, 2, 3, 4],
+  },
   chudobooks: {
     direction: 'games-apps',
     teaserKey: 'projects.cardTeasers.chudobooks',
     tags: ['Unity', 'AR', 'Mobile'],
-    previewImageIndexes: [],
+    previewImageIndexes: [0, 1],
   },
   'ar-chudaboxes': {
     direction: 'games-apps',

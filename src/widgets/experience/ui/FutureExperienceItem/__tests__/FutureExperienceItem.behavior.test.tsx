@@ -16,4 +16,7 @@ it('renders a keyboard-accessible future CTA', () => {
     'href',
     '#contact',
   )
+  expect(
+    screen.queryByRole('button', { name: /Open work details/i }),
+  ).not.toBeInTheDocument()
 })
