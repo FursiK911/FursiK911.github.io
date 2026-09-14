@@ -9,6 +9,7 @@ export const projectDirections: Array<'all' | ProjectDirection> = [
 
 export const projectTechnologyOrder: ProjectCardTag[] = [
   'React',
+  'React Native',
   'Vue',
   'Unigine',
   'Unity',

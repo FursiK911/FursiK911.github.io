@@ -19,6 +19,7 @@ export type ProjectDirection = 'web' | 'games-apps' | 'vr-training'
 
 export type ProjectCardTag =
   | 'React'
+  | 'React Native'
   | 'Vue'
   | 'Unigine'
   | 'Unity'

@@ -1,5 +1,35 @@
 # AI Agent Change Log Index
 
+| 2026-09-14 | projects, chudo-projector, ar, vuforia, technology-stack, card-tags, testing, graphify | [Chudo Projector technology and card tag correction](2026/09/2026-09-14.md#chudo-projector-technology-and-card-tag-correction) |
+
+| 2026-09-14 | ui, hero, contact, cta, icons, accessibility, i18n, responsive, testing | [Hero and Contact CTA icon refresh](2026/09/2026-09-14.md#hero-and-contact-cta-icon-refresh) |
+
+| 2026-09-14 | projects, chudo-projector, youtube, media, card-preview, testing, graphify | [Chudo Projector video media extension](2026/09/2026-09-14.md#chudo-projector-video-media-extension) |
+
+| 2026-09-14 | projects, chudo-projector, marketing-copy, projection, photon, open-cv, android, windows, i18n, testing, graphify | [Chudo Projector content correction](2026/09/2026-09-14.md#chudo-projector-content-correction) |
+
+| 2026-09-14 | projects, chudo-projector, marketing-copy, projection, open-cv, photon, euphoria, android, windows, i18n, testing, graphify | [Chudo Projector product content revision](2026/09/2026-09-14.md#chudo-projector-product-content-revision) |
+
+| 2026-09-14 | favicon, cleanup, assets | [Removed obsolete SVG favicon](2026/09/2026-09-14.md#removed-obsolete-svg-favicon) |
+
+| 2026-09-14 | favicon, pwa, ios, icons, assets, regeneration, testing | [Applied updated site logo to icon derivatives](2026/09/2026-09-14.md#applied-updated-site-logo-to-icon-derivatives) |
+
+| 2026-09-14 | favicon, pwa, ios, icons, assets, testing | [Unified site icon assets](2026/09/2026-09-14.md#unified-site-icon-assets) |
+
+| 2026-09-14 | projects, ui, i18n, testing | [Removed projects intro tagline](2026/09/2026-09-14.md#removed-projects-intro-tagline) |
+
+| 2026-09-14 | experience, timeline, cards, responsive, i18n, testing | [Concise work-experience timeline cards](2026/09/2026-09-14.md#concise-work-experience-timeline-cards) |
+
+| 2026-09-14 | projects, villa-krim, authors-wine-villa-krim, ios, ar, vuforia, testing | [Villa Krim technology stack extension](2026/09/2026-09-14.md#villa-krim-technology-stack-extension) |
+
+| 2026-09-14 | projects, chudo-projector, screenshots, media, i18n, testing, graphify | [Chudo Projector image media](2026/09/2026-09-14.md#chudo-projector-image-media) |
+
+| 2026-09-14 | projects, chudo-projector, youtube, media, testing, graphify | [Chudo Projector video media](2026/09/2026-09-14.md#chudo-projector-video-media) |
+
+| 2026-09-14 | projects, villa-krim, authors-wine-villa-krim, ar, marketing-copy, i18n, links, testing, graphify | [Villa Krim product content revision](2026/09/2026-09-14.md#villa-krim-product-content-revision) |
+
+| 2026-09-14 | projects, ar-coloring, chudobooks, youtube, media, testing, graphify | [Project video media additions](2026/09/2026-09-14.md#project-video-media-additions) |
+
 | 2026-09-13 | projects, ar-coloring, youtube, media, testing | [AR Coloring video media](2026/09/2026-09-13.md#ar-coloring-video-media) |
 
 | 2026-09-13 | projects, ar-coloring, youtube, media, i18n, testing, graphify | [AR Coloring video media](2026/09/2026-09-13.md#ar-coloring-video-media) |

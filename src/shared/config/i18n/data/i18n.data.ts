@@ -248,8 +248,6 @@ export const resources = {
       },
       projects: {
         title: 'ПРОЕКТЫ',
-        intro:
-          'Системы, симуляции, игры и интерфейсы, созданные на Unity, XR и web.',
         all: 'ВСЕ',
         web: 'WEB',
         mobile: 'MOBILE',
@@ -300,12 +298,15 @@ export const resources = {
         actionLabels: {
           sariduVkPost1: 'VK · публикация 1',
           sariduVkPost2: 'VK · публикация 2',
+          vulkanVerseClient: 'Клиент',
         },
         unavailableActions: {
           mychessWebsite:
             'Сайт MyChess закрыт и больше недоступен для просмотра.',
           friezeViewingRoomApp:
             'Историческое мобильное приложение Frieze Viewing Room больше недоступно в магазине.',
+          vulkanVerseClient:
+            'Клиент VulcanVerse больше недоступен: проект закрыт, а официальный сайт удалён.',
         },
         mychessvr: 'MyChessVR',
         industrial: 'Промышленные VR-тренажёры',
@@ -341,7 +342,7 @@ export const resources = {
           drilling:
             'VR-тренажёр бурильщиков для безопасной отработки рабочих процессов на буровой установке: взаимодействие с оборудованием, совместная работа нескольких операторов и реалистичная практика в виртуальной среде.',
           vulkanVerse:
-            'Разработка механик для открытого multiplayer-мира VulcanVerse. Игровая локация Tartarus соединена с клиент-серверными сценариями.',
+            'VulcanVerse — открытая MMORPG в греко-римском фэнтезийном мире, где исследование регионов, развитие персонажа и владение NFT-активами объединены в одном multiplayer-пространстве. 100K+ уникальных игроков уже познакомились с этим миром.',
           korobka:
             'Адаптивный сайт транспортной компании, собранный по дизайн-системе. Компоненты и навигация работают на любом экране.',
           doorsCms:
@@ -349,11 +350,11 @@ export const resources = {
           earthDragons:
             'AR-приложение кампании АШАН, где карточки и комикс оживляют коллекцию драконов. Есть коллекция, runner-режим и виртуальный кубик.',
           virtualSommelierVillaKrim:
-            'AR-приложение, в котором этикетка вина открывает виртуального сомелье. История продукта разворачивается через камеру смартфона.',
+            'AR-приложение Villa Krim превращает этикетку бутылки в виртуального сомелье: AR-видео, рекомендации о вине и короткое тестирование превращают знакомство с напитком в интерактивную дегустацию.',
           authorsWineVillaKrim:
-            'AR-история авторского вина, запускаемая с этикетки. Камера смартфона превращает упаковку в интерактивный рассказ.',
+            'AR-приложение для авторского вина Villa Krim: этикетка запускает видео и интерактивную историю о коллекции, вкусе, аромате и гастрономических сочетаниях.',
           chudoProjector:
-            'Интерактивная инсталляция на Unity и OpenCV для большого экрана. Взаимодействие посетителей синхронизируется через Photon.',
+            'Chudo Projector превращает детскую раскраску в интерактивное шоу на стене: ребёнок раскрашивает персонажа или предмет, сканирует его смартфоном и видит собственную версию в проекционной сцене. Несколько игровых режимов и светящаяся палочка превращают обычный лист бумаги в цифровое приключение.',
           arColoring:
             'Раскраски оживают через камеру смартфона. AR-персонажи и тематические сцены превращают печатную страницу в игру.',
           arColoringZebra:
@@ -391,7 +392,7 @@ export const resources = {
           { value: 'Android 0.4', label: 'сохранённая версия · 07.01.2022' },
         ],
         vulkanVerseDesc:
-          'Клиентская игровая разработка для VulcanVerse — открытого multiplayer-мира на Unity с сетевыми механиками, исследованием мира и локацией Tartarus.',
+          'VulcanVerse — открытая MMORPG в греко-римском фэнтезийном мире, построенная вокруг идеи личного пространства и цифрового владения. Игрок исследует четыре региона вокруг Vulcan City, знакомится с мифологическим миром и развивает собственную историю внутри большого multiplayer-пространства. 100K+ уникальных игроков уже познакомились с проектом.\n\nКлючевая особенность VulcanVerse — сочетание приключения и владения: земельные участки существуют как NFT-активы, а их владельцы могут изменять ландшафт, строить собственные пространства и открывать новые игровые возможности. Это превращает карту не просто в фон для приключений, а в мир, который игрок помогает формировать сам.\n\nВ игровом цикле соединены исследование, сбор ресурсов, выполнение заданий, рыбалка, сражения и развитие персонажей и активов. Локация Tartarus добавляет в этот мир отдельный боевой контекст, а клиент-серверные сценарии поддерживают совместную игру и постоянное взаимодействие игроков.',
         mychessWebDesc:
           'myChess — первая российская шахматная экосистема, созданная как единое цифровое пространство для игры, соревнований, обучения и общения. На платформе зарегистрировались более 100 000 пользователей, сыгравших свыше 600 000 партий: они могут находить равных соперников, играть с друзьями и AI-чемпионами, участвовать в индивидуальных и командных турнирах, решать шахматные задачи и подробно анализировать свои партии с помощью Stockfish. Сообщества, команды, чаты, трансляции, рейтинги и инструменты честной игры формируют вокруг шахмат полноценную социальную среду. Масштаб и зрелость продукта подтверждает его включение в реестр российского программного обеспечения.',
         mychessMobileDesc:
@@ -514,9 +515,9 @@ export const resources = {
         vulkanVersePoints: [
           'Разрабатывал и интегрировал игровые механики локации Tartarus в основной клиент VulcanVerse',
           'Реализовывал клиент-серверное взаимодействие и multiplayer-сценарии на Photon',
-          'Подключал Addressables, Zenject и UniTask в production-код проекта',
         ],
         vulkanVerseMetrics: [
+          { value: '100K+', label: 'уникальных игроков' },
           { value: '3 × 3 км', label: 'размер игрового мира' },
           { value: '4', label: 'тематических региона вокруг Vulcan City' },
           { value: '20 × 20 м', label: 'размер земельного участка' },
@@ -637,11 +638,10 @@ export const resources = {
         ],
         virtualSommelierVillaKrim: 'Виртуальный сомелье Villa Krim',
         virtualSommelierVillaKrimDesc:
-          'Мобильное AR-приложение, превращавшее этикетку Villa Krim в интерактивную консультацию по вину, дегустации и сочетаниям с едой.',
+          'Виртуальный сомелье Villa Krim превращает этикетку бутылки в интерактивный гид по вину. Достаточно навести камеру смартфона на этикетку, чтобы запустить AR-видео, узнать больше о напитке и подходящих гастрономических сочетаниях, а затем проверить впечатления коротким тестированием. Приложение объединяет дополненную реальность, сторителлинг и игровой сценарий дегустации, превращая знакомство с вином в запоминающийся брендовый опыт.',
         virtualSommelierVillaKrimPoints: [
-          'Реализовал распознавание этикетки бутылки и запуск AR-сценария',
-          'Интегрировал виртуального сомелье Луиджи Антонио, советы и небольшой тест',
-          'Подготовил две Android-версии приложения для русскоязычной и украиноязычной аудиторий',
+          'Реализовал распознавание этикетки бутылки и запуск AR-сценария с видео, сведениями о вине и рекомендациями по гастрономическим сочетаниям',
+          'Интегрировал интерактивный сценарий виртуального сомелье: консультационные подсказки и тестирование, позволяющее пользователю проверить знания после дегустации',
         ],
         virtualSommelierVillaKrimMediaRu:
           'Иконка русскоязычной версии «Виртуального сомелье Villa Krim»',
@@ -657,48 +657,41 @@ export const resources = {
           'Второй экран приложения «Виртуальный сомелье Villa Krim»',
         virtualSommelierVillaKrimMediaScreen3:
           'Третий экран приложения «Виртуальный сомелье Villa Krim»',
-        virtualSommelierVillaKrimMetrics: [
-          { value: '2', label: 'локализованные Android-версии' },
-          { value: '3', label: 'подтверждённых package ID в экосистеме' },
-          { value: '5.1+', label: 'минимальная версия Android' },
-          { value: '2020–2021', label: 'зафиксированные релизы' },
-        ],
-        authorsWineVillaKrim: 'Авторське вино Villa Krim',
+        authorsWineVillaKrim: 'Авторское вино Villa Krim',
         authorsWineVillaKrimDesc:
-          'AR-кампания авторской коллекции Villa Krim: QR-код и этикетка бутылки запускали приложение с историями вин, винодела и гастрономическими сочетаниями.',
+          'Авторское вино Villa Krim превращает этикетку бутылки в точку входа в интерактивную историю коллекции. Камера смартфона запускает AR-видео, а приложение помогает узнать больше о вине, его купаже, вкусе, аромате и гастрономических сочетаниях. Такой формат связывает физический продукт с цифровым контентом и позволяет бренду рассказывать о коллекции прямо в момент знакомства с бутылкой.',
         authorsWineVillaKrimPoints: [
-          'Реализовал сценарий QR-код на этикетке → приложение → сканирование бутылки',
-          'Интегрировал AR-контент о творческом пути Бояна Борисова и создании вин коллекции',
-          'Подготовил мобильный Unity-продукт с рассказами о купажах, вкусе, аромате и сочетаниях',
+          'Реализовал распознавание этикетки и запуск AR-видео о конкретном вине в едином мобильном сценарии',
+          'Интегрировал структурированный контент о коллекции: сведения о купаже, вкусе, аромате и гастрономических сочетаниях',
         ],
         authorsWineVillaKrimMediaCampaign:
           'Промо-изображение AR-сценария Villa Krim: пользователь сканирует бутылку смартфоном',
         authorsWineVillaKrimMediaApp:
-          'Иконка приложения «Авторське вино Villa Krim»',
+          'Иконка приложения «Авторское вино Villa Krim»',
         authorsWineVillaKrimMediaLogo1:
-          'Промо-изображение приложения «Авторське вино Villa Krim»',
+          'Промо-изображение приложения «Авторское вино Villa Krim»',
         authorsWineVillaKrimMediaLogo2:
-          'Иконка приложения «Авторське вино Villa Krim»',
+          'Иконка приложения «Авторское вино Villa Krim»',
         authorsWineVillaKrimMediaScreen1:
-          'Первый экран приложения «Авторське вино Villa Krim»',
+          'Первый экран приложения «Авторское вино Villa Krim»',
         authorsWineVillaKrimMediaScreen2:
-          'Второй экран приложения «Авторське вино Villa Krim»',
+          'Второй экран приложения «Авторское вино Villa Krim»',
         authorsWineVillaKrimMediaScreen3:
-          'Третий экран приложения «Авторське вино Villa Krim»',
-        authorsWineVillaKrimMetrics: [
-          { value: '3', label: 'подтверждённых Android-приложения серии' },
-          { value: '3', label: 'подтверждённых компонента стека' },
-          { value: 'QR → AR', label: 'сценарий запуска контента' },
-          { value: '2020', label: 'год публичного AR-анонса' },
-        ],
+          'Третий экран приложения «Авторское вино Villa Krim»',
         chudoProjector: 'Chudo Projector',
         chudoProjectorDesc:
-          'Интерактивное проекционное приложение на базе компьютерного зрения и desktop-компаньона.',
+          'Chudo Projector — интерактивная проекционная система для детских пространств, в которой бумажная раскраска становится частью живой сцены. Проект объединял два приложения: мобильный клиент для сканирования раскрашенных рисунков и Windows-приложение, выводившее сцену на проектор. Ребёнок сам выбирал цвета, а система переносила результат с рисунка на 3D-персонажа или объект интерьера — поэтому каждая сцена получалась персональной.\n\nВ первом режиме ребёнок собирал комнату из более чем 20 рисунков: сканировал персонажей и предметы интерьера, после чего они появлялись на проекционной сцене в собственной раскраске. Когда комната была готова, все объекты оживали в музыкальной сценке: персонажи танцевали, появлялись частицы и звуковые реакции. Сцену можно было запускать снова, открывая новые комбинации.\n\nДва дополнительных режима добавляли интерактив с физическим пространством. В одном ребёнок возвращал цвет отдельным персонажам и предметам светящейся палочкой, направляя её на проецируемую стену. В другом — раскрашивал всю чёрно-белую сцену, словно проявляя изображение светом. Так проект объединял творчество, движение и игру, превращая обычную стену в пространство, которое реагирует на действия детей.',
         chudoProjectorPoints: [
-          'Распознавал источники света и маркеры через OpenCV',
-          'Передавал текстуры через Photon',
-          'Создал интерактивную проекционную логику на Unity',
+          'Спроектировал связку мобильного и Windows-приложений, которая превращала детскую раскраску в персонализированную проекционную сцену',
+          'Реализовал перенос пользовательской раскраски на 3D-персонажей и объекты интерьера с синхронизацией данных между Android и ПК',
+          'Связал мобильный и desktop-клиенты для синхронной передачи текстур и состояния сцены с использованием Photon',
+          'Разработал сценарий сборки комнаты из более чем 20 рисунков и повторно запускаемую музыкальную сцену с анимацией персонажей, частицами и звуковыми реакциями',
+          'Реализовал два режима взаимодействия со светящейся палочкой: восстановление цвета отдельных объектов и раскрашивание всей сцены на проекционной стене',
+          'Настроил компьютерное зрение для распознавания источника света и перевода координат камеры в координаты проекционной сцены, чтобы движения ребёнка точно управляли визуальным эффектом',
         ],
+        chudoProjectorMediaScreen1: 'Первый экран приложения Chudo Projector',
+        chudoProjectorMediaScreen2: 'Второй экран приложения Chudo Projector',
+        chudoProjectorMediaScreen3: 'Третий экран приложения Chudo Projector',
         arColoring: 'AR Coloring',
         arColoringDesc:
           'Мобильное AR-приложение Chudoboxes, превращающее бумажные раскраски в ожившие анимации через камеру смартфона.',
@@ -1291,8 +1284,6 @@ export const resources = {
       },
       projects: {
         title: 'PROJECTS',
-        intro:
-          'Systems, simulations, games and interfaces shipped across Unity, XR and web.',
         all: 'ALL',
         web: 'WEB',
         mobile: 'MOBILE',
@@ -1343,12 +1334,15 @@ export const resources = {
         actionLabels: {
           sariduVkPost1: 'VK · post 1',
           sariduVkPost2: 'VK · post 2',
+          vulkanVerseClient: 'Client',
         },
         unavailableActions: {
           mychessWebsite:
             'The MyChess website is closed and no longer available to open.',
           friezeViewingRoomApp:
             'The historical Frieze Viewing Room mobile app is no longer available in the store.',
+          vulkanVerseClient:
+            'The VulcanVerse client is no longer available: the project has closed and its official website has been removed.',
         },
         mychessvr: 'MyChessVR',
         industrial: 'Industrial VR Training Simulations',
@@ -1384,7 +1378,7 @@ export const resources = {
           drilling:
             'A VR drilling training simulator for safely practising rig workflows: interact with equipment, coordinate several operators and build hands-on experience in a realistic virtual environment.',
           vulkanVerse:
-            'Gameplay work for the open multiplayer world of VulcanVerse. The Tartarus location connects to client-server gameplay flows.',
+            'VulcanVerse is an open-world MMORPG set in a Greco-Roman fantasy world, combining regional exploration, character progression and NFT asset ownership in one multiplayer space. 100K+ unique players have already encountered this world.',
           korobka:
             'A responsive transport-company site built from a design system. Components and navigation work across screen sizes.',
           doorsCms:
@@ -1392,11 +1386,11 @@ export const resources = {
           earthDragons:
             'An Auchan AR campaign where cards and a comic bring a dragon collection to life. It includes collecting, a runner mode and a virtual die.',
           virtualSommelierVillaKrim:
-            'An AR app where a wine label reveals a virtual sommelier. A product story unfolds through the phone camera.',
+            'A Villa Krim AR app that turns a bottle label into a virtual sommelier: AR video, wine guidance and a short quiz make discovering the drink an interactive tasting experience.',
           authorsWineVillaKrim:
-            'An AR story about author wine, launched from its label. A phone camera turns packaging into an interactive narrative.',
+            'An AR app for Villa Krim author’s wine: the label launches video and an interactive story about the collection, taste, aroma and food pairings.',
           chudoProjector:
-            'An interactive Unity and OpenCV installation for a large screen. Visitor interaction synchronizes through Photon.',
+            'Chudo Projector turns a child’s coloring page into an interactive show on the wall: color a character or object, scan it with a phone and see a personal version appear in the projected scene. Multiple modes and a glowing wand turn an ordinary sheet of paper into a digital adventure.',
           arColoring:
             'Colouring pages come alive through a phone camera. AR characters and themed scenes turn a printed page into a game.',
           arColoringZebra:
@@ -1431,7 +1425,7 @@ export const resources = {
           { value: 'Android 0.4', label: 'preserved build · 7 Jan 2022' },
         ],
         vulkanVerseDesc:
-          'Client-side game development for VulcanVerse, an open-world multiplayer Unity game with networked mechanics, world exploration and the Tartarus location.',
+          'VulcanVerse is an open-world MMORPG set in a Greco-Roman fantasy world built around personal space and digital ownership. Players explore four regions surrounding Vulcan City, discover a mythological world and build their own story inside a large multiplayer environment. 100K+ unique players have already encountered the project.\n\nThe defining feature of VulcanVerse is the combination of adventure and ownership: land plots exist as NFT assets, allowing owners to reshape the terrain, build their own spaces and unlock new ways to engage with the world. The map is not just a backdrop for adventure — it is a world that players can help shape.\n\nThe core loop combines exploration, resource gathering, quests, fishing, combat and progression for characters and assets. The Tartarus location adds a dedicated combat context, while client-server gameplay supports shared play and ongoing interaction between players.',
         mychessWebDesc:
           'myChess is the first Russian chess ecosystem, created as a unified digital space for playing, competing, learning and connecting. More than 100,000 users have joined the platform and played over 600,000 games: they can find evenly matched opponents, play with friends and AI champions, enter individual and team tournaments, solve chess puzzles and analyse their games in depth with Stockfish. Communities, teams, chats, broadcasts, ratings and fair-play tools form a complete social environment around chess. The product’s scale and maturity are reinforced by its inclusion in the Russian software registry.',
         mychessMobileDesc:
@@ -1554,9 +1548,9 @@ export const resources = {
         vulkanVersePoints: [
           'Developed and integrated gameplay mechanics for the Tartarus location into the main VulcanVerse client',
           'Implemented client-server interaction and multiplayer flows with Photon',
-          'Integrated Addressables, Zenject and UniTask into the production codebase',
         ],
         vulkanVerseMetrics: [
+          { value: '100K+', label: 'unique players' },
           { value: '3 × 3 km', label: 'game world size' },
           { value: '4', label: 'themed regions around Vulcan City' },
           { value: '20 × 20 m', label: 'land plot size' },
@@ -1675,11 +1669,10 @@ export const resources = {
         ],
         virtualSommelierVillaKrim: 'Virtual Sommelier Villa Krim',
         virtualSommelierVillaKrimDesc:
-          'Mobile AR application that turned a Villa Krim label into an interactive guide to wine, tasting and food pairings.',
+          'Virtual Sommelier Villa Krim turns a bottle label into an interactive guide to wine. Point a smartphone camera at the label to launch AR video, learn more about the drink and food pairings, and then test your knowledge with a short quiz. The app combines augmented reality, storytelling and a gamified tasting flow to turn first contact with the wine into a memorable brand experience.',
         virtualSommelierVillaKrimPoints: [
-          'Implemented bottle-label recognition and AR scenario launch',
-          'Integrated virtual sommelier Luigi Antonio, pairing advice and a short quiz',
-          'Prepared two Android releases for Russian- and Ukrainian-speaking audiences',
+          'Implemented bottle-label recognition and an AR scenario with video, wine information and food-pairing guidance',
+          'Integrated an interactive virtual-sommelier flow with guidance and a quiz that lets users test their knowledge after tasting',
         ],
         virtualSommelierVillaKrimMediaRu:
           'Icon of the Russian Virtual Sommelier Villa Krim release',
@@ -1695,19 +1688,12 @@ export const resources = {
           'Second screen of the Virtual Sommelier Villa Krim app',
         virtualSommelierVillaKrimMediaScreen3:
           'Third screen of the Virtual Sommelier Villa Krim app',
-        virtualSommelierVillaKrimMetrics: [
-          { value: '2', label: 'localized Android releases' },
-          { value: '3', label: 'confirmed package IDs in the family' },
-          { value: '5.1+', label: 'minimum Android version' },
-          { value: '2020–2021', label: 'documented releases' },
-        ],
         authorsWineVillaKrim: 'Author’s Wine Villa Krim',
         authorsWineVillaKrimDesc:
-          'AR campaign for the Villa Krim author’s collection: a QR code and bottle label opened stories about the wines, winemaker and food pairings.',
+          'Author’s Wine Villa Krim turns a bottle label into an entry point to an interactive story about the collection. A smartphone camera launches AR video, while the app explains the wine’s blend, taste, aroma and food pairings. The format connects the physical product with digital content and lets the brand tell the collection’s story at the moment of discovery.',
         authorsWineVillaKrimPoints: [
-          'Implemented the QR label → app → bottle scanning flow',
-          'Integrated AR content about Boyan Borisov’s path and the collection’s wines',
-          'Prepared a mobile Unity product covering blends, taste, aroma and food pairings',
+          'Implemented label recognition and AR video launch for a specific wine as one mobile flow',
+          'Integrated structured collection content covering the blend, taste, aroma and food pairings',
         ],
         authorsWineVillaKrimMediaCampaign:
           'Villa Krim AR campaign visual: a user scans a bottle with a smartphone',
@@ -1722,20 +1708,23 @@ export const resources = {
           'Second screen of the Author’s Wine Villa Krim app',
         authorsWineVillaKrimMediaScreen3:
           'Third screen of the Author’s Wine Villa Krim app',
-        authorsWineVillaKrimMetrics: [
-          { value: '3', label: 'confirmed Android apps in the series' },
-          { value: '3', label: 'confirmed stack components' },
-          { value: 'QR → AR', label: 'content launch flow' },
-          { value: '2020', label: 'public AR announcement year' },
-        ],
         chudoProjector: 'Chudo Projector',
         chudoProjectorDesc:
-          'Interactive projection application using computer vision and a desktop companion app.',
+          'Chudo Projector is an interactive projection system for children’s spaces where a paper coloring page becomes part of a living scene. The project combined two applications: a mobile client for scanning colored drawings and a Windows application that sent the scene to a projector. Children chose the colors themselves, and the system transferred the result from the page onto a 3D character or interior object, making every scene personal.\n\nIn the first mode, a child built a room from more than 20 drawings by scanning characters and interior objects; each one appeared in the child’s own colors. Once the room was complete, the whole scene came alive with music: characters danced, particles appeared and the environment reacted with sound. The scene could be replayed to explore new combinations.\n\nTwo additional modes connected the digital scene with the physical space. In one, a child restored color to individual characters and objects with a glowing wand pointed at the projected wall. In the other, the entire scene started in black and white and the child revealed its colors by moving the same wand across the wall. The result combined creativity, movement and play, turning an ordinary wall into a responsive space for children.',
         chudoProjectorPoints: [
-          'Recognized light sources and markers with OpenCV',
-          'Transferred textures through Photon',
-          'Built interactive Unity projection behavior',
+          'Designed the mobile and Windows application pair that turned a child’s coloring page into a personalized projection scene',
+          'Implemented the transfer of user coloring onto 3D characters and interior objects, with data synchronization between Android and PC',
+          'Connected the mobile and desktop clients for synchronized texture and scene-state exchange with Photon',
+          'Built the room-assembly flow around more than 20 drawings and a replayable musical finale with animated characters, particles and sound reactions',
+          'Implemented two glowing-wand interaction modes: restoring color to individual objects and revealing color across the full projected scene',
+          'Configured computer vision to detect the light source and map camera coordinates into the projection scene, so the child’s movement directly controlled the visual effect',
         ],
+        chudoProjectorMediaScreen1:
+          'First screen of the Chudo Projector application',
+        chudoProjectorMediaScreen2:
+          'Second screen of the Chudo Projector application',
+        chudoProjectorMediaScreen3:
+          'Third screen of the Chudo Projector application',
         arColoring: 'AR Coloring',
         arColoringDesc:
           'Mobile Chudoboxes AR application that turns paper coloring pages into animated experiences through a smartphone camera.',

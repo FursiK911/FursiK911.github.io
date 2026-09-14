@@ -618,13 +618,6 @@ p {
   line-height: 1.25;
 }
 
-:global(.experience-timeline-card) p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.64rem;
-  line-height: 1.45;
-}
-
 :global(.experience-future-item) :global(.experience-timeline-card) {
   justify-content: center;
   padding-top: 0;

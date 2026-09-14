@@ -38,12 +38,6 @@
   text-wrap: balance;
 }
 
-:global(.projects-intro) p {
-  max-width: 340px;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
 @media (max-width: 900px) {
   :global(.projects-intro) {
     align-items: stretch;

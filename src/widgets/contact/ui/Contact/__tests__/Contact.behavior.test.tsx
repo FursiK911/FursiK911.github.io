@@ -14,10 +14,19 @@ it('renders contact actions', async () => {
   expect(quote).toBeVisible()
   expect(quote).toHaveClass('contact-quote')
   expect(quote.closest('.portrait-frame')).toBeInTheDocument()
-  expect(
-    screen.getByRole('link', { name: /19fursik99@gmail.com/ }),
-  ).toBeVisible()
-  expect(screen.getByRole('link', { name: /@FursiK911/ })).toBeVisible()
+  const emailLink = screen.getByRole('link', { name: /19fursik99@gmail.com/ })
+  const telegramLink = screen.getByRole('link', { name: /@FursiK911/ })
+  expect(emailLink).toBeVisible()
+  expect(telegramLink).toBeVisible()
+  expect(emailLink.querySelector('svg')).toHaveClass('tabler-icon-mail')
+  expect(emailLink.querySelector('svg')).toHaveAttribute('aria-hidden', 'true')
+  expect(telegramLink.querySelector('svg')).toHaveClass(
+    'tabler-icon-brand-telegram',
+  )
+  expect(telegramLink.querySelector('svg')).toHaveAttribute(
+    'aria-hidden',
+    'true',
+  )
   const resumeLink = screen.getByRole('link', { name: 'СКАЧАТЬ РЕЗЮМЕ' })
   expect(resumeLink).toHaveClass('action-control', 'action-control--primary')
   expect(resumeLink).toHaveAttribute('download')

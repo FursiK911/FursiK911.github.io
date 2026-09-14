@@ -54,12 +54,6 @@ export function ExperienceTimelineItem({
         <time dateTime={entry.period.to ?? entry.period.from}>{period}</time>
         <span className={cx(styles.experienceCompany)}>{entry.company}</span>
         <h3>{t(entry.timelineRoleKey)}</h3>
-        <p>{t(entry.summaryKey)}</p>
-        <div className={cx(styles.tagRow, styles.experienceTags)}>
-          {entry.technologies.slice(0, 6).map((technology) => (
-            <span key={technology}>{technology}</span>
-          ))}
-        </div>
         <button
           className={itemStyles.trigger}
           type="button"

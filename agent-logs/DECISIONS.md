@@ -1,5 +1,39 @@
 # Global Decision Index
 
+| DEC-20260914-15 | Use `AR` and `Vuforia` in the Chudo Projector technology stack and include `AR` in its card tags; do not use the incorrect `Euphoria` label. | projects, chudo-projector, ar, vuforia, technology-stack, card-tags | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-15) |
+
+| DEC-20260914-14 | Use `IconDownload`, `IconBriefcase`, and `IconMessageCircle` for Hero CTAs, plus contextual `IconMail` and `IconBrandTelegram` icons for Contact links; keep existing labels, destinations, and localization unchanged. | ui, hero, contact, cta, icons, accessibility, i18n | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-14) |
+
+| DEC-20260914-13 | Keep `bIig8_xRzUM` third in Chudo Projector media, after `0bvWX_7WkKU` and `ZmHUsOxiHXA`, with the three image items following the video group and remaining as card previews. | projects, chudo-projector, youtube, media, card-preview | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-13) |
+
+| DEC-20260914-12 | Omit the unconfirmed `Euphoria` reference from Chudo Projector and describe the room-building flow as using more than 20 drawings in both RU and EN copy. | projects, chudo-projector, marketing-copy, projection, photon, open-cv, android, windows, i18n | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-12) |
+
+| DEC-20260914-11 | Show Chudo Projector as a 2020–2021 product, keep a concise product teaser on the card, use an expanded three-mode product narrative on the project page, and expose Unity, C#, Euphoria, Photon, OpenCV, Android, Windows, and Projection in the page technology stack. | projects, chudo-projector, marketing-copy, projection, open-cv, photon, euphoria, android, windows, i18n | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-11) |
+
+| DEC-20260914-10 | Keep the PNG logo family as the only active site icon source and remove the superseded SVG favicon once no references remain. | favicon, cleanup, assets | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-10) |
+
+| DEC-20260914-09 | Regenerate every browser/PWA/iOS icon derivative whenever the canonical `public/logo-site.png` asset is updated, without changing the metadata routing or adding maskable icons. | favicon, pwa, ios, icons, assets | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-09) |
+
+| DEC-20260914-08 | Use `public/logo-site.png` as the canonical site mark, derive standard transparent PNG sizes for browser/PWA/iOS surfaces, and declare only `purpose: "any"` because the source mark is not padded for maskable cropping. | favicon, pwa, ios, icons, assets | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-08) |
+
+| DEC-20260914-07 | Keep the Projects section header limited to its title, with the project circuit as the only optional secondary content when explicitly enabled. | projects, ui, i18n | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-07) |
+
+| DEC-20260914-06 | Keep work-experience overview cards limited to the period, company, position, and identity mark; retain project descriptions and technology tags only inside the selected-entry details modal. | experience, timeline, cards, responsive, i18n | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-06) |
+
+| DEC-20260914-05 | Represent the cylindrical AR tracking technology as the English stack label `Cylindrical Marker` for both Villa Krim applications, alongside Android and iOS. | projects, villa-krim, authors-wine-villa-krim, ios, ar, vuforia | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-05) |
+
+| DEC-20260914-04 | Keep `screen_1.png` through `screen_3.png` after the two Chudo Projector videos in gallery order and use all three image items as card previews. | projects, chudo-projector, screenshots, media | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-04) |
+
+| DEC-20260914-03 | Keep `0bvWX_7WkKU` first and `ZmHUsOxiHXA` second in Chudo Projector media; do not attach these videos to related Chudoboxes projects. | projects, chudo-projector, youtube, media | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-03) |
+
+| DEC-20260914-02 | Keep `Villa Krim` as the brand name, use `Авторское вино Villa Krim` in Russian, show `2019 — 2020` for both projects, remove their metrics sections, and distinguish the Virtual Sommelier quiz from the Author’s Wine AR video and text experience. | projects, villa-krim, authors-wine-villa-krim, ar, marketing-copy, i18n | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-02) |
+
+| DEC-20260914-01 | Keep `dDpAbPiHIEw` in AR Coloring media and `L1wo7UmOsr4` in Chudobooks media; do not cross-link the videos between projects. | projects, ar-coloring, chudobooks, youtube, media | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-01) |
+
+| DEC-20260913-16 | Present Vulcan Verse as a 2025 PC/Windows MMORPG product case with product-led RU/EN copy, a 100K+ unique players metric, a retained gameplay video, and a disabled client-download action for the closed project; remove Habr Career and the third contribution point. | projects, vulcan-verse, mmorpg, nft, pc, marketing-copy, availability | [2026-09-13](2026/09/2026-09-13.md#decision-dec-20260913-16) |
+
+| DEC-20260913-15 | Represent Frieze Viewing Room as `React Native` in card tags and expose `React Native` in the shared project technology filter; retain `React` for projects that use React on the web. | projects, frieze, react-native, cards, filters | [2026-09-13](2026/09/2026-09-13.md#decision-dec-20260913-15) |
+
 | DEC-20260913-14 | Keep `CIBXdduloJw` and `ep4Af8g-NEw` in AR Coloring media; remove `FElU9mRhxNg`. | projects, ar-coloring, youtube, media | [2026-09-13](2026/09/2026-09-13.md#decision-dec-20260913-14) |
 
 | DEC-20260913-13 | Keep the three supplied YouTube videos as AR Coloring media items, ordered before the existing screenshots; do not attach them to related projects. | projects, ar-coloring, youtube, media | [2026-09-13](2026/09/2026-09-13.md#decision-dec-20260913-13) |

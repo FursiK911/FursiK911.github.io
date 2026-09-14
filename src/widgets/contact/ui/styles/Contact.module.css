@@ -125,6 +125,9 @@
 }
 
 :global(.contact-links) > div a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   text-decoration: none;
   font-size: 1.1rem;
   color: var(--text);

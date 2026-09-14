@@ -1,0 +1,21 @@
+import { expect, it } from 'vitest'
+
+import { projects } from '../data/projects.data'
+
+it('contains the Chudo Projector videos, gallery images, and card previews', () => {
+  const project = projects.find((item) => item.id === 'chudo-projector')
+
+  expect(project?.media).toEqual([
+    { kind: 'youtube', videoId: '0bvWX_7WkKU' },
+    { kind: 'youtube', videoId: 'ZmHUsOxiHXA' },
+    { kind: 'youtube', videoId: 'bIig8_xRzUM' },
+    ...[1, 2, 3].map((screen) => ({
+      kind: 'image' as const,
+      src: `/images/projects/chudo-projector/screen_${screen}.webp`,
+      altKey: `chudoProjectorMediaScreen${screen}`,
+    })),
+  ])
+  expect(project?.card.previewImages).toEqual(
+    project?.media?.filter((media) => media.kind === 'image'),
+  )
+})

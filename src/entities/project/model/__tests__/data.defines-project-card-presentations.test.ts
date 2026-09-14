@@ -38,4 +38,7 @@ it('defines card directions, tags and approved preview images for every project'
     projects.find((project) => project.id === 'drilling-vr')?.card
       .previewImages,
   ).toHaveLength(9)
+  expect(
+    projects.find((project) => project.id === 'frieze-viewing-room')?.card.tags,
+  ).toEqual(['React Native', 'Mobile', 'AR'])
 })

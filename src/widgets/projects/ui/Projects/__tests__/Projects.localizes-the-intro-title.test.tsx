@@ -13,4 +13,9 @@ it('keeps the eyebrow in English and localizes the projects intro title', async 
   expect(
     screen.getByRole('heading', { level: 2, name: 'ПРОЕКТЫ' }),
   ).toBeVisible()
+  expect(
+    screen.queryByText(
+      'Системы, симуляции, игры и интерфейсы, созданные на Unity, XR и web.',
+    ),
+  ).not.toBeInTheDocument()
 })

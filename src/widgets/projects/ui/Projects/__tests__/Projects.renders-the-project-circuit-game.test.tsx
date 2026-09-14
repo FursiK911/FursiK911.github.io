@@ -8,9 +8,5 @@ it('keeps the project circuit game hidden behind its feature flag', () => {
   expect(
     screen.queryByText('ROUTE POWER TO PROJECT CORE'),
   ).not.toBeInTheDocument()
-  expect(
-    screen.getByText(
-      'Systems, simulations, games and interfaces shipped across Unity, XR and web.',
-    ),
-  ).toBeInTheDocument()
+  expect(screen.getByRole('heading', { name: 'PROJECTS' })).toBeInTheDocument()
 })

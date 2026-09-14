@@ -1,7 +1,11 @@
 import { cx, styles } from '@/shared/styles'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'motion/react'
-import { IconDownload } from '@tabler/icons-react'
+import {
+  IconBriefcase,
+  IconDownload,
+  IconMessageCircle,
+} from '@tabler/icons-react'
 import { cvUrl } from '@/entities/project'
 import { TypingText } from '@/shared/ui/TypingText'
 import { LiveCam } from '../LiveCam/LiveCam'
@@ -48,15 +52,17 @@ export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
           className={cx(styles.heroActions)}
           variants={heroItemVariants}
         >
-          <ActionLink variant="primary" href="#projects">
-            {t('hero.projects')} <span>↘</span>
-          </ActionLink>
-          <ActionLink variant="secondary" href={cvUrl} download>
+          <ActionLink variant="primary" href={cvUrl} download>
             {t('hero.cv')}
             <IconDownload aria-hidden="true" size={16} stroke={1.5} />
           </ActionLink>
+          <ActionLink variant="secondary" href="#projects">
+            {t('hero.projects')}
+            <IconBriefcase aria-hidden="true" size={16} stroke={1.5} />
+          </ActionLink>
           <ActionLink variant="text" href="#contact">
-            {t('hero.contact')} ↗
+            {t('hero.contact')}
+            <IconMessageCircle aria-hidden="true" size={16} stroke={1.5} />
           </ActionLink>
         </motion.div>
       </motion.div>

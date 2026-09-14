@@ -81,11 +81,7 @@ export function Projects() {
       <SectionHeading index="02" title={t('sections.projects')} />
       <div className={cx(styles.projectsIntro)}>
         <h2>{t('projects.title')}</h2>
-        {projectCircuitGameEnabled ? (
-          <ProjectCircuitGame />
-        ) : (
-          <p>{t('projects.intro')}</p>
-        )}
+        {projectCircuitGameEnabled && <ProjectCircuitGame />}
       </div>
       <ProjectFilters
         direction={direction}

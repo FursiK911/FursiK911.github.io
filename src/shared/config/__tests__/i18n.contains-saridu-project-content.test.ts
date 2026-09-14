@@ -11,10 +11,12 @@ it('contains the SARiDU platform, action labels and product metrics in both loca
   expect(resources.ru.translation.projects.actionLabels).toEqual({
     sariduVkPost1: 'VK · публикация 1',
     sariduVkPost2: 'VK · публикация 2',
+    vulkanVerseClient: 'Клиент',
   })
   expect(resources.en.translation.projects.actionLabels).toEqual({
     sariduVkPost1: 'VK · post 1',
     sariduVkPost2: 'VK · post 2',
+    vulkanVerseClient: 'Client',
   })
   expect(resources.ru.translation.projects.sariduActuatorMetrics).toEqual([
     { value: '15+', label: 'сценариев неисправностей' },

@@ -49,7 +49,7 @@ export const projectCardPresentations: Record<
   'frieze-viewing-room': {
     direction: 'games-apps',
     teaserKey: 'projects.cardTeasers.friezeViewingRoom',
-    tags: ['React', 'Mobile', 'AR'],
+    tags: ['React Native', 'Mobile', 'AR'],
     previewImageIndexes: [0, 1, 2, 3, 4],
   },
   'neo4-sightline': {
@@ -109,8 +109,8 @@ export const projectCardPresentations: Record<
   'chudo-projector': {
     direction: 'games-apps',
     teaserKey: 'projects.cardTeasers.chudoProjector',
-    tags: ['Unity', 'OpenCV', 'Photon'],
-    previewImageIndexes: [],
+    tags: ['Unity', 'AR', 'OpenCV', 'Photon'],
+    previewImageIndexes: [0, 1, 2],
   },
   'ar-coloring': {
     direction: 'games-apps',

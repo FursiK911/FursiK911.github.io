@@ -534,24 +534,25 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     id: 'vulkan-verse',
     titleKey: 'vulkanVerse',
     category: ['unity', 'multiplayer'],
-    platformKey: 'platformPcWeb',
+    platformKey: 'platformPcWindows',
     roleKey: 'unityDeveloper',
     descriptionKey: 'vulkanVerseDesc',
     pointsKey: 'vulkanVersePoints',
     tech: ['Unity', 'C#', 'Photon', 'Addressables', 'Zenject', 'UniTask'],
     company: 'Yellow Element',
-    period: { from: '09.2025', to: '03.2026' },
+    period: { from: '2025', to: '2025' },
     actions: [
-      { type: 'live', label: 'Website', href: 'https://vv.vulcanforged.com/' },
+      {
+        type: 'download',
+        label: 'Client',
+        labelKey: 'projects.actionLabels.vulkanVerseClient',
+        href: 'https://vv.vulcanforged.com/',
+        unavailableReasonKey: 'projects.unavailableActions.vulkanVerseClient',
+      },
       {
         type: 'external',
         label: 'Gameplay video',
         href: 'https://www.youtube.com/watch?v=VYT8kBTMOf0',
-      },
-      {
-        type: 'external',
-        label: 'Habr Career',
-        href: 'https://career.habr.com/fursik1',
       },
     ],
     media: [
@@ -707,9 +708,17 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     roleKey: 'juniorUnity',
     descriptionKey: 'virtualSommelierVillaKrimDesc',
     pointsKey: 'virtualSommelierVillaKrimPoints',
-    tech: ['Unity', 'C#', 'Vuforia', 'AR', 'Android'],
+    tech: [
+      'Unity',
+      'C#',
+      'Vuforia',
+      'AR',
+      'Android',
+      'iOS',
+      'Cylindrical Marker',
+    ],
     company: 'Yellow Element',
-    period: { from: '10.2019', to: '02.2022' },
+    period: { from: '2019', to: '2020' },
     actions: [
       {
         type: 'external',
@@ -718,13 +727,13 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       },
       {
         type: 'external',
-        label: 'APKPure · RU versions',
-        href: 'https://apkpure.net/ru/%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D1%81%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%D0%B5-villa-krim/com.alefvinal.appvillakrim/versions',
+        label: 'APKPure · UA',
+        href: 'https://apkpure.net/ru/%D0%B2%D1%96%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9-%D1%81%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%D1%94-villa-krim/com.villakrim.VillaKrim',
       },
       {
         type: 'external',
-        label: 'APKPure · UA',
-        href: 'https://apkpure.net/ru/%D0%B2%D1%96%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9-%D1%81%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%D1%94-villa-krim/com.villakrim.VillaKrim',
+        label: '24tv · campaign',
+        href: 'https://24tv.ua/ru/villa-krim-pervoj-ukraine-ispolzovala-funkciju-dopolnennoj-realnosti_n1347926',
       },
     ],
     media: [
@@ -744,7 +753,6 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
         altKey: `virtualSommelierVillaKrimMediaScreen${screen}`,
       })),
     ],
-    metricsKey: 'virtualSommelierVillaKrimMetrics',
   },
   {
     id: 'authors-wine-villa-krim',
@@ -754,24 +762,22 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     roleKey: 'juniorUnity',
     descriptionKey: 'authorsWineVillaKrimDesc',
     pointsKey: 'authorsWineVillaKrimPoints',
-    tech: ['Unity', 'C#', 'Vuforia', 'AR', 'Android'],
+    tech: [
+      'Unity',
+      'C#',
+      'Vuforia',
+      'AR',
+      'Android',
+      'iOS',
+      'Cylindrical Marker',
+    ],
     company: 'Yellow Element',
-    period: { from: '10.2019', to: '02.2022' },
+    period: { from: '2019', to: '2020' },
     actions: [
       {
         type: 'external',
         label: 'APKPure',
         href: 'https://apkpure.net/ru/%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D1%81%D1%8C%D0%BA%D0%B5-%D0%B2%D0%B8%D0%BD%D0%BE-villa-krim/com.alefvinal.appauthorswine',
-      },
-      {
-        type: 'external',
-        label: '24tv · campaign',
-        href: 'https://24tv.ua/ru/villa-krim-pervoj-ukraine-ispolzovala-funkciju-dopolnennoj-realnosti_n1347926',
-      },
-      {
-        type: 'external',
-        label: 'Habr Career',
-        href: 'https://career.habr.com/fursik1',
       },
     ],
     media: [
@@ -791,7 +797,6 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
         altKey: `authorsWineVillaKrimMediaScreen${screen}`,
       })),
     ],
-    metricsKey: 'authorsWineVillaKrimMetrics',
   },
   {
     id: 'chudo-projector',
@@ -801,9 +806,29 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     roleKey: 'juniorUnity',
     descriptionKey: 'chudoProjectorDesc',
     pointsKey: 'chudoProjectorPoints',
-    tech: ['Unity', 'C#', 'OpenCV', 'Photon', 'Windows'],
+    tech: [
+      'Unity',
+      'C#',
+      'AR',
+      'Vuforia',
+      'Photon',
+      'OpenCV',
+      'Android',
+      'Windows',
+      'Projection',
+    ],
     company: 'Yellow Element',
-    period: { from: '10.2019', to: '02.2022' },
+    period: { from: '2020', to: '2021' },
+    media: [
+      { kind: 'youtube', videoId: '0bvWX_7WkKU' },
+      { kind: 'youtube', videoId: 'ZmHUsOxiHXA' },
+      { kind: 'youtube', videoId: 'bIig8_xRzUM' },
+      ...[1, 2, 3].map((screen) => ({
+        kind: 'image' as const,
+        src: `/images/projects/chudo-projector/screen_${screen}.webp`,
+        altKey: `chudoProjectorMediaScreen${screen}`,
+      })),
+    ],
   },
   {
     id: 'ar-coloring',
@@ -831,6 +856,7 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       { kind: 'youtube', videoId: 'CIBXdduloJw' },
       { kind: 'youtube', videoId: 'ep4Af8g-NEw' },
+      { kind: 'youtube', videoId: 'dDpAbPiHIEw' },
       {
         kind: 'image',
         src: '/images/projects/ar-coloring/ar-coloring-home.webp',
@@ -936,6 +962,7 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       },
     ],
     media: [
+      { kind: 'youtube', videoId: 'L1wo7UmOsr4' },
       {
         kind: 'image',
         src: '/images/projects/ar-chudobook/screen_1.webp',
