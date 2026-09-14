@@ -1,16 +1,16 @@
 # Graph Report - fursik.github.io  (2026-09-14)
 
 ## Corpus Check
-- 495 files · ~1,478,996 words
+- 497 files · ~1,487,199 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1547 nodes · 2338 edges · 176 communities (115 shown, 61 thin omitted)
+- 1558 nodes · 2351 edges · 177 communities (116 shown, 61 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d1d72a29`
+- Built from commit: `378249b8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -58,7 +58,7 @@
 - work-experience/index.ts
 - useKonamiCode.ts
 - MetricCounter.tsx
-- ExperienceTimeline.localizes-short-timeline-roles-and-the-future-cta-in-russian.test.tsx
+- ExperienceTimeline
 - ExperienceTimeline.cancels-a-pending-refresh-when-the-timeline-unmounts.test.tsx
 - ExperienceTimeline.keeps-the-runner-static-when-reduced-motion-is-requested.test.tsx
 - ExperienceTimeline.rebuilds-the-runner-after-a-desktop-resize-and-preserves-its-progress.test.tsx
@@ -68,7 +68,7 @@
 - Agent Operating Rules
 - Dmitry Fursov — Software Developer
 - HomePage.tsx
-- ExperienceTimeline
+- ExperienceTimeline.renders-the-complete-career-path-and-future-milestone.test.tsx
 - ExperienceTimelineItem.tsx
 - MyChess Web — project brief
 - TestProviders.tsx
@@ -76,7 +76,7 @@
 - styles/index.ts
 - UnavailableAction.tsx
 - Persistent project media mock
-- Project modal width and title typography
+- Project Circuit mini-game in Projects
 - AR Coloring video media
 - AppRouter.tsx
 - IntersectionObserverStub
@@ -112,10 +112,10 @@
 - Key contribution label
 - Hero desktop edge alignment
 - Profile section top padding
-- Cyan experience project titles
+- Centered Education cards around Timeline bullets
 - @eslint/js
 - @testing-library/react
-- Professionalized SOS COMPUTER course content
+- Centered Education detail metadata
 - lint-staged
 - oxlint
 - prettier
@@ -130,7 +130,7 @@
 - @vitejs/plugin-react
 - data.contains-21-unique-projects-with-valid-categories.test.ts
 - globals
-- gsap
+- Completed final Education Timeline axis segment
 - husky
 - i18next-browser-languagedetector
 - jsdom
@@ -144,13 +144,14 @@
 - @types/three
 - vitest
 - @vitest/coverage-v8
+- gsap
 
 ## God Nodes (most connected - your core abstractions)
 1. `2026-09-12` - 57 edges
 2. `2026-09-10` - 49 edges
 3. `2026-08-30` - 41 edges
 4. `Seamless Hero portrait handoff` - 38 edges
-5. `2026-09-14` - 29 edges
+5. `2026-09-14` - 35 edges
 6. `LiveCam()` - 24 edges
 7. `compilerOptions` - 21 edges
 8. `Dynamic live-cam HUD refinement` - 18 edges
@@ -172,7 +173,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (176 total, 61 thin omitted)
+## Communities (177 total, 61 thin omitted)
 
 ### Community 0 - "loading/index.ts"
 Cohesion: 0.06
@@ -199,8 +200,8 @@ Cohesion: 0.04
 Nodes (57): 2026-09-12, Adjust MyChess gameplay contribution verb, AR Coloring RuStore reskin project, Chudobooks WebP gallery media, Clarify MyChess AI champions contribution, Clarify MyChess frontend ownership, Combine MyChess modes and rating contribution points, Contained project images over blurred backgrounds (+49 more)
 
 ### Community 6 - "entities/project/index.ts"
-Cohesion: 0.07
-Nodes (25): cvUrl, projectCardPresentations, projectDefinitions, projects, skillGroups, ProjectCardPresentationDefinition, Project, ProjectAction (+17 more)
+Cohesion: 0.08
+Nodes (24): cvUrl, projectCardPresentations, projectDefinitions, projects, ProjectCardPresentationDefinition, Project, ProjectAction, ProjectActionType (+16 more)
 
 ### Community 7 - "DirectionCard.tsx"
 Cohesion: 0.09
@@ -216,7 +217,7 @@ Nodes (38): 2026-09-07 20:42 +03:00, 2026-09-07 21:21 +03:00, 2026-09-07 21:55 +
 
 ### Community 10 - "2026-09-02.md"
 Cohesion: 0.05
-Nodes (39): 2026-09-02 12:58 +03:00, 2026-09-02 15:32 +03:00, 2026-09-02 15:54 +03:00, 2026-09-02 16:07 +03:00, 2026-09-02 16:24 +03:00, 2026-09-02 16:37 +03:00, 2026-09-02 17:28 +03:00, 2026-09-02 20:36 +03:00 (+31 more)
+Nodes (36): 2026-09-02 12:58 +03:00, 2026-09-02 15:32 +03:00, 2026-09-02 15:54 +03:00, 2026-09-02 16:07 +03:00, 2026-09-02 16:24 +03:00, 2026-09-02 16:37 +03:00, 2026-09-02 17:28 +03:00, 2026-09-02 17:31 +03:00 (+28 more)
 
 ### Community 11 - "dependencies"
 Cohesion: 0.12
@@ -232,7 +233,7 @@ Nodes (28): 00:14 +03:00 — Candidate list overflow fix, 00:17 +03:00 — Fixed
 
 ### Community 14 - "2026-09-09.md"
 Cohesion: 0.07
-Nodes (27): 2026-09-09 10:00 +03:00, 2026-09-09 14:27 +03:00, 2026-09-09 18:24 +03:00, 2026-09-09 21:03 +03:00, 2026-09-09 21:46 +03:00, 2026-09-09 21:55 +03:00, 2026-09-09 22:52 +03:00, 2026-09-09 23:01 +03:00 (+19 more)
+Nodes (27): 2026-09-09 10:00 +03:00, 2026-09-09 14:27 +03:00, 2026-09-09 18:24 +03:00, 2026-09-09 21:03 +03:00, 2026-09-09 21:46 +03:00, 2026-09-09 21:55 +03:00, 2026-09-09 23:20 +03:00, 2026-09-09 23:30 +03:00 (+19 more)
 
 ### Community 15 - "compilerOptions"
 Cohesion: 0.07
@@ -342,9 +343,9 @@ Nodes (5): workExperience, ExperienceProject, ExperienceRolePhase, WorkExperienc
 Cohesion: 0.39
 Nodes (3): KONAMI_CODE, useKonamiCode(), KonamiDebug()
 
-### Community 43 - "ExperienceTimeline.localizes-short-timeline-roles-and-the-future-cta-in-russian.test.tsx"
-Cohesion: 0.25
-Nodes (4): animationFrames, { gsapSet, gsapTo, runnerTweens }, resizeDisconnect, resizeObserve
+### Community 43 - "ExperienceTimeline"
+Cohesion: 0.22
+Nodes (5): ExperienceTimeline(), animationFrames, { gsapSet, gsapTo, runnerTweens }, resizeDisconnect, resizeObserve
 
 ### Community 44 - "ExperienceTimeline.cancels-a-pending-refresh-when-the-timeline-unmounts.test.tsx"
 Cohesion: 0.22
@@ -382,9 +383,9 @@ Nodes (7): Portfolio research sources, Dmitry Fursov — Software Developer, Git
 Cohesion: 0.39
 Nodes (3): sectionIds, useActiveSection(), App()
 
-### Community 53 - "ExperienceTimeline"
-Cohesion: 0.22
-Nodes (5): ExperienceTimeline(), animationFrames, { gsapSet, gsapTo, runnerTweens }, resizeDisconnect, resizeObserve
+### Community 53 - "ExperienceTimeline.renders-the-complete-career-path-and-future-milestone.test.tsx"
+Cohesion: 0.25
+Nodes (4): animationFrames, { gsapSet, gsapTo, runnerTweens }, resizeDisconnect, resizeObserve
 
 ### Community 54 - "ExperienceTimelineItem.tsx"
 Cohesion: 0.43
@@ -410,9 +411,9 @@ Nodes (3): styles, className(), cx()
 Cohesion: 0.40
 Nodes (5): 18:58 +03:00 — [feature] Transfer the loader portrait into the Hero scene, 2026-09-06 18:40 +03:00, Decision DEC-20260906-01, Decision DEC-20260906-02, Persistent project media mock
 
-### Community 61 - "Project modal width and title typography"
+### Community 61 - "Project Circuit mini-game in Projects"
 Cohesion: 0.40
-Nodes (5): 2026-09-09 23:30 +03:00, 2026-09-09 23:40 +03:00, Decision DEC-20260909-10, Decision DEC-20260909-11, Project modal width and title typography
+Nodes (5): 2026-09-09 22:52 +03:00, 2026-09-09 23:01 +03:00, Decision DEC-20260909-07, Decision DEC-20260909-08, Project Circuit mini-game in Projects
 
 ### Community 62 - "AR Coloring video media"
 Cohesion: 0.40
@@ -423,8 +424,8 @@ Cohesion: 0.50
 Nodes (4): AI Agent Change Log Index, Browse by decision, Browse by period, Latest entries
 
 ### Community 73 - "2026-09-14"
-Cohesion: 0.05
-Nodes (39): 2026-09-14, 2026-09-14 10:00 +03:00, 2026-09-14 13:07 +03:00, 2026-09-14 13:21 +03:00, 2026-09-14 14:07 +03:00, 2026-09-14 14:16 +03:00, 2026-09-14 14:18 +03:00, 2026-09-14 14:37 +03:00 (+31 more)
+Cohesion: 0.04
+Nodes (48): 2026-09-14, 2026-09-14 10:00 +03:00, 2026-09-14 13:07 +03:00, 2026-09-14 13:21 +03:00, 2026-09-14 14:07 +03:00, 2026-09-14 14:16 +03:00, 2026-09-14 14:18 +03:00, 2026-09-14 14:37 +03:00 (+40 more)
 
 ### Community 74 - "lint-staged"
 Cohesion: 0.40
@@ -438,16 +439,20 @@ Nodes (3): 2026-09-03 00:42 +03:00, Decision DEC-20260903-01, Separated source r
 Cohesion: 0.67
 Nodes (3): 2026-09-03 01:07 +03:00, Decision DEC-20260903-02, Grouped role folders for source responsibilities
 
-### Community 97 - "Cyan experience project titles"
+### Community 97 - "Centered Education cards around Timeline bullets"
 Cohesion: 0.67
-Nodes (3): 2026-09-02 17:31 +03:00, Cyan experience project titles, Decision DEC-20260902-12
+Nodes (3): 2026-09-02 21:45 +03:00, Centered Education cards around Timeline bullets, Decision DEC-20260902-17
 
-### Community 100 - "Professionalized SOS COMPUTER course content"
+### Community 100 - "Centered Education detail metadata"
 Cohesion: 0.67
-Nodes (3): 2026-09-02 17:56 +03:00, Decision DEC-20260902-13, Professionalized SOS COMPUTER course content
+Nodes (3): 2026-09-02 20:36 +03:00, Centered Education detail metadata, Decision DEC-20260902-14
+
+### Community 162 - "Completed final Education Timeline axis segment"
+Cohesion: 0.67
+Nodes (3): 2026-09-02 21:58 +03:00, Completed final Education Timeline axis segment, Decision DEC-20260902-19
 
 ## Knowledge Gaps
-- **557 isolated node(s):** `name`, `private`, `version`, `type`, `node` (+552 more)
+- **563 isolated node(s):** `name`, `private`, `version`, `type`, `node` (+558 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **61 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -456,12 +461,12 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `2026-09-12` connect `2026-09-12` to `agent-logs/README.md`?**
   _High betweenness centrality (0.028) - this node is a cross-community bridge._
-- **Why does `2026-09-14` connect `2026-09-14` to `agent-logs/README.md`?**
-  _High betweenness centrality (0.024) - this node is a cross-community bridge._
 - **Why does `2026-09-10` connect `2026-09-10` to `agent-logs/README.md`, `Profile section top padding`, `Key contribution label`, `Hero desktop edge alignment`?**
-  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+- **Why does `2026-09-14` connect `2026-09-14` to `agent-logs/README.md`?**
+  _High betweenness centrality (0.026) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _557 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _563 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `loading/index.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.06327006327006326 - nodes in this community are weakly interconnected._
 - **Should `ProjectPage.tsx` be split into smaller, more focused modules?**

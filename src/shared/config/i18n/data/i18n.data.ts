@@ -356,13 +356,13 @@ export const resources = {
           chudoProjector:
             'Chudo Projector превращает детскую раскраску в интерактивное шоу на стене: ребёнок раскрашивает персонажа или предмет, сканирует его смартфоном и видит собственную версию в проекционной сцене. Несколько игровых режимов и светящаяся палочка превращают обычный лист бумаги в цифровое приключение.',
           arColoring:
-            'Раскраски оживают через камеру смартфона. AR-персонажи и тематические сцены превращают печатную страницу в игру.',
+            'AR Coloring превращает детскую раскраску в живую сцену: выберите набор, раскрасьте страницу и наведите камеру смартфона, чтобы увидеть персонажей в дополненной реальности.',
           arColoringZebra:
-            'AR-раскраски для детей от Творческой мастерской Зебра: бумажные рисунки оживают в дополненной реальности.',
+            'AR Раскраски от Творческой мастерской Зебра превращают рисунок ребёнка в персональную 3D-сцену: герой оживает в выбранных цветах, а результат можно сохранить и показать другим.',
           chudobooks:
-            'Детские книги с AR-сценами, которые запускаются с печатных страниц. Контент доставляется и обновляется внутри приложения.',
+            'Chudobooks соединяет детскую книгу и дополненную реальность: страницы запускают 3D-персонажей, сцены, аудио и видео, превращая чтение в интерактивное приключение.',
           arChudaboxes:
-            'AR-приложение для промо-материалов: изображение становится интерактивной сценой через камеру смартфона.',
+            'AR Chudoboxes оживляет страницы книги и промоматериалы через камеру смартфона: персонажи появляются в AR, а фото, видео, коллекции и мини-игры поддерживают интерес к кампании.',
           chudoFloor:
             'Интерактивный пол, реагирующий на движения посетителей. Проекционная инсталляция собрана на Unity и OpenCV.',
           questRoom:
@@ -694,11 +694,12 @@ export const resources = {
         chudoProjectorMediaScreen3: 'Третий экран приложения Chudo Projector',
         arColoring: 'AR Coloring',
         arColoringDesc:
-          'Мобильное AR-приложение Chudoboxes, превращающее бумажные раскраски в ожившие анимации через камеру смартфона.',
+          'AR Coloring — мобильное приложение Chudoboxes Coloring, которое превращает бумажную раскраску в интерактивную AR-историю. Ребёнок выбирает тематический набор, активирует его по QR-коду или обложке, раскрашивает страницу и сканирует рисунок камерой смартфона. Персонажи появляются поверх собственной работы ребёнка, поэтому знакомый лист становится персональной сценой для игры.\n\nПриложение объединяет творческий процесс и цифровое продолжение: коллекция тематических миров помогает возвращаться к новым раскраскам, а ожившие герои делают результат заметным сразу после сканирования. AR Coloring связывает простой и понятный ритуал раскрашивания с эффектом открытия — ребёнок сам создаёт внешний вид персонажа и тут же видит его в движении.',
         arColoringPoints: [
-          'Реализовал сценарий QR-код / обложка → раскраска → сканирование → AR-анимация',
-          'Настроил распознавание печатных изображений и показ контента поверх раскраски',
-          'Поддерживал мобильные релизы для iOS и Android и тематические наборы контента',
+          'Сформировал пользовательский путь от активации набора по QR-коду или обложке до раскрашивания, сканирования и запуска AR-сцены',
+          'Реализовал распознавание печатных изображений и отображение анимированных персонажей поверх раскрашенной страницы',
+          'Организовал работу тематических наборов контента, чтобы расширять коллекцию сцен без изменения базового сценария приложения',
+          'Поддерживал кроссплатформенные релизы для iOS и Android и адаптацию продукта под разные форматы детских раскрасок',
         ],
         arColoringMediaHome:
           'Главный экран AR Coloring с брендингом Chudoboxes Coloring',
@@ -713,11 +714,12 @@ export const resources = {
         ],
         arColoringZebra: 'AR Раскраски',
         arColoringZebraDesc:
-          'Приложение AR Раскраски от Творческой мастерской Зебра превращает бумажные раскраски в 3D-анимации через камеру смартфона или планшета. Пользователь активирует набор по QR-коду, раскрашивает страницу, оживляет героев и может снять фото или видео.',
+          'AR Раскраски — мобильное приложение Творческой мастерской Зебра, в котором рисунок ребёнка становится основой для 3D-анимации. Набор активируется по QR-коду, после раскрашивания страница распознаётся камерой смартфона или планшета, а герой появляется в дополненной реальности в соответствии с выбранной палитрой.\n\nПриложение показывает разницу между авторской раскраской и оригинальными цветами художника, превращая результат в отдельный творческий опыт. AR-фото и AR-видео позволяют сохранить ожившую сцену, поделиться ею и собрать собственную коллекцию рисунков.',
         arColoringZebraPoints: [
-          'Реализовал flow QR-код → активация набора → раскрашивание → сканирование → AR-анимация',
-          'Настроил сравнение раскрашенной и авторской версии рисунка с оригинальными цветами художника',
-          'Поддержал AR-фото, AR-видео, социальный шеринг и счётчик оживших рисунков',
+          'Полностью выстроил сценарий от QR-активации набора и раскрашивания до сканирования страницы и запуска AR-анимации',
+          'Настроил распознавание раскрашенной страницы и сопоставление пользовательской версии с оригинальной палитрой художника',
+          'Реализовал AR-фото, AR-видео, социальный шеринг и счётчик оживших рисунков как единый контур сохранения результата',
+          'Адаптировал приложение под Android-сценарий распространения через RuStore, сохранив основной творческий и AR-flow',
         ],
         arColoringZebraMediaScreen1: 'Скриншот 1 AR Раскраски из RuStore',
         arColoringZebraMediaScreen2: 'Скриншот 2 AR Раскраски из RuStore',
@@ -733,12 +735,12 @@ export const resources = {
         chudobooks: 'Chudobooks',
         arChudaboxes: 'AR Chudoboxes / Chudoboxes EKO',
         chudobooksDesc:
-          'Мобильное AR-приложение для детской книги Chudoboxes: печатные маркеры запускали 3D-персонажей и сцены, а загружаемый контент, аудио, фото и видео связывали физическую книгу с интерактивным приложением.',
+          'Chudobooks — мобильное AR-приложение для детской книги Chudoboxes, где печатные страницы становятся входом в коллекцию 3D-персонажей и интерактивных сцен. Ребёнок наводит камеру на страницу, активирует набор по QR-коду и продолжает знакомство с книгой уже в цифровом пространстве.\n\nКонтентные наборы, аудиосценарии, фото и видео расширяют привычное чтение и помогают возвращаться к книге снова. Архитектура приложения рассчитана на доставку новых материалов внутри продукта: библиотека может пополняться отдельными наборами, сохраняя единый пользовательский путь от страницы до AR-сцены.\n\nВ результате Chudobooks объединяет физический носитель и мобильный контент в один игровой сценарий — книга становится не финальным продуктом, а отправной точкой для исследования и взаимодействия.',
         chudobooksPoints: [
-          'Собрал сценовый flow Root → MainMenu → QR/Scanning → CardSets для работы с наборами контента',
-          'Реализовал marker-based AR-сцены и распознавание печатных страниц через Vuforia',
-          'Настроил проверку MD5 и динамическую загрузку платформенных 3D/AR AssetBundle-пакетов с CDN',
-          'Связал QR-активацию наборов, локализацию RU/EN/UK, аудиосценарии и фото/видео с AR-персонажами',
+          'Спроектировал навигационный и контентный flow Root → MainMenu → QR/Scanning → CardSets, связав активацию набора с дальнейшим AR-сценарием',
+          'Реализовал распознавание печатных страниц через Vuforia и запуск marker-based AR-сцен с 3D-персонажами',
+          'Настроил проверку целостности MD5 и динамическую доставку платформенных 3D/AR AssetBundle-пакетов с CDN',
+          'Связал локализацию RU/EN/UK, аудиосценарии, фото/видео и Unity IAP в единый мобильный продуктовый контур',
         ],
         chudobooksMediaScreen1: 'Главный экран приложения Chudobooks',
         chudobooksMediaScreen2: 'Игровой экран приложения Chudobooks',
@@ -751,11 +753,12 @@ export const resources = {
           { value: 'v9.0', label: 'версия CDN-контентных пакетов' },
         ],
         arChudaboxesDesc:
-          'Коммерческий мобильный AR-компаньон интерактивной детской книги: печатные страницы и промоматериалы запускали анимации персонажей, AR-фото и AR-видео. Версия Chudoboxes EKO расширила экосистему коллекционными наклейками, открыткой и мини-играми для кампании ЕКО Маркет.',
+          'AR Chudoboxes — коммерческий мобильный AR-компаньон для детской книги и брендированных материалов. Печатная страница, карточка или промоматериал запускает анимацию персонажа, AR-фото или AR-видео через камеру смартфона, превращая физический контакт с продуктом в интерактивный опыт.\n\nЭкосистема развивалась в нескольких сценариях: базовое приложение связывало книгу с коллекцией цифровых героев, а версия Chudoboxes EKO дополняла механику коллекционными наклейками, открыткой и мини-играми. Это позволяло адаптировать одну понятную AR-механику под промокампанию и разные точки контакта с аудиторией.\n\nПроект соединял контент, коллекционирование и игровые механики, формируя повторный интерес к материалам после первого сканирования и добавляя кампании измеримый цифровой слой.',
         arChudaboxesPoints: [
-          'Развивал marker-based AR-сценарии для печатных материалов',
-          'Связал интерактивный контент книги с фото- и видеосценариями',
-          'Поддерживал мобильный AR-продукт и его EKO Market-вариант',
+          'Разработал marker-based AR-сценарии для печатных страниц, карточек и промоматериалов, превращая физические носители в точки входа в цифровой контент',
+          'Связал анимированных персонажей с AR-фото и AR-видео, чтобы один скан запускал не только просмотр, но и создание собственного материала',
+          'Адаптировал продуктовую механику под кампанию Chudoboxes EKO с коллекционными наклейками, открыткой и мини-играми',
+          'Поддерживал мобильную AR-экосистему для Android и iOS и разные варианты брендированного контента',
         ],
         arChudaboxesMediaOne: 'Исторический стартовый экран AR Chudoboxes',
         arChudaboxesMediaTwo: 'Исторический экран библиотеки AR Chudoboxes',
@@ -804,6 +807,14 @@ export const resources = {
         multiplayer: 'МУЛЬТИПЛЕЕР',
         projects: 'ПРОЕКТОВ',
         xrQualifier: 'VR · AR · MR',
+      },
+      skills: {
+        groups: {
+          web: 'Web',
+          gameDevelopment: 'Game Development',
+          mobile: 'Mobile',
+          xr: 'XR',
+        },
       },
       education: {
         title: 'ОБРАЗОВАНИЕ И КУРСЫ',
@@ -1392,13 +1403,13 @@ export const resources = {
           chudoProjector:
             'Chudo Projector turns a child’s coloring page into an interactive show on the wall: color a character or object, scan it with a phone and see a personal version appear in the projected scene. Multiple modes and a glowing wand turn an ordinary sheet of paper into a digital adventure.',
           arColoring:
-            'Colouring pages come alive through a phone camera. AR characters and themed scenes turn a printed page into a game.',
+            'AR Coloring turns a child’s coloring page into a living scene: choose a set, color the page and point a phone camera at it to see the characters in augmented reality.',
           arColoringZebra:
-            'A children’s AR coloring app from Zebra Creative Workshop: paper drawings come alive in augmented reality.',
+            'AR Coloring by Zebra Creative Workshop turns a child’s drawing into a personal 3D scene: the character comes alive in the chosen colors, and the result can be saved and shared.',
           chudobooks:
-            'Children’s books with AR scenes launched from printed pages. Content is delivered and updated inside the app.',
+            'Chudobooks connects a children’s book with augmented reality: its pages launch 3D characters, scenes, audio and video, turning reading into an interactive adventure.',
           arChudaboxes:
-            'An AR app for promotional materials: an image becomes an interactive scene through the phone camera.',
+            'AR Chudoboxes brings book pages and promotional materials to life through a phone camera: characters appear in AR, while photos, videos, collections and mini-games keep the campaign engaging.',
           chudoFloor:
             'An interactive floor that reacts to visitor movement. The projection installation is built with Unity and OpenCV.',
           questRoom:
@@ -1727,11 +1738,12 @@ export const resources = {
           'Third screen of the Chudo Projector application',
         arColoring: 'AR Coloring',
         arColoringDesc:
-          'Mobile Chudoboxes AR application that turns paper coloring pages into animated experiences through a smartphone camera.',
+          'AR Coloring is the Chudoboxes Coloring mobile app that turns a paper coloring page into an interactive AR story. A child chooses a themed set, activates it with a QR code or cover, colors the page and scans the drawing with a phone camera. Characters appear over the child’s own artwork, turning a familiar sheet into a personal play scene.\n\nThe app combines a creative activity with a digital continuation: a collection of themed worlds encourages children to return to new coloring sets, while animated characters make the result visible immediately after scanning. AR Coloring connects a simple coloring ritual with the excitement of discovery — the child creates the character’s look and sees it move right away.',
         arColoringPoints: [
-          'Implemented the QR code / cover → color → scan → AR animation flow',
-          'Configured printed-image recognition and content rendering over the coloring page',
-          'Supported iOS and Android releases with themed content packs',
+          'Designed the user journey from QR code or cover activation through coloring, scanning and AR scene launch',
+          'Implemented printed-image recognition and animated character rendering over the colored page',
+          'Organized themed content sets so the scene collection could grow without changing the app’s core flow',
+          'Supported cross-platform iOS and Android releases and adapted the product for different children’s coloring formats',
         ],
         arColoringMediaHome:
           'AR Coloring home screen with Chudoboxes Coloring branding',
@@ -1745,11 +1757,12 @@ export const resources = {
         ],
         arColoringZebra: 'AR Coloring',
         arColoringZebraDesc:
-          'AR Coloring by Zebra Creative Workshop turns paper coloring pages into 3D animations through a smartphone or tablet camera. Users activate a set with a QR code, color a page, bring its characters to life, and can capture photos or videos.',
+          'AR Coloring is a Zebra Creative Workshop mobile app where a child’s drawing becomes the foundation for a 3D animation. A set is activated with a QR code; after the page is colored, a smartphone or tablet camera recognizes it and brings the character into augmented reality using the chosen palette.\n\nThe app shows the difference between the child’s version and the artist’s original colors, turning the result into a creative experience of its own. AR photos and AR videos let users preserve the animated scene, share it and build a personal collection of drawings.',
         arColoringZebraPoints: [
-          'Implemented the QR code → set activation → coloring → scanning → AR animation flow',
-          'Configured comparison between the user-colored version and the artist’s original colors',
-          'Supported AR photos, AR videos, social sharing and a counter of animated drawings',
+          'Built the complete flow from QR set activation and coloring to page scanning and AR animation launch',
+          'Configured colored-page recognition and comparison between the user version and the artist’s original palette',
+          'Implemented AR photos, AR videos, social sharing and an animated-drawing counter as one result-sharing flow',
+          'Adapted the app for Android distribution through RuStore while preserving its core creative and AR flow',
         ],
         arColoringZebraMediaScreen1: 'AR Coloring screenshot 1 from RuStore',
         arColoringZebraMediaScreen2: 'AR Coloring screenshot 2 from RuStore',
@@ -1765,12 +1778,12 @@ export const resources = {
         chudobooks: 'Chudobooks',
         arChudaboxes: 'AR Chudoboxes / Chudoboxes EKO',
         chudobooksDesc:
-          'Mobile AR application for the Chudoboxes children’s book: printed markers launched 3D characters and scenes, while downloadable content, audio, photos, and video connected the physical book to the interactive app.',
+          'Chudobooks is a mobile AR app for the Chudoboxes children’s book, where printed pages become an entry point to a collection of 3D characters and interactive scenes. A child points the camera at a page, activates a set with a QR code and continues exploring the book in a digital space.\n\nContent sets, audio scenarios, photos and video extend familiar reading and invite children back to the book. The app is designed to deliver new materials inside the product: its library can grow through separate content sets while keeping one clear journey from a printed page to an AR scene.\n\nChudobooks brings a physical medium and mobile content together in one playful experience — the book is not the final product, but the starting point for exploration and interaction.',
         chudobooksPoints: [
-          'Built the Root → MainMenu → QR/Scanning → CardSets scene flow for content sets',
-          'Implemented marker-based AR scenes and printed-page recognition with Vuforia',
-          'Configured MD5 validation and dynamic platform-specific 3D/AR AssetBundle delivery from a CDN',
-          'Connected QR set activation, RU/EN/UK localization, audio scenarios, and AR character photo/video flows',
+          'Designed the Root → MainMenu → QR/Scanning → CardSets navigation and content flow, connecting set activation to the AR experience',
+          'Implemented printed-page recognition with Vuforia and marker-based AR scenes featuring 3D characters',
+          'Configured MD5 integrity checks and dynamic delivery of platform-specific 3D/AR AssetBundle packages from a CDN',
+          'Connected RU/EN/UK localization, audio scenarios, photos, video and Unity IAP into one mobile product flow',
         ],
         chudobooksMediaScreen1: 'Chudobooks app home screen',
         chudobooksMediaScreen2: 'Chudobooks app gameplay screen',
@@ -1783,11 +1796,12 @@ export const resources = {
           { value: 'v9.0', label: 'CDN content bundle version' },
         ],
         arChudaboxesDesc:
-          'A commercial mobile AR companion for an interactive children’s book: printed pages and promotional materials launched animated characters, AR photos and AR videos. The Chudoboxes EKO release expanded the ecosystem with collectible stickers, an interactive postcard and mini-games for an EKO Market campaign.',
+          'AR Chudoboxes is a commercial mobile AR companion for a children’s book and branded materials. A printed page, card or promotional asset launches a character animation, AR photo or AR video through the phone camera, turning physical contact with the product into an interactive experience.\n\nThe ecosystem supported several scenarios: the core app connected the book with a collection of digital characters, while the Chudoboxes EKO release expanded the mechanic with collectible stickers, an interactive postcard and mini-games. This made it possible to adapt one clear AR mechanic to a promotional campaign and different audience touchpoints.\n\nThe project combined content, collecting and game mechanics to create repeat interest after the first scan and add a measurable digital layer to the campaign.',
         arChudaboxesPoints: [
-          'Extended marker-based AR scenarios for printed materials',
-          'Connected interactive book content with photo and video flows',
-          'Supported the mobile AR product and its EKO Market variant',
+          'Developed marker-based AR scenarios for printed pages, cards and promotional materials, turning physical media into entry points for digital content',
+          'Connected animated characters with AR photo and video flows so one scan launched both content discovery and user-generated results',
+          'Adapted the product mechanic for the Chudoboxes EKO campaign with collectible stickers, an interactive postcard and mini-games',
+          'Supported the mobile AR ecosystem across Android and iOS with multiple branded content variants',
         ],
         arChudaboxesMediaOne: 'Historical AR Chudoboxes start screen',
         arChudaboxesMediaTwo: 'Historical AR Chudoboxes library screen',
@@ -1830,6 +1844,14 @@ export const resources = {
         multiplayer: 'MULTIPLAYER',
         projects: 'PROJECTS',
         xrQualifier: 'VR · AR · MR',
+      },
+      skills: {
+        groups: {
+          web: 'Web',
+          gameDevelopment: 'Game Development',
+          mobile: 'Mobile',
+          xr: 'XR',
+        },
       },
       education: {
         title: 'EDUCATION AND COURSES',

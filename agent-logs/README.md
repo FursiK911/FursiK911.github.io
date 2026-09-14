@@ -1,5 +1,11 @@
 # AI Agent Change Log Index
 
+| 2026-09-14 | tech-stack, skills, game-development, mobile, xr, testing | [Tech Stack curation refinement](2026/09/2026-09-14.md#tech-stack-curation-refinement) |
+
+| 2026-09-14 | tech-stack, skills, recruiter, web, game-development, mobile, xr, i18n, responsive, testing, graphify | [Recruiter-focused Tech Stack](2026/09/2026-09-14.md#recruiter-focused-tech-stack) |
+
+| 2026-09-14 | projects, ar-coloring, ar-coloring-zebra, chudobooks, ar-chudaboxes, marketing-copy, i18n, testing, graphify | [Chudoboxes AR product family content revision](2026/09/2026-09-14.md#chudoboxes-ar-product-family-content-revision) |
+
 | 2026-09-14 | projects, chudo-projector, ar, vuforia, technology-stack, card-tags, testing, graphify | [Chudo Projector technology and card tag correction](2026/09/2026-09-14.md#chudo-projector-technology-and-card-tag-correction) |
 
 | 2026-09-14 | ui, hero, contact, cta, icons, accessibility, i18n, responsive, testing | [Hero and Contact CTA icon refresh](2026/09/2026-09-14.md#hero-and-contact-cta-icon-refresh) |

@@ -1,5 +1,11 @@
 # Global Decision Index
 
+| DEC-20260914-19 | Keep `Mirror` in Game Development; remove `WebAssembly`, `Blender`, `Pixel Streaming`, `Android`, `iOS`, `Image Tracking`, and `Cylindrical Marker` from the public Stack inventory. | tech-stack, skills, game-development, mobile, xr | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-19) |
+
+| DEC-20260914-18 | Replace the Stack inventory with the recruiter-facing `Web`, `Game Development`, `Mobile`, and `XR` groups; show all 49 curated, nonduplicated technologies at once, and retain English group labels in both locales. | tech-stack, skills, recruiter, web, game-development, mobile, xr, i18n, responsive | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-18) |
+
+| DEC-20260914-17 | Keep separate product narratives for AR Coloring, AR Раскраски, Chudobooks, and AR Chudoboxes; use concise marketing teasers on cards, expanded product stories on pages, and professional feature-based contribution points in both locales. | projects, ar-coloring, ar-coloring-zebra, chudobooks, ar-chudaboxes, marketing-copy, i18n | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-17) |
+
 | DEC-20260914-16 | Use the ordered homepage Stats tags `React`, `Vue`, `TypeScript`, `Next.js`, `Nuxt.js`, and `Mantine` for Web; `Unity`, `Unreal Engine`, and `Godot` for Game Engines; `React Native` and `Flutter` for Mobile; and `OpenXR`, `SteamVR`, `XR Interaction Toolkit`, `Meta XR SDK`, and `Vuforia` for XR. | homepage, stats, directions, technology-tags, web, game-engines, mobile, xr | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-16) |
 
 | DEC-20260914-15 | Use `AR` and `Vuforia` in the Chudo Projector technology stack and include `AR` in its card tags; do not use the incorrect `Euphoria` label. | projects, chudo-projector, ar, vuforia, technology-stack, card-tags | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-15) |

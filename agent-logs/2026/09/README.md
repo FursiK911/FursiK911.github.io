@@ -1,5 +1,11 @@
 # September 2026
 
+| 2026-09-14 | tech-stack, skills, game-development, mobile, xr, testing | [Tech Stack curation refinement](2026-09-14.md#tech-stack-curation-refinement) |
+
+| 2026-09-14 | tech-stack, skills, recruiter, web, game-development, mobile, xr, i18n, responsive, testing, graphify | [Recruiter-focused Tech Stack](2026-09-14.md#recruiter-focused-tech-stack) |
+
+| 2026-09-14 | projects, ar-coloring, ar-coloring-zebra, chudobooks, ar-chudaboxes, marketing-copy, i18n, testing, graphify | [Chudoboxes AR product family content revision](2026-09-14.md#chudoboxes-ar-product-family-content-revision) |
+
 | 2026-09-14 | homepage, stats, directions, technology-tags, web, game-engines, mobile, xr, testing | [Homepage Stats technology tags](2026-09-14.md#homepage-stats-technology-tags) |
 
 | 2026-09-14 | projects, chudo-projector, ar, vuforia, technology-stack, card-tags, testing, graphify | [Chudo Projector technology and card tag correction](2026-09-14.md#chudo-projector-technology-and-card-tag-correction) |
