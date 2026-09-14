@@ -1,5 +1,7 @@
 # September 2026
 
+| 2026-09-14 | homepage, stats, directions, technology-tags, web, game-engines, mobile, xr, testing | [Homepage Stats technology tags](2026-09-14.md#homepage-stats-technology-tags) |
+
 | 2026-09-14 | projects, chudo-projector, ar, vuforia, technology-stack, card-tags, testing, graphify | [Chudo Projector technology and card tag correction](2026-09-14.md#chudo-projector-technology-and-card-tag-correction) |
 
 | 2026-09-14 | ui, hero, contact, cta, icons, accessibility, i18n, responsive, testing | [Hero and Contact CTA icon refresh](2026-09-14.md#hero-and-contact-cta-icon-refresh) |

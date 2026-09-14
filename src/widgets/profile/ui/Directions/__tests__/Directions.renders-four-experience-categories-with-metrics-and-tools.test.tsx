@@ -26,10 +26,19 @@ it('renders four experience categories with metrics and tools', async () => {
   expect(screen.getByLabelText('5+ ПРОЕКТОВ')).toBeInTheDocument()
   expect(screen.getByLabelText('10+ ПРОЕКТОВ')).toBeInTheDocument()
   expect(screen.getByText('VR · AR · MR')).toBeInTheDocument()
-  expect(screen.getByText('React')).toBeInTheDocument()
-  expect(screen.getByText('Unigine')).toBeInTheDocument()
-  expect(screen.getByText('Android')).toBeInTheDocument()
-  expect(screen.getByText('OpenXR')).toBeInTheDocument()
+  const toolsByCard = screen
+    .getAllByRole('article')
+    .map((card) =>
+      Array.from(card.querySelectorAll('.direction-tools li')).map(
+        (tool) => tool.textContent,
+      ),
+    )
+  expect(toolsByCard).toEqual([
+    ['React', 'Vue', 'TypeScript', 'Next.js', 'Nuxt.js', 'Mantine'],
+    ['Unity', 'Unreal Engine', 'Godot'],
+    ['React Native', 'Flutter'],
+    ['OpenXR', 'SteamVR', 'XR Interaction Toolkit', 'Meta XR SDK', 'Vuforia'],
+  ])
   expect(screen.getAllByText('VR · AR · MR')).toHaveLength(1)
   expect(
     document.querySelectorAll('.direction-card > .direction-tools'),

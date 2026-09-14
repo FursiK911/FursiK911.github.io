@@ -1,5 +1,7 @@
 # Global Decision Index
 
+| DEC-20260914-16 | Use the ordered homepage Stats tags `React`, `Vue`, `TypeScript`, `Next.js`, `Nuxt.js`, and `Mantine` for Web; `Unity`, `Unreal Engine`, and `Godot` for Game Engines; `React Native` and `Flutter` for Mobile; and `OpenXR`, `SteamVR`, `XR Interaction Toolkit`, `Meta XR SDK`, and `Vuforia` for XR. | homepage, stats, directions, technology-tags, web, game-engines, mobile, xr | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-16) |
+
 | DEC-20260914-15 | Use `AR` and `Vuforia` in the Chudo Projector technology stack and include `AR` in its card tags; do not use the incorrect `Euphoria` label. | projects, chudo-projector, ar, vuforia, technology-stack, card-tags | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-15) |
 
 | DEC-20260914-14 | Use `IconDownload`, `IconBriefcase`, and `IconMessageCircle` for Hero CTAs, plus contextual `IconMail` and `IconBrandTelegram` icons for Contact links; keep existing labels, destinations, and localization unchanged. | ui, hero, contact, cta, icons, accessibility, i18n | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-14) |
