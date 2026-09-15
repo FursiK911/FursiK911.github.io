@@ -6,7 +6,7 @@ import { ResumeDownload } from '@/features/resume-download'
 import { TypingText } from '@/shared/ui/TypingText'
 import { LiveCam } from '../LiveCam/LiveCam'
 import { ActionLink } from '@/shared/ui/ActionLink'
-import '../styles/Profile.module.css'
+import '../styles/Profile.css'
 import type { HeroProps } from './types/Hero.types'
 import { heroItemVariants } from './config/heroItemVariants.config'
 

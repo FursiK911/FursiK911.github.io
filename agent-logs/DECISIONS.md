@@ -1,5 +1,7 @@
 # Global Decision Index
 
+| DEC-20260915-02 | Keep global slice styles as ordinary colocated CSS files and reserve CSS Modules for selectors consumed through module exports; validate the production stylesheet and asset-path casing before deployment. | github-pages, css, vite, production, assets, testing | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-02) |
+
 | DEC-20260915-01 | Use `FursiK911/FursiK911.github.io` as the GitHub Pages user-site repository, with GitHub Actions as its source; automatically deploy pushes to `main` and retain `workflow_dispatch` for intentional manual redeployments. | github, github-pages, ci, deployment, automation | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-01) |
 
 | DEC-20260914-19 | Keep `Mirror` in Game Development; remove `WebAssembly`, `Blender`, `Pixel Streaming`, `Android`, `iOS`, `Image Tracking`, and `Cylindrical Marker` from the public Stack inventory. | tech-stack, skills, game-development, mobile, xr | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-19) |

@@ -1080,27 +1080,27 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: '/images/projects/my-chess-mobile/mychess-1.webp',
+        src: '/images/projects/my-chess-mobile/myChess-1.webp',
         altKey: 'mychessMobileMedia1',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-mobile/mychess-2.webp',
+        src: '/images/projects/my-chess-mobile/myChess-2.webp',
         altKey: 'mychessMobileMedia2',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-mobile/mychess-3.webp',
+        src: '/images/projects/my-chess-mobile/myChess-3.webp',
         altKey: 'mychessMobileMedia3',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-mobile/mychess-4.webp',
+        src: '/images/projects/my-chess-mobile/myChess-4.webp',
         altKey: 'mychessMobileMedia4',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-mobile/mychess-5.webp',
+        src: '/images/projects/my-chess-mobile/myChess-5.webp',
         altKey: 'mychessMobileMedia5',
       },
     ],

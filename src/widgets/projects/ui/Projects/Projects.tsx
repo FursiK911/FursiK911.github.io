@@ -17,7 +17,7 @@ import {
   projectCircuitGameEnabled,
 } from '../../model/config/projects.config'
 import cardStyles from './styles/Projects.module.css'
-import '../styles/Projects.module.css'
+import '../styles/Projects.css'
 
 export function Projects() {
   const { t } = useTranslation()

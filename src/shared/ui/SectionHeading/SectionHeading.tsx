@@ -1,5 +1,5 @@
 import { cx, styles } from '@/shared/styles'
-import '@/shared/styles/Shared.module.css'
+import '@/shared/styles/Shared.css'
 import type { SectionHeadingProps } from './types/SectionHeading.types'
 
 export function SectionHeading({ index, title }: SectionHeadingProps) {

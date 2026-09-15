@@ -1,5 +1,5 @@
 /* Styles owned by the education slice. */
-:global(.education-intro) {
+.education-intro {
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -7,7 +7,7 @@
   margin-bottom: 24px;
 }
 
-:global(.education-intro) h2 {
+.education-intro h2 {
   margin: 0;
   max-width: 620px;
   font-family: var(--font-display);
@@ -18,7 +18,7 @@
   text-wrap: balance;
 }
 
-:global(.education-intro) p {
+.education-intro p {
   max-width: 300px;
   margin: 0;
   color: var(--cyan);

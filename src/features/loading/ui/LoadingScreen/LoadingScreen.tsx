@@ -6,7 +6,7 @@ import type { LoadingScreenProps } from './types/LoadingScreen.types'
 import { loadingAnimationConfig } from '../../model/config/loading-animation.config'
 import { useLoadingAnimationSpeed } from '../../model/useLoadingAnimationSpeed/useLoadingAnimationSpeed'
 import portrait from '@/shared/assets/dmitry-fursov.webp'
-import '../styles/Loading.module.css'
+import '../styles/Loading.css'
 
 import { phaseLabel } from './utils/phaseLabel'
 

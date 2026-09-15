@@ -1,5 +1,5 @@
 /* Styles owned by the contact slice. */
-:global(.contact-links) button {
+.contact-links button {
   border: 0;
   background: transparent;
   color: var(--cyan);
@@ -8,40 +8,40 @@
   padding: 6px 0;
 }
 
-:global(.contact-grid) {
+.contact-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.82fr);
   gap: 40px;
   align-items: center;
 }
 
-:global(.contact-section) {
+.contact-section {
   padding-bottom: var(--section-space);
 }
 
 @media (max-width: 900px) {
-  :global(.contact-section) {
+  .contact-section {
     padding-bottom: var(--section-space-mobile);
   }
 
-  :global(.contact-grid) {
+  .contact-grid {
     gap: 32px;
   }
 }
 
-:global(.contact-portrait) {
+.contact-portrait {
   max-width: 520px;
   margin: 0;
 }
 
-:global(.portrait-frame) {
+.portrait-frame {
   position: relative;
   border: 1px solid var(--line);
   padding: 12px;
 }
 
-:global(.portrait-frame):before,
-:global(.portrait-frame):after {
+.portrait-frame:before,
+.portrait-frame:after {
   content: '';
   position: absolute;
   width: 14px;
@@ -49,32 +49,32 @@
   border-color: var(--cyan);
 }
 
-:global(.portrait-frame):before {
+.portrait-frame:before {
   top: -1px;
   left: -1px;
   border-top: 1px solid;
   border-left: 1px solid;
 }
 
-:global(.portrait-frame):after {
+.portrait-frame:after {
   right: -1px;
   bottom: -1px;
   border-right: 1px solid;
   border-bottom: 1px solid;
 }
 
-:global(.portrait-frame) img {
+.portrait-frame img {
   display: block;
   width: 100%;
 }
 
-:global(.portrait-glitch) {
+.portrait-glitch {
   position: relative;
   overflow: visible;
   isolation: isolate;
 }
 
-:global(.frame-label) {
+.frame-label {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -82,7 +82,7 @@
   z-index: 2;
 }
 
-:global(.contact-quote) {
+.contact-quote {
   position: absolute;
   right: 12px;
   bottom: 12px;
@@ -102,7 +102,7 @@
   text-wrap: balance;
 }
 
-:global(.contact-quote)::before {
+.contact-quote::before {
   position: absolute;
   top: 16px;
   left: 16px;
@@ -111,20 +111,20 @@
   font: 2.4rem/1 var(--font-display);
 }
 
-:global(.contact-links) {
+.contact-links {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-:global(.contact-links) > div {
+.contact-links > div {
   border-bottom: 1px solid var(--line);
   padding-bottom: 18px;
   display: grid;
   gap: 8px;
 }
 
-:global(.contact-links) > div a {
+.contact-links > div a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -133,6 +133,6 @@
   color: var(--text);
 }
 
-:global(.contact-links) > div a:hover {
+.contact-links > div a:hover {
   color: var(--cyan);
 }

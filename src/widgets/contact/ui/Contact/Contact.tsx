@@ -5,7 +5,7 @@ import { IconBrandTelegram, IconMail } from '@tabler/icons-react'
 import { ResumeDownload } from '@/features/resume-download'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
 import { ContactPortrait } from '../ContactPortrait/ContactPortrait'
-import '../styles/Contact.module.css'
+import '../styles/Contact.css'
 import type { ContactProps } from './types/Contact.types'
 
 export function Contact({ reducedMotion, entered = true }: ContactProps) {

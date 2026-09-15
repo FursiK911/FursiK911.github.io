@@ -1,4 +1,4 @@
-import { existsSync } from 'node:fs'
+import { existsSync, readdirSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { describe, expect, it } from 'vitest'
 
@@ -15,6 +15,19 @@ describe('project image assets', () => {
     images.forEach((image) => {
       expect(image.src).not.toMatch(/^https?:\/\//)
       expect(existsSync(resolve('public', image.src.slice(1)))).toBe(true)
+
+      let assetPath = resolve('public')
+      image.src
+        .slice(1)
+        .split('/')
+        .forEach((segment) => {
+          const entry = readdirSync(assetPath, { withFileTypes: true }).find(
+            (item) => item.name === segment,
+          )
+
+          expect(entry).toBeDefined()
+          assetPath = resolve(assetPath, segment)
+        })
     })
   })
 })

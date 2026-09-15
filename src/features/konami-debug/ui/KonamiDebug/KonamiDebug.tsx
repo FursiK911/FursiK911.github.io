@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import { useKonamiCode } from '@/features/konami-debug/model/useKonamiCode/useKonamiCode'
-import '../styles/KonamiDebug.module.css'
+import '../styles/KonamiDebug.css'
 
 export function KonamiDebug() {
   const { t } = useTranslation()

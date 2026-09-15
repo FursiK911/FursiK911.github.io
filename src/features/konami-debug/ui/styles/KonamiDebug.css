@@ -1,5 +1,5 @@
 /* Styles owned by the debug slice. */
-:global(.debug-banner) {
+.debug-banner {
   position: fixed;
   top: 0;
   left: 50%;
@@ -15,7 +15,7 @@
   font: 0.65rem var(--mono);
 }
 
-:global(.debug-banner) button {
+.debug-banner button {
   background: transparent;
   border: 0;
   color: inherit;

@@ -10,10 +10,10 @@ it('uses the five current RuStore screenshots for MyChess Mobile media', () => {
       ?.filter((media) => media.kind === 'image')
       .map((media) => media.src),
   ).toEqual([
-    '/images/projects/my-chess-mobile/mychess-1.webp',
-    '/images/projects/my-chess-mobile/mychess-2.webp',
-    '/images/projects/my-chess-mobile/mychess-3.webp',
-    '/images/projects/my-chess-mobile/mychess-4.webp',
-    '/images/projects/my-chess-mobile/mychess-5.webp',
+    '/images/projects/my-chess-mobile/myChess-1.webp',
+    '/images/projects/my-chess-mobile/myChess-2.webp',
+    '/images/projects/my-chess-mobile/myChess-3.webp',
+    '/images/projects/my-chess-mobile/myChess-4.webp',
+    '/images/projects/my-chess-mobile/myChess-5.webp',
   ])
 })

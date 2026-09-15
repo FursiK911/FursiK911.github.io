@@ -1,17 +1,17 @@
 /* Styles owned by the profile slice. */
-:global(.profile-section) {
+.profile-section {
   padding-top: 120px;
 }
 
-:global(.profile-section) :global(.hero) {
+.profile-section .hero {
   padding-top: 0;
 }
 
-:global(.profile-section) :global(.directions-section--embedded) {
+.profile-section .directions-section--embedded {
   padding-inline: 0;
 }
 
-:global(.hero-copy) {
+.hero-copy {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -19,28 +19,28 @@
   max-width: 100%;
 }
 
-:global(.hero-broadcast) {
+.hero-broadcast {
   min-width: 0;
 }
 
 @media (min-width: 901px) {
-  :global(.hero-broadcast) :global(.live-cam) {
+  .hero-broadcast .live-cam {
     width: 100%;
     margin-top: 0;
   }
 }
 
 @media (min-width: 1200px) {
-  :global(.profile-section) :global(.hero) {
+  .profile-section .hero {
     min-height: auto;
   }
 
-  :global(.hero-copy) {
+  .hero-copy {
     align-self: stretch;
     justify-content: space-between;
   }
 
-  :global(.hero-broadcast) :global(.live-cam) {
+  .hero-broadcast .live-cam {
     width: 100%;
     max-width: none;
     justify-self: stretch;
@@ -48,26 +48,26 @@
 }
 
 @media (min-width: 901px) and (max-width: 1199px) {
-  :global(.hero-broadcast) :global(.live-cam) {
+  .hero-broadcast .live-cam {
     width: min(100%, 720px);
   }
 }
 
-:global(.hero-role) {
+.hero-role {
   color: var(--cyan);
   font-family: var(--mono);
   letter-spacing: 0.12em;
   font-size: 0.9rem;
 }
 
-:global(.hero-languages) {
+.hero-languages {
   margin: 14px 0 0;
   color: var(--muted);
   font: 0.65rem var(--mono);
   letter-spacing: 0.08em;
 }
 
-:global(.hero-actions) {
+.hero-actions {
   display: flex;
   align-items: center;
   gap: 16px;
