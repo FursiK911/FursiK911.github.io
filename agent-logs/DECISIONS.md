@@ -10,6 +10,8 @@ Current application behavior is the source of truth for stale project tests; gal
 
 Mobile burger icon centering remains scoped to the existing responsive header breakpoint and preserves Mantine Burger geometry.
 
+Mobile burger icon release uses the existing `main`-push GitHub Pages deployment workflow; Quality remains an independent gate.
+
 | DEC-20260915-04 | At mobile widths, use the 414×896 iPhone XR layout as the visual target: Hero actions use a 1+2 grid; the loader query may occupy two lines; Experience begins with the future CTA on the left and then alternates current-to-earliest cards around a centered rail; Education begins on the left; desktop timeline behavior is unchanged. | mobile, iphone-xr, responsive, header, hero, experience, education, contact, loading | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-04) |
 
 | DEC-20260915-03 | Keep LiveCam's global class rules in a colocated ordinary CSS file and require its container, video, and telemetry selectors in the production stylesheet verification. | github-pages, live-cam, css, vite, production, testing | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-03) |

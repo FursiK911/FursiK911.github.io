@@ -1,5 +1,7 @@
 # September 2026
 
+| 2026-09-15 | github-pages, deployment, mobile, header, burger-menu | [Mobile burger icon release](2026-09-15.md#mobile-burger-icon-release) |
+
 | 2026-09-15 | mobile, header, burger-menu, alignment, mantine, css | [Mobile burger icon centering](2026-09-15.md#mobile-burger-icon-centering) |
 
 | 2026-09-15 | skills, github-pages, deployment, agents, quality | [GitHub Pages deployment skill](2026-09-15.md#github-pages-deployment-skill) |
