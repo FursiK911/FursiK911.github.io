@@ -1,5 +1,7 @@
 # Global Decision Index
 
+| DEC-20260916-01 | Verify each public release through the matching GitHub Pages workflow and an HTTP check of the live document plus generated JavaScript and CSS assets. | github-pages, deployment, github-actions, production, verification | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-01) |
+
 | DEC-20260915-08 | Use an English, visitor-first README for the public portfolio repository; lead with the live site and existing cover image, include public contact and CV links plus concise setup/deployment instructions, and omit internal research documentation and detailed project listings. | readme, portfolio, github, github-pages, documentation, contacts, setup | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-08) |
 
 | DEC-20260915-07 | Store the commit workflow as an automatically discoverable repository-local skill; require diff/log-derived messages, safety checks, project validation, normal hooks, and explicit push authorization. | skills, git, commits, push, agents, quality | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-07) |
