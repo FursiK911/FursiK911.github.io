@@ -32,7 +32,7 @@ CV ожидается по адресу `public/cv/Dmitry-Fursov-Unity-Developer
 
 ## GitHub Pages
 
-Vite настроен с `base: '/'` для user-site `FursiK911/fursik.github.io`. Workflow находится в `.github/workflows/deploy.yml` и запускается вручную (`workflow_dispatch`), потому что текущий репозиторий приватный и Pages должен быть включён в настройках GitHub перед публикацией.
+Vite настроен с `base: '/'` для user-site `FursiK911/FursiK911.github.io`. Workflow находится в `.github/workflows/deploy.yml`, автоматически запускается при push в `main` и также поддерживает ручной запуск (`workflow_dispatch`).
 
 После включения Pages: Actions → Deploy to GitHub Pages → Run workflow.
 

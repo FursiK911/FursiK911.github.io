@@ -1,5 +1,7 @@
 # September 2026
 
+| 2026-09-15 | github, github-pages, ci, deployment, automation | [GitHub Pages public deployment](2026-09-15.md#github-pages-public-deployment) |
+
 | 2026-09-14 | tech-stack, skills, game-development, mobile, xr, testing | [Tech Stack curation refinement](2026-09-14.md#tech-stack-curation-refinement) |
 
 | 2026-09-14 | tech-stack, skills, recruiter, web, game-development, mobile, xr, i18n, responsive, testing, graphify | [Recruiter-focused Tech Stack](2026-09-14.md#recruiter-focused-tech-stack) |

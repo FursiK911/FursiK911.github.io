@@ -1,5 +1,7 @@
 # Global Decision Index
 
+| DEC-20260915-01 | Use `FursiK911/FursiK911.github.io` as the GitHub Pages user-site repository, with GitHub Actions as its source; automatically deploy pushes to `main` and retain `workflow_dispatch` for intentional manual redeployments. | github, github-pages, ci, deployment, automation | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-01) |
+
 | DEC-20260914-19 | Keep `Mirror` in Game Development; remove `WebAssembly`, `Blender`, `Pixel Streaming`, `Android`, `iOS`, `Image Tracking`, and `Cylindrical Marker` from the public Stack inventory. | tech-stack, skills, game-development, mobile, xr | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-19) |
 
 | DEC-20260914-18 | Replace the Stack inventory with the recruiter-facing `Web`, `Game Development`, `Mobile`, and `XR` groups; show all 49 curated, nonduplicated technologies at once, and retain English group labels in both locales. | tech-stack, skills, recruiter, web, game-development, mobile, xr, i18n, responsive | [2026-09-14](2026/09/2026-09-14.md#decision-dec-20260914-18) |
