@@ -13,7 +13,7 @@ import type {
 import type { LiveCamProps } from './types/LiveCam.types'
 import { formatTimecode } from './utils/formatTimecode'
 import { sliceLiveCamTerminalTokens } from './utils/sliceLiveCamTerminalTokens'
-import './styles/LiveCam.module.css'
+import './styles/LiveCam.css'
 
 export function LiveCam({ entered, reducedMotion }: LiveCamProps) {
   const { t } = useTranslation()

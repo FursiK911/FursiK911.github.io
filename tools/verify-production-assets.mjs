@@ -1,7 +1,14 @@
 import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 
-const requiredSelectors = ['.hero{', '.profile-section{', '.loading-terminal{']
+const requiredSelectors = [
+  '.hero{',
+  '.profile-section{',
+  '.loading-terminal{',
+  '.live-cam{',
+  '.live-cam-video{',
+  '.live-cam-telemetry{',
+]
 const indexHtml = await readFile(resolve('dist/index.html'), 'utf8')
 const stylesheetPaths = [...indexHtml.matchAll(/href="([^\"]+\.css)"/g)].map(
   ([, path]) => path.replace(/^\//, ''),

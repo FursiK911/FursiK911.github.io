@@ -1,5 +1,7 @@
 # Global Decision Index
 
+| DEC-20260915-03 | Keep LiveCam's global class rules in a colocated ordinary CSS file and require its container, video, and telemetry selectors in the production stylesheet verification. | github-pages, live-cam, css, vite, production, testing | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-03) |
+
 | DEC-20260915-02 | Keep global slice styles as ordinary colocated CSS files and reserve CSS Modules for selectors consumed through module exports; validate the production stylesheet and asset-path casing before deployment. | github-pages, css, vite, production, assets, testing | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-02) |
 
 | DEC-20260915-01 | Use `FursiK911/FursiK911.github.io` as the GitHub Pages user-site repository, with GitHub Actions as its source; automatically deploy pushes to `main` and retain `workflow_dispatch` for intentional manual redeployments. | github, github-pages, ci, deployment, automation | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-01) |

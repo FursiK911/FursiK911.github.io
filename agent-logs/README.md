@@ -1,5 +1,7 @@
 # AI Agent Change Log Index
 
+| 2026-09-15 | github-pages, live-cam, css, vite, production, testing | [Restore LiveCam production HUD styles](2026/09/2026-09-15.md#restore-livecam-production-hud-styles) |
+
 | 2026-09-15 | github-pages, css, vite, production, assets, testing | [Restore GitHub Pages production styles](2026/09/2026-09-15.md#restore-github-pages-production-styles) |
 
 | 2026-09-15 | github, github-pages, ci, deployment, automation | [GitHub Pages public deployment](2026/09/2026-09-15.md#github-pages-public-deployment) |
