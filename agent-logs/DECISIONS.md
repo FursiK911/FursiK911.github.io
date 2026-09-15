@@ -1,5 +1,15 @@
 # Global Decision Index
 
+| DEC-20260915-05 | Store the GitHub Pages deployment contract as a versioned repository-local skill and require agents to read it before release-related tasks. | skills, github-pages, deployment, agents, quality | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-05) |
+
+No new global decision; mobile contact alignment follows DEC-20260915-04.
+
+Mobile burger menu alignment follows the existing responsive layout target in DEC-20260915-04.
+
+Current application behavior is the source of truth for stale project tests; gallery tests use minimal typed fixtures to avoid coupling to portfolio catalog order.
+
+| DEC-20260915-04 | At mobile widths, use the 414×896 iPhone XR layout as the visual target: Hero actions use a 1+2 grid; the loader query may occupy two lines; Experience begins with the future CTA on the left and then alternates current-to-earliest cards around a centered rail; Education begins on the left; desktop timeline behavior is unchanged. | mobile, iphone-xr, responsive, header, hero, experience, education, contact, loading | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-04) |
+
 | DEC-20260915-03 | Keep LiveCam's global class rules in a colocated ordinary CSS file and require its container, video, and telemetry selectors in the production stylesheet verification. | github-pages, live-cam, css, vite, production, testing | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-03) |
 
 | DEC-20260915-02 | Keep global slice styles as ordinary colocated CSS files and reserve CSS Modules for selectors consumed through module exports; validate the production stylesheet and asset-path casing before deployment. | github-pages, css, vite, production, assets, testing | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-02) |

@@ -26,3 +26,18 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+
+@media (max-width: 560px) {
+  .education-intro {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .education-intro p {
+    margin-top: 18px;
+  }
+
+  .education-timeline-details dl div {
+    grid-template-columns: 1fr;
+  }
+}

@@ -146,14 +146,14 @@ export function LoadingScreen({
               aria-label={t('loader.find')}
             >
               {t('loader.find')}
+              <span
+                className={cx(
+                  styles.loadingFakeCursor,
+                  cursorClicked && styles.isClicked,
+                )}
+                aria-hidden="true"
+              />
             </button>
-            <span
-              className={cx(
-                styles.loadingFakeCursor,
-                cursorClicked && styles.isClicked,
-              )}
-              aria-hidden="true"
-            />
           </div>
         </div>
         <div

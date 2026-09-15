@@ -706,78 +706,6 @@ body.is-loading {
   }
 }
 
-@media (max-width: 1024px) {
-  .experience-timeline {
-    height: auto;
-    padding-left: 34px;
-  }
-  .experience-timeline-axis {
-    top: 0;
-    right: auto;
-    left: 0;
-    width: 16px;
-    height: 100%;
-  }
-  .experience-timeline-wave-desktop {
-    display: none;
-  }
-  .experience-timeline-wave-mobile {
-    display: initial;
-  }
-  .experience-timeline-runner {
-    display: none;
-  }
-  .experience-timeline-items {
-    position: relative;
-    inset: auto;
-    display: block;
-  }
-  .experience-timeline-item {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: auto;
-    margin-bottom: 18px;
-    padding-bottom: 18px;
-    transform: none;
-  }
-  .experience-timeline-item:last-child {
-    margin-bottom: 0;
-  }
-  .experience-milestone {
-    top: 24px;
-    left: -27px;
-  }
-  .experience-timeline-card,
-  .experience-timeline-item:nth-child(odd) .experience-timeline-card,
-  .experience-timeline-item:nth-child(even) .experience-timeline-card {
-    position: relative;
-    align-items: flex-start;
-    margin-top: 0;
-    text-align: left;
-  }
-  .experience-tags {
-    justify-content: flex-start;
-  }
-  .experience-details-item {
-    grid-template-columns: 1fr;
-  }
-  .experience-phases {
-    grid-column: 1;
-  }
-  .experience-phase-heading {
-    display: block;
-  }
-  .experience-phase-heading p {
-    text-align: left;
-    margin-top: 10px;
-  }
-  .experience-details-item > .experience-tags,
-  .experience-detail-block {
-    grid-column: 1;
-  }
-}
-
 @media (min-width: 901px) and (max-width: 1199px) {
   .profile-section .hero {
     min-height: auto;
@@ -796,33 +724,6 @@ body.is-loading {
   .site-header-inner {
     width: calc(100% - var(--layout-gutter-width));
   }
-  .site-header {
-    height: 66px;
-  }
-  .main-nav {
-    display: none;
-    position: absolute;
-    top: 66px;
-    left: 0;
-    right: 0;
-    background: #0b1116;
-    border: 1px solid var(--line);
-    padding: 18px;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 18px;
-    transform: none;
-    white-space: normal;
-  }
-  .main-nav.is-open {
-    display: flex;
-  }
-  .main-nav a.active:after {
-    display: none;
-  }
-  .menu-toggle {
-    display: inline-flex;
-  }
   .hero {
     min-height: auto;
     padding-top: 0;
@@ -838,11 +739,6 @@ body.is-loading {
   .project-card.featured:first-child {
     grid-column: auto;
   }
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 42px;
-    align-items: start;
-  }
   .skills-grid {
     gap: 35px 22px;
   }
@@ -857,49 +753,11 @@ body.is-loading {
   }
 }
 
-@media (max-width: 700px) {
-  .education-timeline-body,
-  .education-timeline-item[data-alternate] .education-timeline-body {
-    grid-column: 3 !important;
-    width: min(100%, 390px);
-    max-width: calc(100% - 12px);
-    padding-inline: 18px !important;
-    text-align: start !important;
-    justify-self: start;
-    margin-inline: 12px 0;
-  }
-  .education-timeline-item[data-alternate] .education-timeline-heading {
-    justify-items: start;
-    text-align: start;
-  }
-  .education-timeline-item[data-alternate] .education-timeline-details {
-    border-right: 0;
-    border-left: 1px solid var(--line);
-    padding-right: 0;
-    padding-left: 18px;
-  }
-}
-
 @media (max-width: 560px) {
   .section-shell,
   .site-footer,
   .site-header-inner {
     width: calc(100% - var(--layout-gutter-width));
-  }
-  .header-actions > a {
-    display: none;
-  }
-  .header-actions > a.resume-link {
-    display: inline-flex;
-  }
-  .brand {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2px;
-  }
-  .brand .typing-text {
-    min-width: 22ch;
-    font-size: 0.72rem;
   }
   .hero h1 {
     font-size: clamp(2.6rem, 12vw, 3.5rem);
@@ -910,28 +768,6 @@ body.is-loading {
   }
   .hero-role .typing-text {
     min-width: 0;
-  }
-  .hero-actions {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .hero-actions .action-control--text {
-    width: 100%;
-    margin-top: 5px;
-  }
-  .experience-intro {
-    display: block;
-    margin-bottom: 30px;
-  }
-  .education-intro {
-    display: block;
-    margin-bottom: 30px;
-  }
-  .experience-intro p {
-    margin-top: 18px;
-  }
-  .education-intro p {
-    margin-top: 18px;
   }
   .projects-intro p {
     margin-top: 18px;
@@ -953,23 +789,6 @@ body.is-loading {
     grid-template-columns: 1fr;
     gap: 8px;
   }
-  .experience-timeline {
-    padding-left: 28px;
-  }
-  .experience-milestone {
-    left: -21px;
-  }
-  .experience-timeline-card {
-    padding: 14px;
-  }
-  .experience-project-heading {
-    display: block;
-  }
-  .experience-project-heading .action-control--inline,
-  .experience-project-status {
-    display: inline-block;
-    margin-top: 8px;
-  }
   .skills-grid,
   .education-timeline-details dl div {
     grid-template-columns: 1fr;
@@ -987,9 +806,6 @@ body.is-loading {
     flex-wrap: wrap;
     gap: 8px;
   }
-  .contact-section {
-    padding-bottom: 80px;
-  }
   .site-footer-main {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -1000,34 +816,6 @@ body.is-loading {
   .legal-page {
     padding-top: 122px;
     padding-bottom: 80px;
-  }
-  .loading-terminal {
-    width: calc(100% - 24px);
-    height: calc(100vh - 28px);
-    padding: 20px 14px;
-    overflow: hidden;
-  }
-  .loading-terminal-code {
-    display: none;
-  }
-  .loading-candidate {
-    gap: 7px;
-    padding-inline: 4px;
-    font-size: 0.61rem;
-  }
-  .loading-candidate-id {
-    width: auto;
-    font-size: 0.54rem;
-  }
-  .loading-candidate-result {
-    min-width: 0;
-    font-size: 0.5rem;
-  }
-  .loading-candidates {
-    max-height: max(120px, min(275px, calc(100vh - 360px)));
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    scrollbar-color: rgba(167, 243, 246, 0.45) transparent;
   }
   .loading-result {
     inset: 4%;

@@ -25,7 +25,19 @@
   }
 
   .contact-grid {
-    gap: 32px;
+    grid-template-columns: 1fr;
+    gap: 42px;
+    align-items: start;
+  }
+
+  .contact-links .action-control {
+    align-self: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact-section {
+    padding-bottom: 80px;
   }
 }
 

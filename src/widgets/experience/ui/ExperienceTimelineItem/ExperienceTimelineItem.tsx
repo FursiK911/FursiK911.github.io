@@ -12,6 +12,8 @@ export function ExperienceTimelineItem({
   index,
   reducedMotion,
   axisPoint,
+  mobileOrder,
+  mobileSide,
   onSelect,
 }: ExperienceTimelineItemProps) {
   const { t } = useTranslation()
@@ -22,10 +24,12 @@ export function ExperienceTimelineItem({
     <article
       className={cx(styles.experienceTimelineItem)}
       data-current={entry.current ? 'true' : undefined}
+      data-mobile-side={mobileSide}
       style={
         {
           '--timeline-x': `${axisPoint.x}px`,
           '--timeline-y': `${axisPoint.y}px`,
+          '--mobile-timeline-order': mobileOrder,
         } as CSSProperties
       }
     >

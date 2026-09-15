@@ -1,5 +1,9 @@
 # AI Agent Change Log Index
 
+| 2026-09-15 | skills, github-pages, deployment, agents, quality | [GitHub Pages deployment skill](2026/09/2026-09-15.md#github-pages-deployment-skill) |
+
+| 2026-09-15 | mobile, iphone-xr, responsive, header, hero, experience, education, contact, loading, css, testing, graphify | [iPhone XR mobile layout repair](2026/09/2026-09-15.md#iphone-xr-mobile-layout-repair) |
+
 | 2026-09-15 | github-pages, live-cam, css, vite, production, testing | [Restore LiveCam production HUD styles](2026/09/2026-09-15.md#restore-livecam-production-hud-styles) |
 
 | 2026-09-15 | github-pages, css, vite, production, assets, testing | [Restore GitHub Pages production styles](2026/09/2026-09-15.md#restore-github-pages-production-styles) |

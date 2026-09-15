@@ -85,7 +85,7 @@
   grid-area: icon;
   place-items: center;
   width: 64px;
-  height: 68px;
+  aspect-ratio: 1;
   align-self: start;
   margin-top: 5px;
   overflow: hidden;
@@ -260,7 +260,6 @@
   }
   .directionIcon {
     width: 48px;
-    height: 56px;
   }
   .directionTool {
     padding: 6px 9px;
@@ -282,7 +281,6 @@
   }
   .directionIcon {
     width: 40px;
-    height: 48px;
     border-radius: 11px;
   }
   .directionIcon svg {

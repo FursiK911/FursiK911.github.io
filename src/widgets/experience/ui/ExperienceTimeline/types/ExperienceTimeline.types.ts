@@ -7,3 +7,5 @@ export interface ExperienceTimelineProps {
 }
 
 export type ScenePoint = { x: number; y: number }
+
+export type MobileTimelineSide = 'left' | 'right'

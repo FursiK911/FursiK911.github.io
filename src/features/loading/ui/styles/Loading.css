@@ -160,6 +160,7 @@
 }
 
 .loading-query-line button {
+  position: relative;
   margin-left: auto;
   border: 1px solid rgba(167, 243, 246, 0.24);
   color: #66777d;
@@ -179,7 +180,7 @@
 
 .loading-fake-cursor {
   position: absolute;
-  right: 74px;
+  left: -12px;
   top: 50%;
   width: 0;
   height: 0;
@@ -188,7 +189,7 @@
   border-left: 11px solid #f2ffff;
   filter: drop-shadow(0 0 5px var(--cyan));
   opacity: 0;
-  transform: translate(-90px, -50%);
+  transform: translate(-12px, -50%);
   transition:
     opacity var(--loading-cursor-opacity-duration),
     transform var(--loading-cursor-transform-duration) ease;
@@ -480,4 +481,67 @@
 .loading-animation-debug button.is-active {
   border-color: var(--cyan);
   color: var(--cyan);
+}
+
+@media (max-width: 560px) {
+  .loading-terminal {
+    display: flex;
+    width: calc(100% - 24px);
+    height: calc(100vh - 28px);
+    flex-direction: column;
+    padding: 20px 14px;
+    overflow: hidden;
+  }
+
+  .loading-terminal-code {
+    display: none;
+  }
+
+  .loading-query-display {
+    flex: 1;
+    max-height: 2.8em;
+    white-space: normal;
+    line-height: 1.4;
+  }
+
+  .loading-query-line {
+    align-items: flex-end;
+  }
+
+  .loading-query-line button {
+    flex: 0 0 auto;
+    margin-left: 0;
+  }
+
+  .loading-candidate {
+    gap: 7px;
+    padding-inline: 4px;
+    font-size: 0.61rem;
+  }
+
+  .loading-candidate-id {
+    width: auto;
+    font-size: 0.54rem;
+  }
+
+  .loading-candidate-result {
+    min-width: 0;
+    font-size: 0.5rem;
+  }
+
+  .loading-candidates {
+    min-height: 0;
+    flex: 1 1 auto;
+    max-height: none;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-color: rgba(167, 243, 246, 0.45) transparent;
+  }
+
+  .loading-candidates-scan {
+    position: static;
+    flex: 0 0 auto;
+    min-height: 26px;
+    margin-top: 18px;
+  }
 }

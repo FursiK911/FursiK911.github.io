@@ -17,6 +17,7 @@ it('renders navigation and toggles mobile menu', async () => {
       reducedMotion
     />,
   )
+  expect(screen.getByRole('navigation')).not.toHaveClass('is-open')
   await user.click(screen.getByRole('button', { name: /menu/i }))
   expect(screen.getByRole('navigation')).toHaveClass('is-open')
   expect(screen.queryByText('DF')).not.toBeInTheDocument()

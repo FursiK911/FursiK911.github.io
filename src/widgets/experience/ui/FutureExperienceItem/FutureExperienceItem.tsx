@@ -9,16 +9,20 @@ export function FutureExperienceItem({
   index,
   reducedMotion,
   axisPoint,
+  mobileOrder,
+  mobileSide,
 }: FutureExperienceItemProps) {
   const { t } = useTranslation()
 
   return (
     <article
       className={cx(styles.experienceTimelineItem, styles.experienceFutureItem)}
+      data-mobile-side={mobileSide}
       style={
         {
           '--timeline-x': `${axisPoint.x}px`,
           '--timeline-y': `${axisPoint.y}px`,
+          '--mobile-timeline-order': mobileOrder,
         } as CSSProperties
       }
     >

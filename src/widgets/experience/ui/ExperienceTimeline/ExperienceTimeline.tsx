@@ -19,6 +19,7 @@ import {
 } from './config/experienceTimeline.config'
 import { fallbackPoints } from './data/fallbackPoints.data'
 import { pointToSceneAtX } from './utils/pointToSceneAtX'
+import { getMobileTimelineSide } from './utils/getMobileTimelineSide'
 
 gsap.registerPlugin(MotionPathPlugin)
 
@@ -195,6 +196,8 @@ export function ExperienceTimeline({
             index={index}
             reducedMotion={reducedMotion}
             axisPoint={axisPoints[index] ?? fallbackPoints[index]}
+            mobileOrder={entries.length - index}
+            mobileSide={getMobileTimelineSide(entries.length - index)}
             onSelect={() => onEntrySelect(entry)}
             key={entry.id}
           />
@@ -203,6 +206,8 @@ export function ExperienceTimeline({
           index={entries.length}
           reducedMotion={reducedMotion}
           axisPoint={futurePoint}
+          mobileOrder={0}
+          mobileSide={getMobileTimelineSide(0)}
         />
       </div>
     </div>

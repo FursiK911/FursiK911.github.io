@@ -235,3 +235,133 @@
   font-size: 0.82rem;
   line-height: 1.5;
 }
+
+@media (max-width: 1024px) {
+  .experience-timeline {
+    height: auto;
+    padding: 0;
+  }
+
+  .experience-timeline::before {
+    position: absolute;
+    z-index: 0;
+    top: 22px;
+    bottom: 22px;
+    left: 50%;
+    width: 1px;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(167, 243, 246, 0.72) 0 2px,
+      transparent 2px 8px
+    );
+    content: '';
+  }
+
+  .experience-timeline-axis,
+  .experience-timeline-runner {
+    display: none;
+  }
+
+  .experience-timeline-items {
+    position: relative;
+    z-index: 1;
+    inset: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .experience-timeline-item {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: grid;
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr) 32px minmax(0, 1fr);
+    order: var(--mobile-timeline-order);
+    margin: 0;
+    padding: 0;
+    transform: none;
+  }
+
+  .experience-milestone {
+    position: relative;
+    top: 24px;
+    left: auto;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    transform: none;
+  }
+
+  .experience-timeline-card {
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .experience-timeline-item[data-mobile-side='left'] .experience-timeline-card {
+    grid-column: 1;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .experience-timeline-item[data-mobile-side='right']
+    .experience-timeline-card {
+    grid-column: 3;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .experience-tags {
+    justify-content: flex-start;
+  }
+
+  .experience-details-item {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-phases,
+  .experience-details-item > .experience-tags,
+  .experience-detail-block {
+    grid-column: 1;
+  }
+
+  .experience-phase-heading {
+    display: block;
+  }
+
+  .experience-phase-heading p {
+    margin-top: 10px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 560px) {
+  .experience-intro {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .experience-intro p {
+    margin-top: 18px;
+  }
+
+  .experience-timeline-item {
+    grid-template-columns: minmax(0, 1fr) 26px minmax(0, 1fr);
+  }
+
+  .experience-timeline-card {
+    padding: 10px 6px;
+  }
+
+  .experience-project-heading {
+    display: block;
+  }
+
+  .experience-project-heading .action-control--inline,
+  .experience-project-status {
+    display: inline-block;
+    margin-top: 8px;
+  }
+}

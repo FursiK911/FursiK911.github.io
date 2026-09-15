@@ -8,10 +8,7 @@ it('renders only the showcase card content and direct case link', async () => {
   renderWithProviders(<ProjectCard project={projects[0]} />)
   expect(screen.getByRole('heading', { name: 'myChess' })).toBeInTheDocument()
   expect(
-    screen.getByText(/myChess is the web edition of a chess ecosystem/),
-  ).toBeInTheDocument()
-  expect(
-    screen.getByText(/2,000 people played simultaneously/),
+    screen.getByText(/myChess is the first Russian chess ecosystem/),
   ).toBeInTheDocument()
   expect(screen.getByText(/AI champions/)).toBeInTheDocument()
   expect(screen.queryByText(/chessboxing/)).not.toBeInTheDocument()

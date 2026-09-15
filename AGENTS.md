@@ -32,6 +32,10 @@
 - Keep global coverage at or above 80% for the configured application sources. Add or update tests with behaviour changes.
 - The pre-commit hook runs lint-staged only. Do not bypass hooks or commit generated `dist`, `coverage`, or secrets.
 
+## GitHub Pages deployment
+
+- Before publishing, redeploying, or verifying the public release, read `.codex/skills/github-pages-deploy/SKILL.md` and follow its release contract.
+
 ## Change logs and decisions
 
 - Log every material change in `agent-logs/YYYY/MM/YYYY-MM-DD.md` using English and `HH:mm +03:00` timestamps.
