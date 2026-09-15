@@ -1,5 +1,7 @@
 # September 2026
 
+| 2026-09-15 | mobile, header, burger-menu, alignment, mantine, css | [Mobile burger icon centering](2026-09-15.md#mobile-burger-icon-centering) |
+
 | 2026-09-15 | skills, github-pages, deployment, agents, quality | [GitHub Pages deployment skill](2026-09-15.md#github-pages-deployment-skill) |
 
 | 2026-09-15 | github-actions, quality, testing, projects, gallery, chudobooks | [GitHub Actions project test alignment](2026-09-15.md#github-actions-project-test-alignment) |

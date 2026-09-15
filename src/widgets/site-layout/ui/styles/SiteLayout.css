@@ -308,8 +308,9 @@
   .menu-toggle {
     display: inline-flex;
     align-self: center;
-    margin-top: 0;
-    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--mantine-spacing-xs) / 2);
   }
 }
 
