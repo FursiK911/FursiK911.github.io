@@ -1,5 +1,7 @@
 # September 2026
 
+| 2026-09-16 | og-image, twitter-card, webp, portfolio, github-pages, verification | [Open Graph cover image update](2026-09-16.md#open-graph-cover-image-update) |
+
 | 2026-09-16 | github-pages, deployment, github-actions, production, verification | [Public portfolio release verification](2026-09-16.md#public-portfolio-release-verification) |
 
 | 2026-09-15 | readme, portfolio, github, github-pages, documentation, contacts, setup | [Public portfolio README](2026-09-15.md#public-portfolio-readme) |
