@@ -1,5 +1,15 @@
 # September 2026
 
+| 2026-09-15 | readme, portfolio, github, github-pages, documentation, contacts, setup | [Public portfolio README](2026-09-15.md#public-portfolio-readme) |
+
+| 2026-09-15 | skills, git, commits, push, agents, quality | [Repository-local Git commit workflow skill](2026-09-15.md#repository-local-git-commit-workflow-skill) |
+
+| 2026-09-15 | hero, loading, motion, animation, responsive, accessibility, testing, graphify | [Hero entrance after loader](2026-09-15.md#hero-entrance-after-loader) |
+
+| 2026-09-15 | projects, motion, scroll, reveal, mobile, iphone-xr, testing, graphify | [Projects viewport reveal on iPhone XR](2026-09-15.md#projects-viewport-reveal-on-iphone-xr) |
+
+| 2026-09-15 | ui, animation, motion, scroll, responsive, accessibility, testing, graphify | [Unified viewport reveal animation](2026-09-15.md#unified-viewport-reveal-animation) |
+
 | 2026-09-15 | github-pages, deployment, mobile, header, burger-menu | [Mobile burger icon release](2026-09-15.md#mobile-burger-icon-release) |
 
 | 2026-09-15 | mobile, header, burger-menu, alignment, mantine, css | [Mobile burger icon centering](2026-09-15.md#mobile-burger-icon-centering) |

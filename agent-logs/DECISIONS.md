@@ -1,8 +1,18 @@
 # Global Decision Index
 
+| DEC-20260915-08 | Use an English, visitor-first README for the public portfolio repository; lead with the live site and existing cover image, include public contact and CV links plus concise setup/deployment instructions, and omit internal research documentation and detailed project listings. | readme, portfolio, github, github-pages, documentation, contacts, setup | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-08) |
+
+| DEC-20260915-07 | Store the commit workflow as an automatically discoverable repository-local skill; require diff/log-derived messages, safety checks, project validation, normal hooks, and explicit push authorization. | skills, git, commits, push, agents, quality | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-07) |
+
+| DEC-20260915-06 | Use a shared one-time opacity-and-vertical-offset viewport reveal for semantic sections and repeated cards on every route; retain specialized animation systems, exclude fixed and modal UI, and render immediately when reduced motion is requested. | ui, animation, motion, scroll, responsive, accessibility | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-06) |
+
 | DEC-20260915-05 | Store the GitHub Pages deployment contract as a versioned repository-local skill and require agents to read it before release-related tasks. | skills, github-pages, deployment, agents, quality | [2026-09-15](2026/09/2026-09-15.md#decision-dec-20260915-05) |
 
 No new global decision; mobile contact alignment follows DEC-20260915-04.
+
+Projects uses Motion's `some` viewport threshold only for its tall mobile container; the shared reveal default remains `0.15` under DEC-20260915-06.
+
+Hero enters once after the loader through its existing `entered` handoff, with the same fade-and-rise language and no viewport observer.
 
 Mobile burger menu alignment follows the existing responsive layout target in DEC-20260915-04.
 

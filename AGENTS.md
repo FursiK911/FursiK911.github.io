@@ -36,6 +36,10 @@
 
 - Before publishing, redeploying, or verifying the public release, read `.codex/skills/github-pages-deploy/SKILL.md` and follow its release contract.
 
+## Repository-local skills
+
+- For commit, save, or push requests, read `.codex/skills/git-commit-workflow/SKILL.md` before changing Git state. Derive commit messages from the actual diff and targeted agent logs, preserve unrelated work, run the project checks, and push only after explicit user authorization.
+
 ## Change logs and decisions
 
 - Log every material change in `agent-logs/YYYY/MM/YYYY-MM-DD.md` using English and `HH:mm +03:00` timestamps.

@@ -1,0 +1,4 @@
+interface:
+  display_name: 'Git Commit Workflow'
+  short_description: 'Commit and optionally push project changes from diff and agent logs'
+  default_prompt: 'Use $git-commit-workflow to review the current changes, derive a precise commit message from the diff and agent logs, run the repository checks, commit safely, and push only if explicitly requested.'
