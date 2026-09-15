@@ -2,16 +2,21 @@ import { cx, styles } from '@/shared/styles'
 import { useState } from 'react'
 import { Collapse, Timeline } from '@mantine/core'
 import { IconCertificate, IconSchool } from '@tabler/icons-react'
-import { useReducedMotion } from 'motion/react'
+import { motion, useReducedMotion } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import { education } from '@/entities/education'
 import type { EducationCopy } from './types/EducationTimeline.types'
 import { getYear } from './utils/getYear'
 import { toIsoDate } from './utils/toIsoDate'
+import {
+  scrollRevealConfig,
+  useScrollReveal,
+} from '@/shared/lib/useScrollReveal'
 
 export function EducationTimeline() {
   const [openEntries, setOpenEntries] = useState<Set<string>>(new Set())
   const reducedMotion = useReducedMotion() ?? false
+  const scrollReveal = useScrollReveal()
   const { t } = useTranslation()
 
   const toggleEntry = (id: string) => {
@@ -68,50 +73,58 @@ export function EducationTimeline() {
             }
             opposite={<span aria-hidden="true" />}
           >
-            <div className={cx(styles.educationTimelineOrganization)}>
-              {copy.organization}
-            </div>
-            <button
-              type="button"
-              className={cx(styles.educationTimelineToggle)}
-              aria-expanded={open}
-              aria-controls={detailsId}
-              onClick={() => toggleEntry(entry.id)}
+            <motion.div
+              {...scrollReveal}
+              transition={{
+                ...scrollReveal.transition,
+                delay: index * scrollRevealConfig.staggerDelay,
+              }}
             >
-              {open ? t('education.hideDetails') : t('education.showDetails')}
-              <span aria-hidden="true">{open ? '↑' : '↓'}</span>
-            </button>
-            <Collapse
-              expanded={open}
-              transitionDuration={reducedMotion ? 0 : 220}
-              animateOpacity={!reducedMotion}
-            >
-              <div
-                className={cx(styles.educationTimelineDetails)}
-                id={detailsId}
-              >
-                <dl>
-                  {copy.details.map(({ label, value }) => (
-                    <div key={label}>
-                      <dt>{label}</dt>
-                      <dd>{value}</dd>
-                    </div>
-                  ))}
-                </dl>
-                {copy.topics.length > 0 && (
-                  <>
-                    <span className={cx(styles.educationTimelineTopicsLabel)}>
-                      {t('education.topics')}
-                    </span>
-                    <ul>
-                      {copy.topics.map((topic) => (
-                        <li key={topic}>{topic}</li>
-                      ))}
-                    </ul>
-                  </>
-                )}
+              <div className={cx(styles.educationTimelineOrganization)}>
+                {copy.organization}
               </div>
-            </Collapse>
+              <button
+                type="button"
+                className={cx(styles.educationTimelineToggle)}
+                aria-expanded={open}
+                aria-controls={detailsId}
+                onClick={() => toggleEntry(entry.id)}
+              >
+                {open ? t('education.hideDetails') : t('education.showDetails')}
+                <span aria-hidden="true">{open ? '↑' : '↓'}</span>
+              </button>
+              <Collapse
+                expanded={open}
+                transitionDuration={reducedMotion ? 0 : 220}
+                animateOpacity={!reducedMotion}
+              >
+                <div
+                  className={cx(styles.educationTimelineDetails)}
+                  id={detailsId}
+                >
+                  <dl>
+                    {copy.details.map(({ label, value }) => (
+                      <div key={label}>
+                        <dt>{label}</dt>
+                        <dd>{value}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                  {copy.topics.length > 0 && (
+                    <>
+                      <span className={cx(styles.educationTimelineTopicsLabel)}>
+                        {t('education.topics')}
+                      </span>
+                      <ul>
+                        {copy.topics.map((topic) => (
+                          <li key={topic}>{topic}</li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
+                </div>
+              </Collapse>
+            </motion.div>
           </Timeline.Item>
         )
       })}

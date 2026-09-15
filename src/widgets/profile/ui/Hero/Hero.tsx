@@ -8,6 +8,7 @@ import { LiveCam } from '../LiveCam/LiveCam'
 import { ActionLink } from '@/shared/ui/ActionLink'
 import '../styles/Profile.css'
 import type { HeroProps } from './types/Hero.types'
+import { heroContainerVariants } from './config/heroContainerVariants.config'
 import { heroItemVariants } from './config/heroItemVariants.config'
 
 export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
@@ -17,10 +18,7 @@ export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
       className={cx(styles.hero)}
       initial={reducedMotion || entered ? false : 'hidden'}
       animate={reducedMotion || entered ? 'visible' : 'hidden'}
-      variants={{
-        hidden: {},
-        visible: { transition: { staggerChildren: 0.09, delayChildren: 0.12 } },
-      }}
+      variants={heroContainerVariants}
     >
       <motion.div
         className={cx(styles.heroCopy)}

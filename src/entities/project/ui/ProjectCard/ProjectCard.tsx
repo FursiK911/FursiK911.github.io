@@ -1,24 +1,23 @@
 import { motion, useReducedMotion } from 'motion/react'
+import { useScrollReveal } from '@/shared/lib/useScrollReveal'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { ProjectCardPreview } from '../ProjectCardPreview/ProjectCardPreview'
 import styles from './styles/ProjectCard.module.css'
 import type { ProjectCardProps } from './types/ProjectCard.types'
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project, revealDelay }: ProjectCardProps) {
   const { t } = useTranslation()
   const reducedMotion = useReducedMotion()
+  const scrollReveal = useScrollReveal({ delay: revealDelay })
   const [isPreviewActive, setIsPreviewActive] = useState(false)
   const title = t(`projects.${project.titleKey}`)
   return (
     <motion.article
       className={styles.card}
       layout={!reducedMotion}
-      initial={reducedMotion ? false : { opacity: 0, y: 16 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      {...scrollReveal}
       exit={reducedMotion ? undefined : { opacity: 0, y: 16 }}
-      transition={{ duration: reducedMotion ? 0 : 0.35 }}
-      viewport={{ once: true }}
     >
       <a
         className={styles.link}

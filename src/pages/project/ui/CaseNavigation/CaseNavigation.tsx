@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
-import { useReducedMotion } from 'motion/react'
+import { motion, useReducedMotion } from 'motion/react'
+import { useScrollReveal } from '@/shared/lib/useScrollReveal'
 import { useCaseNavigation } from '../../model/useCaseNavigation/useCaseNavigation'
 import type { CaseNavigationProps } from '../../model/types/projectCase.types'
 import styles from './styles/CaseNavigation.module.css'
@@ -7,10 +8,12 @@ export function CaseNavigation({ sections }: CaseNavigationProps) {
   const { t } = useTranslation()
   const active = useCaseNavigation(sections)
   const reduced = useReducedMotion()
+  const scrollReveal = useScrollReveal()
   return (
-    <nav
+    <motion.nav
       className={styles.caseNavigationNavigation}
       aria-label={t('projectCase.navigation')}
+      {...scrollReveal}
     >
       {sections.map((section, index) => (
         <a
@@ -29,6 +32,6 @@ export function CaseNavigation({ sections }: CaseNavigationProps) {
           {section.label}
         </a>
       ))}
-    </nav>
+    </motion.nav>
   )
 }

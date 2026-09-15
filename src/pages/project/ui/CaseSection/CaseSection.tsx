@@ -1,16 +1,14 @@
-import { motion, useReducedMotion } from 'motion/react'
+import { motion } from 'motion/react'
+import { useScrollReveal } from '@/shared/lib/useScrollReveal'
 import type { CaseSectionProps } from '../../model/types/projectCase.types'
 import styles from './styles/CaseSection.module.css'
 export function CaseSection({ id, number, title, children }: CaseSectionProps) {
-  const reduced = useReducedMotion()
+  const scrollReveal = useScrollReveal({ amount: 0.08 })
   return (
     <motion.section
       id={id}
       className={styles.caseSectionSection}
-      initial={reduced ? false : { opacity: 0, y: 26 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.08 }}
-      transition={{ duration: 0.55 }}
+      {...scrollReveal}
     >
       <div className={styles.caseSectionHeading}>
         <span aria-hidden="true">{number} /</span>

@@ -1,44 +1,80 @@
 # Dmitry Fursov — Software Developer
 
-Одностраничное портфолио на React, TypeScript и Vite. Профиль объединяет web, mobile, Unity, Unigine, XR/AR и realtime-разработку. Контент основан на предоставленных материалах; неизвестные метрики, URL и проектные материалы не добавляются.
+<p align="center">
+  <a href="https://fursik911.github.io/">
+    <img src="./public/og-cover.webp" alt="Dmitry Fursov software developer portfolio" />
+  </a>
+</p>
 
-## Локальная разработка
+<p align="center">
+  <a href="https://fursik911.github.io/">Live portfolio</a>
+  ·
+  <a href="https://github.com/FursiK911">GitHub</a>
+  ·
+  <a href="https://www.linkedin.com/in/dmitry-fursov-251097213/">LinkedIn</a>
+  ·
+  <a href="https://t.me/FursiK911">Telegram</a>
+  ·
+  <a href="mailto:19fursik99@gmail.com">Email</a>
+</p>
+
+This repository contains the source code for my personal software development portfolio. The website presents selected experience across web, mobile, Unity, Unigine, XR/AR, and real-time products.
+
+The portfolio is available at **[fursik911.github.io](https://fursik911.github.io/)**.
+
+## Highlights
+
+- Bilingual interface with Russian and English content, browser language detection, and a persistent language switch.
+- Responsive portfolio experience with animated sections, project case pages, media galleries, and accessible interactions.
+- Reduced-motion support across the site's animation system.
+- Localized CV downloads for Frontend Developer and Unity Developer profiles.
+
+## Tech stack
+
+- React 19 and TypeScript
+- Vite
+- Mantine
+- Motion and GSAP
+- i18next and react-i18next
+- Three.js and postprocessing
+- Vitest, Testing Library, ESLint, and Prettier
+
+## Local development
+
+Requirements: Node.js 24 and npm 11.
 
 ```bash
 npm ci
 npm run dev
 ```
 
-Перед публикацией запускайте `npm run validate` (format, lint, typecheck, coverage и production build).
+Open the local Vite server shown in the terminal to view the portfolio during development.
 
-## Языки
+## Quality checks
 
-Сайт поддерживает `ru` и `en`, автоматически определяет язык браузера, сохраняет ручной выбор и использует английский fallback.
+Run the full project validation before publishing changes:
 
-## Project assets
-
-Карточки используют честные CSS/HUD placeholders, а подтверждённые внешние медиа подключаются из публичных источников. Локальные материалы добавляйте по папкам:
-
-```text
-public/projects/<slug>/cover.webp
-public/projects/<slug>/01.webp
-public/projects/<slug>/02.webp
-public/projects/<slug>/preview.webm
+```bash
+npm run validate
 ```
 
-Каталог включает проекты `mychess-web`, `mobile-rts`, `rosatom`, `mychessvr`, `cat-citten`, `industrial-vr`, `aptive-education`, `neo4-sightline`, `fuel-cms`, `drilling-vr`, `vulkan-verse`, `korobka`, `doors-cms`, `earth-dragons`, `villa-krim`, `authors-wine-villa-krim`, `chudo-projector`, `ar-coloring`, `goons-balatroon`, `chudobooks`, `chudo-floor`, `photon-fps` и `quest-room`.
+The validation pipeline checks formatting, linting, TypeScript, test coverage, the production build, and production assets. To create a production build separately:
 
-CV ожидается по адресу `public/cv/Dmitry-Fursov-Unity-Developer-CV.pdf`.
+```bash
+npm run build
+```
 
-## GitHub Pages
+## CV
 
-Vite настроен с `base: '/'` для user-site `FursiK911/FursiK911.github.io`. Workflow находится в `.github/workflows/deploy.yml`, автоматически запускается при push в `main` и также поддерживает ручной запуск (`workflow_dispatch`).
+The portfolio provides localized PDF resumes from `public/cv/`:
 
-После включения Pages: Actions → Deploy to GitHub Pages → Run workflow.
+- [Frontend Developer — English](./public/cv/Dmitry-Fursov-Frontend-Developer-EN.pdf)
+- [Frontend Developer — Russian](./public/cv/Dmitry-Fursov-Frontend-Developer-RU.pdf)
+- [Unity Developer — English](./public/cv/Dmitry-Fursov-Unity-Developer-EN.pdf)
+- [Unity Developer — Russian](./public/cv/Dmitry-Fursov-Unity-Developer-RU.pdf)
 
-## Portfolio research
+## Deployment
 
-The external project research index is available at
-[docs/portfolio-research-sources.md](docs/portfolio-research-sources.md). It
-lists the source directory and all currently available project research files
-for AI agents and Graphify discovery.
+The site is deployed to GitHub Pages from the `main` branch. The workflow in [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml) runs on every push to `main` and can also be started manually with `workflow_dispatch`.
+
+The Vite base path is `/`, matching the repository's GitHub Pages user-site URL.

@@ -1,16 +1,20 @@
 import { cx, styles } from '@/shared/styles'
 import { useTranslation } from 'react-i18next'
+import { motion } from 'motion/react'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
+import { useScrollReveal } from '@/shared/lib/useScrollReveal'
 import { EducationTimeline } from '../EducationTimeline/EducationTimeline'
 import '../styles/Education.css'
 
 export function Education() {
   const { t } = useTranslation()
+  const scrollReveal = useScrollReveal()
 
   return (
-    <section
+    <motion.section
       className={cx(styles.sectionShell, styles.educationSection)}
       id="education"
+      {...scrollReveal}
     >
       <SectionHeading index="05" title={t('sections.education')} />
       <div className={cx(styles.educationIntro)}>
@@ -18,6 +22,6 @@ export function Education() {
         <p>{t('education.intro')}</p>
       </div>
       <EducationTimeline />
-    </section>
+    </motion.section>
   )
 }

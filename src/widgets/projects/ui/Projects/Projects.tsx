@@ -13,6 +13,10 @@ import {
 import { ProjectCircuitGame } from '@/features/project-circuit-game'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
 import {
+  scrollRevealConfig,
+  useScrollReveal,
+} from '@/shared/lib/useScrollReveal'
+import {
   hiddenProjectIds,
   projectCircuitGameEnabled,
 } from '../../model/config/projects.config'
@@ -24,6 +28,7 @@ export function Projects() {
   const reducedMotion = useReducedMotion()
   const [direction, setDirection] = useState<'all' | ProjectDirection>('all')
   const [technology, setTechnology] = useState<ProjectCardTag | null>(null)
+  const scrollReveal = useScrollReveal({ amount: 'some' })
   const showcaseProjects = useMemo(
     () => projects.filter((project) => !hiddenProjectIds.has(project.id)),
     [],
@@ -74,9 +79,10 @@ export function Projects() {
     setTechnology(null)
   }
   return (
-    <section
+    <motion.section
       className={cx(styles.sectionShell, styles.projectsSection)}
       id="projects"
+      {...scrollReveal}
     >
       <SectionHeading index="02" title={t('sections.projects')} />
       <div className={cx(styles.projectsIntro)}>
@@ -94,8 +100,12 @@ export function Projects() {
       {visible.length ? (
         <motion.div className={cardStyles.grid} layout={!reducedMotion}>
           <AnimatePresence initial={false} mode="popLayout">
-            {visible.map((project) => (
-              <ProjectCard key={project.id} project={project} />
+            {visible.map((project, index) => (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                revealDelay={index * scrollRevealConfig.staggerDelay}
+              />
             ))}
           </AnimatePresence>
         </motion.div>
@@ -111,6 +121,6 @@ export function Projects() {
           </button>
         </div>
       )}
-    </section>
+    </motion.section>
   )
 }

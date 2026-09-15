@@ -1,29 +1,36 @@
 import { cx, styles } from '@/shared/styles'
 import { useTranslation } from 'react-i18next'
-import { LegalPageLayout } from '@/widgets/site-layout'
+import { motion } from 'motion/react'
+import { useScrollReveal } from '@/shared/lib/useScrollReveal'
+import { LegalContentSection, LegalPageLayout } from '@/widgets/site-layout'
 
 export function PrivacyPage() {
   const { t } = useTranslation()
+  const scrollReveal = useScrollReveal()
   return (
     <LegalPageLayout
       title={t('legal.privacy.metaTitle')}
       description={t('legal.privacy.metaDescription')}
       hudSectionLabel={t('legal.privacy.title')}
     >
-      <article className={cx(styles.legalContent)}>
+      <motion.article className={cx(styles.legalContent)} {...scrollReveal}>
         <p className={cx(styles.eyebrow)}>LEGAL / 01</p>
         <h1>{t('legal.privacy.title')}</h1>
         <p className={cx(styles.legalUpdated)}>{t('legal.updated')}</p>
         <p className={cx(styles.legalLead)}>{t('legal.privacy.intro')}</p>
-        <h2>{t('legal.privacy.collectionTitle')}</h2>
-        <p>{t('legal.privacy.collection')}</p>
-        <h2>{t('legal.privacy.useTitle')}</h2>
-        <p>{t('legal.privacy.use')}</p>
-        <h2>{t('legal.privacy.externalTitle')}</h2>
-        <p>{t('legal.privacy.external')}</p>
-        <h2>{t('legal.privacy.contactTitle')}</h2>
-        <p>{t('legal.privacy.contact')}</p>
-      </article>
+        <LegalContentSection title={t('legal.privacy.collectionTitle')}>
+          <p>{t('legal.privacy.collection')}</p>
+        </LegalContentSection>
+        <LegalContentSection title={t('legal.privacy.useTitle')}>
+          <p>{t('legal.privacy.use')}</p>
+        </LegalContentSection>
+        <LegalContentSection title={t('legal.privacy.externalTitle')}>
+          <p>{t('legal.privacy.external')}</p>
+        </LegalContentSection>
+        <LegalContentSection title={t('legal.privacy.contactTitle')}>
+          <p>{t('legal.privacy.contact')}</p>
+        </LegalContentSection>
+      </motion.article>
     </LegalPageLayout>
   )
 }

@@ -5,12 +5,12 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import type { ExperienceTimelineItemProps } from './types/ExperienceTimelineItem.types'
 import { getCompanyInitials } from './utils/getCompanyInitials'
+import { useScrollReveal } from '@/shared/lib/useScrollReveal'
 import itemStyles from './styles/ExperienceTimelineItem.module.css'
 
 export function ExperienceTimelineItem({
   entry,
   index,
-  reducedMotion,
   axisPoint,
   mobileOrder,
   mobileSide,
@@ -19,6 +19,7 @@ export function ExperienceTimelineItem({
   const { t } = useTranslation()
   const [logoFailed, setLogoFailed] = useState(false)
   const period = `${entry.period.from} — ${entry.period.to ?? t('experience.present')}`
+  const scrollReveal = useScrollReveal({ amount: 0.35, delay: index * 0.06 })
 
   return (
     <article
@@ -36,10 +37,7 @@ export function ExperienceTimelineItem({
       <span className={cx(styles.experienceMilestone)} aria-hidden="true" />
       <motion.div
         className={cx(styles.experienceTimelineCard)}
-        initial={reducedMotion ? false : { opacity: 0, y: 18 }}
-        whileInView={reducedMotion ? undefined : { opacity: 1, y: 0 }}
-        viewport={reducedMotion ? undefined : { once: true, amount: 0.35 }}
-        transition={{ duration: 0.35, delay: reducedMotion ? 0 : index * 0.06 }}
+        {...scrollReveal}
       >
         <div
           className={cx(styles.experienceLogo)}

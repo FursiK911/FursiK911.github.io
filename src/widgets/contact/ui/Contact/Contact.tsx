@@ -1,19 +1,23 @@
 import { cx, styles } from '@/shared/styles'
 import { useTranslation } from 'react-i18next'
 import { CopyButton } from '@mantine/core'
+import { motion } from 'motion/react'
 import { IconBrandTelegram, IconMail } from '@tabler/icons-react'
 import { ResumeDownload } from '@/features/resume-download'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
 import { ContactPortrait } from '../ContactPortrait/ContactPortrait'
+import { useScrollReveal } from '@/shared/lib/useScrollReveal'
 import '../styles/Contact.css'
 import type { ContactProps } from './types/Contact.types'
 
 export function Contact({ reducedMotion, entered = true }: ContactProps) {
   const { t } = useTranslation()
+  const scrollReveal = useScrollReveal()
   return (
-    <section
+    <motion.section
       className={cx(styles.sectionShell, styles.contactSection)}
       id="contact"
+      {...scrollReveal}
     >
       <SectionHeading index="06" title={t('sections.contact')} />
       <div className={cx(styles.contactGrid)}>
@@ -43,6 +47,6 @@ export function Contact({ reducedMotion, entered = true }: ContactProps) {
           <ResumeDownload label={t('contact.cv')} />
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }

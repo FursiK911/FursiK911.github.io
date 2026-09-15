@@ -3,16 +3,17 @@ import { motion } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import type { CSSProperties } from 'react'
 import { ActionLink } from '@/shared/ui/ActionLink'
+import { useScrollReveal } from '@/shared/lib/useScrollReveal'
 import type { FutureExperienceItemProps } from './types/FutureExperienceItem.types'
 
 export function FutureExperienceItem({
   index,
-  reducedMotion,
   axisPoint,
   mobileOrder,
   mobileSide,
 }: FutureExperienceItemProps) {
   const { t } = useTranslation()
+  const scrollReveal = useScrollReveal({ amount: 0.35, delay: index * 0.06 })
 
   return (
     <article
@@ -29,10 +30,7 @@ export function FutureExperienceItem({
       <span className={cx(styles.experienceMilestone)} aria-hidden="true" />
       <motion.div
         className={cx(styles.experienceTimelineCard)}
-        initial={reducedMotion ? false : { opacity: 0, y: 18 }}
-        whileInView={reducedMotion ? undefined : { opacity: 1, y: 0 }}
-        viewport={reducedMotion ? undefined : { once: true, amount: 0.35 }}
-        transition={{ duration: 0.35, delay: reducedMotion ? 0 : index * 0.06 }}
+        {...scrollReveal}
       >
         <span className={cx(styles.experienceFutureIcon)} aria-hidden="true">
           <svg viewBox="0 0 32 32" focusable="false">

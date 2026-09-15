@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next'
+import { motion } from 'motion/react'
+import { useScrollReveal } from '@/shared/lib/useScrollReveal'
 import type { ProjectContentProps } from '../../model/types/projectCase.types'
 import styles from './styles/ProjectContribution.module.css'
 export function ProjectContribution({ project }: ProjectContentProps) {
@@ -6,8 +8,9 @@ export function ProjectContribution({ project }: ProjectContentProps) {
   const points = t(`projects.${project.pointsKey}`, {
     returnObjects: true,
   }) as string[]
+  const scrollReveal = useScrollReveal()
   return (
-    <div className={styles.projectContributionContent}>
+    <motion.div className={styles.projectContributionContent} {...scrollReveal}>
       <p>{t('projectCase.contributionNote')}</p>
       <ol>
         {points.map((point, index) => (
@@ -17,6 +20,6 @@ export function ProjectContribution({ project }: ProjectContentProps) {
           </li>
         ))}
       </ol>
-    </div>
+    </motion.div>
   )
 }

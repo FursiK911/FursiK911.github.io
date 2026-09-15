@@ -4,6 +4,8 @@ import { IconArrowUpLeft } from '@tabler/icons-react'
 import { getProjectById } from '@/entities/project'
 import type { ProjectMetric } from '@/entities/project'
 import { ActionLink } from '@/shared/ui/ActionLink'
+import { useScrollReveal } from '@/shared/lib/useScrollReveal'
+import { motion } from 'motion/react'
 import { Footer, Header, HudScrollIndicator } from '@/widgets/site-layout'
 import { partitionMetrics } from '../../model/utils/partitionMetrics'
 import { canReturnWithinSite } from '../../model/utils/canReturnWithinSite'
@@ -20,6 +22,7 @@ import type { ProjectPageProps } from './types/ProjectPage.types'
 
 export function ProjectPage({ projectId }: ProjectPageProps) {
   const { i18n, t } = useTranslation()
+  const scrollReveal = useScrollReveal()
   const project = getProjectById(projectId)
   const title = project
     ? `${t(`projects.${project.titleKey}`)} — ${t('header.name')}`
@@ -74,9 +77,10 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
       <main id="page-content" className={styles.projectPagePage}>
         {project ? (
           <article>
-            <a
+            <motion.a
               className={styles.projectPageBackLink}
               href="/#projects"
+              {...scrollReveal}
               onClick={(event) => {
                 if (
                   canReturnWithinSite(
@@ -92,7 +96,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
             >
               <IconArrowUpLeft aria-hidden="true" />
               {t('projectCase.back')}
-            </a>
+            </motion.a>
             <ProjectIntro project={project} facts={metrics.facts} />
             <CaseNavigation sections={sections} />
             {hasMedia ? (
@@ -147,14 +151,17 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
             )}
           </article>
         ) : (
-          <section className={styles.projectPageNotFound}>
+          <motion.section
+            className={styles.projectPageNotFound}
+            {...scrollReveal}
+          >
             <p>404 // PROJECT</p>
             <h1>{t('projects.notFoundTitle')}</h1>
             <p>{t('projects.notFoundDescription')}</p>
             <ActionLink href="/#projects" variant="primary">
               {t('projects.backToProjects')}
             </ActionLink>
-          </section>
+          </motion.section>
         )}
       </main>
       <Footer />

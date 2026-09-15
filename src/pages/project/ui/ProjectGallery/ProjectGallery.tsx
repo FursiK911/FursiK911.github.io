@@ -7,6 +7,7 @@ import { motion, useReducedMotion } from 'motion/react'
 import { useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { orderProjectMedia } from '@/entities/project'
+import { useScrollReveal } from '@/shared/lib/useScrollReveal'
 import { useProjectGallery } from '../../model/useProjectGallery/useProjectGallery'
 import type { ProjectContentProps } from '../../model/types/projectCase.types'
 import { GallerySlide } from '../GallerySlide/GallerySlide'
@@ -16,6 +17,7 @@ import styles from './styles/ProjectGallery.module.css'
 export function ProjectGallery({ project }: ProjectContentProps) {
   const { t } = useTranslation()
   const reduced = useReducedMotion()
+  const scrollReveal = useScrollReveal()
   const media = orderProjectMedia(project.media ?? [])
   const gallery = useProjectGallery(media.length)
   const galleryRootRef = useRef<HTMLDivElement>(null)
@@ -41,7 +43,7 @@ export function ProjectGallery({ project }: ProjectContentProps) {
   }
   if (!current)
     return (
-      <div className={styles.projectGalleryCover}>
+      <motion.div className={styles.projectGalleryCover} {...scrollReveal}>
         <span>
           {project.category
             .map((category) => t(`projects.${category}`))
@@ -49,7 +51,7 @@ export function ProjectGallery({ project }: ProjectContentProps) {
         </span>
         <strong>{title}</strong>
         <span>{project.id}</span>
-      </div>
+      </motion.div>
     )
   return (
     <div ref={galleryRootRef} className={styles.projectGalleryGallery}>

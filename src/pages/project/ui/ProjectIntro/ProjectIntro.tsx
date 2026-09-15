@@ -1,12 +1,19 @@
 import { useTranslation } from 'react-i18next'
+import { motion } from 'motion/react'
 import { ActionLink } from '@/shared/ui/ActionLink'
+import { useScrollReveal } from '@/shared/lib/useScrollReveal'
 import { UnavailableAction } from '@/shared/ui/UnavailableAction'
 import type { ProjectIntroProps } from '../../model/types/projectCase.types'
 import styles from './styles/ProjectIntro.module.css'
 export function ProjectIntro({ project, facts }: ProjectIntroProps) {
   const { t } = useTranslation()
+  const scrollReveal = useScrollReveal()
   return (
-    <header className={styles.projectIntroIntro} id="overview">
+    <motion.header
+      className={styles.projectIntroIntro}
+      id="overview"
+      {...scrollReveal}
+    >
       <div className={styles.projectIntroEyebrow}>
         <span>{t('projectCase.caseLabel')}</span>
         <span>{project.id}</span>
@@ -82,6 +89,6 @@ export function ProjectIntro({ project, facts }: ProjectIntroProps) {
           )
         })}
       </div>
-    </header>
+    </motion.header>
   )
 }
