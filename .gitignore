@@ -11,6 +11,10 @@ node_modules
 dist
 dist-ssr
 coverage
+output/
+tmp/
+__pycache__/
+.playwright-cli/
 *.local
 
 # Graphify keeps only its queryable graph and audit report in version control.

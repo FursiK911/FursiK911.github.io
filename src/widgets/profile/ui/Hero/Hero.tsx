@@ -1,12 +1,8 @@
 import { cx, styles } from '@/shared/styles'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'motion/react'
-import {
-  IconBriefcase,
-  IconDownload,
-  IconMessageCircle,
-} from '@tabler/icons-react'
-import { cvUrl } from '@/entities/project'
+import { IconBriefcase, IconMessageCircle } from '@tabler/icons-react'
+import { ResumeDownload } from '@/features/resume-download'
 import { TypingText } from '@/shared/ui/TypingText'
 import { LiveCam } from '../LiveCam/LiveCam'
 import { ActionLink } from '@/shared/ui/ActionLink'
@@ -52,10 +48,7 @@ export function Hero({ typedRole, reducedMotion, entered = true }: HeroProps) {
           className={cx(styles.heroActions)}
           variants={heroItemVariants}
         >
-          <ActionLink variant="primary" href={cvUrl} download>
-            {t('hero.cv')}
-            <IconDownload aria-hidden="true" size={16} stroke={1.5} />
-          </ActionLink>
+          <ResumeDownload label={t('hero.cv')} />
           <ActionLink variant="secondary" href="#projects">
             {t('hero.projects')}
             <IconBriefcase aria-hidden="true" size={16} stroke={1.5} />

@@ -8,6 +8,13 @@ export const resources = {
       language: 'RU',
       projectCase: projectCaseCopy.ru,
       projectCircuitGame: projectCircuitGameCopy.ru,
+      resumeDownload: {
+        title: 'Выберите резюме',
+        description: 'Два направления. Выберите подходящее для вашей вакансии.',
+        close: 'Закрыть выбор резюме',
+        download: 'Скачать {{role}} в PDF',
+        format: 'PDF · Русский · 2 страницы',
+      },
       header: {
         name: 'Дмитрий Фурсов',
         homeLabel: 'Главная — Дмитрий Фурсов',
@@ -1055,6 +1062,13 @@ export const resources = {
       language: 'EN',
       projectCase: projectCaseCopy.en,
       projectCircuitGame: projectCircuitGameCopy.en,
+      resumeDownload: {
+        title: 'Choose a resume',
+        description: 'Two specializations. Choose the one that fits your role.',
+        close: 'Close resume selection',
+        download: 'Download {{role}} PDF',
+        format: 'PDF · English · 2 pages',
+      },
       header: {
         name: 'Dmitry Fursov',
         homeLabel: 'Home — Dmitry Fursov',

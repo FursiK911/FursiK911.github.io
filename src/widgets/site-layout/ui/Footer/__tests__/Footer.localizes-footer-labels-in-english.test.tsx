@@ -1,4 +1,4 @@
-import { screen } from '@testing-library/react'
+import { act, screen } from '@testing-library/react'
 import { Footer } from '@/widgets/site-layout'
 import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { changeLanguage } from '@/shared/config/i18n'
@@ -7,7 +7,7 @@ beforeEach(async () => {
 })
 it('localizes footer labels in English', async () => {
   const { rerender } = renderWithProviders(<Footer />)
-  await changeLanguage('en')
+  await act(() => changeLanguage('en'))
   rerender(<Footer />)
   expect(screen.getByRole('link', { name: 'Privacy Policy' })).toBeVisible()
   expect(screen.getByRole('link', { name: 'Terms of Use' })).toBeVisible()

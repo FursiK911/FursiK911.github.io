@@ -1,0 +1,75 @@
+{
+  "language": "ru",
+  "role": "Unity",
+  "name": "Дмитрий Фурсов",
+  "title": "Unity Developer",
+  "availability": "Ростов-на-Дону | Офис, гибрид, удалённо",
+  "employment": "Полная, частичная занятость и проектная работа",
+  "summary": "Unity Generalist: игровые механики, VR/AR, сетевые взаимодействия и интерфейсы. Разрабатываю интерактивные продукты с 2019 года, сочетая коммерческий опыт Unity/C# и frontend. Самостоятельно реализовывал VR-проекты; работал над мобильной RTS, промышленными тренажёрами и AR-приложениями.",
+  "skills": [
+    "Разработка: Unity, C#, ООП, ScriptableObject, Zenject, UniTask, DOTween, Git.",
+    "XR и платформы: Meta Quest 2/3S/3, OpenXR, XR Interaction Toolkit, SteamVR, Vuforia; Android, iOS, PC.",
+    "Сети и контент: Mirror, Netcode for GameObjects, Photon, PlayFab, Firebase, Azure Functions, Addressables, AssetBundles."
+  ],
+  "pages": [
+    [
+      {
+        "company": "ME GROUP",
+        "role": "Middle VR Developer",
+        "dates": "03.2026 - настоящее время",
+        "context": "Промышленные VR-тренажёры | Unity, C#, Meta Quest",
+        "bullets": [
+          "Создаю тренировочные и экзаменационные сценарии: пошаговые операции, проверку действий, подсказки, фиксацию ошибок и условия завершения.",
+          "Реализую взаимодействия с оборудованием и инструментами, анимации, VFX и звуковую обратную связь для Quest 2, 3S и 3.",
+          "Расширяю существующий код и механики с использованием XR Interaction Toolkit, Zenject, UniTask, Addressables и Unity Localization."
+        ]
+      },
+      {
+        "company": "Yellow Element",
+        "role": "Middle Unity Developer",
+        "dates": "09.2025 - 03.2026",
+        "context": "Мобильная RTS, Android / iOS | Unity, C#, Mirror",
+        "bullets": [
+          "Разрабатывал клиент-серверное взаимодействие для PvP на Mirror и систему сохранения и воспроизведения реплеев боёв.",
+          "Оптимизировал поиск пути AI для массовых боёв: сократил число вычислительных итераций и нагрузку на CPU при движении юнитов.",
+          "Реализовал турнирную сетку, обновление результатов и инструменты отладки; серверную логику наград, игровых событий и push-уведомлений на PlayFab, Firebase и Azure Functions."
+        ]
+      }
+    ],
+    [
+      {
+        "company": "ООО ЦУП",
+        "role": "Frontend Developer / VR Developer",
+        "dates": "09.2023 - 07.2025",
+        "context": "Frontend до 10.2024; Unity VR 10.2024 - 02.2025; затем frontend",
+        "bullets": [
+          "Как единственный разработчик реализовал MyChessVR: игровые режимы, обучение со Stockfish, IK и lipsync аватаров, три локации и аддитивную загрузку сцен.",
+          "Самостоятельно создал VR-демо тренажёра бурильщика: взаимодействия с оборудованием и совместное прохождение на Netcode for GameObjects, OpenXR и XR Interaction Toolkit.",
+          "В frontend-периоды разрабатывал MyChess на React/TypeScript, мобильный клиент на Flutter и веб-интерфейсы. Опыт realtime-продукта дополняет работу с сетевыми играми."
+        ]
+      },
+      {
+        "company": "IT Tab",
+        "role": "Frontend Developer / VR Developer",
+        "dates": "01.2023 - 09.2023",
+        "context": "React 01.2023 - 04.2023; Unigine VR 04.2023 - 09.2023",
+        "bullets": [
+          "Реализовал функциональность VR-тренажёра SARiDU на Unigine: совместные сценарии, режим инструктора и экзамена, журнал результатов и запись сессий.",
+          "Разработал сетевое взаимодействие по UDP и VOIP; работал со SteamVR, HTC VIVE Pro и Astra Linux. Ранее создавал React-интерфейсы сайта и CMS."
+        ]
+      },
+      {
+        "company": "Yellow Element",
+        "role": "Intern / Junior Unity Developer; затем Frontend Developer",
+        "dates": "10.2019 - 02.2022",
+        "context": "Unity до 02.2021; React / Vue 02.2021 - 02.2022",
+        "bullets": [
+          "Создавал мобильные AR-приложения на Unity/Vuforia; реализовал загрузку AssetBundles, проверку хешей, кеширование и повторные попытки загрузки.",
+          "Работал над интерактивами с OpenCV и Photon, UI и интеграцией контента. Затем разрабатывал React-интерфейс для Unreal Pixel Streaming и образовательные порталы на Vue/Apollo/GraphQL."
+        ]
+      }
+    ]
+  ],
+  "education": "Донецкий национальный университет | Информатика и вычислительная техника. Бакалавр, 2020; магистр, 2023.",
+  "languages": "Русский - родной; английский - B1; украинский - B2."
+}

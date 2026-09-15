@@ -1,7 +1,6 @@
 import { cx, styles } from '@/shared/styles'
 import { useTranslation } from 'react-i18next'
-import { IconDownload } from '@tabler/icons-react'
-import { cvUrl } from '@/entities/project'
+import { ResumeDownload } from '@/features/resume-download'
 import { sectionIds, socialLinks } from './data/footer.data'
 
 export function Footer() {
@@ -52,10 +51,7 @@ export function Footer() {
           </nav>
         </div>
         <div className={cx(styles.siteFooterColumn, styles.siteFooterActions)}>
-          <a href={cvUrl} download>
-            {t('footer.cv')}
-            <IconDownload aria-hidden="true" size={16} stroke={1.5} />
-          </a>
+          <ResumeDownload label={t('footer.cv')} variant="text" />
           <a href="/privacy/">{t('footer.privacy')}</a>
           <a href="/terms/">{t('footer.terms')}</a>
         </div>

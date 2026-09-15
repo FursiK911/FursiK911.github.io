@@ -1,10 +1,9 @@
 import { cx, styles } from '@/shared/styles'
 import { useTranslation } from 'react-i18next'
 import { CopyButton } from '@mantine/core'
-import { IconBrandTelegram, IconDownload, IconMail } from '@tabler/icons-react'
-import { cvUrl } from '@/entities/project'
+import { IconBrandTelegram, IconMail } from '@tabler/icons-react'
+import { ResumeDownload } from '@/features/resume-download'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
-import { ActionLink } from '@/shared/ui/ActionLink'
 import { ContactPortrait } from '../ContactPortrait/ContactPortrait'
 import '../styles/Contact.module.css'
 import type { ContactProps } from './types/Contact.types'
@@ -41,10 +40,7 @@ export function Contact({ reducedMotion, entered = true }: ContactProps) {
               <IconBrandTelegram aria-hidden="true" size={16} stroke={1.5} />
             </a>
           </div>
-          <ActionLink variant="primary" href={cvUrl} download>
-            {t('contact.cv')}
-            <IconDownload aria-hidden="true" size={16} stroke={1.5} />
-          </ActionLink>
+          <ResumeDownload label={t('contact.cv')} />
         </div>
       </div>
     </section>

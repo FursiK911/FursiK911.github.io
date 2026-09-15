@@ -1,3 +1,4 @@
+import userEvent from '@testing-library/user-event'
 import { screen } from '@testing-library/react'
 import { Contact } from '../Contact'
 import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
@@ -27,8 +28,9 @@ it('renders contact actions', async () => {
     'aria-hidden',
     'true',
   )
-  const resumeLink = screen.getByRole('link', { name: 'СКАЧАТЬ РЕЗЮМЕ' })
+  const resumeLink = screen.getByRole('button', { name: 'СКАЧАТЬ РЕЗЮМЕ' })
   expect(resumeLink).toHaveClass('action-control', 'action-control--primary')
-  expect(resumeLink).toHaveAttribute('download')
+  await userEvent.click(resumeLink)
+  expect(screen.getByRole('dialog', { name: 'Выберите резюме' })).toBeVisible()
   expect(resumeLink.querySelector('svg')).toHaveAttribute('aria-hidden', 'true')
 })

@@ -1,3 +1,4 @@
+import userEvent from '@testing-library/user-event'
 import { screen } from '@testing-library/react'
 import { Footer } from '@/widgets/site-layout'
 import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
@@ -5,7 +6,7 @@ import { changeLanguage } from '@/shared/config/i18n'
 beforeEach(async () => {
   await changeLanguage('ru')
 })
-it('renders portfolio footer', () => {
+it('renders portfolio footer', async () => {
   renderWithProviders(<Footer />)
   expect(screen.getByText('DMITRY_FURSOV')).toBeVisible()
   expect(screen.getByRole('link', { name: /Telegram/ })).toHaveAttribute(
@@ -34,8 +35,10 @@ it('renders portfolio footer', () => {
   expect(
     screen.getByRole('link', { name: 'Условия использования' }),
   ).toHaveAttribute('href', '/terms/')
-  expect(screen.getByRole('link', { name: /СКАЧАТЬ РЕЗЮМЕ/ })).toHaveAttribute(
-    'download',
+  await userEvent.click(screen.getByRole('button', { name: /СКАЧАТЬ РЕЗЮМЕ/ }))
+  expect(screen.getByRole('dialog', { name: 'Выберите резюме' })).toBeVisible()
+  await userEvent.click(
+    screen.getByRole('button', { name: 'Закрыть выбор резюме' }),
   )
   expect(screen.getByRole('link', { name: /Образование/ })).toHaveAttribute(
     'href',

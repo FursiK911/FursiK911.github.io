@@ -1,0 +1,75 @@
+{
+  "language": "en",
+  "role": "Unity",
+  "name": "Dmitry Fursov",
+  "title": "Unity Developer",
+  "availability": "Remote",
+  "employment": "Open to full-time, part-time and contract work",
+  "summary": "Unity generalist working across gameplay, VR/AR, networking and UI. Building interactive products since 2019, with commercial experience in Unity/C# and frontend development. Delivered VR projects as the sole developer and contributed to a mobile RTS, industrial training simulators and AR applications.",
+  "skills": [
+    "Development: Unity, C#, OOP, ScriptableObject, Zenject, UniTask, DOTween, Git.",
+    "XR and platforms: Meta Quest 2/3S/3, OpenXR, XR Interaction Toolkit, SteamVR, Vuforia; Android, iOS, PC.",
+    "Networking and content: Mirror, Netcode for GameObjects, Photon, PlayFab, Firebase, Azure Functions, Addressables, AssetBundles."
+  ],
+  "pages": [
+    [
+      {
+        "company": "ME GROUP",
+        "role": "Middle VR Developer",
+        "dates": "Mar 2026 - Present",
+        "context": "Industrial VR training simulators | Unity, C#, Meta Quest",
+        "bullets": [
+          "Build training and assessment scenarios with step-by-step operations, action validation, guidance, error tracking and completion conditions.",
+          "Implement interactions with equipment and tools, animations, VFX and audio feedback for Quest 2, 3S and 3.",
+          "Extend existing code and mechanics using XR Interaction Toolkit, Zenject, UniTask, Addressables and Unity Localization."
+        ]
+      },
+      {
+        "company": "Yellow Element",
+        "role": "Middle Unity Developer",
+        "dates": "Sep 2025 - Mar 2026",
+        "context": "Mobile RTS, Android / iOS | Unity, C#, Mirror",
+        "bullets": [
+          "Developed client-server interactions for PvP using Mirror and a system to record and replay battles.",
+          "Optimized AI pathfinding for large battles, reducing computational iterations and CPU workload when moving groups of units.",
+          "Implemented tournament brackets, result updates and debugging tools; built server-side rewards, game events and push notifications with PlayFab, Firebase and Azure Functions."
+        ]
+      }
+    ],
+    [
+      {
+        "company": "CUP LLC",
+        "role": "Frontend Developer / VR Developer",
+        "dates": "Sep 2023 - Jul 2025",
+        "context": "Frontend until Oct 2024; Unity VR Oct 2024 - Feb 2025; then frontend",
+        "bullets": [
+          "Built MyChessVR as the sole developer: game modes, Stockfish-assisted learning, avatar IK and lipsync, three environments and additive scene loading.",
+          "Independently developed a drilling simulator VR demo with equipment interactions and cooperative sessions using Netcode for GameObjects, OpenXR and XR Interaction Toolkit.",
+          "During frontend assignments, developed MyChess with React/TypeScript, its Flutter mobile client and web interfaces. Real-time product experience complements multiplayer development."
+        ]
+      },
+      {
+        "company": "IT Tab",
+        "role": "Frontend Developer / VR Developer",
+        "dates": "Jan 2023 - Sep 2023",
+        "context": "React Jan 2023 - Apr 2023; Unigine VR Apr 2023 - Sep 2023",
+        "bullets": [
+          "Implemented the SARiDU VR training simulator functionality in Unigine: cooperative scenarios, instructor and assessment modes, results logging and session recording.",
+          "Developed custom UDP networking and VOIP; worked with SteamVR, HTC VIVE Pro and Astra Linux. Earlier assignments included React website and CMS interfaces."
+        ]
+      },
+      {
+        "company": "Yellow Element",
+        "role": "Intern / Junior Unity Developer; later Frontend Developer",
+        "dates": "Oct 2019 - Feb 2022",
+        "context": "Unity until Feb 2021; React / Vue Feb 2021 - Feb 2022",
+        "bullets": [
+          "Developed mobile AR applications with Unity/Vuforia; implemented AssetBundle delivery with hash checks, caching and download retries.",
+          "Worked on OpenCV and Photon interactives, UI and content integration. Later built React interfaces for Unreal Pixel Streaming and educational portals with Vue, Apollo and GraphQL."
+        ]
+      }
+    ]
+  ],
+  "education": "Donetsk National University | Computer Science and Engineering. Bachelor's degree, 2020; Master's degree, 2023.",
+  "languages": "Russian - native; English - B1; Ukrainian - B2."
+}

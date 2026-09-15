@@ -1,0 +1,83 @@
+{
+  "language": "ru",
+  "role": "Frontend",
+  "name": "Дмитрий Фурсов",
+  "title": "Frontend Developer | React, TypeScript, Next.js",
+  "availability": "Ростов-на-Дону | Офис, гибрид, удалённо",
+  "employment": "Полная, частичная занятость и проектная работа",
+  "summary": "Frontend-разработчик с коммерческим опытом React, TypeScript, Next.js и Vue. Разрабатывал realtime-интерфейсы шахматной платформы, интернет-магазин и CMS. Работаю с состоянием приложения, API, SSR и серверным BFF. Дополнительный опыт Unity/C# и VR помогает решать задачи интерактивности и сетевого взаимодействия.",
+  "skills": [
+    "Frontend: TypeScript, JavaScript, React, Next.js, Vue, HTML, CSS, адаптивная вёрстка; Mantine, Ant Design.",
+    "Данные и формы: Redux Toolkit, TanStack Query / React Query, REST API, Socket.IO, WebSocket, GraphQL, Apollo, React Hook Form, Zod.",
+    "Инструменты: Vite, Git, i18next, Docker, CI/CD; Next.js Route Handlers, SSR, iron-session. Дополнительно: C#, Unity, Flutter/Dart."
+  ],
+  "pages": [
+    [
+      {
+        "company": "ME GROUP",
+        "role": "Middle VR Developer",
+        "dates": "03.2026 - настоящее время",
+        "context": "Промышленные VR-тренажёры | Unity, C#",
+        "bullets": [
+          "Разрабатываю интерактивные сценарии обучения и экзамена, проверку действий и обратную связь; расширяю существующие механики для Meta Quest."
+        ]
+      },
+      {
+        "company": "Yellow Element",
+        "role": "Middle Unity Developer",
+        "dates": "09.2025 - 03.2026",
+        "context": "Мобильная RTS | Unity, C#, Firebase, PlayFab, Azure Functions",
+        "bullets": [
+          "Реализовал серверную логику уведомлений, игровых событий и турнирных наград; работал над PvP-взаимодействием, реплеями и турнирными интерфейсами."
+        ]
+      },
+      {
+        "company": "ООО ЦУП",
+        "role": "Frontend Developer / VR Developer",
+        "dates": "09.2023 - 07.2025",
+        "context": "Frontend до 10.2024 и с 02.2025; Unity VR 10.2024 - 02.2025",
+        "bullets": [
+          "Разрабатывал desktop/mobile UI MyChess на React/TypeScript: realtime-партии, matchmaking, турниры, сообщества, чаты и уведомления.",
+          "Интегрировал три уровня анализа Stockfish: кешированный, облачный и локальный через WebAssembly; реализовал интерфейсы одновременной игры и chessboxing.",
+          "Работал со state/data-слоем Redux Toolkit и React Query, Socket.IO и трансляциями MediaSoup/WebRTC. Масштаб продукта: 121 577 регистраций, 665 880 партий, 50+ турниров; крупнейший собрал 2 000+ участников."
+        ]
+      }
+    ],
+    [
+      {
+        "company": "ООО ЦУП - продолжение",
+        "role": "Frontend Developer | Cat-citten и CMS",
+        "dates": "02.2025 - 07.2025",
+        "context": "Next.js, TypeScript, React Hook Form, Zod, Mantine",
+        "bullets": [
+          "Разработал SSR-каталог Cat-citten, фильтрацию, карточки товаров, корзину, B2B/B2C-аккаунты и формы оформления заказа.",
+          "Реализовал Next.js BFF через Route Handlers, cookie-сессии и обновление токенов при интеграции с внешним API; динамические SEO-метаданные и sitemap.",
+          "Подготовил Docker и CI/CD-конфигурацию. Создавал CMS поставщика топлива: интерфейсы поставок, заправок и расчёта цен на React/Mantine/React Query.",
+          "В других фазах работы создал Flutter-клиент MyChess; в период VR-разработки самостоятельно реализовал MyChessVR и демо тренажёра бурильщика."
+        ]
+      },
+      {
+        "company": "IT Tab",
+        "role": "Frontend Developer / VR Developer",
+        "dates": "01.2023 - 09.2023",
+        "context": "Frontend 01.2023 - 04.2023; затем Unigine VR",
+        "bullets": [
+          "Разрабатывал React/Ant Design сайт транспортной компании и CMS каталога и заказов дверей с TypeScript, Redux и React Query.",
+          "Затем реализовал функциональность VR-тренажёра SARiDU на Unigine, включая совместные сценарии, режим инструктора, UDP и VOIP."
+        ]
+      },
+      {
+        "company": "Yellow Element",
+        "role": "Junior Frontend Developer; ранее Intern / Junior Unity Developer",
+        "dates": "10.2019 - 02.2022",
+        "context": "Frontend 02.2021 - 02.2022; ранее Unity / AR",
+        "bullets": [
+          "Создавал React-интерфейс для Unreal Pixel Streaming и образовательные порталы на Vue/Apollo/GraphQL: авторизация, обновление токенов, формы, пагинация и графики."
+        ]
+      }
+    ]
+  ],
+  "project": "Университетский проект: система планирования публикаций на PHP/Laravel. Реализовал CRUD, аутентификацию и роли доступа, SQL-запросы, миграции связанной БД и отчёты.",
+  "education": "Донецкий национальный университет | Информатика и вычислительная техника. Бакалавр, 2020; магистр, 2023.",
+  "languages": "Русский - родной; английский - B1; украинский - B2."
+}

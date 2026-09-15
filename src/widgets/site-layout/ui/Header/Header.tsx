@@ -1,11 +1,9 @@
 import { cx, styles } from '@/shared/styles'
 import { useEffect, useState } from 'react'
 import { Burger } from '@mantine/core'
-import { IconDownload } from '@tabler/icons-react'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'motion/react'
-import { cvUrl } from '@/entities/project'
-import { ActionLink } from '@/shared/ui/ActionLink'
+import { ResumeDownload } from '@/features/resume-download'
 import { TypingText } from '@/shared/ui/TypingText'
 import '../styles/SiteLayout.module.css'
 import { sectionIds } from './config/header.config'
@@ -72,15 +70,10 @@ export function Header({
           ))}
         </nav>
         <div className={cx(styles.headerActions)}>
-          <ActionLink
+          <ResumeDownload
             className={cx(styles.resumeLink)}
-            href={cvUrl}
-            download
-            variant="primary"
-          >
-            {t('header.resume')}
-            <IconDownload aria-hidden="true" size={16} stroke={1.5} />
-          </ActionLink>
+            label={t('header.resume')}
+          />
           <button
             className={cx(styles.langToggle)}
             type="button"

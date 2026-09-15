@@ -1,11 +1,12 @@
-import { screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
+import { act, screen } from '@testing-library/react'
 import { Header } from '@/widgets/site-layout'
 import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { changeLanguage } from '@/shared/config/i18n'
 beforeEach(() => {
   Object.defineProperty(window, 'scrollY', { configurable: true, value: 0 })
 })
-it('renders a localized downloadable resume link', async () => {
+it('opens the localized resume chooser from the header', async () => {
   await changeLanguage('ru')
   const { rerender } = renderWithProviders(
     <Header
@@ -15,19 +16,19 @@ it('renders a localized downloadable resume link', async () => {
       reducedMotion
     />,
   )
-  const resumeLink = screen.getByRole('link', { name: 'СКАЧАТЬ РЕЗЮМЕ' })
-  expect(resumeLink).toHaveAttribute(
-    'href',
-    '/cv/Dmitry-Fursov-Unity-Developer-CV.pdf',
+  const resumeLink = screen.getByRole('button', { name: 'СКАЧАТЬ РЕЗЮМЕ' })
+  await userEvent.click(resumeLink)
+  expect(screen.getByRole('dialog', { name: 'Выберите резюме' })).toBeVisible()
+  await userEvent.click(
+    screen.getByRole('button', { name: 'Закрыть выбор резюме' }),
   )
-  expect(resumeLink).toHaveAttribute('download')
   expect(resumeLink).toHaveClass(
     'action-control',
     'action-control--primary',
     'resume-link',
   )
   expect(resumeLink.querySelector('svg')).toHaveAttribute('aria-hidden', 'true')
-  await changeLanguage('en')
+  await act(() => changeLanguage('en'))
   rerender(
     <Header
       active="projects"
@@ -36,5 +37,7 @@ it('renders a localized downloadable resume link', async () => {
       reducedMotion
     />,
   )
-  expect(screen.getByRole('link', { name: 'DOWNLOAD CV' })).toBeInTheDocument()
+  expect(
+    screen.getByRole('button', { name: 'DOWNLOAD CV' }),
+  ).toBeInTheDocument()
 })
