@@ -14,25 +14,25 @@
   "pages": [
     [
       {
-        "company": "ME GROUP",
+        "company": "TOO ME GROUP",
         "role": "Middle VR Developer",
-        "dates": "Mar 2026 - Present",
-        "context": "Industrial VR training simulators | Unity, C#, Meta Quest",
+        "dates": "03.2026 - present",
+        "context": "Industrial VR training simulations | Unity, C#, Meta Quest",
         "bullets": [
-          "Build training and assessment scenarios with step-by-step operations, action validation, guidance, error tracking and completion conditions.",
-          "Implement interactions with equipment and tools, animations, VFX and audio feedback for Quest 2, 3S and 3.",
-          "Extend existing code and mechanics using XR Interaction Toolkit, Zenject, UniTask, Addressables and Unity Localization."
+          "Develop training and examination scenarios for Meta Quest 2 / 3S / 3, including step-by-step operations, action validation, hints, error logging and completion conditions.",
+          "Implemented training and examination modes with automatic sequence validation, error tracking and scenario restart; VR interactions reduced incorrect user actions by approximately 30%.",
+          "Moved recurring mechanics to ScriptableObject and reusable components, reducing duplicated code by approximately 25-30% and making new training operations about 1.5x faster to add."
         ]
       },
       {
         "company": "Yellow Element",
         "role": "Middle Unity Developer",
-        "dates": "Sep 2025 - Mar 2026",
-        "context": "Mobile RTS, Android / iOS | Unity, C#, Mirror",
+        "dates": "09.2025 - 03.2026",
+        "context": "Mobile RTS and multiplayer | Unity, C#, Mirror, PlayFab",
         "bullets": [
-          "Developed client-server interactions for PvP using Mirror and a system to record and replay battles.",
-          "Optimized AI pathfinding for large battles, reducing computational iterations and CPU workload when moving groups of units.",
-          "Implemented tournament brackets, result updates and debugging tools; built server-side rewards, game events and push notifications with PlayFab, Firebase and Azure Functions."
+          "Designed client-server PvP interaction on Mirror and implemented battle replay storage and playback with network latency around 80-120 ms.",
+          "Optimized pathfinding AI for large battles, reducing computational iterations by approximately 50-60% and CPU load by 30-40% during simultaneous unit movement.",
+          "Built tournaments, game events, rewards and push notifications with Firebase, PlayFab and Azure Functions; also delivered gameplay mechanics for a mobile RTS and Vulkan Verse."
         ]
       }
     ],
@@ -40,32 +40,33 @@
       {
         "company": "CUP LLC",
         "role": "Frontend Developer / VR Developer",
-        "dates": "Sep 2023 - Jul 2025",
-        "context": "Frontend until Oct 2024; Unity VR Oct 2024 - Feb 2025; then frontend",
+        "dates": "09.2023 - 07.2025",
+        "context": "MyChess, MyChessVR and drilling VR simulator | Unity, C#, Netcode",
         "bullets": [
-          "Built MyChessVR as the sole developer: game modes, Stockfish-assisted learning, avatar IK and lipsync, three environments and additive scene loading.",
-          "Independently developed a drilling simulator VR demo with equipment interactions and cooperative sessions using Netcode for GameObjects, OpenXR and XR Interaction Toolkit.",
-          "During frontend assignments, developed MyChess with React/TypeScript, its Flutter mobile client and web interfaces. Real-time product experience complements multiplayer development."
+          "Solely delivered MyChessVR: classic chess, puzzles, Stockfish training, IK interactions, avatar lipsync, three locations and additive scene loading.",
+          "Independently built a drilling VR simulator demo with industrial equipment interaction and cooperative sessions on Netcode for GameObjects, OpenXR and XR Interaction Toolkit, synchronizing actions with latency up to 100 ms.",
+          "During frontend phases, developed MyChess with React/TypeScript and a Flutter mobile client; realtime product experience complemented the networked gameplay work."
         ]
       },
       {
         "company": "IT Tab",
         "role": "Frontend Developer / VR Developer",
-        "dates": "Jan 2023 - Sep 2023",
-        "context": "React Jan 2023 - Apr 2023; Unigine VR Apr 2023 - Sep 2023",
+        "dates": "01.2023 - 09.2023",
+        "context": "React 01.2023 - 04.2023; Unigine VR 04.2023 - 09.2023",
         "bullets": [
-          "Implemented the SARiDU VR training simulator functionality in Unigine: cooperative scenarios, instructor and assessment modes, results logging and session recording.",
-          "Developed custom UDP networking and VOIP; worked with SteamVR, HTC VIVE Pro and Astra Linux. Earlier assignments included React website and CMS interfaces."
+          "Solely delivered the core functionality of an industrial VR simulator on Unigine/C#, including client-server architecture, multiplayer, examination logic, avatars and VOIP.",
+          "Implemented training and operator modes with real-time action monitoring; all training sessions stored results and completion history.",
+          "Synchronized equipment and user actions with latency below 80 ms, integrated custom VOIP and adapted the solution for HTC VIVE Pro, SteamVR and Astra Linux."
         ]
       },
       {
         "company": "Yellow Element",
-        "role": "Intern / Junior Unity Developer; later Frontend Developer",
-        "dates": "Oct 2019 - Feb 2022",
-        "context": "Unity until Feb 2021; React / Vue Feb 2021 - Feb 2022",
+        "role": "Intern / Junior Unity Developer",
+        "dates": "10.2019 - 02.2022",
+        "context": "Mobile AR applications | Unity, Vuforia, OpenCV, Photon",
         "bullets": [
-          "Developed mobile AR applications with Unity/Vuforia; implemented AssetBundle delivery with hash checks, caching and download retries.",
-          "Worked on OpenCV and Photon interactives, UI and content integration. Later built React interfaces for Unreal Pixel Streaming and educational portals with Vue, Apollo and GraphQL."
+          "Designed on-demand 3D content delivery through AssetBundles with caching and version control, reducing the client build size by approximately 4x.",
+          "Developed commercial AR applications for Android and iOS with Unity/Vuforia, interactive projection systems with Unity/OpenCV and networked interactions with Photon."
         ]
       }
     ]
