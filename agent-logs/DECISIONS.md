@@ -1,5 +1,7 @@
 # Global Decision Index
 
+| DEC-20260916-10 | Release the completed four-resume PDF package through `main` after successful production build, GitHub Pages deployment, public URL checks, and Quality workflow validation. | deployment, github-pages, resume, pdf, production | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-10) |
+
 | DEC-20260916-09 | Use the current two-page single-column ATS-safe PDF template and stable public filenames; tailor experience separately for Unity and Frontend, treat user-provided HH metrics as approved facts, preserve current non-experience sections, and leave the interactive website experience block unchanged. | resume, pdf, ats, unity, frontend, content, testing | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-09) |
 
 | DEC-20260916-07 | Verify the Tech Stack CSS fix on the deployed root page by checking the generated stylesheet, computed button styles, 43 rendered tags, and browser console after the GitHub Pages workflow completes. | deployment, release, github-pages, production, tech-stack, verification | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-07) |
