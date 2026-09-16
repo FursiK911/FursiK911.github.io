@@ -2,13 +2,11 @@
   position: relative;
   isolation: isolate;
   display: grid;
-  grid-template-areas:
-    'icon content metric'
-    'tools tools metric';
+  grid-template-areas: 'icon content metric';
   grid-template-columns: 64px minmax(0, 1fr) 108px;
-  align-items: start;
+  align-items: center;
   gap: 22px;
-  min-height: 184px;
+  min-height: 148px;
   padding: 38px 24px 24px;
   overflow: hidden;
   border: 1px solid #294351;
@@ -86,8 +84,7 @@
   place-items: center;
   width: 64px;
   aspect-ratio: 1;
-  align-self: start;
-  margin-top: 5px;
+  align-self: center;
   overflow: hidden;
   border: 1px solid #253b4b;
   border-radius: 15px;
@@ -135,41 +132,6 @@
   font-size: 0.73rem;
   line-height: 1.6;
 }
-.directionTools {
-  display: flex;
-  grid-area: tools;
-  flex-wrap: wrap;
-  gap: 6px;
-  list-style: none;
-  margin: 12px 0 0;
-  padding: 0;
-  z-index: 1;
-}
-.directionTool {
-  padding: 7px 10px;
-  border: 1px solid #233b4a;
-  border-radius: 14px;
-  background: linear-gradient(#111f2b, #0d1822);
-  color: #d9e5ed;
-  font-size: 0.72rem;
-  line-height: 1.2;
-  transition:
-    border-color 160ms ease,
-    box-shadow 160ms ease,
-    transform 160ms ease;
-}
-.directionCard[data-entrance='complete'] .directionTool {
-  animation: direction-tool-pulse 0.12s ease-out
-    var(--directions-tool-pulse-delay) both;
-}
-.directionCard[data-hovering='true'] .directionTool {
-  border-color: #477887;
-}
-.directionTool:hover {
-  border-color: #7ccbd5;
-  box-shadow: 0 4px 12px #55dbe021;
-  transform: translateY(-2px);
-}
 .directionMetric {
   grid-area: metric;
   align-self: stretch;
@@ -215,17 +177,6 @@
     rotate: 1turn;
   }
 }
-@keyframes direction-tool-pulse {
-  0%,
-  100% {
-    border-color: #233b4a;
-    box-shadow: none;
-  }
-  45% {
-    border-color: #8be8f1;
-    box-shadow: 0 0 14px #8be8f14d;
-  }
-}
 @keyframes direction-icon-scan {
   0% {
     opacity: 0;
@@ -261,9 +212,6 @@
   .directionIcon {
     width: 48px;
   }
-  .directionTool {
-    padding: 6px 9px;
-  }
   .directionMetric :global(.metric-counter) {
     padding-left: 12px;
   }
@@ -291,10 +239,6 @@
   }
   .directionDescription {
     font-size: 0.68rem;
-  }
-  .directionTool {
-    padding: 6px 8px;
-    font-size: 0.65rem;
   }
   .directionMetric :global(.metric-counter-value) {
     font-size: 2.2rem;

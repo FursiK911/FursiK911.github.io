@@ -1,8 +1,16 @@
 # September 2026
 
+| 2026-09-17 | ingame-job, profile, links, github-pages, resume, portfolio, verification | [InGame Job link correction](2026-09-17.md#ingame-job-link-correction) |
+
+| 2026-09-17 | ingame-job, profile, resume, unity, vr, xr, contacts, public, verification | [InGame Job profile update](2026-09-17.md#ingame-job-profile-update) |
+
+| 2026-09-16 | habr-career, profile, resume, unity, vr, contacts, experience, deletion, verification | [Habr Career profile update](2026-09-16.md#habr-career-profile-update) |
+
 | 2026-09-16 | deployment, github-pages, resume, pdf, production, quality | [Resume PDF release](2026-09-16.md#resume-pdf-release) |
 
 | 2026-09-16 | resume, pdf, ats, unity, frontend, content, testing, visual-qa | [Four ATS-friendly resume PDFs from current and HH content](2026-09-16.md#four-ats-friendly-resume-pdfs-from-current-and-hh-content) |
+
+| 2026-09-16 | ui, directions, responsive, animation, testing, graphify | [Compact Directions cards without technology tags](2026-09-16.md#compact-directions-cards-without-technology-tags) |
 
 | 2026-09-16 | deployment, release, github-pages, production, tech-stack, verification | [Tech Stack tag styles release](2026-09-16.md#tech-stack-tag-styles-release) |
 

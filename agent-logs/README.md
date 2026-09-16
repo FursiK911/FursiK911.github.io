@@ -1,5 +1,11 @@
 # AI Agent Change Log Index
 
+| 2026-09-17 | ingame-job, profile, links, github-pages, resume, portfolio, verification | [InGame Job link correction](2026/09/2026-09-17.md#ingame-job-link-correction) |
+
+| 2026-09-17 | ingame-job, profile, resume, unity, vr, xr, contacts, public, verification | [InGame Job profile update](2026/09/2026-09-17.md#ingame-job-profile-update) |
+
+| 2026-09-16 | habr-career, profile, resume, unity, vr, contacts, experience, deletion, verification | [Habr Career profile update](2026/09/2026-09-16.md#habr-career-profile-update) |
+
 | 2026-09-16 | quality, testing, coverage, vitest, branches, workflow | [Quality workflow coverage threshold](2026/09/2026-09-16.md#quality-workflow-coverage-threshold) |
 
 | 2026-09-16 | github-pages, deployment, github-actions, production, verification | [Public portfolio release verification](2026/09/2026-09-16.md#public-portfolio-release-verification) |

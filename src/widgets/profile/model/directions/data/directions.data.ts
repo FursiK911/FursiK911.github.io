@@ -14,7 +14,6 @@ export const directions: Direction[] = [
     titleKey: 'web',
     metric: 8,
     metricLabelKey: 'projects',
-    tools: ['React', 'Vue', 'TypeScript', 'Next.js', 'Nuxt.js', 'Mantine'],
   },
   {
     id: 'game-engines',
@@ -23,7 +22,6 @@ export const directions: Direction[] = [
     titleKey: 'gameEngines',
     metric: 15,
     metricLabelKey: 'projects',
-    tools: ['Unity', 'Unreal Engine', 'Godot'],
   },
   {
     id: 'mobile',
@@ -32,7 +30,6 @@ export const directions: Direction[] = [
     titleKey: 'mobile',
     metric: 5,
     metricLabelKey: 'projects',
-    tools: ['React Native', 'Flutter'],
   },
   {
     id: 'xr',
@@ -40,13 +37,6 @@ export const directions: Direction[] = [
     titleKey: 'xr',
     metric: 10,
     metricLabelKey: 'projects',
-    tools: [
-      'OpenXR',
-      'SteamVR',
-      'XR Interaction Toolkit',
-      'Meta XR SDK',
-      'Vuforia',
-    ],
     qualifierKey: 'xrQualifier',
   },
 ]

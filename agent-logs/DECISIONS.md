@@ -1,8 +1,16 @@
 # Global Decision Index
 
+| DEC-20260917-02 | Use `https://fursik911.github.io` as the canonical public portfolio domain and its `/cv/Dmitry-Fursov-Unity-Developer-EN.pdf` path for InGame Job links, based on the repository owner and successful browser verification. | ingame-job, profile, links, github-pages, resume, portfolio, verification | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-02) |
+
+| DEC-20260917-01 | Use the English InGame Job profile for international recruiter visibility; activate the profile, publish contacts, keep Unity and Frontend as desired positions, use `$1500` monthly salary and full-time remote preferences, preserve existing languages and avatar, and represent GitHub as a valid full URL while leaving phone and LinkedIn empty. | ingame-job, profile, resume, contacts, public, verification | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-01) |
+
+| DEC-20260916-11 | Use the Russian Unity resume as the Habr Career source of truth; preserve education and GitHub, merge contacts, consolidate experience into five aligned records, and represent the requested salary range as the Habr-compatible single value `135000` ₽. | habr-career, profile, resume, unity, vr, contacts, experience | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-11) |
+
 | DEC-20260916-10 | Release the completed four-resume PDF package through `main` after successful production build, GitHub Pages deployment, public URL checks, and Quality workflow validation. | deployment, github-pages, resume, pdf, production | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-10) |
 
 | DEC-20260916-09 | Use the current two-page single-column ATS-safe PDF template and stable public filenames; tailor experience separately for Unity and Frontend, treat user-provided HH metrics as approved facts, preserve current non-experience sections, and leave the interactive website experience block unchanged. | resume, pdf, ats, unity, frontend, content, testing | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-09) |
+
+| DEC-20260916-08 | Remove Directions technology tags and their data; use a compact single-row card grid with vertically centered left content while preserving responsive and reduced-motion behavior. | ui, directions, responsive, animation | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-08) |
 
 | DEC-20260916-07 | Verify the Tech Stack CSS fix on the deployed root page by checking the generated stylesheet, computed button styles, 43 rendered tags, and browser console after the GitHub Pages workflow completes. | deployment, release, github-pages, production, tech-stack, verification | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-07) |
 

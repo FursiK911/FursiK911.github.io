@@ -2,12 +2,9 @@ import { motion } from 'motion/react'
 import { cx, styles } from '@/shared/styles'
 import { MetricCounter } from '@/shared/ui/MetricCounter'
 import { useTranslation } from 'react-i18next'
-import type { CSSProperties } from 'react'
 import {
   DIRECTION_CARD_STAGGER_MS,
   DIRECTION_CONTENT_DELAY_MS,
-  DIRECTION_TOOL_PULSE_MS,
-  DIRECTION_TOOLS_DELAY_MS,
 } from '../../../../model/directions/config/directionsMotion.config'
 import localStyles from './styles/DirectionCard.module.css'
 import { useDirectionCardMotion } from './model/useDirectionCardMotion/useDirectionCardMotion'
@@ -110,31 +107,6 @@ export function DirectionCard({
           </span>
         )}
       </motion.div>
-      <motion.ul
-        className={cx(styles.directionTools, localStyles.directionTools)}
-        initial={reducedMotion ? false : { opacity: 0, y: 4 }}
-        animate={isStatic ? { opacity: 1, y: 0 } : { opacity: 0, y: 4 }}
-        transition={{
-          delay: reducedMotion
-            ? 0
-            : (cardDelay + DIRECTION_TOOLS_DELAY_MS) / 1000,
-          duration: 0.2,
-        }}
-      >
-        {direction.tools.map((tool, toolIndex) => (
-          <li
-            className={localStyles.directionTool}
-            key={tool}
-            style={
-              {
-                '--directions-tool-pulse-delay': `${cardDelay + DIRECTION_TOOLS_DELAY_MS + toolIndex * DIRECTION_TOOL_PULSE_MS}ms`,
-              } as CSSProperties
-            }
-          >
-            {tool}
-          </li>
-        ))}
-      </motion.ul>
       <motion.div
         className={localStyles.directionMetric}
         data-label-visible={isMetricLabelVisible}

@@ -7,5 +7,4 @@ export type Direction = {
   qualifierKey?: string
   metric: number
   metricLabelKey: string
-  tools: string[]
 }
