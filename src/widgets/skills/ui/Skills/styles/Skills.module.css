@@ -1,21 +1,21 @@
-:global(.skills-grid) {
+.skillsGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 32px 40px;
 }
 
-:global(.skill-group) h3 {
+.skillGroup h3 {
   color: var(--cyan);
   margin: 0 0 18px;
 }
 
-:global(.skill-list) {
+.skillList {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
 }
 
-:global(.skill-list) button {
+.skillList button {
   background: transparent;
   border: 1px solid var(--line);
   color: #b4c1c4;
@@ -23,15 +23,15 @@
   font: 0.67rem var(--mono);
 }
 
-:global(.skill-list) button:hover,
-:global(.skill-list) button:global(.skill-active) {
+.skillList button:hover,
+.skillList button.skillActive {
   border-color: var(--cyan);
   color: var(--cyan);
   background: rgba(167, 243, 246, 0.06);
 }
 
 @media (max-width: 700px) {
-  :global(.skills-grid) {
+  .skillsGrid {
     grid-template-columns: minmax(0, 1fr);
     gap: 28px;
   }

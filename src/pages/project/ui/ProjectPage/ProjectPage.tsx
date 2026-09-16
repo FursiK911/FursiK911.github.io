@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { IconArrowUpLeft } from '@tabler/icons-react'
 import { getProjectById } from '@/entities/project'
@@ -6,6 +5,7 @@ import type { ProjectMetric } from '@/entities/project'
 import { ActionLink } from '@/shared/ui/ActionLink'
 import { useScrollReveal } from '@/shared/lib/useScrollReveal'
 import { motion } from 'motion/react'
+import { usePageMetadata } from '@/shared/lib/usePageMetadata/usePageMetadata'
 import { Footer, Header, HudScrollIndicator } from '@/widgets/site-layout'
 import { partitionMetrics } from '../../model/utils/partitionMetrics'
 import { canReturnWithinSite } from '../../model/utils/canReturnWithinSite'
@@ -56,13 +56,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
       ? [{ id: 'stack', label: t('projectCase.stack') }]
       : []),
   ]
-  useEffect(() => {
-    document.title = title
-    document.documentElement.lang = i18n.language.startsWith('ru') ? 'ru' : 'en'
-    document
-      .querySelector<HTMLMetaElement>('meta[name="description"]')
-      ?.setAttribute('content', description)
-  }, [description, i18n.language, title])
+  usePageMetadata({ title, description, language: i18n.language })
   return (
     <div className={styles.projectPageShell}>
       <CaseAtmosphere />

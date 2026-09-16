@@ -71,7 +71,7 @@ it('renders the curated grouped technology stack and keeps its tags keyboard-acc
 
   await user.tab()
   expect(screen.getByRole('button', { name: 'React' })).toHaveFocus()
-  expect(screen.getByRole('button', { name: 'React' })).toHaveClass(
-    'skill-active',
+  expect(screen.getByRole('button', { name: 'React' }).className).toContain(
+    'skillActive',
   )
 })

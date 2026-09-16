@@ -1,4 +1,4 @@
-import { cx, styles } from '@/shared/styles'
+import { cx, styles as sharedStyles } from '@/shared/styles'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'motion/react'
@@ -8,7 +8,7 @@ import {
   useScrollReveal,
 } from '@/shared/lib/useScrollReveal'
 import { skillGroups } from './data/skill-groups.data'
-import './styles/Skills.module.css'
+import styles from './styles/Skills.module.css'
 
 export function Skills() {
   const { t } = useTranslation()
@@ -16,15 +16,15 @@ export function Skills() {
   const scrollReveal = useScrollReveal()
   return (
     <motion.section
-      className={cx(styles.sectionShell, styles.skillsSection)}
+      className={cx(sharedStyles.sectionShell, sharedStyles.skillsSection)}
       id="stack"
       {...scrollReveal}
     >
       <SectionHeading index="04" title={t('sections.stack')} />
-      <div className={cx(styles.skillsGrid)}>
+      <div className={styles.skillsGrid}>
         {skillGroups.map((group, index) => (
           <motion.div
-            className={cx(styles.skillGroup)}
+            className={styles.skillGroup}
             key={group.titleKey}
             {...scrollReveal}
             transition={{
@@ -33,13 +33,11 @@ export function Skills() {
             }}
           >
             <h3>{t(`skills.groups.${group.titleKey}`)}</h3>
-            <div className={cx(styles.skillList)}>
+            <div className={styles.skillList}>
               {group.skills.map((skill) => (
                 <button
                   type="button"
-                  className={
-                    active === skill ? cx(styles.skillActive) : undefined
-                  }
+                  className={active === skill ? styles.skillActive : undefined}
                   onMouseEnter={() => setActive(skill)}
                   onMouseLeave={() => setActive(null)}
                   onFocus={() => setActive(skill)}

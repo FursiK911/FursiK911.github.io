@@ -8,6 +8,8 @@ const requiredSelectors = [
   '.live-cam{',
   '.live-cam-video{',
   '.live-cam-telemetry{',
+  '.skillList{',
+  '.skillList button{',
 ]
 const indexHtml = await readFile(resolve('dist/index.html'), 'utf8')
 const stylesheetPaths = [...indexHtml.matchAll(/href="([^\"]+\.css)"/g)].map(

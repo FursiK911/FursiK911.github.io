@@ -15,9 +15,16 @@ import { Contact } from '@/widgets/contact'
 import { KonamiDebug } from '@/features/konami-debug'
 import { useTypingText } from '@/shared/lib/useTypingText/useTypingText'
 import { sectionIds } from '../../model/config/sectionIds.config'
+import { usePageMetadata } from '@/shared/lib/usePageMetadata/usePageMetadata'
 
 export default function App() {
   const { i18n, t } = useTranslation()
+  usePageMetadata({
+    title: 'Dmitry Fursov — Software Developer',
+    description:
+      'Software Developer across web, mobile, Unity, Unigine, XR/AR and realtime systems.',
+    language: i18n.language,
+  })
   const loader = useLoadingSequence(
     i18n.language.startsWith('ru')
       ? 'Найди лучшего разработчика для нашего проекта'

@@ -1,4 +1,4 @@
-import { screen } from '@testing-library/react'
+import { fireEvent, screen } from '@testing-library/react'
 import { LegalPageLayout } from '../LegalPageLayout'
 import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { changeLanguage } from '@/shared/config/i18n'
@@ -24,4 +24,6 @@ it('renders the shared legal shell and updates metadata', async () => {
     'content',
     'Test description',
   )
+  fireEvent.click(screen.getByRole('button', { name: /change language/i }))
+  expect(document.documentElement).toHaveAttribute('lang', 'en')
 })

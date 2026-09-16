@@ -1,5 +1,13 @@
 # Global Decision Index
 
+| DEC-20260916-06 | Keep homepage Tech Stack tags as referenced local CSS Module classes so Vite includes their base styles in production; assert the generated skill-list selectors in the production asset verifier. | bugfix, css, production, tech-stack, skills, testing | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-06) |
+
+| DEC-20260916-05 | Enforce 85% global coverage across statements, branches, functions, and lines while excluding only non-executable entry, barrel, and type-only files; keep executable UI, hooks, utilities, runtime configuration, and WebGL adapters in scope. | quality, testing, coverage, vitest, branches, workflow | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-05) |
+
+| DEC-20260916-04 | Use one origin-relative `/og-cover.webp` for OG and Twitter image metadata on every portfolio route through a shared `usePageMetadata` hook; retain the asset in `public/og-cover.webp` and remove project-specific duplicate covers. | og-image, twitter-card, seo, spa, metadata, portfolio | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-04) |
+
+| DEC-20260916-02 | Keep the Hirify profile as a saved draft until the user reviews the source-grounded content and separately confirms the final public-profile action; use Gmail, Telegram, phone, professional links, and the portfolio portrait as the approved public contact/profile data. | hirify, profile, recruiters, resume, contacts, verification | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-02) |
+
 | DEC-20260916-03 | Use the supplied PNG as the portfolio's Open Graph/Twitter preview, convert it to WebP at quality 85, preserve its native 1672×941 dimensions, and publish it through the existing `og:image` and `twitter:image` paths. | og-image, twitter-card, webp, portfolio, github-pages, verification | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-03) |
 
 | DEC-20260916-01 | Verify each public release through the matching GitHub Pages workflow and an HTTP check of the live document plus generated JavaScript and CSS assets. | github-pages, deployment, github-actions, production, verification | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-01) |

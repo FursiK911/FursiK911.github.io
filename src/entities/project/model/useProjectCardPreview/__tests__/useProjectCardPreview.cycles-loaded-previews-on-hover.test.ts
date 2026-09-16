@@ -29,6 +29,13 @@ it('cycles loaded previews only while hovered and restores the cover afterwards'
 
   rerender({ active: false, reducedMotion: false })
   expect(result.current.currentImage?.src).toBe('/first.png')
+  act(() => {
+    result.current.reportImageLoad(images[0].src)
+    result.current.reportImageLoad(images[0].src)
+    result.current.reportImageError(images[1].src)
+    result.current.reportImageError(images[1].src)
+  })
+  expect(result.current.currentImage?.src).toBe('/first.png')
   unmount()
   expect(vi.getTimerCount()).toBe(0)
 

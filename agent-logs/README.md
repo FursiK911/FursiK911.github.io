@@ -1,5 +1,7 @@
 # AI Agent Change Log Index
 
+| 2026-09-16 | quality, testing, coverage, vitest, branches, workflow | [Quality workflow coverage threshold](2026/09/2026-09-16.md#quality-workflow-coverage-threshold) |
+
 | 2026-09-16 | github-pages, deployment, github-actions, production, verification | [Public portfolio release verification](2026/09/2026-09-16.md#public-portfolio-release-verification) |
 
 | 2026-09-15 | readme, portfolio, github, github-pages, documentation, contacts, setup | [Public portfolio README](2026/09/2026-09-15.md#public-portfolio-readme) |

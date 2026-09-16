@@ -1,5 +1,13 @@
 # September 2026
 
+| 2026-09-16 | bugfix, css, production, tech-stack, skills, testing | [Production Tech Stack tag styles](2026-09-16.md#production-tech-stack-tag-styles) |
+
+| 2026-09-16 | quality, testing, coverage, vitest, branches, workflow | [Quality workflow coverage threshold](2026-09-16.md#quality-workflow-coverage-threshold) |
+
+| 2026-09-16 | og-image, twitter-card, seo, spa, metadata, portfolio | [Shared Open Graph cover for every route](2026-09-16.md#shared-open-graph-cover-for-every-route) |
+
+| 2026-09-16 | hirify, profile, recruiters, resume, contacts, projects, verification | [Hirify recruiter profile draft](2026-09-16.md#hirify-recruiter-profile-draft) |
+
 | 2026-09-16 | og-image, twitter-card, webp, portfolio, github-pages, verification | [Open Graph cover image update](2026-09-16.md#open-graph-cover-image-update) |
 
 | 2026-09-16 | github-pages, deployment, github-actions, production, verification | [Public portfolio release verification](2026-09-16.md#public-portfolio-release-verification) |

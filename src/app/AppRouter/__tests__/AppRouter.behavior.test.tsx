@@ -25,4 +25,14 @@ it('routes privacy and terms paths to legal pages', async () => {
   expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
     'УСЛОВИЯ ИСПОЛЬЗОВАНИЯ',
   )
+  window.history.pushState({}, '', '/unknown')
+  rerender(<AppRouter />)
+  expect(
+    screen.getByRole('textbox', { name: /ПОИСКОВОЙ ЗАПРОС/i }),
+  ).toBeInTheDocument()
+  window.history.pushState({}, '', '/')
+  rerender(<AppRouter />)
+  expect(
+    screen.getByRole('textbox', { name: /ПОИСКОВОЙ ЗАПРОС/i }),
+  ).toBeInTheDocument()
 })
