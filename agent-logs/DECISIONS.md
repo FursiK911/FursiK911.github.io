@@ -1,5 +1,7 @@
 # Global Decision Index
 
+| DEC-20260916-07 | Verify the Tech Stack CSS fix on the deployed root page by checking the generated stylesheet, computed button styles, 43 rendered tags, and browser console after the GitHub Pages workflow completes. | deployment, release, github-pages, production, tech-stack, verification | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-07) |
+
 | DEC-20260916-06 | Keep homepage Tech Stack tags as referenced local CSS Module classes so Vite includes their base styles in production; assert the generated skill-list selectors in the production asset verifier. | bugfix, css, production, tech-stack, skills, testing | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-06) |
 
 | DEC-20260916-05 | Enforce 85% global coverage across statements, branches, functions, and lines while excluding only non-executable entry, barrel, and type-only files; keep executable UI, hooks, utilities, runtime configuration, and WebGL adapters in scope. | quality, testing, coverage, vitest, branches, workflow | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-05) |

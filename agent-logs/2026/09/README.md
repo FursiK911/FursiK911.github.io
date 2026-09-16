@@ -1,5 +1,7 @@
 # September 2026
 
+| 2026-09-16 | deployment, release, github-pages, production, tech-stack, verification | [Tech Stack tag styles release](2026-09-16.md#tech-stack-tag-styles-release) |
+
 | 2026-09-16 | bugfix, css, production, tech-stack, skills, testing | [Production Tech Stack tag styles](2026-09-16.md#production-tech-stack-tag-styles) |
 
 | 2026-09-16 | quality, testing, coverage, vitest, branches, workflow | [Quality workflow coverage threshold](2026-09-16.md#quality-workflow-coverage-threshold) |
