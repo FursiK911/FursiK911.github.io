@@ -59,9 +59,6 @@ export function DirectionCard({
     >
       <span className={localStyles.directionPointerGlow} aria-hidden="true" />
       <span className={localStyles.directionBorderScan} aria-hidden="true" />
-      <span className={localStyles.directionNumber} aria-hidden="true">
-        {String(index + 1).padStart(2, '0')}
-      </span>
       <motion.div
         className={localStyles.directionIcon}
         aria-hidden="true"

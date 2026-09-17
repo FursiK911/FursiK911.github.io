@@ -5,9 +5,10 @@
   grid-template-areas: 'icon content metric';
   grid-template-columns: 64px minmax(0, 1fr) 108px;
   align-items: center;
+  align-content: center;
   gap: 22px;
-  min-height: 148px;
-  padding: 38px 24px 24px;
+  min-height: 88px;
+  padding: 12px 24px;
   overflow: hidden;
   border: 1px solid #294351;
   border-radius: 14px;
@@ -66,16 +67,7 @@
   opacity: 1;
 }
 .directionCard[data-scanning='true'] .directionBorderScan {
-  animation: direction-border-scan 1.2s linear;
-}
-.directionNumber {
-  position: absolute;
-  top: 16px;
-  left: 20px;
-  color: #7d9db3;
-  font: 0.65rem var(--mono);
-  letter-spacing: 0.15em;
-  z-index: 1;
+  animation: direction-border-scan-sweep 1.2s linear;
 }
 .directionIcon {
   position: relative;
@@ -114,9 +106,12 @@
 }
 .directionContent {
   grid-area: content;
+  align-self: stretch;
   min-width: 0;
   display: flex;
+  height: 100%;
   flex-direction: column;
+  justify-content: center;
   gap: 10px;
   z-index: 1;
 }
@@ -125,7 +120,7 @@
   color: #e9f1f5;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   line-height: 1.2;
-  letter-spacing: -0.04em;
+  letter-spacing: 0.04em;
 }
 .directionDescription {
   color: #91aabd;
@@ -135,15 +130,17 @@
 .directionMetric {
   grid-area: metric;
   align-self: stretch;
+  display: flex;
+  align-items: center;
   min-width: 0;
   z-index: 1;
 }
 .directionMetric :global(.metric-counter) {
   min-width: 0;
-  min-height: 86px;
+  min-height: 64px;
   height: 100%;
   align-items: center;
-  gap: 18px;
+  gap: 5px;
   border-left: 1px solid #304552;
   padding-left: 20px;
   text-align: center;
@@ -151,7 +148,7 @@
 .directionMetric :global(.metric-counter-value) {
   color: #8be8f1;
   font-size: clamp(2.5rem, 4vw, 3.5rem);
-  letter-spacing: -0.06em;
+  letter-spacing: 0;
 }
 .directionMetric :global(.metric-counter-label) {
   color: #91aabd;
@@ -163,7 +160,7 @@
 .directionMetric[data-label-visible='true'] :global(.metric-counter-label) {
   opacity: 1;
 }
-@keyframes direction-border-scan {
+@keyframes direction-border-scan-sweep {
   from {
     opacity: 0;
     rotate: 0deg;
@@ -225,7 +222,7 @@
   .directionCard {
     grid-template-columns: 40px minmax(0, 1fr) 70px;
     gap: 10px;
-    padding: 38px 12px 20px;
+    padding: 12px;
   }
   .directionIcon {
     width: 40px;

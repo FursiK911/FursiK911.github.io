@@ -1,5 +1,37 @@
 # September 2026
 
+| 2026-09-17 | ui, directions, typography, css, responsive | [Directions heading letter-spacing adjustment](2026-09-17.md#directions-heading-letter-spacing-adjustment) |
+
+| 2026-09-17 | ui, directions, typography, css, responsive | [Directions metric letter-spacing adjustment](2026-09-17.md#directions-metric-letter-spacing-adjustment) |
+
+| 2026-09-17 | ui, directions, alignment, css-modules, animation, responsive, testing | [Directions border animation export collision repair](2026-09-17.md#directions-border-animation-export-collision-repair) |
+
+| 2026-09-17 | github, profile, readme, layout, public, verification | [Published GitHub activity spacing refinement](2026-09-17.md#published-github-activity-spacing-refinement) |
+
+| 2026-09-17 | ui, directions, alignment, responsive, css, testing, graphify | [Directions grid-row centering correction](2026-09-17.md#directions-grid-row-centering-correction) |
+
+| 2026-09-17 | ui, directions, alignment, responsive, css, testing, graphify | [Directions content vertical centering correction](2026-09-17.md#directions-content-vertical-centering-correction) |
+
+| 2026-09-17 | ui, directions, alignment, responsive, css, testing | [Centered Directions card content](2026-09-17.md#centered-directions-card-content) |
+
+| 2026-09-17 | ui, directions, responsive, css, animation, testing | [Final Directions card compaction](2026-09-17.md#final-directions-card-compaction) |
+
+| 2026-09-17 | ui, directions, responsive, css, testing | [Ultra-compact Directions cards](2026-09-17.md#ultra-compact-directions-cards) |
+
+| 2026-09-17 | ui, directions, responsive, css, testing | [Extra compact Directions cards](2026-09-17.md#extra-compact-directions-cards) |
+
+| 2026-09-17 | github, profile, readme, tech-stack, activity, thumbnails, public, verification | [GitHub Profile README layout polish](2026-09-17.md#github-profile-readme-layout-polish) |
+
+| 2026-09-17 | ui, directions, responsive, css, testing | [Further compacted Directions cards](2026-09-17.md#further-compacted-directions-cards) |
+
+| 2026-09-17 | github, profile, readme, visual-showcase, portfolio, stats, public, verification | [Visual recruiter showcase README](2026-09-17.md#visual-recruiter-showcase-readme) |
+
+| 2026-09-17 | github, profile, readme, hidden-projects, mychessvr, public, verification | [Hidden project removal from profile README](2026-09-17.md#hidden-project-removal-from-profile-readme) |
+
+| 2026-09-17 | github, profile, readme, privacy, public, verification | [Location-neutral profile README](2026-09-17.md#location-neutral-profile-readme) |
+
+| 2026-09-17 | github, profile, recruiters, readme, unity, xr, frontend, contacts, public, verification | [Recruiter-focused GitHub profile](2026-09-17.md#recruiter-focused-github-profile) |
+
 | 2026-09-17 | ingame-job, profile, links, github-pages, resume, portfolio, verification | [InGame Job link correction](2026-09-17.md#ingame-job-link-correction) |
 
 | 2026-09-17 | ingame-job, profile, resume, unity, vr, xr, contacts, public, verification | [InGame Job profile update](2026-09-17.md#ingame-job-profile-update) |

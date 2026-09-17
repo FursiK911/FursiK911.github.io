@@ -1,5 +1,11 @@
 # AI Agent Change Log Index
 
+| 2026-09-17 | ui, directions, typography, css, responsive | [Directions heading letter-spacing adjustment](2026/09/2026-09-17.md#directions-heading-letter-spacing-adjustment) |
+
+| 2026-09-17 | ui, directions, typography, css, responsive | [Directions metric letter-spacing adjustment](2026/09/2026-09-17.md#directions-metric-letter-spacing-adjustment) |
+
+| 2026-09-17 | ui, directions, alignment, css-modules, animation, responsive, testing | [Directions border animation export collision repair](2026/09/2026-09-17.md#directions-border-animation-export-collision-repair) |
+
 | 2026-09-17 | ingame-job, profile, links, github-pages, resume, portfolio, verification | [InGame Job link correction](2026/09/2026-09-17.md#ingame-job-link-correction) |
 
 | 2026-09-17 | ingame-job, profile, resume, unity, vr, xr, contacts, public, verification | [InGame Job profile update](2026/09/2026-09-17.md#ingame-job-profile-update) |

@@ -1,4 +1,4 @@
-# Graph Report - C:\Work\fursik.github.io  (2026-09-16)
+# Graph Report - C:\Work\fursik.github.io  (2026-09-17)
 
 ## Corpus Check
 - cluster-only mode — file stats not available
@@ -9,7 +9,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0db76149`
+- Built from commit: `47e78d30`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -98,8 +98,8 @@
 - App.tsx
 - PrivacyPage.tsx
 - TermsPage.tsx
-- Centered Education detail metadata
 - Vertically centered Education metadata pairs
+- Centered Education detail metadata
 - Separated source responsibilities
 - Grouped role folders for source responsibilities
 - Project preview backlog
@@ -137,12 +137,11 @@
 - Chudoboxes AR product family content revision
 - Recruiter-focused Tech Stack
 - Tech Stack curation refinement
-- vite
+- globals
 - @eslint/js
 - eslint-plugin-jsx-a11y
 - eslint-plugin-react-hooks
 - eslint-plugin-react-refresh
-- globals
 - gsap
 - husky
 - i18next-browser-languagedetector
@@ -164,6 +163,7 @@
 - @types/three
 - typescript
 - typescript-eslint
+- vite
 - @vitejs/plugin-react
 - vitest
 - @vitest/coverage-v8
@@ -487,13 +487,13 @@ Nodes (4): missingSelectors, requiredSelectors, stylesheet, stylesheetPaths
 Cohesion: 0.50
 Nodes (4): AI Agent Change Log Index, Browse by decision, Browse by period, Latest entries
 
-### Community 84 - "Centered Education detail metadata"
-Cohesion: 0.67
-Nodes (3): 2026-09-02 20:36 +03:00, Centered Education detail metadata, Decision DEC-20260902-14
-
-### Community 85 - "Vertically centered Education metadata pairs"
+### Community 84 - "Vertically centered Education metadata pairs"
 Cohesion: 0.67
 Nodes (3): 2026-09-02 21:38 +03:00, Decision DEC-20260902-16, Vertically centered Education metadata pairs
+
+### Community 85 - "Centered Education detail metadata"
+Cohesion: 0.67
+Nodes (3): 2026-09-02 20:36 +03:00, Centered Education detail metadata, Decision DEC-20260902-14
 
 ### Community 86 - "Separated source responsibilities"
 Cohesion: 0.67

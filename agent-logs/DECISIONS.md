@@ -1,5 +1,37 @@
 # Global Decision Index
 
+| DEC-20260917-16 | Use `0.04em` letter spacing for DirectionCard headings and `0` for the numeric metric value. | ui, directions, typography, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-16) |
+
+| DEC-20260917-15 | Keep DirectionCard headings at `-0.04em` and use `0` letter spacing for the numeric metric value. | ui, directions, typography, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-15) |
+
+Directions border animation export collision repair (2026-09-17) preserves existing layout and motion decisions; give the border keyframes a distinct CSS Modules export name so the decorative overlay stays outside grid flow. See [daily log](2026/09/2026-09-17.md#directions-border-animation-export-collision-repair).
+
+| DEC-20260917-14 | Keep one explicit `<br />` between the full-width profile details card and the equal-width language cards in the public GitHub README to improve visual rhythm while retaining direct SVG rendering. | github, profile, readme, layout, public | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-14) |
+
+| DEC-20260917-13 | Center the DirectionCard grid row vertically with `align-content: center` while retaining responsive dimensions and item-level centering. | ui, directions, alignment, responsive, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-13) |
+
+| DEC-20260917-12 | Stretch the DirectionCard copy to the full inner row and center its contents explicitly, preserving compact dimensions and responsive behavior. | ui, directions, alignment, responsive, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-12) |
+
+| DEC-20260917-11 | Explicitly center the DirectionCard copy and metric blocks vertically within the compact responsive card grid. | ui, directions, alignment, responsive, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-11) |
+
+| DEC-20260917-10 | Remove DirectionCard decorative numbers; use a `5px` metric gap, symmetric `12px` vertical padding, `88px` minimum height, and `64px` metric minimum height across breakpoints. | ui, directions, responsive, css, animation | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-10) |
+
+| DEC-20260917-09 | Use `92px` card minimum height, compact vertical padding across breakpoints, and `56px` metric minimum height for Directions cards. | ui, directions, responsive, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-09) |
+
+| DEC-20260917-08 | Use `108px` card minimum height, compact vertical padding across breakpoints, and `64px` metric minimum height for Directions cards. | ui, directions, responsive, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-08) |
+
+| DEC-20260917-08 | Use a separately generated 16:9 AR thumbnail, 28 curated technologies from the portfolio's four skill groups, full-width 50/50 HTML tables, Most Commit Language instead of Stats, and equal-width GitHub activity cards while keeping the README limited to public projects and location-neutral copy. | github, profile, readme, tech-stack, activity, thumbnails, public, verification | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-08) |
+
+| DEC-20260917-07 | Use `126px` card minimum height, compact vertical padding across breakpoints, and `72px` metric minimum height for the Directions cards. | ui, directions, responsive, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-07) |
+
+| DEC-20260917-06 | Use a GitHub-safe visual showcase for the public recruiter README: clickable existing portfolio banner, three image-led public project cards with MyChessVR first, compact expertise and stack tables, and four no-token activity cards from `github-profile-summary-cards` plus `streak-stats`; exclude hidden project links and avoid unreliable stats endpoints that returned service errors during verification. | github, profile, readme, visual-showcase, portfolio, stats, public, verification | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-06) |
+
+| DEC-20260917-05 | Keep hidden portfolio projects out of the public recruiter-facing README; order the Selected work section with `MyChessVR` first, followed by the currently visible Neo4 and AR/Unity cases. | github, profile, readme, hidden-projects, mychessvr, public, verification | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-05) |
+
+| DEC-20260917-04 | Keep the public profile README location-neutral by removing the explicit country reference and retaining only `Open to international opportunities`; do not modify the separate GitHub profile Location field unless requested independently. | github, profile, readme, privacy, public, verification | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-04) |
+
+| DEC-20260917-03 | Use an English recruiter-facing GitHub profile with the headline `Unity / XR Developer & Frontend Engineer`, preserve the current cat avatar, publish high-level commercial case summaries through the special `FursiK911/FursiK911` README, expose the approved Portfolio, LinkedIn, email, and Telegram contacts, and pin only the two currently presentation-ready public repositories. | github, profile, recruiters, readme, unity, xr, frontend, contacts, public, verification | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-03) |
+
 | DEC-20260917-02 | Use `https://fursik911.github.io` as the canonical public portfolio domain and its `/cv/Dmitry-Fursov-Unity-Developer-EN.pdf` path for InGame Job links, based on the repository owner and successful browser verification. | ingame-job, profile, links, github-pages, resume, portfolio, verification | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-02) |
 
 | DEC-20260917-01 | Use the English InGame Job profile for international recruiter visibility; activate the profile, publish contacts, keep Unity and Frontend as desired positions, use `$1500` monthly salary and full-time remote preferences, preserve existing languages and avatar, and represent GitHub as a valid full URL while leaving phone and LinkedIn empty. | ingame-job, profile, resume, contacts, public, verification | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-01) |
