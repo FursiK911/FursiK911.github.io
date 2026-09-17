@@ -1,5 +1,7 @@
 # Global Decision Index
 
+| DEC-20260917-17 | Release the validated Directions card typography refinements to `main` and verify the resulting GitHub Pages CSS and root response. | deployment, github-pages, directions, typography, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-17) |
+
 | DEC-20260917-16 | Use `0.04em` letter spacing for DirectionCard headings and `0` for the numeric metric value. | ui, directions, typography, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-16) |
 
 | DEC-20260917-15 | Keep DirectionCard headings at `-0.04em` and use `0` letter spacing for the numeric metric value. | ui, directions, typography, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-15) |

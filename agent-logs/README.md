@@ -1,5 +1,7 @@
 # AI Agent Change Log Index
 
+| 2026-09-17 | deployment, github-pages, directions, typography, css, verification | [Directions typography release](2026/09/2026-09-17.md#directions-typography-release) |
+
 | 2026-09-17 | ui, directions, typography, css, responsive | [Directions heading letter-spacing adjustment](2026/09/2026-09-17.md#directions-heading-letter-spacing-adjustment) |
 
 | 2026-09-17 | ui, directions, typography, css, responsive | [Directions metric letter-spacing adjustment](2026/09/2026-09-17.md#directions-metric-letter-spacing-adjustment) |
