@@ -6,7 +6,7 @@ import {
   HUD_SEGMENT_COUNT,
 } from './config/HudScrollIndicator.config'
 import { useHudScroll } from './model/useHudScroll/useHudScroll'
-import './styles/HudScrollIndicator.module.css'
+import styles from './styles/HudScrollIndicator.module.css'
 import type { HudScrollIndicatorProps } from './types/HudScrollIndicator.types'
 import { getPointerProgress } from './utils/getPointerProgress'
 
@@ -60,7 +60,7 @@ export function HudScrollIndicator({
 
   return (
     <motion.aside
-      className="hud-scroll-indicator"
+      className={styles.hudScrollIndicator}
       ref={rootRef}
       initial={animateEntrance ? { marginRight: -28, opacity: 0 } : false}
       animate={{ marginRight: 0, opacity: 1 }}
@@ -69,10 +69,10 @@ export function HudScrollIndicator({
       data-disabled={disabled}
       data-hidden={!isScrollable}
     >
-      <span className="hud-scroll-indicator__label">SYS_SCROLL</span>
+      <span className={styles.hudScrollIndicatorLabel}>SYS_SCROLL</span>
       <button
         ref={controlRef}
-        className="hud-scroll-indicator__control"
+        className={styles.hudScrollIndicatorControl}
         type="button"
         role="scrollbar"
         aria-controls="page-content"
@@ -149,22 +149,22 @@ export function HudScrollIndicator({
           event.preventDefault()
         }}
       >
-        <span className="hud-scroll-indicator__segments" aria-hidden="true">
+        <span className={styles.hudScrollIndicatorSegments} aria-hidden="true">
           {Array.from({ length: HUD_SEGMENT_COUNT }, (_, index) => (
             <span
               key={index}
-              className="hud-scroll-indicator__segment"
+              className={styles.hudScrollIndicatorSegment}
               ref={(node) => {
                 segmentsRef.current[index] = node
               }}
             />
           ))}
         </span>
-        <span className="hud-scroll-indicator__percentage">
+        <span className={styles.hudScrollIndicatorPercentage}>
           {String(percentage).padStart(3, '0')}%
         </span>
       </button>
-      <span className="hud-scroll-indicator__section" key={sectionLabel}>
+      <span className={styles.hudScrollIndicatorSection} key={sectionLabel}>
         {sectionLabel}
       </span>
     </motion.aside>

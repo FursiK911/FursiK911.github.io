@@ -11,9 +11,7 @@ export function PowerSource() {
       <span className={styles.icon} aria-hidden="true">
         ⚡
       </span>
-      <span className={styles.label}>
-        {t('projectCircuitGame.powerSource')}
-      </span>
+      <span>{t('projectCircuitGame.powerSource')}</span>
     </div>
   )
 }

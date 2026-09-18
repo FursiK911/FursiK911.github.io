@@ -1,5 +1,13 @@
 # Global Decision Index
 
+| DEC-20260918-07 | Keep `[local]` CSS Module names for compatibility, require bound/used local exports, allow `:global(...)` only under a local anchor, verify emitted selectors against reachable production JavaScript, and gate Pages artifact upload on `npm run verify:production`. | css-modules, vite, github-pages, production, validation, testing | [2026-09-18](2026/09/2026-09-18.md#decision-dec-20260918-07) |
+
+| DEC-20260918-06 | Use the localized Unity Developer PDF as the direct target for every resume CTA and remove the chooser modal from the download flow. | resume, download, unity, modal, i18n | [2026-09-18](2026/09/2026-09-18.md#decision-dec-20260918-06) |
+
+| DEC-20260918-05 | Keep the HUD scroll indicator desktop-only from `901px`, consume all indicator selectors through the CSS Module API, preserve the existing DOM hook names for diagnostics/tests, and require the root HUD selector in production asset verification. | ui, hud, scroll, css-modules, production, responsive, testing | [2026-09-18](2026/09/2026-09-18.md#decision-dec-20260918-05) |
+
+| DEC-20260918-04 | Use uniquely prefixed CSS hooks for the resume chooser modal because the repository's `[local]` CSS Modules naming makes generic selectors global and allows unrelated modal styles to collide. | resume, modal, mobile, css-modules, responsive | [2026-09-18](2026/09/2026-09-18.md#decision-dec-20260918-04) |
+
 | DEC-20260918-03 | Keep runtime images and videos in `src/shared/assets/` with Vite URLs while retaining stable public CV, SEO, PWA, icon, and GitHub Pages files; remove only legacy raster variants that have WebP counterparts. | assets, vite, public, projects, videos | [2026-09-18](2026/09/2026-09-18.md#decision-dec20260918-03) |
 
 | DEC-20260918-02 | Record only material changes and decisions that directly affect the resume website project or its public release; for mixed tasks, record only the project-affecting part, and omit project logs for external-only results that do not change the site. | agents, governance, logs, decisions, portfolio | [2026-09-18](2026/09/2026-09-18.md#decision-dec-20260918-02) |

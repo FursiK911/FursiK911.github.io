@@ -10,7 +10,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "verify:css-modules": "node tools/verify-css-modules.mjs",
     "verify:production-assets": "node tools/verify-production-assets.mjs",
+    "verify:production": "npm run build && npm run verify:css-modules && npm run verify:production-assets",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier . --write",
@@ -19,7 +21,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "validate": "npm run format:check && npm run lint && npm run typecheck && npm run test:coverage && npm run build && npm run verify:production-assets",
+    "validate": "npm run format:check && npm run lint && npm run typecheck && npm run test:coverage && npm run verify:production",
     "preview": "vite preview",
     "prepare": "husky"
   },

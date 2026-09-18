@@ -18,3 +18,7 @@ export const resumeDocuments: ResumeDocument[] = [
     },
   },
 ]
+
+export const defaultResumeDocument = resumeDocuments.find(
+  (document) => document.id === 'unity',
+)!

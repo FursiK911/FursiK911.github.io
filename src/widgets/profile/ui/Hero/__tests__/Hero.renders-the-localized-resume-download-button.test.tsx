@@ -1,4 +1,3 @@
-import userEvent from '@testing-library/user-event'
 import { screen } from '@testing-library/react'
 import { Hero } from '@/widgets/profile'
 import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
@@ -6,8 +5,8 @@ import { changeLanguage } from '@/shared/config/i18n'
 it('renders the localized hero actions with swapped variants and icons', async () => {
   await changeLanguage('ru')
   renderWithProviders(<Hero typedRole="Unity Developer" reducedMotion />)
-  const actions = screen.getByRole('button', {
-    name: 'СКАЧАТЬ РЕЗЮМЕ',
+  const actions = screen.getByRole('link', {
+    name: 'Скачать Unity Developer в PDF',
   }).parentElement
   const links = Array.from(actions?.querySelectorAll('a, button') ?? [])
 
@@ -20,8 +19,14 @@ it('renders the localized hero actions with swapped variants and icons', async (
   expect(links[1]).toHaveClass('action-control', 'action-control--secondary')
   expect(links[2]).toHaveClass('action-control', 'action-control--text')
 
-  const resumeLink = screen.getByRole('button', { name: 'СКАЧАТЬ РЕЗЮМЕ' })
-  expect(resumeLink).toHaveAttribute('aria-haspopup', 'dialog')
+  const resumeLink = screen.getByRole('link', {
+    name: 'Скачать Unity Developer в PDF',
+  })
+  expect(resumeLink).toHaveAttribute(
+    'href',
+    '/cv/Dmitry-Fursov-Unity-Developer-RU.pdf',
+  )
+  expect(resumeLink).toHaveAttribute('download')
   expect(resumeLink.querySelector('svg')).toHaveAttribute('aria-hidden', 'true')
   const projectsIcon = screen
     .getByRole('link', { name: 'СМОТРЕТЬ ПРОЕКТЫ' })
@@ -33,6 +38,4 @@ it('renders the localized hero actions with swapped variants and icons', async (
   expect(projectsIcon).toHaveAttribute('aria-hidden', 'true')
   expect(contactIcon).toHaveClass('tabler-icon-message-circle')
   expect(contactIcon).toHaveAttribute('aria-hidden', 'true')
-  await userEvent.click(resumeLink)
-  expect(screen.getByRole('dialog', { name: 'Выберите резюме' })).toBeVisible()
 })

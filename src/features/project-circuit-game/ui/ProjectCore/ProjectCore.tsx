@@ -12,9 +12,7 @@ export function ProjectCore({ powered }: ProjectCoreProps) {
       <span className={styles.diamond} aria-hidden="true">
         ◇
       </span>
-      <span className={styles.label}>
-        {t('projectCircuitGame.projectCore')}
-      </span>
+      <span>{t('projectCircuitGame.projectCore')}</span>
     </div>
   )
 }

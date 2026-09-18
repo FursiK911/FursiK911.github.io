@@ -1,5 +1,13 @@
 # September 2026
 
+| 2026-09-18 | css-modules, vite, github-pages, production, validation, testing | [CSS Module production contract](2026-09-18.md#css-module-production-contract) |
+
+| 2026-09-18 | resume, download, unity, modal, i18n, testing | [Direct Unity resume download](2026-09-18.md#direct-unity-resume-download) |
+
+| 2026-09-18 | bugfix, hud, css-modules, production, testing | [HUD scroll indicator production CSS repair](2026-09-18.md#hud-scroll-indicator-production-css-repair) |
+
+| 2026-09-18 | bugfix, responsive, css-modules, modal, testing | [Resume chooser mobile header collision fix](2026-09-18.md#resume-chooser-mobile-header-collision-fix) |
+
 | 2026-09-18 | refactor, assets, vite, public, projects, videos, testing, validation | [Move runtime assets into shared assets](2026-09-18.md#move-runtime-assets-into-shared-assets) |
 
 | 2026-09-18 | governance, logs, cleanup, portfolio | [Clean external-only agent log entries](2026-09-18.md#clean-external-only-agent-log-entries) |

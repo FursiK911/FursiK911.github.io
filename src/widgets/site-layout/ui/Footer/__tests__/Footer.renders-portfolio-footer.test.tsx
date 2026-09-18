@@ -1,4 +1,3 @@
-import userEvent from '@testing-library/user-event'
 import { screen } from '@testing-library/react'
 import { Footer } from '@/widgets/site-layout'
 import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
@@ -35,11 +34,14 @@ it('renders portfolio footer', async () => {
   expect(
     screen.getByRole('link', { name: 'Условия использования' }),
   ).toHaveAttribute('href', '/terms/')
-  await userEvent.click(screen.getByRole('button', { name: /СКАЧАТЬ РЕЗЮМЕ/ }))
-  expect(screen.getByRole('dialog', { name: 'Выберите резюме' })).toBeVisible()
-  await userEvent.click(
-    screen.getByRole('button', { name: 'Закрыть выбор резюме' }),
+  const resumeLink = screen.getByRole('link', {
+    name: 'Скачать Unity Developer в PDF',
+  })
+  expect(resumeLink).toHaveAttribute(
+    'href',
+    '/cv/Dmitry-Fursov-Unity-Developer-RU.pdf',
   )
+  expect(resumeLink).toHaveAttribute('download')
   expect(screen.getByRole('link', { name: /Образование/ })).toHaveAttribute(
     'href',
     '#education',

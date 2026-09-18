@@ -3,6 +3,7 @@ import { vi } from 'vitest'
 import { HudScrollIndicator } from './HudScrollIndicator'
 import { changeLanguage } from '@/shared/config/i18n'
 import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
+import styles from './styles/HudScrollIndicator.module.css'
 
 it('smoothly updates the wave and uses instant pointer and keyboard scrolling', async () => {
   await changeLanguage('ru')
@@ -58,7 +59,9 @@ it('smoothly updates the wave and uses instant pointer and keyboard scrolling', 
   fireEvent.click(control, { clientY: 105 })
   fireEvent.keyDown(control, { key: 'End' })
 
-  const segments = container.querySelectorAll('.hud-scroll-indicator__segment')
+  const segments = container.querySelectorAll(
+    `.${styles.hudScrollIndicatorSegment}`,
+  )
   expect(segments[0]).toHaveStyle('--hud-segment-scale: 1')
   expect(segments[1]).toHaveStyle('--hud-segment-scale: 0.8333333333333334')
   expect(screen.getByText('000%')).toBeVisible()

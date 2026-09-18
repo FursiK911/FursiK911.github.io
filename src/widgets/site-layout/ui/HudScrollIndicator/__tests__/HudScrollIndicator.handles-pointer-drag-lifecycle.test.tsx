@@ -2,6 +2,7 @@ import { fireEvent, screen } from '@testing-library/react'
 import { vi } from 'vitest'
 import { changeLanguage } from '@/shared/config/i18n'
 import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
+import styles from '../styles/HudScrollIndicator.module.css'
 import { HudScrollIndicator } from '../HudScrollIndicator'
 
 it('updates progress while dragging and releases pointer capture on completion and cancellation', async () => {
@@ -43,8 +44,7 @@ it('updates progress while dragging and releases pointer capture on completion a
 
   expect(control.setPointerCapture).toHaveBeenCalled()
   expect(control.releasePointerCapture).toHaveBeenCalled()
-  expect(container.querySelector('.hud-scroll-indicator')).toHaveAttribute(
-    'data-disabled',
-    'false',
-  )
+  expect(
+    container.querySelector(`.${styles.hudScrollIndicator}`),
+  ).toHaveAttribute('data-disabled', 'false')
 })

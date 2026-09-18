@@ -1,4 +1,4 @@
-:global(.hud-scroll-indicator) {
+.hudScrollIndicator {
   position: fixed;
   z-index: 19;
   top: 50%;
@@ -10,8 +10,8 @@
   pointer-events: none;
 }
 
-:global(.hud-scroll-indicator__label),
-:global(.hud-scroll-indicator__section) {
+.hudScrollIndicatorLabel,
+.hudScrollIndicatorSection {
   display: block;
   overflow-wrap: anywhere;
   font-size: 0.55rem;
@@ -20,12 +20,12 @@
   text-transform: uppercase;
 }
 
-:global(.hud-scroll-indicator__label) {
+.hudScrollIndicatorLabel {
   margin-bottom: 10px;
   color: var(--muted);
 }
 
-:global(.hud-scroll-indicator__control) {
+.hudScrollIndicatorControl {
   position: relative;
   display: grid;
   width: 100%;
@@ -39,8 +39,8 @@
   touch-action: none;
 }
 
-:global(.hud-scroll-indicator__control)::before,
-:global(.hud-scroll-indicator__control)::after {
+.hudScrollIndicatorControl::before,
+.hudScrollIndicatorControl::after {
   position: absolute;
   left: -17px;
   width: 12px;
@@ -49,17 +49,17 @@
   border-left: 1px solid currentColor;
 }
 
-:global(.hud-scroll-indicator__control)::before {
+.hudScrollIndicatorControl::before {
   top: 0;
   border-top: 1px solid currentColor;
 }
 
-:global(.hud-scroll-indicator__control)::after {
+.hudScrollIndicatorControl::after {
   bottom: 0;
   border-bottom: 1px solid currentColor;
 }
 
-:global(.hud-scroll-indicator__segments) {
+.hudScrollIndicatorSegments {
   position: relative;
   display: grid;
   grid-template-rows: repeat(30, 1fr);
@@ -67,7 +67,7 @@
   justify-items: start;
 }
 
-:global(.hud-scroll-indicator__segment) {
+.hudScrollIndicatorSegment {
   position: relative;
   width: 18px;
   height: 2px;
@@ -78,7 +78,7 @@
   will-change: opacity, transform;
 }
 
-:global(.hud-scroll-indicator__segment)::after {
+.hudScrollIndicatorSegment::after {
   position: absolute;
   inset: 0;
   content: '';
@@ -88,7 +88,7 @@
   pointer-events: none;
 }
 
-:global(.hud-scroll-indicator__percentage) {
+.hudScrollIndicatorPercentage {
   position: absolute;
   top: var(--hud-progress-offset);
   left: 24px;
@@ -99,28 +99,27 @@
   letter-spacing: 0.08em;
 }
 
-:global(.hud-scroll-indicator__section) {
+.hudScrollIndicatorSection {
   min-height: 1.5em;
   margin-top: 10px;
   color: var(--text);
   animation: hud-section-change 120ms ease-out;
 }
 
-:global(.hud-scroll-indicator__control):focus-visible {
+.hudScrollIndicatorControl:focus-visible {
   outline: 1px solid var(--cyan);
   outline-offset: 5px;
 }
 
-:global(.hud-scroll-indicator)[data-disabled='true'] {
+.hudScrollIndicator[data-disabled='true'] {
   opacity: 0.35;
 }
 
-:global(.hud-scroll-indicator)[data-hidden='true'] {
+.hudScrollIndicator[data-hidden='true'] {
   display: none;
 }
 
-:global(.hud-scroll-indicator)[data-disabled='true']
-  :global(.hud-scroll-indicator__control) {
+.hudScrollIndicator[data-disabled='true'] .hudScrollIndicatorControl {
   cursor: default;
   pointer-events: none;
 }
@@ -133,13 +132,13 @@
 }
 
 @media (max-width: 900px) {
-  :global(.hud-scroll-indicator) {
+  .hudScrollIndicator {
     display: none;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  :global(.hud-scroll-indicator__section) {
+  .hudScrollIndicatorSection {
     animation: none;
   }
 }

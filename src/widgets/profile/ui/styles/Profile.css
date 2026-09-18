@@ -11,6 +11,10 @@
   padding-inline: 0;
 }
 
+.directions-section {
+  padding: 42px 0 16px;
+}
+
 .hero-copy {
   display: flex;
   flex-direction: column;
