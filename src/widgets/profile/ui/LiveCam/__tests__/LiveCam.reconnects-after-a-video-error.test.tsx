@@ -2,6 +2,7 @@ import { act, fireEvent } from '@testing-library/react'
 import { afterEach, expect, it, vi } from 'vitest'
 import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
 import { LiveCam } from '../LiveCam'
+import { liveCamConfig } from '../config/liveCam.config'
 import { installIntersectionObserverMock } from './liveCamTestUtils'
 
 afterEach(() => {
@@ -31,6 +32,6 @@ it('reconnects after a video error', () => {
   expect(camera).toHaveAttribute('data-live-cam-status', 'connecting')
   expect(container.querySelector('video')).toHaveAttribute(
     'src',
-    '/videos/live_cam_loop.webm',
+    liveCamConfig.source,
   )
 })

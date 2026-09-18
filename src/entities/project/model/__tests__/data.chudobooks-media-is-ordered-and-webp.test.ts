@@ -1,4 +1,4 @@
-import { projects } from '@/entities/project'
+import { projectMedia, projects } from '@/entities/project'
 
 it('keeps Chudobooks video-first media and local WebP assets', () => {
   expect(
@@ -10,12 +10,12 @@ it('keeps Chudobooks video-first media and local WebP assets', () => {
     },
     {
       kind: 'image',
-      src: '/images/projects/ar-chudobook/screen_1.webp',
+      src: projectMedia.arChudobook.screens[0],
       altKey: 'chudobooksMediaScreen1',
     },
     {
       kind: 'image',
-      src: '/images/projects/ar-chudobook/screen_2.webp',
+      src: projectMedia.arChudobook.screens[1],
       altKey: 'chudobooksMediaScreen2',
     },
   ])
@@ -24,12 +24,12 @@ it('keeps Chudobooks video-first media and local WebP assets', () => {
   ).toEqual([
     {
       kind: 'image',
-      src: '/images/projects/ar-chudobook/screen_1.webp',
+      src: projectMedia.arChudobook.screens[0],
       altKey: 'chudobooksMediaScreen1',
     },
     {
       kind: 'image',
-      src: '/images/projects/ar-chudobook/screen_2.webp',
+      src: projectMedia.arChudobook.screens[1],
       altKey: 'chudobooksMediaScreen2',
     },
   ])

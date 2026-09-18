@@ -157,8 +157,6 @@ def main():
     # Publish only after all four pass the build checks.
     for target in targets:
         shutil.copyfile(target, PUBLIC / target.name)
-    shutil.copyfile(PUBLIC / "Dmitry-Fursov-Unity-Developer-RU.pdf",
-                    PUBLIC / "Dmitry-Fursov-Unity-Developer-CV.pdf")
 
 
 if __name__ == "__main__":

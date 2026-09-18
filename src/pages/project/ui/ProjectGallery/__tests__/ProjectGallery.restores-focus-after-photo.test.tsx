@@ -2,7 +2,7 @@ import { screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { changeLanguage } from '@/shared/config/i18n'
 import { renderWithProviders } from '@/shared/test/utils/renderWithProviders'
-import { projects } from '@/entities/project'
+import { projectMedia, projects } from '@/entities/project'
 import type { Project } from '@/entities/project'
 import { ProjectGallery } from '../ProjectGallery'
 
@@ -14,7 +14,7 @@ it('opens a photo in a focused dialog and returns focus after Escape', async () 
     media: [
       {
         kind: 'image',
-        src: '/images/projects/my-chess-web/logo.webp',
+        src: projectMedia.myChessWeb.logo,
         altKey: 'mychessWebMediaLogo',
       },
     ],

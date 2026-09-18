@@ -1,6 +1,7 @@
 export { ProjectCard } from './ui/ProjectCard/ProjectCard'
 export type { ProjectCardProps } from './ui/ProjectCard/types/ProjectCard.types'
 export { projects } from './model/data/projects.data'
+export { projectMedia } from './model/data/project-media.data'
 export { getProjectById } from './model/utils/getProjectById'
 export { orderProjectMedia } from './model/utils/orderProjectMedia'
 export type {

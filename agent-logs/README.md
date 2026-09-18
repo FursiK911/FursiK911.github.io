@@ -1,5 +1,13 @@
 # AI Agent Change Log Index
 
+| 2026-09-18 | refactor, assets, vite, public, projects, videos, testing, validation | [Move runtime assets into shared assets](2026/09/2026-09-18.md#move-runtime-assets-into-shared-assets) |
+
+| 2026-09-18 | governance, logs, cleanup, portfolio | [Clean external-only agent log entries](2026/09/2026-09-18.md#clean-external-only-agent-log-entries) |
+
+| 2026-09-18 | agents, governance, logs, decisions, portfolio | [Clarify project change-log scope](2026/09/2026-09-18.md#clarify-project-change-log-scope) |
+
+| 2026-09-18 | resume, pdf, cleanup, assets, unity, verification | [Remove redundant Unity CV alias](2026/09/2026-09-18.md#remove-redundant-unity-cv-alias) |
+
 | 2026-09-17 | deployment, github-pages, directions, typography, css, verification | [Directions typography release](2026/09/2026-09-17.md#directions-typography-release) |
 
 | 2026-09-17 | ui, directions, typography, css, responsive | [Directions heading letter-spacing adjustment](2026/09/2026-09-17.md#directions-heading-letter-spacing-adjustment) |
@@ -7,12 +15,6 @@
 | 2026-09-17 | ui, directions, typography, css, responsive | [Directions metric letter-spacing adjustment](2026/09/2026-09-17.md#directions-metric-letter-spacing-adjustment) |
 
 | 2026-09-17 | ui, directions, alignment, css-modules, animation, responsive, testing | [Directions border animation export collision repair](2026/09/2026-09-17.md#directions-border-animation-export-collision-repair) |
-
-| 2026-09-17 | ingame-job, profile, links, github-pages, resume, portfolio, verification | [InGame Job link correction](2026/09/2026-09-17.md#ingame-job-link-correction) |
-
-| 2026-09-17 | ingame-job, profile, resume, unity, vr, xr, contacts, public, verification | [InGame Job profile update](2026/09/2026-09-17.md#ingame-job-profile-update) |
-
-| 2026-09-16 | habr-career, profile, resume, unity, vr, contacts, experience, deletion, verification | [Habr Career profile update](2026/09/2026-09-16.md#habr-career-profile-update) |
 
 | 2026-09-16 | quality, testing, coverage, vitest, branches, workflow | [Quality workflow coverage threshold](2026/09/2026-09-16.md#quality-workflow-coverage-threshold) |
 

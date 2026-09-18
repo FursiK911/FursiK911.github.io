@@ -6,6 +6,7 @@ import type { LoadingScreenProps } from './types/LoadingScreen.types'
 import { loadingAnimationConfig } from '../../model/config/loading-animation.config'
 import { useLoadingAnimationSpeed } from '../../model/useLoadingAnimationSpeed/useLoadingAnimationSpeed'
 import portrait from '@/shared/assets/dmitry-fursov.webp'
+import loadingVideo from '@/shared/assets/videos/loading_background_v2.webm'
 import '../styles/Loading.css'
 
 import { phaseLabel } from './utils/phaseLabel'
@@ -101,7 +102,7 @@ export function LoadingScreen({
         onCanPlay={() => notifyVideo(true)}
         onError={() => notifyVideo(false)}
       >
-        <source src="/videos/loading_background_v2.webm" type="video/webm" />
+        <source src={loadingVideo} type="video/webm" />
       </video>
       <div className={cx(styles.loadingOverlay)} aria-hidden="true" />
       <div className={cx(styles.loadingNoise)} aria-hidden="true" />

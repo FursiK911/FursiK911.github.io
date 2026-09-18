@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
+import { projectMedia } from '../data/project-media.data'
 import { projects } from '../data/projects.data'
 
 describe('Earth of Dragons media', () => {
@@ -12,15 +13,11 @@ describe('Earth of Dragons media', () => {
 
     expect(images).toHaveLength(12)
     expect(images.map((image) => image.src)).toEqual([
-      '/images/projects/earth-dragons/logo.webp',
-      '/images/projects/earth-dragons/gameplay_1.webp',
-      '/images/projects/earth-dragons/gameplay_2.webp',
-      '/images/projects/earth-dragons/gameplay_3.webp',
-      ...Array.from(
-        { length: 8 },
-        (_, index) =>
-          `/images/projects/earth-dragons/earth-dragons-${String(index + 1).padStart(2, '0')}.webp`,
-      ),
+      projectMedia.earthDragons.logo,
+      projectMedia.earthDragons.gameplay1,
+      projectMedia.earthDragons.gameplay2,
+      projectMedia.earthDragons.gameplay3,
+      ...projectMedia.earthDragons.screens,
     ])
     expect(project?.card.previewImages).toEqual(images)
     expect(videos.map((video) => video.videoId)).toEqual([

@@ -1,5 +1,13 @@
 # September 2026
 
+| 2026-09-18 | refactor, assets, vite, public, projects, videos, testing, validation | [Move runtime assets into shared assets](2026-09-18.md#move-runtime-assets-into-shared-assets) |
+
+| 2026-09-18 | governance, logs, cleanup, portfolio | [Clean external-only agent log entries](2026-09-18.md#clean-external-only-agent-log-entries) |
+
+| 2026-09-18 | agents, governance, logs, decisions, portfolio | [Clarify project change-log scope](2026-09-18.md#clarify-project-change-log-scope) |
+
+| 2026-09-18 | resume, pdf, cleanup, assets, unity, verification | [Remove redundant Unity CV alias](2026-09-18.md#remove-redundant-unity-cv-alias) |
+
 | 2026-09-17 | deployment, github-pages, directions, typography, css, verification | [Directions typography release](2026-09-17.md#directions-typography-release) |
 
 | 2026-09-17 | ui, directions, typography, css, responsive | [Directions heading letter-spacing adjustment](2026-09-17.md#directions-heading-letter-spacing-adjustment) |
@@ -7,8 +15,6 @@
 | 2026-09-17 | ui, directions, typography, css, responsive | [Directions metric letter-spacing adjustment](2026-09-17.md#directions-metric-letter-spacing-adjustment) |
 
 | 2026-09-17 | ui, directions, alignment, css-modules, animation, responsive, testing | [Directions border animation export collision repair](2026-09-17.md#directions-border-animation-export-collision-repair) |
-
-| 2026-09-17 | github, profile, readme, layout, public, verification | [Published GitHub activity spacing refinement](2026-09-17.md#published-github-activity-spacing-refinement) |
 
 | 2026-09-17 | ui, directions, alignment, responsive, css, testing, graphify | [Directions grid-row centering correction](2026-09-17.md#directions-grid-row-centering-correction) |
 
@@ -22,23 +28,7 @@
 
 | 2026-09-17 | ui, directions, responsive, css, testing | [Extra compact Directions cards](2026-09-17.md#extra-compact-directions-cards) |
 
-| 2026-09-17 | github, profile, readme, tech-stack, activity, thumbnails, public, verification | [GitHub Profile README layout polish](2026-09-17.md#github-profile-readme-layout-polish) |
-
 | 2026-09-17 | ui, directions, responsive, css, testing | [Further compacted Directions cards](2026-09-17.md#further-compacted-directions-cards) |
-
-| 2026-09-17 | github, profile, readme, visual-showcase, portfolio, stats, public, verification | [Visual recruiter showcase README](2026-09-17.md#visual-recruiter-showcase-readme) |
-
-| 2026-09-17 | github, profile, readme, hidden-projects, mychessvr, public, verification | [Hidden project removal from profile README](2026-09-17.md#hidden-project-removal-from-profile-readme) |
-
-| 2026-09-17 | github, profile, readme, privacy, public, verification | [Location-neutral profile README](2026-09-17.md#location-neutral-profile-readme) |
-
-| 2026-09-17 | github, profile, recruiters, readme, unity, xr, frontend, contacts, public, verification | [Recruiter-focused GitHub profile](2026-09-17.md#recruiter-focused-github-profile) |
-
-| 2026-09-17 | ingame-job, profile, links, github-pages, resume, portfolio, verification | [InGame Job link correction](2026-09-17.md#ingame-job-link-correction) |
-
-| 2026-09-17 | ingame-job, profile, resume, unity, vr, xr, contacts, public, verification | [InGame Job profile update](2026-09-17.md#ingame-job-profile-update) |
-
-| 2026-09-16 | habr-career, profile, resume, unity, vr, contacts, experience, deletion, verification | [Habr Career profile update](2026-09-16.md#habr-career-profile-update) |
 
 | 2026-09-16 | deployment, github-pages, resume, pdf, production, quality | [Resume PDF release](2026-09-16.md#resume-pdf-release) |
 
@@ -53,8 +43,6 @@
 | 2026-09-16 | quality, testing, coverage, vitest, branches, workflow | [Quality workflow coverage threshold](2026-09-16.md#quality-workflow-coverage-threshold) |
 
 | 2026-09-16 | og-image, twitter-card, seo, spa, metadata, portfolio | [Shared Open Graph cover for every route](2026-09-16.md#shared-open-graph-cover-for-every-route) |
-
-| 2026-09-16 | hirify, profile, recruiters, resume, contacts, projects, verification | [Hirify recruiter profile draft](2026-09-16.md#hirify-recruiter-profile-draft) |
 
 | 2026-09-16 | og-image, twitter-card, webp, portfolio, github-pages, verification | [Open Graph cover image update](2026-09-16.md#open-graph-cover-image-update) |
 

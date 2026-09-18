@@ -43,6 +43,8 @@
 ## Change logs and decisions
 
 - Log every material change in `agent-logs/YYYY/MM/YYYY-MM-DD.md` using English and `HH:mm +03:00` timestamps.
+- Log only material changes and decisions that directly affect the resume website project or its public release. Direct impact includes changes to project files, code, content, assets, configuration, or deployed/public site state.
+- For mixed tasks, record only the project-affecting part. If a task only uses project information to produce an external result without changing the site files or public site state, no project log or decision record is required.
 - Every daily entry must state its type, tags, summary, affected areas, rationale, and verification result.
 - Update `agent-logs/README.md`, the relevant monthly index, and `agent-logs/DECISIONS.md` in the same change session. Global decisions receive IDs in the `DEC-YYYYMMDD-NN` format and are recorded in the daily log; indexes only link and summarize them.
 - To find history, start with `agent-logs/README.md` or `agent-logs/DECISIONS.md`, then follow the targeted link or tag. Do not scan all daily logs by default.

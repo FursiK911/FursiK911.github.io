@@ -1,6 +1,6 @@
 import { expect, it } from 'vitest'
 
-import { projects } from '@/entities/project'
+import { projectMedia, projects } from '@/entities/project'
 
 it('defines complete galleries and homepage previews for all MyChess projects', () => {
   const expected = [
@@ -26,24 +26,21 @@ it('defines complete galleries and homepage previews for all MyChess projects', 
       ?.filter((media) => media.kind === 'image')
       .map((media) => media.src),
   ).toEqual([
-    '/images/projects/my-chess-web/logo.webp',
-    '/images/projects/my-chess-web/profile.webp',
-    '/images/projects/my-chess-web/all-versus-one.webp',
-    '/images/projects/my-chess-web/analysis.webp',
-    '/images/projects/my-chess-web/authorization.webp',
-    '/images/projects/my-chess-web/champions.webp',
-    '/images/projects/my-chess-web/messages.webp',
-    '/images/projects/my-chess-web/notifications.webp',
-    '/images/projects/my-chess-web/observer-tournament.webp',
-    '/images/projects/my-chess-web/puzzles.webp',
-    '/images/projects/my-chess-web/puzzles-2.webp',
-    '/images/projects/my-chess-web/select-game.webp',
-    '/images/projects/my-chess-web/tournament.webp',
+    projectMedia.myChessWeb.logo,
+    projectMedia.myChessWeb.profile,
+    projectMedia.myChessWeb.allVersusOne,
+    projectMedia.myChessWeb.analysis,
+    projectMedia.myChessWeb.authorization,
+    projectMedia.myChessWeb.champions,
+    projectMedia.myChessWeb.messages,
+    projectMedia.myChessWeb.notifications,
+    projectMedia.myChessWeb.observerTournament,
+    projectMedia.myChessWeb.puzzles,
+    projectMedia.myChessWeb.puzzles2,
+    projectMedia.myChessWeb.selectGame,
+    projectMedia.myChessWeb.tournament,
   ])
   expect(
     mychessWeb?.card.previewImages.slice(0, 2).map((image) => image.src),
-  ).toEqual([
-    '/images/projects/my-chess-web/logo.webp',
-    '/images/projects/my-chess-web/profile.webp',
-  ])
+  ).toEqual([projectMedia.myChessWeb.logo, projectMedia.myChessWeb.profile])
 })

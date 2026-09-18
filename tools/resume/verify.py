@@ -83,8 +83,6 @@ def main():
     assert len(sources) == 4
     for source in sources:
         verify(source)
-    assert (PUBLIC / "Dmitry-Fursov-Unity-Developer-CV.pdf").read_bytes() == (PUBLIC / "Dmitry-Fursov-Unity-Developer-RU.pdf").read_bytes()
-    print("PASS legacy URL aliases the current Unity RU PDF")
 
 
 if __name__ == "__main__":

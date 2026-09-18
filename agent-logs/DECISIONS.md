@@ -1,5 +1,11 @@
 # Global Decision Index
 
+| DEC-20260918-03 | Keep runtime images and videos in `src/shared/assets/` with Vite URLs while retaining stable public CV, SEO, PWA, icon, and GitHub Pages files; remove only legacy raster variants that have WebP counterparts. | assets, vite, public, projects, videos | [2026-09-18](2026/09/2026-09-18.md#decision-dec20260918-03) |
+
+| DEC-20260918-02 | Record only material changes and decisions that directly affect the resume website project or its public release; for mixed tasks, record only the project-affecting part, and omit project logs for external-only results that do not change the site. | agents, governance, logs, decisions, portfolio | [2026-09-18](2026/09/2026-09-18.md#decision-dec-20260918-02) |
+
+| DEC-20260918-01 | Keep only the four canonical localized resume PDFs in `public/cv/`; remove the obsolete Unity `CV` alias and its generation/verification rules because the current application links directly to explicit `RU` and `EN` filenames. | resume, pdf, cleanup, assets, unity | [2026-09-18](2026/09/2026-09-18.md#decision-dec-20260918-01) |
+
 | DEC-20260917-17 | Release the validated Directions card typography refinements to `main` and verify the resulting GitHub Pages CSS and root response. | deployment, github-pages, directions, typography, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-17) |
 
 | DEC-20260917-16 | Use `0.04em` letter spacing for DirectionCard headings and `0` for the numeric metric value. | ui, directions, typography, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-16) |
@@ -7,8 +13,6 @@
 | DEC-20260917-15 | Keep DirectionCard headings at `-0.04em` and use `0` letter spacing for the numeric metric value. | ui, directions, typography, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-15) |
 
 Directions border animation export collision repair (2026-09-17) preserves existing layout and motion decisions; give the border keyframes a distinct CSS Modules export name so the decorative overlay stays outside grid flow. See [daily log](2026/09/2026-09-17.md#directions-border-animation-export-collision-repair).
-
-| DEC-20260917-14 | Keep one explicit `<br />` between the full-width profile details card and the equal-width language cards in the public GitHub README to improve visual rhythm while retaining direct SVG rendering. | github, profile, readme, layout, public | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-14) |
 
 | DEC-20260917-13 | Center the DirectionCard grid row vertically with `align-content: center` while retaining responsive dimensions and item-level centering. | ui, directions, alignment, responsive, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-13) |
 
@@ -22,23 +26,7 @@ Directions border animation export collision repair (2026-09-17) preserves exist
 
 | DEC-20260917-08 | Use `108px` card minimum height, compact vertical padding across breakpoints, and `64px` metric minimum height for Directions cards. | ui, directions, responsive, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-08) |
 
-| DEC-20260917-08 | Use a separately generated 16:9 AR thumbnail, 28 curated technologies from the portfolio's four skill groups, full-width 50/50 HTML tables, Most Commit Language instead of Stats, and equal-width GitHub activity cards while keeping the README limited to public projects and location-neutral copy. | github, profile, readme, tech-stack, activity, thumbnails, public, verification | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-08) |
-
 | DEC-20260917-07 | Use `126px` card minimum height, compact vertical padding across breakpoints, and `72px` metric minimum height for the Directions cards. | ui, directions, responsive, css | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-07) |
-
-| DEC-20260917-06 | Use a GitHub-safe visual showcase for the public recruiter README: clickable existing portfolio banner, three image-led public project cards with MyChessVR first, compact expertise and stack tables, and four no-token activity cards from `github-profile-summary-cards` plus `streak-stats`; exclude hidden project links and avoid unreliable stats endpoints that returned service errors during verification. | github, profile, readme, visual-showcase, portfolio, stats, public, verification | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-06) |
-
-| DEC-20260917-05 | Keep hidden portfolio projects out of the public recruiter-facing README; order the Selected work section with `MyChessVR` first, followed by the currently visible Neo4 and AR/Unity cases. | github, profile, readme, hidden-projects, mychessvr, public, verification | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-05) |
-
-| DEC-20260917-04 | Keep the public profile README location-neutral by removing the explicit country reference and retaining only `Open to international opportunities`; do not modify the separate GitHub profile Location field unless requested independently. | github, profile, readme, privacy, public, verification | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-04) |
-
-| DEC-20260917-03 | Use an English recruiter-facing GitHub profile with the headline `Unity / XR Developer & Frontend Engineer`, preserve the current cat avatar, publish high-level commercial case summaries through the special `FursiK911/FursiK911` README, expose the approved Portfolio, LinkedIn, email, and Telegram contacts, and pin only the two currently presentation-ready public repositories. | github, profile, recruiters, readme, unity, xr, frontend, contacts, public, verification | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-03) |
-
-| DEC-20260917-02 | Use `https://fursik911.github.io` as the canonical public portfolio domain and its `/cv/Dmitry-Fursov-Unity-Developer-EN.pdf` path for InGame Job links, based on the repository owner and successful browser verification. | ingame-job, profile, links, github-pages, resume, portfolio, verification | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-02) |
-
-| DEC-20260917-01 | Use the English InGame Job profile for international recruiter visibility; activate the profile, publish contacts, keep Unity and Frontend as desired positions, use `$1500` monthly salary and full-time remote preferences, preserve existing languages and avatar, and represent GitHub as a valid full URL while leaving phone and LinkedIn empty. | ingame-job, profile, resume, contacts, public, verification | [2026-09-17](2026/09/2026-09-17.md#decision-dec-20260917-01) |
-
-| DEC-20260916-11 | Use the Russian Unity resume as the Habr Career source of truth; preserve education and GitHub, merge contacts, consolidate experience into five aligned records, and represent the requested salary range as the Habr-compatible single value `135000` ₽. | habr-career, profile, resume, unity, vr, contacts, experience | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-11) |
 
 | DEC-20260916-10 | Release the completed four-resume PDF package through `main` after successful production build, GitHub Pages deployment, public URL checks, and Quality workflow validation. | deployment, github-pages, resume, pdf, production | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-10) |
 
@@ -53,8 +41,6 @@ Directions border animation export collision repair (2026-09-17) preserves exist
 | DEC-20260916-05 | Enforce 85% global coverage across statements, branches, functions, and lines while excluding only non-executable entry, barrel, and type-only files; keep executable UI, hooks, utilities, runtime configuration, and WebGL adapters in scope. | quality, testing, coverage, vitest, branches, workflow | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-05) |
 
 | DEC-20260916-04 | Use one origin-relative `/og-cover.webp` for OG and Twitter image metadata on every portfolio route through a shared `usePageMetadata` hook; retain the asset in `public/og-cover.webp` and remove project-specific duplicate covers. | og-image, twitter-card, seo, spa, metadata, portfolio | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-04) |
-
-| DEC-20260916-02 | Keep the Hirify profile as a saved draft until the user reviews the source-grounded content and separately confirms the final public-profile action; use Gmail, Telegram, phone, professional links, and the portfolio portrait as the approved public contact/profile data. | hirify, profile, recruiters, resume, contacts, verification | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-02) |
 
 | DEC-20260916-03 | Use the supplied PNG as the portfolio's Open Graph/Twitter preview, convert it to WebP at quality 85, preserve its native 1672×941 dimensions, and publish it through the existing `og:image` and `twitter:image` paths. | og-image, twitter-card, webp, portfolio, github-pages, verification | [2026-09-16](2026/09/2026-09-16.md#decision-dec-20260916-03) |
 
@@ -455,4 +441,5 @@ Directions HUD motion system (2026-09-08) keeps motion local to the profile Dire
 | DEC-20260910-01 | Use «Ключевой вклад» / «Key contributions» as the contribution list note while preserving the existing section heading. | projects, contribution, i18n, testing | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-01) |
 | DEC-20260910-22 | At desktop widths only, size the Hero grid row from the broadcast, stretch the copy column to that row, and anchor its actions with `margin-top: auto`; retain the existing layout below 1200 px. | ui, hero, live-cam, desktop, responsive | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-22) |
 | DEC-20260910-23 | Use a uniform `120px` top padding for `.profile-section` at all viewport widths; remove the previous mobile-specific reduction. | ui, profile, spacing, responsive | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-23) |
+
 | DEC-20260912-01 | Use three explicit Hero copy zones and `justify-content: space-between` at desktop widths; keep the pre-existing document flow below 1200px. | ui, hero, live-cam, desktop, responsive | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-01) |

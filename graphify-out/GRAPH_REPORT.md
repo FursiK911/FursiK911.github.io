@@ -1,15 +1,16 @@
-# Graph Report - C:\Work\fursik.github.io  (2026-09-17)
+# Graph Report - fursik.github.io  (2026-09-18)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 572 files · ~708,830 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1710 nodes · 2592 edges · 201 communities (122 shown, 79 thin omitted)
+- 1815 nodes · 2727 edges · 201 communities (121 shown, 80 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.74)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `47e78d30`
+- Built from commit: `2d45dc02`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -85,7 +86,7 @@
 - UnavailableAction.tsx
 - verify.py
 - Persistent project media mock
-- Project Circuit mini-game in Projects
+- 2026-09-17
 - AR Coloring video media
 - lint-staged
 - AppRouter.tsx
@@ -98,7 +99,7 @@
 - App.tsx
 - PrivacyPage.tsx
 - TermsPage.tsx
-- Vertically centered Education metadata pairs
+- 2026-09-16
 - Centered Education detail metadata
 - Separated source responsibilities
 - Grouped role folders for source responsibilities
@@ -138,7 +139,7 @@
 - Recruiter-focused Tech Stack
 - Tech Stack curation refinement
 - globals
-- @eslint/js
+- 2026-09-18
 - eslint-plugin-jsx-a11y
 - eslint-plugin-react-hooks
 - eslint-plugin-react-refresh
@@ -169,35 +170,40 @@
 - @vitest/coverage-v8
 - data.contains-21-unique-projects-with-valid-categories.test.ts
 - usePortraitGlitch.schedules-and-cleans-bursts.test.tsx
+- Git commit workflow
+- Centered Education bullets within cards
+- Adaptive project modal height
+- eslint-config-prettier
+- Portfolio research sources
 
 ## God Nodes (most connected - your core abstractions)
-1. `2026-09-12` - 51 edges
-2. `2026-09-10` - 48 edges
+1. `2026-09-12` - 57 edges
+2. `2026-09-10` - 49 edges
 3. `2026-08-30` - 41 edges
 4. `2026-09-14` - 39 edges
 5. `Seamless Hero portrait handoff` - 38 edges
 6. `LiveCam()` - 24 edges
-7. `compilerOptions` - 21 edges
-8. `2026-09-15` - 20 edges
-9. `Dynamic live-cam HUD refinement` - 18 edges
-10. `installIntersectionObserverMock()` - 17 edges
+7. `2026-09-15` - 24 edges
+8. `2026-09-17` - 22 edges
+9. `compilerOptions` - 21 edges
+10. `2026-09-16` - 19 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `useLoadingAnimationSpeed()` --indirect_call--> `getLoadingAnimationSpeed()`  [INFERRED]
   src/features/loading/model/useLoadingAnimationSpeed/useLoadingAnimationSpeed.ts → src/features/loading/model/store/loadingAnimationStore.ts
 - `useLoadingAnimationSpeed()` --indirect_call--> `subscribeToLoadingAnimationSpeed()`  [INFERRED]
   src/features/loading/model/useLoadingAnimationSpeed/useLoadingAnimationSpeed.ts → src/features/loading/model/store/loadingAnimationStore.ts
+- `App()` --calls--> `useActiveSection()`  [EXTRACTED]
+  src/pages/home/ui/HomePage/HomePage.tsx → src/pages/home/model/useActiveSection/useActiveSection.ts
 - `useTypingText()` --indirect_call--> `getReducedMotion()`  [INFERRED]
   src/shared/lib/useTypingText/useTypingText.ts → src/shared/lib/useTypingText/utils/getReducedMotion.ts
 - `renderWithProviders()` --indirect_call--> `TestProviders()`  [INFERRED]
   src/shared/test/utils/renderWithProviders.tsx → src/shared/test/TestProviders/TestProviders.tsx
-- `ExperienceTimeline()` --calls--> `getEvenlySpacedX()`  [EXTRACTED]
-  src/widgets/experience/ui/ExperienceTimeline/ExperienceTimeline.tsx → src/widgets/experience/model/experience-timeline-geometry/utils/experience-timeline-geometry.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (201 total, 79 thin omitted)
+## Communities (201 total, 80 thin omitted)
 
 ### Community 0 - "loading/index.ts"
 Cohesion: 0.06
@@ -220,12 +226,12 @@ Cohesion: 0.07
 Nodes (39): basePorts, CIRCUIT_COLUMNS, CIRCUIT_ROWS, directionDelta, directions, NEW_ROUTE_DELAY_MS, oppositeDirection, rotations (+31 more)
 
 ### Community 5 - "entities/project/index.ts"
-Cohesion: 0.07
-Nodes (23): projectCardPresentations, projectDefinitions, projects, ProjectCardPresentationDefinition, Project, ProjectAction, ProjectActionType, ProjectCardPresentation (+15 more)
+Cohesion: 0.06
+Nodes (26): projectCardPresentations, projectMedia, projectDefinitions, projects, ProjectCardPresentationDefinition, Project, ProjectAction, ProjectActionType (+18 more)
 
 ### Community 6 - "2026-09-12"
 Cohesion: 0.04
-Nodes (51): 2026-09-12, Adjust MyChess gameplay contribution verb, AR Coloring RuStore reskin project, Chudobooks WebP gallery media, Clarify MyChess AI champions contribution, Clarify MyChess frontend ownership, Combine MyChess modes and rating contribution points, Contained project images over blurred backgrounds (+43 more)
+Nodes (57): 2026-09-12, Adjust MyChess gameplay contribution verb, AR Coloring RuStore reskin project, Chudobooks WebP gallery media, Clarify MyChess AI champions contribution, Clarify MyChess frontend ownership, Combine MyChess modes and rating contribution points, Contained project images over blurred backgrounds (+49 more)
 
 ### Community 7 - "profile/index.ts"
 Cohesion: 0.09
@@ -233,7 +239,7 @@ Nodes (27): DIRECTION_CARD_STAGGER_MS, DIRECTION_CONTENT_DELAY_MS, DIRECTION_ICO
 
 ### Community 8 - "2026-09-10"
 Cohesion: 0.04
-Nodes (45): 2026-09-10, Decision DEC-20260910-01, Decision DEC-20260910-02, Decision DEC-20260910-03, Decision DEC-20260910-04, Decision DEC-20260910-05, Decision DEC-20260910-06, Decision DEC-20260910-07 (+37 more)
+Nodes (46): 2026-09-10, Decision DEC-20260910-01, Decision DEC-20260910-01, Decision DEC-20260910-02, Decision DEC-20260910-03, Decision DEC-20260910-04, Decision DEC-20260910-05, Decision DEC-20260910-06 (+38 more)
 
 ### Community 9 - "2026-09-02.md"
 Cohesion: 0.05
@@ -244,8 +250,8 @@ Cohesion: 0.05
 Nodes (38): 2026-09-07 20:42 +03:00, 2026-09-07 21:21 +03:00, 2026-09-07 21:55 +03:00, 2026-09-07 22:05 +03:00 — Villa Krim project content, 2026-09-07 22:10 +03:00 — Filled the AR Chudoboxes portfolio case, 2026-09-07 22:13 +03:00 — Constrained project media images, 2026-09-07 22:16 +03:00 — Explicitly constrained project image width, 2026-09-07 22:20 +03:00 — Expanded Author’s Wine Villa Krim research (+30 more)
 
 ### Community 11 - "2026-09-15"
-Cohesion: 0.06
-Nodes (33): 2026-09-15, 2026-09-15 13:36 +03:00, 2026-09-15 13:59 +03:00, 2026-09-15 14:30 +03:00, 2026-09-15 14:51 +03:00, 2026-09-15 15:10 +03:00, 2026-09-15 15:20 +03:00, 2026-09-15 15:25 +03:00 (+25 more)
+Cohesion: 0.05
+Nodes (39): 2026-09-15, 2026-09-15 13:36 +03:00, 2026-09-15 13:59 +03:00, 2026-09-15 14:30 +03:00, 2026-09-15 14:51 +03:00, 2026-09-15 15:10 +03:00, 2026-09-15 15:20 +03:00, 2026-09-15 15:25 +03:00 (+31 more)
 
 ### Community 12 - "usePortraitGlitch.ts"
 Cohesion: 0.12
@@ -256,24 +262,24 @@ Cohesion: 0.07
 Nodes (28): 00:14 +03:00 — Candidate list overflow fix, 00:17 +03:00 — Fixed loader terminal height, 00:27 +03:00 — Added verified final candidate stage, 00:30 +03:00 — Matched candidate uses normal spawn cadence, 00:42 +03:00 — Added candidate scan loop, 00:42 +03:00 — Fixed site header, 00:45 +03:00 — Added candidate scan status indicator, 00:51 +03:00 — Anchored scan label and accelerated card scan (+20 more)
 
 ### Community 14 - "2026-09-09.md"
-Cohesion: 0.07
-Nodes (27): 2026-09-09 10:00 +03:00, 2026-09-09 14:27 +03:00, 2026-09-09 18:24 +03:00, 2026-09-09 21:03 +03:00, 2026-09-09 21:46 +03:00, 2026-09-09 21:55 +03:00, 2026-09-09 23:20 +03:00, 2026-09-09 23:30 +03:00 (+19 more)
+Cohesion: 0.06
+Nodes (32): 2026-09-09 10:00 +03:00, 2026-09-09 14:27 +03:00, 2026-09-09 18:24 +03:00, 2026-09-09 21:03 +03:00, 2026-09-09 21:46 +03:00, 2026-09-09 21:55 +03:00, 2026-09-09 22:52 +03:00, 2026-09-09 23:01 +03:00 (+24 more)
 
 ### Community 15 - "compilerOptions"
 Cohesion: 0.07
 Nodes (27): DOM, src, vite/client, vitest/globals, compilerOptions, allowArbitraryExtensions, allowImportingTsExtensions, baseUrl (+19 more)
 
 ### Community 16 - "agent-logs/README.md"
-Cohesion: 0.18
-Nodes (5): August 2026, 2026-09-05 01:07 +03:00, Adaptive project modal height, September 2026, Global Decision Index
+Cohesion: 0.19
+Nodes (3): August 2026, September 2026, Global Decision Index
 
 ### Community 17 - "2026-09-14"
 Cohesion: 0.08
 Nodes (24): 2026-09-14, Concise work-experience timeline cards, Decision DEC-20260914-01, Decision DEC-20260914-02, Decision DEC-20260914-03, Decision DEC-20260914-04, Decision DEC-20260914-05, Decision DEC-20260914-06 (+16 more)
 
 ### Community 18 - "Dynamic live-cam HUD refinement"
-Cohesion: 0.09
-Nodes (22): 2026-09-08 00:20 +03:00, 2026-09-08 03:05 +03:00, 2026-09-08 23:18 +03:00, 2026-09-08 23:49 +03:00, 2026-09-08 23:58 +03:00, Decision DEC-20260908-03, Decision DEC-20260908-05, Decision DEC-20260908-08 (+14 more)
+Cohesion: 0.11
+Nodes (18): 2026-09-08 00:20 +03:00, 2026-09-08 03:05 +03:00, 2026-09-08 23:18 +03:00, Decision DEC-20260908-03, Decision DEC-20260908-05, Decision DEC-20260908-08, Decision DEC-20260908-09, Directions hover and icon motion correction (+10 more)
 
 ### Community 19 - "ProjectMediaGallery.tsx"
 Cohesion: 0.19
@@ -316,8 +322,8 @@ Cohesion: 0.12
 Nodes (16): 01:50 +03:00 — [remote] Confirm the private GitHub destination, 01:55 +03:00 — [ci] Keep Pages deployment manual for the private repository, 02:24 +03:00 — [portfolio] Implement the Dmitry Fursov portfolio, 02:30 +03:00 — [verification] Complete the portfolio quality gate, 14:23 +03:00 — [governance] Add the grilling skill to project agent rules, 14:30 +03:00 — [refactor] Split monolithic React components, 14:54 +03:00 — [tooling] Configure Mantine Codex integration, 15:49 +03:00 — [mantine] Adopt Mantine selectively for interactive behavior (+8 more)
 
 ### Community 29 - "2026-09-08.md"
-Cohesion: 0.12
-Nodes (15): 2026-09-08 02:12 +03:00, 2026-09-08 02:19 +03:00, 2026-09-08 15:37 +03:00, 2026-09-08 22:50 +03:00, 2026-09-08 23:06 +03:00, Centered slow LiveCam terminal, Chudobooks project content, Decision DEC-20260908-02 (+7 more)
+Cohesion: 0.10
+Nodes (20): 2026-09-08 02:12 +03:00, 2026-09-08 02:19 +03:00, 2026-09-08 15:37 +03:00, 2026-09-08 22:50 +03:00, 2026-09-08 23:06 +03:00, 2026-09-08 23:49 +03:00, 2026-09-08 23:58 +03:00, Centered slow LiveCam terminal (+12 more)
 
 ### Community 30 - "ResumeDownload.tsx"
 Cohesion: 0.23
@@ -367,6 +373,10 @@ Nodes (4): ExperienceDetailsItem(), ExperienceDetailsItemProps, ExperiencePhase(
 Cohesion: 0.18
 Nodes (9): Как адаптировать под вакансию, Обновление резюме, Сайт, Сборка, ATS и формат, Источники карьерных фактов, Осенние резюме: исследование и карта фактов, Подтверждённые ограничения (+1 more)
 
+### Community 42 - "HomePage.tsx"
+Cohesion: 0.29
+Nodes (3): sectionIds, useActiveSection(), App()
+
 ### Community 43 - "project-filtering/index.ts"
 Cohesion: 0.44
 Nodes (4): projectDirections, projectTechnologyOrder, ProjectFilters(), ProjectFiltersProps
@@ -376,8 +386,8 @@ Cohesion: 0.22
 Nodes (9): 2026-09-04 19:26 +03:00, 2026-09-04 19:39 +03:00, 2026-09-04 19:50 +03:00, 2026-09-04 20:06 +03:00, 2026-09-04 21:53 +03:00, Decision DEC-20260904-01, Decision DEC-20260904-02, Decision DEC-20260904-03 (+1 more)
 
 ### Community 45 - "Agent Operating Rules"
-Cohesion: 0.22
-Nodes (8): Agent Operating Rules, Change logs and decisions, FSD architecture and component structure, GitHub Pages deployment, Graphify, Grilling, Project baseline, Quality gate
+Cohesion: 0.20
+Nodes (9): Agent Operating Rules, Change logs and decisions, FSD architecture and component structure, GitHub Pages deployment, Graphify, Grilling, Project baseline, Quality gate (+1 more)
 
 ### Community 46 - "work-experience/index.ts"
 Cohesion: 0.47
@@ -413,7 +423,7 @@ Nodes (8): 2026-08-29, 21:10 +03:00 — [ui] Add synchronized typing roles to He
 
 ### Community 55 - "Dmitry Fursov — Software Developer"
 Cohesion: 0.25
-Nodes (7): Portfolio research sources, Dmitry Fursov — Software Developer, GitHub Pages, Portfolio research, Project assets, Локальная разработка, Языки
+Nodes (7): CV, Deployment, Dmitry Fursov — Software Developer, Highlights, Local development, Quality checks, Tech stack
 
 ### Community 56 - "package.json"
 Cohesion: 0.25
@@ -441,7 +451,7 @@ Nodes (6): MyChess Web — project brief, Личный вклад, Медиа и
 
 ### Community 63 - "devDependencies"
 Cohesion: 0.29
-Nodes (7): eslint, eslint-config-prettier, devDependencies, eslint, eslint-config-prettier, @testing-library/user-event, @testing-library/user-event
+Nodes (7): eslint, @eslint/js, devDependencies, eslint, @eslint/js, @testing-library/user-event, @testing-library/user-event
 
 ### Community 64 - "TestProviders.tsx"
 Cohesion: 0.48
@@ -467,9 +477,9 @@ Nodes (5): expected_text(), main(), normalize(), Check deliverable PDF contracts
 Cohesion: 0.40
 Nodes (5): 18:58 +03:00 — [feature] Transfer the loader portrait into the Hero scene, 2026-09-06 18:40 +03:00, Decision DEC-20260906-01, Decision DEC-20260906-02, Persistent project media mock
 
-### Community 71 - "Project Circuit mini-game in Projects"
-Cohesion: 0.40
-Nodes (5): 2026-09-09 22:52 +03:00, 2026-09-09 23:01 +03:00, Decision DEC-20260909-07, Decision DEC-20260909-08, Project Circuit mini-game in Projects
+### Community 71 - "2026-09-17"
+Cohesion: 0.06
+Nodes (33): 2026-09-17, 2026-09-17 14:13 +03:00, 2026-09-17 14:19 +03:00, 2026-09-17 14:31 +03:00, 2026-09-17 14:47 +03:00, 2026-09-17 14:50 +03:00, 2026-09-17 15:29 +03:00, 2026-09-17 16:26 +03:00 (+25 more)
 
 ### Community 72 - "AR Coloring video media"
 Cohesion: 0.40
@@ -487,9 +497,9 @@ Nodes (4): missingSelectors, requiredSelectors, stylesheet, stylesheetPaths
 Cohesion: 0.50
 Nodes (4): AI Agent Change Log Index, Browse by decision, Browse by period, Latest entries
 
-### Community 84 - "Vertically centered Education metadata pairs"
-Cohesion: 0.67
-Nodes (3): 2026-09-02 21:38 +03:00, Decision DEC-20260902-16, Vertically centered Education metadata pairs
+### Community 84 - "2026-09-16"
+Cohesion: 0.07
+Nodes (28): 2026-09-16, 2026-09-16 00:10 +03:00, 2026-09-16 01:31 +03:00, 2026-09-16 14:47 +03:00, 2026-09-16 15:14 +03:00, 2026-09-16 15:46 +03:00, 2026-09-16 16:04 +03:00, 2026-09-16 16:57 +03:00 (+20 more)
 
 ### Community 85 - "Centered Education detail metadata"
 Cohesion: 0.67
@@ -503,25 +513,37 @@ Nodes (3): 2026-09-03 00:42 +03:00, Decision DEC-20260903-01, Separated source r
 Cohesion: 0.67
 Nodes (3): 2026-09-03 01:07 +03:00, Decision DEC-20260903-02, Grouped role folders for source responsibilities
 
+### Community 124 - "2026-09-18"
+Cohesion: 0.17
+Nodes (12): 2026-09-18, 2026-09-18 16:50 +03:00, 2026-09-18 17:07 +03:00, 2026-09-18 17:23 +03:00, 2026-09-18 18:10 +03:00, Clarify project change-log scope, Clean external-only agent log entries, Decision DEC-20260918-01 (+4 more)
+
+### Community 167 - "Git commit workflow"
+Cohesion: 0.29
+Nodes (6): Expected handoff, Git commit workflow, Scope and safety, Stage, commit, and push, Understand the change, Verify before committing
+
+### Community 168 - "Centered Education bullets within cards"
+Cohesion: 0.67
+Nodes (3): 2026-09-02 21:52 +03:00, Centered Education bullets within cards, Decision DEC-20260902-18
+
 ## Knowledge Gaps
-- **601 isolated node(s):** `name`, `private`, `version`, `type`, `node` (+596 more)
+- **668 isolated node(s):** `name`, `private`, `version`, `type`, `node` (+663 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **79 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **80 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `2026-09-12` connect `2026-09-12` to `agent-logs/README.md`?**
-  _High betweenness centrality (0.025) - this node is a cross-community bridge._
 - **Why does `2026-08-30` connect `2026-08-30` to `02:01 +03:00 — Replaced slices with bounded corruption blocks`, `02:03 +03:00 — Verified block-only portrait corruption`, `02:27 +03:00 — Switched to a cellular data-corruption glitch`, `16:06 +03:00 — Replaced cellular portrait glitch with Glitch.js`, `16:31 +03:00 — Switched portrait glitch to continuous demo mode`, `19:46 +03:00 — Added localized resume link to header`, `20:01 +03:00 — Standardized cyan resume download buttons`, `20:24 +03:00 — Rebuilt EXPERIENCE LOG as a data-driven career timeline`, `20:58 +03:00 — Replaced timeline axis with animated SVG wave`, `agent-logs/README.md`, `00:06 +03:00 — Configuration-driven loader speed controls`, `01:28 +03:00 — Added intermittent cyberpunk portrait glitch`, `01:40 +03:00 — Made portrait glitch visibly readable`, `01:49 +03:00 — Stabilized the portrait base layer`?**
+  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+- **Why does `2026-09-10` connect `2026-09-10` to `agent-logs/README.md`, `Key contribution label`, `Hero desktop edge alignment`, `Profile section top padding`?**
+  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+- **Why does `2026-09-12` connect `2026-09-12` to `agent-logs/README.md`?**
   _High betweenness centrality (0.022) - this node is a cross-community bridge._
-- **Why does `2026-09-14` connect `2026-09-14` to `Tech Stack curation refinement`, `Project video media additions`, `Chudo Projector video media`, `Chudo Projector image media`, `Unified site icon assets`, `agent-logs/README.md`, `Applied updated site logo to icon derivatives`, `Chudo Projector product content revision`, `Chudo Projector content correction`, `Chudo Projector video media extension`, `Chudo Projector technology and card tag correction`, `Hero and Contact CTA icon refresh`, `Homepage Stats technology tags`, `Chudoboxes AR product family content revision`, `Recruiter-focused Tech Stack`, `Removed obsolete SVG favicon`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _601 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _668 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `loading/index.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.05962059620596206 - nodes in this community are weakly interconnected._
 - **Should `ProjectPage.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.05297334244702666 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05365686944634313 - nodes in this community are weakly interconnected._
 - **Should `LiveCam.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.0814111261872456 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08322026232473993 - nodes in this community are weakly interconnected._

@@ -1,4 +1,5 @@
 import type { Project } from '../types/project.types'
+import { projectMedia } from './project-media.data'
 import { projectCardPresentations } from './project-card-presentations.data'
 
 const projectDefinitions: Array<Omit<Project, 'card'>> = [
@@ -49,67 +50,67 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       { kind: 'youtube', videoId: 't-PDCpjdJvs' },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-web/logo.webp',
+        src: projectMedia.myChessWeb.logo,
         altKey: 'mychessWebMediaLogo',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-web/profile.webp',
+        src: projectMedia.myChessWeb.profile,
         altKey: 'mychessWebMediaProfile',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-web/all-versus-one.webp',
+        src: projectMedia.myChessWeb.allVersusOne,
         altKey: 'mychessWebMediaAllVersusOne',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-web/analysis.webp',
+        src: projectMedia.myChessWeb.analysis,
         altKey: 'mychessWebMediaAnalysis',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-web/authorization.webp',
+        src: projectMedia.myChessWeb.authorization,
         altKey: 'mychessWebMediaAuthorization',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-web/champions.webp',
+        src: projectMedia.myChessWeb.champions,
         altKey: 'mychessWebMediaChampions',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-web/messages.webp',
+        src: projectMedia.myChessWeb.messages,
         altKey: 'mychessWebMediaMessages',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-web/notifications.webp',
+        src: projectMedia.myChessWeb.notifications,
         altKey: 'mychessWebMediaNotifications',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-web/observer-tournament.webp',
+        src: projectMedia.myChessWeb.observerTournament,
         altKey: 'mychessWebMediaObserverTournament',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-web/puzzles.webp',
+        src: projectMedia.myChessWeb.puzzles,
         altKey: 'mychessWebMediaPuzzles',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-web/puzzles-2.webp',
+        src: projectMedia.myChessWeb.puzzles2,
         altKey: 'mychessWebMediaPuzzles2',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-web/select-game.webp',
+        src: projectMedia.myChessWeb.selectGame,
         altKey: 'mychessWebMediaSelectGame',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-web/tournament.webp',
+        src: projectMedia.myChessWeb.tournament,
         altKey: 'mychessWebMediaTournament',
       },
     ],
@@ -175,12 +176,12 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: '/images/projects/vr-saridu/man_in_vr.jpg',
+        src: projectMedia.saridu.manInVr,
         altKey: 'sariduActuatorMediaManInVr',
       },
       {
         kind: 'image',
-        src: '/images/projects/vr-saridu/woman_in_vr.jpg',
+        src: projectMedia.saridu.womanInVr,
         altKey: 'sariduActuatorMediaAtomSkills',
       },
       { kind: 'youtube', videoId: 'nnmgHldVKMg' },
@@ -217,52 +218,52 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       { kind: 'youtube', videoId: 'Q8PqTr5Yfvw' },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-vr/location_library.webp',
+        src: projectMedia.myChessVr.locationLibrary,
         altKey: 'mychessvrMediaLocationLibrary',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-vr/gameplay1.webp',
+        src: projectMedia.myChessVr.gameplay1,
         altKey: 'mychessvrMediaGameplay1',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-vr/gameplay2.webp',
+        src: projectMedia.myChessVr.gameplay2,
         altKey: 'mychessvrMediaGameplay2',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-vr/gameplay3.webp',
+        src: projectMedia.myChessVr.gameplay3,
         altKey: 'mychessvrMediaGameplay3',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-vr/gameplay4.webp',
+        src: projectMedia.myChessVr.gameplay4,
         altKey: 'mychessvrMediaGameplay4',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-vr/gameplay5.webp',
+        src: projectMedia.myChessVr.gameplay5,
         altKey: 'mychessvrMediaGameplay5',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-vr/stockfish_analysis.webp',
+        src: projectMedia.myChessVr.stockfishAnalysis,
         altKey: 'mychessvrMediaStockfishAnalysis',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-vr/chess_puzzles.webp',
+        src: projectMedia.myChessVr.chessPuzzles,
         altKey: 'mychessvrMediaChessPuzzles',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-vr/location_park.webp',
+        src: projectMedia.myChessVr.locationPark,
         altKey: 'mychessvrMediaLocationPark',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-vr/location_cafe.webp',
+        src: projectMedia.myChessVr.locationCafe,
         altKey: 'mychessvrMediaLocationCafe',
       },
     ],
@@ -347,32 +348,32 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: '/images/projects/frieze-viewing-room/screen-1.webp',
+        src: projectMedia.friezeViewingRoom.screens[0],
         altKey: 'friezeViewingRoomMediaCover',
       },
       {
         kind: 'image',
-        src: '/images/projects/frieze-viewing-room/screen-2.webp',
+        src: projectMedia.friezeViewingRoom.screens[1],
         altKey: 'friezeViewingRoomMediaInquiry',
       },
       {
         kind: 'image',
-        src: '/images/projects/frieze-viewing-room/screen-3.webp',
+        src: projectMedia.friezeViewingRoom.screens[2],
         altKey: 'friezeViewingRoomMediaFilters',
       },
       {
         kind: 'image',
-        src: '/images/projects/frieze-viewing-room/screen-4.webp',
+        src: projectMedia.friezeViewingRoom.screens[3],
         altKey: 'friezeViewingRoomMediaSections',
       },
       {
         kind: 'image',
-        src: '/images/projects/frieze-viewing-room/screen-5.webp',
+        src: projectMedia.friezeViewingRoom.screens[4],
         altKey: 'friezeViewingRoomMediaArtwork',
       },
       {
         kind: 'image',
-        src: '/images/projects/frieze-viewing-room/screen-6.webp',
+        src: projectMedia.friezeViewingRoom.screens[5],
         altKey: 'friezeViewingRoomMediaGallery',
       },
     ],
@@ -417,27 +418,27 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: '/images/projects/neo4-sightline/screen_1.webp',
+        src: projectMedia.neo4Sightline.screens[0],
         altKey: 'neo4SightlineMediaScreen1',
       },
       {
         kind: 'image',
-        src: '/images/projects/neo4-sightline/screen_2.webp',
+        src: projectMedia.neo4Sightline.screens[1],
         altKey: 'neo4SightlineMediaScreen2',
       },
       {
         kind: 'image',
-        src: '/images/projects/neo4-sightline/screen_3.webp',
+        src: projectMedia.neo4Sightline.screens[2],
         altKey: 'neo4SightlineMediaScreen3',
       },
       {
         kind: 'image',
-        src: '/images/projects/neo4-sightline/screen_4.webp',
+        src: projectMedia.neo4Sightline.screens[3],
         altKey: 'neo4SightlineMediaScreen4',
       },
       {
         kind: 'image',
-        src: '/images/projects/neo4-sightline/screen_5.webp',
+        src: projectMedia.neo4Sightline.screens[4],
         altKey: 'neo4SightlineMediaScreen5',
       },
     ],
@@ -485,47 +486,47 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       { kind: 'youtube', videoId: 'LLJtFASLiHM' },
       {
         kind: 'image',
-        src: '/images/projects/vr-drilling-training/screen_1.webp',
+        src: projectMedia.vrDrillingTraining.screens[0],
         altKey: 'drillingMediaScreen1',
       },
       {
         kind: 'image',
-        src: '/images/projects/vr-drilling-training/screen_2.webp',
+        src: projectMedia.vrDrillingTraining.screens[1],
         altKey: 'drillingMediaScreen2',
       },
       {
         kind: 'image',
-        src: '/images/projects/vr-drilling-training/screen_3.webp',
+        src: projectMedia.vrDrillingTraining.screens[2],
         altKey: 'drillingMediaScreen3',
       },
       {
         kind: 'image',
-        src: '/images/projects/vr-drilling-training/screen_4.webp',
+        src: projectMedia.vrDrillingTraining.screens[3],
         altKey: 'drillingMediaScreen4',
       },
       {
         kind: 'image',
-        src: '/images/projects/vr-drilling-training/screen_5.webp',
+        src: projectMedia.vrDrillingTraining.screens[4],
         altKey: 'drillingMediaScreen5',
       },
       {
         kind: 'image',
-        src: '/images/projects/vr-drilling-training/screen_6.webp',
+        src: projectMedia.vrDrillingTraining.screens[5],
         altKey: 'drillingMediaScreen6',
       },
       {
         kind: 'image',
-        src: '/images/projects/vr-drilling-training/screen_7.webp',
+        src: projectMedia.vrDrillingTraining.screens[6],
         altKey: 'drillingMediaScreen7',
       },
       {
         kind: 'image',
-        src: '/images/projects/vr-drilling-training/screen_8.webp',
+        src: projectMedia.vrDrillingTraining.screens[7],
         altKey: 'drillingMediaScreen8',
       },
       {
         kind: 'image',
-        src: '/images/projects/vr-drilling-training/screen_9.webp',
+        src: projectMedia.vrDrillingTraining.screens[8],
         altKey: 'drillingMediaScreen9',
       },
     ],
@@ -558,27 +559,27 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: '/images/projects/vulkan-verse/vulkan-verse-city.webp',
+        src: projectMedia.vulkanVerse.city,
         altKey: 'vulkanVerseMediaCity',
       },
       {
         kind: 'image',
-        src: '/images/projects/vulkan-verse/vulkan-verse-shrine.webp',
+        src: projectMedia.vulkanVerse.shrine,
         altKey: 'vulkanVerseMediaShrine',
       },
       {
         kind: 'image',
-        src: '/images/projects/vulkan-verse/vulkan-verse-world.webp',
+        src: projectMedia.vulkanVerse.world,
         altKey: 'vulkanVerseMediaWorld',
       },
       {
         kind: 'image',
-        src: '/images/projects/vulkan-verse/vulkan-verse-temple.webp',
+        src: projectMedia.vulkanVerse.temple,
         altKey: 'vulkanVerseMediaTemple',
       },
       {
         kind: 'image',
-        src: '/images/projects/vulkan-verse/vulkan-verse-notus.webp',
+        src: projectMedia.vulkanVerse.notus,
         altKey: 'vulkanVerseMediaNotus',
       },
       { kind: 'youtube', videoId: 'VYT8kBTMOf0' },
@@ -639,62 +640,62 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       { kind: 'youtube', videoId: 'Yy4j2gQdXW4' },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/logo.webp',
+        src: projectMedia.earthDragons.logo,
         altKey: 'earthDragonsMediaLogo',
       },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/gameplay_1.webp',
+        src: projectMedia.earthDragons.gameplay1,
         altKey: 'earthDragonsMediaGameplayOne',
       },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/gameplay_2.webp',
+        src: projectMedia.earthDragons.gameplay2,
         altKey: 'earthDragonsMediaGameplayTwo',
       },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/gameplay_3.webp',
+        src: projectMedia.earthDragons.gameplay3,
         altKey: 'earthDragonsMediaGameplayThree',
       },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/earth-dragons-01.webp',
+        src: projectMedia.earthDragons.screens[0],
         altKey: 'earthDragonsMediaSplash',
       },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/earth-dragons-02.webp',
+        src: projectMedia.earthDragons.screens[1],
         altKey: 'earthDragonsMediaDragonElnus',
       },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/earth-dragons-03.webp',
+        src: projectMedia.earthDragons.screens[2],
         altKey: 'earthDragonsMediaDragonNaura',
       },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/earth-dragons-04.webp',
+        src: projectMedia.earthDragons.screens[3],
         altKey: 'earthDragonsMediaCollection',
       },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/earth-dragons-05.webp',
+        src: projectMedia.earthDragons.screens[4],
         altKey: 'earthDragonsMediaPreview',
       },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/earth-dragons-06.webp',
+        src: projectMedia.earthDragons.screens[5],
         altKey: 'earthDragonsMediaRunner',
       },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/earth-dragons-07.webp',
+        src: projectMedia.earthDragons.screens[6],
         altKey: 'earthDragonsMediaRunnerScore',
       },
       {
         kind: 'image',
-        src: '/images/projects/earth-dragons/earth-dragons-08.webp',
+        src: projectMedia.earthDragons.screens[7],
         altKey: 'earthDragonsMediaDie',
       },
     ],
@@ -739,17 +740,17 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: '/images/projects/villa-krim/logo_1.webp',
+        src: projectMedia.villaKrim.logo1,
         altKey: 'virtualSommelierVillaKrimMediaLogo1',
       },
       {
         kind: 'image',
-        src: '/images/projects/villa-krim/logo_2.webp',
+        src: projectMedia.villaKrim.logo2,
         altKey: 'virtualSommelierVillaKrimMediaLogo2',
       },
       ...[1, 2, 3].map((screen) => ({
         kind: 'image' as const,
-        src: `/images/projects/villa-krim/screen_${screen}.webp`,
+        src: projectMedia.villaKrim.screens[screen - 1],
         altKey: `virtualSommelierVillaKrimMediaScreen${screen}`,
       })),
     ],
@@ -783,17 +784,17 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: '/images/projects/authors-wine-villa-krim/logo_1.webp',
+        src: projectMedia.authorsWineVillaKrim.logo1,
         altKey: 'authorsWineVillaKrimMediaLogo1',
       },
       {
         kind: 'image',
-        src: '/images/projects/authors-wine-villa-krim/logo_2.webp',
+        src: projectMedia.authorsWineVillaKrim.logo2,
         altKey: 'authorsWineVillaKrimMediaLogo2',
       },
       ...[1, 2, 3].map((screen) => ({
         kind: 'image' as const,
-        src: `/images/projects/authors-wine-villa-krim/screen_${screen}.webp`,
+        src: projectMedia.authorsWineVillaKrim.screens[screen - 1],
         altKey: `authorsWineVillaKrimMediaScreen${screen}`,
       })),
     ],
@@ -825,7 +826,7 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       { kind: 'youtube', videoId: 'bIig8_xRzUM' },
       ...[1, 2, 3].map((screen) => ({
         kind: 'image' as const,
-        src: `/images/projects/chudo-projector/screen_${screen}.webp`,
+        src: projectMedia.chudoProjector.screens[screen - 1],
         altKey: `chudoProjectorMediaScreen${screen}`,
       })),
     ],
@@ -859,17 +860,17 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       { kind: 'youtube', videoId: 'dDpAbPiHIEw' },
       {
         kind: 'image',
-        src: '/images/projects/ar-coloring/ar-coloring-home.webp',
+        src: projectMedia.arColoring.home,
         altKey: 'arColoringMediaHome',
       },
       {
         kind: 'image',
-        src: '/images/projects/ar-coloring/ar-coloring-themes.webp',
+        src: projectMedia.arColoring.themes,
         altKey: 'arColoringMediaThemes',
       },
       {
         kind: 'image',
-        src: '/images/projects/ar-coloring/ar-coloring-animals.webp',
+        src: projectMedia.arColoring.animals,
         altKey: 'arColoringMediaAnimals',
       },
     ],
@@ -896,27 +897,27 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: '/images/projects/ar-coloring-zebra/screen-1.webp',
+        src: projectMedia.arColoringZebra.screens[0],
         altKey: 'arColoringZebraMediaScreen1',
       },
       {
         kind: 'image',
-        src: '/images/projects/ar-coloring-zebra/screen-2.webp',
+        src: projectMedia.arColoringZebra.screens[1],
         altKey: 'arColoringZebraMediaScreen2',
       },
       {
         kind: 'image',
-        src: '/images/projects/ar-coloring-zebra/screen-3.webp',
+        src: projectMedia.arColoringZebra.screens[2],
         altKey: 'arColoringZebraMediaScreen3',
       },
       {
         kind: 'image',
-        src: '/images/projects/ar-coloring-zebra/screen-4.webp',
+        src: projectMedia.arColoringZebra.screens[3],
         altKey: 'arColoringZebraMediaScreen4',
       },
       {
         kind: 'image',
-        src: '/images/projects/ar-coloring-zebra/screen-5.webp',
+        src: projectMedia.arColoringZebra.screens[4],
         altKey: 'arColoringZebraMediaScreen5',
       },
     ],
@@ -965,12 +966,12 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       { kind: 'youtube', videoId: 'L1wo7UmOsr4' },
       {
         kind: 'image',
-        src: '/images/projects/ar-chudobook/screen_1.webp',
+        src: projectMedia.arChudobook.screens[0],
         altKey: 'chudobooksMediaScreen1',
       },
       {
         kind: 'image',
-        src: '/images/projects/ar-chudobook/screen_2.webp',
+        src: projectMedia.arChudobook.screens[1],
         altKey: 'chudobooksMediaScreen2',
       },
     ],
@@ -1008,17 +1009,17 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       { kind: 'youtube', videoId: '2r2FjaOVyII' },
       {
         kind: 'image',
-        src: '/images/projects/ar-chudoboxes/ar-chudaboxes-one.webp',
+        src: projectMedia.arChudoboxes.one,
         altKey: 'arChudaboxesMediaOne',
       },
       {
         kind: 'image',
-        src: '/images/projects/ar-chudoboxes/ar-chudaboxes-two.webp',
+        src: projectMedia.arChudoboxes.two,
         altKey: 'arChudaboxesMediaTwo',
       },
       {
         kind: 'image',
-        src: '/images/projects/ar-chudoboxes/ar-chudaboxes-three.webp',
+        src: projectMedia.arChudoboxes.three,
         altKey: 'arChudaboxesMediaThree',
       },
     ],
@@ -1080,27 +1081,27 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
     media: [
       {
         kind: 'image',
-        src: '/images/projects/my-chess-mobile/myChess-1.webp',
+        src: projectMedia.myChessMobile.screens[0],
         altKey: 'mychessMobileMedia1',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-mobile/myChess-2.webp',
+        src: projectMedia.myChessMobile.screens[1],
         altKey: 'mychessMobileMedia2',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-mobile/myChess-3.webp',
+        src: projectMedia.myChessMobile.screens[2],
         altKey: 'mychessMobileMedia3',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-mobile/myChess-4.webp',
+        src: projectMedia.myChessMobile.screens[3],
         altKey: 'mychessMobileMedia4',
       },
       {
         kind: 'image',
-        src: '/images/projects/my-chess-mobile/myChess-5.webp',
+        src: projectMedia.myChessMobile.screens[4],
         altKey: 'mychessMobileMedia5',
       },
     ],

@@ -12,7 +12,7 @@ python tools/resume/build.py
 python tools/resume/verify.py
 ```
 
-Генератор создаёт копии в `output/pdf/` и публикуемые файлы в `public/cv/`. Старая ссылка `Dmitry-Fursov-Unity-Developer-CV.pdf` получает точную копию Unity RU. Шрифты Ubuntu Regular/Bold включены с Ubuntu Font Licence; генерация не требует сети или исходных карьерных репозиториев. При неизменных версиях инструментов и текстах PDF побайтово воспроизводимы.
+Генератор создаёт копии в `output/pdf/` и четыре канонических публикуемых файла в `public/cv/`: Unity Developer и Frontend Developer на русском и английском языках. Шрифты Ubuntu Regular/Bold включены с Ubuntu Font Licence; генерация не требует сети или исходных карьерных репозиториев. При неизменных версиях инструментов и текстах PDF побайтово воспроизводимы.
 
 Для визуальной проверки используйте Poppler:
 
