@@ -1,5 +1,7 @@
 # Global Decision Index
 
+| DEC-20260918-08 | Release the combined safe working-tree diff from `main` after local validation and the Pages production verification gate pass; verify the published root and hashed assets after deployment. | release, deployment, github-pages, css-modules, verification | [2026-09-18](2026/09/2026-09-18.md#decision-dec-20260918-08) |
+
 | DEC-20260918-07 | Keep `[local]` CSS Module names for compatibility, require bound/used local exports, allow `:global(...)` only under a local anchor, verify emitted selectors against reachable production JavaScript, and gate Pages artifact upload on `npm run verify:production`. | css-modules, vite, github-pages, production, validation, testing | [2026-09-18](2026/09/2026-09-18.md#decision-dec-20260918-07) |
 
 | DEC-20260918-06 | Use the localized Unity Developer PDF as the direct target for every resume CTA and remove the chooser modal from the download flow. | resume, download, unity, modal, i18n | [2026-09-18](2026/09/2026-09-18.md#decision-dec-20260918-06) |

@@ -1,5 +1,7 @@
 # September 2026
 
+| 2026-09-18 | release, deployment, github-pages, css-modules, verification | [CSS Module release to GitHub Pages](2026-09-18.md#css-module-release-to-github-pages) |
+
 | 2026-09-18 | css-modules, vite, github-pages, production, validation, testing | [CSS Module production contract](2026-09-18.md#css-module-production-contract) |
 
 | 2026-09-18 | resume, download, unity, modal, i18n, testing | [Direct Unity resume download](2026-09-18.md#direct-unity-resume-download) |
