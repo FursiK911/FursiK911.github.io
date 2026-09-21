@@ -68,6 +68,14 @@ def paragraph(text, style):
     return Paragraph(escape(text), style)
 
 
+def skill_group(group, sheet):
+    if isinstance(group, str):
+        return paragraph(group, sheet["body"])
+    title = escape(group["title"])
+    items = escape(", ".join(group["items"]))
+    return Paragraph(f'<font color="#155E75"><b>{title}:</b></font> {items}.', sheet["body"])
+
+
 def job(entry, sheet):
     result = [
         paragraph(entry["company"], sheet["company"]),
@@ -111,7 +119,7 @@ def build(source):
         paragraph(data["summary"], sheet["body"]),
         paragraph(labels["skills"], sheet["section"]),
     ])
-    story.extend(paragraph(skill, sheet["body"]) for skill in data["skills"])
+    story.extend(skill_group(skill, sheet) for skill in data["skills"])
     story.append(paragraph(labels["experience"], sheet["section"]))
     for entry in data["pages"][0]:
         story.extend(job(entry, sheet))

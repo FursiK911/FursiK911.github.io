@@ -1,5 +1,11 @@
 # Global Decision Index
 
+| DEC-20260921-01 | Keep Unity skills as four structured localized groups with a broad interactive-3D roster, embed XR under Gameplay & Interaction, and leave frontend stack and homepage Tech Stack unchanged. | resume, pdf, unity, skills, ats, i18n | [2026-09-21](2026/09/2026-09-21.md#decision-dec-20260921-01) |
+
+| DEC-20260921-03 | Split the Unity CV's combined Platforms & Delivery group into Platforms for runtime targets and Delivery for Addressables, AssetBundles, and Unity Localization. | resume, pdf, unity, skills, platforms, delivery | [2026-09-21](2026/09/2026-09-21.md#decision-dec-20260921-03) |
+
+| DEC-20260919-01 | Хранить переносимый карьерный контекст в `docs/dmitry-fursov-career-context.md` как русскоязычный snapshot с английскими названиями технологий/ролей, полным списком проектных записей и отдельным разделом редакторских ограничений; продуктовые метрики не трактовать как личные достижения без явного подтверждения. | documentation, portfolio, resume, career-context, content-governance | [2026-09-19](2026/09/2026-09-19.md#decision-dec-20260919-01) |
+
 | DEC-20260918-08 | Release the combined safe working-tree diff from `main` after local validation and the Pages production verification gate pass; verify the published root and hashed assets after deployment. | release, deployment, github-pages, css-modules, verification | [2026-09-18](2026/09/2026-09-18.md#decision-dec-20260918-08) |
 
 | DEC-20260918-07 | Keep `[local]` CSS Module names for compatibility, require bound/used local exports, allow `:global(...)` only under a local anchor, verify emitted selectors against reachable production JavaScript, and gate Pages artifact upload on `npm run verify:production`. | css-modules, vite, github-pages, production, validation, testing | [2026-09-18](2026/09/2026-09-18.md#decision-dec-20260918-07) |
@@ -453,3 +459,7 @@ Directions HUD motion system (2026-09-08) keeps motion local to the profile Dire
 | DEC-20260910-23 | Use a uniform `120px` top padding for `.profile-section` at all viewport widths; remove the previous mobile-specific reduction. | ui, profile, spacing, responsive | [2026-09-10](2026/09/2026-09-10.md#decision-dec-20260910-23) |
 
 | DEC-20260912-01 | Use three explicit Hero copy zones and `justify-content: space-between` at desktop widths; keep the pre-existing document flow below 1200px. | ui, hero, live-cam, desktop, responsive | [2026-09-12](2026/09/2026-09-12.md#decision-dec-20260912-01) |
+
+| DEC-20260920-01 | Keep the stable `mobile-rts` id with the temporary public title `Mobile RTS (Clash of Clans like)`; use local research media and the source-confirmed Unity stack without exposing the official project name. | projects, mobile-rts, unity, media, i18n, research | [2026-09-20](2026/09/2026-09-20.md#decision-dec-20260920-01) |
+
+| DEC-20260921-02 | Store the supplied YouTube videos as native `youtube` media in the stable order `Y8jRA-wwsbI`, `rES-pSwpC0U`, `dQPD0NVxoGE`; let the existing gallery sorter place them before images. | projects, mobile-rts, youtube, media, testing | [2026-09-21](2026/09/2026-09-21.md#decision-dec-20260921-02) |

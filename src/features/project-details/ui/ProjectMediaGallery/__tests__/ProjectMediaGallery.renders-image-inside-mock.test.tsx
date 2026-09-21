@@ -8,7 +8,7 @@ import { ProjectMediaGallery } from '../ProjectMediaGallery'
 it('renders image media inside the persistent mock screen', async () => {
   await changeLanguage('en')
   const project: Project = {
-    ...projects[1],
+    ...projects.find((item) => item.id === 'mobile-rts')!,
     media: [
       { kind: 'image', src: '/mock-project.png', altKey: 'mobileRtsDesc' },
     ],
@@ -19,7 +19,7 @@ it('renders image media inside the persistent mock screen', async () => {
   )
 
   const image = screen.getByRole('img', {
-    name: /Mobile RTS with multiplayer PvP/i,
+    name: /A mobile base-building RTS with village progression/i,
   })
 
   expect(image.closest('[class*="screen"]')).toHaveAttribute(

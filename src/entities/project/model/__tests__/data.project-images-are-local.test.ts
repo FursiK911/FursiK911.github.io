@@ -9,7 +9,7 @@ describe('project image assets', () => {
         project.media?.filter((media) => media.kind === 'image') ?? [],
     )
 
-    expect(images).toHaveLength(93)
+    expect(images).toHaveLength(99)
     images.forEach((image) => {
       expect(image.src).not.toMatch(/^https?:\/\//)
       expect(image.src).toMatch(

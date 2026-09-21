@@ -24,7 +24,12 @@ def expected_text(data):
     yield data["availability"]
     yield data["employment"]
     yield data["summary"]
-    yield from data["skills"]
+    for skill in data["skills"]:
+        if isinstance(skill, str):
+            yield skill
+        else:
+            yield skill["title"]
+            yield from skill["items"]
     for page in data["pages"]:
         for entry in page:
             for key in ("company", "role", "dates", "context"):

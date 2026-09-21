@@ -6,13 +6,14 @@ import { ProjectMediaGallery } from '../ProjectMediaGallery'
 
 it('renders a project placeholder when no media is available', async () => {
   await changeLanguage('en')
+  const project = projects.find((item) => item.id === 'cat-citten')!
   const { container } = renderWithProviders(
-    <ProjectMediaGallery project={projects[1]} variant="preview" />,
+    <ProjectMediaGallery project={project} variant="preview" />,
   )
 
   expect(container.querySelector('[class*="mock"]')).toBeInTheDocument()
   expect(container.querySelector('[class*="screen"]')).toBeInTheDocument()
-  expect(screen.getByText('Mobile Multiplayer RTS')).toBeInTheDocument()
+  expect(screen.getByText('Cat-citten company website')).toBeInTheDocument()
   expect(
     screen.queryByRole('button', { name: /WATCH VIDEO/i }),
   ).not.toBeInTheDocument()

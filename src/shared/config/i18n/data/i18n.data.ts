@@ -319,7 +319,7 @@ export const resources = {
         industrial: 'Промышленные VR-тренажёры',
         drilling: 'VR-тренажёр бурильщиков',
         sariduActuator: 'VR-тренажёр САРиДУ и исполнительный механизм',
-        mobileRts: 'Мобильная multiplayer RTS',
+        mobileRts: 'Mobile RTS (Clash of Clans like)',
         earthDragons: 'Земля драконов АШАН',
         vulkanVerse: 'Vulkan Verse',
         mychessWeb: 'myChess',
@@ -329,7 +329,7 @@ export const resources = {
           mychessWeb:
             'myChess — первая российская шахматная экосистема, объединяющая онлайн-игры, турниры, обучение и общение на одной платформе. Реальные соперники, AI-чемпионы, шахматные задачи и анализ партий Stockfish создают пространство для игроков любого уровня.',
           mobileRts:
-            'Мобильная PvP-стратегия с турнирами и повторами сражений. Сетевые сценарии и серверные события собраны в единый игровой контур.',
+            'Мобильная base-building RTS с деревней, героями, драконами и PvP-турнирами. Клиент, dedicated server и cloud backend собраны в единую сетевую систему.',
           sariduActuator:
             'VR-тренажёр на Unigine, который превращает отработку неисправностей на атомном оборудовании в безопасную и реалистичную практику с 15+ сценариями. Одиночный и кооперативный режимы, три варианта оборудования и встроенный экзамен помогают проверить готовность сотрудника на полностью российском ПО, лицензированном для использования в РФ.',
           mychessvr:
@@ -386,7 +386,7 @@ export const resources = {
         sariduActuatorDesc:
           'Промышленное VR-приложение предназначено для обучения сотрудников действиям при неисправностях на рабочем месте. Пользователь может проходить сценарии самостоятельно или в кооперативе с другим участником в VR-шлеме. Приложение полностью построено на российском программном обеспечении, лицензированном для использования в РФ. В нём смоделированы рабочее место и реальное оборудование, включая Type A, Type M и пневматическую систему, а режимы обучения и экзамена позволяют сначала освоить правильный алгоритм, а затем проверить знания и навыки.',
         mobileRtsDesc:
-          'Мобильная RTS с мультиплеерным PvP, турнирами, серверными событиями и сетевой инфраструктурой.',
+          'Мобильная base-building RTS с развитием деревни, ресурсами, героями, драконами и мультиплеерным PvP. Игровой контур включает сюжетные сценарии, атаки деревень, турниры и серверные события, а Unity-клиент работает вместе с dedicated server и backend-сервисами.',
         earthDragonsDesc:
           'Мобильное AR-приложение промо-кампании АШАН: физические карточки и комикс открывают коллекцию из 16 драконов на планете Заурус.',
         earthDragonsMetrics: [
@@ -489,11 +489,20 @@ export const resources = {
           },
         ],
         mobileRtsPoints: [
-          'Клиент-серверное PvP-взаимодействие на Mirror',
-          'Система повторов сражений',
-          'Интеграции Firebase, PlayFab и Azure Functions',
-          'Турниры олимпийского формата и pathfinding AI',
+          'Клиент-серверное PvP-взаимодействие на Mirror и отдельный Unity dedicated server',
+          'Сетевые сражения, турниры и replay-система',
+          'Интеграции PlayFab, Firebase и Azure Functions',
+          'Pathfinding AI, Addressables и локализованный mobile UI',
         ],
+        mobileRtsMediaGameplay:
+          'Геймплейный экран мобильной RTS с деревней, героями и существом',
+        mobileRtsMediaMountainTournament:
+          'Арена турнира на заснеженной горной вершине',
+        mobileRtsMediaHistoryMode: 'Пейзаж сюжетного режима с лавовыми горами',
+        mobileRtsMediaArcanePortal: 'Магический портал в лесной локации',
+        mobileRtsMediaMagicAcademy: 'Фэнтезийная академия на фоне ночного неба',
+        mobileRtsMediaVolcanicMountains:
+          'Панорамный вид на вулканический игровой регион',
         earthDragonsPoints: [
           'Распознавание изображений через Vuforia и анимированные AR-персонажи',
           'Доставка и кэширование динамических AssetBundle',
@@ -1373,7 +1382,7 @@ export const resources = {
         industrial: 'Industrial VR Training Simulations',
         drilling: 'VR Drilling Training Simulator',
         sariduActuator: 'SARiDU Actuator VR Training Simulator',
-        mobileRts: 'Mobile Multiplayer RTS',
+        mobileRts: 'Mobile RTS (Clash of Clans like)',
         earthDragons: 'Earth of Dragons — Auchan',
         vulkanVerse: 'Vulkan Verse',
         mychessWeb: 'myChess',
@@ -1383,7 +1392,7 @@ export const resources = {
           mychessWeb:
             'myChess is the first Russian chess ecosystem, bringing online games, tournaments, learning and communication together on one platform. Real opponents, AI champions, chess puzzles and Stockfish game analysis create a space for players at every level.',
           mobileRts:
-            'A mobile PvP strategy game with tournaments and battle replays. Network flows and server events support the match experience.',
+            'A mobile base-building RTS with villages, heroes, dragons and PvP tournaments. The client, dedicated server and cloud backend form one connected gameplay system.',
           sariduActuator:
             'A Unigine VR trainer that turns fault response on nuclear-power equipment into safe, realistic practice across 15+ scenarios. Solo and co-op modes, three equipment variants and an integrated exam help verify operator readiness on an application built entirely on Russian software licensed for use in Russia.',
           mychessvr:
@@ -1440,7 +1449,7 @@ export const resources = {
         sariduActuatorDesc:
           'This industrial VR application trains employees to respond to faults at a real-world workstation. A user can complete scenarios alone or cooperate with another participant wearing a VR headset. The application is built entirely on Russian software licensed for use in Russia. It models the workstation and real equipment, including Type A, Type M and the pneumatic system, while training and examination modes first teach the correct procedure and then assess the employee’s knowledge and skills.',
         mobileRtsDesc:
-          'A mobile RTS with multiplayer PvP, tournament systems, server-driven events and multiplayer infrastructure.',
+          'A mobile base-building RTS with village progression, resources, heroes, dragons and multiplayer PvP. Its gameplay loop spans story scenarios, village attacks, tournaments and server-driven events, with a Unity client backed by a dedicated server and backend services.',
         earthDragonsDesc:
           'A mobile AR application for Auchan’s campaign: physical cards and a comic unlock a collection of 16 dragons on the planet Zaurus.',
         earthDragonsMetrics: [
@@ -1540,11 +1549,22 @@ export const resources = {
           },
         ],
         mobileRtsPoints: [
-          'Mirror client-server PvP interaction',
-          'Replay system for battles',
-          'Firebase, PlayFab and Azure Functions integrations',
-          'Olympic-format tournaments and pathfinding AI',
+          'Client-server PvP on Mirror with a separate Unity dedicated server',
+          'Networked battles, tournaments and a replay system',
+          'PlayFab, Firebase and Azure Functions integrations',
+          'Pathfinding AI, Addressables and localized mobile UI',
         ],
+        mobileRtsMediaGameplay:
+          'Mobile RTS gameplay screen with a village, heroes and a creature',
+        mobileRtsMediaMountainTournament:
+          'Tournament arena on a snowy mountain peak',
+        mobileRtsMediaHistoryMode:
+          'Story-mode landscape with volcanic mountains',
+        mobileRtsMediaArcanePortal: 'Magical portal in a forest location',
+        mobileRtsMediaMagicAcademy:
+          'Fantasy academy beneath a starry night sky',
+        mobileRtsMediaVolcanicMountains:
+          'Panoramic view of the volcanic game region',
         earthDragonsPoints: [
           'Vuforia image tracking and animated AR characters',
           'Dynamic AssetBundle delivery and caching',

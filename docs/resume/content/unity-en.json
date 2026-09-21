@@ -7,9 +7,61 @@
   "employment": "Open to full-time, part-time and contract work",
   "summary": "Unity generalist working across gameplay, VR/AR, networking and UI. Building interactive products since 2019, with commercial experience in Unity/C# and frontend development. Delivered VR projects as the sole developer and contributed to a mobile RTS, industrial training simulators and AR applications.",
   "skills": [
-    "Development: Unity, C#, OOP, ScriptableObject, Zenject, UniTask, DOTween, Git.",
-    "XR and platforms: Meta Quest 2/3S/3, OpenXR, XR Interaction Toolkit, SteamVR, Vuforia; Android, iOS, PC.",
-    "Networking and content: Mirror, Netcode for GameObjects, Photon, PlayFab, Firebase, Azure Functions, Addressables, AssetBundles."
+    {
+      "title": "Development & Architecture",
+      "items": [
+        "Unity",
+        "C#",
+        "OOP",
+        "ScriptableObject",
+        "Zenject",
+        "UniTask",
+        "DOTween",
+        "Git",
+        "Unigine"
+      ]
+    },
+    {
+      "title": "Gameplay & Interaction",
+      "items": [
+        "OpenXR",
+        "XR Interaction Toolkit",
+        "SteamVR",
+        "Vuforia",
+        "Final IK",
+        "uLipSync",
+        "OpenCV",
+        "Stockfish"
+      ]
+    },
+    {
+      "title": "Multiplayer & Services",
+      "items": [
+        "Mirror",
+        "Netcode for GameObjects",
+        "Photon",
+        "PlayFab",
+        "Firebase",
+        "Azure Functions",
+        "VOIP"
+      ]
+    },
+    {
+      "title": "Platforms",
+      "items": [
+        "Meta Quest 2/3S/3",
+        "HTC VIVE Pro",
+        "Android",
+        "iOS",
+        "PC",
+        "WebGL",
+        "Astra Linux"
+      ]
+    },
+    {
+      "title": "Delivery",
+      "items": ["Addressables", "AssetBundles", "Unity Localization"]
+    }
   ],
   "pages": [
     [

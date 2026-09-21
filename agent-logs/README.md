@@ -1,5 +1,15 @@
 # AI Agent Change Log Index
 
+| 2026-09-21 | projects, mobile-rts, youtube, media, testing, graphify | [Mobile RTS video media](2026/09/2026-09-21.md#2026-09-21-1754-0300--mobile-rts-video-media) |
+
+| 2026-09-21 | resume, pdf, unity, skills, ats, i18n, testing, visual-qa, graphify | [Unity CV key skills regrouping](2026/09/2026-09-21.md#2026-09-21-1752-0300--unity-cv-key-skills-regrouping) |
+
+| 2026-09-21 | resume, pdf, unity, skills, platforms, delivery, i18n, testing | [Split Unity CV platforms and delivery](2026/09/2026-09-21.md#2026-09-21-1757-0300--split-unity-cv-platforms-and-delivery) |
+
+| 2026-09-20 | projects, mobile-rts, unity, media, i18n, testing, graphify | [Public Mobile RTS portfolio case](2026/09/2026-09-20.md#2026-09-20-0455-0300--public-mobile-rts-portfolio-case) |
+
+| 2026-09-19 | documentation, portfolio, resume, career-context, i18n, projects | [Unified career and portfolio context document](2026/09/2026-09-19.md#unified-career-and-portfolio-context) |
+
 | 2026-09-18 | release, deployment, github-pages, css-modules, verification | [CSS Module release to GitHub Pages](2026/09/2026-09-18.md#css-module-release-to-github-pages) |
 
 | 2026-09-18 | css-modules, vite, github-pages, production, validation, testing | [CSS Module production contract](2026/09/2026-09-18.md#css-module-production-contract) |

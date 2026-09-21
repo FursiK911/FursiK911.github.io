@@ -14,7 +14,7 @@ export const projectCardPresentations: Record<
     direction: 'games-apps',
     teaserKey: 'projects.cardTeasers.mobileRts',
     tags: ['Unity', 'Mobile'],
-    previewImageIndexes: [],
+    previewImageIndexes: [0, 1, 2, 3, 4, 5],
   },
   'saridu-actuator': {
     direction: 'vr-training',

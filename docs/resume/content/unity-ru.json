@@ -7,9 +7,61 @@
   "employment": "Полная, частичная занятость и проектная работа",
   "summary": "Unity Generalist: игровые механики, VR/AR, сетевые взаимодействия и интерфейсы. Разрабатываю интерактивные продукты с 2019 года, сочетая коммерческий опыт Unity/C# и frontend. Самостоятельно реализовывал VR-проекты; работал над мобильной RTS, промышленными тренажёрами и AR-приложениями.",
   "skills": [
-    "Разработка: Unity, C#, ООП, ScriptableObject, Zenject, UniTask, DOTween, Git.",
-    "XR и платформы: Meta Quest 2/3S/3, OpenXR, XR Interaction Toolkit, SteamVR, Vuforia; Android, iOS, PC.",
-    "Сети и контент: Mirror, Netcode for GameObjects, Photon, PlayFab, Firebase, Azure Functions, Addressables, AssetBundles."
+    {
+      "title": "Разработка и архитектура",
+      "items": [
+        "Unity",
+        "C#",
+        "ООП",
+        "ScriptableObject",
+        "Zenject",
+        "UniTask",
+        "DOTween",
+        "Git",
+        "Unigine"
+      ]
+    },
+    {
+      "title": "Игровые системы и взаимодействие",
+      "items": [
+        "OpenXR",
+        "XR Interaction Toolkit",
+        "SteamVR",
+        "Vuforia",
+        "Final IK",
+        "uLipSync",
+        "OpenCV",
+        "Stockfish"
+      ]
+    },
+    {
+      "title": "Сети и сервисы",
+      "items": [
+        "Mirror",
+        "Netcode for GameObjects",
+        "Photon",
+        "PlayFab",
+        "Firebase",
+        "Azure Functions",
+        "VOIP"
+      ]
+    },
+    {
+      "title": "Платформы",
+      "items": [
+        "Meta Quest 2/3S/3",
+        "HTC VIVE Pro",
+        "Android",
+        "iOS",
+        "PC",
+        "WebGL",
+        "Astra Linux"
+      ]
+    },
+    {
+      "title": "Доставка",
+      "items": ["Addressables", "AssetBundles", "Unity Localization"]
+    }
   ],
   "pages": [
     [

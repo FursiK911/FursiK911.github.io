@@ -18,6 +18,18 @@ export const projectMedia = {
     selectGame: getProjectMediaAsset('my-chess-web/select-game.webp'),
     tournament: getProjectMediaAsset('my-chess-web/tournament.webp'),
   },
+  mobileRts: {
+    gameplay: getProjectMediaAsset('mobile-rts/gameplay.webp'),
+    volcanicMountains: getProjectMediaAsset(
+      'mobile-rts/volcanic-mountains.webp',
+    ),
+    mountainTournament: getProjectMediaAsset(
+      'mobile-rts/mountain-tournament.webp',
+    ),
+    historyMode: getProjectMediaAsset('mobile-rts/history-mode.webp'),
+    arcanePortal: getProjectMediaAsset('mobile-rts/arcane-portal.webp'),
+    magicAcademy: getProjectMediaAsset('mobile-rts/magic-academy.webp'),
+  },
   saridu: {
     manInVr: getProjectMediaAsset('vr-saridu/man_in_vr.jpg'),
     womanInVr: getProjectMediaAsset('vr-saridu/woman_in_vr.jpg'),
