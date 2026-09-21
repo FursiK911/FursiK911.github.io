@@ -1,5 +1,7 @@
 # September 2026
 
+| 2026-09-21 | release, deployment, github-pages, verification | [Published the current working-tree release](2026-09-21.md#2026-09-21-1817-0300--published-the-current-working-tree-release) |
+
 | 2026-09-21 | projects, mobile-rts, youtube, media, testing, graphify | [Mobile RTS video media](2026-09-21.md#2026-09-21-1754-0300--mobile-rts-video-media) |
 
 | 2026-09-21 | resume, pdf, unity, skills, ats, i18n, testing, visual-qa, graphify | [Unity CV key skills regrouping](2026-09-21.md#2026-09-21-1752-0300--unity-cv-key-skills-regrouping) |

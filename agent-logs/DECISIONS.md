@@ -1,5 +1,7 @@
 # Global Decision Index
 
+| DEC-20260921-04 | Release the complete validated working-tree change set from `main` at `a7d8576` after GitHub Pages workflow success, production URL checks, and a successful Quality rerun. | release, deployment, github-pages, verification | [2026-09-21](2026/09/2026-09-21.md#decision-dec-20260921-04) |
+
 | DEC-20260921-01 | Keep Unity skills as four structured localized groups with a broad interactive-3D roster, embed XR under Gameplay & Interaction, and leave frontend stack and homepage Tech Stack unchanged. | resume, pdf, unity, skills, ats, i18n | [2026-09-21](2026/09/2026-09-21.md#decision-dec-20260921-01) |
 
 | DEC-20260921-03 | Split the Unity CV's combined Platforms & Delivery group into Platforms for runtime targets and Delivery for Addressables, AssetBundles, and Unity Localization. | resume, pdf, unity, skills, platforms, delivery | [2026-09-21](2026/09/2026-09-21.md#decision-dec-20260921-03) |
