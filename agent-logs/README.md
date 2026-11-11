@@ -1,5 +1,7 @@
 # AI Agent Change Log Index
 
+| 2026-11-11 | projects, vulcan-verse, youtube, media, testing, github-pages, deployment | [Vulcan Verse YouTube media](2026/11/2026-11-11.md#2026-11-11-1428-0300--vulcan-verse-youtube-media) |
+
 | 2026-09-21 | release, deployment, github-pages, verification | [Published the current working-tree release](2026/09/2026-09-21.md#2026-09-21-1817-0300--published-the-current-working-tree-release) |
 
 | 2026-09-21 | projects, mobile-rts, youtube, media, testing, graphify | [Mobile RTS video media](2026/09/2026-09-21.md#2026-09-21-1754-0300--mobile-rts-video-media) |

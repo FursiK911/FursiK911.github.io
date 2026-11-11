@@ -602,6 +602,8 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
       },
     ],
     media: [
+      { kind: 'youtube', videoId: 'XV2zsUOvUJ8' },
+      { kind: 'youtube', videoId: 'VYT8kBTMOf0' },
       {
         kind: 'image',
         src: projectMedia.vulkanVerse.city,
@@ -627,7 +629,6 @@ const projectDefinitions: Array<Omit<Project, 'card'>> = [
         src: projectMedia.vulkanVerse.notus,
         altKey: 'vulkanVerseMediaNotus',
       },
-      { kind: 'youtube', videoId: 'VYT8kBTMOf0' },
     ],
     metricsKey: 'vulkanVerseMetrics',
   },

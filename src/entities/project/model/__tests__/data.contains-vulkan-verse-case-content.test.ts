@@ -32,6 +32,19 @@ it('contains the enriched Vulkan Verse case with media and project facts', () =>
       }),
     ]),
   })
+  expect(
+    project?.media?.map((item) =>
+      item.kind === 'youtube' ? item.videoId : item.altKey,
+    ),
+  ).toEqual([
+    'XV2zsUOvUJ8',
+    'VYT8kBTMOf0',
+    'vulkanVerseMediaCity',
+    'vulkanVerseMediaShrine',
+    'vulkanVerseMediaWorld',
+    'vulkanVerseMediaTemple',
+    'vulkanVerseMediaNotus',
+  ])
   expect(project?.actions).not.toEqual(
     expect.arrayContaining([
       expect.objectContaining({ href: 'https://career.habr.com/fursik1' }),
